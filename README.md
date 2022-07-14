@@ -7,5 +7,6 @@ GMDSI tutorials are designed to be modular and independent of each other. Each t
 
 In these tutorials, utility software from the PEST suite is used extensively to assist in model parameterization, objective function definition, and general PEST/PEST++ setup. Some tutorials focus on the use of PEST and PEST++, while others focus on ancillary issues such as introducing transient recharge to a groundwater model, and translation of a model’s grid, parameterization, and calculated states to files that can be read by visualization, GIS and display packages.
 
-**Homepage:**
-https://gmdsi.org/education/tutorials/
+**Homepage:** https://gmdsi.org/education/tutorials/
+
+A separate set of tutorials demonstrate scripted workflows using 'pyEMU' and PEST++: https://github.com/gmdsi/GMDSI_notebooks
