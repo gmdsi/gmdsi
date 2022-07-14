@@ -10,3 +10,5 @@ In these tutorials, utility software from the PEST suite is used extensively to 
 **Homepage:** https://gmdsi.org/education/tutorials/
 
 A separate set of tutorials demonstrate scripted workflows using `pyEMU` and `PEST++`: https://github.com/gmdsi/GMDSI_notebooks
+
+[![DOI](https://zenodo.org/badge/513725482.svg)](https://zenodo.org/badge/latestdoi/513725482)
