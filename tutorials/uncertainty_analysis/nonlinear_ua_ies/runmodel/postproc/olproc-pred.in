@@ -1,0 +1,39 @@
+# An OLPROC control file.
+
+START GENERAL
+  date_format        = dd/mm/yyyy
+  time_for_csv_files = 00:00:00 
+  
+  # the 1st tstep is a 1day steady state stress period
+  # the subsequent transient stress period starts on 01/01/2000 
+  model_start_date   = 31/12/1999
+  model_start_time   = 00:00:00
+  model_time_units   = days
+  history_match_start_date = 02/01/2000
+  history_match_start_time = 00:00:00 
+END GENERAL
+                      
+START MEAS_SSF_FILES
+  file = pred-stream.ssf  group=pstreams use_abs=yes use_diff=no 
+END MEAS_SSF_FILES
+
+START MF6_OBS_FILES
+  file = ../model/obs/stream_flow.csv
+END MF6_OBS_FILES
+
+START SECONDARY_MODEL_OUTCOMES  
+  "P-TOTAL" = (TRIB+MAIN) 
+  "P-TRIB"  = TRIB
+END SECONDARY_MODEL_OUTCOMES 
+ 
+START OUTPUT
+  partial_pest_control_file = partial2.pst
+  model_batch_file = runmodel.bat
+  obs_ssf_folder = .\obs_files
+END OUTPUT
+  
+START WEIGHTS              
+  name = pstreams type=abs weight=0     
+END WEIGHTS
+
+  

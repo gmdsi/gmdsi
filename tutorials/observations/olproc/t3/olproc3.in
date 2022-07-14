@@ -1,0 +1,53 @@
+# An OLPROC control file.
+
+START GENERAL
+  date_format        = dd/mm/yyyy
+
+  # the 1st timestep is a 1-day steady state stress period
+  # the subsequent transient stress period starts on 01/01/2000 
+  model_start_date   = 31/12/1999
+  model_start_time   = 00:00:00
+  
+  # MODFLOW6 time-step units are setup as day.
+  model_time_units   = days
+
+  # Set the History Matching Window
+  history_match_start_date  = 01/01/2000
+END GENERAL
+
+START MEAS_SSF_FILES
+  # Read the head measurements for layer 1 and layer 3
+  file = obs-heads1.ssf     group=heads1   use_abs=yes  use_diff=yes
+  file = obs-heads3.ssf     group=heads3   use_abs=yes  use_diff=yes 
+  
+  # headdiff is the head difference between layer 1 and 3 at the same site
+  file = obs-headdiff.ssf   group=headiff use_abs=yes use_diff=yes
+END MEAS_SSF_FILES
+
+START MF6_OBS_FILES
+  file = head_obs.csv
+END MF6_OBS_FILES
+ 
+START OUTPUT
+  partial_pest_control_file = partial3.pst
+  model_batch_file          = runmodel.bat
+  obs_ssf_folder            = .\obsfiles
+END OUTPUT
+
+START WEIGHTS 
+  # Set weights for heads1 group
+  name = heads1 type=diff weight=10.0 
+  name = heads1 type=abs weight=0.1 
+
+  # Set weights for heads1 and heads3, during specific period
+  name = heads1 type=diff weight= 30.0       &
+         date1=01/10/2004 time1 = 00:00:00   &
+         date2=30/09/2006 time2 = 23:59:59        
+  name = heads3 type=diff weight= 30.0      &
+         date1=01/10/2004 time1 = 00:00:00  &
+         date2=30/09/2006 time2 = 23:59:59        
+END WEIGHTS
+   
+START SECONDARY_MODEL_OUTCOMES  
+  dh4429 = "H1-4429" - "H3-4429"
+END SECONDARY_MODEL_OUTCOMES 

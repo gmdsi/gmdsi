@@ -1,0 +1,5 @@
+<VTKFile type="Collection" version="1.0" byte_order="LittleEndian" header_type="UInt64" compressor="vtkLZMADataCompressor">
+  <Collection>
+    <DataSet part="0" file="model/model_0.vtu"/>
+  </Collection>
+</VTKFile>

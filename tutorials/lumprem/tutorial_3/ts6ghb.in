@@ -1,0 +1,14 @@
+BEGIN FILES
+  FILEIN  ghb.ts
+  FILEOUT ghb_new.ts
+END FILES
+
+BEGIN PARAMETERS
+END PARAMETERS
+
+BEGIN PROCESSING
+  avg = time_average_over_interval(ghb,none,0.0,99999.0)
+  
+  ghb = assign_terms(ghb, avg, 0.0, 0.0)
+
+END PROCESSING

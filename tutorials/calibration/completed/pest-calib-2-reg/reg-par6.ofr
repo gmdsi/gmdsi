@@ -1,0 +1,5 @@
+ OBJECTIVE FUNCTION COMPONENTS AT END OF ITERATION
+ (Regularisation groups are excluded as they are weight-factor dependent.)
+ 
+ iteration    measurement         regularisation      heads1         heads3         streams        headiff        pstreams       
+   0          0.551475             33.6046            0.105607       0.385622       5.032559E-02   9.921036E-03    0.00000      

@@ -1,0 +1,15 @@
+# modflow-usg layer property flow (lpf) package
+ 0 -1.000000e+30 0 0      constantcv novfc
+ 4 4 4
+ 0 0 0
+ 1.000000e+00
+ 1.000000e+00
+ 1.000000e+00
+ 0 0 0
+ 0 0 0
+external   31   1.0   (free)     -1     kx layer 1
+external   32   1.0   (free)     -1     kz layer 1
+external   31   1.0   (free)     -1     kx layer 2
+external   32   1.0   (free)     -1     kz layer 2
+external   31   1.0   (free)     -1     kx layer 3
+external   32   1.0   (free)     -1     kz layer 3

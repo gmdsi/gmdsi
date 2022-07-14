@@ -1,0 +1,34 @@
+cl_mf6 = read_mf6_grid_specs(file=../model/model.disv.grb,       &
+                              dimensions=3,             &
+                              slist_layernum = layer,   &
+                              slist_idomain  = idomain)
+cl_pp = read_list_file(file=ppoints.dat,                     &
+                        id_type=character,                   &
+                        dimensions=2,                        &
+                        skiplines=1,                         &
+                        slist=zone;    column=4,             &
+                        plist=rch_pp;   column=8)              
+
+
+rchcells_mf6 = cl_mf6.find_cells_in_lists(                   &
+                 file=../model/model.lu1.rch_stress_period_data_1.txt,      &
+                 model_type=mf6_disv,                          &
+                 list_col_start=1,                             &
+                 keytext_start='top_of_file',                  &
+                 keytext_end='end_of_file')
+calc_kriging_factors_auto_2d(                                 &
+           target_clist=cl_mf6;select=(rchcells_mf6.ne.0),         &
+           source_clist=cl_pp,                                &
+           file=factors_rch.dat)                 
+#prop_mf6(select=(rchcells_mf6.ne.0))=rch_pp.krige_using_file(file='factors23.dat',transform='log')
+prop_mf6=new_plist(reference_clist=cl_mf6,value=1.0)
+
+prop_mf6=rch_pp.krige_using_file(file='factors_rch.dat',transform='log')
+
+replace_cells_in_lists(old_file=model.lu1.rch_stress_period_data_1.tpl,               &
+                       new_file=../model/model.lu1.rch_stress_period_data_1.txt,           &
+                       model_type=mf6_disv,                                       &
+                       list_col_start=1,                                          &
+                       keytext_start='top_of_file',                               &
+                       keytext_end='bottom_of_file',                              &
+                       plist=prop_mf6;column=3;action='replace')         

@@ -1,0 +1,11 @@
+  agent  status     runs       successes  failures   abandons   min_runtime    max_runtime    ave_runtime    cum_runtime    alive_time     efficiency     working_folder
+      1  idle       222        222        0          0             1.42200        2.24000        1.61133        357.716        376.834       0.949267     10.24.97.28\\R:\pest_folder\agent0\pest-dataworth
+      2  idle       221        221        0          0             1.41200        1.86500        1.60895        355.577        376.824       0.943616     10.24.97.28\\R:\pest_folder\agent1\pest-dataworth
+      3  idle       222        222        0          0             1.43500        2.31800        1.60114        355.452        376.645       0.943732     10.24.97.28\\R:\pest_folder\agent2\pest-dataworth
+      4  idle       221        221        0          0             1.44900        1.90900        1.60824        355.420        376.358       0.944367     10.24.97.28\\R:\pest_folder\agent3\pest-dataworth
+      5  idle       222        222        0          0             1.49600        1.76100        1.59881        354.936        376.044       0.943868     10.24.97.28\\R:\pest_folder\agent4\pest-dataworth
+      6  idle       221        221        0          0             1.43600        1.77000        1.60302        354.268        375.775       0.942766     10.24.97.28\\R:\pest_folder\agent5\pest-dataworth
+      7  idle       221        221        0          0             1.43700        1.85700        1.60841        355.458        375.469       0.946704     10.24.97.28\\R:\pest_folder\agent6\pest-dataworth
+      8  idle       221        221        0          0             1.46900        1.88700        1.60987        355.782        375.171       0.948320     10.24.97.28\\R:\pest_folder\agent7\pest-dataworth
+      9  idle       220        220        0          0             1.41400        1.85600        1.61406        355.094        374.891       0.947193     10.24.97.28\\R:\pest_folder\agent8\pest-dataworth
+     10  idle       215        215        0          0             1.42900        1.96800        1.65298        355.390        374.606       0.948703     10.24.97.28\\R:\pest_folder\agent9\pest-dataworth

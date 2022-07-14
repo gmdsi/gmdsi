@@ -1,0 +1,2 @@
+  agent  status     runs       successes  failures   abandons   min_runtime    max_runtime    ave_runtime    cum_runtime    alive_time     efficiency     working_folder
+      1  idle       1          1          0          0             3.32500        3.32500        3.32500        3.32500        3.38300       0.982855     10.24.97.28\\d:\github\gmdsi_linearanalysis\tutorial\pest-linunc-completed

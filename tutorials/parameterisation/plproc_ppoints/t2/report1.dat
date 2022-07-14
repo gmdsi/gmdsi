@@ -1,0 +1,70 @@
+CLISTS --->
+
+Name                 Dimensions   Id_type     Grid_type    Elements     Dep_PLISTS   Dep_SLISTS   Parent_CLIST           Linked_to_SEGLIST
+----                 ----------   -------     ---------    --------     ----------   ----------   ------------           -----------------
+cl_mf                 2D          indexed      0            5011         1            3            none                   none
+cl_pp                 2D          character    0            316          5            1            none                   none
+ 
+
+PLISTS --->
+
+Name                    Parent_CLIST
+----                    ------------
+kh1_pp                  cl_pp
+sy1_pp                  cl_pp
+kh2_pp                  cl_pp
+kh3_pp                  cl_pp
+ss3_pp                  cl_pp
+prop_mf                 cl_mf
+ 
+
+SLISTS --->
+
+Name                    Parent_CLIST
+----                    ------------
+idomain1                cl_mf
+idomain2                cl_mf
+idomain3                cl_mf
+zone                    cl_pp
+ 
+
+SEGLISTS --->
+
+Name                    Number_of_segments       Linked_to_CLIST          LINKAGE_TYPE             Linked_to_CLIST          LINKAGE_TYPE
+----                    ------------------       ---------------          ------------             ---------------          ------------
+There are no SEGLISTS stored.
+ 
+
+MLISTS --->
+
+Name                    Parent_CLIST             Type    Start_index   End_index
+----                    ------------             ----    -----------   ---------
+There are no MLISTS stored.
+ 
+
+MATRICES --->
+
+Name                    Rows      Columns
+----                    ----      -------
+There are no MATRICES stored.
+ 
+
+GPLANES --->
+
+Name                    Associated_CLIST         Planar_interpolation   Inverse_power    Transform   Anis_ratio     Anis_bearing
+----                    ----------------         --------------------   -------------    ---------   ----------     ------------
+There are no GPLANES stored.
+ 
+
+SCALARS --->
+
+Name                    Value
+----                    -----
+There are no scalars stored.
+ 
+
+STRINGS --->
+
+Name                    Value
+----                    -----
+There are no string variables stored.

@@ -1,0 +1,22 @@
+                     RUN MANAGEMENT RECORD: CASE work4
+ 
+ 
+ **************************************************
+ RUN MANAGEMENT UNDERTAKEN FOR A HP SUITE PROGRAM
+ COMMUNICATIONS PROTOCOL = TCP.
+ **************************************************
+ 
+ Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+ Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+ Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   29 Jun 08:48:21.72:- index of 1 assigned to agent working in directory "192.168.1.106\\E:\temp8\ies".
+   29 Jun 08:48:21.72:- model run 1 initiated using agent 1.
+   29 Jun 08:48:46.85:- model run 1 completed by agent 1.
+
+ STATISTICS
+
+ For run management efficiency statistics see file work4.rme.

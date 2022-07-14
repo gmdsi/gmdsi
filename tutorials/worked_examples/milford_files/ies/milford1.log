@@ -1,0 +1,15 @@
+time,elapsed_seconds,message
+10:40:21,5.45e-05,PEST++ performance logger started
+10:40:21,0.0016143,starting to process control file
+10:40:21,0.007448,finished processing control file
+10:40:21,0.0076756,starting basic model IO error checking
+10:40:21,0.0095348,finished basic model IO error checking
+10:40:21,0.001898,initializing
+10:40:21,0.0001569,'noptmax'=0, running control file parameter values and quitting
+10:40:21,0.464408,greater_than inequality defined for observations:  1
+10:40:21,0.0004251,running control file parameter values
+10:40:21,9.39e-05,queuing 1 runs
+10:40:21,0.0083171,making runs
+10:40:49,27.298,processing runs
+10:40:49,0.0002633,saving results from control file parameter value run to  milford1.obs.csv
+10:40:49,0.0019465,control file parameter phi report:

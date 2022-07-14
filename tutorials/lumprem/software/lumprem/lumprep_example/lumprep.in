@@ -1,0 +1,46 @@
+START_DATE           31/1/1990
+END_DATE             5/1/2000
+NDAY_OUT             monthly
+STEPS_PER_DAY        5
+
+# The first LUMPREM dataset
+
+SILOFILE             "39104pp.txt"  evap
+RAINFILE             rain.dat
+EPOTFILE             epot.dat
+VEGFILE              "veg file.dat"
+VEGFILE              0.2 1.5
+IRRIGFILE            1  0.4
+MAXVOL               0.5
+IRRIGVOLFRAC         0.6
+RDELAY               15.0
+MDELAY               2.0
+KS                   0.9
+M                    0.2
+L                    0.55
+MFLOWMAX             0.1
+OFFSET               15.0
+FACTOR1              1.0
+FACTOR2              1.11
+POWER                2.0
+VOL                  0.15
+SURFACE              120.0
+LUMPREM_MODEL_NAME   lm1
+
+# -- The second LUMPREM dataset
+
+SILOFILE             "39104pp.txt"  evap
+RAINFILE             rain.dat
+EPOTFILE             epot.dat
+OFFSET               0.0
+FACTOR1              1e-5
+FACTOR2              1e-5
+POWER                0.0
+IRRIGFILE            irrig.dat
+VEGFILE              veg.dat
+LUMPREM_MODEL_NAME   lm2
+
+# -- Write a partial PEST dataset
+
+BATCH_FILE_NAME      "model.bat"
+PEST_CONTROL_FILE    temp.pst

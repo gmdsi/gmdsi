@@ -1,0 +1,1446 @@
+             pestpp-ies.exe - a GLM iterative Ensemble Smoother
+for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.0.0
+binary compiled on Sep  1 2020 at 10:11:32
+
+using control file: "milford1"
+in directory: "E:\milford_tutorial\may10_2021\model11"
+
+
+Note 'NOPTMAX' == 0, switching to forgiveness mode when checking inputs
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '10.0  -3.0  0.3  0.03  10 999  lamforgive' 
+  -->  line number 10: '0  0  0  PARSAVEITN' 
+  -->  line number 12: '1' 
+noptmax = 0, resetting max_run_fail = 1
+parameter warning: 2 parameters are at lower bound
+parameter warning: 7 parameters are at upper bound
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 865
+    Number of adjustable parameters = 718
+    Number of observations = 307
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 0
+    phiredstp = 0.005
+    nphistp = 4
+    nphinored = 4
+    relparstp = 0.005
+    nrelpar = 4
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+max_run_fail: 1
+yamr_poll_interval: 1
+parameter_covariance: param.unc
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0glm_iter_mc: 0
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_include_bnd_pi: 1
+
+...pestpp-ies options:
+ies_parameter_ensemble: 
+ies_observation_ensemble: .\observ_files\randobs.csv
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: -999
+ies_use_approx: 1
+ies_subset_size: 7
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 300
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_save_binary: 0
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: 4
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 1
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+panther_agent_freeze_on_fail: 0
+
+
+
+Model command line(s):- 
+    model.bat
+
+Model interface files:-
+    template files:
+      .\param_files\ppset1.dat.tpl
+      .\param_files\ppset2.dat.tpl
+      .\param_files\ppset3.dat.tpl
+      .\param_files\pp_rivers.dat.tpl
+      .\param_files\pp_wells.dat.tpl
+    model input files:
+      .\param_files\ppset1.dat
+      .\param_files\ppset2.dat
+      .\param_files\ppset3.dat
+      .\param_files\pp_rivers.dat
+      .\param_files\pp_wells.dat
+
+    instruction files:
+      .\observ_files\modhead.ssf.ins
+      .\observ_files\modriv.ssf.ins
+      .\observ_files\moddrn.ssf.ins
+      .\observ_files\modpump.ssf.ins
+    model output files:
+      modhead.ssf
+      modriv.ssf
+      moddrn.ssf
+      modpump.ssf
+
+
+Parameter group information
+NAME            INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+kx2bas                RELATIVE                    0.015                        0         SWITCH                        2
+kx2mul                RELATIVE                    0.015                        0         SWITCH                        2
+k13mul                RELATIVE                    0.015                        0         SWITCH                        2
+vanis                 RELATIVE                    0.015                        0         SWITCH                        2
+rechmul               RELATIVE                    0.015                        0         SWITCH                        2
+rcmul                 RELATIVE                    0.015                        0         SWITCH                        2
+rhadd                 ABSOLUTE                      0.1                        0         SWITCH                        2
+wmul                  RELATIVE                    0.015                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND          GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+pp1_kx1      log                     FACTOR         51.708              1           1000         kx2bas              1              0                   1
+pp1_kx2      log                     FACTOR        60.4016              1           1000         kx2bas              1              0                   1
+pp1_kx3      log                     FACTOR        96.2399              1           1000         kx2bas              1              0                   1
+pp1_kx4      log                     FACTOR        56.2384              1           1000         kx2bas              1              0                   1
+pp1_kx5      log                     FACTOR        75.4378              1           1000         kx2bas              1              0                   1
+pp1_kx6      log                     FACTOR        90.0754              1           1000         kx2bas              1              0                   1
+pp1_kx7      log                     FACTOR        103.659              1           1000         kx2bas              1              0                   1
+pp1_kx8      log                     FACTOR        96.7229              1           1000         kx2bas              1              0                   1
+pp1_kx9      log                     FACTOR        74.9663              1           1000         kx2bas              1              0                   1
+pp1_kx10     log                     FACTOR        98.9034              1           1000         kx2bas              1              0                   1
+pp1_kx11     log                     FACTOR        67.4619              1           1000         kx2bas              1              0                   1
+pp1_kx12     log                     FACTOR        60.6551              1           1000         kx2bas              1              0                   1
+pp1_kx13     log                     FACTOR        74.2617              1           1000         kx2bas              1              0                   1
+pp1_kx14     log                     FACTOR        102.873              1           1000         kx2bas              1              0                   1
+pp1_kx15     log                     FACTOR        31.6147              1           1000         kx2bas              1              0                   1
+pp1_kx16     log                     FACTOR        20.0825              1           1000         kx2bas              1              0                   1
+pp1_kx17     log                     FACTOR        56.5187              1           1000         kx2bas              1              0                   1
+pp1_kx18     log                     FACTOR        17.1864              1           1000         kx2bas              1              0                   1
+pp1_kx19     log                     FACTOR        15.1439              1           1000         kx2bas              1              0                   1
+pp1_kx20     log                     FACTOR         21.039              1           1000         kx2bas              1              0                   1
+pp1_kx21     log                     FACTOR        24.0871              1           1000         kx2bas              1              0                   1
+pp1_kx22     log                     FACTOR        87.0008              1           1000         kx2bas              1              0                   1
+pp1_kx23     log                     FACTOR         52.869              1           1000         kx2bas              1              0                   1
+pp1_kx24     log                     FACTOR        59.1432              1           1000         kx2bas              1              0                   1
+pp1_kx25     log                     FACTOR        54.9752              1           1000         kx2bas              1              0                   1
+pp1_kx26     log                     FACTOR        37.0069              1           1000         kx2bas              1              0                   1
+pp1_kx27     log                     FACTOR        27.4669              1           1000         kx2bas              1              0                   1
+pp1_kx28     log                     FACTOR        54.4098              1           1000         kx2bas              1              0                   1
+pp1_kx29     log                     FACTOR        19.3863              1           1000         kx2bas              1              0                   1
+pp1_kx30     log                     FACTOR        46.0213              1           1000         kx2bas              1              0                   1
+pp1_kx31     log                     FACTOR        19.4229              1           1000         kx2bas              1              0                   1
+pp1_kx32     log                     FACTOR        51.0568              1           1000         kx2bas              1              0                   1
+pp2_mul1     log                     FACTOR        1.14711          0.005            100         kx2mul              1              0                   1
+pp2_mul2     log                     FACTOR        2.00736          0.005            100         kx2mul              1              0                   1
+pp2_mul3     log                     FACTOR        1.21784          0.005            100         kx2mul              1              0                   1
+pp2_mul4     log                     FACTOR        1.05834          0.005            100         kx2mul              1              0                   1
+pp2_mul5     log                     FACTOR       0.988942          0.005            100         kx2mul              1              0                   1
+pp2_mul6     log                     FACTOR       0.815712          0.005            100         kx2mul              1              0                   1
+pp2_mul7     log                     FACTOR       0.568408          0.005            100         kx2mul              1              0                   1
+pp2_mul8     log                     FACTOR       0.570195          0.005            100         kx2mul              1              0                   1
+pp2_mul9     log                     FACTOR       0.698145          0.005            100         kx2mul              1              0                   1
+pp2_mul10    log                     FACTOR       0.748296          0.005            100         kx2mul              1              0                   1
+pp2_mul11    log                     FACTOR        1.32361          0.005            100         kx2mul              1              0                   1
+pp2_mul12    log                     FACTOR       0.104452          0.005            100         kx2mul              1              0                   1
+pp2_mul13    log                     FACTOR      0.0718951          0.005            100         kx2mul              1              0                   1
+pp2_mul14    log                     FACTOR       0.482055          0.005            100         kx2mul              1              0                   1
+pp2_mul15    log                     FACTOR       0.189387          0.005            100         kx2mul              1              0                   1
+pp2_mul16    log                     FACTOR       0.339776          0.005            100         kx2mul              1              0                   1
+pp2_mul17    log                     FACTOR        1.36582          0.005            100         kx2mul              1              0                   1
+pp2_mul18    log                     FACTOR       0.607706          0.005            100         kx2mul              1              0                   1
+pp2_mul19    log                     FACTOR       0.677068          0.005            100         kx2mul              1              0                   1
+pp2_mul20    log                     FACTOR        1.27853          0.005            100         kx2mul              1              0                   1
+pp2_mul21    log                     FACTOR        0.95738          0.005            100         kx2mul              1              0                   1
+pp2_mul22    log                     FACTOR        9.37962          0.005            100         kx2mul              1              0                   1
+pp2_mul23    log                     FACTOR       0.980229          0.005            100         kx2mul              1              0                   1
+pp2_mul24    log                     FACTOR       0.440473          0.005            100         kx2mul              1              0                   1
+pp2_mul25    log                     FACTOR        1.14727          0.005            100         kx2mul              1              0                   1
+pp2_mul26    log                     FACTOR       0.905395          0.005            100         kx2mul              1              0                   1
+pp2_mul27    log                     FACTOR        1.18714          0.005            100         kx2mul              1              0                   1
+pp2_mul28    log                     FACTOR        1.28381          0.005            100         kx2mul              1              0                   1
+pp2_mul29    log                     FACTOR        1.48264          0.005            100         kx2mul              1              0                   1
+pp2_mul30    log                     FACTOR            100          0.005            100         kx2mul              1              0                   1
+pp2_mul31    log                     FACTOR      0.0118106          0.005            100         kx2mul              1              0                   1
+pp2_mul32    log                     FACTOR       0.255541          0.005            100         kx2mul              1              0                   1
+pp2_mul33    log                     FACTOR        1.15545          0.005            100         kx2mul              1              0                   1
+pp2_mul34    log                     FACTOR       0.265363          0.005            100         kx2mul              1              0                   1
+pp2_mul35    log                     FACTOR       0.118728          0.005            100         kx2mul              1              0                   1
+pp2_mul36    log                     FACTOR       0.607041          0.005            100         kx2mul              1              0                   1
+pp2_mul37    log                     FACTOR        0.45007          0.005            100         kx2mul              1              0                   1
+pp2_mul38    log                     FACTOR        1.20496          0.005            100         kx2mul              1              0                   1
+pp2_mul39    log                     FACTOR        7.80562          0.005            100         kx2mul              1              0                   1
+pp2_mul40    log                     FACTOR        1.03765          0.005            100         kx2mul              1              0                   1
+pp2_mul41    log                     FACTOR        1.30115          0.005            100         kx2mul              1              0                   1
+pp2_mul42    log                     FACTOR        1.82102          0.005            100         kx2mul              1              0                   1
+pp2_mul43    log                     FACTOR        1.37042          0.005            100         kx2mul              1              0                   1
+pp2_mul44    log                     FACTOR        4.19445          0.005            100         kx2mul              1              0                   1
+pp2_mul45    log                     FACTOR         25.435          0.005            100         kx2mul              1              0                   1
+pp2_mul46    log                     FACTOR       0.378019          0.005            100         kx2mul              1              0                   1
+pp2_mul47    log                     FACTOR       0.707602          0.005            100         kx2mul              1              0                   1
+pp2_mul48    log                     FACTOR        1.12445          0.005            100         kx2mul              1              0                   1
+pp2_mul49    log                     FACTOR        1.87679          0.005            100         kx2mul              1              0                   1
+pp2_mul50    log                     FACTOR        2.58151          0.005            100         kx2mul              1              0                   1
+pp2_mul51    log                     FACTOR        2.32482          0.005            100         kx2mul              1              0                   1
+pp2_mul52    log                     FACTOR        1.33582          0.005            100         kx2mul              1              0                   1
+pp2_mul53    log                     FACTOR        1.05709          0.005            100         kx2mul              1              0                   1
+pp2_mul54    log                     FACTOR        6.33522          0.005            100         kx2mul              1              0                   1
+pp2_mul55    log                     FACTOR        0.38119          0.005            100         kx2mul              1              0                   1
+pp2_mul56    log                     FACTOR      0.0581617          0.005            100         kx2mul              1              0                   1
+pp2_mul57    log                     FACTOR      0.0252826          0.005            100         kx2mul              1              0                   1
+pp2_mul58    log                     FACTOR        2.37259          0.005            100         kx2mul              1              0                   1
+pp2_mul59    log                     FACTOR       0.609709          0.005            100         kx2mul              1              0                   1
+pp2_mul60    log                     FACTOR        2.92651          0.005            100         kx2mul              1              0                   1
+pp2_mul61    log                     FACTOR        0.34077          0.005            100         kx2mul              1              0                   1
+pp2_mul62    log                     FACTOR        44.1824          0.005            100         kx2mul              1              0                   1
+pp2_mul63    log                     FACTOR        6.16598          0.005            100         kx2mul              1              0                   1
+pp2_mul64    log                     FACTOR         0.9786          0.005            100         kx2mul              1              0                   1
+pp2_mul65    log                     FACTOR        1.02658          0.005            100         kx2mul              1              0                   1
+pp2_mul66    log                     FACTOR        1.46012          0.005            100         kx2mul              1              0                   1
+pp2_mul67    log                     FACTOR       0.283006          0.005            100         kx2mul              1              0                   1
+pp2_mul68    log                     FACTOR      0.0568657          0.005            100         kx2mul              1              0                   1
+pp2_mul69    log                     FACTOR       0.423969          0.005            100         kx2mul              1              0                   1
+pp2_mul70    log                     FACTOR       0.115142          0.005            100         kx2mul              1              0                   1
+pp2_mul71    log                     FACTOR        29.9205          0.005            100         kx2mul              1              0                   1
+pp2_mul72    log                     FACTOR        1.79953          0.005            100         kx2mul              1              0                   1
+pp2_mul73    log                     FACTOR       0.832072          0.005            100         kx2mul              1              0                   1
+pp2_mul74    log                     FACTOR         1.1603          0.005            100         kx2mul              1              0                   1
+pp2_mul75    log                     FACTOR        1.74487          0.005            100         kx2mul              1              0                   1
+pp2_mul76    log                     FACTOR        1.31638          0.005            100         kx2mul              1              0                   1
+pp2_mul77    log                     FACTOR       0.340009          0.005            100         kx2mul              1              0                   1
+pp2_mul78    log                     FACTOR       0.111038          0.005            100         kx2mul              1              0                   1
+pp2_mul79    log                     FACTOR        5.27222          0.005            100         kx2mul              1              0                   1
+pp2_mul80    log                     FACTOR       0.252606          0.005            100         kx2mul              1              0                   1
+pp2_mul81    log                     FACTOR       0.200524          0.005            100         kx2mul              1              0                   1
+pp2_mul82    log                     FACTOR       0.645975          0.005            100         kx2mul              1              0                   1
+pp2_mul83    log                     FACTOR         1.0101          0.005            100         kx2mul              1              0                   1
+pp2_mul84    log                     FACTOR        2.93039          0.005            100         kx2mul              1              0                   1
+pp2_mul85    log                     FACTOR       0.153913          0.005            100         kx2mul              1              0                   1
+pp2_mul86    log                     FACTOR       0.560843          0.005            100         kx2mul              1              0                   1
+pp2_mul87    log                     FACTOR       0.163357          0.005            100         kx2mul              1              0                   1
+pp2_mul88    log                     FACTOR       0.889469          0.005            100         kx2mul              1              0                   1
+pp2_mul89    log                     FACTOR        1.37161          0.005            100         kx2mul              1              0                   1
+pp2_mul90    log                     FACTOR        0.55646          0.005            100         kx2mul              1              0                   1
+pp2_mul91    log                     FACTOR      0.0857798          0.005            100         kx2mul              1              0                   1
+pp2_mul92    log                     FACTOR        0.47076          0.005            100         kx2mul              1              0                   1
+pp2_mul93    log                     FACTOR      0.0454145          0.005            100         kx2mul              1              0                   1
+pp2_mul94    log                     FACTOR       0.801711          0.005            100         kx2mul              1              0                   1
+pp2_mul95    log                     FACTOR       0.402178          0.005            100         kx2mul              1              0                   1
+pp2_mul96    log                     FACTOR        0.40958          0.005            100         kx2mul              1              0                   1
+pp2_mul97    log                     FACTOR      0.0246458          0.005            100         kx2mul              1              0                   1
+pp2_mul98    log                     FACTOR       0.780907          0.005            100         kx2mul              1              0                   1
+pp2_mul99    log                     FACTOR        1.78323          0.005            100         kx2mul              1              0                   1
+pp2_mul100   log                     FACTOR        12.0953          0.005            100         kx2mul              1              0                   1
+pp2_mul101   log                     FACTOR         0.4101          0.005            100         kx2mul              1              0                   1
+pp2_mul102   log                     FACTOR       0.882599          0.005            100         kx2mul              1              0                   1
+pp2_mul103   log                     FACTOR       0.967315          0.005            100         kx2mul              1              0                   1
+pp2_mul104   log                     FACTOR       0.420796          0.005            100         kx2mul              1              0                   1
+pp2_mul105   log                     FACTOR      0.0562198          0.005            100         kx2mul              1              0                   1
+pp2_mul106   log                     FACTOR       0.267189          0.005            100         kx2mul              1              0                   1
+pp2_mul107   log                     FACTOR       0.532208          0.005            100         kx2mul              1              0                   1
+pp2_mul108   log                     FACTOR       0.395088          0.005            100         kx2mul              1              0                   1
+pp2_mul109   log                     FACTOR       0.632016          0.005            100         kx2mul              1              0                   1
+pp2_mul110   log                     FACTOR         1.0569          0.005            100         kx2mul              1              0                   1
+pp2_mul111   log                     FACTOR       0.792694          0.005            100         kx2mul              1              0                   1
+pp2_mul112   log                     FACTOR       0.561458          0.005            100         kx2mul              1              0                   1
+pp2_mul113   log                     FACTOR      0.0468441          0.005            100         kx2mul              1              0                   1
+pp2_mul114   log                     FACTOR        3.16728          0.005            100         kx2mul              1              0                   1
+pp2_mul115   log                     FACTOR       0.933654          0.005            100         kx2mul              1              0                   1
+pp2_mul116   log                     FACTOR        5.01891          0.005            100         kx2mul              1              0                   1
+pp2_mul117   log                     FACTOR        6.80864          0.005            100         kx2mul              1              0                   1
+pp2_mul118   log                     FACTOR        1.55133          0.005            100         kx2mul              1              0                   1
+pp2_mul119   log                     FACTOR          1.229          0.005            100         kx2mul              1              0                   1
+pp2_mul120   log                     FACTOR        1.20318          0.005            100         kx2mul              1              0                   1
+pp2_mul121   log                     FACTOR       0.816884          0.005            100         kx2mul              1              0                   1
+pp2_mul122   log                     FACTOR       0.539983          0.005            100         kx2mul              1              0                   1
+pp2_mul123   log                     FACTOR        1.67702          0.005            100         kx2mul              1              0                   1
+pp2_mul124   log                     FACTOR        1.49775          0.005            100         kx2mul              1              0                   1
+pp2_mul125   log                     FACTOR        9.94889          0.005            100         kx2mul              1              0                   1
+pp2_mul126   log                     FACTOR       0.258612          0.005            100         kx2mul              1              0                   1
+pp2_mul127   log                     FACTOR        1.56228          0.005            100         kx2mul              1              0                   1
+pp2_mul128   log                     FACTOR         4.7239          0.005            100         kx2mul              1              0                   1
+pp2_mul129   log                     FACTOR       0.114474          0.005            100         kx2mul              1              0                   1
+pp2_mul130   log                     FACTOR        1.09929          0.005            100         kx2mul              1              0                   1
+pp2_mul131   log                     FACTOR       0.517157          0.005            100         kx2mul              1              0                   1
+pp2_mul132   log                     FACTOR       0.386206          0.005            100         kx2mul              1              0                   1
+pp2_mul133   log                     FACTOR       0.644658          0.005            100         kx2mul              1              0                   1
+pp2_mul134   log                     FACTOR        1.09119          0.005            100         kx2mul              1              0                   1
+pp2_mul135   log                     FACTOR        1.52002          0.005            100         kx2mul              1              0                   1
+pp2_mul136   log                     FACTOR        0.27924          0.005            100         kx2mul              1              0                   1
+pp2_mul137   log                     FACTOR        5.50553          0.005            100         kx2mul              1              0                   1
+pp2_mul138   log                     FACTOR       0.607573          0.005            100         kx2mul              1              0                   1
+pp2_mul139   log                     FACTOR        1.28712          0.005            100         kx2mul              1              0                   1
+pp2_mul140   log                     FACTOR       0.261738          0.005            100         kx2mul              1              0                   1
+pp2_mul141   log                     FACTOR       0.772912          0.005            100         kx2mul              1              0                   1
+pp2_mul142   log                     FACTOR       0.904593          0.005            100         kx2mul              1              0                   1
+pp2_mul143   log                     FACTOR        1.00169          0.005            100         kx2mul              1              0                   1
+pp2_mul144   log                     FACTOR       0.642383          0.005            100         kx2mul              1              0                   1
+pp2_mul145   log                     FACTOR       0.644432          0.005            100         kx2mul              1              0                   1
+pp2_mul146   log                     FACTOR       0.780549          0.005            100         kx2mul              1              0                   1
+pp2_mul147   log                     FACTOR       0.278279          0.005            100         kx2mul              1              0                   1
+pp2_mul148   log                     FACTOR       0.666455          0.005            100         kx2mul              1              0                   1
+pp2_mul149   log                     FACTOR      0.0481862          0.005            100         kx2mul              1              0                   1
+pp2_mul150   log                     FACTOR       0.782334          0.005            100         kx2mul              1              0                   1
+pp2_mul151   log                     FACTOR        28.0384          0.005            100         kx2mul              1              0                   1
+pp2_mul152   log                     FACTOR       0.501178          0.005            100         kx2mul              1              0                   1
+pp2_mul153   log                     FACTOR       0.503748          0.005            100         kx2mul              1              0                   1
+pp2_mul154   log                     FACTOR       0.507998          0.005            100         kx2mul              1              0                   1
+pp2_mul155   log                     FACTOR       0.559494          0.005            100         kx2mul              1              0                   1
+pp2_mul156   log                     FACTOR        0.57371          0.005            100         kx2mul              1              0                   1
+pp2_mul157   log                     FACTOR       0.351835          0.005            100         kx2mul              1              0                   1
+pp2_mul158   log                     FACTOR        1.12721          0.005            100         kx2mul              1              0                   1
+pp2_mul159   log                     FACTOR        4.03077          0.005            100         kx2mul              1              0                   1
+pp2_mul160   log                     FACTOR        17.1276          0.005            100         kx2mul              1              0                   1
+pp2_mul161   log                     FACTOR        2.35795          0.005            100         kx2mul              1              0                   1
+pp2_mul162   log                     FACTOR        7.42289          0.005            100         kx2mul              1              0                   1
+pp2_mul163   log                     FACTOR       0.244134          0.005            100         kx2mul              1              0                   1
+pp2_mul164   log                     FACTOR       0.516934          0.005            100         kx2mul              1              0                   1
+pp2_mul165   log                     FACTOR       0.899245          0.005            100         kx2mul              1              0                   1
+pp2_mul166   log                     FACTOR        1.30862          0.005            100         kx2mul              1              0                   1
+pp2_mul167   log                     FACTOR       0.273443          0.005            100         kx2mul              1              0                   1
+pp2_mul168   log                     FACTOR        1.16951          0.005            100         kx2mul              1              0                   1
+pp2_mul169   log                     FACTOR       0.762019          0.005            100         kx2mul              1              0                   1
+pp2_mul170   log                     FACTOR       0.208127          0.005            100         kx2mul              1              0                   1
+pp2_mul171   log                     FACTOR       0.335404          0.005            100         kx2mul              1              0                   1
+pp2_mul172   log                     FACTOR        16.2244          0.005            100         kx2mul              1              0                   1
+pp2_mul173   log                     FACTOR       0.935833          0.005            100         kx2mul              1              0                   1
+pp2_mul174   log                     FACTOR        0.37189          0.005            100         kx2mul              1              0                   1
+pp2_mul175   log                     FACTOR       0.424143          0.005            100         kx2mul              1              0                   1
+pp2_mul176   log                     FACTOR         2.5751          0.005            100         kx2mul              1              0                   1
+pp2_mul177   log                     FACTOR        36.8957          0.005            100         kx2mul              1              0                   1
+pp2_mul178   log                     FACTOR      0.0646586          0.005            100         kx2mul              1              0                   1
+pp2_mul179   log                     FACTOR        1.24017          0.005            100         kx2mul              1              0                   1
+pp2_mul180   log                     FACTOR         2.9936          0.005            100         kx2mul              1              0                   1
+pp2_mul181   log                     FACTOR       0.772736          0.005            100         kx2mul              1              0                   1
+pp2_mul182   log                     FACTOR       0.343871          0.005            100         kx2mul              1              0                   1
+pp2_mul183   log                     FACTOR       0.642345          0.005            100         kx2mul              1              0                   1
+pp2_mul184   log                     FACTOR       0.298584          0.005            100         kx2mul              1              0                   1
+pp2_mul185   log                     FACTOR       0.478843          0.005            100         kx2mul              1              0                   1
+pp2_mul186   log                     FACTOR        1.66719          0.005            100         kx2mul              1              0                   1
+pp2_mul187   log                     FACTOR       0.781831          0.005            100         kx2mul              1              0                   1
+pp2_mul188   log                     FACTOR         1.1724          0.005            100         kx2mul              1              0                   1
+pp2_mul189   log                     FACTOR        3.47824          0.005            100         kx2mul              1              0                   1
+pp2_mul190   log                     FACTOR       0.288115          0.005            100         kx2mul              1              0                   1
+pp2_mul191   log                     FACTOR       0.755638          0.005            100         kx2mul              1              0                   1
+pp2_mul192   log                     FACTOR          0.005          0.005            100         kx2mul              1              0                   1
+pp2_mul193   log                     FACTOR        1.33694          0.005            100         kx2mul              1              0                   1
+pp2_mul194   log                     FACTOR         3.7253          0.005            100         kx2mul              1              0                   1
+pp2_mul195   log                     FACTOR        6.43122          0.005            100         kx2mul              1              0                   1
+pp2_mul196   log                     FACTOR       0.361683          0.005            100         kx2mul              1              0                   1
+pp2_mul197   log                     FACTOR        2.59992          0.005            100         kx2mul              1              0                   1
+pp2_mul198   log                     FACTOR     0.00851676          0.005            100         kx2mul              1              0                   1
+pp2_mul199   log                     FACTOR       0.994393          0.005            100         kx2mul              1              0                   1
+pp2_mul200   log                     FACTOR      0.0137033          0.005            100         kx2mul              1              0                   1
+pp2_mul201   log                     FACTOR        0.19034          0.005            100         kx2mul              1              0                   1
+pp2_mul202   log                     FACTOR        2.00904          0.005            100         kx2mul              1              0                   1
+pp2_mul203   log                     FACTOR        1.17153          0.005            100         kx2mul              1              0                   1
+pp2_mul204   log                     FACTOR       0.177732          0.005            100         kx2mul              1              0                   1
+pp2_mul205   log                     FACTOR        1.44736          0.005            100         kx2mul              1              0                   1
+pp2_mul206   log                     FACTOR       0.114262          0.005            100         kx2mul              1              0                   1
+pp2_mul207   log                     FACTOR       0.716197          0.005            100         kx2mul              1              0                   1
+pp2_mul208   log                     FACTOR        10.5109          0.005            100         kx2mul              1              0                   1
+pp2_mul209   log                     FACTOR       0.718437          0.005            100         kx2mul              1              0                   1
+pp2_mul210   log                     FACTOR        2.63071          0.005            100         kx2mul              1              0                   1
+pp2_mul211   log                     FACTOR            100          0.005            100         kx2mul              1              0                   1
+pp2_mul212   log                     FACTOR       0.662872          0.005            100         kx2mul              1              0                   1
+pp2_mul213   log                     FACTOR       0.564971          0.005            100         kx2mul              1              0                   1
+pp2_mul214   log                     FACTOR       0.156588          0.005            100         kx2mul              1              0                   1
+pp2_mul215   log                     FACTOR       0.218709          0.005            100         kx2mul              1              0                   1
+pp2_mul216   log                     FACTOR       0.822144          0.005            100         kx2mul              1              0                   1
+pp2_mul217   log                     FACTOR        1.39228          0.005            100         kx2mul              1              0                   1
+pp2_mul218   log                     FACTOR       0.664737          0.005            100         kx2mul              1              0                   1
+pp2_mul219   log                     FACTOR       0.513399          0.005            100         kx2mul              1              0                   1
+pp2_mul220   log                     FACTOR       0.107294          0.005            100         kx2mul              1              0                   1
+pp2_mul221   log                     FACTOR        1.83629          0.005            100         kx2mul              1              0                   1
+pp2_mul222   log                     FACTOR       0.694946          0.005            100         kx2mul              1              0                   1
+pp2_mul223   log                     FACTOR       0.819784          0.005            100         kx2mul              1              0                   1
+pp2_mul224   log                     FACTOR       0.522964          0.005            100         kx2mul              1              0                   1
+pp2_mul225   log                     FACTOR        1.42871          0.005            100         kx2mul              1              0                   1
+pp2_mul226   log                     FACTOR       0.215111          0.005            100         kx2mul              1              0                   1
+pp2_mul227   log                     FACTOR       0.928416          0.005            100         kx2mul              1              0                   1
+pp2_mul228   log                     FACTOR         1.9845          0.005            100         kx2mul              1              0                   1
+pp2_mul229   log                     FACTOR        7.18149          0.005            100         kx2mul              1              0                   1
+pp2_mul230   log                     FACTOR        1.81178          0.005            100         kx2mul              1              0                   1
+pp2_mul231   log                     FACTOR        2.74961          0.005            100         kx2mul              1              0                   1
+pp2_mul232   log                     FACTOR        5.02758          0.005            100         kx2mul              1              0                   1
+pp2_mul233   log                     FACTOR      0.0638639          0.005            100         kx2mul              1              0                   1
+pp2_mul234   log                     FACTOR        0.40258          0.005            100         kx2mul              1              0                   1
+pp2_mul235   log                     FACTOR        0.29441          0.005            100         kx2mul              1              0                   1
+pp2_mul236   log                     FACTOR       0.800068          0.005            100         kx2mul              1              0                   1
+pp2_mul237   log                     FACTOR        7.42281          0.005            100         kx2mul              1              0                   1
+pp2_mul238   log                     FACTOR       0.115798          0.005            100         kx2mul              1              0                   1
+pp2_mul239   log                     FACTOR        2.95507          0.005            100         kx2mul              1              0                   1
+pp2_mul240   log                     FACTOR      0.0964746          0.005            100         kx2mul              1              0                   1
+pp2_mul241   log                     FACTOR       0.338479          0.005            100         kx2mul              1              0                   1
+pp2_mul242   log                     FACTOR       0.554207          0.005            100         kx2mul              1              0                   1
+pp2_mul243   log                     FACTOR       0.226729          0.005            100         kx2mul              1              0                   1
+pp2_mul244   log                     FACTOR         4.8131          0.005            100         kx2mul              1              0                   1
+pp2_mul245   log                     FACTOR      0.0168195          0.005            100         kx2mul              1              0                   1
+pp2_mul246   log                     FACTOR        24.3277          0.005            100         kx2mul              1              0                   1
+pp2_mul247   log                     FACTOR        21.9192          0.005            100         kx2mul              1              0                   1
+pp2_mul248   log                     FACTOR        49.6802          0.005            100         kx2mul              1              0                   1
+pp2_mul249   log                     FACTOR       0.111263          0.005            100         kx2mul              1              0                   1
+pp2_mul250   log                     FACTOR        1.84213          0.005            100         kx2mul              1              0                   1
+pp2_mul251   log                     FACTOR        28.5234          0.005            100         kx2mul              1              0                   1
+pp2_mul252   log                     FACTOR        2.08074          0.005            100         kx2mul              1              0                   1
+pp2_mul253   log                     FACTOR        2.74919          0.005            100         kx2mul              1              0                   1
+pp2_mul254   log                     FACTOR       0.217402          0.005            100         kx2mul              1              0                   1
+pp2_mul255   log                     FACTOR     0.00615542          0.005            100         kx2mul              1              0                   1
+pp2_mul256   log                     FACTOR     0.00653738          0.005            100         kx2mul              1              0                   1
+pp2_mul257   log                     FACTOR         0.3809          0.005            100         kx2mul              1              0                   1
+pp2_mul258   log                     FACTOR       0.308164          0.005            100         kx2mul              1              0                   1
+pp2_mul259   log                     FACTOR        1.95085          0.005            100         kx2mul              1              0                   1
+pp2_mul260   log                     FACTOR        1.07335          0.005            100         kx2mul              1              0                   1
+pp2_mul261   log                     FACTOR       0.834593          0.005            100         kx2mul              1              0                   1
+pp2_mul262   log                     FACTOR       0.529177          0.005            100         kx2mul              1              0                   1
+pp2_mul263   log                     FACTOR         4.7733          0.005            100         kx2mul              1              0                   1
+pp2_mul264   log                     FACTOR       0.298676          0.005            100         kx2mul              1              0                   1
+pp2_mul265   log                     FACTOR        6.26666          0.005            100         kx2mul              1              0                   1
+pp2_mul266   log                     FACTOR        0.17006          0.005            100         kx2mul              1              0                   1
+pp2_mul267   log                     FACTOR      0.0435908          0.005            100         kx2mul              1              0                   1
+pp2_mul268   log                     FACTOR            100          0.005            100         kx2mul              1              0                   1
+pp2_mul269   log                     FACTOR       0.542634          0.005            100         kx2mul              1              0                   1
+pp2_mul270   log                     FACTOR         2.1024          0.005            100         kx2mul              1              0                   1
+pp2_mul271   log                     FACTOR       0.393907          0.005            100         kx2mul              1              0                   1
+pp2_mul272   log                     FACTOR        79.8253          0.005            100         kx2mul              1              0                   1
+pp2_mul273   log                     FACTOR      0.0276121          0.005            100         kx2mul              1              0                   1
+pp2_mul274   log                     FACTOR       0.221746          0.005            100         kx2mul              1              0                   1
+pp2_mul275   log                     FACTOR       0.148258          0.005            100         kx2mul              1              0                   1
+pp2_mul276   log                     FACTOR         1.0061          0.005            100         kx2mul              1              0                   1
+pp2_mul277   log                     FACTOR       0.230592          0.005            100         kx2mul              1              0                   1
+pp3_mul1     log                     FACTOR       0.990527            0.1             10         k13mul              1              0                   1
+pp3_mul2     log                     FACTOR        1.31222            0.1             10         k13mul              1              0                   1
+pp3_mul3     log                     FACTOR        1.91143            0.1             10         k13mul              1              0                   1
+pp3_mul4     log                     FACTOR        1.34172            0.1             10         k13mul              1              0                   1
+pp3_mul5     log                     FACTOR        1.20606            0.1             10         k13mul              1              0                   1
+pp3_mul6     log                     FACTOR        1.92747            0.1             10         k13mul              1              0                   1
+pp3_mul7     log                     FACTOR       0.939121            0.1             10         k13mul              1              0                   1
+pp3_mul8     log                     FACTOR       0.808612            0.1             10         k13mul              1              0                   1
+pp3_mul9     log                     FACTOR        1.99312            0.1             10         k13mul              1              0                   1
+pp3_mul10    log                     FACTOR             10            0.1             10         k13mul              1              0                   1
+pp3_mul11    log                     FACTOR        5.44764            0.1             10         k13mul              1              0                   1
+pp3_mul12    log                     FACTOR       0.956685            0.1             10         k13mul              1              0                   1
+pp3_mul13    log                     FACTOR       0.781705            0.1             10         k13mul              1              0                   1
+pp3_mul14    log                     FACTOR       0.570448            0.1             10         k13mul              1              0                   1
+pp3_mul15    log                     FACTOR       0.715418            0.1             10         k13mul              1              0                   1
+pp3_mul16    log                     FACTOR       0.514043            0.1             10         k13mul              1              0                   1
+pp3_mul17    log                     FACTOR       0.343699            0.1             10         k13mul              1              0                   1
+pp3_mul18    log                     FACTOR       0.541925            0.1             10         k13mul              1              0                   1
+pp3_mul19    log                     FACTOR       0.721065            0.1             10         k13mul              1              0                   1
+pp3_mul20    log                     FACTOR       0.698767            0.1             10         k13mul              1              0                   1
+pp3_mul21    log                     FACTOR       0.390088            0.1             10         k13mul              1              0                   1
+pp3_mul22    log                     FACTOR       0.383426            0.1             10         k13mul              1              0                   1
+pp3_mul23    log                     FACTOR       0.383644            0.1             10         k13mul              1              0                   1
+pp3_mul24    log                     FACTOR       0.564924            0.1             10         k13mul              1              0                   1
+pp3_mul25    log                     FACTOR       0.814656            0.1             10         k13mul              1              0                   1
+pp3_mul26    log                     FACTOR        0.41296            0.1             10         k13mul              1              0                   1
+pp3_mul27    log                     FACTOR       0.253137            0.1             10         k13mul              1              0                   1
+pp3_mul28    log                     FACTOR       0.766467            0.1             10         k13mul              1              0                   1
+pp3_mul29    log                     FACTOR       0.675369            0.1             10         k13mul              1              0                   1
+pp3_mul30    log                     FACTOR       0.369676            0.1             10         k13mul              1              0                   1
+pp3_mul31    log                     FACTOR       0.684172            0.1             10         k13mul              1              0                   1
+pp3_mul32    log                     FACTOR       0.719218            0.1             10         k13mul              1              0                   1
+pp3_mul33    log                     FACTOR       0.848647            0.1             10         k13mul              1              0                   1
+pp3_mul34    log                     FACTOR       0.784438            0.1             10         k13mul              1              0                   1
+pp3_mul35    log                     FACTOR       0.796856            0.1             10         k13mul              1              0                   1
+pp3_mul36    log                     FACTOR       0.326893            0.1             10         k13mul              1              0                   1
+pp3_mul37    log                     FACTOR       0.542529            0.1             10         k13mul              1              0                   1
+pp3_mul38    log                     FACTOR       0.672142            0.1             10         k13mul              1              0                   1
+pp3_mul39    log                     FACTOR       0.796525            0.1             10         k13mul              1              0                   1
+pp3_mul40    log                     FACTOR       0.761453            0.1             10         k13mul              1              0                   1
+pp3_mul41    log                     FACTOR       0.731733            0.1             10         k13mul              1              0                   1
+pp3_mul42    log                     FACTOR       0.543286            0.1             10         k13mul              1              0                   1
+pp3_mul43    log                     FACTOR       0.365219            0.1             10         k13mul              1              0                   1
+pp3_mul44    log                     FACTOR        0.49775            0.1             10         k13mul              1              0                   1
+pp3_mul45    log                     FACTOR       0.552607            0.1             10         k13mul              1              0                   1
+pp3_mul46    log                     FACTOR            0.1            0.1             10         k13mul              1              0                   1
+pp3_mul47    log                     FACTOR        0.83444            0.1             10         k13mul              1              0                   1
+pp3_mul48    log                     FACTOR        1.61317            0.1             10         k13mul              1              0                   1
+pp3_mul49    log                     FACTOR       0.486712            0.1             10         k13mul              1              0                   1
+pp3_mul50    log                     FACTOR       0.974011            0.1             10         k13mul              1              0                   1
+pp3_mul51    log                     FACTOR        1.44445            0.1             10         k13mul              1              0                   1
+pp3_mul52    log                     FACTOR       0.461924            0.1             10         k13mul              1              0                   1
+pp3_mul53    log                     FACTOR        0.71128            0.1             10         k13mul              1              0                   1
+pp3_mul54    log                     FACTOR       0.623702            0.1             10         k13mul              1              0                   1
+pp3_mul55    log                     FACTOR       0.614083            0.1             10         k13mul              1              0                   1
+pp3_mul56    log                     FACTOR       0.646452            0.1             10         k13mul              1              0                   1
+pp3_mul57    log                     FACTOR         0.4411            0.1             10         k13mul              1              0                   1
+pp3_mul58    log                     FACTOR       0.584241            0.1             10         k13mul              1              0                   1
+pp3_mul59    log                     FACTOR        1.05087            0.1             10         k13mul              1              0                   1
+pp3_mul60    log                     FACTOR       0.806641            0.1             10         k13mul              1              0                   1
+pp3_mul61    log                     FACTOR        1.26192            0.1             10         k13mul              1              0                   1
+pp3_mul62    log                     FACTOR        2.18619            0.1             10         k13mul              1              0                   1
+pp3_mul63    log                     FACTOR       0.289433            0.1             10         k13mul              1              0                   1
+pp3_mul64    log                     FACTOR       0.631139            0.1             10         k13mul              1              0                   1
+pp3_mul65    log                     FACTOR       0.620291            0.1             10         k13mul              1              0                   1
+pp3_mul66    log                     FACTOR       0.800685            0.1             10         k13mul              1              0                   1
+pp3_mul67    log                     FACTOR        1.00734            0.1             10         k13mul              1              0                   1
+pp3_vanis1   log                     FACTOR        10.0187              1            100          vanis              1              0                   1
+pp3_vanis2   log                     FACTOR        9.05625              1            100          vanis              1              0                   1
+pp3_vanis3   log                     FACTOR        8.54409              1            100          vanis              1              0                   1
+pp3_vanis4   log                     FACTOR        9.66042              1            100          vanis              1              0                   1
+pp3_vanis5   log                     FACTOR        9.98329              1            100          vanis              1              0                   1
+pp3_vanis6   log                     FACTOR        9.55003              1            100          vanis              1              0                   1
+pp3_vanis7   log                     FACTOR        10.3386              1            100          vanis              1              0                   1
+pp3_vanis8   log                     FACTOR         10.732              1            100          vanis              1              0                   1
+pp3_vanis9   log                     FACTOR        8.25231              1            100          vanis              1              0                   1
+pp3_vanis10  log                     FACTOR        8.66132              1            100          vanis              1              0                   1
+pp3_vanis11  log                     FACTOR        9.43697              1            100          vanis              1              0                   1
+pp3_vanis12  log                     FACTOR        10.4449              1            100          vanis              1              0                   1
+pp3_vanis13  log                     FACTOR        11.0328              1            100          vanis              1              0                   1
+pp3_vanis14  log                     FACTOR        12.5603              1            100          vanis              1              0                   1
+pp3_vanis15  log                     FACTOR        11.6363              1            100          vanis              1              0                   1
+pp3_vanis16  log                     FACTOR        13.4544              1            100          vanis              1              0                   1
+pp3_vanis17  log                     FACTOR        15.6218              1            100          vanis              1              0                   1
+pp3_vanis18  log                     FACTOR        13.6326              1            100          vanis              1              0                   1
+pp3_vanis19  log                     FACTOR        11.4423              1            100          vanis              1              0                   1
+pp3_vanis20  log                     FACTOR        16.9948              1            100          vanis              1              0                   1
+pp3_vanis21  log                     FACTOR        16.5567              1            100          vanis              1              0                   1
+pp3_vanis22  log                     FACTOR        14.0173              1            100          vanis              1              0                   1
+pp3_vanis23  log                     FACTOR        25.6719              1            100          vanis              1              0                   1
+pp3_vanis24  log                     FACTOR        14.7709              1            100          vanis              1              0                   1
+pp3_vanis25  log                     FACTOR        12.3937              1            100          vanis              1              0                   1
+pp3_vanis26  log                     FACTOR        18.8819              1            100          vanis              1              0                   1
+pp3_vanis27  log                     FACTOR        13.5231              1            100          vanis              1              0                   1
+pp3_vanis28  log                     FACTOR        7.68526              1            100          vanis              1              0                   1
+pp3_vanis29  log                     FACTOR        8.94145              1            100          vanis              1              0                   1
+pp3_vanis30  log                     FACTOR        11.1937              1            100          vanis              1              0                   1
+pp3_vanis31  log                     FACTOR        11.7393              1            100          vanis              1              0                   1
+pp3_vanis32  log                     FACTOR        10.6557              1            100          vanis              1              0                   1
+pp3_vanis33  log                     FACTOR        11.0846              1            100          vanis              1              0                   1
+pp3_vanis34  log                     FACTOR        10.6705              1            100          vanis              1              0                   1
+pp3_vanis35  log                     FACTOR         10.725              1            100          vanis              1              0                   1
+pp3_vanis36  log                     FACTOR         11.023              1            100          vanis              1              0                   1
+pp3_vanis37  log                     FACTOR        8.58728              1            100          vanis              1              0                   1
+pp3_vanis38  log                     FACTOR        9.25001              1            100          vanis              1              0                   1
+pp3_vanis39  log                     FACTOR        10.0038              1            100          vanis              1              0                   1
+pp3_vanis40  log                     FACTOR        9.49349              1            100          vanis              1              0                   1
+pp3_vanis41  log                     FACTOR        9.70551              1            100          vanis              1              0                   1
+pp3_vanis42  log                     FACTOR        10.7773              1            100          vanis              1              0                   1
+pp3_vanis43  log                     FACTOR        9.79771              1            100          vanis              1              0                   1
+pp3_vanis44  log                     FACTOR        7.73222              1            100          vanis              1              0                   1
+pp3_vanis45  log                     FACTOR        14.8369              1            100          vanis              1              0                   1
+pp3_vanis46  log                     FACTOR        22.5501              1            100          vanis              1              0                   1
+pp3_vanis47  log                     FACTOR        10.3541              1            100          vanis              1              0                   1
+pp3_vanis48  log                     FACTOR        7.73583              1            100          vanis              1              0                   1
+pp3_vanis49  log                     FACTOR        12.8913              1            100          vanis              1              0                   1
+pp3_vanis50  log                     FACTOR        9.67688              1            100          vanis              1              0                   1
+pp3_vanis51  log                     FACTOR        9.18932              1            100          vanis              1              0                   1
+pp3_vanis52  log                     FACTOR        10.8437              1            100          vanis              1              0                   1
+pp3_vanis53  log                     FACTOR        10.6046              1            100          vanis              1              0                   1
+pp3_vanis54  log                     FACTOR        11.2523              1            100          vanis              1              0                   1
+pp3_vanis55  log                     FACTOR        10.5475              1            100          vanis              1              0                   1
+pp3_vanis56  log                     FACTOR        13.0403              1            100          vanis              1              0                   1
+pp3_vanis57  log                     FACTOR        15.8658              1            100          vanis              1              0                   1
+pp3_vanis58  log                     FACTOR        12.7192              1            100          vanis              1              0                   1
+pp3_vanis59  log                     FACTOR        10.4144              1            100          vanis              1              0                   1
+pp3_vanis60  log                     FACTOR        11.5254              1            100          vanis              1              0                   1
+pp3_vanis61  log                     FACTOR        9.82082              1            100          vanis              1              0                   1
+pp3_vanis62  log                     FACTOR        9.67457              1            100          vanis              1              0                   1
+pp3_vanis63  log                     FACTOR        15.1068              1            100          vanis              1              0                   1
+pp3_vanis64  log                     FACTOR        10.0169              1            100          vanis              1              0                   1
+pp3_vanis65  log                     FACTOR        10.9573              1            100          vanis              1              0                   1
+pp3_vanis66  log                     FACTOR        10.8349              1            100          vanis              1              0                   1
+pp3_vanis67  log                     FACTOR        9.59564              1            100          vanis              1              0                   1
+pp3_rech1    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech2    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech3    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech4    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech5    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech6    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech7    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech8    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech9    log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech10   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech11   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech12   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech13   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech14   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech15   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech16   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech17   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech18   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech19   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech20   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech21   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech22   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech23   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech24   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech25   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech26   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech27   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech28   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech29   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech30   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech31   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech32   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech33   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech34   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech35   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech36   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech37   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech38   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech39   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech40   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech41   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech42   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech43   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech44   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech45   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech46   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech47   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech48   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech49   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech50   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech51   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech52   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech53   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech54   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech55   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech56   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech57   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech58   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech59   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech60   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech61   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech62   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech63   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech64   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech65   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech66   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+pp3_rech67   log                     FACTOR      0.0037498         0.0015          0.006        rechmul              1              0                   1
+ppr_mul1     log                     FACTOR        2.53632         0.0001           1000          rcmul              1              0                   1
+ppr_mul2     log                     FACTOR        6.73362         0.0001           1000          rcmul              1              0                   1
+ppr_mul3     log                     FACTOR        3.07882         0.0001           1000          rcmul              1              0                   1
+ppr_mul4     log                     FACTOR        1.93724         0.0001           1000          rcmul              1              0                   1
+ppr_mul5     log                     FACTOR        4.49468         0.0001           1000          rcmul              1              0                   1
+ppr_mul6     log                     FACTOR        8.50767         0.0001           1000          rcmul              1              0                   1
+ppr_mul7     log                     FACTOR        2.05814         0.0001           1000          rcmul              1              0                   1
+ppr_mul8     log                     FACTOR       0.942002         0.0001           1000          rcmul              1              0                   1
+ppr_mul9     log                     FACTOR         1.4684         0.0001           1000          rcmul              1              0                   1
+ppr_mul10    log                     FACTOR       0.850939         0.0001           1000          rcmul              1              0                   1
+ppr_mul11    log                     FACTOR        1.05063         0.0001           1000          rcmul              1              0                   1
+ppr_mul12    log                     FACTOR        1.06572         0.0001           1000          rcmul              1              0                   1
+ppr_mul13    log                     FACTOR         1.0535         0.0001           1000          rcmul              1              0                   1
+ppr_mul14    log                     FACTOR        1.17786         0.0001           1000          rcmul              1              0                   1
+ppr_mul15    log                     FACTOR       0.871208         0.0001           1000          rcmul              1              0                   1
+ppr_mul16    log                     FACTOR        1.07104         0.0001           1000          rcmul              1              0                   1
+ppr_mul17    log                     FACTOR        2.12103         0.0001           1000          rcmul              1              0                   1
+ppr_mul18    log                     FACTOR        1.69383         0.0001           1000          rcmul              1              0                   1
+ppr_mul19    log                     FACTOR        1.17504         0.0001           1000          rcmul              1              0                   1
+ppr_mul20    log                     FACTOR       0.765204         0.0001           1000          rcmul              1              0                   1
+ppr_mul21    log                     FACTOR       0.614064         0.0001           1000          rcmul              1              0                   1
+ppr_mul22    log                     FACTOR      0.0346517         0.0001           1000          rcmul              1              0                   1
+ppr_mul23    log                     FACTOR       0.415557         0.0001           1000          rcmul              1              0                   1
+ppr_mul24    log                     FACTOR       0.760661         0.0001           1000          rcmul              1              0                   1
+ppr_mul25    log                     FACTOR       0.892448         0.0001           1000          rcmul              1              0                   1
+ppr_mul26    log                     FACTOR       0.853852         0.0001           1000          rcmul              1              0                   1
+ppr_mul27    log                     FACTOR       0.997741         0.0001           1000          rcmul              1              0                   1
+ppr_mul28    log                     FACTOR       0.878629         0.0001           1000          rcmul              1              0                   1
+ppr_mul29    log                     FACTOR       0.952703         0.0001           1000          rcmul              1              0                   1
+ppr_mul30    log                     FACTOR        1.07461         0.0001           1000          rcmul              1              0                   1
+ppr_mul31    log                     FACTOR        1.07305         0.0001           1000          rcmul              1              0                   1
+ppr_mul32    log                     FACTOR        0.94708         0.0001           1000          rcmul              1              0                   1
+ppr_mul33    log                     FACTOR        1.13795         0.0001           1000          rcmul              1              0                   1
+ppr_mul34    log                     FACTOR        1.53932         0.0001           1000          rcmul              1              0                   1
+ppr_mul35    log                     FACTOR        2.45458         0.0001           1000          rcmul              1              0                   1
+ppr_mul36    log                     FACTOR        9.13154         0.0001           1000          rcmul              1              0                   1
+ppr_mul37    log                     FACTOR        5.95232         0.0001           1000          rcmul              1              0                   1
+ppr_mul38    log                     FACTOR        1.25026         0.0001           1000          rcmul              1              0                   1
+ppr_mul39    log                     FACTOR       0.891904         0.0001           1000          rcmul              1              0                   1
+ppr_mul40    log                     FACTOR       0.530884         0.0001           1000          rcmul              1              0                   1
+ppr_mul41    log                     FACTOR       0.800221         0.0001           1000          rcmul              1              0                   1
+ppr_mul42    log                     FACTOR        0.85002         0.0001           1000          rcmul              1              0                   1
+ppr_mul43    log                     FACTOR       0.926352         0.0001           1000          rcmul              1              0                   1
+ppr_mul44    log                     FACTOR       0.891889         0.0001           1000          rcmul              1              0                   1
+ppr_mul45    log                     FACTOR       0.973796         0.0001           1000          rcmul              1              0                   1
+ppr_mul46    log                     FACTOR       0.959384         0.0001           1000          rcmul              1              0                   1
+ppr_mul47    log                     FACTOR        0.98558         0.0001           1000          rcmul              1              0                   1
+ppr_mul48    log                     FACTOR        1.03033         0.0001           1000          rcmul              1              0                   1
+ppr_mul49    log                     FACTOR       0.977662         0.0001           1000          rcmul              1              0                   1
+ppr_mul50    log                     FACTOR        1.02289         0.0001           1000          rcmul              1              0                   1
+ppr_mul51    log                     FACTOR        1.01961         0.0001           1000          rcmul              1              0                   1
+ppr_mul52    log                     FACTOR        2.86855         0.0001           1000          rcmul              1              0                   1
+ppr_mul53    log                     FACTOR        3.39918         0.0001           1000          rcmul              1              0                   1
+ppr_mul54    log                     FACTOR        2.22302         0.0001           1000          rcmul              1              0                   1
+ppr_mul55    log                     FACTOR       0.731678         0.0001           1000          rcmul              1              0                   1
+ppr_mul56    log                     FACTOR        1.05602         0.0001           1000          rcmul              1              0                   1
+ppr_mul57    log                     FACTOR        1.85325         0.0001           1000          rcmul              1              0                   1
+ppr_mul58    log                     FACTOR        1.38304         0.0001           1000          rcmul              1              0                   1
+ppr_mul59    log                     FACTOR        1.19726         0.0001           1000          rcmul              1              0                   1
+ppr_mul60    log                     FACTOR        1.28564         0.0001           1000          rcmul              1              0                   1
+ppr_mul61    log                     FACTOR        1.32836         0.0001           1000          rcmul              1              0                   1
+ppr_mul62    log                     FACTOR        1.05352         0.0001           1000          rcmul              1              0                   1
+ppr_mul63    log                     FACTOR        13.5568         0.0001           1000          rcmul              1              0                   1
+ppr_mul64    log                     FACTOR        37.3589         0.0001           1000          rcmul              1              0                   1
+ppr_mul65    log                     FACTOR        50.3695         0.0001           1000          rcmul              1              0                   1
+ppr_mul66    log                     FACTOR        6.61172         0.0001           1000          rcmul              1              0                   1
+ppr_mul67    log                     FACTOR        3.37705         0.0001           1000          rcmul              1              0                   1
+ppr_mul68    log                     FACTOR        3.13965         0.0001           1000          rcmul              1              0                   1
+ppr_mul69    log                     FACTOR        1.87945         0.0001           1000          rcmul              1              0                   1
+ppr_mul70    log                     FACTOR        1.56598         0.0001           1000          rcmul              1              0                   1
+ppr_mul71    log                     FACTOR        1.28393         0.0001           1000          rcmul              1              0                   1
+ppr_mul72    log                     FACTOR        2.39644         0.0001           1000          rcmul              1              0                   1
+ppr_mul73    log                     FACTOR          1.316         0.0001           1000          rcmul              1              0                   1
+ppr_mul74    log                     FACTOR       0.876853         0.0001           1000          rcmul              1              0                   1
+ppr_mul75    log                     FACTOR       0.878894         0.0001           1000          rcmul              1              0                   1
+ppr_mul76    log                     FACTOR       0.879465         0.0001           1000          rcmul              1              0                   1
+ppr_mul77    log                     FACTOR        1.05577         0.0001           1000          rcmul              1              0                   1
+ppr_mul78    log                     FACTOR        1.48436         0.0001           1000          rcmul              1              0                   1
+ppr_mul79    log                     FACTOR        1.10465         0.0001           1000          rcmul              1              0                   1
+ppr_mul80    log                     FACTOR       0.906917         0.0001           1000          rcmul              1              0                   1
+ppr_mul81    log                     FACTOR        3.10577         0.0001           1000          rcmul              1              0                   1
+ppr_mul82    log                     FACTOR        4.43936         0.0001           1000          rcmul              1              0                   1
+ppr_mul83    log                     FACTOR        2.33139         0.0001           1000          rcmul              1              0                   1
+ppr_mul84    log                     FACTOR        1.36873         0.0001           1000          rcmul              1              0                   1
+ppr_mul85    log                     FACTOR        1.17744         0.0001           1000          rcmul              1              0                   1
+ppr_mul86    log                     FACTOR        1.49226         0.0001           1000          rcmul              1              0                   1
+ppr_mul87    log                     FACTOR        1.55321         0.0001           1000          rcmul              1              0                   1
+ppr_mul88    log                     FACTOR        1.24286         0.0001           1000          rcmul              1              0                   1
+ppr_mul89    log                     FACTOR        1.07618         0.0001           1000          rcmul              1              0                   1
+ppr_mul90    log                     FACTOR       0.933954         0.0001           1000          rcmul              1              0                   1
+ppr_mul91    log                     FACTOR        1.05671         0.0001           1000          rcmul              1              0                   1
+ppr_mul92    log                     FACTOR        1.04086         0.0001           1000          rcmul              1              0                   1
+ppr_mul93    log                     FACTOR         1.0521         0.0001           1000          rcmul              1              0                   1
+ppr_mul94    log                     FACTOR        1.09225         0.0001           1000          rcmul              1              0                   1
+ppr_mul95    log                     FACTOR        0.97362         0.0001           1000          rcmul              1              0                   1
+ppr_mul96    log                     FACTOR        1.19957         0.0001           1000          rcmul              1              0                   1
+ppr_mul97    log                     FACTOR        1.02288         0.0001           1000          rcmul              1              0                   1
+ppr_mul98    log                     FACTOR        1.08249         0.0001           1000          rcmul              1              0                   1
+ppr_mul99    log                     FACTOR        7.85782         0.0001           1000          rcmul              1              0                   1
+ppr_mul100   log                     FACTOR        10.8765         0.0001           1000          rcmul              1              0                   1
+ppr_mul101   log                     FACTOR         7.2144         0.0001           1000          rcmul              1              0                   1
+ppr_mul102   log                     FACTOR        4.30301         0.0001           1000          rcmul              1              0                   1
+ppr_mul103   log                     FACTOR        2.72966         0.0001           1000          rcmul              1              0                   1
+ppr_mul104   log                     FACTOR        1.81765         0.0001           1000          rcmul              1              0                   1
+ppr_mul105   log                     FACTOR        1.77981         0.0001           1000          rcmul              1              0                   1
+ppr_mul106   log                     FACTOR        1.56918         0.0001           1000          rcmul              1              0                   1
+ppr_mul107   log                     FACTOR        1.72583         0.0001           1000          rcmul              1              0                   1
+ppr_mul108   log                     FACTOR        1.64562         0.0001           1000          rcmul              1              0                   1
+ppr_mul109   log                     FACTOR       0.992287         0.0001           1000          rcmul              1              0                   1
+ppr_mul110   log                     FACTOR        1.08911         0.0001           1000          rcmul              1              0                   1
+ppr_mul111   log                     FACTOR        1.08052         0.0001           1000          rcmul              1              0                   1
+ppr_mul112   log                     FACTOR        1.19094         0.0001           1000          rcmul              1              0                   1
+ppr_mul113   log                     FACTOR        1.63203         0.0001           1000          rcmul              1              0                   1
+ppr_mul114   log                     FACTOR        1.68453         0.0001           1000          rcmul              1              0                   1
+ppr_mul115   log                     FACTOR        1.10801         0.0001           1000          rcmul              1              0                   1
+ppr_mul116   log                     FACTOR       0.678942         0.0001           1000          rcmul              1              0                   1
+ppr_mul117   log                     FACTOR        0.64739         0.0001           1000          rcmul              1              0                   1
+ppr_mul118   log                     FACTOR        1.63671         0.0001           1000          rcmul              1              0                   1
+ppr_mul119   log                     FACTOR        1.93131         0.0001           1000          rcmul              1              0                   1
+ppr_mul120   log                     FACTOR         1.9278         0.0001           1000          rcmul              1              0                   1
+ppr_mul121   log                     FACTOR        1.77981         0.0001           1000          rcmul              1              0                   1
+ppr_mul122   log                     FACTOR         1.9208         0.0001           1000          rcmul              1              0                   1
+ppr_mul123   log                     FACTOR        1.71694         0.0001           1000          rcmul              1              0                   1
+ppr_mul124   log                     FACTOR       0.967797         0.0001           1000          rcmul              1              0                   1
+ppr_mul125   log                     FACTOR        1.07917         0.0001           1000          rcmul              1              0                   1
+ppr_mul126   log                     FACTOR        1.16248         0.0001           1000          rcmul              1              0                   1
+ppr_mul127   log                     FACTOR       0.972303         0.0001           1000          rcmul              1              0                   1
+ppr_mul128   log                     FACTOR        1.00972         0.0001           1000          rcmul              1              0                   1
+ppr_mul129   log                     FACTOR       0.962239         0.0001           1000          rcmul              1              0                   1
+ppr_mul130   log                     FACTOR       0.830785         0.0001           1000          rcmul              1              0                   1
+ppr_mul131   log                     FACTOR        1.02176         0.0001           1000          rcmul              1              0                   1
+ppr_mul132   log                     FACTOR        1.27701         0.0001           1000          rcmul              1              0                   1
+ppr_mul133   log                     FACTOR        1.69759         0.0001           1000          rcmul              1              0                   1
+ppr_mul134   log                     FACTOR        2.02233         0.0001           1000          rcmul              1              0                   1
+ppr_mul135   log                     FACTOR        3.04523         0.0001           1000          rcmul              1              0                   1
+ppr_mul136   log                     FACTOR        2.84707         0.0001           1000          rcmul              1              0                   1
+ppr_mul137   log                     FACTOR        2.00305         0.0001           1000          rcmul              1              0                   1
+ppr_mul138   log                     FACTOR        0.85075         0.0001           1000          rcmul              1              0                   1
+ppr_mul139   log                     FACTOR       0.631532         0.0001           1000          rcmul              1              0                   1
+ppr_mul140   log                     FACTOR       0.522052         0.0001           1000          rcmul              1              0                   1
+ppr_mul141   log                     FACTOR       0.651103         0.0001           1000          rcmul              1              0                   1
+ppr_mul142   log                     FACTOR       0.814263         0.0001           1000          rcmul              1              0                   1
+ppr_mul143   log                     FACTOR        1.21824         0.0001           1000          rcmul              1              0                   1
+ppr_mul144   log                     FACTOR       0.733677         0.0001           1000          rcmul              1              0                   1
+ppr_mul145   log                     FACTOR        1.46796         0.0001           1000          rcmul              1              0                   1
+ppr_mul146   log                     FACTOR        1.18298         0.0001           1000          rcmul              1              0                   1
+ppr_mul147   log                     FACTOR        3.41681         0.0001           1000          rcmul              1              0                   1
+ppr_add1     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add2     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add3     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add4     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add5     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add6     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add7     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add8     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add9     fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add10    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add11    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add12    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add13    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add14    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add15    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add16    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add17    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add18    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add19    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add20    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add21    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add22    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add23    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add24    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add25    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add26    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add27    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add28    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add29    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add30    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add31    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add32    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add33    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add34    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add35    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add36    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add37    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add38    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add39    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add40    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add41    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add42    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add43    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add44    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add45    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add46    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add47    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add48    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add49    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add50    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add51    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add52    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add53    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add54    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add55    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add56    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add57    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add58    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add59    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add60    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add61    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add62    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add63    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add64    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add65    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add66    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add67    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add68    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add69    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add70    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add71    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add72    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add73    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add74    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add75    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add76    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add77    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add78    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add79    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add80    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add81    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add82    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add83    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add84    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add85    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add86    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add87    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add88    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add89    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add90    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add91    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add92    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add93    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add94    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add95    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add96    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add97    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add98    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add99    fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add100   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add101   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add102   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add103   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add104   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add105   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add106   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add107   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add108   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add109   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add110   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add111   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add112   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add113   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add114   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add115   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add116   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add117   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add118   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add119   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add120   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add121   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add122   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add123   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add124   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add125   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add126   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add127   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add128   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add129   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add130   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add131   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add132   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add133   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add134   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add135   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add136   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add137   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add138   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add139   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add140   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add141   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add142   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add143   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add144   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add145   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add146   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppr_add147   fixed                 RELATIVE        9.99987             -7           11.5          rhadd              1            -10                   1
+ppw_mul1     log                     FACTOR             20           0.05             20           wmul              1              0                   1
+ppw_mul2     log                     FACTOR             20           0.05             20           wmul              1              0                   1
+ppw_mul3     log                     FACTOR             20           0.05             20           wmul              1              0                   1
+ppw_mul4     log                     FACTOR        18.0316           0.05             20           wmul              1              0                   1
+ppw_mul5     log                     FACTOR          10.07           0.05             20           wmul              1              0                   1
+ppw_mul6     log                     FACTOR        7.34781           0.05             20           wmul              1              0                   1
+ppw_mul7     log                     FACTOR        7.23746           0.05             20           wmul              1              0                   1
+ppw_mul8     log                     FACTOR        6.40398           0.05             20           wmul              1              0                   1
+ppw_mul9     log                     FACTOR        4.87496           0.05             20           wmul              1              0                   1
+ppw_mul10    log                     FACTOR        3.31926           0.05             20           wmul              1              0                   1
+ppw_mul11    log                     FACTOR        2.41416           0.05             20           wmul              1              0                   1
+ppw_mul12    log                     FACTOR        2.70712           0.05             20           wmul              1              0                   1
+ppw_mul13    log                     FACTOR        1.61484           0.05             20           wmul              1              0                   1
+ppw_mul14    log                     FACTOR        1.01049           0.05             20           wmul              1              0                   1
+ppw_mul15    log                     FACTOR       0.470606           0.05             20           wmul              1              0                   1
+ppw_mul16    log                     FACTOR       0.341641           0.05             20           wmul              1              0                   1
+ppw_mul17    log                     FACTOR       0.351071           0.05             20           wmul              1              0                   1
+ppw_mul18    log                     FACTOR       0.304559           0.05             20           wmul              1              0                   1
+ppw_mul19    log                     FACTOR       0.254506           0.05             20           wmul              1              0                   1
+ppw_mul20    log                     FACTOR        0.25916           0.05             20           wmul              1              0                   1
+ppw_mul21    log                     FACTOR       0.283992           0.05             20           wmul              1              0                   1
+ppw_mul22    log                     FACTOR       0.296894           0.05             20           wmul              1              0                   1
+ppw_mul23    log                     FACTOR       0.341378           0.05             20           wmul              1              0                   1
+ppw_mul24    log                     FACTOR       0.357267           0.05             20           wmul              1              0                   1
+ppw_mul25    log                     FACTOR       0.325579           0.05             20           wmul              1              0                   1
+ppw_mul26    log                     FACTOR         0.3752           0.05             20           wmul              1              0                   1
+ppw_mul27    log                     FACTOR       0.440111           0.05             20           wmul              1              0                   1
+ppw_mul28    log                     FACTOR        0.54995           0.05             20           wmul              1              0                   1
+ppw_mul29    log                     FACTOR       0.668568           0.05             20           wmul              1              0                   1
+ppw_mul30    log                     FACTOR       0.703274           0.05             20           wmul              1              0                   1
+ppw_mul31    log                     FACTOR       0.729776           0.05             20           wmul              1              0                   1
+ppw_mul32    log                     FACTOR       0.725712           0.05             20           wmul              1              0                   1
+ppw_mul33    log                     FACTOR       0.854088           0.05             20           wmul              1              0                   1
+ppw_mul34    log                     FACTOR        1.20283           0.05             20           wmul              1              0                   1
+ppw_mul35    log                     FACTOR        1.32088           0.05             20           wmul              1              0                   1
+ppw_mul36    log                     FACTOR       0.967497           0.05             20           wmul              1              0                   1
+ppw_mul37    log                     FACTOR       0.981823           0.05             20           wmul              1              0                   1
+ppw_mul38    log                     FACTOR         9.3474           0.05             20           wmul              1              0                   1
+ppw_mul39    log                     FACTOR        8.05672           0.05             20           wmul              1              0                   1
+ppw_mul40    log                     FACTOR        6.36059           0.05             20           wmul              1              0                   1
+ppw_mul41    log                     FACTOR        3.06322           0.05             20           wmul              1              0                   1
+ppw_mul42    log                     FACTOR        2.30913           0.05             20           wmul              1              0                   1
+ppw_mul43    log                     FACTOR        1.96265           0.05             20           wmul              1              0                   1
+ppw_mul44    log                     FACTOR       0.969272           0.05             20           wmul              1              0                   1
+ppw_mul45    log                     FACTOR       0.475451           0.05             20           wmul              1              0                   1
+ppw_mul46    log                     FACTOR       0.362311           0.05             20           wmul              1              0                   1
+ppw_mul47    log                     FACTOR       0.457859           0.05             20           wmul              1              0                   1
+ppw_mul48    log                     FACTOR       0.466776           0.05             20           wmul              1              0                   1
+ppw_mul49    log                     FACTOR       0.527712           0.05             20           wmul              1              0                   1
+ppw_mul50    log                     FACTOR       0.437584           0.05             20           wmul              1              0                   1
+ppw_mul51    log                     FACTOR       0.377436           0.05             20           wmul              1              0                   1
+ppw_mul52    log                     FACTOR       0.362647           0.05             20           wmul              1              0                   1
+ppw_mul53    log                     FACTOR       0.548269           0.05             20           wmul              1              0                   1
+ppw_mul54    log                     FACTOR       0.537927           0.05             20           wmul              1              0                   1
+ppw_mul55    log                     FACTOR       0.719674           0.05             20           wmul              1              0                   1
+ppw_mul56    log                     FACTOR       0.825365           0.05             20           wmul              1              0                   1
+ppw_mul57    log                     FACTOR       0.946236           0.05             20           wmul              1              0                   1
+ppw_mul58    log                     FACTOR       0.760065           0.05             20           wmul              1              0                   1
+ppw_mul59    log                     FACTOR        0.84135           0.05             20           wmul              1              0                   1
+ppw_mul60    log                     FACTOR        1.01284           0.05             20           wmul              1              0                   1
+ppw_mul61    log                     FACTOR        1.05509           0.05             20           wmul              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE               GROUP              WEIGHT
+head_123_1                          250.8               heads            0.658638
+head_14_1                           254.3               heads            0.658638
+head_142_1                          235.4               heads            0.658638
+head_143_1                            235               heads            0.658638
+head_144_1                            235               heads            0.658638
+head_145_1                          235.1               heads            0.658638
+head_146_1                          235.1               heads            0.658638
+head_147_1                          235.5               heads            0.658638
+head_15_1                           250.1               heads            0.658638
+head_150_1                          237.8               heads            0.658638
+head_151_1                            237               heads            0.658638
+head_152_1                          238.7               heads            0.658638
+head_160_1                          255.3               heads            0.658638
+head_172_1                          253.5               heads            0.658638
+head_179_1                          242.9               heads            0.658638
+head_18_1                           250.4               heads            0.658638
+head_19_1                           249.9               heads            0.658638
+head_20_1                           250.2               heads            0.658638
+head_204_1                          245.1               heads                   0
+head_223_1                          236.5               heads            0.658638
+head_31_1                           265.1               heads            0.658638
+head_32_1                           264.1               heads            0.658638
+head_33_1                           265.1               heads            0.658638
+head_36_1                           261.9               heads            0.658638
+head_37_1                           260.9               heads            0.658638
+head_38_1                           260.4               heads            0.658638
+head_39_1                           261.4               heads            0.658638
+head_41_1                           260.3               heads            0.658638
+head_42_1                           260.2               heads            0.658638
+head_50_1                             263               heads            0.658638
+head_54_1                           253.1               heads            0.658638
+head_55_1                           252.9               heads            0.658638
+head_56_1                           252.5               heads            0.658638
+head_72_1                           254.3               heads            0.658638
+head_100_1                          267.7               heads            0.658638
+head_101_1                          269.3               heads            0.658638
+head_103_1                          273.2               heads            0.658638
+head_137_1                            227               heads            0.658638
+head_140_1                            230               heads            0.658638
+head_153_1                          248.1               heads            0.658638
+head_163_1                          249.8               heads            0.658638
+head_166_1                          250.2               heads            0.658638
+head_171_1                          259.1               heads            0.658638
+head_173_1                          245.1               heads            0.658638
+head_174_1                          236.3               heads            0.658638
+head_175_1                          243.9               heads            0.658638
+head_176_1                          242.7               heads            0.658638
+head_180_1                          241.8               heads            0.658638
+head_197_1                          250.1               heads            0.658638
+head_198_1                            247               heads            0.658638
+head_199_1                            241               heads            0.658638
+head_220_1                          252.8               heads            0.658638
+head_43_1                           260.5               heads            0.658638
+head_44_1                           256.3               heads            0.658638
+head_45_1                           256.4               heads            0.658638
+head_58_1                           251.6               heads            0.658638
+head_78_1                             242               heads                   0
+head_89_1                           244.4               heads            0.658638
+head_90_1                           247.4               heads            0.658638
+head_91_1                           246.2               heads            0.658638
+head_92_1                           245.6               heads            0.658638
+head_93_1                           246.2               heads            0.658638
+head_94_1                           247.9               heads            0.658638
+head_95_1                           256.3               heads            0.658638
+head_98_1                           260.9               heads            0.658638
+head_1_1                            236.6               heads            0.658638
+head_104_1                          272.9               heads            0.658638
+head_126_1                          235.7               heads            0.658638
+head_128_1                          250.6               heads            0.658638
+head_129_1                          233.2               heads            0.658638
+head_130_1                          231.4               heads            0.658638
+head_131_1                          233.7               heads            0.658638
+head_132_1                          235.1               heads            0.658638
+head_133_1                          235.1               heads            0.658638
+head_134_1                          235.4               heads            0.658638
+head_135_1                          231.4               heads            0.658638
+head_136_1                          234.1               heads            0.658638
+head_154_1                          258.8               heads            0.658638
+head_164_1                          249.8               heads            0.658638
+head_165_1                            250               heads            0.658638
+head_188_1                          251.9               heads            0.658638
+head_194_1                          258.4               heads            0.658638
+head_195_1                          254.4               heads            0.658638
+head_196_1                          254.5               heads            0.658638
+head_2_1                            235.3               heads            0.658638
+head_202_1                          253.5               heads            0.658638
+head_208_1                          228.7               heads            0.658638
+head_209_1                          264.6               heads            0.658638
+head_213_1                          258.3               heads            0.658638
+head_214_1                          260.1               heads            0.658638
+head_215_1                          261.3               heads            0.658638
+head_216_1                          258.4               heads            0.658638
+head_217_1                          251.8               heads            0.658638
+head_219_1                          255.4               heads            0.658638
+head_221_1                          257.4               heads            0.658638
+head_222_1                          250.8               heads            0.658638
+head_23_1                           247.4               heads            0.658638
+head_24_1                           247.1               heads            0.658638
+head_25_1                           245.3               heads            0.658638
+head_3_1                            235.1               heads            0.658638
+head_4_1                              235               heads            0.658638
+head_46_1                           259.8               heads            0.658638
+head_47_1                           252.6               heads            0.658638
+head_49_1                           252.9               heads            0.658638
+head_57_1                           258.6               heads            0.658638
+head_6_1                            237.7               heads            0.658638
+head_7_1                              237               heads            0.658638
+head_74_1                             257               heads            0.658638
+head_77_1                           235.4               heads            0.658638
+head_8_1                            236.8               heads            0.658638
+head_84_1                           235.3               heads            0.658638
+head_87_1                           244.6               heads            0.658638
+head_9_1                              256               heads            0.658638
+head_97_1                             264               heads            0.658638
+riv_reach7_1                      -375840               river                   0
+riv_reach4_1                      -3974.4               river         8.16333e-05
+riv_reach3_1                       231552               river         8.16333e-05
+riv_reach6_1                       -18144               river         8.16333e-05
+riv_reach5_1                        40608               river         8.16333e-05
+riv_reach2_1                      -258336             g_river               5e-05
+pump_hatchery4_1                  -153965             pumping         0.000323424
+pump_hatchery5_1                  -153965             pumping         0.000323424
+pump_mfgco_1                       -48384             pumping         0.000323424
+pump_wire-cableco_1                -22727             pumping         0.000323424
+pump_keyes_1                            0             pumping                   0
+pump_savage_1                           0             pumping                   0
+drain_5_1                               0               drain              0.0008
+drain_6_1                               0               drain              0.0008
+drain_14_1                              0               drain              0.0008
+drain_15_1                              0               drain              0.0008
+drain_7_1                               0               drain              0.0008
+drain_13_1                              0               drain              0.0008
+drain_3_1                               0               drain              0.0008
+drain_4_1                               0               drain              0.0008
+drain_21_1                              0               drain              0.0008
+drain_22_1                              0               drain              0.0008
+drain_23_1                              0               drain              0.0008
+drain_24_1                              0               drain              0.0008
+drain_25_1                              0               drain              0.0008
+drain_31_1                              0               drain              0.0008
+drain_32_1                              0               drain              0.0008
+drain_33_1                              0               drain              0.0008
+drain_20_1                              0               drain              0.0008
+drain_30_1                              0               drain              0.0008
+drain_38_1                              0               drain              0.0008
+drain_39_1                              0               drain              0.0008
+drain_40_1                              0               drain              0.0008
+drain_41_1                              0               drain              0.0008
+drain_42_1                              0               drain              0.0008
+drain_43_1                              0               drain              0.0008
+drain_48_1                              0               drain              0.0008
+drain_49_1                              0               drain              0.0008
+drain_50_1                              0               drain              0.0008
+drain_47_1                              0               drain              0.0008
+drain_46_1                              0               drain              0.0008
+drain_56_1                              0               drain              0.0008
+drain_57_1                              0               drain              0.0008
+drain_58_1                              0               drain              0.0008
+drain_59_1                              0               drain              0.0008
+drain_60_1                              0               drain              0.0008
+drain_61_1                              0               drain              0.0008
+drain_64_1                              0               drain              0.0008
+drain_65_1                              0               drain              0.0008
+drain_66_1                              0               drain              0.0008
+drain_67_1                              0               drain              0.0008
+drain_68_1                              0               drain              0.0008
+drain_63_1                              0               drain              0.0008
+drain_74_1                              0               drain              0.0008
+drain_75_1                              0               drain              0.0008
+drain_76_1                              0               drain              0.0008
+drain_77_1                              0               drain              0.0008
+drain_78_1                              0               drain              0.0008
+drain_79_1                              0               drain              0.0008
+drain_81_1                              0               drain              0.0008
+drain_82_1                              0               drain              0.0008
+drain_83_1                              0               drain              0.0008
+drain_84_1                              0               drain              0.0008
+drain_85_1                              0               drain              0.0008
+drain_86_1                              0               drain              0.0008
+drain_93_1                              0               drain              0.0008
+drain_94_1                              0               drain              0.0008
+drain_95_1                              0               drain              0.0008
+drain_96_1                              0               drain              0.0008
+drain_97_1                              0               drain              0.0008
+drain_99_1                              0               drain              0.0008
+drain_100_1                             0               drain              0.0008
+drain_101_1                             0               drain              0.0008
+drain_102_1                             0               drain              0.0008
+drain_103_1                             0               drain              0.0008
+drain_104_1                             0               drain              0.0008
+drain_98_1                              0               drain              0.0008
+drain_92_1                              0               drain              0.0008
+drain_105_1                             0               drain              0.0008
+drain_111_1                             0               drain              0.0008
+drain_112_1                             0               drain              0.0008
+drain_113_1                             0               drain              0.0008
+drain_114_1                             0               drain              0.0008
+drain_115_1                             0               drain              0.0008
+drain_116_1                             0               drain              0.0008
+drain_117_1                             0               drain              0.0008
+drain_118_1                             0               drain              0.0008
+drain_119_1                             0               drain              0.0008
+drain_120_1                             0               drain              0.0008
+drain_121_1                             0               drain              0.0008
+drain_122_1                             0               drain              0.0008
+drain_123_1                             0               drain              0.0008
+drain_110_1                             0               drain              0.0008
+drain_128_1                             0               drain              0.0008
+drain_129_1                             0               drain              0.0008
+drain_130_1                             0               drain              0.0008
+drain_131_1                             0               drain              0.0008
+drain_132_1                             0               drain              0.0008
+drain_133_1                             0               drain              0.0008
+drain_134_1                             0               drain              0.0008
+drain_135_1                             0               drain              0.0008
+drain_136_1                             0               drain              0.0008
+drain_137_1                             0               drain              0.0008
+drain_138_1                             0               drain              0.0008
+drain_139_1                             0               drain              0.0008
+drain_140_1                             0               drain              0.0008
+drain_141_1                             0               drain              0.0008
+drain_145_1                             0               drain              0.0008
+drain_146_1                             0               drain              0.0008
+drain_147_1                             0               drain              0.0008
+drain_148_1                             0               drain              0.0008
+drain_149_1                             0               drain              0.0008
+drain_150_1                             0               drain              0.0008
+drain_151_1                             0               drain              0.0008
+drain_152_1                             0               drain              0.0008
+drain_153_1                             0               drain              0.0008
+drain_154_1                             0               drain              0.0008
+drain_155_1                             0               drain              0.0008
+drain_156_1                             0               drain              0.0008
+drain_157_1                             0               drain              0.0008
+drain_158_1                             0               drain              0.0008
+drain_159_1                             0               drain              0.0008
+drain_163_1                             0               drain              0.0008
+drain_164_1                             0               drain              0.0008
+drain_165_1                             0               drain              0.0008
+drain_166_1                             0               drain              0.0008
+drain_167_1                             0               drain              0.0008
+drain_168_1                             0               drain              0.0008
+drain_169_1                             0               drain              0.0008
+drain_170_1                             0               drain              0.0008
+drain_171_1                             0               drain              0.0008
+drain_172_1                             0               drain              0.0008
+drain_173_1                             0               drain              0.0008
+drain_174_1                             0               drain              0.0008
+drain_175_1                             0               drain              0.0008
+drain_176_1                             0               drain              0.0008
+drain_177_1                             0               drain              0.0008
+drain_182_1                             0               drain              0.0008
+drain_183_1                             0               drain              0.0008
+drain_184_1                             0               drain              0.0008
+drain_185_1                             0               drain              0.0008
+drain_186_1                             0               drain              0.0008
+drain_187_1                             0               drain              0.0008
+drain_188_1                             0               drain              0.0008
+drain_189_1                             0               drain              0.0008
+drain_190_1                             0               drain              0.0008
+drain_191_1                             0               drain              0.0008
+drain_192_1                             0               drain              0.0008
+drain_193_1                             0               drain              0.0008
+drain_194_1                             0               drain              0.0008
+drain_195_1                             0               drain              0.0008
+drain_196_1                             0               drain              0.0008
+drain_197_1                             0               drain              0.0008
+drain_200_1                             0               drain              0.0008
+drain_201_1                             0               drain              0.0008
+drain_202_1                             0               drain              0.0008
+drain_203_1                             0               drain              0.0008
+drain_204_1                             0               drain              0.0008
+drain_205_1                             0               drain              0.0008
+drain_206_1                             0               drain              0.0008
+drain_207_1                             0               drain              0.0008
+drain_211_1                             0               drain              0.0008
+drain_212_1                             0               drain              0.0008
+drain_213_1                             0               drain              0.0008
+drain_214_1                             0               drain              0.0008
+drain_215_1                             0               drain              0.0008
+drain_216_1                             0               drain              0.0008
+drain_218_1                             0               drain              0.0008
+drain_219_1                             0               drain              0.0008
+drain_220_1                             0               drain              0.0008
+drain_221_1                             0               drain              0.0008
+drain_222_1                             0               drain              0.0008
+drain_230_1                             0               drain              0.0008
+drain_231_1                             0               drain              0.0008
+drain_232_1                             0               drain              0.0008
+drain_233_1                             0               drain              0.0008
+drain_234_1                             0               drain              0.0008
+drain_239_1                             0               drain              0.0008
+drain_240_1                             0               drain              0.0008
+drain_249_1                             0               drain              0.0008
+drain_250_1                             0               drain              0.0008
+drain_251_1                             0               drain              0.0008
+drain_252_1                             0               drain              0.0008
+drain_267_1                             0               drain              0.0008
+drain_268_1                             0               drain              0.0008
+drain_269_1                             0               drain              0.0008
+drain_270_1                             0               drain              0.0008
+drain_286_1                             0               drain              0.0008
+drain_287_1                             0               drain              0.0008
+drain_288_1                             0               drain              0.0008
+drain_304_1                             0               drain              0.0008
+drain_305_1                             0               drain              0.0008
+drain_306_1                             0               drain              0.0008
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 5000
+    eigthresh = 5e-07
+
+
+
+
+
+
+  ---  initializing  ---  
+
+  ---  'noptmax'=0, running control file parameter values and quitting  ---  
+...greater_than inequality defined for observations:  1
+...running control file parameter values
+...saving results from control file parameter value run to  milford1.obs.csv
+
+  ---  control file parameter phi report:  ---  
+       phi type           mean            std            min            max
+       measured        344.839              0        344.839        344.839
+         actual        344.839              0        344.839        344.839
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+

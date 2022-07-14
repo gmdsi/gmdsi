@@ -1,0 +1,15 @@
+# -- First we read the MODFLOW-USG grid specification file.
+
+cl_m = read_mf_usg_grid_specs(file=example.gsf,slist=layer)
+
+# -- We now read a node data table file in which zonation is defined for the model.
+
+read_list_file(reference_clist='cl_m',skiplines=1,   &
+                         slist=zone;column=3,        &
+                         file='ibound_zones.ndt')
+
+# -- We record some files to make sure that we are doing ok.
+
+report_all_entities(file=report1.dat)
+cl_m.report_dependent_lists(file='report2.dat')
+

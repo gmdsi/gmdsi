@@ -1,0 +1,79 @@
+CLISTS --->
+
+Name                 Dimensions   Id_type     Grid_type    Elements     Dep_PLISTS   Dep_SLISTS   Parent_CLIST
+----                 ----------   -------     ---------    --------     ----------   ----------   ------------
+cl_m                  3D          indexed      0            91644        2            2            none
+cl_k3                 2D          integer      0            533          1            none         none
+cl_k4                 2D          integer      0            533          1            none         none
+cl_k5                 2D          integer      0            277          1            none         none
+cl_k6                 2D          integer      0            83           1            none         none
+cl_k7                 2D          integer      0            277          1            none         none
+cl_k8                 2D          integer      0            66           1            none         none
+cl_k9                 2D          integer      0            42           1            none         none
+cl_k10                2D          integer      0            256          1            none         none
+ 
+
+PLISTS --->
+
+Name                    Parent_CLIST
+----                    ------------
+pp_k3                   cl_k3
+pp_k4                   cl_k4
+pp_k5                   cl_k5
+pp_k6                   cl_k6
+pp_k7                   cl_k7
+pp_k8                   cl_k8
+pp_k9                   cl_k9
+pp_k10                  cl_k10
+k_m                     cl_m
+kz_m                    cl_m
+ 
+
+SLISTS --->
+
+Name                    Parent_CLIST
+----                    ------------
+layer                   cl_m
+zone                    cl_m
+ 
+
+MLISTS --->
+
+Name                    Parent_CLIST             Type    Start_index   End_index
+----                    ------------             ----    -----------   ---------
+There are no MLISTS stored.
+ 
+
+MATRICES --->
+
+Name                    Rows      Columns
+----                    ----      -------
+There are no MATRICES stored.
+ 
+
+GPLANES --->
+
+Name                    Associated_CLIST         Planar_interpolation   Inverse_power    Transform   Anis_ratio     Anis_bearing
+----                    ----------------         --------------------   -------------    ---------   ----------     ------------
+There are no GPLANES stored.
+ 
+
+SCALARS --->
+
+Name                    Value
+----                    -----
+vanis_z3                1.050000
+vanis_z4                2.080000
+vanis_z5                3.000000
+vanis_z6                1.000000
+vanis_z7                1.000000
+vanis_z8                1.500000
+vanis_z9                1.250000
+vanis_z10               1.300000
+ 
+
+STRINGS --->
+
+Name                    Value
+----                    -----
+There are no string variables stored.

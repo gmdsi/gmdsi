@@ -1,0 +1,22 @@
+                    RUN MANAGEMENT RECORD: CASE calib1
+ 
+ 
+ **************************************************
+ RUN MANAGEMENT UNDERTAKEN FOR A HP SUITE PROGRAM
+ COMMUNICATIONS PROTOCOL = TCP.
+ **************************************************
+ 
+ Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+ Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+ Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   08 Apr 12:33:33.17:- index of 1 assigned to agent working in directory "10.24.97.28\\D:\github\gmdsi_calib\_tutorial\agent_dir\agent0\pest-calib1".
+   08 Apr 12:33:33.17:- model run 1 initiated using agent 1.
+   08 Apr 12:33:35.88:- model run 1 completed by agent 1.
+
+ STATISTICS
+
+ For run management efficiency statistics see file calib1.rme.

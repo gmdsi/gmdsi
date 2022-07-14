@@ -1,0 +1,63 @@
+pcf
+* control data
+restart estimation
+        27         0        15         0         0
+         2         0  single  point  1   0   0
+10.0  -3.0  0.3  0.03  10  999
+10.0   10.0    0.001
+0.1   boundscale
+50  0.005  4  4  0.005  4
+1  1  1
+* singular value decomposition
+1
+10000  5.0e-7
+0
+* parameter groups
+maxvol     relative  0.015   0.00005    switch   2.0  parabolic
+irigvf     relative  0.015   0.0001     switch   2.0  parabolic
+rdelay     relative  0.015   0.0001     switch   2.0  parabolic
+mdelay     relative  0.015   0.0001     switch   2.0  parabolic
+ks         relative  0.015   0.0        switch   2.0  parabolic
+m          relative  0.015   0.0        switch   2.0  parabolic
+l          relative  0.015   0.0        switch   2.0  parabolic
+mfmax      relative  0.015   0.0001     switch   2.0  parabolic
+offset     absolute  0.1     0.0        switch   2.0  parabolic
+fac1       relative  0.015   0.0        switch   2.0  parabolic
+fac2       relative  0.015   0.0        switch   2.0  parabolic
+power      absolute  0.015   0.0        switch   2.0  parabolic
+crfac      relative  0.015   0.0001     switch   2.0  parabolic
+gamma      relative  0.015   0.0        switch   2.0  parabolic
+gwirfr     relative  0.015   0.0001     switch   2.0  parabolic
+* parameter data
+maxvol_lm1    log       factor     0.5000000          0.001     10.0     maxvol    1.0   0.0  1
+maxvol_lm2    log       factor     0.5000000          0.001     10.0     maxvol    1.0   0.0  1
+irigvf_lm1    log       factor     0.6000000          0.001     1.0      irigvf    1.0   0.0  1
+irigvf_lm2    log       factor     0.6000000          0.001     1.0      irigvf    1.0   0.0  1
+rdelay_lm1    log       factor      15.00000          0.001     50.0     rdelay    1.0   0.0  1
+rdelay_lm2    log       factor      15.00000          0.001     50.0     rdelay    1.0   0.0  1
+mdelay_lm1    log       factor      2.000000          0.001     10.0     mdelay    1.0   0.0  1
+mdelay_lm2    log       factor      2.000000          0.001     10.0     mdelay    1.0   0.0  1
+ks_lm1        log       factor     0.9000000          1.0e-5    100.0    ks        1.0   0.0  1
+ks_lm2        log       factor     0.9000000          1.0e-5    100.0    ks        1.0   0.0  1
+m_lm1         log       factor     0.2000000          1.0e-2    10.0     m         1.0   0.0  1
+m_lm2         log       factor     0.2000000          1.0e-2    10.0     m         1.0   0.0  1
+l_lm1         log       factor     0.5500000          0.1       1.0      l         1.0   0.0  1
+l_lm2         log       factor     0.5500000          0.1       1.0      l         1.0   0.0  1
+mfmax_lm1     log       factor     0.1000000          0.01      2.0      mfmax     1.0   0.0  1
+mfmax_lm2     log       factor     0.1000000          0.01      2.0      mfmax     1.0   0.0  1
+offset_lm1    none      relative    15.00000          -1000.0   10000.0  offset    1.0   0.0  1
+offset_lm2    fixed     relative    0.000000          -1000.0   10000.0  offset    1.0   0.0  1
+fac1_lm1      log       factor      1.000000          1.0e-5    10000.0  fac1      1.0   0.0  1
+fac1_lm2      fixed     factor     1.0000000E-05      1.0e-5    10000.0  fac1      1.0   0.0  1
+fac2_lm1      log       factor      1.110000          1.0e-5    10000.0  fac2      1.0   0.0  1
+fac2_lm2      fixed     factor     1.0000000E-05      1.0e-5    10000.0  fac2      1.0   0.0  1
+power_lm1     none      relative    2.000000          -3.0      3.0      power     1.0   0.0  1
+power_lm2     fixed     relative    0.000000          -3.0      3.0      power     1.0   0.0  1
+crfac_lm1     log       factor     0.2000000          0.001     3.0      crfac     1.0   0.0  1
+gamma_lm1     log       factor      1.500000          0.001     100.0    gamma     1.0   0.0  1
+gwirfr_lm1    log       factor     0.4000000          0.001     0.99     gwirfr    1.0   0.0  1
+* model input/output
+lr_lm1.tpl  lr_lm1.in
+lr_lm2.tpl  lr_lm2.in
+* model input/output
+model.bat

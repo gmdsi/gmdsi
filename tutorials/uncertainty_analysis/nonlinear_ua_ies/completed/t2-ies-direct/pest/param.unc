@@ -1,0 +1,55 @@
+# Kx layer 1
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov1.mat"
+first_parameter kx1pp001
+last_parameter kx1pp523
+variance_multiplier 0.25
+END COVARIANCE_MATRIX
+
+# Kx layer 2
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov2.mat"
+first_parameter kx2pp001
+last_parameter kx2pp523
+variance_multiplier 0.25
+END COVARIANCE_MATRIX
+
+# Kx layer 3
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov3.mat"
+first_parameter kx3pp001
+last_parameter kx3pp523
+variance_multiplier 0.25
+END COVARIANCE_MATRIX
+
+# streams
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov_stream.mat"
+first_parameter drncpp01
+last_parameter drncpp31
+variance_multiplier 0.25
+END COVARIANCE_MATRIX
+
+# GHB layer1
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov_ghb.mat"
+first_parameter ghbc1pp01
+last_parameter ghbc1pp41
+variance_multiplier 0.25
+END COVARIANCE_MATRIX
+
+# GHB layer3
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov_ghb.mat"
+first_parameter ghbc3pp01
+last_parameter ghbc3pp41
+variance_multiplier 0.25
+END COVARIANCE_MATRIX
+
+# recharge rate
+START COVARIANCE_MATRIX
+file "..\runmodel\preproc\cov_rch.mat"
+first_parameter rchpp001
+last_parameter rchpp523
+variance_multiplier 0.03
+END COVARIANCE_MATRIX

@@ -1,0 +1,35 @@
+* observation groups
+heads1
+heads3
+streams
+headiff
+* observation data
+ h1-3892_1              88.8061294            10.00000          heads1
+ h1-1664_1              85.0191078            10.00000          heads1
+ h1-162_1               85.9681308            10.00000          heads1
+ h3-3521_1              98.9945044            10.00000          heads3
+ h3-3988_1              97.0504272            10.00000          heads3
+ h3-3417_1              93.0960789            10.00000          heads3
+ h3-3829_1              89.3946870            10.00000          heads3
+ h3-3357_1              89.3484774            10.00000          heads3
+ h3-3594_1              88.5383243            10.00000          heads3
+ h3-3892_1              88.4517791            10.00000          heads3
+ h3-1152_1              85.7234021            10.00000          heads3
+ h3-313_1               100.670530            10.00000          heads3
+ h3-209_1               90.9149254            10.00000          heads3
+ h3-331_1               89.4454115            10.00000          heads3
+ h3-707_1               87.5112007            10.00000          heads3
+ h3-3956_1              86.6617512            10.00000          heads3
+ h3-2270_1              85.6412229            10.00000          heads3
+ h3-521_1               86.4924982            10.00000          heads3
+ trib_1                 -6516.32159          1.5346105E-03      streams
+ total_1                -10435.3521          9.5828195E-04      streams
+ dh3892_1               0.354350200           100.0000          headiff
+* model command line
+ runmodel.bat
+* model input/output
+ INSERT TEMPLATE AND MODEL INPUT FILES HERE
+ m_obs-heads1_ssf.ins     m_obs-heads1_ssf.ssf
+ m_obs-heads3_ssf.ins     m_obs-heads3_ssf.ssf
+ m_obs-stream_ssf.ins     m_obs-stream_ssf.ssf
+ m_obs-headdiff_ssf.ins     m_obs-headdiff_ssf.ssf

@@ -1,0 +1,31 @@
+# An example TPL2PST input file
+
+start template_file
+  template_file     = ppoints.tpl
+  model_input_file  = ppoints.dat
+  transform         = log
+  value             = 1.0
+  lower_bound       = 0.1     
+  upper_bound       = 10
+  pargroup          = changethis
+end template_file
+
+start template_file
+  template_file     = streampp.tpl
+  model_input_file  = streampp.dat
+  transform         = log
+  value             = 100
+  lower_bound       = 1e-4     
+  upper_bound       = 1e4
+  pargroup          = strc
+end template_file
+
+start template_file
+  template_file     = ghbpp.tpl
+  model_input_file  = ghbpp.dat
+  transform         = log
+  value             = 100
+  lower_bound       = 1e-4     
+  upper_bound       = 1e4
+  pargroup          = ghbc
+end template_file

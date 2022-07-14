@@ -1,0 +1,23 @@
+* earth properties
+maxvol irrigvolfrac
+rdelay mdelay
+ks m l mflowmax
+* volume to elevation
+offset factor1 factor2 power [elevmin elevmax]
+* topographic surface
+surface
+* initial conditions
+vol
+nrbuf nmbuf
+(rbuf(i), i=1,nrbuf)
+(mbuf(i), i=1,nmbuf)
+* solution parameters
+nstep mxiter tol
+* timing information
+numdays noutdays
+(outday(i),i=1,noutdays)
+data filenames
+vegfile OR cropfac_all gamma_all
+rainfile
+epotfile
+irrigfile OR irrigcode_all gwirrigfrac_all

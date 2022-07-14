@@ -1,0 +1,87 @@
+# -- We read the MODFLOW 6 binary grid file. We read it as a 3D file.
+
+cl_mf6 = read_mf6_grid_specs(file=model.disv.grb,       &
+                              dimensions=3,             &
+                              slist_layernum = layer,   &
+                              slist_idomain  = idomain)
+
+# -- We now build an SLIST of drain cells to which we want interpolation to take place. Notice
+#    how this SLIST is informed by reach number, read from column 5. Elements of this SLIST
+#    which correspond to a DRAIN have a value equal to the reach of the drain. All other elements
+#    have a value of zero.
+
+draincells_mf6 = cl_mf6.find_cells_in_lists(                   &
+                 file=drains.txt,                              &
+                 model_type=mf6_disv,                          &
+                 list_col_start=1,                             &
+                 assign_col = 5,                               &
+                 keytext_start='top_of_file',                  &
+                 keytext_end='bottom_of_file')
+
+# -- We next read the three pilot points file and pilot point locations and values.
+#    In doing so, we define three CLISTS and associated PLISTS (these containing drain conductances).
+
+cl_pp1 = read_list_file(file='drainpp_1.dat',           &
+                        id_type='integer',              &
+                        skiplines=1,                    &
+                        dimensions=2,                   &
+                        plist='draincond1_pp';column=4)
+
+cl_pp2 = read_list_file(file='drainpp_2.dat',           &
+                        id_type='integer',              &
+                        skiplines=1,                    &
+                        dimensions=2,                   &
+                        plist='draincond2_pp';column=4)
+
+cl_pp3 = read_list_file(file='drainpp_3.dat',           &
+                        id_type='integer',              &
+                        skiplines=1,                    &
+                        dimensions=2,                   &
+                        plist='draincond3_pp';column=4)
+
+# -- Initialize the drain conductivity PLIST
+
+draincond_mf6=new_plist(reference_clist=cl_mf6,value=0.0)
+
+
+# -- We now interpolate from pilot points to the drain conductances.
+#    We use inverse power of distance; but any interpolation method could be used.
+
+draincond_mf6(select=(draincells_mf6.eq.1))=draincond1_pp.ivd_interpolate_2d(     &
+                                        transform='log',                          &
+                                        inv_power=2.0,                            &
+                                        min_points=2,                             &
+                                        max_points=20,                            &
+                                        search_radius=1.0e20)
+
+draincond_mf6(select=(draincells_mf6.eq.2))=draincond2_pp.ivd_interpolate_2d(     &
+                                        transform='log',                          &
+                                        inv_power=2.0,                            &
+                                        min_points=2,                             &
+                                        max_points=20,                            &
+                                        search_radius=1.0e20)
+
+draincond_mf6(select=(draincells_mf6.eq.3))=draincond3_pp.ivd_interpolate_2d(     &
+                                        transform='log',                          &
+                                        inv_power=2.0,                            &
+                                        min_points=2,                             &
+                                        max_points=20,                            &
+                                        search_radius=1.0e20)
+
+# -- A new model input file is written.
+
+replace_cells_in_lists(old_file=model.drn_stress_period_data_1.txt,               &
+                       new_file=new2_model.drn_stress_period_data_1.txt,           &
+                       model_type=mf6_disv,                                       &
+                       list_col_start=1,                                          &
+                       keytext_start='top_of_file',                               &
+                       keytext_end='bottom_of_file',                              &
+                       plist=draincond_mf6;column=4;action='replace')
+
+# -- The following is for our interest only.
+
+cl_mf6.report_dependent_lists(file='report.dat')
+
+
+
+

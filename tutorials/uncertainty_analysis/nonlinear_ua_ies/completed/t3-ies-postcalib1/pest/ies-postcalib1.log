@@ -1,0 +1,622 @@
+time,elapsed_seconds,message
+15:05:16,6.09e-05,PEST++ performance logger started
+15:05:16,0.0013731,starting to process control file
+15:05:16,0.016841,finished processing control file
+15:05:16,0.0371999,initializing
+15:05:16,0.0002863,using REDSVD for truncated svd solve
+15:05:16,0.0002076,maxsing: 5000
+15:05:16,0.0002154,eigthresh:  5e-07
+15:05:16,0.0001986,initializing localizer
+15:05:16,0.0002408,using automatic adaptive localization
+15:05:16,2.39e-05,with autoadaloc_sigma_dist  1
+15:05:16,0.0002451,using lambda multipliers: 
+15:05:16,0.0001886,using lambda scaling factors: 
+15:05:16,0.0002152,acceptable phi factor:  1.05
+15:05:16,0.0002179,lambda increase factor:  10
+15:05:16,0.0002024,lambda decrease factor:  0.75
+15:05:16,0.00032,max run fail:  1
+15:05:16,4.43e-05,initializing parcov
+15:05:17,0.861275,parcov loaded  from unc file param.unc
+15:05:17,0.100005,initializing observation noise covariance matrix
+15:05:17,0.0002231,obscov loaded  from observation weights
+15:05:17,0.0001859,using reg_factor:  0
+15:05:17,0.0001748,drawing parameter realizations:  200
+15:05:17,0.001748,parameters not grouped by parameter groups, reordering par ensemble
+15:05:18,0.0995531,making standard normal draws
+15:05:18,0.0132977,...drawing by group
+
+15:05:18,0.0217009,thread: 0 - min variance for group STRC: 0.25
+15:05:18,4.35e-05,thread: 0 - Randomized Eigen decomposition of full cov for 31 element matrix
+
+15:05:18,0.0346432,thread: 0 - min variance for group RCH: 0.03
+15:05:18,3.74e-05,thread: 0 - Randomized Eigen decomposition of full cov for 523 element matrix
+
+15:05:18,0.533009,thread: 0 - min variance for group KX3: 0.25
+15:05:18,3.93e-05,thread: 0 - Randomized Eigen decomposition of full cov for 523 element matrix
+
+15:05:19,0.526759,thread: 0 - min variance for group KX2: 0.25
+15:05:19,4.03e-05,thread: 0 - Randomized Eigen decomposition of full cov for 523 element matrix
+
+15:05:19,0.530909,thread: 0 - min variance for group KX1: 0.25
+15:05:19,4.13e-05,thread: 0 - Randomized Eigen decomposition of full cov for 523 element matrix
+
+15:05:20,0.523783,thread: 0 - min variance for group GHB3: 0.25
+15:05:20,3.94e-05,thread: 0 - Randomized Eigen decomposition of full cov for 41 element matrix
+
+15:05:20,0.016129,thread: 0 - min variance for group GHB1: 0.25
+15:05:20,3.57e-05,thread: 0 - Randomized Eigen decomposition of full cov for 41 element matrix
+
+15:05:20,0.0004997,draw thread: 0 processed 0 groups
+15:05:20,0.0021626,checking realization for invalid values
+15:05:20,0.0020612,resizing reals matrix
+15:05:20,0.0007239,filling reals matrix and adding mean values
+15:05:20,0.0078225,not using prior parameter covariance matrix scaling
+15:05:20,2.65e-05,processing obs csv obs-ensemble.csv
+15:05:20,0.0002931,loading obs ensemble from csv file obs-ensemble.csv
+15:05:20,0.0027228,adding 'base' parameter values to ensemble
+15:05:20,0.0041641,adding 'base' observation values to ensemble
+15:05:20,0.0003529,checking for denormal values in pe
+15:05:20,0.333055,saved initial parameter ensemble to  ies-postcalib1.0.par.csv
+15:05:20,5.61e-05,checking for denormal values in base oe
+15:05:20,0.0107485,saved obs+noise observation ensemble (obsval+noise) to  ies-postcalib1.obs+noise.csv
+15:05:20,0.0002676,using subset in lambda testing, number of realizations used in subset testing:  7
+15:05:20,0.0003074,subset how:  RANDOM
+15:05:20,0.003237,centering on ensemble mean vector
+15:05:20,1.98e-05,running initial ensemble
+15:05:20,0.0002678,running initial ensemble of size 200
+15:05:20,3.57e-05,queuing 200 runs
+15:05:20,0.0676247,making runs
+15:06:30,69.3292,processing runs
+15:06:30,0.0429207,saved initial obs ensemble to ies-postcalib1.0.obs.csv
+15:06:30,0.0535411,calc pre-drop phi
+15:06:30,0.0030259,pre-drop initial phi summary
+15:06:30,0.0180401,checking for prior-data conflict...
+15:06:30,0.0003257,calc initial phi
+15:06:30,0.0010246,initial phi summary
+15:06:30,0.0048956,current lambda: 100
+15:06:30,0.0003458,initialization complete
+15:06:30,0.000301,starting solve for iteration: 1
+15:06:30,3.77e-05,starting solve for iteration: 1
+15:06:30,0.0009748,autoadaloc: checking for compat with par and obs ensembles
+15:06:30,0.0003471,autoadaloc: calculating correlation coefficients
+15:06:31,1.11563,autoadaloc warning: parameter KX1PP257 is completely localized -it maps to no observations
+15:06:31,0.218256,autoadaloc thread: 0 processed 2205 parameters 
+15:06:31,0.0016671,instantiating localizer matrix from triplets
+15:06:31,0.0002118,autoadaloc matrix constructed with 20029 non-zero elements
+15:06:31,0.0070485,starting lambda calcs for lambda 10
+15:06:31,2.87e-05,see .log file for more details
+15:06:31,0.0024998,preparing fast-look containers for threaded localization solve
+15:06:31,0.0153742,upgrade thread progress: 0 of 2204 parts done
+15:06:32,0.64931,upgrade thread progress: 1000 of 2204 parts done
+15:06:32,0.657674,upgrade thread progress: 2000 of 2204 parts done
+15:06:32,0.156572,finished calcs for lambda: 10
+15:06:32,0.0005082,starting lambda calcs for lambda 100
+15:06:32,4.09e-05,see .log file for more details
+15:06:32,0.0026327,preparing fast-look containers for threaded localization solve
+15:06:32,0.0152647,upgrade thread progress: 0 of 2204 parts done
+15:06:33,0.656279,upgrade thread progress: 1000 of 2204 parts done
+15:06:34,0.65378,upgrade thread progress: 2000 of 2204 parts done
+15:06:34,0.166812,finished calcs for lambda: 100
+15:06:34,0.0004767,starting lambda calcs for lambda 1000
+15:06:34,2.36e-05,see .log file for more details
+15:06:34,0.0022574,preparing fast-look containers for threaded localization solve
+15:06:34,0.0143506,upgrade thread progress: 0 of 2204 parts done
+15:06:35,0.645733,upgrade thread progress: 1000 of 2204 parts done
+15:06:35,0.660751,upgrade thread progress: 2000 of 2204 parts done
+15:06:35,0.164644,finished calcs for lambda: 1000
+15:06:35,0.0004065,running lambda ensembles
+15:06:35,1.72e-05,queuing 9 ensembles
+15:06:35,0.0021111,subset idx:pe real name:  199:BASE, 68:68, 41:41, 53:53, 118:118, 50:50, 65:65, 
+15:06:35,0.0232493,making runs
+15:06:59,23.2511,processing runs
+15:06:59,0.016115,evaluting lambda ensembles
+15:06:59,0.0001392,last mean:  30563.4
+15:06:59,0.0001449,last stdev:  167883
+15:06:59,0.0003223,phi summary for lambda, scale fac:
+15:06:59,0.0002647,phi summary for lambda, scale fac:
+15:06:59,0.0002579,phi summary for lambda, scale fac:
+15:06:59,0.0002561,phi summary for lambda, scale fac:
+15:06:59,0.0002544,phi summary for lambda, scale fac:
+15:06:59,0.0002516,phi summary for lambda, scale fac:
+15:06:59,0.0002553,phi summary for lambda, scale fac:
+15:06:59,0.0002508,phi summary for lambda, scale fac:
+15:06:59,0.0002967,phi summary for lambda, scale fac:
+15:06:59,0.0047665,phi summary for best lambda, scale fac: 
+15:06:59,0.0025054,running remaining realizations for best lambda, scale:
+15:06:59,1.74e-05,dropping subset idxs from remaining_pe_lam
+15:06:59,0.0020408,dropping subset idxs from remaining_oe_lam
+15:06:59,0.0001646,queuing 193 runs
+15:06:59,0.0600421,making runs
+15:08:05,66.4184,processing runs
+15:08:05,0.0307625,assembling ensembles
+15:08:05,0.0037455,updating phi
+15:08:05,0.0009404,phi summary for entire ensemble using lambda,scale_fac 
+15:08:05,0.0030965,last best mean phi * acceptable phi factor:  32091.5
+15:08:05,0.000277,current best mean phi:  1294.8
+15:08:05,0.0002732,updating parameter ensemble
+15:08:05,1.71e-05,updating parameter ensemble
+15:08:05,0.0006754,updating lambda to  7.5
+15:08:06,0.416251,phi-based termination criteria check
+15:08:06,0.0001407,phiredstp:  0.005
+15:08:06,0.0001598,nphistp:  4
+15:08:06,0.0001444,nphinored (also used for consecutive bad lambda cycles):  4
+15:08:06,0.0001558,best mean phi sequence: 
+15:08:06,0.0001576,best phi yet:  1294.8
+15:08:06,0.0002183,number of consecutive bad lambda testing cycles:  0
+15:08:06,0.0001663,number of iterations satisfying phiredstp criteria:  1
+15:08:06,0.0001554,number of iterations since best yet mean phi:  0
+15:08:06,0.0003145,starting solve for iteration: 2
+15:08:06,1.33e-05,starting solve for iteration: 2
+15:08:06,0.0009003,autoadaloc: checking for compat with par and obs ensembles
+15:08:06,0.0001647,autoadaloc: calculating correlation coefficients
+15:08:06,0.180325,autoadaloc warning: parameter RCHPP235 is completely localized -it maps to no observations
+15:08:06,0.605744,autoadaloc warning: parameter KX2PP237 is completely localized -it maps to no observations
+15:08:07,0.517615,autoadaloc thread: 0 processed 2205 parameters 
+15:08:07,0.0017239,instantiating localizer matrix from triplets
+15:08:07,0.0003089,autoadaloc matrix constructed with 16465 non-zero elements
+15:08:07,0.0071164,starting lambda calcs for lambda 0.75
+15:08:07,2.87e-05,see .log file for more details
+15:08:07,0.0024096,preparing fast-look containers for threaded localization solve
+15:08:07,0.0146539,upgrade thread progress: 0 of 2203 parts done
+15:08:08,0.614975,upgrade thread progress: 1000 of 2203 parts done
+15:08:08,0.608134,upgrade thread progress: 2000 of 2203 parts done
+15:08:08,0.14488,finished calcs for lambda: 0.75
+15:08:08,0.0003999,starting lambda calcs for lambda 7.5
+15:08:08,2.24e-05,see .log file for more details
+15:08:08,0.0022007,preparing fast-look containers for threaded localization solve
+15:08:08,0.0150021,upgrade thread progress: 0 of 2203 parts done
+15:08:09,0.624011,upgrade thread progress: 1000 of 2203 parts done
+15:08:10,0.627373,upgrade thread progress: 2000 of 2203 parts done
+15:08:10,0.153503,finished calcs for lambda: 7.5
+15:08:10,0.0008269,starting lambda calcs for lambda 75
+15:08:10,4.47e-05,see .log file for more details
+15:08:10,0.0022994,preparing fast-look containers for threaded localization solve
+15:08:10,0.0156747,upgrade thread progress: 0 of 2203 parts done
+15:08:10,0.625125,upgrade thread progress: 1000 of 2203 parts done
+15:08:11,0.617705,upgrade thread progress: 2000 of 2203 parts done
+15:08:11,0.152576,finished calcs for lambda: 75
+15:08:11,0.0003678,running lambda ensembles
+15:08:11,1.79e-05,queuing 9 ensembles
+15:08:11,0.0017874,subset idx:pe real name:  6:BASE, 156:155, 153:152, 73:71, 121:120, 50:44, 84:82, 
+15:08:11,0.0230088,making runs
+15:08:35,23.5415,processing runs
+15:08:35,0.0152899,evaluting lambda ensembles
+15:08:35,0.0001564,last mean:  1294.8
+15:08:35,0.0001835,last stdev:  1955.45
+15:08:35,0.0003865,phi summary for lambda, scale fac:
+15:08:35,0.0002635,phi summary for lambda, scale fac:
+15:08:35,0.0002586,phi summary for lambda, scale fac:
+15:08:35,0.0002666,phi summary for lambda, scale fac:
+15:08:35,0.0002483,phi summary for lambda, scale fac:
+15:08:35,0.0002481,phi summary for lambda, scale fac:
+15:08:35,0.0002486,phi summary for lambda, scale fac:
+15:08:35,0.0002562,phi summary for lambda, scale fac:
+15:08:35,0.0002477,phi summary for lambda, scale fac:
+15:08:35,0.0040748,phi summary for best lambda, scale fac: 
+15:08:35,0.0011907,running remaining realizations for best lambda, scale:
+15:08:35,1.39e-05,dropping subset idxs from remaining_pe_lam
+15:08:35,0.0021026,dropping subset idxs from remaining_oe_lam
+15:08:35,0.0001746,queuing 193 runs
+15:08:35,0.0586196,making runs
+15:09:41,66.3618,processing runs
+15:09:41,0.0309825,assembling ensembles
+15:09:41,0.0037125,updating phi
+15:09:41,0.0009828,phi summary for entire ensemble using lambda,scale_fac 
+15:09:41,0.0027449,last best mean phi * acceptable phi factor:  1359.54
+15:09:41,0.0002353,current best mean phi:  237.825
+15:09:41,0.0002786,updating parameter ensemble
+15:09:41,1.35e-05,updating parameter ensemble
+15:09:41,0.0005338,updating lambda to  5.625
+15:09:42,0.426777,phi-based termination criteria check
+15:09:42,0.0008043,phiredstp:  0.005
+15:09:42,0.0005378,nphistp:  4
+15:09:42,0.0005781,nphinored (also used for consecutive bad lambda cycles):  4
+15:09:42,0.0015094,best mean phi sequence: 
+15:09:42,0.0007582,best phi yet:  237.825
+15:09:42,0.0005999,number of consecutive bad lambda testing cycles:  0
+15:09:42,0.0006918,number of iterations satisfying phiredstp criteria:  1
+15:09:42,0.0005412,number of iterations since best yet mean phi:  0
+15:09:42,0.0011421,starting solve for iteration: 3
+15:09:42,1.83e-05,starting solve for iteration: 3
+15:09:42,0.0008515,autoadaloc: checking for compat with par and obs ensembles
+15:09:42,0.0001829,autoadaloc: calculating correlation coefficients
+15:09:43,0.790479,autoadaloc warning: parameter KX2PP234 is completely localized -it maps to no observations
+15:09:43,0.17868,autoadaloc warning: parameter KX1PP449 is completely localized -it maps to no observations
+15:09:43,0.338002,autoadaloc thread: 0 processed 2205 parameters 
+15:09:43,0.001562,instantiating localizer matrix from triplets
+15:09:43,0.0002261,autoadaloc matrix constructed with 14024 non-zero elements
+15:09:43,0.0063894,starting lambda calcs for lambda 0.5625
+15:09:43,2.74e-05,see .log file for more details
+15:09:43,0.0022934,preparing fast-look containers for threaded localization solve
+15:09:43,0.01454,upgrade thread progress: 0 of 2203 parts done
+15:09:44,0.591785,upgrade thread progress: 1000 of 2203 parts done
+15:09:44,0.604262,upgrade thread progress: 2000 of 2203 parts done
+15:09:44,0.139085,finished calcs for lambda: 0.5625
+15:09:44,0.0006098,starting lambda calcs for lambda 5.625
+15:09:44,2.66e-05,see .log file for more details
+15:09:44,0.0021853,preparing fast-look containers for threaded localization solve
+15:09:44,0.014402,upgrade thread progress: 0 of 2203 parts done
+15:09:45,0.592456,upgrade thread progress: 1000 of 2203 parts done
+15:09:46,0.597403,upgrade thread progress: 2000 of 2203 parts done
+15:09:46,0.146255,finished calcs for lambda: 5.625
+15:09:46,0.0005773,starting lambda calcs for lambda 56.25
+15:09:46,4.28e-05,see .log file for more details
+15:09:46,0.0022127,preparing fast-look containers for threaded localization solve
+15:09:46,0.0139682,upgrade thread progress: 0 of 2203 parts done
+15:09:46,0.604619,upgrade thread progress: 1000 of 2203 parts done
+15:09:47,0.603031,upgrade thread progress: 2000 of 2203 parts done
+15:09:47,0.145091,finished calcs for lambda: 56.25
+15:09:47,0.0008077,running lambda ensembles
+15:09:47,5.99e-05,queuing 9 ensembles
+15:09:47,0.0024367,subset idx:pe real name:  0:BASE, 100:95, 188:187, 32:19, 28:15, 199:198, 81:75, 
+15:09:47,0.0229696,making runs
+15:10:11,23.6516,processing runs
+15:10:11,0.0166228,evaluting lambda ensembles
+15:10:11,0.0002214,last mean:  237.825
+15:10:11,0.000269,last stdev:  435.689
+15:10:11,0.0003598,phi summary for lambda, scale fac:
+15:10:11,0.0002692,phi summary for lambda, scale fac:
+15:10:11,0.0002635,phi summary for lambda, scale fac:
+15:10:11,0.0002599,phi summary for lambda, scale fac:
+15:10:11,0.0002575,phi summary for lambda, scale fac:
+15:10:11,0.0002637,phi summary for lambda, scale fac:
+15:10:11,0.0002561,phi summary for lambda, scale fac:
+15:10:11,0.0002522,phi summary for lambda, scale fac:
+15:10:11,0.0002715,phi summary for lambda, scale fac:
+15:10:11,0.0044961,phi summary for best lambda, scale fac: 
+15:10:11,0.0023461,running remaining realizations for best lambda, scale:
+15:10:11,3.86e-05,dropping subset idxs from remaining_pe_lam
+15:10:11,0.002206,dropping subset idxs from remaining_oe_lam
+15:10:11,0.0001715,queuing 193 runs
+15:10:11,0.0604501,making runs
+15:11:17,66.3098,processing runs
+15:11:17,0.0342615,assembling ensembles
+15:11:17,0.0042252,updating phi
+15:11:17,0.00109,phi summary for entire ensemble using lambda,scale_fac 
+15:11:17,0.0034022,last best mean phi * acceptable phi factor:  249.717
+15:11:17,0.0001759,current best mean phi:  94.2887
+15:11:17,0.000286,updating parameter ensemble
+15:11:17,1.66e-05,updating parameter ensemble
+15:11:17,0.0007137,updating lambda to  4.21875
+15:11:18,0.449238,phi-based termination criteria check
+15:11:18,0.0001595,phiredstp:  0.005
+15:11:18,0.0001689,nphistp:  4
+15:11:18,0.000153,nphinored (also used for consecutive bad lambda cycles):  4
+15:11:18,0.0001543,best mean phi sequence: 
+15:11:18,0.0001501,best phi yet:  94.2887
+15:11:18,0.000152,number of consecutive bad lambda testing cycles:  0
+15:11:18,0.0001493,number of iterations satisfying phiredstp criteria:  1
+15:11:18,0.000156,number of iterations since best yet mean phi:  0
+15:11:18,0.0002889,starting solve for iteration: 4
+15:11:18,2.24e-05,starting solve for iteration: 4
+15:11:18,0.0008633,autoadaloc: checking for compat with par and obs ensembles
+15:11:18,0.0001864,autoadaloc: calculating correlation coefficients
+15:11:18,0.818723,autoadaloc warning: parameter KX2PP304 is completely localized -it maps to no observations
+15:11:19,0.608665,autoadaloc thread: 0 processed 2205 parameters 
+15:11:19,0.0015516,instantiating localizer matrix from triplets
+15:11:19,0.0002153,autoadaloc matrix constructed with 15198 non-zero elements
+15:11:19,0.0067065,starting lambda calcs for lambda 0.421875
+15:11:19,2.91e-05,see .log file for more details
+15:11:19,0.0027709,preparing fast-look containers for threaded localization solve
+15:11:19,0.0160853,upgrade thread progress: 0 of 2204 parts done
+15:11:20,0.662484,upgrade thread progress: 1000 of 2204 parts done
+15:11:20,0.654584,upgrade thread progress: 2000 of 2204 parts done
+15:11:21,0.152829,finished calcs for lambda: 0.421875
+15:11:21,0.0004241,starting lambda calcs for lambda 4.21875
+15:11:21,2.65e-05,see .log file for more details
+15:11:21,0.0024354,preparing fast-look containers for threaded localization solve
+15:11:21,0.0149709,upgrade thread progress: 0 of 2204 parts done
+15:11:21,0.646313,upgrade thread progress: 1000 of 2204 parts done
+15:11:22,0.646717,upgrade thread progress: 2000 of 2204 parts done
+15:11:22,0.166342,finished calcs for lambda: 4.21875
+15:11:22,0.0004037,starting lambda calcs for lambda 42.1875
+15:11:22,2.69e-05,see .log file for more details
+15:11:22,0.0025175,preparing fast-look containers for threaded localization solve
+15:11:22,0.0159322,upgrade thread progress: 0 of 2204 parts done
+15:11:23,0.653127,upgrade thread progress: 1000 of 2204 parts done
+15:11:23,0.654386,upgrade thread progress: 2000 of 2204 parts done
+15:11:24,0.159482,finished calcs for lambda: 42.1875
+15:11:24,0.0011195,running lambda ensembles
+15:11:24,1.94e-05,queuing 9 ensembles
+15:11:24,0.001774,subset idx:pe real name:  0:BASE, 116:109, 4:95, 173:170, 112:105, 146:141, 73:60, 
+15:11:24,0.0242457,making runs
+15:11:47,23.2525,processing runs
+15:11:47,0.016791,evaluting lambda ensembles
+15:11:47,0.0001799,last mean:  94.2887
+15:11:47,0.0001714,last stdev:  216.175
+15:11:47,0.000373,phi summary for lambda, scale fac:
+15:11:47,0.0002796,phi summary for lambda, scale fac:
+15:11:47,0.0002539,phi summary for lambda, scale fac:
+15:11:47,0.0002509,phi summary for lambda, scale fac:
+15:11:47,0.0002753,phi summary for lambda, scale fac:
+15:11:47,0.0002686,phi summary for lambda, scale fac:
+15:11:47,0.0002525,phi summary for lambda, scale fac:
+15:11:47,0.0002489,phi summary for lambda, scale fac:
+15:11:47,0.0002836,phi summary for lambda, scale fac:
+15:11:47,0.0038138,phi summary for best lambda, scale fac: 
+15:11:47,0.0015846,running remaining realizations for best lambda, scale:
+15:11:47,1.9e-05,dropping subset idxs from remaining_pe_lam
+15:11:47,0.002745,dropping subset idxs from remaining_oe_lam
+15:11:47,0.0001845,queuing 193 runs
+15:11:47,0.0630003,making runs
+15:12:54,66.8239,processing runs
+15:12:54,0.0332229,assembling ensembles
+15:12:54,0.0035842,updating phi
+15:12:54,0.0009281,phi summary for entire ensemble using lambda,scale_fac 
+15:12:54,0.0019134,last best mean phi * acceptable phi factor:  99.0031
+15:12:54,0.0001928,current best mean phi:  95.0819
+15:12:54,0.0001906,updating parameter ensemble
+15:12:54,1.4e-05,updating parameter ensemble
+15:12:54,0.0005499,not updating lambda (standard deviation reduction criteria not met)
+15:12:54,0.424617,phi-based termination criteria check
+15:12:54,0.00016,phiredstp:  0.005
+15:12:54,0.0002477,nphistp:  4
+15:12:54,0.0001863,nphinored (also used for consecutive bad lambda cycles):  4
+15:12:54,0.0001929,best mean phi sequence: 
+15:12:54,0.0001807,best phi yet:  94.2887
+15:12:54,0.000165,number of consecutive bad lambda testing cycles:  0
+15:12:54,0.0002368,number of iterations satisfying phiredstp criteria:  1
+15:12:54,0.0001891,number of iterations since best yet mean phi:  1
+15:12:54,0.0002741,starting solve for iteration: 5
+15:12:54,1.37e-05,starting solve for iteration: 5
+15:12:54,0.0009101,autoadaloc: checking for compat with par and obs ensembles
+15:12:54,0.0002584,autoadaloc: calculating correlation coefficients
+15:12:54,0.0844426,autoadaloc warning: parameter RCHPP405 is completely localized -it maps to no observations
+15:12:54,0.0891444,autoadaloc warning: parameter RCHPP275 is completely localized -it maps to no observations
+15:12:54,0.0437938,autoadaloc warning: parameter RCHPP211 is completely localized -it maps to no observations
+15:12:55,0.057938,autoadaloc warning: parameter RCHPP128 is completely localized -it maps to no observations
+15:12:55,0.557168,autoadaloc warning: parameter KX2PP368 is completely localized -it maps to no observations
+15:12:55,0.0460145,autoadaloc warning: parameter KX2PP303 is completely localized -it maps to no observations
+15:12:55,0.155802,autoadaloc warning: parameter KX2PP076 is completely localized -it maps to no observations
+15:12:55,0.0006931,autoadaloc warning: parameter KX2PP075 is completely localized -it maps to no observations
+15:12:55,0.0018989,autoadaloc warning: parameter KX2PP073 is completely localized -it maps to no observations
+15:12:55,0.0132809,autoadaloc warning: parameter KX2PP054 is completely localized -it maps to no observations
+15:12:55,0.0882055,autoadaloc warning: parameter KX1PP449 is completely localized -it maps to no observations
+15:12:55,0.0026962,autoadaloc warning: parameter KX1PP445 is completely localized -it maps to no observations
+15:12:55,0.0241096,autoadaloc warning: parameter KX1PP411 is completely localized -it maps to no observations
+15:12:55,0.0137961,autoadaloc warning: parameter KX1PP391 is completely localized -it maps to no observations
+15:12:55,0.0596868,autoadaloc warning: parameter KX1PP314 is completely localized -it maps to no observations
+15:12:56,0.295797,autoadaloc warning: parameter DRNCPP05 is completely localized -it maps to no observations
+15:12:56,0.0028642,autoadaloc thread: 0 processed 2205 parameters 
+15:12:56,0.0020061,instantiating localizer matrix from triplets
+15:12:56,0.0003857,autoadaloc matrix constructed with 17358 non-zero elements
+15:12:56,0.0062753,starting lambda calcs for lambda 0.421875
+15:12:56,2.71e-05,see .log file for more details
+15:12:56,0.0023085,preparing fast-look containers for threaded localization solve
+15:12:56,0.0137735,upgrade thread progress: 0 of 2189 parts done
+15:12:56,0.62284,upgrade thread progress: 1000 of 2189 parts done
+15:12:57,0.621331,upgrade thread progress: 2000 of 2189 parts done
+15:12:57,0.142064,finished calcs for lambda: 0.421875
+15:12:57,0.0004289,starting lambda calcs for lambda 4.21875
+15:12:57,4.12e-05,see .log file for more details
+15:12:57,0.0021758,preparing fast-look containers for threaded localization solve
+15:12:57,0.0155067,upgrade thread progress: 0 of 2189 parts done
+15:12:58,0.630167,upgrade thread progress: 1000 of 2189 parts done
+15:12:58,0.640682,upgrade thread progress: 2000 of 2189 parts done
+15:12:59,0.154914,finished calcs for lambda: 4.21875
+15:12:59,0.0006241,starting lambda calcs for lambda 42.1875
+15:12:59,2.62e-05,see .log file for more details
+15:12:59,0.0022672,preparing fast-look containers for threaded localization solve
+15:12:59,0.0140928,upgrade thread progress: 0 of 2189 parts done
+15:12:59,0.641398,upgrade thread progress: 1000 of 2189 parts done
+15:13:00,0.632739,upgrade thread progress: 2000 of 2189 parts done
+15:13:00,0.15048,finished calcs for lambda: 42.1875
+15:13:00,0.0008431,running lambda ensembles
+15:13:00,1.95e-05,queuing 9 ensembles
+15:13:00,0.371484,subset idx:pe real name:  0:BASE, 143:136, 139:132, 53:31, 1:95, 172:168, 54:32, 
+15:13:00,0.0242443,making runs
+15:13:24,23.4509,processing runs
+15:13:24,0.0160481,evaluting lambda ensembles
+15:13:24,0.0001572,last mean:  95.0819
+15:13:24,0.0002327,last stdev:  514.033
+15:13:24,0.0004407,phi summary for lambda, scale fac:
+15:13:24,0.0002719,phi summary for lambda, scale fac:
+15:13:24,0.0002439,phi summary for lambda, scale fac:
+15:13:24,0.0002393,phi summary for lambda, scale fac:
+15:13:24,0.0002371,phi summary for lambda, scale fac:
+15:13:24,0.0002382,phi summary for lambda, scale fac:
+15:13:24,0.000239,phi summary for lambda, scale fac:
+15:13:24,0.000237,phi summary for lambda, scale fac:
+15:13:24,0.0003951,phi summary for lambda, scale fac:
+15:13:24,0.0045925,phi summary for best lambda, scale fac: 
+15:13:24,0.0026174,running remaining realizations for best lambda, scale:
+15:13:24,1.64e-05,dropping subset idxs from remaining_pe_lam
+15:13:24,0.0024435,dropping subset idxs from remaining_oe_lam
+15:13:24,0.000266,queuing 193 runs
+15:13:24,0.0647123,making runs
+15:14:30,66.4175,processing runs
+15:14:30,0.0316078,assembling ensembles
+15:14:30,0.0039032,updating phi
+15:14:30,0.0010855,phi summary for entire ensemble using lambda,scale_fac 
+15:14:30,0.003182,last best mean phi * acceptable phi factor:  99.836
+15:14:30,0.0002243,current best mean phi:  41.7557
+15:14:30,0.0003133,updating parameter ensemble
+15:14:30,1.35e-05,updating parameter ensemble
+15:14:30,0.0005708,updating lambda to  3.16406
+15:14:31,0.422839,phi-based termination criteria check
+15:14:31,0.000195,phiredstp:  0.005
+15:14:31,0.0001433,nphistp:  4
+15:14:31,0.0001916,nphinored (also used for consecutive bad lambda cycles):  4
+15:14:31,0.0001521,best mean phi sequence: 
+15:14:31,4.79e-05,best phi yet:  41.7557
+15:14:31,0.0001629,number of consecutive bad lambda testing cycles:  0
+15:14:31,0.0001847,number of iterations satisfying phiredstp criteria:  1
+15:14:31,0.0001497,number of iterations since best yet mean phi:  0
+15:14:31,0.0001949,starting solve for iteration: 6
+15:14:31,1.38e-05,starting solve for iteration: 6
+15:14:31,0.0008122,autoadaloc: checking for compat with par and obs ensembles
+15:14:31,0.0001518,autoadaloc: calculating correlation coefficients
+15:14:31,0.072607,autoadaloc warning: parameter RCHPP405 is completely localized -it maps to no observations
+15:14:31,0.0006052,autoadaloc warning: parameter RCHPP404 is completely localized -it maps to no observations
+15:14:31,0.100522,autoadaloc warning: parameter RCHPP233 is completely localized -it maps to no observations
+15:14:31,0.0607847,autoadaloc warning: parameter RCHPP129 is completely localized -it maps to no observations
+15:14:31,0.0005927,autoadaloc warning: parameter RCHPP128 is completely localized -it maps to no observations
+15:14:31,0.0040819,autoadaloc warning: parameter RCHPP121 is completely localized -it maps to no observations
+15:14:31,0.261003,autoadaloc warning: parameter KX3PP201 is completely localized -it maps to no observations
+15:14:32,0.346359,autoadaloc warning: parameter KX2PP138 is completely localized -it maps to no observations
+15:14:32,0.117885,autoadaloc warning: parameter KX1PP465 is completely localized -it maps to no observations
+15:14:32,0.031731,autoadaloc warning: parameter KX1PP411 is completely localized -it maps to no observations
+15:14:32,0.0118971,autoadaloc warning: parameter KX1PP391 is completely localized -it maps to no observations
+15:14:32,0.0466611,autoadaloc warning: parameter KX1PP314 is completely localized -it maps to no observations
+15:14:32,0.0440546,autoadaloc warning: parameter KX1PP242 is completely localized -it maps to no observations
+15:14:32,0.0326892,autoadaloc warning: parameter KX1PP187 is completely localized -it maps to no observations
+15:14:32,0.0100296,autoadaloc warning: parameter KX1PP170 is completely localized -it maps to no observations
+15:14:32,0.0533366,autoadaloc warning: parameter KX1PP084 is completely localized -it maps to no observations
+15:14:32,0.038249,autoadaloc warning: parameter KX1PP027 is completely localized -it maps to no observations
+15:14:32,0.0221092,autoadaloc warning: parameter GHBC3PP33 is completely localized -it maps to no observations
+15:14:32,0.0238122,autoadaloc warning: parameter GHBC1PP36 is completely localized -it maps to no observations
+15:14:32,0.0006244,autoadaloc warning: parameter GHBC1PP35 is completely localized -it maps to no observations
+15:14:32,0.0187048,autoadaloc warning: parameter GHBC1PP04 is completely localized -it maps to no observations
+15:14:32,0.0205856,autoadaloc thread: 0 processed 2205 parameters 
+15:14:32,0.001655,instantiating localizer matrix from triplets
+15:14:32,0.0002802,autoadaloc matrix constructed with 18007 non-zero elements
+15:14:32,0.006711,starting lambda calcs for lambda 0.316406
+15:14:32,2.89e-05,see .log file for more details
+15:14:32,0.0024279,preparing fast-look containers for threaded localization solve
+15:14:32,0.0139819,upgrade thread progress: 0 of 2184 parts done
+15:14:33,0.632293,upgrade thread progress: 1000 of 2184 parts done
+15:14:33,0.634143,upgrade thread progress: 2000 of 2184 parts done
+15:14:34,0.141357,finished calcs for lambda: 0.316406
+15:14:34,0.0005271,starting lambda calcs for lambda 3.16406
+15:14:34,4.58e-05,see .log file for more details
+15:14:34,0.0022067,preparing fast-look containers for threaded localization solve
+15:14:34,0.0136132,upgrade thread progress: 0 of 2184 parts done
+15:14:34,0.634844,upgrade thread progress: 1000 of 2184 parts done
+15:14:35,0.644883,upgrade thread progress: 2000 of 2184 parts done
+15:14:35,0.149921,finished calcs for lambda: 3.16406
+15:14:35,0.0008795,starting lambda calcs for lambda 31.6406
+15:14:35,6.6e-05,see .log file for more details
+15:14:35,0.0027416,preparing fast-look containers for threaded localization solve
+15:14:35,0.0165208,upgrade thread progress: 0 of 2184 parts done
+15:14:36,0.641487,upgrade thread progress: 1000 of 2184 parts done
+15:14:36,0.634843,upgrade thread progress: 2000 of 2184 parts done
+15:14:37,0.147443,finished calcs for lambda: 31.6406
+15:14:37,0.0006575,running lambda ensembles
+15:14:37,1.74e-05,queuing 9 ensembles
+15:14:37,0.0019652,subset idx:pe real name:  0:BASE, 192:190, 149:142, 113:99, 153:146, 103:88, 196:194, 
+15:14:37,0.0224984,making runs
+15:15:00,23.4089,processing runs
+15:15:00,0.0163522,evaluting lambda ensembles
+15:15:00,0.0001426,last mean:  41.7557
+15:15:00,0.0003121,last stdev:  57.5697
+15:15:00,0.0003188,phi summary for lambda, scale fac:
+15:15:00,0.0002574,phi summary for lambda, scale fac:
+15:15:00,0.0002485,phi summary for lambda, scale fac:
+15:15:00,0.0002443,phi summary for lambda, scale fac:
+15:15:00,0.0002454,phi summary for lambda, scale fac:
+15:15:00,0.0002413,phi summary for lambda, scale fac:
+15:15:00,0.0002881,phi summary for lambda, scale fac:
+15:15:00,0.0002432,phi summary for lambda, scale fac:
+15:15:00,0.0002451,phi summary for lambda, scale fac:
+15:15:00,0.0001188,best subset mean phi  (46.5224) greater than acceptable phi : 43.8435
+15:15:00,0.0001566,abandoning current lambda ensembles, increasing lambda to  31.6406
+15:15:00,0.0001832,updating realizations with reduced phi
+15:15:00,0.0007758,updating pe:oe real =BASE:BASE, current phi: new phi  =0.708131:0.681111
+15:15:00,6.87e-05,updating pe:oe real =88:88, current phi: new phi  =74.8346:61.1245
+15:15:00,6.71e-05,updating pe:oe real =99:99, current phi: new phi  =27.5429:26.0094
+15:15:00,9.45e-05,updating pe:oe real =142:142, current phi: new phi  =21.524:20.544
+15:15:00,0.0001397,updating pe:oe real =146:146, current phi: new phi  =46.3074:44.9388
+15:15:00,0.0001261,updating pe:oe real =190:190, current phi: new phi  =40.8377:39.8583
+15:15:00,0.0001039,updating pe:oe real =194:194, current phi: new phi  =137.328:132.501
+15:15:00,0.0011824,current best mean phi (after updating reduced-phi reals):  41.6386
+15:15:00,0.0002926,updating lambda to  23.7305
+15:15:00,0.0001502,returing to lambda calculations...
+15:15:00,0.416984,phi-based termination criteria check
+15:15:00,0.0002455,phiredstp:  0.005
+15:15:00,0.0001471,nphistp:  4
+15:15:00,4.83e-05,nphinored (also used for consecutive bad lambda cycles):  4
+15:15:00,0.0001929,best mean phi sequence: 
+15:15:00,4.61e-05,best phi yet:  41.6386
+15:15:00,0.0001929,number of consecutive bad lambda testing cycles:  1
+15:15:00,0.0002083,number of iterations satisfying phiredstp criteria:  1
+15:15:00,0.0001946,number of iterations since best yet mean phi:  0
+15:15:00,0.0003599,starting solve for iteration: 7
+15:15:00,1.45e-05,starting solve for iteration: 7
+15:15:00,0.0007845,autoadaloc: checking for compat with par and obs ensembles
+15:15:00,0.0002417,autoadaloc: calculating correlation coefficients
+15:15:00,0.0722622,autoadaloc warning: parameter RCHPP405 is completely localized -it maps to no observations
+15:15:00,0.000603,autoadaloc warning: parameter RCHPP404 is completely localized -it maps to no observations
+15:15:01,0.0995314,autoadaloc warning: parameter RCHPP233 is completely localized -it maps to no observations
+15:15:01,0.0610285,autoadaloc warning: parameter RCHPP129 is completely localized -it maps to no observations
+15:15:01,0.000581,autoadaloc warning: parameter RCHPP128 is completely localized -it maps to no observations
+15:15:01,0.0040772,autoadaloc warning: parameter RCHPP121 is completely localized -it maps to no observations
+15:15:01,0.260048,autoadaloc warning: parameter KX3PP201 is completely localized -it maps to no observations
+15:15:01,0.345469,autoadaloc warning: parameter KX2PP138 is completely localized -it maps to no observations
+15:15:01,0.117665,autoadaloc warning: parameter KX1PP465 is completely localized -it maps to no observations
+15:15:01,0.03161,autoadaloc warning: parameter KX1PP411 is completely localized -it maps to no observations
+15:15:01,0.011551,autoadaloc warning: parameter KX1PP391 is completely localized -it maps to no observations
+15:15:01,0.0454128,autoadaloc warning: parameter KX1PP314 is completely localized -it maps to no observations
+15:15:01,0.0425513,autoadaloc warning: parameter KX1PP242 is completely localized -it maps to no observations
+15:15:02,0.0320569,autoadaloc warning: parameter KX1PP187 is completely localized -it maps to no observations
+15:15:02,0.0099576,autoadaloc warning: parameter KX1PP170 is completely localized -it maps to no observations
+15:15:02,0.051138,autoadaloc warning: parameter KX1PP084 is completely localized -it maps to no observations
+15:15:02,0.034095,autoadaloc warning: parameter KX1PP027 is completely localized -it maps to no observations
+15:15:02,0.0208977,autoadaloc warning: parameter GHBC3PP33 is completely localized -it maps to no observations
+15:15:02,0.0230947,autoadaloc warning: parameter GHBC1PP36 is completely localized -it maps to no observations
+15:15:02,0.0006575,autoadaloc warning: parameter GHBC1PP35 is completely localized -it maps to no observations
+15:15:02,0.0184903,autoadaloc warning: parameter GHBC1PP04 is completely localized -it maps to no observations
+15:15:02,0.0202242,autoadaloc thread: 0 processed 2205 parameters 
+15:15:02,0.0018711,instantiating localizer matrix from triplets
+15:15:02,0.0003081,autoadaloc matrix constructed with 18041 non-zero elements
+15:15:02,0.0068658,starting lambda calcs for lambda 2.37305
+15:15:02,4.52e-05,see .log file for more details
+15:15:02,0.0024457,preparing fast-look containers for threaded localization solve
+15:15:02,0.0136679,upgrade thread progress: 0 of 2184 parts done
+15:15:02,0.622206,upgrade thread progress: 1000 of 2184 parts done
+15:15:03,0.629741,upgrade thread progress: 2000 of 2184 parts done
+15:15:03,0.152245,finished calcs for lambda: 2.37305
+15:15:03,0.000458,starting lambda calcs for lambda 23.7305
+15:15:03,2.63e-05,see .log file for more details
+15:15:03,0.0021953,preparing fast-look containers for threaded localization solve
+15:15:03,0.0137162,upgrade thread progress: 0 of 2184 parts done
+15:15:04,0.645967,upgrade thread progress: 1000 of 2184 parts done
+15:15:04,0.63861,upgrade thread progress: 2000 of 2184 parts done
+15:15:05,0.15015,finished calcs for lambda: 23.7305
+15:15:05,0.0006433,starting lambda calcs for lambda 237.305
+15:15:05,2.7e-05,see .log file for more details
+15:15:05,0.0022912,preparing fast-look containers for threaded localization solve
+15:15:05,0.014077,upgrade thread progress: 0 of 2184 parts done
+15:15:05,0.627128,upgrade thread progress: 1000 of 2184 parts done
+15:15:06,0.627099,upgrade thread progress: 2000 of 2184 parts done
+15:15:06,0.147516,finished calcs for lambda: 237.305
+15:15:06,0.0007356,running lambda ensembles
+15:15:06,2.08e-05,queuing 9 ensembles
+15:15:06,0.0018758,subset idx:pe real name:  0:BASE, 72:49, 50:23, 190:188, 55:28, 186:183, 16:198, 
+15:15:06,0.0234323,making runs
+15:15:30,23.9146,processing runs
+15:15:30,0.0157317,evaluting lambda ensembles
+15:15:30,0.0001374,last mean:  41.6386
+15:15:30,0.0001877,last stdev:  57.5025
+15:15:30,0.0003208,phi summary for lambda, scale fac:
+15:15:30,0.0002867,phi summary for lambda, scale fac:
+15:15:30,0.0002473,phi summary for lambda, scale fac:
+15:15:30,0.0002502,phi summary for lambda, scale fac:
+15:15:30,0.0002457,phi summary for lambda, scale fac:
+15:15:30,0.0002761,phi summary for lambda, scale fac:
+15:15:30,0.0002431,phi summary for lambda, scale fac:
+15:15:30,0.0002427,phi summary for lambda, scale fac:
+15:15:30,0.0002413,phi summary for lambda, scale fac:
+15:15:30,0.0045247,phi summary for best lambda, scale fac: 
+15:15:30,0.0023776,running remaining realizations for best lambda, scale:
+15:15:30,1.5e-05,dropping subset idxs from remaining_pe_lam
+15:15:30,0.0021789,dropping subset idxs from remaining_oe_lam
+15:15:30,0.0001766,queuing 193 runs
+15:15:30,0.05919,making runs
+15:16:36,66.3371,processing runs
+15:16:36,0.031784,assembling ensembles
+15:16:36,0.0034342,updating phi
+15:16:36,0.0009531,phi summary for entire ensemble using lambda,scale_fac 
+15:16:36,0.0029268,last best mean phi * acceptable phi factor:  43.7205
+15:16:36,0.0003238,current best mean phi:  35.4201
+15:16:36,0.0002941,updating parameter ensemble
+15:16:36,1.34e-05,updating parameter ensemble
+15:16:36,0.0006179,updating lambda to  17.7979
+15:16:37,0.412198,phi-based termination criteria check
+15:16:37,0.0001989,phiredstp:  0.005
+15:16:37,0.0001728,nphistp:  4
+15:16:37,0.0001979,nphinored (also used for consecutive bad lambda cycles):  4
+15:16:37,0.0002198,best mean phi sequence: 
+15:16:37,0.0002051,best phi yet:  35.4201
+15:16:37,0.0001977,number of consecutive bad lambda testing cycles:  0
+15:16:37,0.0002035,number of iterations satisfying phiredstp criteria:  1
+15:16:37,0.0001989,number of iterations since best yet mean phi:  0

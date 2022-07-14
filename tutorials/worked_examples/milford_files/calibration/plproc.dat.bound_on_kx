@@ -1,0 +1,402 @@
+# Read the MODFLOW-USG grid specification file.
+
+cl_mod = read_mf_usg_grid_specs(file=.\param_files\milford1.gsf,slist=layer)
+
+# -- Now we derive a CLIST for a single layer.
+
+cl_lay=cl_mod.partition_by_eqn(select=(layer==1))
+
+# -- Now we read some model data
+
+read_list_file(reference_clist='cl_mod',skiplines=1,      &
+                        slist='ibound';column=2,          &
+                        plist='riv_cond';column=4,        &
+                        plist='riv_head';column=5,        &
+                        slist='riv_reach';column=6,       &
+                        plist='well_rate';column=7,       &
+                        slist='well_bnd';column=8,        &
+                        file='.\param_files\model_info.ndt')
+
+# -- We determine ibound for the layer CLIST (IBOUND is the same for all layers).
+
+ibound_lay=ibound.partition_by_clist(clist=cl_lay)
+
+# -- Read ppset1 details and kx values.
+
+cl_pp1 = read_list_file(skiplines=1,dimensions=2,         &
+                        plist=pp1_kx;column=4,            &
+                        id_type=integer,                  &
+                        file=.\param_files\ppset1.dat)
+
+# -- Read ppset2 details and multiplier values.
+
+cl_pp2 = read_list_file(skiplines=1,dimensions=2,         &
+                        plist=pp2_kxmul;column=4,         &
+                        id_type=integer,                  &
+                        file=.\param_files\ppset2.dat)
+
+# -- Read ppset3 details and multiplier values.
+
+cl_pp3 = read_list_file(skiplines=1,dimensions=2,         &
+                        plist=pp3_kxlaymul;column=4,      &
+                        plist=pp3_vanis;column=5,         &
+                        plist=pp3_recharge;column=6,      &
+                        id_type=integer,                  &
+                        file=.\param_files\ppset3.dat)
+
+# -- Read boundary_well pilot points.
+
+cl_ppw = read_list_file(skiplines=1,dimensions=2,         &
+                        slist=ppw_bnd;column=4,           &
+                        plist=ppw_mul;column=5,           &
+                        id_type=integer,                  &
+                        file=.\param_files\pp_wells.dat)
+
+# -- Read river pilot points
+
+cl_ppr = read_list_file(skiplines=1,dimensions=2,         &
+                        slist='ppr_reach';column=4,       &
+                        plist='ppr_mul';column=5,         &
+                        plist='ppr_add';column=6,         &
+                        id_type='integer',                &
+                        file=.\param_files\pp_rivers.dat)
+
+
+# -- Calculate some kriging factors
+
+calc_kriging_factors_auto_2d(target_clist=cl_lay;select=(ibound_lay.ne.0),       &
+                        source_clist=cl_pp1,                                     &
+                        file=.\param_files\factors_pp1.dat)
+
+calc_kriging_factors_auto_2d(target_clist=cl_lay;select=(ibound_lay.ne.0),       &
+                        source_clist=cl_pp2,                                     &
+                        file=.\param_files\factors_pp2.dat)
+
+calc_kriging_factors_auto_2d(target_clist=cl_lay;select=(ibound_lay.ne.0),       &
+                        source_clist=cl_pp3,                                     &
+                        file=.\param_files\factors_pp3.dat)
+
+# -- Define some PLISTS
+
+kx1=new_plist(reference_clist=cl_lay,value=100.0)
+kx2=new_plist(reference_clist=cl_lay,value=100.0)
+kx3=new_plist(reference_clist=cl_lay,value=100.0)
+kz1=new_plist(reference_clist=cl_lay,value=10.0)
+kz2=new_plist(reference_clist=cl_lay,value=10.0)
+kz3=new_plist(reference_clist=cl_lay,value=10.0)
+work=new_plist(reference_clist=cl_lay,value=1.0)
+
+
+# -- We assign kx2 through interpolation
+
+kx2=pp1_kx.krige_using_file(file='.\param_files\factors_pp1.dat',transform=log)
+
+# -- We interpolate the multiplier value and apply it to kx2
+
+work=pp2_kxmul.krige_using_file(file='.\param_files\factors_pp2.dat',transform=log)
+kx2=kx2*work
+
+# -- We now obtain values for kx1 and kx3
+
+work=pp3_kxlaymul.krige_using_file(file='.\param_files\factors_pp3.dat',transform=log)
+kx1 = kx2*work
+kx3 = kx2/work
+
+# -- The following is important ##################################
+kx1=min(kx1,500)
+kx2=min(kx2,500)
+kx3=min(kx3,500)
+
+# -- We now obtain values for kz1, kz2 and kz3
+
+work=pp3_vanis.krige_using_file(file='.\param_files\factors_pp3.dat',transform=log)
+kz1 = kx1/work
+kz2 = kx2/work
+kz3 = kx3/work
+
+# -- The model kx and kz input files are written. We use embedded functions.
+
+write_model_input_file(template_file=.\param_files\kx.dat.tpl,          &
+                       model_input_file=kx.dat)
+
+write_model_input_file(template_file=.\param_files\kz.dat.tpl,          &
+                       model_input_file=kz.dat)
+
+# -- We now interpolate recharge and write it to its input file
+
+recharge=new_plist(reference_clist=cl_lay,value=0.0)
+recharge=pp3_recharge.krige_using_file(file='.\param_files\factors_pp3.dat',transform=none)
+write_model_input_file(template_file=.\param_files\recharge.dat.tpl,    &
+                       model_input_file=recharge.dat)
+
+# We now interpolate the multipliers on lateral well pumping rates.
+
+work3d=new_plist(reference_clist=cl_mod,value=1.0)
+work3d(select=(well_bnd.eq.1))=ppw_mul.ivd_interpolate_2d(       &
+                               select=(ppw_bnd==1),              &
+                               transform='log',                  &
+                               inv_power=2.0,                    &
+                               min_points=2,                     &
+                               max_points=100,                   &
+                               search_radius=20000.0)
+
+work3d(select=(well_bnd.eq.2))=ppw_mul.ivd_interpolate_2d(       &
+                               select=(ppw_bnd==2),              &
+                               transform='log',                  &
+                               inv_power=2.0,                    &
+                               min_points=2,                     &
+                               max_points=100,                   &
+                               search_radius=20000.0)
+
+well_rate=well_rate*work3d
+
+# -- Well pumping rates are written to the model input file. (Note the importance of
+#    column formatting in the template file.)
+
+write_model_input_file(template_file='.\param_files\milford1.wel.tpl',   &
+                       model_input_file= 'milford1.wel')
+
+# -- We now interpolate the multipliers on river conductances.
+
+work3d=1.0
+
+work3d(select=(riv_reach.eq.1))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==1),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.2))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==2),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.3))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==3),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.4))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==4),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.5))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==5),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.6))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==6),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.7))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==7),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.8))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==8),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.9))=ppr_mul.ivd_interpolate_2d(       &
+                                select=(ppr_reach==9),            &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.10))=ppr_mul.ivd_interpolate_2d(      &
+                                select=(ppr_reach==10),           &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.11))=ppr_mul.ivd_interpolate_2d(      &
+                                select=(ppr_reach==11),           &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.12))=ppr_mul.ivd_interpolate_2d(      &
+                                select=(ppr_reach==12),           &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.13))=ppr_mul.ivd_interpolate_2d(      &
+                                select=(ppr_reach==13),           &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.14))=ppr_mul.ivd_interpolate_2d(      &
+                                select=(ppr_reach==14),           &
+                                transform='log',                  &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+riv_cond=riv_cond*work3d
+
+
+# -- We now interpolate the adders to river heads.
+
+work3d=0.0
+
+work3d(select=(riv_reach.eq.1))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==1),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.2))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==2),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.3))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==3),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.4))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==4),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.5))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==5),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.6))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==6),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.7))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==7),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.8))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==8),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.9))=ppr_add.ivd_interpolate_2d(       &
+                                select=(ppr_reach==9),            &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.10))=ppr_add.ivd_interpolate_2d(      &
+                                select=(ppr_reach==10),           &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.11))=ppr_add.ivd_interpolate_2d(      &
+                                select=(ppr_reach==11),           &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.12))=ppr_add.ivd_interpolate_2d(      &
+                                select=(ppr_reach==12),           &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.13))=ppr_add.ivd_interpolate_2d(      &
+                                select=(ppr_reach==13),           &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+work3d(select=(riv_reach.eq.14))=ppr_add.ivd_interpolate_2d(      &
+                                select=(ppr_reach==14),           &
+                                transform='none',                 &
+                                inv_power=2.0,                    &
+                                min_points=2,                     &
+                                max_points=100,                   &
+                                search_radius=2000.0)
+
+riv_head=riv_head+work3d
+riv_bot =riv_head-1.0
+
+# -- River conductances are written to the model input file. (Note the importance of
+#    column formatting in the template file.)
+
+write_model_input_file(template_file='.\param_files\milford1.riv.tpl',   &
+                       model_input_file= 'milford1.riv')
+

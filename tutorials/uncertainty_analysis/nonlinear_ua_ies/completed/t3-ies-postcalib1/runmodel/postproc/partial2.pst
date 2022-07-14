@@ -1,0 +1,10 @@
+* observation groups
+pstreams
+* observation data
+ p-trib_1               -6000.00000           0.000000          pstreams
+ p-total_1              -6000.00000           0.000000          pstreams
+* model command line
+ runmodel.bat
+* model input/output
+ INSERT TEMPLATE AND MODEL INPUT FILES HERE
+ m_pred-stream_ssf.ins     m_pred-stream_ssf.ssf

@@ -1,0 +1,20 @@
+# mod-PATH3DU cell data
+
+CONSTANT        2     MTH Layer 1
+CONSTANT        2     MTH Layer 2
+CONSTANT        2     MTH Layer 3
+CONSTANT      0.05    Porosity Layer 1
+CONSTANT      0.05    Porosity Layer 2
+CONSTANT      0.05    Porosity Layer 3
+CONSTANT    1.0     Retardation Layer 1
+CONSTANT    1.0     Retardation Layer 2
+CONSTANT    1.0     Retardation Layer 3
+CONSTANT    0.0     DispH Layer 1
+CONSTANT    0.0     DispH Layer 2
+CONSTANT    0.0     DispH Layer 3
+CONSTANT    0.0     DispT Layer 1
+CONSTANT    0.0     DispT Layer 2
+CONSTANT    0.0     DispT Layer 3
+CONSTANT    0.0     DispV Layer 1
+CONSTANT    0.0     DispV Layer 2
+CONSTANT    0.0     DispV Layer 3

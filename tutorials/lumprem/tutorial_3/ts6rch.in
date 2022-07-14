@@ -1,0 +1,21 @@
+# Here is a comment
+
+BEGIN FILES
+  FILEIN  rch.ts
+  FILEOUT rch_new.ts
+END FILES
+
+BEGIN PARAMETERS
+END PARAMETERS
+
+BEGIN PROCESSING
+  avg1 = time_average_over_interval(rch_lu1,none,0.0,99999.0)
+  avg2 = time_average_over_interval(rch_lu2,none,0.0,99999.0)
+  avg3 = time_average_over_interval(rch_lu3,none,0.0,99999.0)
+  
+  rch_lu1 = assign_terms(rch_lu1, avg1, 0.0, 0.0)
+  rch_lu2 = assign_terms(rch_lu2, avg2, 0.0, 0.0)
+  rch_lu3 = assign_terms(rch_lu3, avg3, 0.0, 0.0)
+  
+
+END PROCESSING

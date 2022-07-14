@@ -1,0 +1,8 @@
+# observation group name covariance matrix file
+regul_kx1       ..\runmodel\preproc\cov1.mat      
+regul_kx2       ..\runmodel\preproc\cov2.mat      
+regul_kx3       ..\runmodel\preproc\cov3.mat      
+regul_rch		..\runmodel\preproc\cov_rch.mat
+regul_strc		..\runmodel\preproc\cov_stream.mat
+regul_ghb1		..\runmodel\preproc\cov_ghb.mat
+regul_ghb3		..\runmodel\preproc\cov_ghb.mat

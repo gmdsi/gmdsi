@@ -1,0 +1,22 @@
+                  RUN MANAGEMENT RECORD: CASE linunc-red
+ 
+ 
+ **************************************************
+ RUN MANAGEMENT UNDERTAKEN FOR A HP SUITE PROGRAM
+ COMMUNICATIONS PROTOCOL = TCP.
+ **************************************************
+ 
+ Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+ Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+ Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+
+ RUNNING MODEL FOR FIRST TIME  -----> 
+
+ Running model 1 time....
+   22 Apr 09:45:48.23:- index of 1 assigned to agent working in directory "10.24.97.28\\d:\github\gmdsi_linearanalysis\tutorial\pest-linunc-completed".
+   22 Apr 09:45:48.23:- model run 1 initiated using agent 1.
+   22 Apr 09:45:51.56:- model run 1 completed by agent 1.
+
+ STATISTICS
+
+ For run management efficiency statistics see file linunc-red.rme.

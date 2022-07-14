@@ -1,0 +1,85 @@
+# -- We read the MODFLOW 6 binary grid file. We read it as a 3D file.
+
+cl_mf6 = read_mf6_grid_specs(file=../model/model.disv.grb,       &
+                              dimensions=3,             &
+                              slist_layernum = layer,   &
+                              slist_idomain  = idomain)
+
+
+# -- Now we read the SEGLIST.
+
+sl_stream = read_segfile(file="segfile.dat", protocol=table)
+
+
+# -- Next we create a CLIST for pilot points. The nodes of this CLIST will be at the ends
+#    of each segment of the SEGLIST.
+
+cl_streampp = create_clist_from_seglist(seglist=sl_stream,      &
+                                 linkage_type=endpoints,       &
+                                 dist_thresh=10.0)
+
+# -- Lets take a look at the CLIST that we have just created so that we know its dimension.
+#    This function can be commented out when we are running the model under the control of PEST.
+
+# cl_streampp.report_dependent_lists(file='report-stream.dat')
+
+# -- Now we know that there are XX pilot points. This allows us to make a list file, and
+#    a template of that list file.
+
+# -- Read the list file to obtain stream conductance values at pilot points.
+
+read_list_file(reference_clist='cl_streampp',skiplines=1,       &
+               file='streampp.dat',                           &
+               plist='pp_streamcond';column=5)
+
+# -- Next we need to build as SLIST of MODFLOW cells to which interpolation must take place.
+#    In our case this is the file that provides stream cells for the first stress period.
+#    All other stress periods use the same stream conductances.
+
+streamcells_mf6 = cl_mf6.find_cells_in_lists(                   &
+                 file=../model/model.riv_stress_period_data_1.txt,      &
+                 model_type=mf6_disv,                          &
+                 list_col_start=1,                             &
+                 keytext_start='top_of_file',                  &
+                 keytext_end='end_of_file')
+
+# -- Now we can calculate kriging factors to these cells through linear
+#    interpolation down segments that approximate the disposition of the stream.
+#    This function needs to be run only once - and not when PEST is estimating parameters.
+
+#calc_linear_interp_factors(source_clist=cl_streampp,                            &
+#                           target_clist=cl_mf6;select=(streamcells_mf6.ne.0),   &
+#                           file="factors_streamcells.dat",                      &
+#                           search_radius=100)
+
+# -- Initialize the stream conductivity PLIST
+
+streamcond_mf6=new_plist(reference_clist=cl_mf6,value=0.0)
+
+# -- We now undertake the actual interpolation.
+
+streamcond_mf6=pp_streamcond.interp_using_file(file=factors_streamcells.dat,                    &
+                                transform=log)
+
+# -- A new model input file is written.
+#    Replce the values in the stress period file. 
+
+replace_cells_in_lists(old_file=model.riv_stress_period_data_1.tpl,               &
+                       new_file=../model/model.riv_stress_period_data_1.txt,           &
+                       model_type=mf6_disv,                                       &
+                       list_col_start=1,                                          &
+                       keytext_start='top_of_file',                               &
+                       keytext_end='bottom_of_file',                              &
+                       plist=streamcond_mf6;column=4;action='replace')
+
+
+
+
+
+
+
+
+
+
+
+

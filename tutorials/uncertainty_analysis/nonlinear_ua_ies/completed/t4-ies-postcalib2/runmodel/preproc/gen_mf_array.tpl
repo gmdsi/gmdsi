@@ -1,0 +1,1 @@
+$#p prop_mf.write_in_sequence(format="(1x,1pg18.11)")

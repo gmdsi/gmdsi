@@ -1,0 +1,112 @@
+# -- First we read the MODFLOW-USG grid specification file.
+
+cl_m = read_mf_usg_grid_specs(file=example.gsf,slist=layer)
+
+# -- We now read a node data table file in which zonation is defined for the model.
+
+read_list_file(reference_clist='cl_m',skiplines=1,   &
+                         slist=zone;column=3,        &
+                         file='ibound_zones.ndt')
+
+# -- Pilot point PLISTs are now created by reading appropriate files.
+
+cl_k3  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k3';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z3.pts')
+
+cl_k4  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k4';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z4.pts')
+
+cl_k5  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k5';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z5.pts')
+
+cl_k6  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k6';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z6.pts')
+
+cl_k7  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k7';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z7.pts')
+
+cl_k8  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k8';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z8.pts')
+
+cl_k9  = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k9';column=4,     &
+                        id_type='integer',          &
+                        file='pp_k_z9.pts')
+
+cl_k10 = read_list_file(skiplines=1,dimensions=2,   &
+                        plist='pp_k10';column=4,    &
+                        id_type='integer',          &
+                        file='pp_k_z10.pts')
+
+
+# -- A new PLIST is created in which a default value of zero is given to all grid nodes.
+
+k_m =new_plist(reference_clist=cl_m,value=0.0)
+
+# -- Pilot point interpolation is now carried out using radial basis functions.
+
+
+k_m(select=(zone==3))=pp_k3.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat')
+
+k_m(select=(zone==4))=pp_k4.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+k_m(select=(zone==5))=pp_k5.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+k_m(select=(zone==6))=pp_k6.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+k_m(select=(zone==7))=pp_k7.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+k_m(select=(zone==8))=pp_k8.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+k_m(select=(zone==9))=pp_k9.rbf_interpolate_2d(                      &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+k_m(select=(zone==10))=pp_k10.rbf_interpolate_2d(                    &
+                            transform='log',                         &
+                            rbf=imq; epsminsepfac=0.8,               &
+                            constant_term='yes',                     &
+                            report_file='report_k.dat'; position='append')
+
+# -- We record some files to make sure that we are doing ok.
+
+report_all_entities(file=report1.dat)
+cl_m.report_dependent_lists(file='report2.dat')

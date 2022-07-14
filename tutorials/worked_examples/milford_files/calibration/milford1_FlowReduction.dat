@@ -1,0 +1,4 @@
+ 
+ WELLS WITH REDUCED PUMPING FOR STRESS PERIOD     1 TIME STEP     1
+WELL.NO  NODE         APPL.Q          ACT.Q        GW_HEAD       CELL_BOT
+   1140    190081   -153965.       -56188.2        227.626        227.484    

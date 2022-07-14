@@ -1,0 +1,43 @@
+[
+	{
+		"Program Information" : 
+		{
+			"Developer" : "S.S. Papadopulos & Assoc. Inc.",
+			"Title" : "writeP3DOutput",
+			"Version" : 
+			{
+				"Date" : "02/2021",
+				"Number" : "2.1.5"
+			}
+		}
+	},
+	{
+		"Timing" : 
+		{
+			"Elapsed" : 
+			{
+				"minutes" : 6.99509208e-001,
+				"seconds" : 4.19705525e+001
+			},
+			"Finished" : "Tue Jun 22 13:46:25 2021\n",
+			"Started" : "Tue Jun 22 13:45:43 2021\n"
+		}
+	},
+	{
+		"OUTPUTS" : 
+		{
+			"ASCII_TABLE" : 
+			{
+				"FILE_NAME" : "milford1.ptl"
+			},
+			"COUNT" : 1,
+			"TYPES" : [      "ASCII_TABLE" ]
+		}
+	},
+	{
+		"Warning(s)" : null
+	},
+	{
+		"Error(s)" : null
+	}
+]

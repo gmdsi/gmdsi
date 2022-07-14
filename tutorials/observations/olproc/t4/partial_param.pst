@@ -1,0 +1,104 @@
+pcf
+* control data
+restart estimation
+    2728         0         1         0         0
+    1  0    single  point
+ 10.0  -3.0  0.3  0.03  10  lamforgive
+ 10.0  10.0  0.001
+ 0.1
+ 0  0.005  4  4  0.005  4
+ 0  0  0
+* singular value decomposition
+1
+  5000  5e-7
+0
+* parameter groups
+ghbcond       relative   0.015   0.0  switch  2  parabolic
+* parameter data
+ghbcond1pp01  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp01  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp02  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp02  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp03  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp03  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp04  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp04  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp05  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp05  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp06  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp06  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp07  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp07  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp08  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp08  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp09  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp09  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp10  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp10  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp11  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp11  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp12  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp12  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp13  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp13  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp14  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp14  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp15  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp15  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp16  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp16  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp17  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp17  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp18  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp18  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp19  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp19  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp20  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp20  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp21  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp21  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp22  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp22  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp23  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp23  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp24  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp24  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp25  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp25  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp26  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp26  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp27  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp27  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp28  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp28  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp29  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp29  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp30  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp30  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp31  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp31  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp32  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp32  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp33  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp33  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp34  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp34  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp35  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp35  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp36  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp36  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp37  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp37  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp38  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp38  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp39  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp39  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp40  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp40  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond1pp41  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+ghbcond3pp41  log    factor      1.000000       1.0000000E-04    10000.00           ghbcond   1.0   0.0
+* observation groups
+* observation data
+* model command line
+* model input/output
+ghbpp.tpl    ghbpp.dat

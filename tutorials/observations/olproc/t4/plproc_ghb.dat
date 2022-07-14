@@ -1,0 +1,63 @@
+# -- We read the MODFLOW 6 binary grid file. We read it as a 2D file.
+
+cl_mf6 = read_mf6_grid_specs(file=model.disv.grb,       &
+                              dimensions=3,             &
+                              slist_layernum = layer,   &
+                              slist_idomain  = idomain)
+
+# -- We now build an SLIST of drain cells to which we want interpolation to take place.
+
+ghbcells_mf6 = cl_mf6.find_cells_in_lists(                   &
+                 file=model.ghb_stress_period_data_1.txt,      &
+                 model_type=mf6_disv,                          &
+                 list_col_start=1,                             &
+                 keytext_start='top_of_file',                  &
+                 keytext_end='end_of_file')
+
+# -- We next read the pilot points file and pilot point locations and values.
+
+cl_pp = read_list_file(file='ghbpp.dat',             &
+                       id_type='integer',              &
+                       skiplines=1,                    &
+                       dimensions=2,                   &
+                       plist='ghbcond1_pp';column=5,     &
+                       plist='ghbcond3_pp';column=6)
+
+# -- Initialize the drain conductivity PLIST
+ghbcond_mf6=new_plist(reference_clist=cl_mf6,value=0.0)
+
+
+# -- We now interpolate from pilot points to the drain conductances.
+#    We use inverse power of distance; but any interpolation method could be used.
+
+ghbcond_mf6(select=((ghbcells_mf6.ne.0)&&(layer.eq.1)))=ghbcond1_pp.ivd_interpolate_2d(      &
+                                        transform='log',                          &
+                                        inv_power=2.0,                            &
+                                        min_points=2,                             &
+                                        max_points=20,                            &
+                                        search_radius=1.0e20)
+
+ghbcond_mf6(select=((ghbcells_mf6.ne.0)&&(layer.eq.3)))=ghbcond3_pp.ivd_interpolate_2d(      &
+                                        transform='log',                          &
+                                        inv_power=2.0,                            &
+                                        min_points=2,                             &
+                                        max_points=20,                            &
+                                        search_radius=1.0e20)
+
+
+# -- A new model input file is written.
+
+replace_cells_in_lists(old_file=model.ghb_stress_period_data_1.tpl,               &
+                       new_file=model.ghb_stress_period_data_1.txt,           &
+                       model_type=mf6_disv,                                       &
+                       list_col_start=1,                                          &
+                       keytext_start='top_of_file',                               &
+                       keytext_end='bottom_of_file',                              &
+                       plist=ghbcond_mf6;column=4;action='replace')
+
+# -- This is for our own interest.
+#cl_mf6.report_dependent_lists(file='report-ghb.dat')
+
+
+
+

@@ -1,0 +1,49 @@
+# An OLPROC control file.
+
+START GENERAL
+  date_format        = dd/mm/yyyy
+  time_for_csv_files = 00:00:00 
+  
+  # the 1st tstep is a 1day steady state stress period
+  # the subsequent transient stress period starts on 01/01/2000 
+  model_start_date   = 31/12/1999
+  model_start_time   = 00:00:00
+  model_time_units   = days
+  history_match_end_date = 01/01/2000 
+  history_match_end_time = 23:59:59
+END GENERAL
+                      
+START MEAS_SSF_FILES
+  file = obs-heads1.ssf      group=heads1   use_abs=yes use_diff=no
+  file = obs-heads3.ssf      group=heads3   use_abs=yes use_diff=no
+  file = obs-stream.ssf     group=streams use_abs=yes use_diff=no
+  
+  # headdiff is the head difference between layer 1 and 3 at the same site
+  file = obs-headdiff.ssf   group=headiff use_abs=yes use_diff=no 
+  
+END MEAS_SSF_FILES
+
+START MF6_OBS_FILES
+  file = ../model/obs/head_obs.csv
+  file = ../model/obs/stream_flow.csv
+END MF6_OBS_FILES
+
+START SECONDARY_MODEL_OUTCOMES  
+  dh3892 = ("H1-3892" - "H3-3892")
+  TOTAL = (TRIB+MAIN)
+END SECONDARY_MODEL_OUTCOMES 
+ 
+START OUTPUT
+  partial_pest_control_file = partial1.pst
+  model_batch_file = runmodel.bat
+  obs_ssf_folder = .\obs_files
+END OUTPUT
+  
+START WEIGHTS        
+  name = heads1 type=abs weight = 10      
+  name = heads3 type=abs weight =10      
+  name = streams type=abs weight= abs(1.0/(0.1*obsval+0.001))        
+  name = headiff type=abs weight=  100     
+END WEIGHTS
+
+  

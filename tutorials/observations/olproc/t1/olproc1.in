@@ -1,0 +1,34 @@
+# An OLPROC control file.
+
+START GENERAL
+  date_format        = dd/mm/yyyy
+
+  # the 1st timestep is a 1-day steady state stress period
+  # the subsequent transient stress period starts on 01/01/2000 
+  model_start_date   = 31/12/1999
+  model_start_time   = 00:00:00
+  
+  # MODFLOW6 time-step units are setup as day.
+  model_time_units   = days
+
+  # Set the History Matching Window
+  history_match_start_date  = 01/01/2000
+END GENERAL
+
+START MEAS_SSF_FILES
+  # Read the head measurements for layer 1 and layer 3
+  file = obs-heads1.ssf     group=heads1   use_abs=yes  use_diff=yes
+  file = obs-heads3.ssf     group=heads3   use_abs=yes  use_diff=yes 
+END MEAS_SSF_FILES
+
+START MF6_OBS_FILES
+  file = head_obs.csv
+END MF6_OBS_FILES
+ 
+START OUTPUT
+  partial_pest_control_file = partial1.pst
+  model_batch_file          = runmodel.bat
+  obs_ssf_folder            = .\obsfiles
+END OUTPUT
+
+  

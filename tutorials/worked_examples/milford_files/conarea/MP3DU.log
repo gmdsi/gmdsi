@@ -1,0 +1,223 @@
+[
+	{
+		"Program Information" : 
+		{
+			"Developer" : "S.S. Papadopulos & Assoc. Inc.",
+			"Title" : "mod-PATH3DU",
+			"Version" : 
+			{
+				"Date" : "02/2021",
+				"Number" : "2.1.5"
+			}
+		}
+	},
+	{
+		"Timing" : 
+		{
+			"Elapsed" : 
+			{
+				"minutes" : 1.76764935e+000,
+				"seconds" : 1.06058961e+002
+			},
+			"Finished" : "Tue Jun 22 12:59:52 2021\n",
+			"Started" : "Tue Jun 22 12:58:06 2021\n"
+		}
+	},
+	{
+		"Flow Model" : 
+		{
+			"Boundary_Packages" : 
+			{
+				"CLN" : 
+				{
+					"Binary_File" : "milford1.cbb",
+					"Binary_Header" : "CLN",
+					"IFACE" : "0 - internal sink/source, with well correction"
+				},
+				"DRN" : 
+				{
+					"Binary_File" : "milford1.cbb",
+					"Binary_Header" : "DRAINS",
+					"IFACE" : "6 - top face"
+				},
+				"EVT" : 
+				{
+					"Binary_File" : "milford1.cbb",
+					"Binary_Header" : "ET",
+					"IFACE" : "6 - top face"
+				},
+				"RCH" : 
+				{
+					"Binary_File" : "milford1.cbb",
+					"Binary_Header" : "RECHARGE",
+					"IFACE" : "6 - top face"
+				},
+				"RIV" : 
+				{
+					"Binary_File" : "milford1.cbb",
+					"Binary_Header" : "RIVER LEAKAGE",
+					"IFACE" : "6 - top face"
+				},
+				"WEL" : 
+				{
+					"Binary_File" : "milford1.cbb",
+					"Binary_Header" : "WELLS",
+					"IFACE" : "0 - internal sink/source, with well correction"
+				}
+			},
+			"Cell-by-cell flow file" : 
+			[
+				{
+					"File name" : "E:\\milford_tutorial\\may10_2021\\model11_klimp\\milford1.cbb",
+					"Headers" : 
+					[
+						[             "TSTP",             "SPER",             "ITEM",             "NCOL",             "NROW",             "NLAY",            "IMETH",             "DELT",           "PERTIM",            "TOTIM" ],
+						[                  1,                  1,    "CONSTANT HEAD",             190080,                  1,                 -1,                  2,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,     "FLOW JA FACE",            1200732,                  1,                 -1,                  1,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,              "CLN",             190080,                  1,                 -1,                  2,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,            "WELLS",             190080,                  1,                 -1,                  5,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,           "DRAINS",             190080,                  1,                 -1,                  5,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,    "RIVER LEAKAGE",             190080,                  1,                 -1,                  5,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,               "ET",              63360,                  1,                 -1,                  3,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ],
+						[                  1,                  1,         "RECHARGE",              63360,                  1,                 -1,                  3,    1.00000000e+001,    1.00000000e+001,    1.00000000e+001 ]
+					],
+					"Note(s)" : 
+					[
+						"Only the HEADERS for the first and last three stress-periods are logged here.",
+						"If you would like to see all the headers, use the VERBOSE option on the commandline. See manual for details.",
+						"Reading as SINGLE precision."
+					]
+				}
+			],
+			"GSF" : 
+			[
+				{
+					"NNODES" : 63879,
+					"TYPE" : "mod-path3duv110"
+				}
+			],
+			"GSF file" : ".\\particles\\milford1-new.gsf",
+			"Grid" : 
+			{
+				"Last node-number in layer" : [              63360,             126720,             190080 ],
+				"Number of layers" : 3,
+				"Number of nodes" : 190080,
+				"Type" : "Unstructured"
+			},
+			"Head-save file" : 
+			{
+				"File name" : "E:\\milford_tutorial\\may10_2021\\model11_klimp\\milford1.hds",
+				"Headers" : 
+				[
+					[             "TSTP",             "SPER",           "PERTIM",            "TOTIM",             "ITEM",             "NCOL",             "NROW",             "ILAY" ],
+					[                  1,                  1,    1.00000000e+001,    1.00000000e+001,            "HEADU",                  1,              63360,                  1 ],
+					[                  1,                  1,    1.00000000e+001,    1.00000000e+001,            "HEADU",              63361,             126720,                  2 ],
+					[                  1,                  1,    1.00000000e+001,    1.00000000e+001,            "HEADU",             126721,             190080,                  3 ]
+				],
+				"Note(s)" : 
+				[
+					"Only the HEADERS for the first and last three stress-periods are logged here.",
+					"If you would like to see all the headers, use the VERBOSE option on the commandline. See manual for details.",
+					"Reading as SINGLE precision."
+				]
+			},
+			"Master Timing Info" : 
+			{
+				"Description" : 
+				[
+					"mod-PATH3DU will always loop through the stress-periods/timesteps defined in the DIS file, unless adaptive time stepping is used, in which case timesteps are determined from the CBB file.",
+					"If a timestep is missing from either the HDS or CBB files, it will use the next available to fill in the gaps.",
+					"The table below summarizes the entry in the HDS and CBB files used for each timestep. This table is important. All of the timesteps, regardless of how many, are reported here.",
+					"If you do not like it, update the OUTPUT CONTROL package of MODFLOW, rerun it and then rerun mod-PATH3DU. See manual for more details."
+				],
+				"Table" : 
+				[
+					{
+						"MASTER" : 
+						{
+							"SPER" : 1,
+							"TOTIM" : 1.00000000e+001,
+							"TSTP" : 1
+						},
+						"milford1.cbb" : 
+						{
+							"SPER" : 1,
+							"TOTIM" : 1.00000000e+001,
+							"TSTP" : 1
+						},
+						"milford1.hds" : 
+						{
+							"SPER" : 1,
+							"TOTIM" : 1.00000000e+001,
+							"TSTP" : 1
+						}
+					}
+				]
+			},
+			"Model type" : "MODFLOW",
+			"NAME file" : "milford1-mpath.nam",
+			"Note(s)" : 
+			[
+				"Successfully initialized MODFLOW.",
+				"Successfully read MODFLOW input files.",
+				"Successfully copied necessary MODFLOW values/arrays.",
+				"Successfully indexed head-save file.",
+				"Successfully indexed cell-by-cell flow file."
+			],
+			"Output precision" : "single",
+			"Stress period(s)" : 
+			{
+				"Number of periods" : 1,
+				"Periods" : 
+				[
+					[             "TSTP",             "SPER",             "DELT",            "TOTIM",             "TYPE" ],
+					[                  1,                  1,    1.00000000e+001,    1.00000000e+001,     "Steady-state" ]
+				]
+			},
+			"Tracking Stress Period - Range" : 
+			{
+				"Table" : 
+				[
+					[             "TSTP",             "SPER",            "BEGIN",            "TOTIM",             "DELT" ],
+					[                  1,                  1,    0.00000000e+000,    1.00000000e+012,    1.00000000e+012 ]
+				]
+			}
+		}
+	},
+	{
+		"Simulation(s)" : 
+		[
+			{
+				"milford1" : 
+				{
+					"Adaptive_Step_Error" : 1.00000000e-006,
+					"Initial_Stepsize" : 1.00000000e+001,
+					"Option(s)" : [ "track_to_termination" ],
+					"Particle_Start_Locations" : 
+					{
+						"Attributes" : 
+						{
+							"CellID_Attr" : "cellid",
+							"Time_Attr" : "time",
+							"ZLoc_Attr" : "zloc"
+						},
+						"File" : "milford1-ptstart",
+						"Maximum_Release_Time" : 0.00000000e+000,
+						"Minimum_Release_Time" : 0.00000000e+000,
+						"Number_of_Particles" : 33745
+					},
+					"Simulation_End_Time" : 1.00000000e+012,
+					"Stagnation_DT" : 1.00000000e-015,
+					"Tracking_Direction" : "Forward",
+					"Well_Capture_Radius" : 1.00000000e+001
+				}
+			}
+		]
+	},
+	{
+		"Warning(s)" : null
+	},
+	{
+		"Error(s)" : null
+	}
+]

@@ -1,0 +1,34 @@
+READ_LUMPREM_OUTPUT_FILE	lr_lu1.out 	2
+rch_lu1		recharge		div_delta_t
+evp_lu1		gw_pot_evap	    div_delta_t
+
+READ_LUMPREM_OUTPUT_FILE 	lr_lu2.out 	3
+rch_lu2		recharge		div_delta_t
+evp_lu2		gw_pot_evap	    div_delta_t
+wel_lu2		gw_withdrawal	div_delta_t
+
+READ_LUMPREM_OUTPUT_FILE 	lr_lu3.out 	3
+rch_lu3		recharge		div_delta_t
+evp_lu3		gw_pot_evap     div_delta_t
+wel_lu3		gw_withdrawal	div_delta_t
+
+READ_LUMPREM_OUTPUT_FILE 	lr_ghb.out 	1
+ghb		elevation	no_div_delta_t
+
+
+WRITE_MF6_TIME_SERIES_FILE	rch.ts		3	1.0
+rch_lu1		1	0	linearend 	next
+rch_lu2		1	0	linearend 	next
+rch_lu3		1	0	linearend 	next
+
+WRITE_MF6_TIME_SERIES_FILE	evp.ts		3	1.0
+evp_lu1		1	0	linearend 	next
+evp_lu2		1	0	linearend 	next
+evp_lu3		1	0	linearend 	next
+
+WRITE_MF6_TIME_SERIES_FILE	wel.ts		2	1.0
+wel_lu2		1	0	linearend 	next
+wel_lu3		1	0	linearend 	next
+
+WRITE_MF6_TIME_SERIES_FILE 	ghb.ts 		1	1.0
+ghb		1	0	linear 	next

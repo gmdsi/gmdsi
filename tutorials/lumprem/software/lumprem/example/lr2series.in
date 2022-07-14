@@ -1,0 +1,15 @@
+READ_LUMPREM_OUTPUT_FILE lumprem_test.out 5
+#  my_name     LUMPREM_name      divide_by_delta_t?
+
+   rech       total_rech        div_delta_t
+   netrech    net_recharge      div_delta_t
+   gw         gw_withdrawal     div_delta_t
+   gwevap     gw_pot_evap       div_delta_t
+   elev       elevation         no_div_delta_t
+
+WRITE_MF6_TIME_SERIES_FILE lumprem_test.ts6 3
+# ts_name     scale        ofset        mf6_method
+
+  rech       1.0          0.0          linearend
+  elev       1.0          0.0          linearend
+  gwevap     1.0          0.0          linearend

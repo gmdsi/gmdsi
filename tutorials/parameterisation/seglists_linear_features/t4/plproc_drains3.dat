@@ -1,0 +1,85 @@
+# -- We read the MODFLOW 6 binary grid file. We read it as a 3D file.
+
+cl_mf6 = read_mf6_grid_specs(file=model.disv.grb,       &
+                              dimensions=3,             &
+                              slist_layernum = layer,   &
+                              slist_idomain  = idomain)
+
+
+# -- Now we read the SEGLIST.
+
+sl_drains = read_segfile(file="segfile.dat", protocol=table)
+
+
+# -- Next we create a CLIST for pilot points. The nodes of this CLIST will be at the ends
+#    of each segment of the SEGLIST.
+
+cl_drainpp = create_clist_from_seglist(seglist=sl_drains,      &
+                                 linkage_type=endpoints,       &
+                                 dist_thresh=10.0)
+
+# -- Lets take a look at the CLIST that we have just created so that we know its dimension.
+#    This function can be commented out when we are running the model under the control of PEST.
+
+cl_drainpp.report_dependent_lists(file='report.dat')
+
+# -- Now we know that there are 22 pilot points. This allows us to make a list file, and
+#    a template of that list file.
+
+# -- Read the list file to obtain drain conductance values at pilot points.
+
+read_list_file(reference_clist='cl_drainpp',skiplines=1,       &
+               file='draincond.dat',                           &
+               plist='pp_draincond';column=2)
+
+# -- Next we need to build as SLIST of MODFLOW cells to which interpolation must take place.
+#    In our case this is the file that provides drain cells for the first stress period.
+#    All other stress periods use the same drain conductances.
+
+draincells_mf6 = cl_mf6.find_cells_in_lists(                   &
+                 file=model.drn_stress_period_data_1.txt,      &
+                 model_type=mf6_disv,                          &
+                 list_col_start=1,                             &
+                 keytext_start='top_of_file',                  &
+                 keytext_end='end_of_file')
+
+# -- Now we can calculate kriging factors to these cells through linear
+#    interpolation down segments that approximate the disposition of the stream.
+#    This function needs to be run only once - and not when PEST is estimating parameters.
+
+calc_linear_interp_factors(source_clist=cl_drainpp,                            &
+                           target_clist=cl_mf6;select=(draincells_mf6.ne.0),   &
+                           file="factors_draincells.dat",                      &
+                           search_radius=100)
+
+# -- Initialize the drain conductivity PLIST
+
+draincond_mf6=new_plist(reference_clist=cl_mf6,value=0.0)
+
+# -- We now undertake the actual interpolation.
+
+draincond_mf6=pp_draincond.interp_using_file(file=factors_draincells.dat,                    &
+                                transform=log)
+
+# -- A new model input file is written.
+
+replace_cells_in_lists(old_file=model.drn_stress_period_data_1.txt,               &
+                       new_file=new3_model.drn_stress_period_data_1.txt,           &
+                       model_type=mf6_disv,                                       &
+                       list_col_start=1,                                          &
+                       keytext_start='top_of_file',                               &
+                       keytext_end='bottom_of_file',                              &
+                       plist=draincond_mf6;column=4;action='replace')
+
+
+
+
+
+
+
+
+
+
+
+
+

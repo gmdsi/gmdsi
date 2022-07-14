@@ -1,0 +1,111 @@
+* observation type "base"
+h1-3892_1
+h1-1664_1
+h1-162_1
+h3-3521_1
+h3-3988_1
+h3-3417_1
+h3-3829_1
+h3-3357_1
+h3-3594_1
+h3-3892_1
+h3-1152_1
+h3-313_1
+h3-209_1
+h3-331_1
+h3-707_1
+h3-3956_1
+h3-2270_1
+h3-521_1
+trib_1
+total_1
+dh3892_1
+* observation type "forecast"
+p-trib_1
+p-total_1
+* observation type "all"
+h1-2045
+h1-1712
+h1-1502
+h1-1291
+h1-1137
+h1-962	
+h1-888	
+h1-821	
+h1-760
+h3-2045
+h3-1712
+h3-1502
+h3-1291
+h3-1137
+h3-962	
+h3-888	
+h3-821	
+h3-760	
+* observation type "760"
+h1-760
+h3-760
+* observation type "821"
+h1-821
+h3-821
+* observation type "888"
+h1-888
+h3-888
+* observation type "962"
+h1-962
+h3-962
+* observation type "1137"
+h1-1137
+h3-1137
+* observation type "1291"
+h1-1291
+h3-1291
+* observation type "1502"
+h1-1502
+h3-1502
+* observation type "1712"
+h1-1712
+h3-1712
+* observation type "2045"
+h1-2045
+h3-2045
+* observation type "760 + 2045"
+h1-2045
+h3-2045
+h1-760
+h3-760
+* observation type "821 + 2045"
+h1-2045
+h3-2045
+h1-821
+h3-821
+* observation type "888 + 2045"
+h1-2045
+h3-2045
+h1-888
+h3-888
+* observation type "962 + 2045"
+h1-2045
+h3-2045
+h1-962
+h3-962
+* observation type "1137 + 2045"
+h1-2045
+h3-2045
+h1-1137
+h3-1137
+* observation type "1291 + 2045"
+h1-2045
+h3-2045
+h1-1291
+h3-1291
+* observation type "1502 + 2045"
+h1-2045
+h3-2045
+h1-1502
+h3-1502
+* observation type "1712 + 2045"
+h1-2045
+h3-2045
+h1-1712
+h3-1712

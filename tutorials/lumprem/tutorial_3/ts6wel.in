@@ -1,0 +1,16 @@
+BEGIN FILES
+  FILEIN  wel.ts
+  FILEOUT wel_new.ts
+END FILES
+
+BEGIN PARAMETERS
+END PARAMETERS
+
+BEGIN PROCESSING
+  average2 = time_average_over_interval(wel_lu2,none,0.0,99999.0)
+  average3 = time_average_over_interval(wel_lu3,none,0.0,99999.0)
+  
+  wel_lu2 = assign_terms(wel_lu2, average2,0.0, 0.0)
+  wel_lu3 = assign_terms(wel_lu3, average3,0.0, 0.0)
+
+END PROCESSING

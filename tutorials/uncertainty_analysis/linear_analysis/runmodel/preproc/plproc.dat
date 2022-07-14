@@ -1,0 +1,77 @@
+# -- First we create a CLIST for the MODFLOW grid by reading the MF6 binary grid file.
+#    We work in two-dimensions as parameterization takes place on a layer-by-layer basis.
+
+cl_mf = read_mf6_grid_specs(file=../model/model.disv.grb,                   &
+                         dimensions=2,                             &
+                         slist_layer_idomain=idomain1;  layer=1,   &
+                         slist_layer_idomain=idomain2;  layer=2,   &
+                         slist_layer_idomain=idomain3;  layer=3)
+                         
+# -- We read the file which contains pilot point coordinates and pilot point
+#    values for properties that we will estimate.
+
+cl_pp = read_list_file(file=ppoints.dat,                     &
+                        id_type=character,                   &
+                        dimensions=2,                        &
+                        skiplines=1,                         &
+                        slist=zone;    column=4,            &
+                        plist=kh1_pp;   column=5,            &
+                        plist=kh2_pp;   column=6,            &
+                        plist=kh3_pp;   column=7,            &
+                        plist=rch_pp;   column=8)
+
+# -- As pilot points are the same in all layers, and as IDOMAIN is the same
+#    in layers 2 and 3, we need only one set of kriging factors for these. 
+#    Zone 1 and zone 4 in Layer1 each require kriging factors.
+#    We calculate these now.
+#    Note that this only needs to be done once.
+# -- This function can be commented out when we do parameter estimation.
+
+#calc_kriging_factors_auto_2d(                                 &
+#           target_clist=cl_mf;select=(idomain3.ne.0),         &
+#           source_clist=cl_pp,                                &
+#           file=factors23.dat)
+ 
+#calc_kriging_factors_auto_2d(                                 &
+#           target_clist=cl_mf;select=(idomain1==1),           &
+#           source_clist=cl_pp;select=(zone==1),              &
+#           file=factors1.dat)
+ 
+#calc_kriging_factors_auto_2d(                                 &
+#           target_clist=cl_mf;select=(idomain1==4),           &
+#           source_clist=cl_pp;select=(zone==4),              &
+#           file=factors4.dat)
+       
+           
+# -- Declare a "work" PLIST and populate it with values of 1.0
+
+prop_mf=new_plist(reference_clist=cl_mf,value=1.0)
+
+# -- We now do the interpolation and write to layer-specific input files.
+#    We do this in a way that allows us to re-use the same PLPROC template file.
+
+# -- We now move down the layers.
+
+### kh1 ###
+prop_mf=1.0
+prop_mf=kh1_pp.krige_using_file(file='factors1.dat',transform='log')
+prop_mf=kh1_pp.krige_using_file(file='factors4.dat',transform='log')
+write_model_input_file(template_file=gen_mf_array.tpl,                 &
+                       model_input_file=../model/model.npf_k_layer1.txt)
+                       
+### kh2 ###
+prop_mf=1.0E-2
+prop_mf=kh2_pp.krige_using_file(file='factors23.dat',transform='log')
+write_model_input_file(template_file=gen_mf_array.tpl,                 &
+                       model_input_file=../model/model.npf_k_layer2.txt)
+
+### kh3 ###
+prop_mf=0.5
+prop_mf=kh3_pp.krige_using_file(file='factors23.dat',transform='log')
+write_model_input_file(template_file=gen_mf_array.tpl,                 &
+                       model_input_file=../model/model.npf_k_layer3.txt)
+
+              
+# -- Add some reporting functions                         
+#report_all_entities(file=report1.dat)
+#cl_mf.report_dependent_lists(file='report2.dat')                            

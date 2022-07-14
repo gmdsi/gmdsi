@@ -1,0 +1,23 @@
+* earth properties
+.3  0.5
+10.8 0.4
+.015 0.7 0.5 0.2
+* volume to elevation
+1.0 2.0 3.0 0.5
+* topographic surface
+100.0
+* initial conditions
+.1
+1 1
+0.0
+0.0
+* solution parameters
+1 100 1.0e-5
+* timing information
+100 10
+9 11 32 33 40 41 42 43 90 100
+* data filenames
+vegfile.dat
+rainfile.dat
+epotfile.dat
+irrigfile.dat
