@@ -15,4 +15,4 @@ A separate set of tutorials demonstrate scripted workflows using `pyEMU` and `PE
 
 # Acknowledgments
 
-Developent of these tutorials is funded by the Groundwater Modelling Decision Support Initiative (GMDSI). GMDSI is jointly funded by BHP and Rio Tinto.
+Development of these tutorials is funded by the Groundwater Modelling Decision Support Initiative (GMDSI). GMDSI is jointly funded by BHP and Rio Tinto.
