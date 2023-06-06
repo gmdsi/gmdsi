@@ -1,0 +1,53 @@
+START COVARIANCE_MATRIX
+  file             ppset1_p0625.cov
+  first_parameter  pp1_kx1
+  last_parameter   pp1_kx32
+END COVARIANCE_MATRIX
+
+
+START COVARIANCE_MATRIX
+  file             ppset2_p25.cov
+  first_parameter  pp2_mul1
+  last_parameter   pp2_mul277
+END COVARIANCE_MATRIX
+
+
+START COVARIANCE_MATRIX
+  file             ppset3_p0227.cov
+  first_parameter  pp3_mul1
+  last_parameter   pp3_mul67
+END COVARIANCE_MATRIX
+
+
+START COVARIANCE_MATRIX
+  file             ppset3_p0227.cov
+  first_parameter  pp3_vanis1
+  last_parameter   pp3_vanis67
+END COVARIANCE_MATRIX
+
+
+START COVARIANCE_MATRIX
+  file             ppset3_p0227.cov
+  first_parameter  pp3_rech1
+  last_parameter   pp3_rech67
+END COVARIANCE_MATRIX
+
+
+START COVARIANCE_MATRIX
+  file             pp_rivers_p25.cov
+  first_parameter  ppr_mul1
+  last_parameter   ppr_mul147
+END COVARIANCE_MATRIX
+
+
+START STANDARD_DEVIATION
+  ppr_add1      0.7
+END STANDARD_DEVIATION
+
+
+START COVARIANCE_MATRIX
+  file             pp_wells_p0227.cov
+  first_parameter  ppw_mul1
+  last_parameter   ppw_mul61
+END COVARIANCE_MATRIX
+

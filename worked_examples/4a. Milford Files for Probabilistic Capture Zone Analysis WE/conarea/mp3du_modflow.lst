@@ -1,0 +1,418 @@
+                                  USG-TRANSPORT USG-TRANSPORT 
+       FURTHER  DEVELOPMENTS BASED ON MODFLOW-USG
+                       VERSION USG-TRANSPORT VERSION 1.0.0
+
+ LIST FILE: mp3du_modflow.lst
+                         UNIT    7
+
+ OPENING milford1.bas
+ FILE TYPE:BAS6   UNIT    1   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.sms
+ FILE TYPE:SMS   UNIT   19   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.dis
+ FILE TYPE:DISU   UNIT   29   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.oc
+ FILE TYPE:OC   UNIT   22   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.rch
+ FILE TYPE:RCH   UNIT   18   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.evt
+ FILE TYPE:EVT   UNIT   20   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.wel
+ FILE TYPE:WEL   UNIT   12   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.riv
+ FILE TYPE:RIV   UNIT   14   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.drn
+ FILE TYPE:DRN   UNIT   13   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.lpf
+ FILE TYPE:LPF   UNIT   11   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.cln
+ FILE TYPE:CLN   UNIT  125   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.cbcln
+ FILE TYPE:DATA(BINARY)   UNIT  144   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING milford1_FlowReduction.dat
+ FILE TYPE:DATA   UNIT  166   STATUS:UNKNOWN
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING milford1.cbb
+ FILE TYPE:DATA(BINARY)   UNIT   50   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING milford1.hds
+ FILE TYPE:DATA(BINARY)   UNIT   30   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING kx.dat
+ FILE TYPE:DATA   UNIT   31   STATUS:UNKNOWN
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING kz.dat
+ FILE TYPE:DATA   UNIT   32   STATUS:UNKNOWN
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING recharge.dat
+ FILE TYPE:DATA   UNIT   33   STATUS:UNKNOWN
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING .\particles\milford1.p3d
+ FILE TYPE:PATH   UNIT   49   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ BAS -- BASIC PACKAGEUSG-TRANSPORT USG-TRANSPORT VERSION 1.0.0              INPUT READ FROM UNIT    1
+ 
+ # MODFLOW-USGs Basic Package                                                    
+ # MODFLOW Data Set Created by Groundwater Vistas                                
+ #
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+ THE UNSTRUCTURED GRID OPTION HAS BEEN SELECTED
+
+ DIS -- UNSTRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 1 : 5/17/2010 - INPUT READ FROM UNIT   29
+     190080 NODES         3 NLAY   1200732 NJAG  VERT. SUBDISCRETIZATION INDEX, IVSD = -1
+ INDEX FOR INPUT OF UNSTRUCTURED, FINITE-VOLUME CONNECTIVITY INFORMATION, IDSYMRD =   0
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS UNDEFINED
+  Confining bed flag for each layer:
+   0   0   0
+
+ CLN -- CONNECTED LINE NETWORK DISCRETIZATION PROCESS, VERSION 1, 3/3/2012 INPUT READ FROM UNIT  125
+ FLAG (0) OR MAXIMUM NUMBER OF LINEAR NODES (NCLN) =      0
+ FLAG (-VE) OR NUMBER OF LINEAR NODES (+VE) (ICLNNDS) =      6
+ NUMBER OF LINEAR NODE TO MATRIX GRID CONNECTIONS (NCLNGWC) =     18
+
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   144(FLAG ICLNCB IS GREATER THAN ZERO)
+ CLN HEAD OUTPUT WILL NOT BE SAVED OR PRINTED (FLAG ICLNHD IS EQUAL TO ZERO)
+ CLN DDN OUTPUT WILL NOT BE SAVED OR PRINTED (FLAG ICLNDD IS EQUAL TO ZERO)
+ CLN IBOUND OUTPUT WILL NOT BE SAVED OR PRINTED (FLAG ICLNIB IS EQUAL TO ZERO)
+ NUMBER OF RECTANGULAR SECTION GEOMETRIES =          0
+
+
+
+                                 IA
+ READING ON UNIT  125 WITH FORMAT: (FREE)              
+
+
+
+                                 JA
+ READING ON UNIT  125 WITH FORMAT: (FREE)              
+
+                     CONNECTED LINE NETWORK INFORMATION
+                    ----------------------------------------
+     CLN-NODE NO. CLNTYP ORIENTATION  CLN LENGTH    BOT ELEVATION         FANGLE         IFLIN           ICCWADI
+     -----------  ------ ----------- -----------    -------------    -----------        ------    -------
+              1      1          0    0.347788E+02    0.227484E+03    0.000000E+00         -1          0
+              2      2          0    0.361729E+02    0.222448E+03    0.000000E+00         -1          0
+              3      3          0    0.369787E+02    0.228875E+03    0.000000E+00         -1          0
+              4      4          0    0.367813E+02    0.224657E+03    0.000000E+00         -1          0
+              5      5          0    0.374692E+02    0.206833E+03    0.000000E+00         -1          0
+              6      6          0    0.345752E+02    0.219073E+03    0.000000E+00         -1          0
+
+                     CLN TO 3-D GRID CONNECTION INFORMATION
+                    ----------------------------------------
+     F-NODE NO. GW-NODE NO  EQTN. TYPE        FSKIN           FLENG         FANISO   ICGWADI
+     ---------- ---------- -----------     ----------- ----------------- ---------------   ----------
+              1      17979           0    0.000000E+00    0.173894E+02    0.100000E+01         0
+              1      81339           0    0.000000E+00    0.869470E+01    0.100000E+01         0
+              1     144699           0    0.000000E+00    0.869470E+01    0.100000E+01         0
+              2      23097           0    0.000000E+00    0.180865E+02    0.100000E+01         0
+              2      86457           0    0.000000E+00    0.904323E+01    0.100000E+01         0
+              2     149817           0    0.000000E+00    0.904323E+01    0.100000E+01         0
+              3      38769           0    0.000000E+00    0.184893E+02    0.100000E+01         0
+              3     102129           0    0.000000E+00    0.924467E+01    0.100000E+01         0
+              3     165489           0    0.000000E+00    0.924467E+01    0.100000E+01         0
+              4      38150           0    0.000000E+00    0.183907E+02    0.100000E+01         0
+              4     101510           0    0.000000E+00    0.919533E+01    0.100000E+01         0
+              4     164870           0    0.000000E+00    0.919533E+01    0.100000E+01         0
+              5      43155           0    0.000000E+00    0.187346E+02    0.100000E+01         0
+              5     106515           0    0.000000E+00    0.936729E+01    0.100000E+01         0
+              5     169875           0    0.000000E+00    0.936729E+01    0.100000E+01         0
+              6      34349           0    0.000000E+00    0.172876E+02    0.100000E+01         0
+              6      97709           0    0.000000E+00    0.864379E+01    0.100000E+01         0
+              6     161069           0    0.000000E+00    0.864379E+01    0.100000E+01         0
+
+                     CONDUIT NODE INFORMATION
+                    ----------------------------------------
+     CONDUIT NODE        RADIUS   CONDUIT SAT K
+     ------------        ------   -------------
+              1    0.100000E+01    0.323000E+07
+              2    0.100000E+01    0.323000E+07
+              3    0.100000E+01    0.323000E+07
+              4    0.100000E+01    0.323000E+07
+              5    0.100000E+01    0.323000E+07
+              6    0.100000E+01    0.323000E+07
+ 
+
+ DIS -- UNSTRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 1 : 5/17/2010 - INPUT READ FROM UNIT   29
+
+   NO. OF NODES PER LAYER =     63360
+
+
+
+                                TOP FOR LAYER   1
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                                TOP FOR LAYER   2
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                                TOP FOR LAYER   3
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                                BOT FOR LAYER   1
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                                BOT FOR LAYER   2
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                                BOT FOR LAYER   3
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+                     AREA =   2500.00     FOR LAYER   1
+
+
+
+                                 IA
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                                 JA
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+               CONNECTION LENGTH 12 FOR LAYER   1
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+
+                 PERPENDICULAR AREA
+ READING ON UNIT   29 WITH FORMAT: (FREE)              
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         10.00000          1                    1.200         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   1
+ READING ON UNIT    1 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   2
+ READING ON UNIT    1 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   3
+ READING ON UNIT    1 WITH FORMAT: (FREE)              
+
+ AQUIFER HEAD WILL BE SET TO   999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+
+
+                       INITIAL HEAD FOR LAYER   1
+ READING ON UNIT    1 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER   2
+ READING ON UNIT    1 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER   3
+ READING ON UNIT    1 WITH FORMAT: (FREE)              
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ COMPACT CELL-BY-CELL BUDGET FILES WILL BE WRITTEN
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT   30    DRAWDOWNS WILL BE SAVED ON UNIT    0
+
+ LPF -- LAYER-PROPERTY FLOW PACKAGE, VERSION 7, 5/2/2005
+         INPUT READ FROM UNIT   11
+ # modflow-usg layer property flow (lpf) package
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+ HEAD AT CELLS THAT CONVERT TO DRY= -1.00000E+30
+ No named parameters
+ IKCFLAG=0, NODAL INPUT OF HY AND CV
+ CONSTANTCV OPTION:
+ Constant vertical conductance for convertible layers
+ NOVFC OPTION:
+ Do not apply the vertical flow correction
+
+   LAYER FLAGS:
+ LAYER       LAYTYP        LAYAVG         CHANI        LAYVKA        LAYWET
+ ---------------------------------------------------------------------------
+    1             4             0     1.000E+00             0             0
+    2             4             0     1.000E+00             0             0
+    3             4             0     1.000E+00             0             0
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER      (LAYTYP)      (LAYAVG)       (CHANI)      (LAYVKA)      (LAYWET)
+ ---------------------------------------------------------------------------
+    1     UPSTREAM       HARMONIC     1.000E+00    VERTICAL K  NON-WETTABLE
+    2     UPSTREAM       HARMONIC     1.000E+00    VERTICAL K  NON-WETTABLE
+    3     UPSTREAM       HARMONIC     1.000E+00    VERTICAL K  NON-WETTABLE
+
+ WETTING CAPABILITY IS NOT ACTIVE IN ANY LAYER
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   1
+ READING ON UNIT   31 WITH FORMAT: (FREE)              
+
+
+
+                VERTICAL HYD. COND. FOR LAYER   1
+ READING ON UNIT   32 WITH FORMAT: (FREE)              
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   2
+ READING ON UNIT   31 WITH FORMAT: (FREE)              
+
+
+
+                VERTICAL HYD. COND. FOR LAYER   2
+ READING ON UNIT   32 WITH FORMAT: (FREE)              
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   3
+ READING ON UNIT   31 WITH FORMAT: (FREE)              
+
+
+
+                VERTICAL HYD. COND. FOR LAYER   3
+ READING ON UNIT   32 WITH FORMAT: (FREE)              
+
+ WEL -- WELL PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   12
+ No named parameters
+ MAXIMUM OF   1145 ACTIVE WELLS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+ MAXIMUM NUMBER OF ACTIVE WELLS (MXACTW) =   1145
+ C-B-C FLUX FLAG OR UNIT NUMBER (IWELCB) =  50
+ WELL FLUX WILL BE REDUCED WHEN SATURATED THICKNESS IS LESS THAN 1 PERCENT OF CELL THICKNESS
+ WELL REDUCTION INFO WILL BE WRITTEN TO UNIT:   166
+
+
+     0 Well parameters
+
+ DRN -- DRAIN PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   13
+ No named parameters
+ MAXIMUM OF  27442 ACTIVE DRAINS AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+
+
+     0 Drain parameters
+
+ RIV -- RIVER PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   14
+ # MODFLOW-USGs River Package
+ No named parameters
+ MAXIMUM OF   1783 ACTIVE RIVER REACHES AT ONE TIME
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+
+
+     0 River parameters
+
+ EVT -- EVAPOTRANSPIRATION PACKAGE, VERSION 7, 5/2/2005
+         INPUT READ FROM UNIT   20
+ No named parameters
+ OPTION 3 -- EVAPOTRANSPIRATION FROM HIGHEST ACTIVE NODE IN EACH VERTICAL COLUMN
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+
+
+     0 Evapotranspiration parameters
+
+ RCH -- RECHARGE PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   18
+ # MODFLOW-USGs Recharge Package
+ No named parameters
+ OPTION 3 -- RECHARGE TO HIGHEST ACTIVE NODE IN EACH VERTICAL COLUMN
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   50
+
+
+     0 Recharge parameters
+
+ PATH -- for MP3DU PACKAGE, VER. 1, 5/11/2015
+         INPUT READ FROM UNIT 49
+ # mod-PATH3DU cell data
+
+                IVELOCITY =         2 FOR LAYER   1
+
+                IVELOCITY =         2 FOR LAYER   2
+
+                IVELOCITY =         2 FOR LAYER   3
+
+                 POROSITY =  5.000000E-02 FOR LAYER   1
+
+                 POROSITY =  5.000000E-02 FOR LAYER   2
+
+                 POROSITY =  5.000000E-02 FOR LAYER   3
+
+              RETARDATION =   1.00000     FOR LAYER   1
+
+              RETARDATION =   1.00000     FOR LAYER   2
+
+              RETARDATION =   1.00000     FOR LAYER   3
+
+       LONGITUDINAL DISP. =   0.00000     FOR LAYER   1
+
+       LONGITUDINAL DISP. =   0.00000     FOR LAYER   2
+
+       LONGITUDINAL DISP. =   0.00000     FOR LAYER   3
+
+  TRANSVERSE HORIZ. DISP. =   0.00000     FOR LAYER   1
+
+  TRANSVERSE HORIZ. DISP. =   0.00000     FOR LAYER   2
+
+  TRANSVERSE HORIZ. DISP. =   0.00000     FOR LAYER   3
+
+   TRANSVERSE VERT. DISP. =   0.00000     FOR LAYER   1
+
+   TRANSVERSE VERT. DISP. =   0.00000     FOR LAYER   2
+
+   TRANSVERSE VERT. DISP. =   0.00000     FOR LAYER   3
+ 
+ Finished clearing memory.

@@ -1,0 +1,37 @@
+{
+  "FLOW_MODEL_TYPE" : {
+    "MODFLOW" : {
+      "NAME_FILE" : "milford1-mpath.nam",
+      "GSF_FILE" : {
+        "TYPE" : "GSF_V.1.1.0",
+        "FILE_NAME" : ".\\particles\\milford1-new.gsf"
+      },
+      "OUTPUT_PRECISION" : "SINGLE",
+      "IFACE" : [ { "WEL" : 0 }, { "RCH" : 6 }, { "EVT" : 6 }, { "DRN" : 6 }, { "RIV" : 6 }, { "CLN" : 0 } ],
+      "THREAD_COUNT" : 10
+    }
+  },
+  "SIMULATIONS" : [
+    {
+      "PATHLINE" : {
+        "NAME" : "milford1",
+        "DIRECTION" : "FORWARD",
+        "INITIAL_STEPSIZE" : 10.000000,
+        "MAX_STEPSIZE" : 1000000.000000,
+        "ADAPTIVE_STEP_ERROR" : 1.000000e-06,
+        "CAPTURE_RADIUS" : 10.000000,
+        "OPTIONS" : [
+                     "TRACK_TO_TERMINATION"
+                     ],
+        "PARTICLE_START_LOCATIONS" : {
+          "SHAPEFILE" : {
+            "FILE_NAME" : "milford1-ptstart.shp",
+            "CELLID_ATTR" : "cellid",
+            "TIME_ATTR" : "time",
+            "ZLOC_ATTR" : "zloc"
+          }
+        }
+      }
+    }
+  ]
+}

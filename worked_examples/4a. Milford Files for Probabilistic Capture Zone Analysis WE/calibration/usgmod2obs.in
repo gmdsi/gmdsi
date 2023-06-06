@@ -1,0 +1,12 @@
+.\observ_files\wells_interp.dat
+.\observ_files\wells.lst
+g
+y
+.\observ_files\obshead.ssf
+milford1.hds
+800
+d
+10/1/1988
+12:00:00
+10
+modhead.ssf

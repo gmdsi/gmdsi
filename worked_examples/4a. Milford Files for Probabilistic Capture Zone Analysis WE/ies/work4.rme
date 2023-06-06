@@ -1,0 +1,2 @@
+  agent  status     runs       successes  failures   abandons   min_runtime    max_runtime    ave_runtime    cum_runtime    alive_time     efficiency     working_folder
+      1  idle       1          1          0          0             25.1220        25.1220        25.1220        25.1220        25.1380       0.999364     192.168.1.106\\E:\temp8\ies

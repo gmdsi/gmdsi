@@ -1,0 +1,2025 @@
+pcf
+* control data
+restart regularisation
+    865    307      8    652     12
+      5      4                    single  point
+ 10.0  -3.0  0.3  0.03  10 999  lamforgive  uptestmin=30
+ 10.0  10.0  0.001 absparmax(1)=1.0
+ 0.1
+   0  0.005  4  4  0.005  4
+ 0  0  0  PARSAVEITN
+* singular value decomposition
+1
+  5000  5e-7
+0
+* parameter groups
+kx2bas        relative   0.015   0.0  switch  2  parabolic
+kx2mul        relative   0.015   0.0  switch  2  parabolic
+k13mul        relative   0.015   0.0  switch  2  parabolic
+vanis         relative   0.015   0.0  switch  2  parabolic
+rechmul       relative   0.015   0.0  switch  2  parabolic
+rcmul         relative   0.015   0.0  switch  2  parabolic
+rhadd         absolute   0.10    0.0  switch  2  parabolic
+wmul          relative   0.015   0.0  switch  2  parabolic
+* parameter data
+pp1_kx1       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx2       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx3       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx4       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx5       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx6       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx7       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx8       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx9       log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx10      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx11      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx12      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx13      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx14      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx15      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx16      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx17      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx18      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx19      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx20      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx21      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx22      log    factor         75.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx23      log    factor         75.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx24      log    factor         75.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx25      log    factor         75.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx26      log    factor         75.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx27      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx28      log    factor        150.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx29      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx30      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx31      log    factor         50.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp1_kx32      log    factor         68.0         1.000000        1000.000            kx2bas   1.0   0.0
+pp2_mul1      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul2      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul3      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul4      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul5      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul6      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul7      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul8      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul9      log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul10     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul11     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul12     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul13     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul14     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul15     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul16     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul17     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul18     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul19     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul20     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul21     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul22     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul23     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul24     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul25     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul26     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul27     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul28     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul29     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul30     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul31     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul32     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul33     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul34     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul35     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul36     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul37     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul38     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul39     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul40     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul41     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul42     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul43     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul44     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul45     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul46     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul47     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul48     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul49     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul50     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul51     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul52     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul53     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul54     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul55     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul56     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul57     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul58     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul59     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul60     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul61     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul62     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul63     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul64     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul65     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul66     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul67     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul68     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul69     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul70     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul71     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul72     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul73     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul74     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul75     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul76     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul77     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul78     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul79     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul80     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul81     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul82     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul83     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul84     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul85     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul86     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul87     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul88     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul89     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul90     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul91     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul92     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul93     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul94     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul95     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul96     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul97     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul98     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul99     log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul100    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul101    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul102    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul103    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul104    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul105    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul106    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul107    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul108    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul109    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul110    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul111    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul112    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul113    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul114    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul115    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul116    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul117    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul118    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul119    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul120    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul121    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul122    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul123    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul124    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul125    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul126    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul127    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul128    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul129    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul130    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul131    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul132    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul133    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul134    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul135    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul136    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul137    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul138    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul139    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul140    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul141    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul142    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul143    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul144    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul145    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul146    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul147    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul148    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul149    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul150    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul151    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul152    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul153    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul154    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul155    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul156    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul157    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul158    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul159    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul160    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul161    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul162    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul163    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul164    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul165    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul166    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul167    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul168    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul169    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul170    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul171    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul172    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul173    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul174    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul175    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul176    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul177    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul178    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul179    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul180    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul181    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul182    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul183    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul184    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul185    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul186    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul187    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul188    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul189    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul190    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul191    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul192    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul193    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul194    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul195    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul196    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul197    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul198    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul199    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul200    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul201    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul202    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul203    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul204    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul205    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul206    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul207    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul208    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul209    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul210    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul211    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul212    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul213    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul214    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul215    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul216    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul217    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul218    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul219    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul220    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul221    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul222    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul223    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul224    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul225    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul226    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul227    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul228    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul229    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul230    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul231    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul232    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul233    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul234    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul235    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul236    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul237    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul238    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul239    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul240    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul241    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul242    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul243    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul244    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul245    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul246    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul247    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul248    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul249    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul250    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul251    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul252    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul253    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul254    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul255    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul256    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul257    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul258    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul259    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul260    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul261    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul262    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul263    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul264    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul265    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul266    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul267    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul268    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul269    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul270    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul271    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul272    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul273    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul274    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul275    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul276    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp2_mul277    log    factor      1.000000       0.5000000E-02    100.0000            kx2mul   1.0   0.0
+pp3_mul1      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul2      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul3      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul4      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul5      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul6      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul7      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul8      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul9      log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul10     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul11     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul12     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul13     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul14     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul15     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul16     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul17     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul18     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul19     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul20     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul21     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul22     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul23     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul24     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul25     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul26     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul27     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul28     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul29     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul30     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul31     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul32     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul33     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul34     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul35     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul36     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul37     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul38     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul39     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul40     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul41     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul42     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul43     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul44     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul45     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul46     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul47     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul48     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul49     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul50     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul51     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul52     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul53     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul54     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul55     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul56     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul57     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul58     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul59     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul60     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul61     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul62     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul63     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul64     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul65     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul66     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_mul67     log    factor      1.000000       0.1             10.0                 k13mul   1.0   0.0
+pp3_vanis1    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis2    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis3    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis4    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis5    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis6    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis7    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis8    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis9    log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis10   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis11   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis12   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis13   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis14   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis15   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis16   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis17   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis18   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis19   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis20   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis21   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis22   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis23   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis24   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis25   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis26   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis27   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis28   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis29   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis30   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis31   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis32   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis33   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis34   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis35   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis36   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis37   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis38   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis39   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis40   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis41   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis42   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis43   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis44   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis45   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis46   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis47   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis48   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis49   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis50   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis51   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis52   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis53   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis54   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis55   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis56   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis57   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis58   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis59   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis60   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis61   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis62   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis63   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis64   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis65   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis66   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_vanis67   log    factor      10.0           1.0              100.0               vanis   1.0   0.0
+pp3_rech1     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech2     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech3     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech4     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech5     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech6     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech7     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech8     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech9     fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech10    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech11    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech12    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech13    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech14    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech15    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech16    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech17    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech18    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech19    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech20    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech21    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech22    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech23    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech24    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech25    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech26    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech27    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech28    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech29    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech30    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech31    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech32    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech33    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech34    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech35    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech36    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech37    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech38    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech39    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech40    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech41    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech42    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech43    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech44    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech45    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech46    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech47    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech48    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech49    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech50    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech51    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech52    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech53    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech54    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech55    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech56    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech57    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech58    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech59    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech60    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech61    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech62    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech63    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech64    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech65    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech66    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+pp3_rech67    fixed    factor      3.7498001E-03        1.5E-03           6.0E-03          rechmul   1.0   0.0
+ppr_mul1      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul2      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul3      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul4      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul5      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul6      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul7      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul8      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul9      log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul10     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul11     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul12     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul13     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul14     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul15     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul16     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul17     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul18     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul19     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul20     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul21     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul22     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul23     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul24     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul25     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul26     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul27     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul28     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul29     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul30     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul31     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul32     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul33     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul34     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul35     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul36     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul37     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul38     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul39     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul40     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul41     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul42     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul43     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul44     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul45     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul46     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul47     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul48     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul49     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul50     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul51     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul52     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul53     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul54     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul55     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul56     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul57     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul58     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul59     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul60     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul61     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul62     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul63     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul64     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul65     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul66     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul67     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul68     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul69     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul70     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul71     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul72     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul73     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul74     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul75     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul76     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul77     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul78     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul79     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul80     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul81     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul82     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul83     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul84     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul85     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul86     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul87     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul88     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul89     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul90     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul91     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul92     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul93     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul94     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul95     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul96     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul97     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul98     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul99     log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul100    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul101    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul102    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul103    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul104    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul105    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul106    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul107    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul108    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul109    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul110    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul111    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul112    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul113    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul114    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul115    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul116    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul117    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul118    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul119    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul120    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul121    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul122    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul123    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul124    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul125    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul126    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul127    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul128    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul129    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul130    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul131    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul132    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul133    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul134    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul135    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul136    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul137    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul138    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul139    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul140    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul141    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul142    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul143    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul144    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul145    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul146    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_mul147    log    factor      1.000000       1.0000000E-04    1000.000             rcmul   1.0   0.0
+ppr_add1      none     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add2      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add3      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add4      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add5      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add6      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add7      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add8      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add9      tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add10     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add11     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add12     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add13     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add14     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add15     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add16     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add17     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add18     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add19     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add20     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add21     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add22     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add23     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add24     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add25     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add26     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add27     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add28     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add29     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add30     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add31     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add32     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add33     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add34     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add35     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add36     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add37     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add38     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add39     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add40     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add41     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add42     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add43     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add44     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add45     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add46     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add47     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add48     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add49     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add50     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add51     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add52     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add53     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add54     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add55     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add56     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add57     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add58     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add59     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add60     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add61     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add62     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add63     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add64     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add65     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add66     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add67     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add68     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add69     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add70     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add71     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add72     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add73     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add74     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add75     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add76     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add77     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add78     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add79     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add80     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add81     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add82     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add83     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add84     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add85     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add86     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add87     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add88     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add89     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add90     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add91     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add92     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add93     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add94     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add95     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add96     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add97     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add98     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add99     tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add100    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add101    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add102    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add103    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add104    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add105    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add106    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add107    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add108    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add109    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add110    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add111    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add112    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add113    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add114    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add115    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add116    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add117    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add118    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add119    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add120    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add121    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add122    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add123    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add124    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add125    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add126    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add127    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add128    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add129    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add130    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add131    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add132    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add133    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add134    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add135    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add136    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add137    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add138    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add139    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add140    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add141    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add142    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add143    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add144    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add145    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add146    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppr_add147    tied     absolute(1)      10.000000       -7.0      11.5               rhadd   1.0   -10.0
+ppw_mul1      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul2      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul3      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul4      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul5      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul6      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul7      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul8      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul9      log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul10     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul11     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul12     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul13     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul14     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul15     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul16     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul17     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul18     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul19     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul20     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul21     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul22     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul23     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul24     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul25     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul26     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul27     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul28     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul29     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul30     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul31     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul32     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul33     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul34     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul35     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul36     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul37     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul38     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul39     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul40     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul41     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul42     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul43     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul44     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul45     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul46     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul47     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul48     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul49     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul50     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul51     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul52     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul53     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul54     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul55     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul56     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul57     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul58     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul59     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul60     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppw_mul61     log    factor      1.000000       0.05              20.000               wmul    1.0   0.0
+ppr_add2      ppr_add1
+ppr_add3      ppr_add1
+ppr_add4      ppr_add1
+ppr_add5      ppr_add1
+ppr_add6      ppr_add1
+ppr_add7      ppr_add1
+ppr_add8      ppr_add1
+ppr_add9      ppr_add1
+ppr_add10     ppr_add1
+ppr_add11     ppr_add1
+ppr_add12     ppr_add1
+ppr_add13     ppr_add1
+ppr_add14     ppr_add1
+ppr_add15     ppr_add1
+ppr_add16     ppr_add1
+ppr_add17     ppr_add1
+ppr_add18     ppr_add1
+ppr_add19     ppr_add1
+ppr_add20     ppr_add1
+ppr_add21     ppr_add1
+ppr_add22     ppr_add1
+ppr_add23     ppr_add1
+ppr_add24     ppr_add1
+ppr_add25     ppr_add1
+ppr_add26     ppr_add1
+ppr_add27     ppr_add1
+ppr_add28     ppr_add1
+ppr_add29     ppr_add1
+ppr_add30     ppr_add1
+ppr_add31     ppr_add1
+ppr_add32     ppr_add1
+ppr_add33     ppr_add1
+ppr_add34     ppr_add1
+ppr_add35     ppr_add1
+ppr_add36     ppr_add1
+ppr_add37     ppr_add1
+ppr_add38     ppr_add1
+ppr_add39     ppr_add1
+ppr_add40     ppr_add1
+ppr_add41     ppr_add1
+ppr_add42     ppr_add1
+ppr_add43     ppr_add1
+ppr_add44     ppr_add1
+ppr_add45     ppr_add1
+ppr_add46     ppr_add1
+ppr_add47     ppr_add1
+ppr_add48     ppr_add1
+ppr_add49     ppr_add1
+ppr_add50     ppr_add1
+ppr_add51     ppr_add1
+ppr_add52     ppr_add1
+ppr_add53     ppr_add1
+ppr_add54     ppr_add1
+ppr_add55     ppr_add1
+ppr_add56     ppr_add1
+ppr_add57     ppr_add1
+ppr_add58     ppr_add1
+ppr_add59     ppr_add1
+ppr_add60     ppr_add1
+ppr_add61     ppr_add1
+ppr_add62     ppr_add1
+ppr_add63     ppr_add1
+ppr_add64     ppr_add1
+ppr_add65     ppr_add1
+ppr_add66     ppr_add1
+ppr_add67     ppr_add1
+ppr_add68     ppr_add1
+ppr_add69     ppr_add1
+ppr_add70     ppr_add1
+ppr_add71     ppr_add1
+ppr_add72     ppr_add1
+ppr_add73     ppr_add1
+ppr_add74     ppr_add1
+ppr_add75     ppr_add1
+ppr_add76     ppr_add1
+ppr_add77     ppr_add1
+ppr_add78     ppr_add1
+ppr_add79     ppr_add1
+ppr_add80     ppr_add1
+ppr_add81     ppr_add1
+ppr_add82     ppr_add1
+ppr_add83     ppr_add1
+ppr_add84     ppr_add1
+ppr_add85     ppr_add1
+ppr_add86     ppr_add1
+ppr_add87     ppr_add1
+ppr_add88     ppr_add1
+ppr_add89     ppr_add1
+ppr_add90     ppr_add1
+ppr_add91     ppr_add1
+ppr_add92     ppr_add1
+ppr_add93     ppr_add1
+ppr_add94     ppr_add1
+ppr_add95     ppr_add1
+ppr_add96     ppr_add1
+ppr_add97     ppr_add1
+ppr_add98     ppr_add1
+ppr_add99     ppr_add1
+ppr_add100    ppr_add1
+ppr_add101    ppr_add1
+ppr_add102    ppr_add1
+ppr_add103    ppr_add1
+ppr_add104    ppr_add1
+ppr_add105    ppr_add1
+ppr_add106    ppr_add1
+ppr_add107    ppr_add1
+ppr_add108    ppr_add1
+ppr_add109    ppr_add1
+ppr_add110    ppr_add1
+ppr_add111    ppr_add1
+ppr_add112    ppr_add1
+ppr_add113    ppr_add1
+ppr_add114    ppr_add1
+ppr_add115    ppr_add1
+ppr_add116    ppr_add1
+ppr_add117    ppr_add1
+ppr_add118    ppr_add1
+ppr_add119    ppr_add1
+ppr_add120    ppr_add1
+ppr_add121    ppr_add1
+ppr_add122    ppr_add1
+ppr_add123    ppr_add1
+ppr_add124    ppr_add1
+ppr_add125    ppr_add1
+ppr_add126    ppr_add1
+ppr_add127    ppr_add1
+ppr_add128    ppr_add1
+ppr_add129    ppr_add1
+ppr_add130    ppr_add1
+ppr_add131    ppr_add1
+ppr_add132    ppr_add1
+ppr_add133    ppr_add1
+ppr_add134    ppr_add1
+ppr_add135    ppr_add1
+ppr_add136    ppr_add1
+ppr_add137    ppr_add1
+ppr_add138    ppr_add1
+ppr_add139    ppr_add1
+ppr_add140    ppr_add1
+ppr_add141    ppr_add1
+ppr_add142    ppr_add1
+ppr_add143    ppr_add1
+ppr_add144    ppr_add1
+ppr_add145    ppr_add1
+ppr_add146    ppr_add1
+ppr_add147    ppr_add1
+* observation groups
+ heads
+ river
+ drain
+ <@river
+ pumping
+regul_kx2bas  ppset1_p0625.cov
+regul_kx2mul  ppset2_p25.cov
+regul_k13mul  ppset3_p0227.cov
+regul_vanis   ppset3_p0227.cov
+regul_rcmul   pp_rivers_p25.cov
+regul_rhadd
+regul_wmul    pp_wells_p0227.cov
+* observation data
+ head_123_1            250.8000       0.658638      heads
+ head_14_1             254.3000       0.658638      heads
+ head_142_1            235.4000       0.658638      heads
+ head_143_1            235.0000       0.658638      heads
+ head_144_1            235.0000       0.658638      heads
+ head_145_1            235.1000       0.658638      heads
+ head_146_1            235.1000       0.658638      heads
+ head_147_1            235.5000       0.658638      heads
+ head_15_1             250.1000       0.658638      heads
+ head_150_1            237.8000       0.658638      heads
+ head_151_1            237.0000       0.658638      heads
+ head_152_1            238.7000       0.658638      heads
+ head_160_1            255.3000       0.658638      heads
+ head_172_1            253.5000       0.658638      heads
+ head_179_1            242.9000       0.658638      heads
+ head_18_1             250.4000       0.658638      heads
+ head_19_1             249.9000       0.658638      heads
+ head_20_1             250.2000       0.658638      heads
+ head_204_1            245.1000       0.658638      heads
+ head_223_1            236.5000       0.658638      heads
+ head_31_1             265.1000       0.658638      heads
+ head_32_1             264.1000       0.658638      heads
+ head_33_1             265.1000       0.658638      heads
+ head_36_1             261.9000       0.658638      heads
+ head_37_1             260.9000       0.658638      heads
+ head_38_1             260.4000       0.658638      heads
+ head_39_1             261.4000       0.658638      heads
+ head_41_1             260.3000       0.658638      heads
+ head_42_1             260.2000       0.658638      heads
+ head_50_1             263.0000       0.658638      heads
+ head_54_1             253.1000       0.658638      heads
+ head_55_1             252.9000       0.658638      heads
+ head_56_1             252.5000       0.658638      heads
+ head_72_1             254.3000       0.658638      heads
+ head_100_1            267.7000       0.658638      heads
+ head_101_1            269.3000       0.658638      heads
+ head_103_1            273.2000       0.658638      heads
+ head_137_1            227.0000       0.658638      heads
+ head_140_1            230.0000       0.658638      heads
+ head_153_1            248.1000       0.658638      heads
+ head_163_1            249.8000       0.658638      heads
+ head_166_1            250.2000       0.658638      heads
+ head_171_1            259.1000       0.658638      heads
+ head_173_1            245.1000       0.658638      heads
+ head_174_1            236.3000       0.658638      heads
+ head_175_1            243.9000       0.658638      heads
+ head_176_1            242.7000       0.658638      heads
+ head_180_1            241.8000       0.658638      heads
+ head_197_1            250.1000       0.658638      heads
+ head_198_1            247.0000       0.658638      heads
+ head_199_1            241.0000       0.658638      heads
+ head_220_1            252.8000       0.658638      heads
+ head_43_1             260.5000       0.658638      heads
+ head_44_1             256.3000       0.658638      heads
+ head_45_1             256.4000       0.658638      heads
+ head_58_1             251.6000       0.658638      heads
+ head_78_1             242.0000        0.00000      heads
+ head_89_1             244.4000       0.658638      heads
+ head_90_1             247.4000       0.658638      heads
+ head_91_1             246.2000       0.658638      heads
+ head_92_1             245.6000       0.658638      heads
+ head_93_1             246.2000       0.658638      heads
+ head_94_1             247.9000       0.658638      heads
+ head_95_1             256.3000       0.658638      heads
+ head_98_1             260.9000       0.658638      heads
+ head_1_1              236.6000       0.658638      heads
+ head_104_1            272.9000       0.658638      heads
+ head_126_1            235.7000       0.658638      heads
+ head_128_1            250.6000       0.658638      heads
+ head_129_1            233.2000       0.658638      heads
+ head_130_1            231.4000       0.658638      heads
+ head_131_1            233.7000       0.658638      heads
+ head_132_1            235.1000       0.658638      heads
+ head_133_1            235.1000       0.658638      heads
+ head_134_1            235.4000       0.658638      heads
+ head_135_1            231.4000       0.658638      heads
+ head_136_1            234.1000       0.658638      heads
+ head_154_1            258.8000       0.658638      heads
+ head_164_1            249.8000       0.658638      heads
+ head_165_1            250.0000       0.658638      heads
+ head_188_1            251.9000       0.658638      heads
+ head_194_1            258.4000       0.658638      heads
+ head_195_1            254.4000       0.658638      heads
+ head_196_1            254.5000       0.658638      heads
+ head_2_1              235.3000       0.658638      heads
+ head_202_1            253.5000       0.658638      heads
+ head_208_1            228.7000       0.658638      heads
+ head_209_1            264.6000       0.658638      heads
+ head_213_1            258.3000       0.658638      heads
+ head_214_1            260.1000       0.658638      heads
+ head_215_1            261.3000       0.658638      heads
+ head_216_1            258.4000       0.658638      heads
+ head_217_1            251.8000       0.658638      heads
+ head_219_1            255.4000       0.658638      heads
+ head_221_1            257.4000       0.658638      heads
+ head_222_1            250.8000       0.658638      heads
+ head_23_1             247.4000       0.658638      heads
+ head_24_1             247.1000       0.658638      heads
+ head_25_1             245.3000       0.658638      heads
+ head_3_1              235.1000       0.658638      heads
+ head_4_1              235.0000       0.658638      heads
+ head_46_1             259.8000       0.658638      heads
+ head_47_1             252.6000       0.658638      heads
+ head_49_1             252.9000       0.658638      heads
+ head_57_1             258.6000       0.658638      heads
+ head_6_1              237.7000       0.658638      heads
+ head_7_1              237.0000       0.658638      heads
+ head_74_1             257.0000       0.658638      heads
+ head_77_1             235.4000       0.658638      heads
+ head_8_1              236.8000       0.658638      heads
+ head_84_1             235.3000       0.658638      heads
+ head_87_1             244.6000       0.658638      heads
+ head_9_1              256.0000       0.658638      heads
+ head_97_1             264.0000       0.658638      heads
+ riv_reach7_1         -375840.0        0.00000      river
+ riv_reach4_1         -3974.400       8.163333E-05  river
+ riv_reach3_1          231552.0       8.163333E-05  river
+ riv_reach6_1         -18144.00       8.163333E-05  river
+ riv_reach5_1          40608.00       8.163333E-05  river
+ riv_reach2_1         -258336.0       5.000000E-05  <@river
+ pump_hatchery4_1     -153964.8       3.234241E-04  pumping
+ pump_hatchery5_1     -153964.8       3.234241E-04  pumping
+ pump_mfgco_1         -48384.00       3.234241E-04  pumping
+ pump_wire-cableco_1  -22727.00       3.234241E-04  pumping
+ pump_keyes_1          0.000000        0.00000      pumping
+ pump_savage_1         0.000000        0.00000      pumping
+ drain_5_1             0.000000       8.0E-04  drain
+ drain_6_1             0.000000       8.0E-04  drain
+ drain_14_1            0.000000       8.0E-04  drain
+ drain_15_1            0.000000       8.0E-04  drain
+ drain_7_1             0.000000       8.0E-04  drain
+ drain_13_1            0.000000       8.0E-04  drain
+ drain_3_1             0.000000       8.0E-04  drain
+ drain_4_1             0.000000       8.0E-04  drain
+ drain_21_1            0.000000       8.0E-04  drain
+ drain_22_1            0.000000       8.0E-04  drain
+ drain_23_1            0.000000       8.0E-04  drain
+ drain_24_1            0.000000       8.0E-04  drain
+ drain_25_1            0.000000       8.0E-04  drain
+ drain_31_1            0.000000       8.0E-04  drain
+ drain_32_1            0.000000       8.0E-04  drain
+ drain_33_1            0.000000       8.0E-04  drain
+ drain_20_1            0.000000       8.0E-04  drain
+ drain_30_1            0.000000       8.0E-04  drain
+ drain_38_1            0.000000       8.0E-04  drain
+ drain_39_1            0.000000       8.0E-04  drain
+ drain_40_1            0.000000       8.0E-04  drain
+ drain_41_1            0.000000       8.0E-04  drain
+ drain_42_1            0.000000       8.0E-04  drain
+ drain_43_1            0.000000       8.0E-04  drain
+ drain_48_1            0.000000       8.0E-04  drain
+ drain_49_1            0.000000       8.0E-04  drain
+ drain_50_1            0.000000       8.0E-04  drain
+ drain_47_1            0.000000       8.0E-04  drain
+ drain_46_1            0.000000       8.0E-04  drain
+ drain_56_1            0.000000       8.0E-04  drain
+ drain_57_1            0.000000       8.0E-04  drain
+ drain_58_1            0.000000       8.0E-04  drain
+ drain_59_1            0.000000       8.0E-04  drain
+ drain_60_1            0.000000       8.0E-04  drain
+ drain_61_1            0.000000       8.0E-04  drain
+ drain_64_1            0.000000       8.0E-04  drain
+ drain_65_1            0.000000       8.0E-04  drain
+ drain_66_1            0.000000       8.0E-04  drain
+ drain_67_1            0.000000       8.0E-04  drain
+ drain_68_1            0.000000       8.0E-04  drain
+ drain_63_1            0.000000       8.0E-04  drain
+ drain_74_1            0.000000       8.0E-04  drain
+ drain_75_1            0.000000       8.0E-04  drain
+ drain_76_1            0.000000       8.0E-04  drain
+ drain_77_1            0.000000       8.0E-04  drain
+ drain_78_1            0.000000       8.0E-04  drain
+ drain_79_1            0.000000       8.0E-04  drain
+ drain_81_1            0.000000       8.0E-04  drain
+ drain_82_1            0.000000       8.0E-04  drain
+ drain_83_1            0.000000       8.0E-04  drain
+ drain_84_1            0.000000       8.0E-04  drain
+ drain_85_1            0.000000       8.0E-04  drain
+ drain_86_1            0.000000       8.0E-04  drain
+ drain_93_1            0.000000       8.0E-04  drain
+ drain_94_1            0.000000       8.0E-04  drain
+ drain_95_1            0.000000       8.0E-04  drain
+ drain_96_1            0.000000       8.0E-04  drain
+ drain_97_1            0.000000       8.0E-04  drain
+ drain_99_1            0.000000       8.0E-04  drain
+ drain_100_1           0.000000       8.0E-04  drain
+ drain_101_1           0.000000       8.0E-04  drain
+ drain_102_1           0.000000       8.0E-04  drain
+ drain_103_1           0.000000       8.0E-04  drain
+ drain_104_1           0.000000       8.0E-04  drain
+ drain_98_1            0.000000       8.0E-04  drain
+ drain_92_1            0.000000       8.0E-04  drain
+ drain_105_1           0.000000       8.0E-04  drain
+ drain_111_1           0.000000       8.0E-04  drain
+ drain_112_1           0.000000       8.0E-04  drain
+ drain_113_1           0.000000       8.0E-04  drain
+ drain_114_1           0.000000       8.0E-04  drain
+ drain_115_1           0.000000       8.0E-04  drain
+ drain_116_1           0.000000       8.0E-04  drain
+ drain_117_1           0.000000       8.0E-04  drain
+ drain_118_1           0.000000       8.0E-04  drain
+ drain_119_1           0.000000       8.0E-04  drain
+ drain_120_1           0.000000       8.0E-04  drain
+ drain_121_1           0.000000       8.0E-04  drain
+ drain_122_1           0.000000       8.0E-04  drain
+ drain_123_1           0.000000       8.0E-04  drain
+ drain_110_1           0.000000       8.0E-04  drain
+ drain_128_1           0.000000       8.0E-04  drain
+ drain_129_1           0.000000       8.0E-04  drain
+ drain_130_1           0.000000       8.0E-04  drain
+ drain_131_1           0.000000       8.0E-04  drain
+ drain_132_1           0.000000       8.0E-04  drain
+ drain_133_1           0.000000       8.0E-04  drain
+ drain_134_1           0.000000       8.0E-04  drain
+ drain_135_1           0.000000       8.0E-04  drain
+ drain_136_1           0.000000       8.0E-04  drain
+ drain_137_1           0.000000       8.0E-04  drain
+ drain_138_1           0.000000       8.0E-04  drain
+ drain_139_1           0.000000       8.0E-04  drain
+ drain_140_1           0.000000       8.0E-04  drain
+ drain_141_1           0.000000       8.0E-04  drain
+ drain_145_1           0.000000       8.0E-04  drain
+ drain_146_1           0.000000       8.0E-04  drain
+ drain_147_1           0.000000       8.0E-04  drain
+ drain_148_1           0.000000       8.0E-04  drain
+ drain_149_1           0.000000       8.0E-04  drain
+ drain_150_1           0.000000       8.0E-04  drain
+ drain_151_1           0.000000       8.0E-04  drain
+ drain_152_1           0.000000       8.0E-04  drain
+ drain_153_1           0.000000       8.0E-04  drain
+ drain_154_1           0.000000       8.0E-04  drain
+ drain_155_1           0.000000       8.0E-04  drain
+ drain_156_1           0.000000       8.0E-04  drain
+ drain_157_1           0.000000       8.0E-04  drain
+ drain_158_1           0.000000       8.0E-04  drain
+ drain_159_1           0.000000       8.0E-04  drain
+ drain_163_1           0.000000       8.0E-04  drain
+ drain_164_1           0.000000       8.0E-04  drain
+ drain_165_1           0.000000       8.0E-04  drain
+ drain_166_1           0.000000       8.0E-04  drain
+ drain_167_1           0.000000       8.0E-04  drain
+ drain_168_1           0.000000       8.0E-04  drain
+ drain_169_1           0.000000       8.0E-04  drain
+ drain_170_1           0.000000       8.0E-04  drain
+ drain_171_1           0.000000       8.0E-04  drain
+ drain_172_1           0.000000       8.0E-04  drain
+ drain_173_1           0.000000       8.0E-04  drain
+ drain_174_1           0.000000       8.0E-04  drain
+ drain_175_1           0.000000       8.0E-04  drain
+ drain_176_1           0.000000       8.0E-04  drain
+ drain_177_1           0.000000       8.0E-04  drain
+ drain_182_1           0.000000       8.0E-04  drain
+ drain_183_1           0.000000       8.0E-04  drain
+ drain_184_1           0.000000       8.0E-04  drain
+ drain_185_1           0.000000       8.0E-04  drain
+ drain_186_1           0.000000       8.0E-04  drain
+ drain_187_1           0.000000       8.0E-04  drain
+ drain_188_1           0.000000       8.0E-04  drain
+ drain_189_1           0.000000       8.0E-04  drain
+ drain_190_1           0.000000       8.0E-04  drain
+ drain_191_1           0.000000       8.0E-04  drain
+ drain_192_1           0.000000       8.0E-04  drain
+ drain_193_1           0.000000       8.0E-04  drain
+ drain_194_1           0.000000       8.0E-04  drain
+ drain_195_1           0.000000       8.0E-04  drain
+ drain_196_1           0.000000       8.0E-04  drain
+ drain_197_1           0.000000       8.0E-04  drain
+ drain_200_1           0.000000       8.0E-04  drain
+ drain_201_1           0.000000       8.0E-04  drain
+ drain_202_1           0.000000       8.0E-04  drain
+ drain_203_1           0.000000       8.0E-04  drain
+ drain_204_1           0.000000       8.0E-04  drain
+ drain_205_1           0.000000       8.0E-04  drain
+ drain_206_1           0.000000       8.0E-04  drain
+ drain_207_1           0.000000       8.0E-04  drain
+ drain_211_1           0.000000       8.0E-04  drain
+ drain_212_1           0.000000       8.0E-04  drain
+ drain_213_1           0.000000       8.0E-04  drain
+ drain_214_1           0.000000       8.0E-04  drain
+ drain_215_1           0.000000       8.0E-04  drain
+ drain_216_1           0.000000       8.0E-04  drain
+ drain_218_1           0.000000       8.0E-04  drain
+ drain_219_1           0.000000       8.0E-04  drain
+ drain_220_1           0.000000       8.0E-04  drain
+ drain_221_1           0.000000       8.0E-04  drain
+ drain_222_1           0.000000       8.0E-04  drain
+ drain_230_1           0.000000       8.0E-04  drain
+ drain_231_1           0.000000       8.0E-04  drain
+ drain_232_1           0.000000       8.0E-04  drain
+ drain_233_1           0.000000       8.0E-04  drain
+ drain_234_1           0.000000       8.0E-04  drain
+ drain_239_1           0.000000       8.0E-04  drain
+ drain_240_1           0.000000       8.0E-04  drain
+ drain_249_1           0.000000       8.0E-04  drain
+ drain_250_1           0.000000       8.0E-04  drain
+ drain_251_1           0.000000       8.0E-04  drain
+ drain_252_1           0.000000       8.0E-04  drain
+ drain_267_1           0.000000       8.0E-04  drain
+ drain_268_1           0.000000       8.0E-04  drain
+ drain_269_1           0.000000       8.0E-04  drain
+ drain_270_1           0.000000       8.0E-04  drain
+ drain_286_1           0.000000       8.0E-04  drain
+ drain_287_1           0.000000       8.0E-04  drain
+ drain_288_1           0.000000       8.0E-04  drain
+ drain_304_1           0.000000       8.0E-04  drain
+ drain_305_1           0.000000       8.0E-04  drain
+ drain_306_1           0.000000       8.0E-04  drain
+* model command line
+model.bat
+* model input/output
+.\param_files\ppset1.dat.tpl      .\param_files\ppset1.dat
+.\param_files\ppset2.dat.tpl      .\param_files\ppset2.dat
+.\param_files\ppset3.dat.tpl      .\param_files\ppset3.dat
+.\param_files\pp_rivers.dat.tpl   .\param_files\pp_rivers.dat
+.\param_files\pp_wells.dat.tpl    .\param_files\pp_wells.dat
+.\observ_files\modhead.ssf.ins    modhead.ssf
+.\observ_files\modriv.ssf.ins     modriv.ssf
+.\observ_files\moddrn.ssf.ins     moddrn.ssf
+.\observ_files\modpump.ssf.ins    modpump.ssf
+* prior information
+pp1_kx1       1.0 * log(pp1_kx1) =   2.176091      1.0 regul_kx2bas
+pp1_kx2       1.0 * log(pp1_kx2) =   2.176091      1.0 regul_kx2bas
+pp1_kx3       1.0 * log(pp1_kx3) =   2.176091      1.0 regul_kx2bas
+pp1_kx4       1.0 * log(pp1_kx4) =   2.176091      1.0 regul_kx2bas
+pp1_kx5       1.0 * log(pp1_kx5) =   2.176091      1.0 regul_kx2bas
+pp1_kx6       1.0 * log(pp1_kx6) =   2.176091      1.0 regul_kx2bas
+pp1_kx7       1.0 * log(pp1_kx7) =   2.176091      1.0 regul_kx2bas
+pp1_kx8       1.0 * log(pp1_kx8) =   2.176091      1.0 regul_kx2bas
+pp1_kx9       1.0 * log(pp1_kx9) =   2.176091      1.0 regul_kx2bas
+pp1_kx10      1.0 * log(pp1_kx10) =   2.176091      1.0 regul_kx2bas
+pp1_kx11      1.0 * log(pp1_kx11) =   2.176091      1.0 regul_kx2bas
+pp1_kx12      1.0 * log(pp1_kx12) =   2.176091      1.0 regul_kx2bas
+pp1_kx13      1.0 * log(pp1_kx13) =   2.176091      1.0 regul_kx2bas
+pp1_kx14      1.0 * log(pp1_kx14) =   2.176091      1.0 regul_kx2bas
+pp1_kx15      1.0 * log(pp1_kx15) =   1.698970      1.0 regul_kx2bas
+pp1_kx16      1.0 * log(pp1_kx16) =   1.698970      1.0 regul_kx2bas
+pp1_kx17      1.0 * log(pp1_kx17) =   2.176091      1.0 regul_kx2bas
+pp1_kx18      1.0 * log(pp1_kx18) =   1.698970      1.0 regul_kx2bas
+pp1_kx19      1.0 * log(pp1_kx19) =   1.698970      1.0 regul_kx2bas
+pp1_kx20      1.0 * log(pp1_kx20) =   1.698970      1.0 regul_kx2bas
+pp1_kx21      1.0 * log(pp1_kx21) =   1.698970      1.0 regul_kx2bas
+pp1_kx22      1.0 * log(pp1_kx22) =   1.875061      1.0 regul_kx2bas
+pp1_kx23      1.0 * log(pp1_kx23) =   1.875061      1.0 regul_kx2bas
+pp1_kx24      1.0 * log(pp1_kx24) =   1.875061      1.0 regul_kx2bas
+pp1_kx25      1.0 * log(pp1_kx25) =   1.875061      1.0 regul_kx2bas
+pp1_kx26      1.0 * log(pp1_kx26) =   1.875061      1.0 regul_kx2bas
+pp1_kx27      1.0 * log(pp1_kx27) =   1.698970      1.0 regul_kx2bas
+pp1_kx28      1.0 * log(pp1_kx28) =   2.176091      1.0 regul_kx2bas
+pp1_kx29      1.0 * log(pp1_kx29) =   1.698970      1.0 regul_kx2bas
+pp1_kx30      1.0 * log(pp1_kx30) =   1.698970      1.0 regul_kx2bas
+pp1_kx31      1.0 * log(pp1_kx31) =   1.698970      1.0 regul_kx2bas
+pp1_kx32      1.0 * log(pp1_kx32) =   1.832509      1.0 regul_kx2bas
+pp2_mul1      1.0 * log(pp2_mul1) =   0.000000      1.0 regul_kx2mul
+pp2_mul2      1.0 * log(pp2_mul2) =   0.000000      1.0 regul_kx2mul
+pp2_mul3      1.0 * log(pp2_mul3) =   0.000000      1.0 regul_kx2mul
+pp2_mul4      1.0 * log(pp2_mul4) =   0.000000      1.0 regul_kx2mul
+pp2_mul5      1.0 * log(pp2_mul5) =   0.000000      1.0 regul_kx2mul
+pp2_mul6      1.0 * log(pp2_mul6) =   0.000000      1.0 regul_kx2mul
+pp2_mul7      1.0 * log(pp2_mul7) =   0.000000      1.0 regul_kx2mul
+pp2_mul8      1.0 * log(pp2_mul8) =   0.000000      1.0 regul_kx2mul
+pp2_mul9      1.0 * log(pp2_mul9) =   0.000000      1.0 regul_kx2mul
+pp2_mul10     1.0 * log(pp2_mul10) =   0.000000      1.0 regul_kx2mul
+pp2_mul11     1.0 * log(pp2_mul11) =   0.000000      1.0 regul_kx2mul
+pp2_mul12     1.0 * log(pp2_mul12) =   0.000000      1.0 regul_kx2mul
+pp2_mul13     1.0 * log(pp2_mul13) =   0.000000      1.0 regul_kx2mul
+pp2_mul14     1.0 * log(pp2_mul14) =   0.000000      1.0 regul_kx2mul
+pp2_mul15     1.0 * log(pp2_mul15) =   0.000000      1.0 regul_kx2mul
+pp2_mul16     1.0 * log(pp2_mul16) =   0.000000      1.0 regul_kx2mul
+pp2_mul17     1.0 * log(pp2_mul17) =   0.000000      1.0 regul_kx2mul
+pp2_mul18     1.0 * log(pp2_mul18) =   0.000000      1.0 regul_kx2mul
+pp2_mul19     1.0 * log(pp2_mul19) =   0.000000      1.0 regul_kx2mul
+pp2_mul20     1.0 * log(pp2_mul20) =   0.000000      1.0 regul_kx2mul
+pp2_mul21     1.0 * log(pp2_mul21) =   0.000000      1.0 regul_kx2mul
+pp2_mul22     1.0 * log(pp2_mul22) =   0.000000      1.0 regul_kx2mul
+pp2_mul23     1.0 * log(pp2_mul23) =   0.000000      1.0 regul_kx2mul
+pp2_mul24     1.0 * log(pp2_mul24) =   0.000000      1.0 regul_kx2mul
+pp2_mul25     1.0 * log(pp2_mul25) =   0.000000      1.0 regul_kx2mul
+pp2_mul26     1.0 * log(pp2_mul26) =   0.000000      1.0 regul_kx2mul
+pp2_mul27     1.0 * log(pp2_mul27) =   0.000000      1.0 regul_kx2mul
+pp2_mul28     1.0 * log(pp2_mul28) =   0.000000      1.0 regul_kx2mul
+pp2_mul29     1.0 * log(pp2_mul29) =   0.000000      1.0 regul_kx2mul
+pp2_mul30     1.0 * log(pp2_mul30) =   0.000000      1.0 regul_kx2mul
+pp2_mul31     1.0 * log(pp2_mul31) =   0.000000      1.0 regul_kx2mul
+pp2_mul32     1.0 * log(pp2_mul32) =   0.000000      1.0 regul_kx2mul
+pp2_mul33     1.0 * log(pp2_mul33) =   0.000000      1.0 regul_kx2mul
+pp2_mul34     1.0 * log(pp2_mul34) =   0.000000      1.0 regul_kx2mul
+pp2_mul35     1.0 * log(pp2_mul35) =   0.000000      1.0 regul_kx2mul
+pp2_mul36     1.0 * log(pp2_mul36) =   0.000000      1.0 regul_kx2mul
+pp2_mul37     1.0 * log(pp2_mul37) =   0.000000      1.0 regul_kx2mul
+pp2_mul38     1.0 * log(pp2_mul38) =   0.000000      1.0 regul_kx2mul
+pp2_mul39     1.0 * log(pp2_mul39) =   0.000000      1.0 regul_kx2mul
+pp2_mul40     1.0 * log(pp2_mul40) =   0.000000      1.0 regul_kx2mul
+pp2_mul41     1.0 * log(pp2_mul41) =   0.000000      1.0 regul_kx2mul
+pp2_mul42     1.0 * log(pp2_mul42) =   0.000000      1.0 regul_kx2mul
+pp2_mul43     1.0 * log(pp2_mul43) =   0.000000      1.0 regul_kx2mul
+pp2_mul44     1.0 * log(pp2_mul44) =   0.000000      1.0 regul_kx2mul
+pp2_mul45     1.0 * log(pp2_mul45) =   0.000000      1.0 regul_kx2mul
+pp2_mul46     1.0 * log(pp2_mul46) =   0.000000      1.0 regul_kx2mul
+pp2_mul47     1.0 * log(pp2_mul47) =   0.000000      1.0 regul_kx2mul
+pp2_mul48     1.0 * log(pp2_mul48) =   0.000000      1.0 regul_kx2mul
+pp2_mul49     1.0 * log(pp2_mul49) =   0.000000      1.0 regul_kx2mul
+pp2_mul50     1.0 * log(pp2_mul50) =   0.000000      1.0 regul_kx2mul
+pp2_mul51     1.0 * log(pp2_mul51) =   0.000000      1.0 regul_kx2mul
+pp2_mul52     1.0 * log(pp2_mul52) =   0.000000      1.0 regul_kx2mul
+pp2_mul53     1.0 * log(pp2_mul53) =   0.000000      1.0 regul_kx2mul
+pp2_mul54     1.0 * log(pp2_mul54) =   0.000000      1.0 regul_kx2mul
+pp2_mul55     1.0 * log(pp2_mul55) =   0.000000      1.0 regul_kx2mul
+pp2_mul56     1.0 * log(pp2_mul56) =   0.000000      1.0 regul_kx2mul
+pp2_mul57     1.0 * log(pp2_mul57) =   0.000000      1.0 regul_kx2mul
+pp2_mul58     1.0 * log(pp2_mul58) =   0.000000      1.0 regul_kx2mul
+pp2_mul59     1.0 * log(pp2_mul59) =   0.000000      1.0 regul_kx2mul
+pp2_mul60     1.0 * log(pp2_mul60) =   0.000000      1.0 regul_kx2mul
+pp2_mul61     1.0 * log(pp2_mul61) =   0.000000      1.0 regul_kx2mul
+pp2_mul62     1.0 * log(pp2_mul62) =   0.000000      1.0 regul_kx2mul
+pp2_mul63     1.0 * log(pp2_mul63) =   0.000000      1.0 regul_kx2mul
+pp2_mul64     1.0 * log(pp2_mul64) =   0.000000      1.0 regul_kx2mul
+pp2_mul65     1.0 * log(pp2_mul65) =   0.000000      1.0 regul_kx2mul
+pp2_mul66     1.0 * log(pp2_mul66) =   0.000000      1.0 regul_kx2mul
+pp2_mul67     1.0 * log(pp2_mul67) =   0.000000      1.0 regul_kx2mul
+pp2_mul68     1.0 * log(pp2_mul68) =   0.000000      1.0 regul_kx2mul
+pp2_mul69     1.0 * log(pp2_mul69) =   0.000000      1.0 regul_kx2mul
+pp2_mul70     1.0 * log(pp2_mul70) =   0.000000      1.0 regul_kx2mul
+pp2_mul71     1.0 * log(pp2_mul71) =   0.000000      1.0 regul_kx2mul
+pp2_mul72     1.0 * log(pp2_mul72) =   0.000000      1.0 regul_kx2mul
+pp2_mul73     1.0 * log(pp2_mul73) =   0.000000      1.0 regul_kx2mul
+pp2_mul74     1.0 * log(pp2_mul74) =   0.000000      1.0 regul_kx2mul
+pp2_mul75     1.0 * log(pp2_mul75) =   0.000000      1.0 regul_kx2mul
+pp2_mul76     1.0 * log(pp2_mul76) =   0.000000      1.0 regul_kx2mul
+pp2_mul77     1.0 * log(pp2_mul77) =   0.000000      1.0 regul_kx2mul
+pp2_mul78     1.0 * log(pp2_mul78) =   0.000000      1.0 regul_kx2mul
+pp2_mul79     1.0 * log(pp2_mul79) =   0.000000      1.0 regul_kx2mul
+pp2_mul80     1.0 * log(pp2_mul80) =   0.000000      1.0 regul_kx2mul
+pp2_mul81     1.0 * log(pp2_mul81) =   0.000000      1.0 regul_kx2mul
+pp2_mul82     1.0 * log(pp2_mul82) =   0.000000      1.0 regul_kx2mul
+pp2_mul83     1.0 * log(pp2_mul83) =   0.000000      1.0 regul_kx2mul
+pp2_mul84     1.0 * log(pp2_mul84) =   0.000000      1.0 regul_kx2mul
+pp2_mul85     1.0 * log(pp2_mul85) =   0.000000      1.0 regul_kx2mul
+pp2_mul86     1.0 * log(pp2_mul86) =   0.000000      1.0 regul_kx2mul
+pp2_mul87     1.0 * log(pp2_mul87) =   0.000000      1.0 regul_kx2mul
+pp2_mul88     1.0 * log(pp2_mul88) =   0.000000      1.0 regul_kx2mul
+pp2_mul89     1.0 * log(pp2_mul89) =   0.000000      1.0 regul_kx2mul
+pp2_mul90     1.0 * log(pp2_mul90) =   0.000000      1.0 regul_kx2mul
+pp2_mul91     1.0 * log(pp2_mul91) =   0.000000      1.0 regul_kx2mul
+pp2_mul92     1.0 * log(pp2_mul92) =   0.000000      1.0 regul_kx2mul
+pp2_mul93     1.0 * log(pp2_mul93) =   0.000000      1.0 regul_kx2mul
+pp2_mul94     1.0 * log(pp2_mul94) =   0.000000      1.0 regul_kx2mul
+pp2_mul95     1.0 * log(pp2_mul95) =   0.000000      1.0 regul_kx2mul
+pp2_mul96     1.0 * log(pp2_mul96) =   0.000000      1.0 regul_kx2mul
+pp2_mul97     1.0 * log(pp2_mul97) =   0.000000      1.0 regul_kx2mul
+pp2_mul98     1.0 * log(pp2_mul98) =   0.000000      1.0 regul_kx2mul
+pp2_mul99     1.0 * log(pp2_mul99) =   0.000000      1.0 regul_kx2mul
+pp2_mul100    1.0 * log(pp2_mul100) =   0.000000      1.0 regul_kx2mul
+pp2_mul101    1.0 * log(pp2_mul101) =   0.000000      1.0 regul_kx2mul
+pp2_mul102    1.0 * log(pp2_mul102) =   0.000000      1.0 regul_kx2mul
+pp2_mul103    1.0 * log(pp2_mul103) =   0.000000      1.0 regul_kx2mul
+pp2_mul104    1.0 * log(pp2_mul104) =   0.000000      1.0 regul_kx2mul
+pp2_mul105    1.0 * log(pp2_mul105) =   0.000000      1.0 regul_kx2mul
+pp2_mul106    1.0 * log(pp2_mul106) =   0.000000      1.0 regul_kx2mul
+pp2_mul107    1.0 * log(pp2_mul107) =   0.000000      1.0 regul_kx2mul
+pp2_mul108    1.0 * log(pp2_mul108) =   0.000000      1.0 regul_kx2mul
+pp2_mul109    1.0 * log(pp2_mul109) =   0.000000      1.0 regul_kx2mul
+pp2_mul110    1.0 * log(pp2_mul110) =   0.000000      1.0 regul_kx2mul
+pp2_mul111    1.0 * log(pp2_mul111) =   0.000000      1.0 regul_kx2mul
+pp2_mul112    1.0 * log(pp2_mul112) =   0.000000      1.0 regul_kx2mul
+pp2_mul113    1.0 * log(pp2_mul113) =   0.000000      1.0 regul_kx2mul
+pp2_mul114    1.0 * log(pp2_mul114) =   0.000000      1.0 regul_kx2mul
+pp2_mul115    1.0 * log(pp2_mul115) =   0.000000      1.0 regul_kx2mul
+pp2_mul116    1.0 * log(pp2_mul116) =   0.000000      1.0 regul_kx2mul
+pp2_mul117    1.0 * log(pp2_mul117) =   0.000000      1.0 regul_kx2mul
+pp2_mul118    1.0 * log(pp2_mul118) =   0.000000      1.0 regul_kx2mul
+pp2_mul119    1.0 * log(pp2_mul119) =   0.000000      1.0 regul_kx2mul
+pp2_mul120    1.0 * log(pp2_mul120) =   0.000000      1.0 regul_kx2mul
+pp2_mul121    1.0 * log(pp2_mul121) =   0.000000      1.0 regul_kx2mul
+pp2_mul122    1.0 * log(pp2_mul122) =   0.000000      1.0 regul_kx2mul
+pp2_mul123    1.0 * log(pp2_mul123) =   0.000000      1.0 regul_kx2mul
+pp2_mul124    1.0 * log(pp2_mul124) =   0.000000      1.0 regul_kx2mul
+pp2_mul125    1.0 * log(pp2_mul125) =   0.000000      1.0 regul_kx2mul
+pp2_mul126    1.0 * log(pp2_mul126) =   0.000000      1.0 regul_kx2mul
+pp2_mul127    1.0 * log(pp2_mul127) =   0.000000      1.0 regul_kx2mul
+pp2_mul128    1.0 * log(pp2_mul128) =   0.000000      1.0 regul_kx2mul
+pp2_mul129    1.0 * log(pp2_mul129) =   0.000000      1.0 regul_kx2mul
+pp2_mul130    1.0 * log(pp2_mul130) =   0.000000      1.0 regul_kx2mul
+pp2_mul131    1.0 * log(pp2_mul131) =   0.000000      1.0 regul_kx2mul
+pp2_mul132    1.0 * log(pp2_mul132) =   0.000000      1.0 regul_kx2mul
+pp2_mul133    1.0 * log(pp2_mul133) =   0.000000      1.0 regul_kx2mul
+pp2_mul134    1.0 * log(pp2_mul134) =   0.000000      1.0 regul_kx2mul
+pp2_mul135    1.0 * log(pp2_mul135) =   0.000000      1.0 regul_kx2mul
+pp2_mul136    1.0 * log(pp2_mul136) =   0.000000      1.0 regul_kx2mul
+pp2_mul137    1.0 * log(pp2_mul137) =   0.000000      1.0 regul_kx2mul
+pp2_mul138    1.0 * log(pp2_mul138) =   0.000000      1.0 regul_kx2mul
+pp2_mul139    1.0 * log(pp2_mul139) =   0.000000      1.0 regul_kx2mul
+pp2_mul140    1.0 * log(pp2_mul140) =   0.000000      1.0 regul_kx2mul
+pp2_mul141    1.0 * log(pp2_mul141) =   0.000000      1.0 regul_kx2mul
+pp2_mul142    1.0 * log(pp2_mul142) =   0.000000      1.0 regul_kx2mul
+pp2_mul143    1.0 * log(pp2_mul143) =   0.000000      1.0 regul_kx2mul
+pp2_mul144    1.0 * log(pp2_mul144) =   0.000000      1.0 regul_kx2mul
+pp2_mul145    1.0 * log(pp2_mul145) =   0.000000      1.0 regul_kx2mul
+pp2_mul146    1.0 * log(pp2_mul146) =   0.000000      1.0 regul_kx2mul
+pp2_mul147    1.0 * log(pp2_mul147) =   0.000000      1.0 regul_kx2mul
+pp2_mul148    1.0 * log(pp2_mul148) =   0.000000      1.0 regul_kx2mul
+pp2_mul149    1.0 * log(pp2_mul149) =   0.000000      1.0 regul_kx2mul
+pp2_mul150    1.0 * log(pp2_mul150) =   0.000000      1.0 regul_kx2mul
+pp2_mul151    1.0 * log(pp2_mul151) =   0.000000      1.0 regul_kx2mul
+pp2_mul152    1.0 * log(pp2_mul152) =   0.000000      1.0 regul_kx2mul
+pp2_mul153    1.0 * log(pp2_mul153) =   0.000000      1.0 regul_kx2mul
+pp2_mul154    1.0 * log(pp2_mul154) =   0.000000      1.0 regul_kx2mul
+pp2_mul155    1.0 * log(pp2_mul155) =   0.000000      1.0 regul_kx2mul
+pp2_mul156    1.0 * log(pp2_mul156) =   0.000000      1.0 regul_kx2mul
+pp2_mul157    1.0 * log(pp2_mul157) =   0.000000      1.0 regul_kx2mul
+pp2_mul158    1.0 * log(pp2_mul158) =   0.000000      1.0 regul_kx2mul
+pp2_mul159    1.0 * log(pp2_mul159) =   0.000000      1.0 regul_kx2mul
+pp2_mul160    1.0 * log(pp2_mul160) =   0.000000      1.0 regul_kx2mul
+pp2_mul161    1.0 * log(pp2_mul161) =   0.000000      1.0 regul_kx2mul
+pp2_mul162    1.0 * log(pp2_mul162) =   0.000000      1.0 regul_kx2mul
+pp2_mul163    1.0 * log(pp2_mul163) =   0.000000      1.0 regul_kx2mul
+pp2_mul164    1.0 * log(pp2_mul164) =   0.000000      1.0 regul_kx2mul
+pp2_mul165    1.0 * log(pp2_mul165) =   0.000000      1.0 regul_kx2mul
+pp2_mul166    1.0 * log(pp2_mul166) =   0.000000      1.0 regul_kx2mul
+pp2_mul167    1.0 * log(pp2_mul167) =   0.000000      1.0 regul_kx2mul
+pp2_mul168    1.0 * log(pp2_mul168) =   0.000000      1.0 regul_kx2mul
+pp2_mul169    1.0 * log(pp2_mul169) =   0.000000      1.0 regul_kx2mul
+pp2_mul170    1.0 * log(pp2_mul170) =   0.000000      1.0 regul_kx2mul
+pp2_mul171    1.0 * log(pp2_mul171) =   0.000000      1.0 regul_kx2mul
+pp2_mul172    1.0 * log(pp2_mul172) =   0.000000      1.0 regul_kx2mul
+pp2_mul173    1.0 * log(pp2_mul173) =   0.000000      1.0 regul_kx2mul
+pp2_mul174    1.0 * log(pp2_mul174) =   0.000000      1.0 regul_kx2mul
+pp2_mul175    1.0 * log(pp2_mul175) =   0.000000      1.0 regul_kx2mul
+pp2_mul176    1.0 * log(pp2_mul176) =   0.000000      1.0 regul_kx2mul
+pp2_mul177    1.0 * log(pp2_mul177) =   0.000000      1.0 regul_kx2mul
+pp2_mul178    1.0 * log(pp2_mul178) =   0.000000      1.0 regul_kx2mul
+pp2_mul179    1.0 * log(pp2_mul179) =   0.000000      1.0 regul_kx2mul
+pp2_mul180    1.0 * log(pp2_mul180) =   0.000000      1.0 regul_kx2mul
+pp2_mul181    1.0 * log(pp2_mul181) =   0.000000      1.0 regul_kx2mul
+pp2_mul182    1.0 * log(pp2_mul182) =   0.000000      1.0 regul_kx2mul
+pp2_mul183    1.0 * log(pp2_mul183) =   0.000000      1.0 regul_kx2mul
+pp2_mul184    1.0 * log(pp2_mul184) =   0.000000      1.0 regul_kx2mul
+pp2_mul185    1.0 * log(pp2_mul185) =   0.000000      1.0 regul_kx2mul
+pp2_mul186    1.0 * log(pp2_mul186) =   0.000000      1.0 regul_kx2mul
+pp2_mul187    1.0 * log(pp2_mul187) =   0.000000      1.0 regul_kx2mul
+pp2_mul188    1.0 * log(pp2_mul188) =   0.000000      1.0 regul_kx2mul
+pp2_mul189    1.0 * log(pp2_mul189) =   0.000000      1.0 regul_kx2mul
+pp2_mul190    1.0 * log(pp2_mul190) =   0.000000      1.0 regul_kx2mul
+pp2_mul191    1.0 * log(pp2_mul191) =   0.000000      1.0 regul_kx2mul
+pp2_mul192    1.0 * log(pp2_mul192) =   0.000000      1.0 regul_kx2mul
+pp2_mul193    1.0 * log(pp2_mul193) =   0.000000      1.0 regul_kx2mul
+pp2_mul194    1.0 * log(pp2_mul194) =   0.000000      1.0 regul_kx2mul
+pp2_mul195    1.0 * log(pp2_mul195) =   0.000000      1.0 regul_kx2mul
+pp2_mul196    1.0 * log(pp2_mul196) =   0.000000      1.0 regul_kx2mul
+pp2_mul197    1.0 * log(pp2_mul197) =   0.000000      1.0 regul_kx2mul
+pp2_mul198    1.0 * log(pp2_mul198) =   0.000000      1.0 regul_kx2mul
+pp2_mul199    1.0 * log(pp2_mul199) =   0.000000      1.0 regul_kx2mul
+pp2_mul200    1.0 * log(pp2_mul200) =   0.000000      1.0 regul_kx2mul
+pp2_mul201    1.0 * log(pp2_mul201) =   0.000000      1.0 regul_kx2mul
+pp2_mul202    1.0 * log(pp2_mul202) =   0.000000      1.0 regul_kx2mul
+pp2_mul203    1.0 * log(pp2_mul203) =   0.000000      1.0 regul_kx2mul
+pp2_mul204    1.0 * log(pp2_mul204) =   0.000000      1.0 regul_kx2mul
+pp2_mul205    1.0 * log(pp2_mul205) =   0.000000      1.0 regul_kx2mul
+pp2_mul206    1.0 * log(pp2_mul206) =   0.000000      1.0 regul_kx2mul
+pp2_mul207    1.0 * log(pp2_mul207) =   0.000000      1.0 regul_kx2mul
+pp2_mul208    1.0 * log(pp2_mul208) =   0.000000      1.0 regul_kx2mul
+pp2_mul209    1.0 * log(pp2_mul209) =   0.000000      1.0 regul_kx2mul
+pp2_mul210    1.0 * log(pp2_mul210) =   0.000000      1.0 regul_kx2mul
+pp2_mul211    1.0 * log(pp2_mul211) =   0.000000      1.0 regul_kx2mul
+pp2_mul212    1.0 * log(pp2_mul212) =   0.000000      1.0 regul_kx2mul
+pp2_mul213    1.0 * log(pp2_mul213) =   0.000000      1.0 regul_kx2mul
+pp2_mul214    1.0 * log(pp2_mul214) =   0.000000      1.0 regul_kx2mul
+pp2_mul215    1.0 * log(pp2_mul215) =   0.000000      1.0 regul_kx2mul
+pp2_mul216    1.0 * log(pp2_mul216) =   0.000000      1.0 regul_kx2mul
+pp2_mul217    1.0 * log(pp2_mul217) =   0.000000      1.0 regul_kx2mul
+pp2_mul218    1.0 * log(pp2_mul218) =   0.000000      1.0 regul_kx2mul
+pp2_mul219    1.0 * log(pp2_mul219) =   0.000000      1.0 regul_kx2mul
+pp2_mul220    1.0 * log(pp2_mul220) =   0.000000      1.0 regul_kx2mul
+pp2_mul221    1.0 * log(pp2_mul221) =   0.000000      1.0 regul_kx2mul
+pp2_mul222    1.0 * log(pp2_mul222) =   0.000000      1.0 regul_kx2mul
+pp2_mul223    1.0 * log(pp2_mul223) =   0.000000      1.0 regul_kx2mul
+pp2_mul224    1.0 * log(pp2_mul224) =   0.000000      1.0 regul_kx2mul
+pp2_mul225    1.0 * log(pp2_mul225) =   0.000000      1.0 regul_kx2mul
+pp2_mul226    1.0 * log(pp2_mul226) =   0.000000      1.0 regul_kx2mul
+pp2_mul227    1.0 * log(pp2_mul227) =   0.000000      1.0 regul_kx2mul
+pp2_mul228    1.0 * log(pp2_mul228) =   0.000000      1.0 regul_kx2mul
+pp2_mul229    1.0 * log(pp2_mul229) =   0.000000      1.0 regul_kx2mul
+pp2_mul230    1.0 * log(pp2_mul230) =   0.000000      1.0 regul_kx2mul
+pp2_mul231    1.0 * log(pp2_mul231) =   0.000000      1.0 regul_kx2mul
+pp2_mul232    1.0 * log(pp2_mul232) =   0.000000      1.0 regul_kx2mul
+pp2_mul233    1.0 * log(pp2_mul233) =   0.000000      1.0 regul_kx2mul
+pp2_mul234    1.0 * log(pp2_mul234) =   0.000000      1.0 regul_kx2mul
+pp2_mul235    1.0 * log(pp2_mul235) =   0.000000      1.0 regul_kx2mul
+pp2_mul236    1.0 * log(pp2_mul236) =   0.000000      1.0 regul_kx2mul
+pp2_mul237    1.0 * log(pp2_mul237) =   0.000000      1.0 regul_kx2mul
+pp2_mul238    1.0 * log(pp2_mul238) =   0.000000      1.0 regul_kx2mul
+pp2_mul239    1.0 * log(pp2_mul239) =   0.000000      1.0 regul_kx2mul
+pp2_mul240    1.0 * log(pp2_mul240) =   0.000000      1.0 regul_kx2mul
+pp2_mul241    1.0 * log(pp2_mul241) =   0.000000      1.0 regul_kx2mul
+pp2_mul242    1.0 * log(pp2_mul242) =   0.000000      1.0 regul_kx2mul
+pp2_mul243    1.0 * log(pp2_mul243) =   0.000000      1.0 regul_kx2mul
+pp2_mul244    1.0 * log(pp2_mul244) =   0.000000      1.0 regul_kx2mul
+pp2_mul245    1.0 * log(pp2_mul245) =   0.000000      1.0 regul_kx2mul
+pp2_mul246    1.0 * log(pp2_mul246) =   0.000000      1.0 regul_kx2mul
+pp2_mul247    1.0 * log(pp2_mul247) =   0.000000      1.0 regul_kx2mul
+pp2_mul248    1.0 * log(pp2_mul248) =   0.000000      1.0 regul_kx2mul
+pp2_mul249    1.0 * log(pp2_mul249) =   0.000000      1.0 regul_kx2mul
+pp2_mul250    1.0 * log(pp2_mul250) =   0.000000      1.0 regul_kx2mul
+pp2_mul251    1.0 * log(pp2_mul251) =   0.000000      1.0 regul_kx2mul
+pp2_mul252    1.0 * log(pp2_mul252) =   0.000000      1.0 regul_kx2mul
+pp2_mul253    1.0 * log(pp2_mul253) =   0.000000      1.0 regul_kx2mul
+pp2_mul254    1.0 * log(pp2_mul254) =   0.000000      1.0 regul_kx2mul
+pp2_mul255    1.0 * log(pp2_mul255) =   0.000000      1.0 regul_kx2mul
+pp2_mul256    1.0 * log(pp2_mul256) =   0.000000      1.0 regul_kx2mul
+pp2_mul257    1.0 * log(pp2_mul257) =   0.000000      1.0 regul_kx2mul
+pp2_mul258    1.0 * log(pp2_mul258) =   0.000000      1.0 regul_kx2mul
+pp2_mul259    1.0 * log(pp2_mul259) =   0.000000      1.0 regul_kx2mul
+pp2_mul260    1.0 * log(pp2_mul260) =   0.000000      1.0 regul_kx2mul
+pp2_mul261    1.0 * log(pp2_mul261) =   0.000000      1.0 regul_kx2mul
+pp2_mul262    1.0 * log(pp2_mul262) =   0.000000      1.0 regul_kx2mul
+pp2_mul263    1.0 * log(pp2_mul263) =   0.000000      1.0 regul_kx2mul
+pp2_mul264    1.0 * log(pp2_mul264) =   0.000000      1.0 regul_kx2mul
+pp2_mul265    1.0 * log(pp2_mul265) =   0.000000      1.0 regul_kx2mul
+pp2_mul266    1.0 * log(pp2_mul266) =   0.000000      1.0 regul_kx2mul
+pp2_mul267    1.0 * log(pp2_mul267) =   0.000000      1.0 regul_kx2mul
+pp2_mul268    1.0 * log(pp2_mul268) =   0.000000      1.0 regul_kx2mul
+pp2_mul269    1.0 * log(pp2_mul269) =   0.000000      1.0 regul_kx2mul
+pp2_mul270    1.0 * log(pp2_mul270) =   0.000000      1.0 regul_kx2mul
+pp2_mul271    1.0 * log(pp2_mul271) =   0.000000      1.0 regul_kx2mul
+pp2_mul272    1.0 * log(pp2_mul272) =   0.000000      1.0 regul_kx2mul
+pp2_mul273    1.0 * log(pp2_mul273) =   0.000000      1.0 regul_kx2mul
+pp2_mul274    1.0 * log(pp2_mul274) =   0.000000      1.0 regul_kx2mul
+pp2_mul275    1.0 * log(pp2_mul275) =   0.000000      1.0 regul_kx2mul
+pp2_mul276    1.0 * log(pp2_mul276) =   0.000000      1.0 regul_kx2mul
+pp2_mul277    1.0 * log(pp2_mul277) =   0.000000      1.0 regul_kx2mul
+pp3_mul1      1.0 * log(pp3_mul1) =   0.000000      1.0 regul_k13mul
+pp3_mul2      1.0 * log(pp3_mul2) =   0.000000      1.0 regul_k13mul
+pp3_mul3      1.0 * log(pp3_mul3) =   0.000000      1.0 regul_k13mul
+pp3_mul4      1.0 * log(pp3_mul4) =   0.000000      1.0 regul_k13mul
+pp3_mul5      1.0 * log(pp3_mul5) =   0.000000      1.0 regul_k13mul
+pp3_mul6      1.0 * log(pp3_mul6) =   0.000000      1.0 regul_k13mul
+pp3_mul7      1.0 * log(pp3_mul7) =   0.000000      1.0 regul_k13mul
+pp3_mul8      1.0 * log(pp3_mul8) =   0.000000      1.0 regul_k13mul
+pp3_mul9      1.0 * log(pp3_mul9) =   0.000000      1.0 regul_k13mul
+pp3_mul10     1.0 * log(pp3_mul10) =   0.000000      1.0 regul_k13mul
+pp3_mul11     1.0 * log(pp3_mul11) =   0.000000      1.0 regul_k13mul
+pp3_mul12     1.0 * log(pp3_mul12) =   0.000000      1.0 regul_k13mul
+pp3_mul13     1.0 * log(pp3_mul13) =   0.000000      1.0 regul_k13mul
+pp3_mul14     1.0 * log(pp3_mul14) =   0.000000      1.0 regul_k13mul
+pp3_mul15     1.0 * log(pp3_mul15) =   0.000000      1.0 regul_k13mul
+pp3_mul16     1.0 * log(pp3_mul16) =   0.000000      1.0 regul_k13mul
+pp3_mul17     1.0 * log(pp3_mul17) =   0.000000      1.0 regul_k13mul
+pp3_mul18     1.0 * log(pp3_mul18) =   0.000000      1.0 regul_k13mul
+pp3_mul19     1.0 * log(pp3_mul19) =   0.000000      1.0 regul_k13mul
+pp3_mul20     1.0 * log(pp3_mul20) =   0.000000      1.0 regul_k13mul
+pp3_mul21     1.0 * log(pp3_mul21) =   0.000000      1.0 regul_k13mul
+pp3_mul22     1.0 * log(pp3_mul22) =   0.000000      1.0 regul_k13mul
+pp3_mul23     1.0 * log(pp3_mul23) =   0.000000      1.0 regul_k13mul
+pp3_mul24     1.0 * log(pp3_mul24) =   0.000000      1.0 regul_k13mul
+pp3_mul25     1.0 * log(pp3_mul25) =   0.000000      1.0 regul_k13mul
+pp3_mul26     1.0 * log(pp3_mul26) =   0.000000      1.0 regul_k13mul
+pp3_mul27     1.0 * log(pp3_mul27) =   0.000000      1.0 regul_k13mul
+pp3_mul28     1.0 * log(pp3_mul28) =   0.000000      1.0 regul_k13mul
+pp3_mul29     1.0 * log(pp3_mul29) =   0.000000      1.0 regul_k13mul
+pp3_mul30     1.0 * log(pp3_mul30) =   0.000000      1.0 regul_k13mul
+pp3_mul31     1.0 * log(pp3_mul31) =   0.000000      1.0 regul_k13mul
+pp3_mul32     1.0 * log(pp3_mul32) =   0.000000      1.0 regul_k13mul
+pp3_mul33     1.0 * log(pp3_mul33) =   0.000000      1.0 regul_k13mul
+pp3_mul34     1.0 * log(pp3_mul34) =   0.000000      1.0 regul_k13mul
+pp3_mul35     1.0 * log(pp3_mul35) =   0.000000      1.0 regul_k13mul
+pp3_mul36     1.0 * log(pp3_mul36) =   0.000000      1.0 regul_k13mul
+pp3_mul37     1.0 * log(pp3_mul37) =   0.000000      1.0 regul_k13mul
+pp3_mul38     1.0 * log(pp3_mul38) =   0.000000      1.0 regul_k13mul
+pp3_mul39     1.0 * log(pp3_mul39) =   0.000000      1.0 regul_k13mul
+pp3_mul40     1.0 * log(pp3_mul40) =   0.000000      1.0 regul_k13mul
+pp3_mul41     1.0 * log(pp3_mul41) =   0.000000      1.0 regul_k13mul
+pp3_mul42     1.0 * log(pp3_mul42) =   0.000000      1.0 regul_k13mul
+pp3_mul43     1.0 * log(pp3_mul43) =   0.000000      1.0 regul_k13mul
+pp3_mul44     1.0 * log(pp3_mul44) =   0.000000      1.0 regul_k13mul
+pp3_mul45     1.0 * log(pp3_mul45) =   0.000000      1.0 regul_k13mul
+pp3_mul46     1.0 * log(pp3_mul46) =   0.000000      1.0 regul_k13mul
+pp3_mul47     1.0 * log(pp3_mul47) =   0.000000      1.0 regul_k13mul
+pp3_mul48     1.0 * log(pp3_mul48) =   0.000000      1.0 regul_k13mul
+pp3_mul49     1.0 * log(pp3_mul49) =   0.000000      1.0 regul_k13mul
+pp3_mul50     1.0 * log(pp3_mul50) =   0.000000      1.0 regul_k13mul
+pp3_mul51     1.0 * log(pp3_mul51) =   0.000000      1.0 regul_k13mul
+pp3_mul52     1.0 * log(pp3_mul52) =   0.000000      1.0 regul_k13mul
+pp3_mul53     1.0 * log(pp3_mul53) =   0.000000      1.0 regul_k13mul
+pp3_mul54     1.0 * log(pp3_mul54) =   0.000000      1.0 regul_k13mul
+pp3_mul55     1.0 * log(pp3_mul55) =   0.000000      1.0 regul_k13mul
+pp3_mul56     1.0 * log(pp3_mul56) =   0.000000      1.0 regul_k13mul
+pp3_mul57     1.0 * log(pp3_mul57) =   0.000000      1.0 regul_k13mul
+pp3_mul58     1.0 * log(pp3_mul58) =   0.000000      1.0 regul_k13mul
+pp3_mul59     1.0 * log(pp3_mul59) =   0.000000      1.0 regul_k13mul
+pp3_mul60     1.0 * log(pp3_mul60) =   0.000000      1.0 regul_k13mul
+pp3_mul61     1.0 * log(pp3_mul61) =   0.000000      1.0 regul_k13mul
+pp3_mul62     1.0 * log(pp3_mul62) =   0.000000      1.0 regul_k13mul
+pp3_mul63     1.0 * log(pp3_mul63) =   0.000000      1.0 regul_k13mul
+pp3_mul64     1.0 * log(pp3_mul64) =   0.000000      1.0 regul_k13mul
+pp3_mul65     1.0 * log(pp3_mul65) =   0.000000      1.0 regul_k13mul
+pp3_mul66     1.0 * log(pp3_mul66) =   0.000000      1.0 regul_k13mul
+pp3_mul67     1.0 * log(pp3_mul67) =   0.000000      1.0 regul_k13mul
+pp3_vanis1    1.0 * log(pp3_vanis1) =   1.000000      1.0 regul_vanis
+pp3_vanis2    1.0 * log(pp3_vanis2) =   1.000000      1.0 regul_vanis
+pp3_vanis3    1.0 * log(pp3_vanis3) =   1.000000      1.0 regul_vanis
+pp3_vanis4    1.0 * log(pp3_vanis4) =   1.000000      1.0 regul_vanis
+pp3_vanis5    1.0 * log(pp3_vanis5) =   1.000000      1.0 regul_vanis
+pp3_vanis6    1.0 * log(pp3_vanis6) =   1.000000      1.0 regul_vanis
+pp3_vanis7    1.0 * log(pp3_vanis7) =   1.000000      1.0 regul_vanis
+pp3_vanis8    1.0 * log(pp3_vanis8) =   1.000000      1.0 regul_vanis
+pp3_vanis9    1.0 * log(pp3_vanis9) =   1.000000      1.0 regul_vanis
+pp3_vanis10   1.0 * log(pp3_vanis10) =   1.000000      1.0 regul_vanis
+pp3_vanis11   1.0 * log(pp3_vanis11) =   1.000000      1.0 regul_vanis
+pp3_vanis12   1.0 * log(pp3_vanis12) =   1.000000      1.0 regul_vanis
+pp3_vanis13   1.0 * log(pp3_vanis13) =   1.000000      1.0 regul_vanis
+pp3_vanis14   1.0 * log(pp3_vanis14) =   1.000000      1.0 regul_vanis
+pp3_vanis15   1.0 * log(pp3_vanis15) =   1.000000      1.0 regul_vanis
+pp3_vanis16   1.0 * log(pp3_vanis16) =   1.000000      1.0 regul_vanis
+pp3_vanis17   1.0 * log(pp3_vanis17) =   1.000000      1.0 regul_vanis
+pp3_vanis18   1.0 * log(pp3_vanis18) =   1.000000      1.0 regul_vanis
+pp3_vanis19   1.0 * log(pp3_vanis19) =   1.000000      1.0 regul_vanis
+pp3_vanis20   1.0 * log(pp3_vanis20) =   1.000000      1.0 regul_vanis
+pp3_vanis21   1.0 * log(pp3_vanis21) =   1.000000      1.0 regul_vanis
+pp3_vanis22   1.0 * log(pp3_vanis22) =   1.000000      1.0 regul_vanis
+pp3_vanis23   1.0 * log(pp3_vanis23) =   1.000000      1.0 regul_vanis
+pp3_vanis24   1.0 * log(pp3_vanis24) =   1.000000      1.0 regul_vanis
+pp3_vanis25   1.0 * log(pp3_vanis25) =   1.000000      1.0 regul_vanis
+pp3_vanis26   1.0 * log(pp3_vanis26) =   1.000000      1.0 regul_vanis
+pp3_vanis27   1.0 * log(pp3_vanis27) =   1.000000      1.0 regul_vanis
+pp3_vanis28   1.0 * log(pp3_vanis28) =   1.000000      1.0 regul_vanis
+pp3_vanis29   1.0 * log(pp3_vanis29) =   1.000000      1.0 regul_vanis
+pp3_vanis30   1.0 * log(pp3_vanis30) =   1.000000      1.0 regul_vanis
+pp3_vanis31   1.0 * log(pp3_vanis31) =   1.000000      1.0 regul_vanis
+pp3_vanis32   1.0 * log(pp3_vanis32) =   1.000000      1.0 regul_vanis
+pp3_vanis33   1.0 * log(pp3_vanis33) =   1.000000      1.0 regul_vanis
+pp3_vanis34   1.0 * log(pp3_vanis34) =   1.000000      1.0 regul_vanis
+pp3_vanis35   1.0 * log(pp3_vanis35) =   1.000000      1.0 regul_vanis
+pp3_vanis36   1.0 * log(pp3_vanis36) =   1.000000      1.0 regul_vanis
+pp3_vanis37   1.0 * log(pp3_vanis37) =   1.000000      1.0 regul_vanis
+pp3_vanis38   1.0 * log(pp3_vanis38) =   1.000000      1.0 regul_vanis
+pp3_vanis39   1.0 * log(pp3_vanis39) =   1.000000      1.0 regul_vanis
+pp3_vanis40   1.0 * log(pp3_vanis40) =   1.000000      1.0 regul_vanis
+pp3_vanis41   1.0 * log(pp3_vanis41) =   1.000000      1.0 regul_vanis
+pp3_vanis42   1.0 * log(pp3_vanis42) =   1.000000      1.0 regul_vanis
+pp3_vanis43   1.0 * log(pp3_vanis43) =   1.000000      1.0 regul_vanis
+pp3_vanis44   1.0 * log(pp3_vanis44) =   1.000000      1.0 regul_vanis
+pp3_vanis45   1.0 * log(pp3_vanis45) =   1.000000      1.0 regul_vanis
+pp3_vanis46   1.0 * log(pp3_vanis46) =   1.000000      1.0 regul_vanis
+pp3_vanis47   1.0 * log(pp3_vanis47) =   1.000000      1.0 regul_vanis
+pp3_vanis48   1.0 * log(pp3_vanis48) =   1.000000      1.0 regul_vanis
+pp3_vanis49   1.0 * log(pp3_vanis49) =   1.000000      1.0 regul_vanis
+pp3_vanis50   1.0 * log(pp3_vanis50) =   1.000000      1.0 regul_vanis
+pp3_vanis51   1.0 * log(pp3_vanis51) =   1.000000      1.0 regul_vanis
+pp3_vanis52   1.0 * log(pp3_vanis52) =   1.000000      1.0 regul_vanis
+pp3_vanis53   1.0 * log(pp3_vanis53) =   1.000000      1.0 regul_vanis
+pp3_vanis54   1.0 * log(pp3_vanis54) =   1.000000      1.0 regul_vanis
+pp3_vanis55   1.0 * log(pp3_vanis55) =   1.000000      1.0 regul_vanis
+pp3_vanis56   1.0 * log(pp3_vanis56) =   1.000000      1.0 regul_vanis
+pp3_vanis57   1.0 * log(pp3_vanis57) =   1.000000      1.0 regul_vanis
+pp3_vanis58   1.0 * log(pp3_vanis58) =   1.000000      1.0 regul_vanis
+pp3_vanis59   1.0 * log(pp3_vanis59) =   1.000000      1.0 regul_vanis
+pp3_vanis60   1.0 * log(pp3_vanis60) =   1.000000      1.0 regul_vanis
+pp3_vanis61   1.0 * log(pp3_vanis61) =   1.000000      1.0 regul_vanis
+pp3_vanis62   1.0 * log(pp3_vanis62) =   1.000000      1.0 regul_vanis
+pp3_vanis63   1.0 * log(pp3_vanis63) =   1.000000      1.0 regul_vanis
+pp3_vanis64   1.0 * log(pp3_vanis64) =   1.000000      1.0 regul_vanis
+pp3_vanis65   1.0 * log(pp3_vanis65) =   1.000000      1.0 regul_vanis
+pp3_vanis66   1.0 * log(pp3_vanis66) =   1.000000      1.0 regul_vanis
+pp3_vanis67   1.0 * log(pp3_vanis67) =   1.000000      1.0 regul_vanis
+ppr_mul1      1.0 * log(ppr_mul1) =   0.000000      1.0 regul_rcmul
+ppr_mul2      1.0 * log(ppr_mul2) =   0.000000      1.0 regul_rcmul
+ppr_mul3      1.0 * log(ppr_mul3) =   0.000000      1.0 regul_rcmul
+ppr_mul4      1.0 * log(ppr_mul4) =   0.000000      1.0 regul_rcmul
+ppr_mul5      1.0 * log(ppr_mul5) =   0.000000      1.0 regul_rcmul
+ppr_mul6      1.0 * log(ppr_mul6) =   0.000000      1.0 regul_rcmul
+ppr_mul7      1.0 * log(ppr_mul7) =   0.000000      1.0 regul_rcmul
+ppr_mul8      1.0 * log(ppr_mul8) =   0.000000      1.0 regul_rcmul
+ppr_mul9      1.0 * log(ppr_mul9) =   0.000000      1.0 regul_rcmul
+ppr_mul10     1.0 * log(ppr_mul10) =   0.000000      1.0 regul_rcmul
+ppr_mul11     1.0 * log(ppr_mul11) =   0.000000      1.0 regul_rcmul
+ppr_mul12     1.0 * log(ppr_mul12) =   0.000000      1.0 regul_rcmul
+ppr_mul13     1.0 * log(ppr_mul13) =   0.000000      1.0 regul_rcmul
+ppr_mul14     1.0 * log(ppr_mul14) =   0.000000      1.0 regul_rcmul
+ppr_mul15     1.0 * log(ppr_mul15) =   0.000000      1.0 regul_rcmul
+ppr_mul16     1.0 * log(ppr_mul16) =   0.000000      1.0 regul_rcmul
+ppr_mul17     1.0 * log(ppr_mul17) =   0.000000      1.0 regul_rcmul
+ppr_mul18     1.0 * log(ppr_mul18) =   0.000000      1.0 regul_rcmul
+ppr_mul19     1.0 * log(ppr_mul19) =   0.000000      1.0 regul_rcmul
+ppr_mul20     1.0 * log(ppr_mul20) =   0.000000      1.0 regul_rcmul
+ppr_mul21     1.0 * log(ppr_mul21) =   0.000000      1.0 regul_rcmul
+ppr_mul22     1.0 * log(ppr_mul22) =   0.000000      1.0 regul_rcmul
+ppr_mul23     1.0 * log(ppr_mul23) =   0.000000      1.0 regul_rcmul
+ppr_mul24     1.0 * log(ppr_mul24) =   0.000000      1.0 regul_rcmul
+ppr_mul25     1.0 * log(ppr_mul25) =   0.000000      1.0 regul_rcmul
+ppr_mul26     1.0 * log(ppr_mul26) =   0.000000      1.0 regul_rcmul
+ppr_mul27     1.0 * log(ppr_mul27) =   0.000000      1.0 regul_rcmul
+ppr_mul28     1.0 * log(ppr_mul28) =   0.000000      1.0 regul_rcmul
+ppr_mul29     1.0 * log(ppr_mul29) =   0.000000      1.0 regul_rcmul
+ppr_mul30     1.0 * log(ppr_mul30) =   0.000000      1.0 regul_rcmul
+ppr_mul31     1.0 * log(ppr_mul31) =   0.000000      1.0 regul_rcmul
+ppr_mul32     1.0 * log(ppr_mul32) =   0.000000      1.0 regul_rcmul
+ppr_mul33     1.0 * log(ppr_mul33) =   0.000000      1.0 regul_rcmul
+ppr_mul34     1.0 * log(ppr_mul34) =   0.000000      1.0 regul_rcmul
+ppr_mul35     1.0 * log(ppr_mul35) =   0.000000      1.0 regul_rcmul
+ppr_mul36     1.0 * log(ppr_mul36) =   0.000000      1.0 regul_rcmul
+ppr_mul37     1.0 * log(ppr_mul37) =   0.000000      1.0 regul_rcmul
+ppr_mul38     1.0 * log(ppr_mul38) =   0.000000      1.0 regul_rcmul
+ppr_mul39     1.0 * log(ppr_mul39) =   0.000000      1.0 regul_rcmul
+ppr_mul40     1.0 * log(ppr_mul40) =   0.000000      1.0 regul_rcmul
+ppr_mul41     1.0 * log(ppr_mul41) =   0.000000      1.0 regul_rcmul
+ppr_mul42     1.0 * log(ppr_mul42) =   0.000000      1.0 regul_rcmul
+ppr_mul43     1.0 * log(ppr_mul43) =   0.000000      1.0 regul_rcmul
+ppr_mul44     1.0 * log(ppr_mul44) =   0.000000      1.0 regul_rcmul
+ppr_mul45     1.0 * log(ppr_mul45) =   0.000000      1.0 regul_rcmul
+ppr_mul46     1.0 * log(ppr_mul46) =   0.000000      1.0 regul_rcmul
+ppr_mul47     1.0 * log(ppr_mul47) =   0.000000      1.0 regul_rcmul
+ppr_mul48     1.0 * log(ppr_mul48) =   0.000000      1.0 regul_rcmul
+ppr_mul49     1.0 * log(ppr_mul49) =   0.000000      1.0 regul_rcmul
+ppr_mul50     1.0 * log(ppr_mul50) =   0.000000      1.0 regul_rcmul
+ppr_mul51     1.0 * log(ppr_mul51) =   0.000000      1.0 regul_rcmul
+ppr_mul52     1.0 * log(ppr_mul52) =   0.000000      1.0 regul_rcmul
+ppr_mul53     1.0 * log(ppr_mul53) =   0.000000      1.0 regul_rcmul
+ppr_mul54     1.0 * log(ppr_mul54) =   0.000000      1.0 regul_rcmul
+ppr_mul55     1.0 * log(ppr_mul55) =   0.000000      1.0 regul_rcmul
+ppr_mul56     1.0 * log(ppr_mul56) =   0.000000      1.0 regul_rcmul
+ppr_mul57     1.0 * log(ppr_mul57) =   0.000000      1.0 regul_rcmul
+ppr_mul58     1.0 * log(ppr_mul58) =   0.000000      1.0 regul_rcmul
+ppr_mul59     1.0 * log(ppr_mul59) =   0.000000      1.0 regul_rcmul
+ppr_mul60     1.0 * log(ppr_mul60) =   0.000000      1.0 regul_rcmul
+ppr_mul61     1.0 * log(ppr_mul61) =   0.000000      1.0 regul_rcmul
+ppr_mul62     1.0 * log(ppr_mul62) =   0.000000      1.0 regul_rcmul
+ppr_mul63     1.0 * log(ppr_mul63) =   0.000000      1.0 regul_rcmul
+ppr_mul64     1.0 * log(ppr_mul64) =   0.000000      1.0 regul_rcmul
+ppr_mul65     1.0 * log(ppr_mul65) =   0.000000      1.0 regul_rcmul
+ppr_mul66     1.0 * log(ppr_mul66) =   0.000000      1.0 regul_rcmul
+ppr_mul67     1.0 * log(ppr_mul67) =   0.000000      1.0 regul_rcmul
+ppr_mul68     1.0 * log(ppr_mul68) =   0.000000      1.0 regul_rcmul
+ppr_mul69     1.0 * log(ppr_mul69) =   0.000000      1.0 regul_rcmul
+ppr_mul70     1.0 * log(ppr_mul70) =   0.000000      1.0 regul_rcmul
+ppr_mul71     1.0 * log(ppr_mul71) =   0.000000      1.0 regul_rcmul
+ppr_mul72     1.0 * log(ppr_mul72) =   0.000000      1.0 regul_rcmul
+ppr_mul73     1.0 * log(ppr_mul73) =   0.000000      1.0 regul_rcmul
+ppr_mul74     1.0 * log(ppr_mul74) =   0.000000      1.0 regul_rcmul
+ppr_mul75     1.0 * log(ppr_mul75) =   0.000000      1.0 regul_rcmul
+ppr_mul76     1.0 * log(ppr_mul76) =   0.000000      1.0 regul_rcmul
+ppr_mul77     1.0 * log(ppr_mul77) =   0.000000      1.0 regul_rcmul
+ppr_mul78     1.0 * log(ppr_mul78) =   0.000000      1.0 regul_rcmul
+ppr_mul79     1.0 * log(ppr_mul79) =   0.000000      1.0 regul_rcmul
+ppr_mul80     1.0 * log(ppr_mul80) =   0.000000      1.0 regul_rcmul
+ppr_mul81     1.0 * log(ppr_mul81) =   0.000000      1.0 regul_rcmul
+ppr_mul82     1.0 * log(ppr_mul82) =   0.000000      1.0 regul_rcmul
+ppr_mul83     1.0 * log(ppr_mul83) =   0.000000      1.0 regul_rcmul
+ppr_mul84     1.0 * log(ppr_mul84) =   0.000000      1.0 regul_rcmul
+ppr_mul85     1.0 * log(ppr_mul85) =   0.000000      1.0 regul_rcmul
+ppr_mul86     1.0 * log(ppr_mul86) =   0.000000      1.0 regul_rcmul
+ppr_mul87     1.0 * log(ppr_mul87) =   0.000000      1.0 regul_rcmul
+ppr_mul88     1.0 * log(ppr_mul88) =   0.000000      1.0 regul_rcmul
+ppr_mul89     1.0 * log(ppr_mul89) =   0.000000      1.0 regul_rcmul
+ppr_mul90     1.0 * log(ppr_mul90) =   0.000000      1.0 regul_rcmul
+ppr_mul91     1.0 * log(ppr_mul91) =   0.000000      1.0 regul_rcmul
+ppr_mul92     1.0 * log(ppr_mul92) =   0.000000      1.0 regul_rcmul
+ppr_mul93     1.0 * log(ppr_mul93) =   0.000000      1.0 regul_rcmul
+ppr_mul94     1.0 * log(ppr_mul94) =   0.000000      1.0 regul_rcmul
+ppr_mul95     1.0 * log(ppr_mul95) =   0.000000      1.0 regul_rcmul
+ppr_mul96     1.0 * log(ppr_mul96) =   0.000000      1.0 regul_rcmul
+ppr_mul97     1.0 * log(ppr_mul97) =   0.000000      1.0 regul_rcmul
+ppr_mul98     1.0 * log(ppr_mul98) =   0.000000      1.0 regul_rcmul
+ppr_mul99     1.0 * log(ppr_mul99) =   0.000000      1.0 regul_rcmul
+ppr_mul100    1.0 * log(ppr_mul100) =   0.000000      1.0 regul_rcmul
+ppr_mul101    1.0 * log(ppr_mul101) =   0.000000      1.0 regul_rcmul
+ppr_mul102    1.0 * log(ppr_mul102) =   0.000000      1.0 regul_rcmul
+ppr_mul103    1.0 * log(ppr_mul103) =   0.000000      1.0 regul_rcmul
+ppr_mul104    1.0 * log(ppr_mul104) =   0.000000      1.0 regul_rcmul
+ppr_mul105    1.0 * log(ppr_mul105) =   0.000000      1.0 regul_rcmul
+ppr_mul106    1.0 * log(ppr_mul106) =   0.000000      1.0 regul_rcmul
+ppr_mul107    1.0 * log(ppr_mul107) =   0.000000      1.0 regul_rcmul
+ppr_mul108    1.0 * log(ppr_mul108) =   0.000000      1.0 regul_rcmul
+ppr_mul109    1.0 * log(ppr_mul109) =   0.000000      1.0 regul_rcmul
+ppr_mul110    1.0 * log(ppr_mul110) =   0.000000      1.0 regul_rcmul
+ppr_mul111    1.0 * log(ppr_mul111) =   0.000000      1.0 regul_rcmul
+ppr_mul112    1.0 * log(ppr_mul112) =   0.000000      1.0 regul_rcmul
+ppr_mul113    1.0 * log(ppr_mul113) =   0.000000      1.0 regul_rcmul
+ppr_mul114    1.0 * log(ppr_mul114) =   0.000000      1.0 regul_rcmul
+ppr_mul115    1.0 * log(ppr_mul115) =   0.000000      1.0 regul_rcmul
+ppr_mul116    1.0 * log(ppr_mul116) =   0.000000      1.0 regul_rcmul
+ppr_mul117    1.0 * log(ppr_mul117) =   0.000000      1.0 regul_rcmul
+ppr_mul118    1.0 * log(ppr_mul118) =   0.000000      1.0 regul_rcmul
+ppr_mul119    1.0 * log(ppr_mul119) =   0.000000      1.0 regul_rcmul
+ppr_mul120    1.0 * log(ppr_mul120) =   0.000000      1.0 regul_rcmul
+ppr_mul121    1.0 * log(ppr_mul121) =   0.000000      1.0 regul_rcmul
+ppr_mul122    1.0 * log(ppr_mul122) =   0.000000      1.0 regul_rcmul
+ppr_mul123    1.0 * log(ppr_mul123) =   0.000000      1.0 regul_rcmul
+ppr_mul124    1.0 * log(ppr_mul124) =   0.000000      1.0 regul_rcmul
+ppr_mul125    1.0 * log(ppr_mul125) =   0.000000      1.0 regul_rcmul
+ppr_mul126    1.0 * log(ppr_mul126) =   0.000000      1.0 regul_rcmul
+ppr_mul127    1.0 * log(ppr_mul127) =   0.000000      1.0 regul_rcmul
+ppr_mul128    1.0 * log(ppr_mul128) =   0.000000      1.0 regul_rcmul
+ppr_mul129    1.0 * log(ppr_mul129) =   0.000000      1.0 regul_rcmul
+ppr_mul130    1.0 * log(ppr_mul130) =   0.000000      1.0 regul_rcmul
+ppr_mul131    1.0 * log(ppr_mul131) =   0.000000      1.0 regul_rcmul
+ppr_mul132    1.0 * log(ppr_mul132) =   0.000000      1.0 regul_rcmul
+ppr_mul133    1.0 * log(ppr_mul133) =   0.000000      1.0 regul_rcmul
+ppr_mul134    1.0 * log(ppr_mul134) =   0.000000      1.0 regul_rcmul
+ppr_mul135    1.0 * log(ppr_mul135) =   0.000000      1.0 regul_rcmul
+ppr_mul136    1.0 * log(ppr_mul136) =   0.000000      1.0 regul_rcmul
+ppr_mul137    1.0 * log(ppr_mul137) =   0.000000      1.0 regul_rcmul
+ppr_mul138    1.0 * log(ppr_mul138) =   0.000000      1.0 regul_rcmul
+ppr_mul139    1.0 * log(ppr_mul139) =   0.000000      1.0 regul_rcmul
+ppr_mul140    1.0 * log(ppr_mul140) =   0.000000      1.0 regul_rcmul
+ppr_mul141    1.0 * log(ppr_mul141) =   0.000000      1.0 regul_rcmul
+ppr_mul142    1.0 * log(ppr_mul142) =   0.000000      1.0 regul_rcmul
+ppr_mul143    1.0 * log(ppr_mul143) =   0.000000      1.0 regul_rcmul
+ppr_mul144    1.0 * log(ppr_mul144) =   0.000000      1.0 regul_rcmul
+ppr_mul145    1.0 * log(ppr_mul145) =   0.000000      1.0 regul_rcmul
+ppr_mul146    1.0 * log(ppr_mul146) =   0.000000      1.0 regul_rcmul
+ppr_mul147    1.0 * log(ppr_mul147) =   0.000000      1.0 regul_rcmul
+ppr_add1      1.0 *     ppr_add1    =   10.0          1.0 regul_rhadd
+ppw_mul1      1.0 * log(ppw_mul1) =   0.000000      1.0 regul_wmul
+ppw_mul2      1.0 * log(ppw_mul2) =   0.000000      1.0 regul_wmul
+ppw_mul3      1.0 * log(ppw_mul3) =   0.000000      1.0 regul_wmul
+ppw_mul4      1.0 * log(ppw_mul4) =   0.000000      1.0 regul_wmul
+ppw_mul5      1.0 * log(ppw_mul5) =   0.000000      1.0 regul_wmul
+ppw_mul6      1.0 * log(ppw_mul6) =   0.000000      1.0 regul_wmul
+ppw_mul7      1.0 * log(ppw_mul7) =   0.000000      1.0 regul_wmul
+ppw_mul8      1.0 * log(ppw_mul8) =   0.000000      1.0 regul_wmul
+ppw_mul9      1.0 * log(ppw_mul9) =   0.000000      1.0 regul_wmul
+ppw_mul10     1.0 * log(ppw_mul10) =   0.000000      1.0 regul_wmul
+ppw_mul11     1.0 * log(ppw_mul11) =   0.000000      1.0 regul_wmul
+ppw_mul12     1.0 * log(ppw_mul12) =   0.000000      1.0 regul_wmul
+ppw_mul13     1.0 * log(ppw_mul13) =   0.000000      1.0 regul_wmul
+ppw_mul14     1.0 * log(ppw_mul14) =   0.000000      1.0 regul_wmul
+ppw_mul15     1.0 * log(ppw_mul15) =   0.000000      1.0 regul_wmul
+ppw_mul16     1.0 * log(ppw_mul16) =   0.000000      1.0 regul_wmul
+ppw_mul17     1.0 * log(ppw_mul17) =   0.000000      1.0 regul_wmul
+ppw_mul18     1.0 * log(ppw_mul18) =   0.000000      1.0 regul_wmul
+ppw_mul19     1.0 * log(ppw_mul19) =   0.000000      1.0 regul_wmul
+ppw_mul20     1.0 * log(ppw_mul20) =   0.000000      1.0 regul_wmul
+ppw_mul21     1.0 * log(ppw_mul21) =   0.000000      1.0 regul_wmul
+ppw_mul22     1.0 * log(ppw_mul22) =   0.000000      1.0 regul_wmul
+ppw_mul23     1.0 * log(ppw_mul23) =   0.000000      1.0 regul_wmul
+ppw_mul24     1.0 * log(ppw_mul24) =   0.000000      1.0 regul_wmul
+ppw_mul25     1.0 * log(ppw_mul25) =   0.000000      1.0 regul_wmul
+ppw_mul26     1.0 * log(ppw_mul26) =   0.000000      1.0 regul_wmul
+ppw_mul27     1.0 * log(ppw_mul27) =   0.000000      1.0 regul_wmul
+ppw_mul28     1.0 * log(ppw_mul28) =   0.000000      1.0 regul_wmul
+ppw_mul29     1.0 * log(ppw_mul29) =   0.000000      1.0 regul_wmul
+ppw_mul30     1.0 * log(ppw_mul30) =   0.000000      1.0 regul_wmul
+ppw_mul31     1.0 * log(ppw_mul31) =   0.000000      1.0 regul_wmul
+ppw_mul32     1.0 * log(ppw_mul32) =   0.000000      1.0 regul_wmul
+ppw_mul33     1.0 * log(ppw_mul33) =   0.000000      1.0 regul_wmul
+ppw_mul34     1.0 * log(ppw_mul34) =   0.000000      1.0 regul_wmul
+ppw_mul35     1.0 * log(ppw_mul35) =   0.000000      1.0 regul_wmul
+ppw_mul36     1.0 * log(ppw_mul36) =   0.000000      1.0 regul_wmul
+ppw_mul37     1.0 * log(ppw_mul37) =   0.000000      1.0 regul_wmul
+ppw_mul38     1.0 * log(ppw_mul38) =   0.000000      1.0 regul_wmul
+ppw_mul39     1.0 * log(ppw_mul39) =   0.000000      1.0 regul_wmul
+ppw_mul40     1.0 * log(ppw_mul40) =   0.000000      1.0 regul_wmul
+ppw_mul41     1.0 * log(ppw_mul41) =   0.000000      1.0 regul_wmul
+ppw_mul42     1.0 * log(ppw_mul42) =   0.000000      1.0 regul_wmul
+ppw_mul43     1.0 * log(ppw_mul43) =   0.000000      1.0 regul_wmul
+ppw_mul44     1.0 * log(ppw_mul44) =   0.000000      1.0 regul_wmul
+ppw_mul45     1.0 * log(ppw_mul45) =   0.000000      1.0 regul_wmul
+ppw_mul46     1.0 * log(ppw_mul46) =   0.000000      1.0 regul_wmul
+ppw_mul47     1.0 * log(ppw_mul47) =   0.000000      1.0 regul_wmul
+ppw_mul48     1.0 * log(ppw_mul48) =   0.000000      1.0 regul_wmul
+ppw_mul49     1.0 * log(ppw_mul49) =   0.000000      1.0 regul_wmul
+ppw_mul50     1.0 * log(ppw_mul50) =   0.000000      1.0 regul_wmul
+ppw_mul51     1.0 * log(ppw_mul51) =   0.000000      1.0 regul_wmul
+ppw_mul52     1.0 * log(ppw_mul52) =   0.000000      1.0 regul_wmul
+ppw_mul53     1.0 * log(ppw_mul53) =   0.000000      1.0 regul_wmul
+ppw_mul54     1.0 * log(ppw_mul54) =   0.000000      1.0 regul_wmul
+ppw_mul55     1.0 * log(ppw_mul55) =   0.000000      1.0 regul_wmul
+ppw_mul56     1.0 * log(ppw_mul56) =   0.000000      1.0 regul_wmul
+ppw_mul57     1.0 * log(ppw_mul57) =   0.000000      1.0 regul_wmul
+ppw_mul58     1.0 * log(ppw_mul58) =   0.000000      1.0 regul_wmul
+ppw_mul59     1.0 * log(ppw_mul59) =   0.000000      1.0 regul_wmul
+ppw_mul60     1.0 * log(ppw_mul60) =   0.000000      1.0 regul_wmul
+ppw_mul61     1.0 * log(ppw_mul61) =   0.000000      1.0 regul_wmul
+* regularisation
+  1.0000000E-10  1.0500000E-10  0.1000000
+ 1.0   1.0e-10    1.0e10
+ 1.3   1.0e-2     1

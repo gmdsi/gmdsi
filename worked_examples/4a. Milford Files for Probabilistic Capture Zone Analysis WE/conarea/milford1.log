@@ -1,0 +1,10 @@
+time,elapsed_seconds,message
+06:56:09,3.02e-05,PEST++ performance logger started
+06:56:09,0.0014562,starting to process control file
+06:56:09,0.0071212,finished processing control file
+06:56:09,0.007826,starting basic model IO error checking
+06:56:09,0.0096564,finished basic model IO error checking
+06:56:09,0.0029687,starting to read parameter csv file
+06:56:09,0.0018309,finished reading parameter csv file
+07:06:04,594.913,starting to read parameter csv file
+07:06:04,0.0002627,finished reading parameter csv file

@@ -1,0 +1,8 @@
+{
+  "MP3DU_BIN" : "milford1_PATHLINE.bin",
+  "OUTPUTS" : [
+    { "ASCII_TABLE" : {
+      "FILE_NAME" : "milford1.ptl"
+    } }
+  ]
+}
