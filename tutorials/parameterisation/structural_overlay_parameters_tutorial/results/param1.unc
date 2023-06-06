@@ -1,0 +1,61 @@
+START COVARIANCE_MATRIX
+  file cov_hole_sliderpos.mat
+  first_parameter pos1_h
+  last_parameter pos6_h
+END COVARIANCE_MATRIX
+
+
+START STANDARD_DEVIATION
+  pos_hg     0.25
+  pos1_f1    0.25
+  pos2_f1    0.25
+  pos3_f1    0.25
+  pos4_f1    0.25
+  pos5_f1    0.25
+  pos1_f2    0.25
+  pos2_f2    0.25
+  pos3_f2    0.25
+  pos4_f2    0.25
+END STANDARD_DEVIATION
+
+START STANDARD_DEVIATION
+  k1_h       0.25
+  k2_h       0.25
+  k3_h       0.25
+  k4_h       0.25
+  k5_h       0.25
+  k6_h       0.25
+  k1_f1      0.25
+  k2_f1      0.25
+  k3_f1      0.25
+  k4_f1      0.25
+  k5_f1      0.25
+  k1_f2      0.25
+  k2_f2      0.25
+  k3_f2      0.25
+  k4_f2      0.25
+END STANDARD_DEVIATION
+
+START COVARIANCE_MATRIX
+  file cov.mat
+  first_parameter k1_pp1
+  last_parameter  k1_pp336
+END COVARIANCE_MATRIX
+
+START COVARIANCE_MATRIX
+  file cov.mat
+  first_parameter k2_pp1
+  last_parameter  k2_pp336
+END COVARIANCE_MATRIX
+
+START COVARIANCE_MATRIX
+  file cov.mat
+  first_parameter k3_pp1
+  last_parameter  k3_pp336
+END COVARIANCE_MATRIX
+
+START COVARIANCE_MATRIX
+  file cov.mat
+  first_parameter k4_pp1
+  last_parameter  k4_pp336
+END COVARIANCE_MATRIX

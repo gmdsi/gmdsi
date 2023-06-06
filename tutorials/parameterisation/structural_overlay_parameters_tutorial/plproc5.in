@@ -1,0 +1,173 @@
+# -- Read the MODFLOW 6 GRB file.
+
+cl_mf6 = read_mf6_grid_specs(file=model.dis.grb,        &
+                             dimensions=3,              &
+                             slist_layernum = layer)
+
+# -- Read the pilot points file to define a pilot points CLIST and
+#    to obtain K values at all pilot points in all layers.
+
+cl_pp = read_list_file(file='pp.dat',              &
+                       skiplines=1,                &
+                       dimensions=2,               &
+                       id_type='character',        &
+                       plist='pp_k1';column=4,     &
+                       plist='pp_k2';column=5,     &
+                       plist='pp_k3';column=6,     &
+                       plist='pp_k4';column=7)
+
+# -- Calculate kriging factors from the pilot points to the grid.
+
+calc_kriging_factors_auto_2d(target_clist=cl_mf6;select=(layer==1),      &
+                             source_clist=cl_pp,                         &
+                             file=factors_lay1.dat;format=binary)
+
+calc_kriging_factors_auto_2d(target_clist=cl_mf6;select=(layer==2),      &
+                             source_clist=cl_pp,                         &
+                             file=factors_lay2.dat;format=binary)
+
+calc_kriging_factors_auto_2d(target_clist=cl_mf6;select=(layer==3),      &
+                             source_clist=cl_pp,                         &
+                             file=factors_lay3.dat;format=binary)
+
+calc_kriging_factors_auto_2d(target_clist=cl_mf6;select=(layer==4),      &
+                             source_clist=cl_pp,                         &
+                             file=factors_lay4.dat;format=binary)
+
+# -- The MF6 k array PLIST is now defined.
+
+mf6_k=new_plist(reference_clist=cl_mf6,value=1.0)
+
+# -- Interpolation to the MF6 grid is now carried out.
+
+mf6_k=pp_k1.krige_using_file(file='factors_lay1.dat';form='binary',     &
+                              transform='log')
+
+mf6_k=pp_k2.krige_using_file(file='factors_lay2.dat';form='binary',     &
+                              transform='log')
+
+mf6_k=pp_k3.krige_using_file(file='factors_lay3.dat';form='binary',     &
+                              transform='log')
+
+mf6_k=pp_k4.krige_using_file(file='factors_lay4.dat';form='binary',     &
+                              transform='log')
+
+# -- Read the file that contains aquifer hole coordinates and K's.
+
+cl_hole = read_list_file(file='hole_details.dat',         &
+                         skiplines=1,                     &
+                         dimensions=2,                    &
+                         id_type=indexed,                 &
+                         slist='hole_id';column=4,        &
+                         plist='hole_k';column=5,         &
+                         plist=hole_slider_pos;column=6)
+
+
+# -- Read the file that contains fault coordinates and K's.
+
+cl_faults = read_list_file(file='fault_details.dat',        &
+                           skiplines=1,                     &
+                           dimensions=2,                    &
+                           id_type=indexed,                 &
+                           slist='fault_id';column=4,       &
+                           plist='fault_k';column=5,        &
+                           plist=fault_slider_pos;column=6)
+
+# -- Read the files that contain the slider CLIST specifications.
+
+cl_h_sliders = read_list_file(file='hole_sliders.dat',           &
+                              skiplines=1,                       &
+                              dimensions=2,                      &
+                              id_type=indexed,                   &
+                              slist='hole_sl_track_id';column=4)
+
+cl_f_sliders = read_list_file(file='fault_sliders.dat',          &
+                              skiplines=1,                       &
+                              dimensions=2,                      &
+                              id_type=indexed,                   &
+                              slist='fault_sl_track_id';column=4)
+
+# -- Read in the details of the global hole slider.
+
+cl_hg_slider = read_list_file(file='global_hole_slider.dat',     &
+                              skiplines=1,                       &
+                              dimensions=2,                      &
+                              id_type=indexed)
+
+# -- Read a scalar file to obtain the position of the aquitard hole on its global
+#    slider.
+
+read_scalar_file(file=global_hole_pos.dat,                       &
+                 namecolumn=1,                                   &
+                 valuecolumn=2)
+
+# -- Slide all of the aquitard hole sliders along the global hole slider clist.
+
+slide_entire_clist_on_clist(                                     &
+                            slider_track_clist=cl_hg_slider,     &
+                            sliding_clist=cl_h_sliders,          &
+                            sliding_clist_vertex_number=5;       &
+                            position_on_slider_clist=global_hole_pos)
+
+# -- Position the hole and fault vertices on sliders.
+
+slide_clist_vertices_on_clist(                                      &
+                       vertex_sliding_clist=cl_hole;                &
+                       position_on_slider_plist=hole_slider_pos,    &
+                       slider_track_clist=cl_h_sliders;             &
+                       slider_track_id_slist=hole_sl_track_id,      &
+                       blnfile=.\pictures\hole.bln;                 &
+                       sliding_structure_id_slist=hole_id;          &
+                       sliding_structure_type=polygonal)
+
+slide_clist_vertices_on_clist(                                      &
+                       vertex_sliding_clist=cl_faults;              &
+                       position_on_slider_plist=fault_slider_pos,   &
+                       slider_track_clist=cl_f_sliders;             &
+                       slider_track_id_slist=fault_sl_track_id,     &
+                       blnfile=.\pictures\faults.bln;               &
+                       sliding_structure_id_slist=fault_id;         &
+                       sliding_structure_type=piecewise_linear)
+
+# -- Calculate interpolation factors from the structures to the model grid.
+
+calc_structural_overlay_factors(source_clist=cl_hole,                   &
+                                structure_type=polygonal,               &
+                                target_clist=cl_mf6;select=(layer==3),  &
+                                file=factors_hole.dat;form='binary',    &
+                                inverse_power=2.0,                      &
+                                conwidth=10.0,                          &
+                                a=50.0)
+
+calc_structural_overlay_factors(source_clist=cl_faults,                 &
+                                strucid_slist=fault_id,                 &
+                                structure_type=piecewise_linear,        &
+                                target_clist=cl_mf6;select=(layer>1),   &
+                                file=factors_faults.dat;form='binary',  &
+                                conwidth=50.0,                          &
+                                a=50.0)
+
+# -- Now do the interpolation.
+
+mf6_k=fault_k.interpolate_and_blend_using_file(                        &
+                              file=factors_faults.dat;format=binary,   &
+                              transform=log,                           &
+                              lower_than_target=no)
+
+mf6_k=hole_k.interpolate_and_blend_using_file(                         &
+                           file=factors_hole.dat;format=binary,        &
+                           transform=log,                              &
+                           lower_than_target='no')
+
+# -- The file holding the MODFLOW K array is written.
+
+write_model_input_file(template_file='k.txt.tpl',      &
+                       model_input_file= 'k.txt')
+
+# -- The following function populates another file with K values. The
+#    MF62VTK utility will read this file. MF62VTK requires that columns
+#    of numbers possess headers.
+
+write_model_input_file(template_file='k_for_pictures.txt.tpl',      &
+                       model_input_file= 'k_for_pictures.txt')
+

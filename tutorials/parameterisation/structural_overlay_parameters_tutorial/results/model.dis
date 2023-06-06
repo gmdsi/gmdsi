@@ -1,0 +1,26 @@
+BEGIN OPTIONS
+  XORIGIN 0.0
+  YORIGIN 0.0
+  ANGROT  0.0
+END OPTIONS
+
+BEGIN DIMENSIONS
+  NLAY 4
+  NROW 200
+  NCOL 150
+END DIMENSIONS
+
+BEGIN GRIDDATA
+  DELR
+    constant 50.0
+  DELC
+    constant 50.0
+  TOP
+    constant 240.0
+  BOTM layered
+    constant 220.0
+    constant 120.0
+    constant 100.0
+    constant 0.0
+END GRIDDATA
+

@@ -1,0 +1,11 @@
+BEGIN options
+  NEWTON
+END options
+
+BEGIN packages
+  DIS6  model.dis  dis
+  IC6   model.ic   ic
+  NPF6  model.npf  npf
+  OC6   model.oc   oc
+  CHD6  model.chd  chd
+END packages

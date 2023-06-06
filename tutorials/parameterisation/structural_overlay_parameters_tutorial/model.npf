@@ -1,0 +1,9 @@
+BEGIN OPTIONS
+END OPTIONS
+
+BEGIN GRIDDATA
+  ICELLTYPE
+    constant 0
+  K
+    open/close k.txt
+END GRIDDATA
