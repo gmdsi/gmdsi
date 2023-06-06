@@ -1,0 +1,2373 @@
+panther agent starting...
+using control file: "case_dsi.pst"
+
+
+
+version: 5.1.6
+binary compiled on Dec  9 2021 at 14:59:26
+
+in directory: "E:\temp1"
+
+12/11/22 11:54:03->processing control file
+12/11/22 11:54:03->checking model interface files
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+pestmode:- 
+   estimation
+
+
+Case dimensions:- 
+    Number of parameters = 14
+    Number of adjustable parameters = 14
+    Number of observations = 14
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 5
+    phiredstp = 0.001
+    nphistp = 4
+    nphinored = 4
+    relparstp = 0.001
+    nrelpar = 4
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 3
+panther_poll_interval: 1
+parameter_covariance: case_dsi.unc
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 1
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.01
+  0.1
+  1
+
+...pestpp-mou options:
+mou_generator: DE
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 5
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 80
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 1
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    dsimod case_dsi.bin case_dsi.in case_dsi.out
+
+Model interface files:-
+    template files:
+      case_dsi.tpl
+    model input files:
+      case_dsi.in
+
+    instruction files:
+      case_dsi.ins
+    model output files:
+      case_dsi.out
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+pg1                 ABSOLUTE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+par1         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par2         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par3         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par4         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par5         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par6         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par7         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par8         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par9         none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par10        none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par11        none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par12        none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par13        none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+par14        none               ABSOLUTE(1)              0            -10             10          pg1              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+well01_1                          5.74724                heads                  10
+well02_1                          5.69616                heads                  10
+well03_1                          5.49199                heads                  10
+well04_1                           4.0919                heads                  10
+well05_1                          3.92014                heads                  10
+well06_1                          4.05991                heads                  10
+well07_1                          2.59369                heads                  10
+well08_1                          3.25979                heads                  10
+well09_1                          2.97368                heads                  10
+well10_1                          1.12417                heads                  10
+well11_1                          1.20361                heads                  10
+well12_1                          1.19256                heads                  10
+part_time                               0                 time                   0
+part_east                               0             distance                   0
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 14
+    eigthresh = 5e-08
+
+
+
+
+
+12/11/22 11:54:03->initializing network connection
+12/11/22 11:54:03->PANTHER Agent will poll for master connection every 1 seconds
+
+12/11/22 11:54:03->connection to master succeeded on socket: 192.168.1.107:4004 (IPv4)
+
+
+12/11/22 11:54:03->responding to REQ_RUNDIR
+12/11/22 11:54:03->received PAR_NAMES
+12/11/22 11:54:03->received OBS_NAMES
+12/11/22 11:54:03->received REQ_LINPACK
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:2
+12/11/22 11:54:04->received parameters ( group_id=2, run_id=2, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:54:05->received finished signal from run thread 
+
+12/11/22 11:54:06->run complete, sending results to master (group_id=2 , run_id=2 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.197 seconds
+12/11/22 11:54:06->results of run_id 2 sent successfully
+12/11/22 11:54:06->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:4
+12/11/22 11:54:06->received parameters ( group_id=2, run_id=4, info_txt= DA_CYCLE=-9999  REALIZATION=4 ), starting model run...
+
+12/11/22 11:54:07->received finished signal from run thread 
+
+12/11/22 11:54:08->run complete, sending results to master (group_id=2 , run_id=4 , info_txt= DA_CYCLE=-9999  REALIZATION=4 )...run took: 2.206 seconds
+12/11/22 11:54:08->results of run_id 4 sent successfully
+12/11/22 11:54:08->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:7
+12/11/22 11:54:08->received parameters ( group_id=2, run_id=7, info_txt= DA_CYCLE=-9999  REALIZATION=7 ), starting model run...
+
+12/11/22 11:54:09->received finished signal from run thread 
+
+12/11/22 11:54:10->run complete, sending results to master (group_id=2 , run_id=7 , info_txt= DA_CYCLE=-9999  REALIZATION=7 )...run took: 2.21 seconds
+12/11/22 11:54:10->results of run_id 7 sent successfully
+12/11/22 11:54:10->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:10
+12/11/22 11:54:11->received parameters ( group_id=2, run_id=10, info_txt= DA_CYCLE=-9999  REALIZATION=10 ), starting model run...
+
+12/11/22 11:54:12->received finished signal from run thread 
+
+12/11/22 11:54:13->run complete, sending results to master (group_id=2 , run_id=10 , info_txt= DA_CYCLE=-9999  REALIZATION=10 )...run took: 2.195 seconds
+12/11/22 11:54:13->results of run_id 10 sent successfully
+12/11/22 11:54:13->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:13
+12/11/22 11:54:13->received parameters ( group_id=2, run_id=13, info_txt= DA_CYCLE=-9999  REALIZATION=13 ), starting model run...
+
+12/11/22 11:54:14->received finished signal from run thread 
+
+12/11/22 11:54:15->run complete, sending results to master (group_id=2 , run_id=13 , info_txt= DA_CYCLE=-9999  REALIZATION=13 )...run took: 2.203 seconds
+12/11/22 11:54:15->results of run_id 13 sent successfully
+12/11/22 11:54:15->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:16
+12/11/22 11:54:15->received parameters ( group_id=2, run_id=16, info_txt= DA_CYCLE=-9999  REALIZATION=16 ), starting model run...
+
+12/11/22 11:54:16->received finished signal from run thread 
+
+12/11/22 11:54:17->run complete, sending results to master (group_id=2 , run_id=16 , info_txt= DA_CYCLE=-9999  REALIZATION=16 )...run took: 2.207 seconds
+12/11/22 11:54:17->results of run_id 16 sent successfully
+12/11/22 11:54:17->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:19
+12/11/22 11:54:18->received parameters ( group_id=2, run_id=19, info_txt= DA_CYCLE=-9999  REALIZATION=19 ), starting model run...
+
+12/11/22 11:54:19->received finished signal from run thread 
+
+12/11/22 11:54:20->run complete, sending results to master (group_id=2 , run_id=19 , info_txt= DA_CYCLE=-9999  REALIZATION=19 )...run took: 2.211 seconds
+12/11/22 11:54:20->results of run_id 19 sent successfully
+12/11/22 11:54:20->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:22
+12/11/22 11:54:20->received parameters ( group_id=2, run_id=22, info_txt= DA_CYCLE=-9999  REALIZATION=22 ), starting model run...
+
+12/11/22 11:54:21->received finished signal from run thread 
+
+12/11/22 11:54:22->run complete, sending results to master (group_id=2 , run_id=22 , info_txt= DA_CYCLE=-9999  REALIZATION=22 )...run took: 2.201 seconds
+12/11/22 11:54:22->results of run_id 22 sent successfully
+12/11/22 11:54:22->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:25
+12/11/22 11:54:22->received parameters ( group_id=2, run_id=25, info_txt= DA_CYCLE=-9999  REALIZATION=25 ), starting model run...
+
+12/11/22 11:54:23->received finished signal from run thread 
+
+12/11/22 11:54:24->run complete, sending results to master (group_id=2 , run_id=25 , info_txt= DA_CYCLE=-9999  REALIZATION=25 )...run took: 2.207 seconds
+12/11/22 11:54:24->results of run_id 25 sent successfully
+12/11/22 11:54:24->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:28
+12/11/22 11:54:25->received parameters ( group_id=2, run_id=28, info_txt= DA_CYCLE=-9999  REALIZATION=28 ), starting model run...
+
+12/11/22 11:54:26->received finished signal from run thread 
+
+12/11/22 11:54:27->run complete, sending results to master (group_id=2 , run_id=28 , info_txt= DA_CYCLE=-9999  REALIZATION=28 )...run took: 2.194 seconds
+12/11/22 11:54:27->results of run_id 28 sent successfully
+12/11/22 11:54:27->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:31
+12/11/22 11:54:27->received parameters ( group_id=2, run_id=31, info_txt= DA_CYCLE=-9999  REALIZATION=31 ), starting model run...
+
+12/11/22 11:54:28->received finished signal from run thread 
+
+12/11/22 11:54:29->run complete, sending results to master (group_id=2 , run_id=31 , info_txt= DA_CYCLE=-9999  REALIZATION=31 )...run took: 2.223 seconds
+12/11/22 11:54:29->results of run_id 31 sent successfully
+12/11/22 11:54:29->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:34
+12/11/22 11:54:29->received parameters ( group_id=2, run_id=34, info_txt= DA_CYCLE=-9999  REALIZATION=34 ), starting model run...
+
+12/11/22 11:54:30->received finished signal from run thread 
+
+12/11/22 11:54:31->run complete, sending results to master (group_id=2 , run_id=34 , info_txt= DA_CYCLE=-9999  REALIZATION=34 )...run took: 2.206 seconds
+12/11/22 11:54:31->results of run_id 34 sent successfully
+12/11/22 11:54:31->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:37
+12/11/22 11:54:31->received parameters ( group_id=2, run_id=37, info_txt= DA_CYCLE=-9999  REALIZATION=37 ), starting model run...
+
+12/11/22 11:54:33->received finished signal from run thread 
+
+12/11/22 11:54:34->run complete, sending results to master (group_id=2 , run_id=37 , info_txt= DA_CYCLE=-9999  REALIZATION=37 )...run took: 2.207 seconds
+12/11/22 11:54:34->results of run_id 37 sent successfully
+12/11/22 11:54:34->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:40
+12/11/22 11:54:34->received parameters ( group_id=2, run_id=40, info_txt= DA_CYCLE=-9999  REALIZATION=40 ), starting model run...
+
+12/11/22 11:54:35->received finished signal from run thread 
+
+12/11/22 11:54:36->run complete, sending results to master (group_id=2 , run_id=40 , info_txt= DA_CYCLE=-9999  REALIZATION=40 )...run took: 2.195 seconds
+12/11/22 11:54:36->results of run_id 40 sent successfully
+12/11/22 11:54:36->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:43
+12/11/22 11:54:36->received parameters ( group_id=2, run_id=43, info_txt= DA_CYCLE=-9999  REALIZATION=43 ), starting model run...
+
+12/11/22 11:54:37->received finished signal from run thread 
+
+12/11/22 11:54:38->run complete, sending results to master (group_id=2 , run_id=43 , info_txt= DA_CYCLE=-9999  REALIZATION=43 )...run took: 2.187 seconds
+12/11/22 11:54:38->results of run_id 43 sent successfully
+12/11/22 11:54:38->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:46
+12/11/22 11:54:38->received parameters ( group_id=2, run_id=46, info_txt= DA_CYCLE=-9999  REALIZATION=46 ), starting model run...
+
+12/11/22 11:54:40->received finished signal from run thread 
+
+12/11/22 11:54:41->run complete, sending results to master (group_id=2 , run_id=46 , info_txt= DA_CYCLE=-9999  REALIZATION=46 )...run took: 2.204 seconds
+12/11/22 11:54:41->results of run_id 46 sent successfully
+12/11/22 11:54:41->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:49
+12/11/22 11:54:41->received parameters ( group_id=2, run_id=49, info_txt= DA_CYCLE=-9999  REALIZATION=49 ), starting model run...
+
+12/11/22 11:54:42->received finished signal from run thread 
+
+12/11/22 11:54:43->run complete, sending results to master (group_id=2 , run_id=49 , info_txt= DA_CYCLE=-9999  REALIZATION=49 )...run took: 2.198 seconds
+12/11/22 11:54:43->results of run_id 49 sent successfully
+12/11/22 11:54:43->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:52
+12/11/22 11:54:43->received parameters ( group_id=2, run_id=52, info_txt= DA_CYCLE=-9999  REALIZATION=52 ), starting model run...
+
+12/11/22 11:54:44->received finished signal from run thread 
+
+12/11/22 11:54:45->run complete, sending results to master (group_id=2 , run_id=52 , info_txt= DA_CYCLE=-9999  REALIZATION=52 )...run took: 2.201 seconds
+12/11/22 11:54:45->results of run_id 52 sent successfully
+12/11/22 11:54:45->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:55
+12/11/22 11:54:45->received parameters ( group_id=2, run_id=55, info_txt= DA_CYCLE=-9999  REALIZATION=55 ), starting model run...
+
+12/11/22 11:54:46->received finished signal from run thread 
+
+12/11/22 11:54:48->run complete, sending results to master (group_id=2 , run_id=55 , info_txt= DA_CYCLE=-9999  REALIZATION=55 )...run took: 2.203 seconds
+12/11/22 11:54:48->results of run_id 55 sent successfully
+12/11/22 11:54:48->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:58
+12/11/22 11:54:48->received parameters ( group_id=2, run_id=58, info_txt= DA_CYCLE=-9999  REALIZATION=58 ), starting model run...
+
+12/11/22 11:54:49->received finished signal from run thread 
+
+12/11/22 11:54:50->run complete, sending results to master (group_id=2 , run_id=58 , info_txt= DA_CYCLE=-9999  REALIZATION=58 )...run took: 2.194 seconds
+12/11/22 11:54:50->results of run_id 58 sent successfully
+12/11/22 11:54:50->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:61
+12/11/22 11:54:50->received parameters ( group_id=2, run_id=61, info_txt= DA_CYCLE=-9999  REALIZATION=61 ), starting model run...
+
+12/11/22 11:54:51->received finished signal from run thread 
+
+12/11/22 11:54:52->run complete, sending results to master (group_id=2 , run_id=61 , info_txt= DA_CYCLE=-9999  REALIZATION=61 )...run took: 2.206 seconds
+12/11/22 11:54:52->results of run_id 61 sent successfully
+12/11/22 11:54:52->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:64
+12/11/22 11:54:52->received parameters ( group_id=2, run_id=64, info_txt= DA_CYCLE=-9999  REALIZATION=64 ), starting model run...
+
+12/11/22 11:54:53->received finished signal from run thread 
+
+12/11/22 11:54:55->run complete, sending results to master (group_id=2 , run_id=64 , info_txt= DA_CYCLE=-9999  REALIZATION=64 )...run took: 2.199 seconds
+12/11/22 11:54:55->results of run_id 64 sent successfully
+12/11/22 11:54:55->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:67
+12/11/22 11:54:55->received parameters ( group_id=2, run_id=67, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 11:54:56->received finished signal from run thread 
+
+12/11/22 11:54:57->run complete, sending results to master (group_id=2 , run_id=67 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.192 seconds
+12/11/22 11:54:57->results of run_id 67 sent successfully
+12/11/22 11:54:57->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:71
+12/11/22 11:54:57->received parameters ( group_id=2, run_id=71, info_txt= DA_CYCLE=-9999  REALIZATION=71 ), starting model run...
+
+12/11/22 11:54:58->received finished signal from run thread 
+
+12/11/22 11:54:59->run complete, sending results to master (group_id=2 , run_id=71 , info_txt= DA_CYCLE=-9999  REALIZATION=71 )...run took: 2.204 seconds
+12/11/22 11:54:59->results of run_id 71 sent successfully
+12/11/22 11:54:59->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:74
+12/11/22 11:54:59->received parameters ( group_id=2, run_id=74, info_txt= DA_CYCLE=-9999  REALIZATION=74 ), starting model run...
+
+12/11/22 11:55:00->received finished signal from run thread 
+
+12/11/22 11:55:02->run complete, sending results to master (group_id=2 , run_id=74 , info_txt= DA_CYCLE=-9999  REALIZATION=74 )...run took: 2.209 seconds
+12/11/22 11:55:02->results of run_id 74 sent successfully
+12/11/22 11:55:02->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:76
+12/11/22 11:55:02->received parameters ( group_id=2, run_id=76, info_txt= DA_CYCLE=-9999  REALIZATION=76 ), starting model run...
+
+12/11/22 11:55:03->received finished signal from run thread 
+
+12/11/22 11:55:04->run complete, sending results to master (group_id=2 , run_id=76 , info_txt= DA_CYCLE=-9999  REALIZATION=76 )...run took: 2.205 seconds
+12/11/22 11:55:04->results of run_id 76 sent successfully
+12/11/22 11:55:04->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 2:79
+12/11/22 11:55:04->received parameters ( group_id=2, run_id=79, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:55:05->received finished signal from run thread 
+
+12/11/22 11:55:06->run complete, sending results to master (group_id=2 , run_id=79 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.221 seconds
+12/11/22 11:55:06->results of run_id 79 sent successfully
+12/11/22 11:55:06->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:1
+12/11/22 11:55:10->received parameters ( group_id=3, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 11:55:11->received finished signal from run thread 
+
+12/11/22 11:55:12->run complete, sending results to master (group_id=3 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.209 seconds
+12/11/22 11:55:12->results of run_id 1 sent successfully
+12/11/22 11:55:12->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:5
+12/11/22 11:55:13->received parameters ( group_id=3, run_id=5, info_txt= DA_CYCLE=-9999  REALIZATION=1 ), starting model run...
+
+12/11/22 11:55:14->received finished signal from run thread 
+
+12/11/22 11:55:15->run complete, sending results to master (group_id=3 , run_id=5 , info_txt= DA_CYCLE=-9999  REALIZATION=1 )...run took: 2.219 seconds
+12/11/22 11:55:15->results of run_id 5 sent successfully
+12/11/22 11:55:15->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:8
+12/11/22 11:55:15->received parameters ( group_id=3, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=78 ), starting model run...
+
+12/11/22 11:55:16->received finished signal from run thread 
+
+12/11/22 11:55:17->run complete, sending results to master (group_id=3 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=78 )...run took: 2.208 seconds
+12/11/22 11:55:17->results of run_id 8 sent successfully
+12/11/22 11:55:17->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:9
+12/11/22 11:55:17->received parameters ( group_id=3, run_id=9, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:55:18->received finished signal from run thread 
+
+12/11/22 11:55:19->run complete, sending results to master (group_id=3 , run_id=9 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.214 seconds
+12/11/22 11:55:19->results of run_id 9 sent successfully
+12/11/22 11:55:19->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:14
+12/11/22 11:55:20->received parameters ( group_id=3, run_id=14, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:55:21->received finished signal from run thread 
+
+12/11/22 11:55:22->run complete, sending results to master (group_id=3 , run_id=14 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.206 seconds
+12/11/22 11:55:22->results of run_id 14 sent successfully
+12/11/22 11:55:22->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:16
+12/11/22 11:55:22->received parameters ( group_id=3, run_id=16, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 11:55:23->received finished signal from run thread 
+
+12/11/22 11:55:24->run complete, sending results to master (group_id=3 , run_id=16 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.218 seconds
+12/11/22 11:55:24->results of run_id 16 sent successfully
+12/11/22 11:55:24->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:19
+12/11/22 11:55:24->received parameters ( group_id=3, run_id=19, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:55:25->received finished signal from run thread 
+
+12/11/22 11:55:26->run complete, sending results to master (group_id=3 , run_id=19 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.202 seconds
+12/11/22 11:55:26->results of run_id 19 sent successfully
+12/11/22 11:55:26->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:21
+12/11/22 11:55:27->received parameters ( group_id=3, run_id=21, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 11:55:28->received finished signal from run thread 
+
+12/11/22 11:55:29->run complete, sending results to master (group_id=3 , run_id=21 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.209 seconds
+12/11/22 11:55:29->results of run_id 21 sent successfully
+12/11/22 11:55:29->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:26
+12/11/22 11:55:29->received parameters ( group_id=3, run_id=26, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 11:55:30->received finished signal from run thread 
+
+12/11/22 11:55:31->run complete, sending results to master (group_id=3 , run_id=26 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.217 seconds
+12/11/22 11:55:31->results of run_id 26 sent successfully
+12/11/22 11:55:31->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:29
+12/11/22 11:55:31->received parameters ( group_id=3, run_id=29, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:55:32->received finished signal from run thread 
+
+12/11/22 11:55:33->run complete, sending results to master (group_id=3 , run_id=29 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.218 seconds
+12/11/22 11:55:33->results of run_id 29 sent successfully
+12/11/22 11:55:33->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:32
+12/11/22 11:55:34->received parameters ( group_id=3, run_id=32, info_txt= DA_CYCLE=-9999  REALIZATION=68 ), starting model run...
+
+12/11/22 11:55:35->received finished signal from run thread 
+
+12/11/22 11:55:36->run complete, sending results to master (group_id=3 , run_id=32 , info_txt= DA_CYCLE=-9999  REALIZATION=68 )...run took: 2.212 seconds
+12/11/22 11:55:36->results of run_id 32 sent successfully
+12/11/22 11:55:36->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:35
+12/11/22 11:55:36->received parameters ( group_id=3, run_id=35, info_txt= DA_CYCLE=-9999  REALIZATION=1 ), starting model run...
+
+12/11/22 11:55:37->received finished signal from run thread 
+
+12/11/22 11:55:38->run complete, sending results to master (group_id=3 , run_id=35 , info_txt= DA_CYCLE=-9999  REALIZATION=1 )...run took: 2.21 seconds
+12/11/22 11:55:38->results of run_id 35 sent successfully
+12/11/22 11:55:38->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:38
+12/11/22 11:55:38->received parameters ( group_id=3, run_id=38, info_txt= DA_CYCLE=-9999  REALIZATION=78 ), starting model run...
+
+12/11/22 11:55:39->received finished signal from run thread 
+
+12/11/22 11:55:40->run complete, sending results to master (group_id=3 , run_id=38 , info_txt= DA_CYCLE=-9999  REALIZATION=78 )...run took: 2.202 seconds
+12/11/22 11:55:40->results of run_id 38 sent successfully
+12/11/22 11:55:40->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:40
+12/11/22 11:55:41->received parameters ( group_id=3, run_id=40, info_txt= DA_CYCLE=-9999  REALIZATION=1 ), starting model run...
+
+12/11/22 11:55:42->received finished signal from run thread 
+
+12/11/22 11:55:43->run complete, sending results to master (group_id=3 , run_id=40 , info_txt= DA_CYCLE=-9999  REALIZATION=1 )...run took: 2.222 seconds
+12/11/22 11:55:43->results of run_id 40 sent successfully
+12/11/22 11:55:43->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 3:44
+12/11/22 11:55:43->received parameters ( group_id=3, run_id=44, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:55:44->received finished signal from run thread 
+
+12/11/22 11:55:45->run complete, sending results to master (group_id=3 , run_id=44 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.204 seconds
+12/11/22 11:55:45->results of run_id 44 sent successfully
+12/11/22 11:55:45->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:1
+12/11/22 11:55:48->received parameters ( group_id=4, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:55:49->received finished signal from run thread 
+
+12/11/22 11:55:50->run complete, sending results to master (group_id=4 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.203 seconds
+12/11/22 11:55:50->results of run_id 1 sent successfully
+12/11/22 11:55:50->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:5
+12/11/22 11:55:51->received parameters ( group_id=4, run_id=5, info_txt= DA_CYCLE=-9999  REALIZATION=6 ), starting model run...
+
+12/11/22 11:55:52->received finished signal from run thread 
+
+12/11/22 11:55:53->run complete, sending results to master (group_id=4 , run_id=5 , info_txt= DA_CYCLE=-9999  REALIZATION=6 )...run took: 2.198 seconds
+12/11/22 11:55:53->results of run_id 5 sent successfully
+12/11/22 11:55:53->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:8
+12/11/22 11:55:53->received parameters ( group_id=4, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=9 ), starting model run...
+
+12/11/22 11:55:54->received finished signal from run thread 
+
+12/11/22 11:55:55->run complete, sending results to master (group_id=4 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=9 )...run took: 2.201 seconds
+12/11/22 11:55:55->results of run_id 8 sent successfully
+12/11/22 11:55:55->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:10
+12/11/22 11:55:55->received parameters ( group_id=4, run_id=10, info_txt= DA_CYCLE=-9999  REALIZATION=11 ), starting model run...
+
+12/11/22 11:55:56->received finished signal from run thread 
+
+12/11/22 11:55:57->run complete, sending results to master (group_id=4 , run_id=10 , info_txt= DA_CYCLE=-9999  REALIZATION=11 )...run took: 2.201 seconds
+12/11/22 11:55:57->results of run_id 10 sent successfully
+12/11/22 11:55:57->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:13
+12/11/22 11:55:58->received parameters ( group_id=4, run_id=13, info_txt= DA_CYCLE=-9999  REALIZATION=14 ), starting model run...
+
+12/11/22 11:55:59->received finished signal from run thread 
+
+12/11/22 11:56:00->run complete, sending results to master (group_id=4 , run_id=13 , info_txt= DA_CYCLE=-9999  REALIZATION=14 )...run took: 2.203 seconds
+12/11/22 11:56:00->results of run_id 13 sent successfully
+12/11/22 11:56:00->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:15
+12/11/22 11:56:00->received parameters ( group_id=4, run_id=15, info_txt= DA_CYCLE=-9999  REALIZATION=16 ), starting model run...
+
+12/11/22 11:56:01->received finished signal from run thread 
+
+12/11/22 11:56:02->run complete, sending results to master (group_id=4 , run_id=15 , info_txt= DA_CYCLE=-9999  REALIZATION=16 )...run took: 2.189 seconds
+12/11/22 11:56:02->results of run_id 15 sent successfully
+12/11/22 11:56:02->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:18
+12/11/22 11:56:02->received parameters ( group_id=4, run_id=18, info_txt= DA_CYCLE=-9999  REALIZATION=19 ), starting model run...
+
+12/11/22 11:56:03->received finished signal from run thread 
+
+12/11/22 11:56:04->run complete, sending results to master (group_id=4 , run_id=18 , info_txt= DA_CYCLE=-9999  REALIZATION=19 )...run took: 2.209 seconds
+12/11/22 11:56:04->results of run_id 18 sent successfully
+12/11/22 11:56:04->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:21
+12/11/22 11:56:04->received parameters ( group_id=4, run_id=21, info_txt= DA_CYCLE=-9999  REALIZATION=22 ), starting model run...
+
+12/11/22 11:56:06->received finished signal from run thread 
+
+12/11/22 11:56:07->run complete, sending results to master (group_id=4 , run_id=21 , info_txt= DA_CYCLE=-9999  REALIZATION=22 )...run took: 2.206 seconds
+12/11/22 11:56:07->results of run_id 21 sent successfully
+12/11/22 11:56:07->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:24
+12/11/22 11:56:07->received parameters ( group_id=4, run_id=24, info_txt= DA_CYCLE=-9999  REALIZATION=25 ), starting model run...
+
+12/11/22 11:56:08->received finished signal from run thread 
+
+12/11/22 11:56:09->run complete, sending results to master (group_id=4 , run_id=24 , info_txt= DA_CYCLE=-9999  REALIZATION=25 )...run took: 2.198 seconds
+12/11/22 11:56:09->results of run_id 24 sent successfully
+12/11/22 11:56:09->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:27
+12/11/22 11:56:09->received parameters ( group_id=4, run_id=27, info_txt= DA_CYCLE=-9999  REALIZATION=28 ), starting model run...
+
+12/11/22 11:56:10->received finished signal from run thread 
+
+12/11/22 11:56:11->run complete, sending results to master (group_id=4 , run_id=27 , info_txt= DA_CYCLE=-9999  REALIZATION=28 )...run took: 2.208 seconds
+12/11/22 11:56:11->results of run_id 27 sent successfully
+12/11/22 11:56:11->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:30
+12/11/22 11:56:11->received parameters ( group_id=4, run_id=30, info_txt= DA_CYCLE=-9999  REALIZATION=31 ), starting model run...
+
+12/11/22 11:56:13->received finished signal from run thread 
+
+12/11/22 11:56:14->run complete, sending results to master (group_id=4 , run_id=30 , info_txt= DA_CYCLE=-9999  REALIZATION=31 )...run took: 2.202 seconds
+12/11/22 11:56:14->results of run_id 30 sent successfully
+12/11/22 11:56:14->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:33
+12/11/22 11:56:14->received parameters ( group_id=4, run_id=33, info_txt= DA_CYCLE=-9999  REALIZATION=34 ), starting model run...
+
+12/11/22 11:56:15->received finished signal from run thread 
+
+12/11/22 11:56:16->run complete, sending results to master (group_id=4 , run_id=33 , info_txt= DA_CYCLE=-9999  REALIZATION=34 )...run took: 2.211 seconds
+12/11/22 11:56:16->results of run_id 33 sent successfully
+12/11/22 11:56:16->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:36
+12/11/22 11:56:16->received parameters ( group_id=4, run_id=36, info_txt= DA_CYCLE=-9999  REALIZATION=37 ), starting model run...
+
+12/11/22 11:56:17->received finished signal from run thread 
+
+12/11/22 11:56:18->run complete, sending results to master (group_id=4 , run_id=36 , info_txt= DA_CYCLE=-9999  REALIZATION=37 )...run took: 2.223 seconds
+12/11/22 11:56:18->results of run_id 36 sent successfully
+12/11/22 11:56:18->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:41
+12/11/22 11:56:18->received parameters ( group_id=4, run_id=41, info_txt= DA_CYCLE=-9999  REALIZATION=42 ), starting model run...
+
+12/11/22 11:56:20->received finished signal from run thread 
+
+12/11/22 11:56:21->run complete, sending results to master (group_id=4 , run_id=41 , info_txt= DA_CYCLE=-9999  REALIZATION=42 )...run took: 2.21 seconds
+12/11/22 11:56:21->results of run_id 41 sent successfully
+12/11/22 11:56:21->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:43
+12/11/22 11:56:21->received parameters ( group_id=4, run_id=43, info_txt= DA_CYCLE=-9999  REALIZATION=44 ), starting model run...
+
+12/11/22 11:56:22->received finished signal from run thread 
+
+12/11/22 11:56:23->run complete, sending results to master (group_id=4 , run_id=43 , info_txt= DA_CYCLE=-9999  REALIZATION=44 )...run took: 2.194 seconds
+12/11/22 11:56:23->results of run_id 43 sent successfully
+12/11/22 11:56:23->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:47
+12/11/22 11:56:23->received parameters ( group_id=4, run_id=47, info_txt= DA_CYCLE=-9999  REALIZATION=48 ), starting model run...
+
+12/11/22 11:56:24->received finished signal from run thread 
+
+12/11/22 11:56:25->run complete, sending results to master (group_id=4 , run_id=47 , info_txt= DA_CYCLE=-9999  REALIZATION=48 )...run took: 2.204 seconds
+12/11/22 11:56:25->results of run_id 47 sent successfully
+12/11/22 11:56:25->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:50
+12/11/22 11:56:25->received parameters ( group_id=4, run_id=50, info_txt= DA_CYCLE=-9999  REALIZATION=51 ), starting model run...
+
+12/11/22 11:56:27->received finished signal from run thread 
+
+12/11/22 11:56:28->run complete, sending results to master (group_id=4 , run_id=50 , info_txt= DA_CYCLE=-9999  REALIZATION=51 )...run took: 2.195 seconds
+12/11/22 11:56:28->results of run_id 50 sent successfully
+12/11/22 11:56:28->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:53
+12/11/22 11:56:28->received parameters ( group_id=4, run_id=53, info_txt= DA_CYCLE=-9999  REALIZATION=55 ), starting model run...
+
+12/11/22 11:56:29->received finished signal from run thread 
+
+12/11/22 11:56:30->run complete, sending results to master (group_id=4 , run_id=53 , info_txt= DA_CYCLE=-9999  REALIZATION=55 )...run took: 2.203 seconds
+12/11/22 11:56:30->results of run_id 53 sent successfully
+12/11/22 11:56:30->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:56
+12/11/22 11:56:30->received parameters ( group_id=4, run_id=56, info_txt= DA_CYCLE=-9999  REALIZATION=58 ), starting model run...
+
+12/11/22 11:56:31->received finished signal from run thread 
+
+12/11/22 11:56:32->run complete, sending results to master (group_id=4 , run_id=56 , info_txt= DA_CYCLE=-9999  REALIZATION=58 )...run took: 2.192 seconds
+12/11/22 11:56:32->results of run_id 56 sent successfully
+12/11/22 11:56:32->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:59
+12/11/22 11:56:32->received parameters ( group_id=4, run_id=59, info_txt= DA_CYCLE=-9999  REALIZATION=61 ), starting model run...
+
+12/11/22 11:56:33->received finished signal from run thread 
+
+12/11/22 11:56:35->run complete, sending results to master (group_id=4 , run_id=59 , info_txt= DA_CYCLE=-9999  REALIZATION=61 )...run took: 2.198 seconds
+12/11/22 11:56:35->results of run_id 59 sent successfully
+12/11/22 11:56:35->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:62
+12/11/22 11:56:35->received parameters ( group_id=4, run_id=62, info_txt= DA_CYCLE=-9999  REALIZATION=64 ), starting model run...
+
+12/11/22 11:56:36->received finished signal from run thread 
+
+12/11/22 11:56:37->run complete, sending results to master (group_id=4 , run_id=62 , info_txt= DA_CYCLE=-9999  REALIZATION=64 )...run took: 2.198 seconds
+12/11/22 11:56:37->results of run_id 62 sent successfully
+12/11/22 11:56:37->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:65
+12/11/22 11:56:37->received parameters ( group_id=4, run_id=65, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 11:56:38->received finished signal from run thread 
+
+12/11/22 11:56:39->run complete, sending results to master (group_id=4 , run_id=65 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.217 seconds
+12/11/22 11:56:39->results of run_id 65 sent successfully
+12/11/22 11:56:39->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:66
+12/11/22 11:56:39->received parameters ( group_id=4, run_id=66, info_txt= DA_CYCLE=-9999  REALIZATION=69 ), starting model run...
+
+12/11/22 11:56:40->received finished signal from run thread 
+
+12/11/22 11:56:42->run complete, sending results to master (group_id=4 , run_id=66 , info_txt= DA_CYCLE=-9999  REALIZATION=69 )...run took: 2.201 seconds
+12/11/22 11:56:42->results of run_id 66 sent successfully
+12/11/22 11:56:42->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:70
+12/11/22 11:56:42->received parameters ( group_id=4, run_id=70, info_txt= DA_CYCLE=-9999  REALIZATION=73 ), starting model run...
+
+12/11/22 11:56:43->received finished signal from run thread 
+
+12/11/22 11:56:44->run complete, sending results to master (group_id=4 , run_id=70 , info_txt= DA_CYCLE=-9999  REALIZATION=73 )...run took: 2.211 seconds
+12/11/22 11:56:44->results of run_id 70 sent successfully
+12/11/22 11:56:44->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 4:74
+12/11/22 11:56:44->received parameters ( group_id=4, run_id=74, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 11:56:45->received finished signal from run thread 
+
+12/11/22 11:56:46->run complete, sending results to master (group_id=4 , run_id=74 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.209 seconds
+12/11/22 11:56:46->results of run_id 74 sent successfully
+12/11/22 11:56:46->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:1
+12/11/22 11:56:49->received parameters ( group_id=5, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=6 ), starting model run...
+
+12/11/22 11:56:50->received finished signal from run thread 
+
+12/11/22 11:56:52->run complete, sending results to master (group_id=5 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=6 )...run took: 2.208 seconds
+12/11/22 11:56:52->results of run_id 1 sent successfully
+12/11/22 11:56:52->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:5
+12/11/22 11:56:52->received parameters ( group_id=5, run_id=5, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:56:53->received finished signal from run thread 
+
+12/11/22 11:56:54->run complete, sending results to master (group_id=5 , run_id=5 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.21 seconds
+12/11/22 11:56:54->results of run_id 5 sent successfully
+12/11/22 11:56:54->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:8
+12/11/22 11:56:54->received parameters ( group_id=5, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=32 ), starting model run...
+
+12/11/22 11:56:55->received finished signal from run thread 
+
+12/11/22 11:56:56->run complete, sending results to master (group_id=5 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=32 )...run took: 2.202 seconds
+12/11/22 11:56:56->results of run_id 8 sent successfully
+12/11/22 11:56:56->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:9
+12/11/22 11:56:56->received parameters ( group_id=5, run_id=9, info_txt= DA_CYCLE=-9999  REALIZATION=71 ), starting model run...
+
+12/11/22 11:56:57->received finished signal from run thread 
+
+12/11/22 11:56:59->run complete, sending results to master (group_id=5 , run_id=9 , info_txt= DA_CYCLE=-9999  REALIZATION=71 )...run took: 2.194 seconds
+12/11/22 11:56:59->results of run_id 9 sent successfully
+12/11/22 11:56:59->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:12
+12/11/22 11:56:59->received parameters ( group_id=5, run_id=12, info_txt= DA_CYCLE=-9999  REALIZATION=21 ), starting model run...
+
+12/11/22 11:57:00->received finished signal from run thread 
+
+12/11/22 11:57:01->run complete, sending results to master (group_id=5 , run_id=12 , info_txt= DA_CYCLE=-9999  REALIZATION=21 )...run took: 2.213 seconds
+12/11/22 11:57:01->results of run_id 12 sent successfully
+12/11/22 11:57:01->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:17
+12/11/22 11:57:01->received parameters ( group_id=5, run_id=17, info_txt= DA_CYCLE=-9999  REALIZATION=21 ), starting model run...
+
+12/11/22 11:57:02->received finished signal from run thread 
+
+12/11/22 11:57:03->run complete, sending results to master (group_id=5 , run_id=17 , info_txt= DA_CYCLE=-9999  REALIZATION=21 )...run took: 2.201 seconds
+12/11/22 11:57:03->results of run_id 17 sent successfully
+12/11/22 11:57:03->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:18
+12/11/22 11:57:03->received parameters ( group_id=5, run_id=18, info_txt= DA_CYCLE=-9999  REALIZATION=32 ), starting model run...
+
+12/11/22 11:57:04->received finished signal from run thread 
+
+12/11/22 11:57:06->run complete, sending results to master (group_id=5 , run_id=18 , info_txt= DA_CYCLE=-9999  REALIZATION=32 )...run took: 2.202 seconds
+12/11/22 11:57:06->results of run_id 18 sent successfully
+12/11/22 11:57:06->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:21
+12/11/22 11:57:06->received parameters ( group_id=5, run_id=21, info_txt= DA_CYCLE=-9999  REALIZATION=6 ), starting model run...
+
+12/11/22 11:57:07->received finished signal from run thread 
+
+12/11/22 11:57:08->run complete, sending results to master (group_id=5 , run_id=21 , info_txt= DA_CYCLE=-9999  REALIZATION=6 )...run took: 2.201 seconds
+12/11/22 11:57:08->results of run_id 21 sent successfully
+12/11/22 11:57:08->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:25
+12/11/22 11:57:08->received parameters ( group_id=5, run_id=25, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:57:09->received finished signal from run thread 
+
+12/11/22 11:57:10->run complete, sending results to master (group_id=5 , run_id=25 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.192 seconds
+12/11/22 11:57:10->results of run_id 25 sent successfully
+12/11/22 11:57:10->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:27
+12/11/22 11:57:10->received parameters ( group_id=5, run_id=27, info_txt= DA_CYCLE=-9999  REALIZATION=21 ), starting model run...
+
+12/11/22 11:57:11->received finished signal from run thread 
+
+12/11/22 11:57:12->run complete, sending results to master (group_id=5 , run_id=27 , info_txt= DA_CYCLE=-9999  REALIZATION=21 )...run took: 2.199 seconds
+12/11/22 11:57:12->results of run_id 27 sent successfully
+12/11/22 11:57:12->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:31
+12/11/22 11:57:13->received parameters ( group_id=5, run_id=31, info_txt= DA_CYCLE=-9999  REALIZATION=6 ), starting model run...
+
+12/11/22 11:57:14->received finished signal from run thread 
+
+12/11/22 11:57:15->run complete, sending results to master (group_id=5 , run_id=31 , info_txt= DA_CYCLE=-9999  REALIZATION=6 )...run took: 2.19 seconds
+12/11/22 11:57:15->results of run_id 31 sent successfully
+12/11/22 11:57:15->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:33
+12/11/22 11:57:15->received parameters ( group_id=5, run_id=33, info_txt= DA_CYCLE=-9999  REALIZATION=32 ), starting model run...
+
+12/11/22 11:57:16->received finished signal from run thread 
+
+12/11/22 11:57:17->run complete, sending results to master (group_id=5 , run_id=33 , info_txt= DA_CYCLE=-9999  REALIZATION=32 )...run took: 2.205 seconds
+12/11/22 11:57:17->results of run_id 33 sent successfully
+12/11/22 11:57:17->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:36
+12/11/22 11:57:17->received parameters ( group_id=5, run_id=36, info_txt= DA_CYCLE=-9999  REALIZATION=6 ), starting model run...
+
+12/11/22 11:57:18->received finished signal from run thread 
+
+12/11/22 11:57:19->run complete, sending results to master (group_id=5 , run_id=36 , info_txt= DA_CYCLE=-9999  REALIZATION=6 )...run took: 2.202 seconds
+12/11/22 11:57:19->results of run_id 36 sent successfully
+12/11/22 11:57:19->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:40
+12/11/22 11:57:20->received parameters ( group_id=5, run_id=40, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:57:21->received finished signal from run thread 
+
+12/11/22 11:57:22->run complete, sending results to master (group_id=5 , run_id=40 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.198 seconds
+12/11/22 11:57:22->results of run_id 40 sent successfully
+12/11/22 11:57:22->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 5:42
+12/11/22 11:57:22->received parameters ( group_id=5, run_id=42, info_txt= DA_CYCLE=-9999  REALIZATION=21 ), starting model run...
+
+12/11/22 11:57:23->received finished signal from run thread 
+
+12/11/22 11:57:24->run complete, sending results to master (group_id=5 , run_id=42 , info_txt= DA_CYCLE=-9999  REALIZATION=21 )...run took: 2.204 seconds
+12/11/22 11:57:24->results of run_id 42 sent successfully
+12/11/22 11:57:24->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:1
+12/11/22 11:57:27->received parameters ( group_id=6, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 11:57:28->received finished signal from run thread 
+
+12/11/22 11:57:29->run complete, sending results to master (group_id=6 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.216 seconds
+12/11/22 11:57:29->results of run_id 1 sent successfully
+12/11/22 11:57:29->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:5
+12/11/22 11:57:30->received parameters ( group_id=6, run_id=5, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:57:31->received finished signal from run thread 
+
+12/11/22 11:57:32->run complete, sending results to master (group_id=6 , run_id=5 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.197 seconds
+12/11/22 11:57:32->results of run_id 5 sent successfully
+12/11/22 11:57:32->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:7
+12/11/22 11:57:32->received parameters ( group_id=6, run_id=7, info_txt= DA_CYCLE=-9999  REALIZATION=4 ), starting model run...
+
+12/11/22 11:57:33->received finished signal from run thread 
+
+12/11/22 11:57:34->run complete, sending results to master (group_id=6 , run_id=7 , info_txt= DA_CYCLE=-9999  REALIZATION=4 )...run took: 2.202 seconds
+12/11/22 11:57:34->results of run_id 7 sent successfully
+12/11/22 11:57:34->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:9
+12/11/22 11:57:34->received parameters ( group_id=6, run_id=9, info_txt= DA_CYCLE=-9999  REALIZATION=7 ), starting model run...
+
+12/11/22 11:57:35->received finished signal from run thread 
+
+12/11/22 11:57:36->run complete, sending results to master (group_id=6 , run_id=9 , info_txt= DA_CYCLE=-9999  REALIZATION=7 )...run took: 2.192 seconds
+12/11/22 11:57:36->results of run_id 9 sent successfully
+12/11/22 11:57:36->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:12
+12/11/22 11:57:36->received parameters ( group_id=6, run_id=12, info_txt= DA_CYCLE=-9999  REALIZATION=10 ), starting model run...
+
+12/11/22 11:57:38->received finished signal from run thread 
+
+12/11/22 11:57:39->run complete, sending results to master (group_id=6 , run_id=12 , info_txt= DA_CYCLE=-9999  REALIZATION=10 )...run took: 2.199 seconds
+12/11/22 11:57:39->results of run_id 12 sent successfully
+12/11/22 11:57:39->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:15
+12/11/22 11:57:39->received parameters ( group_id=6, run_id=15, info_txt= DA_CYCLE=-9999  REALIZATION=13 ), starting model run...
+
+12/11/22 11:57:40->received finished signal from run thread 
+
+12/11/22 11:57:41->run complete, sending results to master (group_id=6 , run_id=15 , info_txt= DA_CYCLE=-9999  REALIZATION=13 )...run took: 2.21 seconds
+12/11/22 11:57:41->results of run_id 15 sent successfully
+12/11/22 11:57:41->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:18
+12/11/22 11:57:41->received parameters ( group_id=6, run_id=18, info_txt= DA_CYCLE=-9999  REALIZATION=16 ), starting model run...
+
+12/11/22 11:57:42->received finished signal from run thread 
+
+12/11/22 11:57:43->run complete, sending results to master (group_id=6 , run_id=18 , info_txt= DA_CYCLE=-9999  REALIZATION=16 )...run took: 2.218 seconds
+12/11/22 11:57:43->results of run_id 18 sent successfully
+12/11/22 11:57:43->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:21
+12/11/22 11:57:43->received parameters ( group_id=6, run_id=21, info_txt= DA_CYCLE=-9999  REALIZATION=19 ), starting model run...
+
+12/11/22 11:57:45->received finished signal from run thread 
+
+12/11/22 11:57:46->run complete, sending results to master (group_id=6 , run_id=21 , info_txt= DA_CYCLE=-9999  REALIZATION=19 )...run took: 2.201 seconds
+12/11/22 11:57:46->results of run_id 21 sent successfully
+12/11/22 11:57:46->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:24
+12/11/22 11:57:46->received parameters ( group_id=6, run_id=24, info_txt= DA_CYCLE=-9999  REALIZATION=23 ), starting model run...
+
+12/11/22 11:57:47->received finished signal from run thread 
+
+12/11/22 11:57:48->run complete, sending results to master (group_id=6 , run_id=24 , info_txt= DA_CYCLE=-9999  REALIZATION=23 )...run took: 2.212 seconds
+12/11/22 11:57:48->results of run_id 24 sent successfully
+12/11/22 11:57:48->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:27
+12/11/22 11:57:48->received parameters ( group_id=6, run_id=27, info_txt= DA_CYCLE=-9999  REALIZATION=26 ), starting model run...
+
+12/11/22 11:57:49->received finished signal from run thread 
+
+12/11/22 11:57:50->run complete, sending results to master (group_id=6 , run_id=27 , info_txt= DA_CYCLE=-9999  REALIZATION=26 )...run took: 2.194 seconds
+12/11/22 11:57:50->results of run_id 27 sent successfully
+12/11/22 11:57:50->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:30
+12/11/22 11:57:50->received parameters ( group_id=6, run_id=30, info_txt= DA_CYCLE=-9999  REALIZATION=29 ), starting model run...
+
+12/11/22 11:57:51->received finished signal from run thread 
+
+12/11/22 11:57:53->run complete, sending results to master (group_id=6 , run_id=30 , info_txt= DA_CYCLE=-9999  REALIZATION=29 )...run took: 2.211 seconds
+12/11/22 11:57:53->results of run_id 30 sent successfully
+12/11/22 11:57:53->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:33
+12/11/22 11:57:53->received parameters ( group_id=6, run_id=33, info_txt= DA_CYCLE=-9999  REALIZATION=33 ), starting model run...
+
+12/11/22 11:57:54->received finished signal from run thread 
+
+12/11/22 11:57:55->run complete, sending results to master (group_id=6 , run_id=33 , info_txt= DA_CYCLE=-9999  REALIZATION=33 )...run took: 2.189 seconds
+12/11/22 11:57:55->results of run_id 33 sent successfully
+12/11/22 11:57:55->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:36
+12/11/22 11:57:55->received parameters ( group_id=6, run_id=36, info_txt= DA_CYCLE=-9999  REALIZATION=36 ), starting model run...
+
+12/11/22 11:57:56->received finished signal from run thread 
+
+12/11/22 11:57:57->run complete, sending results to master (group_id=6 , run_id=36 , info_txt= DA_CYCLE=-9999  REALIZATION=36 )...run took: 2.203 seconds
+12/11/22 11:57:57->results of run_id 36 sent successfully
+12/11/22 11:57:57->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:39
+12/11/22 11:57:57->received parameters ( group_id=6, run_id=39, info_txt= DA_CYCLE=-9999  REALIZATION=39 ), starting model run...
+
+12/11/22 11:57:58->received finished signal from run thread 
+
+12/11/22 11:58:00->run complete, sending results to master (group_id=6 , run_id=39 , info_txt= DA_CYCLE=-9999  REALIZATION=39 )...run took: 2.202 seconds
+12/11/22 11:58:00->results of run_id 39 sent successfully
+12/11/22 11:58:00->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:43
+12/11/22 11:58:00->received parameters ( group_id=6, run_id=43, info_txt= DA_CYCLE=-9999  REALIZATION=43 ), starting model run...
+
+12/11/22 11:58:01->received finished signal from run thread 
+
+12/11/22 11:58:02->run complete, sending results to master (group_id=6 , run_id=43 , info_txt= DA_CYCLE=-9999  REALIZATION=43 )...run took: 2.207 seconds
+12/11/22 11:58:02->results of run_id 43 sent successfully
+12/11/22 11:58:02->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:46
+12/11/22 11:58:02->received parameters ( group_id=6, run_id=46, info_txt= DA_CYCLE=-9999  REALIZATION=46 ), starting model run...
+
+12/11/22 11:58:03->received finished signal from run thread 
+
+12/11/22 11:58:04->run complete, sending results to master (group_id=6 , run_id=46 , info_txt= DA_CYCLE=-9999  REALIZATION=46 )...run took: 2.193 seconds
+12/11/22 11:58:04->results of run_id 46 sent successfully
+12/11/22 11:58:04->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:48
+12/11/22 11:58:04->received parameters ( group_id=6, run_id=48, info_txt= DA_CYCLE=-9999  REALIZATION=48 ), starting model run...
+
+12/11/22 11:58:05->received finished signal from run thread 
+
+12/11/22 11:58:07->run complete, sending results to master (group_id=6 , run_id=48 , info_txt= DA_CYCLE=-9999  REALIZATION=48 )...run took: 2.214 seconds
+12/11/22 11:58:07->results of run_id 48 sent successfully
+12/11/22 11:58:07->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:51
+12/11/22 11:58:07->received parameters ( group_id=6, run_id=51, info_txt= DA_CYCLE=-9999  REALIZATION=51 ), starting model run...
+
+12/11/22 11:58:08->received finished signal from run thread 
+
+12/11/22 11:58:09->run complete, sending results to master (group_id=6 , run_id=51 , info_txt= DA_CYCLE=-9999  REALIZATION=51 )...run took: 2.211 seconds
+12/11/22 11:58:09->results of run_id 51 sent successfully
+12/11/22 11:58:09->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:56
+12/11/22 11:58:09->received parameters ( group_id=6, run_id=56, info_txt= DA_CYCLE=-9999  REALIZATION=57 ), starting model run...
+
+12/11/22 11:58:10->received finished signal from run thread 
+
+12/11/22 11:58:11->run complete, sending results to master (group_id=6 , run_id=56 , info_txt= DA_CYCLE=-9999  REALIZATION=57 )...run took: 2.202 seconds
+12/11/22 11:58:11->results of run_id 56 sent successfully
+12/11/22 11:58:11->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:59
+12/11/22 11:58:11->received parameters ( group_id=6, run_id=59, info_txt= DA_CYCLE=-9999  REALIZATION=60 ), starting model run...
+
+12/11/22 11:58:12->received finished signal from run thread 
+
+12/11/22 11:58:14->run complete, sending results to master (group_id=6 , run_id=59 , info_txt= DA_CYCLE=-9999  REALIZATION=60 )...run took: 2.204 seconds
+12/11/22 11:58:14->results of run_id 59 sent successfully
+12/11/22 11:58:14->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:62
+12/11/22 11:58:14->received parameters ( group_id=6, run_id=62, info_txt= DA_CYCLE=-9999  REALIZATION=63 ), starting model run...
+
+12/11/22 11:58:15->received finished signal from run thread 
+
+12/11/22 11:58:16->run complete, sending results to master (group_id=6 , run_id=62 , info_txt= DA_CYCLE=-9999  REALIZATION=63 )...run took: 2.199 seconds
+12/11/22 11:58:16->results of run_id 62 sent successfully
+12/11/22 11:58:16->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:65
+12/11/22 11:58:16->received parameters ( group_id=6, run_id=65, info_txt= DA_CYCLE=-9999  REALIZATION=66 ), starting model run...
+
+12/11/22 11:58:17->received finished signal from run thread 
+
+12/11/22 11:58:18->run complete, sending results to master (group_id=6 , run_id=65 , info_txt= DA_CYCLE=-9999  REALIZATION=66 )...run took: 2.204 seconds
+12/11/22 11:58:18->results of run_id 65 sent successfully
+12/11/22 11:58:18->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:68
+12/11/22 11:58:18->received parameters ( group_id=6, run_id=68, info_txt= DA_CYCLE=-9999  REALIZATION=70 ), starting model run...
+
+12/11/22 11:58:19->received finished signal from run thread 
+
+12/11/22 11:58:20->run complete, sending results to master (group_id=6 , run_id=68 , info_txt= DA_CYCLE=-9999  REALIZATION=70 )...run took: 2.206 seconds
+12/11/22 11:58:20->results of run_id 68 sent successfully
+12/11/22 11:58:20->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:71
+12/11/22 11:58:21->received parameters ( group_id=6, run_id=71, info_txt= DA_CYCLE=-9999  REALIZATION=74 ), starting model run...
+
+12/11/22 11:58:22->received finished signal from run thread 
+
+12/11/22 11:58:23->run complete, sending results to master (group_id=6 , run_id=71 , info_txt= DA_CYCLE=-9999  REALIZATION=74 )...run took: 2.21 seconds
+12/11/22 11:58:23->results of run_id 71 sent successfully
+12/11/22 11:58:23->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 6:74
+12/11/22 11:58:23->received parameters ( group_id=6, run_id=74, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 11:58:24->received finished signal from run thread 
+
+12/11/22 11:58:25->run complete, sending results to master (group_id=6 , run_id=74 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.201 seconds
+12/11/22 11:58:25->results of run_id 74 sent successfully
+12/11/22 11:58:25->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:1
+12/11/22 11:58:28->received parameters ( group_id=7, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:58:29->received finished signal from run thread 
+
+12/11/22 11:58:30->run complete, sending results to master (group_id=7 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.207 seconds
+12/11/22 11:58:30->results of run_id 1 sent successfully
+12/11/22 11:58:30->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:4
+12/11/22 11:58:31->received parameters ( group_id=7, run_id=4, info_txt= DA_CYCLE=-9999  REALIZATION=70 ), starting model run...
+
+12/11/22 11:58:32->received finished signal from run thread 
+
+12/11/22 11:58:33->run complete, sending results to master (group_id=7 , run_id=4 , info_txt= DA_CYCLE=-9999  REALIZATION=70 )...run took: 2.198 seconds
+12/11/22 11:58:33->results of run_id 4 sent successfully
+12/11/22 11:58:33->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:8
+12/11/22 11:58:33->received parameters ( group_id=7, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=39 ), starting model run...
+
+12/11/22 11:58:34->received finished signal from run thread 
+
+12/11/22 11:58:35->run complete, sending results to master (group_id=7 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=39 )...run took: 2.205 seconds
+12/11/22 11:58:35->results of run_id 8 sent successfully
+12/11/22 11:58:35->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:11
+12/11/22 11:58:35->received parameters ( group_id=7, run_id=11, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:58:36->received finished signal from run thread 
+
+12/11/22 11:58:37->run complete, sending results to master (group_id=7 , run_id=11 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.203 seconds
+12/11/22 11:58:37->results of run_id 11 sent successfully
+12/11/22 11:58:37->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:13
+12/11/22 11:58:37->received parameters ( group_id=7, run_id=13, info_txt= DA_CYCLE=-9999  REALIZATION=39 ), starting model run...
+
+12/11/22 11:58:39->received finished signal from run thread 
+
+12/11/22 11:58:40->run complete, sending results to master (group_id=7 , run_id=13 , info_txt= DA_CYCLE=-9999  REALIZATION=39 )...run took: 2.196 seconds
+12/11/22 11:58:40->results of run_id 13 sent successfully
+12/11/22 11:58:40->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:16
+12/11/22 11:58:40->received parameters ( group_id=7, run_id=16, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:58:41->received finished signal from run thread 
+
+12/11/22 11:58:42->run complete, sending results to master (group_id=7 , run_id=16 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.202 seconds
+12/11/22 11:58:42->results of run_id 16 sent successfully
+12/11/22 11:58:42->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:18
+12/11/22 11:58:42->received parameters ( group_id=7, run_id=18, info_txt= DA_CYCLE=-9999  REALIZATION=39 ), starting model run...
+
+12/11/22 11:58:43->received finished signal from run thread 
+
+12/11/22 11:58:44->run complete, sending results to master (group_id=7 , run_id=18 , info_txt= DA_CYCLE=-9999  REALIZATION=39 )...run took: 2.208 seconds
+12/11/22 11:58:44->results of run_id 18 sent successfully
+12/11/22 11:58:44->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:23
+12/11/22 11:58:44->received parameters ( group_id=7, run_id=23, info_txt= DA_CYCLE=-9999  REALIZATION=39 ), starting model run...
+
+12/11/22 11:58:46->received finished signal from run thread 
+
+12/11/22 11:58:47->run complete, sending results to master (group_id=7 , run_id=23 , info_txt= DA_CYCLE=-9999  REALIZATION=39 )...run took: 2.22 seconds
+12/11/22 11:58:47->results of run_id 23 sent successfully
+12/11/22 11:58:47->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:25
+12/11/22 11:58:47->received parameters ( group_id=7, run_id=25, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:58:48->received finished signal from run thread 
+
+12/11/22 11:58:49->run complete, sending results to master (group_id=7 , run_id=25 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.207 seconds
+12/11/22 11:58:49->results of run_id 25 sent successfully
+12/11/22 11:58:49->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:27
+12/11/22 11:58:49->received parameters ( group_id=7, run_id=27, info_txt= DA_CYCLE=-9999  REALIZATION=36 ), starting model run...
+
+12/11/22 11:58:50->received finished signal from run thread 
+
+12/11/22 11:58:51->run complete, sending results to master (group_id=7 , run_id=27 , info_txt= DA_CYCLE=-9999  REALIZATION=36 )...run took: 2.21 seconds
+12/11/22 11:58:51->results of run_id 27 sent successfully
+12/11/22 11:58:51->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:32
+12/11/22 11:58:51->received parameters ( group_id=7, run_id=32, info_txt= DA_CYCLE=-9999  REALIZATION=36 ), starting model run...
+
+12/11/22 11:58:53->received finished signal from run thread 
+
+12/11/22 11:58:54->run complete, sending results to master (group_id=7 , run_id=32 , info_txt= DA_CYCLE=-9999  REALIZATION=36 )...run took: 2.207 seconds
+12/11/22 11:58:54->results of run_id 32 sent successfully
+12/11/22 11:58:54->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:33
+12/11/22 11:58:54->received parameters ( group_id=7, run_id=33, info_txt= DA_CYCLE=-9999  REALIZATION=39 ), starting model run...
+
+12/11/22 11:58:55->received finished signal from run thread 
+
+12/11/22 11:58:56->run complete, sending results to master (group_id=7 , run_id=33 , info_txt= DA_CYCLE=-9999  REALIZATION=39 )...run took: 2.209 seconds
+12/11/22 11:58:56->results of run_id 33 sent successfully
+12/11/22 11:58:56->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:36
+12/11/22 11:58:56->received parameters ( group_id=7, run_id=36, info_txt= DA_CYCLE=-9999  REALIZATION=2 ), starting model run...
+
+12/11/22 11:58:57->received finished signal from run thread 
+
+12/11/22 11:58:58->run complete, sending results to master (group_id=7 , run_id=36 , info_txt= DA_CYCLE=-9999  REALIZATION=2 )...run took: 2.194 seconds
+12/11/22 11:58:58->results of run_id 36 sent successfully
+12/11/22 11:58:58->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:40
+12/11/22 11:58:58->received parameters ( group_id=7, run_id=40, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 11:59:00->received finished signal from run thread 
+
+12/11/22 11:59:01->run complete, sending results to master (group_id=7 , run_id=40 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.197 seconds
+12/11/22 11:59:01->results of run_id 40 sent successfully
+12/11/22 11:59:01->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 7:42
+12/11/22 11:59:01->received parameters ( group_id=7, run_id=42, info_txt= DA_CYCLE=-9999  REALIZATION=36 ), starting model run...
+
+12/11/22 11:59:02->received finished signal from run thread 
+
+12/11/22 11:59:03->run complete, sending results to master (group_id=7 , run_id=42 , info_txt= DA_CYCLE=-9999  REALIZATION=36 )...run took: 2.208 seconds
+12/11/22 11:59:03->results of run_id 42 sent successfully
+12/11/22 11:59:03->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:1
+12/11/22 11:59:06->received parameters ( group_id=8, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=21 ), starting model run...
+
+12/11/22 11:59:07->received finished signal from run thread 
+
+12/11/22 11:59:08->run complete, sending results to master (group_id=8 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=21 )...run took: 2.209 seconds
+12/11/22 11:59:08->results of run_id 1 sent successfully
+12/11/22 11:59:08->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:5
+12/11/22 11:59:08->received parameters ( group_id=8, run_id=5, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 11:59:09->received finished signal from run thread 
+
+12/11/22 11:59:11->run complete, sending results to master (group_id=8 , run_id=5 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.201 seconds
+12/11/22 11:59:11->results of run_id 5 sent successfully
+12/11/22 11:59:11->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:7
+12/11/22 11:59:11->received parameters ( group_id=8, run_id=7, info_txt= DA_CYCLE=-9999  REALIZATION=78 ), starting model run...
+
+12/11/22 11:59:12->received finished signal from run thread 
+
+12/11/22 11:59:13->run complete, sending results to master (group_id=8 , run_id=7 , info_txt= DA_CYCLE=-9999  REALIZATION=78 )...run took: 2.195 seconds
+12/11/22 11:59:13->results of run_id 7 sent successfully
+12/11/22 11:59:13->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:10
+12/11/22 11:59:13->received parameters ( group_id=8, run_id=10, info_txt= DA_CYCLE=-9999  REALIZATION=4 ), starting model run...
+
+12/11/22 11:59:14->received finished signal from run thread 
+
+12/11/22 11:59:15->run complete, sending results to master (group_id=8 , run_id=10 , info_txt= DA_CYCLE=-9999  REALIZATION=4 )...run took: 2.194 seconds
+12/11/22 11:59:15->results of run_id 10 sent successfully
+12/11/22 11:59:15->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:14
+12/11/22 11:59:15->received parameters ( group_id=8, run_id=14, info_txt= DA_CYCLE=-9999  REALIZATION=9 ), starting model run...
+
+12/11/22 11:59:16->received finished signal from run thread 
+
+12/11/22 11:59:18->run complete, sending results to master (group_id=8 , run_id=14 , info_txt= DA_CYCLE=-9999  REALIZATION=9 )...run took: 2.207 seconds
+12/11/22 11:59:18->results of run_id 14 sent successfully
+12/11/22 11:59:18->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:17
+12/11/22 11:59:18->received parameters ( group_id=8, run_id=17, info_txt= DA_CYCLE=-9999  REALIZATION=12 ), starting model run...
+
+12/11/22 11:59:19->received finished signal from run thread 
+
+12/11/22 11:59:20->run complete, sending results to master (group_id=8 , run_id=17 , info_txt= DA_CYCLE=-9999  REALIZATION=12 )...run took: 2.21 seconds
+12/11/22 11:59:20->results of run_id 17 sent successfully
+12/11/22 11:59:20->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:18
+12/11/22 11:59:20->received parameters ( group_id=8, run_id=18, info_txt= DA_CYCLE=-9999  REALIZATION=13 ), starting model run...
+
+12/11/22 11:59:21->received finished signal from run thread 
+
+12/11/22 11:59:22->run complete, sending results to master (group_id=8 , run_id=18 , info_txt= DA_CYCLE=-9999  REALIZATION=13 )...run took: 2.223 seconds
+12/11/22 11:59:22->results of run_id 18 sent successfully
+12/11/22 11:59:22->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:23
+12/11/22 11:59:22->received parameters ( group_id=8, run_id=23, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 11:59:23->received finished signal from run thread 
+
+12/11/22 11:59:25->run complete, sending results to master (group_id=8 , run_id=23 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.2 seconds
+12/11/22 11:59:25->results of run_id 23 sent successfully
+12/11/22 11:59:25->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:26
+12/11/22 11:59:25->received parameters ( group_id=8, run_id=26, info_txt= DA_CYCLE=-9999  REALIZATION=22 ), starting model run...
+
+12/11/22 11:59:26->received finished signal from run thread 
+
+12/11/22 11:59:27->run complete, sending results to master (group_id=8 , run_id=26 , info_txt= DA_CYCLE=-9999  REALIZATION=22 )...run took: 2.207 seconds
+12/11/22 11:59:27->results of run_id 26 sent successfully
+12/11/22 11:59:27->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:29
+12/11/22 11:59:27->received parameters ( group_id=8, run_id=29, info_txt= DA_CYCLE=-9999  REALIZATION=25 ), starting model run...
+
+12/11/22 11:59:28->received finished signal from run thread 
+
+12/11/22 11:59:29->run complete, sending results to master (group_id=8 , run_id=29 , info_txt= DA_CYCLE=-9999  REALIZATION=25 )...run took: 2.21 seconds
+12/11/22 11:59:29->results of run_id 29 sent successfully
+12/11/22 11:59:29->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:32
+12/11/22 11:59:29->received parameters ( group_id=8, run_id=32, info_txt= DA_CYCLE=-9999  REALIZATION=28 ), starting model run...
+
+12/11/22 11:59:30->received finished signal from run thread 
+
+12/11/22 11:59:32->run complete, sending results to master (group_id=8 , run_id=32 , info_txt= DA_CYCLE=-9999  REALIZATION=28 )...run took: 2.2 seconds
+12/11/22 11:59:32->results of run_id 32 sent successfully
+12/11/22 11:59:32->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:35
+12/11/22 11:59:32->received parameters ( group_id=8, run_id=35, info_txt= DA_CYCLE=-9999  REALIZATION=31 ), starting model run...
+
+12/11/22 11:59:33->received finished signal from run thread 
+
+12/11/22 11:59:34->run complete, sending results to master (group_id=8 , run_id=35 , info_txt= DA_CYCLE=-9999  REALIZATION=31 )...run took: 2.196 seconds
+12/11/22 11:59:34->results of run_id 35 sent successfully
+12/11/22 11:59:34->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:38
+12/11/22 11:59:34->received parameters ( group_id=8, run_id=38, info_txt= DA_CYCLE=-9999  REALIZATION=35 ), starting model run...
+
+12/11/22 11:59:35->received finished signal from run thread 
+
+12/11/22 11:59:36->run complete, sending results to master (group_id=8 , run_id=38 , info_txt= DA_CYCLE=-9999  REALIZATION=35 )...run took: 2.208 seconds
+12/11/22 11:59:36->results of run_id 38 sent successfully
+12/11/22 11:59:36->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:41
+12/11/22 11:59:36->received parameters ( group_id=8, run_id=41, info_txt= DA_CYCLE=-9999  REALIZATION=40 ), starting model run...
+
+12/11/22 11:59:37->received finished signal from run thread 
+
+12/11/22 11:59:38->run complete, sending results to master (group_id=8 , run_id=41 , info_txt= DA_CYCLE=-9999  REALIZATION=40 )...run took: 2.211 seconds
+12/11/22 11:59:38->results of run_id 41 sent successfully
+12/11/22 11:59:38->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:42
+12/11/22 11:59:39->received parameters ( group_id=8, run_id=42, info_txt= DA_CYCLE=-9999  REALIZATION=41 ), starting model run...
+
+12/11/22 11:59:40->received finished signal from run thread 
+
+12/11/22 11:59:41->run complete, sending results to master (group_id=8 , run_id=42 , info_txt= DA_CYCLE=-9999  REALIZATION=41 )...run took: 2.22 seconds
+12/11/22 11:59:41->results of run_id 42 sent successfully
+12/11/22 11:59:41->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:45
+12/11/22 11:59:41->received parameters ( group_id=8, run_id=45, info_txt= DA_CYCLE=-9999  REALIZATION=44 ), starting model run...
+
+12/11/22 11:59:42->received finished signal from run thread 
+
+12/11/22 11:59:43->run complete, sending results to master (group_id=8 , run_id=45 , info_txt= DA_CYCLE=-9999  REALIZATION=44 )...run took: 2.206 seconds
+12/11/22 11:59:43->results of run_id 45 sent successfully
+12/11/22 11:59:43->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:48
+12/11/22 11:59:43->received parameters ( group_id=8, run_id=48, info_txt= DA_CYCLE=-9999  REALIZATION=47 ), starting model run...
+
+12/11/22 11:59:44->received finished signal from run thread 
+
+12/11/22 11:59:45->run complete, sending results to master (group_id=8 , run_id=48 , info_txt= DA_CYCLE=-9999  REALIZATION=47 )...run took: 2.217 seconds
+12/11/22 11:59:45->results of run_id 48 sent successfully
+12/11/22 11:59:46->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:53
+12/11/22 11:59:46->received parameters ( group_id=8, run_id=53, info_txt= DA_CYCLE=-9999  REALIZATION=52 ), starting model run...
+
+12/11/22 11:59:47->received finished signal from run thread 
+
+12/11/22 11:59:48->run complete, sending results to master (group_id=8 , run_id=53 , info_txt= DA_CYCLE=-9999  REALIZATION=52 )...run took: 2.197 seconds
+12/11/22 11:59:48->results of run_id 53 sent successfully
+12/11/22 11:59:48->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:56
+12/11/22 11:59:48->received parameters ( group_id=8, run_id=56, info_txt= DA_CYCLE=-9999  REALIZATION=56 ), starting model run...
+
+12/11/22 11:59:49->received finished signal from run thread 
+
+12/11/22 11:59:50->run complete, sending results to master (group_id=8 , run_id=56 , info_txt= DA_CYCLE=-9999  REALIZATION=56 )...run took: 2.212 seconds
+12/11/22 11:59:50->results of run_id 56 sent successfully
+12/11/22 11:59:50->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:59
+12/11/22 11:59:50->received parameters ( group_id=8, run_id=59, info_txt= DA_CYCLE=-9999  REALIZATION=59 ), starting model run...
+
+12/11/22 11:59:51->received finished signal from run thread 
+
+12/11/22 11:59:52->run complete, sending results to master (group_id=8 , run_id=59 , info_txt= DA_CYCLE=-9999  REALIZATION=59 )...run took: 2.216 seconds
+12/11/22 11:59:52->results of run_id 59 sent successfully
+12/11/22 11:59:52->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:62
+12/11/22 11:59:53->received parameters ( group_id=8, run_id=62, info_txt= DA_CYCLE=-9999  REALIZATION=62 ), starting model run...
+
+12/11/22 11:59:54->received finished signal from run thread 
+
+12/11/22 11:59:55->run complete, sending results to master (group_id=8 , run_id=62 , info_txt= DA_CYCLE=-9999  REALIZATION=62 )...run took: 2.221 seconds
+12/11/22 11:59:55->results of run_id 62 sent successfully
+12/11/22 11:59:55->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:65
+12/11/22 11:59:55->received parameters ( group_id=8, run_id=65, info_txt= DA_CYCLE=-9999  REALIZATION=65 ), starting model run...
+
+12/11/22 11:59:56->received finished signal from run thread 
+
+12/11/22 11:59:57->run complete, sending results to master (group_id=8 , run_id=65 , info_txt= DA_CYCLE=-9999  REALIZATION=65 )...run took: 2.207 seconds
+12/11/22 11:59:57->results of run_id 65 sent successfully
+12/11/22 11:59:57->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:68
+12/11/22 11:59:57->received parameters ( group_id=8, run_id=68, info_txt= DA_CYCLE=-9999  REALIZATION=69 ), starting model run...
+
+12/11/22 11:59:58->received finished signal from run thread 
+
+12/11/22 11:59:59->run complete, sending results to master (group_id=8 , run_id=68 , info_txt= DA_CYCLE=-9999  REALIZATION=69 )...run took: 2.208 seconds
+12/11/22 11:59:59->results of run_id 68 sent successfully
+12/11/22 11:59:59->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:71
+12/11/22 12:00:00->received parameters ( group_id=8, run_id=71, info_txt= DA_CYCLE=-9999  REALIZATION=74 ), starting model run...
+
+12/11/22 12:00:01->received finished signal from run thread 
+
+12/11/22 12:00:02->run complete, sending results to master (group_id=8 , run_id=71 , info_txt= DA_CYCLE=-9999  REALIZATION=74 )...run took: 2.217 seconds
+12/11/22 12:00:02->results of run_id 71 sent successfully
+12/11/22 12:00:02->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 8:74
+12/11/22 12:00:02->received parameters ( group_id=8, run_id=74, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 12:00:03->received finished signal from run thread 
+
+12/11/22 12:00:04->run complete, sending results to master (group_id=8 , run_id=74 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.202 seconds
+12/11/22 12:00:04->results of run_id 74 sent successfully
+12/11/22 12:00:04->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:1
+12/11/22 12:00:07->received parameters ( group_id=9, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:00:08->received finished signal from run thread 
+
+12/11/22 12:00:09->run complete, sending results to master (group_id=9 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.208 seconds
+12/11/22 12:00:09->results of run_id 1 sent successfully
+12/11/22 12:00:09->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:3
+12/11/22 12:00:09->received parameters ( group_id=9, run_id=3, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 12:00:11->received finished signal from run thread 
+
+12/11/22 12:00:12->run complete, sending results to master (group_id=9 , run_id=3 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.217 seconds
+12/11/22 12:00:12->results of run_id 3 sent successfully
+12/11/22 12:00:12->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:8
+12/11/22 12:00:12->received parameters ( group_id=9, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 12:00:13->received finished signal from run thread 
+
+12/11/22 12:00:14->run complete, sending results to master (group_id=9 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.203 seconds
+12/11/22 12:00:14->results of run_id 8 sent successfully
+12/11/22 12:00:14->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:11
+12/11/22 12:00:14->received parameters ( group_id=9, run_id=11, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:00:15->received finished signal from run thread 
+
+12/11/22 12:00:16->run complete, sending results to master (group_id=9 , run_id=11 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.223 seconds
+12/11/22 12:00:16->results of run_id 11 sent successfully
+12/11/22 12:00:16->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:13
+12/11/22 12:00:16->received parameters ( group_id=9, run_id=13, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 12:00:18->received finished signal from run thread 
+
+12/11/22 12:00:19->run complete, sending results to master (group_id=9 , run_id=13 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.199 seconds
+12/11/22 12:00:19->results of run_id 13 sent successfully
+12/11/22 12:00:19->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:15
+12/11/22 12:00:19->received parameters ( group_id=9, run_id=15, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 12:00:20->received finished signal from run thread 
+
+12/11/22 12:00:21->run complete, sending results to master (group_id=9 , run_id=15 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.203 seconds
+12/11/22 12:00:21->results of run_id 15 sent successfully
+12/11/22 12:00:21->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:18
+12/11/22 12:00:21->received parameters ( group_id=9, run_id=18, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 12:00:22->received finished signal from run thread 
+
+12/11/22 12:00:23->run complete, sending results to master (group_id=9 , run_id=18 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.221 seconds
+12/11/22 12:00:23->results of run_id 18 sent successfully
+12/11/22 12:00:23->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:21
+12/11/22 12:00:23->received parameters ( group_id=9, run_id=21, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:00:25->received finished signal from run thread 
+
+12/11/22 12:00:26->run complete, sending results to master (group_id=9 , run_id=21 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.2 seconds
+12/11/22 12:00:26->results of run_id 21 sent successfully
+12/11/22 12:00:26->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:26
+12/11/22 12:00:26->received parameters ( group_id=9, run_id=26, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:00:27->received finished signal from run thread 
+
+12/11/22 12:00:28->run complete, sending results to master (group_id=9 , run_id=26 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.2 seconds
+12/11/22 12:00:28->results of run_id 26 sent successfully
+12/11/22 12:00:28->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:29
+12/11/22 12:00:28->received parameters ( group_id=9, run_id=29, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 12:00:29->received finished signal from run thread 
+
+12/11/22 12:00:30->run complete, sending results to master (group_id=9 , run_id=29 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.209 seconds
+12/11/22 12:00:30->results of run_id 29 sent successfully
+12/11/22 12:00:30->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:32
+12/11/22 12:00:30->received parameters ( group_id=9, run_id=32, info_txt= DA_CYCLE=-9999  REALIZATION=55 ), starting model run...
+
+12/11/22 12:00:32->received finished signal from run thread 
+
+12/11/22 12:00:33->run complete, sending results to master (group_id=9 , run_id=32 , info_txt= DA_CYCLE=-9999  REALIZATION=55 )...run took: 2.204 seconds
+12/11/22 12:00:33->results of run_id 32 sent successfully
+12/11/22 12:00:33->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:35
+12/11/22 12:00:33->received parameters ( group_id=9, run_id=35, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 12:00:34->received finished signal from run thread 
+
+12/11/22 12:00:35->run complete, sending results to master (group_id=9 , run_id=35 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.206 seconds
+12/11/22 12:00:35->results of run_id 35 sent successfully
+12/11/22 12:00:35->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:38
+12/11/22 12:00:35->received parameters ( group_id=9, run_id=38, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 12:00:36->received finished signal from run thread 
+
+12/11/22 12:00:37->run complete, sending results to master (group_id=9 , run_id=38 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.208 seconds
+12/11/22 12:00:37->results of run_id 38 sent successfully
+12/11/22 12:00:37->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:41
+12/11/22 12:00:37->received parameters ( group_id=9, run_id=41, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:00:39->received finished signal from run thread 
+
+12/11/22 12:00:40->run complete, sending results to master (group_id=9 , run_id=41 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.211 seconds
+12/11/22 12:00:40->results of run_id 41 sent successfully
+12/11/22 12:00:40->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 9:44
+12/11/22 12:00:40->received parameters ( group_id=9, run_id=44, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 12:00:41->received finished signal from run thread 
+
+12/11/22 12:00:42->run complete, sending results to master (group_id=9 , run_id=44 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.207 seconds
+12/11/22 12:00:42->results of run_id 44 sent successfully
+12/11/22 12:00:42->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:1
+12/11/22 12:00:45->received parameters ( group_id=10, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=36 ), starting model run...
+
+12/11/22 12:00:46->received finished signal from run thread 
+
+12/11/22 12:00:47->run complete, sending results to master (group_id=10 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=36 )...run took: 2.204 seconds
+12/11/22 12:00:47->results of run_id 1 sent successfully
+12/11/22 12:00:47->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:4
+12/11/22 12:00:47->received parameters ( group_id=10, run_id=4, info_txt= DA_CYCLE=-9999  REALIZATION=6 ), starting model run...
+
+12/11/22 12:00:49->received finished signal from run thread 
+
+12/11/22 12:00:50->run complete, sending results to master (group_id=10 , run_id=4 , info_txt= DA_CYCLE=-9999  REALIZATION=6 )...run took: 2.204 seconds
+12/11/22 12:00:50->results of run_id 4 sent successfully
+12/11/22 12:00:50->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:8
+12/11/22 12:00:50->received parameters ( group_id=10, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=1 ), starting model run...
+
+12/11/22 12:00:51->received finished signal from run thread 
+
+12/11/22 12:00:52->run complete, sending results to master (group_id=10 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=1 )...run took: 2.201 seconds
+12/11/22 12:00:52->results of run_id 8 sent successfully
+12/11/22 12:00:52->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:11
+12/11/22 12:00:52->received parameters ( group_id=10, run_id=11, info_txt= DA_CYCLE=-9999  REALIZATION=78 ), starting model run...
+
+12/11/22 12:00:53->received finished signal from run thread 
+
+12/11/22 12:00:54->run complete, sending results to master (group_id=10 , run_id=11 , info_txt= DA_CYCLE=-9999  REALIZATION=78 )...run took: 2.204 seconds
+12/11/22 12:00:54->results of run_id 11 sent successfully
+12/11/22 12:00:54->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:13
+12/11/22 12:00:54->received parameters ( group_id=10, run_id=13, info_txt= DA_CYCLE=-9999  REALIZATION=3 ), starting model run...
+
+12/11/22 12:00:56->received finished signal from run thread 
+
+12/11/22 12:00:57->run complete, sending results to master (group_id=10 , run_id=13 , info_txt= DA_CYCLE=-9999  REALIZATION=3 )...run took: 2.215 seconds
+12/11/22 12:00:57->results of run_id 13 sent successfully
+12/11/22 12:00:57->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:16
+12/11/22 12:00:57->received parameters ( group_id=10, run_id=16, info_txt= DA_CYCLE=-9999  REALIZATION=7 ), starting model run...
+
+12/11/22 12:00:58->received finished signal from run thread 
+
+12/11/22 12:00:59->run complete, sending results to master (group_id=10 , run_id=16 , info_txt= DA_CYCLE=-9999  REALIZATION=7 )...run took: 2.202 seconds
+12/11/22 12:00:59->results of run_id 16 sent successfully
+12/11/22 12:00:59->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:19
+12/11/22 12:00:59->received parameters ( group_id=10, run_id=19, info_txt= DA_CYCLE=-9999  REALIZATION=10 ), starting model run...
+
+12/11/22 12:01:00->received finished signal from run thread 
+
+12/11/22 12:01:01->run complete, sending results to master (group_id=10 , run_id=19 , info_txt= DA_CYCLE=-9999  REALIZATION=10 )...run took: 2.197 seconds
+12/11/22 12:01:01->results of run_id 19 sent successfully
+12/11/22 12:01:01->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:22
+12/11/22 12:01:01->received parameters ( group_id=10, run_id=22, info_txt= DA_CYCLE=-9999  REALIZATION=13 ), starting model run...
+
+12/11/22 12:01:03->received finished signal from run thread 
+
+12/11/22 12:01:04->run complete, sending results to master (group_id=10 , run_id=22 , info_txt= DA_CYCLE=-9999  REALIZATION=13 )...run took: 2.201 seconds
+12/11/22 12:01:04->results of run_id 22 sent successfully
+12/11/22 12:01:04->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:26
+12/11/22 12:01:04->received parameters ( group_id=10, run_id=26, info_txt= DA_CYCLE=-9999  REALIZATION=17 ), starting model run...
+
+12/11/22 12:01:05->received finished signal from run thread 
+
+12/11/22 12:01:06->run complete, sending results to master (group_id=10 , run_id=26 , info_txt= DA_CYCLE=-9999  REALIZATION=17 )...run took: 2.203 seconds
+12/11/22 12:01:06->results of run_id 26 sent successfully
+12/11/22 12:01:06->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:28
+12/11/22 12:01:06->received parameters ( group_id=10, run_id=28, info_txt= DA_CYCLE=-9999  REALIZATION=20 ), starting model run...
+
+12/11/22 12:01:07->received finished signal from run thread 
+
+12/11/22 12:01:08->run complete, sending results to master (group_id=10 , run_id=28 , info_txt= DA_CYCLE=-9999  REALIZATION=20 )...run took: 2.193 seconds
+12/11/22 12:01:08->results of run_id 28 sent successfully
+12/11/22 12:01:08->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:30
+12/11/22 12:01:08->received parameters ( group_id=10, run_id=30, info_txt= DA_CYCLE=-9999  REALIZATION=23 ), starting model run...
+
+12/11/22 12:01:09->received finished signal from run thread 
+
+12/11/22 12:01:11->run complete, sending results to master (group_id=10 , run_id=30 , info_txt= DA_CYCLE=-9999  REALIZATION=23 )...run took: 2.197 seconds
+12/11/22 12:01:11->results of run_id 30 sent successfully
+12/11/22 12:01:11->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:34
+12/11/22 12:01:11->received parameters ( group_id=10, run_id=34, info_txt= DA_CYCLE=-9999  REALIZATION=27 ), starting model run...
+
+12/11/22 12:01:12->received finished signal from run thread 
+
+12/11/22 12:01:13->run complete, sending results to master (group_id=10 , run_id=34 , info_txt= DA_CYCLE=-9999  REALIZATION=27 )...run took: 2.204 seconds
+12/11/22 12:01:13->results of run_id 34 sent successfully
+12/11/22 12:01:13->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:36
+12/11/22 12:01:13->received parameters ( group_id=10, run_id=36, info_txt= DA_CYCLE=-9999  REALIZATION=29 ), starting model run...
+
+12/11/22 12:01:14->received finished signal from run thread 
+
+12/11/22 12:01:15->run complete, sending results to master (group_id=10 , run_id=36 , info_txt= DA_CYCLE=-9999  REALIZATION=29 )...run took: 2.201 seconds
+12/11/22 12:01:15->results of run_id 36 sent successfully
+12/11/22 12:01:15->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:39
+12/11/22 12:01:15->received parameters ( group_id=10, run_id=39, info_txt= DA_CYCLE=-9999  REALIZATION=33 ), starting model run...
+
+12/11/22 12:01:16->received finished signal from run thread 
+
+12/11/22 12:01:18->run complete, sending results to master (group_id=10 , run_id=39 , info_txt= DA_CYCLE=-9999  REALIZATION=33 )...run took: 2.198 seconds
+12/11/22 12:01:18->results of run_id 39 sent successfully
+12/11/22 12:01:18->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:42
+12/11/22 12:01:18->received parameters ( group_id=10, run_id=42, info_txt= DA_CYCLE=-9999  REALIZATION=37 ), starting model run...
+
+12/11/22 12:01:19->received finished signal from run thread 
+
+12/11/22 12:01:20->run complete, sending results to master (group_id=10 , run_id=42 , info_txt= DA_CYCLE=-9999  REALIZATION=37 )...run took: 2.207 seconds
+12/11/22 12:01:20->results of run_id 42 sent successfully
+12/11/22 12:01:20->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:45
+12/11/22 12:01:20->received parameters ( group_id=10, run_id=45, info_txt= DA_CYCLE=-9999  REALIZATION=41 ), starting model run...
+
+12/11/22 12:01:21->received finished signal from run thread 
+
+12/11/22 12:01:22->run complete, sending results to master (group_id=10 , run_id=45 , info_txt= DA_CYCLE=-9999  REALIZATION=41 )...run took: 2.216 seconds
+12/11/22 12:01:22->results of run_id 45 sent successfully
+12/11/22 12:01:22->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:50
+12/11/22 12:01:22->received parameters ( group_id=10, run_id=50, info_txt= DA_CYCLE=-9999  REALIZATION=46 ), starting model run...
+
+12/11/22 12:01:23->received finished signal from run thread 
+
+12/11/22 12:01:25->run complete, sending results to master (group_id=10 , run_id=50 , info_txt= DA_CYCLE=-9999  REALIZATION=46 )...run took: 2.202 seconds
+12/11/22 12:01:25->results of run_id 50 sent successfully
+12/11/22 12:01:25->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:51
+12/11/22 12:01:25->received parameters ( group_id=10, run_id=51, info_txt= DA_CYCLE=-9999  REALIZATION=47 ), starting model run...
+
+12/11/22 12:01:26->received finished signal from run thread 
+
+12/11/22 12:01:27->run complete, sending results to master (group_id=10 , run_id=51 , info_txt= DA_CYCLE=-9999  REALIZATION=47 )...run took: 2.194 seconds
+12/11/22 12:01:27->results of run_id 51 sent successfully
+12/11/22 12:01:27->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:54
+12/11/22 12:01:27->received parameters ( group_id=10, run_id=54, info_txt= DA_CYCLE=-9999  REALIZATION=50 ), starting model run...
+
+12/11/22 12:01:28->received finished signal from run thread 
+
+12/11/22 12:01:29->run complete, sending results to master (group_id=10 , run_id=54 , info_txt= DA_CYCLE=-9999  REALIZATION=50 )...run took: 2.199 seconds
+12/11/22 12:01:29->results of run_id 54 sent successfully
+12/11/22 12:01:29->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:59
+12/11/22 12:01:29->received parameters ( group_id=10, run_id=59, info_txt= DA_CYCLE=-9999  REALIZATION=57 ), starting model run...
+
+12/11/22 12:01:30->received finished signal from run thread 
+
+12/11/22 12:01:32->run complete, sending results to master (group_id=10 , run_id=59 , info_txt= DA_CYCLE=-9999  REALIZATION=57 )...run took: 2.199 seconds
+12/11/22 12:01:32->results of run_id 59 sent successfully
+12/11/22 12:01:32->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:62
+12/11/22 12:01:32->received parameters ( group_id=10, run_id=62, info_txt= DA_CYCLE=-9999  REALIZATION=60 ), starting model run...
+
+12/11/22 12:01:33->received finished signal from run thread 
+
+12/11/22 12:01:34->run complete, sending results to master (group_id=10 , run_id=62 , info_txt= DA_CYCLE=-9999  REALIZATION=60 )...run took: 2.216 seconds
+12/11/22 12:01:34->results of run_id 62 sent successfully
+12/11/22 12:01:34->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:64
+12/11/22 12:01:34->received parameters ( group_id=10, run_id=64, info_txt= DA_CYCLE=-9999  REALIZATION=62 ), starting model run...
+
+12/11/22 12:01:35->received finished signal from run thread 
+
+12/11/22 12:01:36->run complete, sending results to master (group_id=10 , run_id=64 , info_txt= DA_CYCLE=-9999  REALIZATION=62 )...run took: 2.202 seconds
+12/11/22 12:01:36->results of run_id 64 sent successfully
+12/11/22 12:01:36->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:68
+12/11/22 12:01:36->received parameters ( group_id=10, run_id=68, info_txt= DA_CYCLE=-9999  REALIZATION=66 ), starting model run...
+
+12/11/22 12:01:37->received finished signal from run thread 
+
+12/11/22 12:01:39->run complete, sending results to master (group_id=10 , run_id=68 , info_txt= DA_CYCLE=-9999  REALIZATION=66 )...run took: 2.212 seconds
+12/11/22 12:01:39->results of run_id 68 sent successfully
+12/11/22 12:01:39->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:69
+12/11/22 12:01:39->received parameters ( group_id=10, run_id=69, info_txt= DA_CYCLE=-9999  REALIZATION=69 ), starting model run...
+
+12/11/22 12:01:40->received finished signal from run thread 
+
+12/11/22 12:01:41->run complete, sending results to master (group_id=10 , run_id=69 , info_txt= DA_CYCLE=-9999  REALIZATION=69 )...run took: 2.196 seconds
+12/11/22 12:01:41->results of run_id 69 sent successfully
+12/11/22 12:01:41->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 10:74
+12/11/22 12:01:41->received parameters ( group_id=10, run_id=74, info_txt= DA_CYCLE=-9999  REALIZATION=76 ), starting model run...
+
+12/11/22 12:01:42->received finished signal from run thread 
+
+12/11/22 12:01:43->run complete, sending results to master (group_id=10 , run_id=74 , info_txt= DA_CYCLE=-9999  REALIZATION=76 )...run took: 2.204 seconds
+12/11/22 12:01:43->results of run_id 74 sent successfully
+12/11/22 12:01:43->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:1
+12/11/22 12:01:46->received parameters ( group_id=11, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:01:47->received finished signal from run thread 
+
+12/11/22 12:01:49->run complete, sending results to master (group_id=11 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.217 seconds
+12/11/22 12:01:49->results of run_id 1 sent successfully
+12/11/22 12:01:49->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:4
+12/11/22 12:01:49->received parameters ( group_id=11, run_id=4, info_txt= DA_CYCLE=-9999  REALIZATION=24 ), starting model run...
+
+12/11/22 12:01:50->received finished signal from run thread 
+
+12/11/22 12:01:51->run complete, sending results to master (group_id=11 , run_id=4 , info_txt= DA_CYCLE=-9999  REALIZATION=24 )...run took: 2.201 seconds
+12/11/22 12:01:51->results of run_id 4 sent successfully
+12/11/22 12:01:51->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:6
+12/11/22 12:01:51->received parameters ( group_id=11, run_id=6, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:01:52->received finished signal from run thread 
+
+12/11/22 12:01:53->run complete, sending results to master (group_id=11 , run_id=6 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.196 seconds
+12/11/22 12:01:53->results of run_id 6 sent successfully
+12/11/22 12:01:53->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:9
+12/11/22 12:01:53->received parameters ( group_id=11, run_id=9, info_txt= DA_CYCLE=-9999  REALIZATION=24 ), starting model run...
+
+12/11/22 12:01:54->received finished signal from run thread 
+
+12/11/22 12:01:55->run complete, sending results to master (group_id=11 , run_id=9 , info_txt= DA_CYCLE=-9999  REALIZATION=24 )...run took: 2.21 seconds
+12/11/22 12:01:55->results of run_id 9 sent successfully
+12/11/22 12:01:55->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:13
+12/11/22 12:01:56->received parameters ( group_id=11, run_id=13, info_txt= DA_CYCLE=-9999  REALIZATION=1 ), starting model run...
+
+12/11/22 12:01:57->received finished signal from run thread 
+
+12/11/22 12:01:58->run complete, sending results to master (group_id=11 , run_id=13 , info_txt= DA_CYCLE=-9999  REALIZATION=1 )...run took: 2.214 seconds
+12/11/22 12:01:58->results of run_id 13 sent successfully
+12/11/22 12:01:58->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:17
+12/11/22 12:01:58->received parameters ( group_id=11, run_id=17, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 12:01:59->received finished signal from run thread 
+
+12/11/22 12:02:00->run complete, sending results to master (group_id=11 , run_id=17 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.202 seconds
+12/11/22 12:02:00->results of run_id 17 sent successfully
+12/11/22 12:02:00->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:20
+12/11/22 12:02:00->received parameters ( group_id=11, run_id=20, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 12:02:01->received finished signal from run thread 
+
+12/11/22 12:02:02->run complete, sending results to master (group_id=11 , run_id=20 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.218 seconds
+12/11/22 12:02:02->results of run_id 20 sent successfully
+12/11/22 12:02:02->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:21
+12/11/22 12:02:03->received parameters ( group_id=11, run_id=21, info_txt= DA_CYCLE=-9999  REALIZATION=18 ), starting model run...
+
+12/11/22 12:02:04->received finished signal from run thread 
+
+12/11/22 12:02:05->run complete, sending results to master (group_id=11 , run_id=21 , info_txt= DA_CYCLE=-9999  REALIZATION=18 )...run took: 2.205 seconds
+12/11/22 12:02:05->results of run_id 21 sent successfully
+12/11/22 12:02:05->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:25
+12/11/22 12:02:05->received parameters ( group_id=11, run_id=25, info_txt= DA_CYCLE=-9999  REALIZATION=BASE ), starting model run...
+
+12/11/22 12:02:06->received finished signal from run thread 
+
+12/11/22 12:02:07->run complete, sending results to master (group_id=11 , run_id=25 , info_txt= DA_CYCLE=-9999  REALIZATION=BASE )...run took: 2.196 seconds
+12/11/22 12:02:07->results of run_id 25 sent successfully
+12/11/22 12:02:07->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:29
+12/11/22 12:02:07->received parameters ( group_id=11, run_id=29, info_txt= DA_CYCLE=-9999  REALIZATION=24 ), starting model run...
+
+12/11/22 12:02:08->received finished signal from run thread 
+
+12/11/22 12:02:09->run complete, sending results to master (group_id=11 , run_id=29 , info_txt= DA_CYCLE=-9999  REALIZATION=24 )...run took: 2.216 seconds
+12/11/22 12:02:09->results of run_id 29 sent successfully
+12/11/22 12:02:09->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:32
+12/11/22 12:02:10->received parameters ( group_id=11, run_id=32, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 12:02:11->received finished signal from run thread 
+
+12/11/22 12:02:12->run complete, sending results to master (group_id=11 , run_id=32 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.209 seconds
+12/11/22 12:02:12->results of run_id 32 sent successfully
+12/11/22 12:02:12->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:34
+12/11/22 12:02:12->received parameters ( group_id=11, run_id=34, info_txt= DA_CYCLE=-9999  REALIZATION=24 ), starting model run...
+
+12/11/22 12:02:13->received finished signal from run thread 
+
+12/11/22 12:02:14->run complete, sending results to master (group_id=11 , run_id=34 , info_txt= DA_CYCLE=-9999  REALIZATION=24 )...run took: 2.187 seconds
+12/11/22 12:02:14->results of run_id 34 sent successfully
+12/11/22 12:02:14->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:38
+12/11/22 12:02:14->received parameters ( group_id=11, run_id=38, info_txt= DA_CYCLE=-9999  REALIZATION=1 ), starting model run...
+
+12/11/22 12:02:15->received finished signal from run thread 
+
+12/11/22 12:02:16->run complete, sending results to master (group_id=11 , run_id=38 , info_txt= DA_CYCLE=-9999  REALIZATION=1 )...run took: 2.2 seconds
+12/11/22 12:02:16->results of run_id 38 sent successfully
+12/11/22 12:02:16->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:39
+12/11/22 12:02:17->received parameters ( group_id=11, run_id=39, info_txt= DA_CYCLE=-9999  REALIZATION=24 ), starting model run...
+
+12/11/22 12:02:18->received finished signal from run thread 
+
+12/11/22 12:02:19->run complete, sending results to master (group_id=11 , run_id=39 , info_txt= DA_CYCLE=-9999  REALIZATION=24 )...run took: 2.199 seconds
+12/11/22 12:02:19->results of run_id 39 sent successfully
+12/11/22 12:02:19->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 11:42
+12/11/22 12:02:19->received parameters ( group_id=11, run_id=42, info_txt= DA_CYCLE=-9999  REALIZATION=77 ), starting model run...
+
+12/11/22 12:02:20->received finished signal from run thread 
+
+12/11/22 12:02:21->run complete, sending results to master (group_id=11 , run_id=42 , info_txt= DA_CYCLE=-9999  REALIZATION=77 )...run took: 2.205 seconds
+12/11/22 12:02:21->results of run_id 42 sent successfully
+12/11/22 12:02:21->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:1
+12/11/22 12:02:24->received parameters ( group_id=12, run_id=1, info_txt= DA_CYCLE=-9999  REALIZATION=67 ), starting model run...
+
+12/11/22 12:02:25->received finished signal from run thread 
+
+12/11/22 12:02:26->run complete, sending results to master (group_id=12 , run_id=1 , info_txt= DA_CYCLE=-9999  REALIZATION=67 )...run took: 2.203 seconds
+12/11/22 12:02:26->results of run_id 1 sent successfully
+12/11/22 12:02:26->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:5
+12/11/22 12:02:27->received parameters ( group_id=12, run_id=5, info_txt= DA_CYCLE=-9999  REALIZATION=70 ), starting model run...
+
+12/11/22 12:02:28->received finished signal from run thread 
+
+12/11/22 12:02:29->run complete, sending results to master (group_id=12 , run_id=5 , info_txt= DA_CYCLE=-9999  REALIZATION=70 )...run took: 2.195 seconds
+12/11/22 12:02:29->results of run_id 5 sent successfully
+12/11/22 12:02:29->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:8
+12/11/22 12:02:29->received parameters ( group_id=12, run_id=8, info_txt= DA_CYCLE=-9999  REALIZATION=32 ), starting model run...
+
+12/11/22 12:02:30->received finished signal from run thread 
+
+12/11/22 12:02:31->run complete, sending results to master (group_id=12 , run_id=8 , info_txt= DA_CYCLE=-9999  REALIZATION=32 )...run took: 2.201 seconds
+12/11/22 12:02:31->results of run_id 8 sent successfully
+12/11/22 12:02:31->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:10
+12/11/22 12:02:31->received parameters ( group_id=12, run_id=10, info_txt= DA_CYCLE=-9999  REALIZATION=53 ), starting model run...
+
+12/11/22 12:02:32->received finished signal from run thread 
+
+12/11/22 12:02:33->run complete, sending results to master (group_id=12 , run_id=10 , info_txt= DA_CYCLE=-9999  REALIZATION=53 )...run took: 2.21 seconds
+12/11/22 12:02:33->results of run_id 10 sent successfully
+12/11/22 12:02:33->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:12
+12/11/22 12:02:34->received parameters ( group_id=12, run_id=12, info_txt= DA_CYCLE=-9999  REALIZATION=78 ), starting model run...
+
+12/11/22 12:02:35->received finished signal from run thread 
+
+12/11/22 12:02:36->run complete, sending results to master (group_id=12 , run_id=12 , info_txt= DA_CYCLE=-9999  REALIZATION=78 )...run took: 2.208 seconds
+12/11/22 12:02:36->results of run_id 12 sent successfully
+12/11/22 12:02:36->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:15
+12/11/22 12:02:36->received parameters ( group_id=12, run_id=15, info_txt= DA_CYCLE=-9999  REALIZATION=4 ), starting model run...
+
+12/11/22 12:02:37->received finished signal from run thread 
+
+12/11/22 12:02:38->run complete, sending results to master (group_id=12 , run_id=15 , info_txt= DA_CYCLE=-9999  REALIZATION=4 )...run took: 2.205 seconds
+12/11/22 12:02:38->results of run_id 15 sent successfully
+12/11/22 12:02:38->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:19
+12/11/22 12:02:38->received parameters ( group_id=12, run_id=19, info_txt= DA_CYCLE=-9999  REALIZATION=9 ), starting model run...
+
+12/11/22 12:02:39->received finished signal from run thread 
+
+12/11/22 12:02:40->run complete, sending results to master (group_id=12 , run_id=19 , info_txt= DA_CYCLE=-9999  REALIZATION=9 )...run took: 2.213 seconds
+12/11/22 12:02:40->results of run_id 19 sent successfully
+12/11/22 12:02:40->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:22
+12/11/22 12:02:41->received parameters ( group_id=12, run_id=22, info_txt= DA_CYCLE=-9999  REALIZATION=12 ), starting model run...
+
+12/11/22 12:02:42->received finished signal from run thread 
+
+12/11/22 12:02:43->run complete, sending results to master (group_id=12 , run_id=22 , info_txt= DA_CYCLE=-9999  REALIZATION=12 )...run took: 2.189 seconds
+12/11/22 12:02:43->results of run_id 22 sent successfully
+12/11/22 12:02:43->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:25
+12/11/22 12:02:43->received parameters ( group_id=12, run_id=25, info_txt= DA_CYCLE=-9999  REALIZATION=15 ), starting model run...
+
+12/11/22 12:02:44->received finished signal from run thread 
+
+12/11/22 12:02:45->run complete, sending results to master (group_id=12 , run_id=25 , info_txt= DA_CYCLE=-9999  REALIZATION=15 )...run took: 2.184 seconds
+12/11/22 12:02:45->results of run_id 25 sent successfully
+12/11/22 12:02:45->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:27
+12/11/22 12:02:45->received parameters ( group_id=12, run_id=27, info_txt= DA_CYCLE=-9999  REALIZATION=17 ), starting model run...
+
+12/11/22 12:02:46->received finished signal from run thread 
+
+12/11/22 12:02:47->run complete, sending results to master (group_id=12 , run_id=27 , info_txt= DA_CYCLE=-9999  REALIZATION=17 )...run took: 2.197 seconds
+12/11/22 12:02:47->results of run_id 27 sent successfully
+12/11/22 12:02:47->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:30
+12/11/22 12:02:47->received parameters ( group_id=12, run_id=30, info_txt= DA_CYCLE=-9999  REALIZATION=22 ), starting model run...
+
+12/11/22 12:02:49->received finished signal from run thread 
+
+12/11/22 12:02:50->run complete, sending results to master (group_id=12 , run_id=30 , info_txt= DA_CYCLE=-9999  REALIZATION=22 )...run took: 2.204 seconds
+12/11/22 12:02:50->results of run_id 30 sent successfully
+12/11/22 12:02:50->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:35
+12/11/22 12:02:50->received parameters ( group_id=12, run_id=35, info_txt= DA_CYCLE=-9999  REALIZATION=28 ), starting model run...
+
+12/11/22 12:02:51->received finished signal from run thread 
+
+12/11/22 12:02:52->run complete, sending results to master (group_id=12 , run_id=35 , info_txt= DA_CYCLE=-9999  REALIZATION=28 )...run took: 2.208 seconds
+12/11/22 12:02:52->results of run_id 35 sent successfully
+12/11/22 12:02:52->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:38
+12/11/22 12:02:52->received parameters ( group_id=12, run_id=38, info_txt= DA_CYCLE=-9999  REALIZATION=31 ), starting model run...
+
+12/11/22 12:02:53->received finished signal from run thread 
+
+12/11/22 12:02:54->run complete, sending results to master (group_id=12 , run_id=38 , info_txt= DA_CYCLE=-9999  REALIZATION=31 )...run took: 2.197 seconds
+12/11/22 12:02:54->results of run_id 38 sent successfully
+12/11/22 12:02:54->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:39
+12/11/22 12:02:54->received parameters ( group_id=12, run_id=39, info_txt= DA_CYCLE=-9999  REALIZATION=33 ), starting model run...
+
+12/11/22 12:02:56->received finished signal from run thread 
+
+12/11/22 12:02:57->run complete, sending results to master (group_id=12 , run_id=39 , info_txt= DA_CYCLE=-9999  REALIZATION=33 )...run took: 2.192 seconds
+12/11/22 12:02:57->results of run_id 39 sent successfully
+12/11/22 12:02:57->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:42
+12/11/22 12:02:57->received parameters ( group_id=12, run_id=42, info_txt= DA_CYCLE=-9999  REALIZATION=37 ), starting model run...
+
+12/11/22 12:02:58->received finished signal from run thread 
+
+12/11/22 12:02:59->run complete, sending results to master (group_id=12 , run_id=42 , info_txt= DA_CYCLE=-9999  REALIZATION=37 )...run took: 2.208 seconds
+12/11/22 12:02:59->results of run_id 42 sent successfully
+12/11/22 12:02:59->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:45
+12/11/22 12:02:59->received parameters ( group_id=12, run_id=45, info_txt= DA_CYCLE=-9999  REALIZATION=41 ), starting model run...
+
+12/11/22 12:03:00->received finished signal from run thread 
+
+12/11/22 12:03:01->run complete, sending results to master (group_id=12 , run_id=45 , info_txt= DA_CYCLE=-9999  REALIZATION=41 )...run took: 2.204 seconds
+12/11/22 12:03:01->results of run_id 45 sent successfully
+12/11/22 12:03:01->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:49
+12/11/22 12:03:01->received parameters ( group_id=12, run_id=49, info_txt= DA_CYCLE=-9999  REALIZATION=45 ), starting model run...
+
+12/11/22 12:03:03->received finished signal from run thread 
+
+12/11/22 12:03:04->run complete, sending results to master (group_id=12 , run_id=49 , info_txt= DA_CYCLE=-9999  REALIZATION=45 )...run took: 2.204 seconds
+12/11/22 12:03:04->results of run_id 49 sent successfully
+12/11/22 12:03:04->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:53
+12/11/22 12:03:04->received parameters ( group_id=12, run_id=53, info_txt= DA_CYCLE=-9999  REALIZATION=49 ), starting model run...
+
+12/11/22 12:03:05->received finished signal from run thread 
+
+12/11/22 12:03:06->run complete, sending results to master (group_id=12 , run_id=53 , info_txt= DA_CYCLE=-9999  REALIZATION=49 )...run took: 2.204 seconds
+12/11/22 12:03:06->results of run_id 53 sent successfully
+12/11/22 12:03:06->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:55
+12/11/22 12:03:06->received parameters ( group_id=12, run_id=55, info_txt= DA_CYCLE=-9999  REALIZATION=51 ), starting model run...
+
+12/11/22 12:03:07->received finished signal from run thread 
+
+12/11/22 12:03:08->run complete, sending results to master (group_id=12 , run_id=55 , info_txt= DA_CYCLE=-9999  REALIZATION=51 )...run took: 2.218 seconds
+12/11/22 12:03:08->results of run_id 55 sent successfully
+12/11/22 12:03:08->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:58
+12/11/22 12:03:08->received parameters ( group_id=12, run_id=58, info_txt= DA_CYCLE=-9999  REALIZATION=56 ), starting model run...
+
+12/11/22 12:03:10->received finished signal from run thread 
+
+12/11/22 12:03:11->run complete, sending results to master (group_id=12 , run_id=58 , info_txt= DA_CYCLE=-9999  REALIZATION=56 )...run took: 2.203 seconds
+12/11/22 12:03:11->results of run_id 58 sent successfully
+12/11/22 12:03:11->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:62
+12/11/22 12:03:11->received parameters ( group_id=12, run_id=62, info_txt= DA_CYCLE=-9999  REALIZATION=60 ), starting model run...
+
+12/11/22 12:03:12->received finished signal from run thread 
+
+12/11/22 12:03:13->run complete, sending results to master (group_id=12 , run_id=62 , info_txt= DA_CYCLE=-9999  REALIZATION=60 )...run took: 2.218 seconds
+12/11/22 12:03:13->results of run_id 62 sent successfully
+12/11/22 12:03:13->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:64
+12/11/22 12:03:13->received parameters ( group_id=12, run_id=64, info_txt= DA_CYCLE=-9999  REALIZATION=62 ), starting model run...
+
+12/11/22 12:03:14->received finished signal from run thread 
+
+12/11/22 12:03:15->run complete, sending results to master (group_id=12 , run_id=64 , info_txt= DA_CYCLE=-9999  REALIZATION=62 )...run took: 2.199 seconds
+12/11/22 12:03:15->results of run_id 64 sent successfully
+12/11/22 12:03:15->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:66
+12/11/22 12:03:15->received parameters ( group_id=12, run_id=66, info_txt= DA_CYCLE=-9999  REALIZATION=64 ), starting model run...
+
+12/11/22 12:03:17->received finished signal from run thread 
+
+12/11/22 12:03:18->run complete, sending results to master (group_id=12 , run_id=66 , info_txt= DA_CYCLE=-9999  REALIZATION=64 )...run took: 2.215 seconds
+12/11/22 12:03:18->results of run_id 66 sent successfully
+12/11/22 12:03:18->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:70
+12/11/22 12:03:18->received parameters ( group_id=12, run_id=70, info_txt= DA_CYCLE=-9999  REALIZATION=72 ), starting model run...
+
+12/11/22 12:03:19->received finished signal from run thread 
+
+12/11/22 12:03:20->run complete, sending results to master (group_id=12 , run_id=70 , info_txt= DA_CYCLE=-9999  REALIZATION=72 )...run took: 2.203 seconds
+12/11/22 12:03:20->results of run_id 70 sent successfully
+12/11/22 12:03:20->sending ready signal to master
+Note: 'DA_CYCLE' information passed in START_RUN command
+      info txt for group_id:run_id 12:73
+12/11/22 12:03:20->received parameters ( group_id=12, run_id=73, info_txt= DA_CYCLE=-9999  REALIZATION=75 ), starting model run...
+
+12/11/22 12:03:21->received finished signal from run thread 
+
+12/11/22 12:03:22->run complete, sending results to master (group_id=12 , run_id=73 , info_txt= DA_CYCLE=-9999  REALIZATION=75 )...run took: 2.194 seconds
+12/11/22 12:03:22->results of run_id 73 sent successfully
+12/11/22 12:03:22->sending ready signal to master
+12/11/22 12:03:28->terminate requested
+

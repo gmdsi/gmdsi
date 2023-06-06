@@ -1,0 +1,351 @@
+
+                    PEST RUN RECORD: CASE case5_svda
+
+
+PEST Version: 17.3
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    12
+   Number of adjustable parameters                :    12
+   Number of parameter groups                     :     1
+   Number of observations                         :    14
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   svdabatch.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      parcalc.tpl
+   for model input files:
+      parcalc.in
+
+   (Parameter values written using double precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      model_smp.ins
+      endpoint.ins
+   for reading model output files:
+      model.smp
+      rect.endpoint7
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 12
+   Ratio of lowest/highest singular value        :  5.000000E-07
+   Record eigenvectors in SVD file               : no
+
+
+SVD Assist data:-
+
+   PEST control file holding base parameters              : case5.pst
+   Use external super parameter definition                : no
+   Jacobian matrix file                                   : case5.jco
+   Base parameter definition method                       : SVD on Q^(1/2)X
+   Calculate initial Jacobian from base sensitivities     : yes
+   Record multiple bpa files                              : no
+   Perform base parameter scale adjustment                : yes
+   SVDA_SCALADJ adjustment control variable               : 2
+
+   Calculated parameter group base sensitivity adjustment factors:-
+         Group name    Adjustment factor
+         ----------    -----------------
+         No non-log-transformed parameter groups.
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+pargp        absolute    1.5000E-02    na          switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+par1         none              relative    10.0000        0.00000       1.000000E+20
+par2         none              relative    10.0000        0.00000       1.000000E+20
+par3         none              relative    10.0000        0.00000       1.000000E+20
+par4         none              relative    10.0000        0.00000       1.000000E+20
+par5         none              relative    10.0000        0.00000       1.000000E+20
+par6         none              relative    10.0000        0.00000       1.000000E+20
+par7         none              relative    10.0000        0.00000       1.000000E+20
+par8         none              relative    10.0000        0.00000       1.000000E+20
+par9         none              relative    10.0000        0.00000       1.000000E+20
+par10        none              relative    10.0000        0.00000       1.000000E+20
+par11        none              relative    10.0000        0.00000       1.000000E+20
+par12        none              relative    10.0000        0.00000       1.000000E+20
+
+Name         Group          Scale         Offset        Model command number
+par1         pargp         1.00000       -10.0000            1
+par2         pargp         1.00000       -10.0000            1
+par3         pargp         1.00000       -10.0000            1
+par4         pargp         1.00000       -10.0000            1
+par5         pargp         1.00000       -10.0000            1
+par6         pargp         1.00000       -10.0000            1
+par7         pargp         1.00000       -10.0000            1
+par8         pargp         1.00000       -10.0000            1
+par9         pargp         1.00000       -10.0000            1
+par10        pargp         1.00000       -10.0000            1
+par11        pargp         1.00000       -10.0000            1
+par12        pargp         1.00000       -10.0000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ well01_1                5.74724          10.00       heads       
+ well02_1                5.69616          10.00       heads       
+ well03_1                5.49199          10.00       heads       
+ well04_1                4.09190          10.00       heads       
+ well05_1                3.92014          10.00       heads       
+ well06_1                4.05991          10.00       heads       
+ well07_1                2.59369          10.00       heads       
+ well08_1                3.25979          10.00       heads       
+ well09_1                2.97368          10.00       heads       
+ well10_1                1.12417          10.00       heads       
+ well11_1                1.20361          10.00       heads       
+ well12_1                1.19256          10.00       heads       
+ part_time               0.00000          0.000       time        
+ part_east               0.00000          0.000       distance    
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -3.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   : na
+   Maximum relative parameter change (relative-limited changes) : 0.10000
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.50000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :   2
+   Objective function termination limit                         :  15.000    
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   62.670    
+   Contribution to phi from observation group "heads"       =   62.670    
+   Contribution to phi from observation group "time"        =   0.0000    
+   Contribution to phi from observation group "distance"    =   0.0000    
+
+      Current parameter values
+      par1             10.0000    
+      par2             10.0000    
+      par3             10.0000    
+      par4             10.0000    
+      par5             10.0000    
+      par6             10.0000    
+      par7             10.0000    
+      par8             10.0000    
+      par9             10.0000    
+      par10            10.0000    
+      par11            10.0000    
+      par12            10.0000    
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   62.670    
+   Contribution to phi from observation group "heads"       :   62.670    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+
+       Lambda =   10.000     ----->
+          Phi =   12.345      (  0.197 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:   12.345    
+
+      Current parameter values                 Previous parameter values
+      par1             9.87004                 par1              10.0000    
+      par2             9.90112                 par2              10.0000    
+      par3             10.0484                 par3              10.0000    
+      par4             9.94587                 par4              10.0000    
+      par5             9.92024                 par5              10.0000    
+      par6             9.99576                 par6              10.0000    
+      par7             9.95803                 par7              10.0000    
+      par8             10.0765                 par8              10.0000    
+      par9             10.0122                 par9              10.0000    
+      par10            9.93373                 par10             10.0000    
+      par11            10.1479                 par11             10.0000    
+      par12            9.97488                 par12             10.0000    
+   Maximum relative change: 1.4787E-02 ["par11"]
+
+   Optimisation complete: objective function less than PHISTOPTHRESH.
+   Total model calls:      2
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ par1            9.87004    
+ par2            9.90112    
+ par3            10.0484    
+ par4            9.94587    
+ par5            9.92024    
+ par6            9.99576    
+ par7            9.95803    
+ par8            10.0765    
+ par9            10.0122    
+ par10           9.93373    
+ par11           10.1479    
+ par12           9.97488    
+
+See file case5_svda.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+well01_1               5.74724        5.62468       0.122559        10.00      heads       
+well02_1               5.69616        5.53531       0.160848        10.00      heads       
+well03_1               5.49199        5.43864       5.334845E-02    10.00      heads       
+well04_1               4.09190        4.02807       6.382860E-02    10.00      heads       
+well05_1               3.92014        3.97792      -5.777958E-02    10.00      heads       
+well06_1               4.05991        4.02655       3.335685E-02    10.00      heads       
+well07_1               2.59369        2.70695      -0.113265        10.00      heads       
+well08_1               3.25979        3.03417       0.225622        10.00      heads       
+well09_1               2.97368        3.04009      -6.640579E-02    10.00      heads       
+well10_1               1.12417        1.10844       1.572686E-02    10.00      heads       
+well11_1               1.20361        1.15076       5.285495E-02    10.00      heads       
+well12_1               1.19256        1.19254       1.864000E-05    10.00      heads       
+part_time              0.00000        8864.57       -8864.57        0.000      time        
+part_east              0.00000        239.212       -239.212        0.000      distance    
+
+See file case5_svda.res for more details of residuals in graph-ready format.
+
+See file case5_svda.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   12.345    
+  Contribution to phi from observation group "heads"        =   12.345    
+  Contribution to phi from observation group "time"         =   0.0000    
+  Contribution to phi from observation group "distance"     =   0.0000    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.99858    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    12
+     Mean value of non-zero weighted residuals                      =  0.4089    
+     Maximum weighted residual [observation "well08_1"]             =   2.256    
+     Minimum weighted residual [observation "well07_1"]             =  -1.133    
+     Standard variance of weighted residuals                        =   1.029    
+     Standard error of weighted residuals                           =   1.014    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "heads":-
+     Number of residuals with non-zero weight                       =    12
+     Mean value of non-zero weighted residuals                      =  0.4089    
+     Maximum weighted residual [observation "well08_1"]             =   2.256    
+     Minimum weighted residual [observation "well07_1"]             =  -1.133    
+     "Variance" of weighted residuals                               =   1.029    
+     "Standard error" of weighted residuals                         =   1.014    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "time":-
+     Number of residuals with non-zero weight                       =     0
+
+  Residuals for observation group "distance":-
+     Number of residuals with non-zero weight                       =     0
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+

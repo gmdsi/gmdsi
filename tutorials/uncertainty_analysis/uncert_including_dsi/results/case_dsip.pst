@@ -1,0 +1,74 @@
+pcf
+* control data
+restart prediction
+      14      14       1      14       5
+         1         1  single point
+10.0   -3.0     0.3   0.01    10
+10.0   10.0   0.001  absparmax(1)=0.5
+0.1
+50    0.001   4    4   0.001   4
+1   1   1   parsaveitn
+* parameter groups
+pg1  absolute   0.01   0.0    switch   2.0   parabolic
+* parameter data
+par1          none    absolute(1)  -0.1442239      -10.0    10.0    pg1     1.0   0.0
+par2          none    absolute(1)   0.7894672      -10.0    10.0    pg1     1.0   0.0
+par3          none    absolute(1)   0.6028578      -10.0    10.0    pg1     1.0   0.0
+par4          none    absolute(1)   0.4237248      -10.0    10.0    pg1     1.0   0.0
+par5          none    absolute(1)  -0.1678851      -10.0    10.0    pg1     1.0   0.0
+par6          none    absolute(1)  -0.1385687      -10.0    10.0    pg1     1.0   0.0
+par7          none    absolute(1)  -2.9166267E-02  -10.0    10.0    pg1     1.0   0.0
+par8          none    absolute(1)   0.3929846      -10.0    10.0    pg1     1.0   0.0
+par9          none    absolute(1)   0.2184678      -10.0    10.0    pg1     1.0   0.0
+par10         none    absolute(1)  -7.1189967E-02  -10.0    10.0    pg1     1.0   0.0
+par11         none    absolute(1)  -0.3940859      -10.0    10.0    pg1     1.0   0.0
+par12         none    absolute(1)  -0.4843216      -10.0    10.0    pg1     1.0   0.0
+par13         none    absolute(1)  -0.1776627      -10.0    10.0    pg1     1.0   0.0
+par14         none    absolute(1)   9.6553841E-02  -10.0    10.0    pg1     1.0   0.0
+* observation groups
+heads
+time
+distance
+regul_pg1
+predict
+* observation data
+well01_1                  5.747240            10.00000          heads
+well02_1                  5.696160            10.00000          heads
+well03_1                  5.491990            10.00000          heads
+well04_1                  4.091900            10.00000          heads
+well05_1                  3.920140            10.00000          heads
+well06_1                  4.059910            10.00000          heads
+well07_1                  2.593690            10.00000          heads
+well08_1                  3.259790            10.00000          heads
+well09_1                  2.973680            10.00000          heads
+well10_1                  1.124170            10.00000          heads
+well11_1                  1.203610            10.00000          heads
+well12_1                  1.192560            10.00000          heads
+part_time                 0.000000            0.000000          time
+part_east                 0.000000            0.000000          predict
+* model command line
+dsimod case_dsi.bin case_dsi.in case_dsi.out
+* model input/output
+case_dsi.tpl case_dsi.in
+case_dsi.ins case_dsi.out
+* prior information
+par1          1.0 * par1 = -0.1442239      1.0 regul_pg1
+par2          1.0 * par2 =  0.7894672      1.0 regul_pg1
+par3          1.0 * par3 =  0.6028578      1.0 regul_pg1
+par4          1.0 * par4 =  0.4237248      1.0 regul_pg1
+par5          1.0 * par5 = -0.1678851      1.0 regul_pg1
+par6          1.0 * par6 = -0.1385687      1.0 regul_pg1
+par7          1.0 * par7 = -2.9166267E-02  1.0 regul_pg1
+par8          1.0 * par8 =  0.3929846      1.0 regul_pg1
+par9          1.0 * par9 =  0.2184678      1.0 regul_pg1
+par10         1.0 * par10 = -7.1189967E-02  1.0 regul_pg1
+par11         1.0 * par11 = -0.3940859      1.0 regul_pg1
+par12         1.0 * par12 = -0.4843216      1.0 regul_pg1
+par13         1.0 * par13 = -0.1776627      1.0 regul_pg1
+par14         1.0 * par14 =  9.6553841E-02  1.0 regul_pg1
+* predictive analysis
+ -1
+ 15.891  16.5   30.0
+ 0.00 0.005 0.2 1.3 20
+ 0.00 0.05
+ 4    0.0    0.001   4

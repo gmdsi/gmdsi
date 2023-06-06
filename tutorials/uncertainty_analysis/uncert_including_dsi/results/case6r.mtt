@@ -1,0 +1,8 @@
+ PARAMETER STATISTICAL MATRICES: CASE case6r
+
+ OPTIMISATION ITERATION NUMBER  2
+
+ Parameter statistical matrices are not calculated as some form of 
+ regularisation is being implemented on this run.
+
+ Use the PREDUNC7 utility to obtain a full posterior covariance matrix.

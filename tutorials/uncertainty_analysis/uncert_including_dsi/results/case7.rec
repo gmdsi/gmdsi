@@ -1,0 +1,1266 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.1.6
+binary compiled on Dec  9 2021 at 14:59:31
+
+using control file: "case7"
+in directory: "E:\temp1"
+on host: "DESKTOP-2020"
+started at 12/11/22 11:44:54
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '10.0  -3.0  0.3  0.03  10' 
+  -->  line number 10: '1  1  1' 
+  -->  line number 12: '1' 
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 104
+    Number of adjustable parameters = 104
+    Number of observations = 14
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 7
+    phiredstp = 0.005
+    nphistp = 4
+    nphinored = 4
+    relparstp = 0.005
+    nrelpar = 4
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 1,
+forgive_unknown_args: 0
+max_run_fail: 3
+panther_poll_interval: 1
+parameter_covariance: param.unc
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.01
+  0.1
+  1
+
+...pestpp-mou options:
+mou_generator: DE
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 1
+ies_reg_factor: 0
+ies_verbose_level: 0
+ies_use_prior_scaling: 0
+ies_num_reals: 20
+ies_bad_phi: 1e+300
+ies_bad_phi_sigma: 1e+300
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    model.bat
+
+Model interface files:-
+    template files:
+      hk.tpl
+    model input files:
+      hk.pts
+
+    instruction files:
+      model_smp.ins
+      endpoint.ins
+    model output files:
+      model.smp
+      rect.endpoint7
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+k                   RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+k_ppt1       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt2       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt3       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt4       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt5       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt6       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt7       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt8       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt9       log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt10      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt11      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt12      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt13      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt14      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt15      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt16      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt17      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt18      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt19      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt20      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt21      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt22      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt23      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt24      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt25      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt26      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt27      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt28      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt29      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt30      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt31      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt32      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt33      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt34      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt35      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt36      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt37      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt38      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt39      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt40      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt41      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt42      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt43      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt44      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt45      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt46      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt47      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt48      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt49      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt50      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt51      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt52      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt53      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt54      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt55      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt56      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt57      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt58      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt59      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt60      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt61      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt62      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt63      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt64      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt65      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt66      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt67      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt68      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt69      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt70      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt71      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt72      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt73      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt74      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt75      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt76      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt77      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt78      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt79      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt80      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt81      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt82      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt83      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt84      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt85      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt86      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt87      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt88      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt89      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt90      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt91      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt92      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt93      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt94      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt95      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt96      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt97      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt98      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt99      log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt100     log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt101     log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt102     log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt103     log                     FACTOR              1           0.01            100            k              1              0                   1
+k_ppt104     log                     FACTOR              1           0.01            100            k              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+well01_1                          5.74724                heads                  10
+well02_1                          5.69616                heads                  10
+well03_1                          5.49199                heads                  10
+well04_1                           4.0919                heads                  10
+well05_1                          3.92014                heads                  10
+well06_1                          4.05991                heads                  10
+well07_1                          2.59369                heads                  10
+well08_1                          3.25979                heads                  10
+well09_1                          2.97368                heads                  10
+well10_1                          1.12417                heads                  10
+well11_1                          1.20361                heads                  10
+well12_1                          1.19256                heads                  10
+part_time                               0                 time                   0
+part_east                               0             distance                   0
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 104
+    eigthresh = 5e-07
+
+
+
+
+
+...resetting max_run_fail to 1
+...resetting overdue_giveup_fac to 2.0
+...resetting overdue_resched_fac to 1.15
+
+  ---  initializing  ---  
+
+  ---  using glm algorithm  ---  
+...using REDSVD for truncated svd solve
+...maxsing: 104
+...eigthresh:  5e-07
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.1 , 1 , 10 , 
+...using lambda scaling factors: 1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  1
+
+  ---  sanity_check warnings  ---  
+...noptmax > 3, this is a lot of iterations for an ensemble method, please consider using fewer iterations for better outcomes
+...continuing initialization...
+...initializing prior parameter covariance matrix
+...parcov loaded  from unc file param.unc
+...initializing observation noise covariance matrix
+WARNING: Cov::try_from(): 2 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
+
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...drawing parameter realizations:  20
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  20
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+checking for denormal values in pe
+...saved initial parameter ensemble to  case7.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  case7.obs+noise.csv
+...setting weights ensemble from control file weights
+...using subset in lambda testing, number of realizations used in subset testing:  1
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 20
+...saved initial obs ensemble to case7.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        15778.9        31269.2        238.897         105652
+         actual        15819.2          31428        238.897         105710
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...checking for prior-data conflict...
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        15778.9        31269.2        238.897         105652
+         actual        15819.2          31428        238.897         105710
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...current lambda: 100
+
+  ---  initialization complete  ---  
+
+  ---  starting solve for iteration: 1  ---  
+...current lambda:  100
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 10
+see .log file for more details
+...finished calcs for: 10
+...starting calcs for glm factor 100
+see .log file for more details
+...finished calcs for: 100
+...starting calcs for glm factor 1000
+see .log file for more details
+...finished calcs for: 1000
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  19:BASE, 
+...subset idx:oe real name:  19:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  15778.9
+...last stdev:  31269.2
+
+  ---  phi summary for lambda, scale fac:10 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        147.443              0        147.443        147.443
+         actual        147.443              0        147.443        147.443
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:100 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.983              0        144.983        144.983
+         actual        144.983              0        144.983        144.983
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:1000 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        175.488              0        175.488        175.488
+         actual        175.488              0        175.488        175.488
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 100 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        144.983              0        144.983        144.983
+         actual        144.983              0        144.983        144.983
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:100 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 100 , 1 , 
+       phi type           mean            std            min            max
+       measured        783.325        711.753        137.985        2523.85
+         actual         760.75         715.67        93.8796        2528.54
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  16567.8
+...current best mean phi:  783.325
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  75  ---  
+
+  ---  EnsembleMethod iteration 1 report  ---  
+   number of active realizations:  20
+   number of model runs:           42
+      current obs ensemble saved to case7.1.obs.csv
+      current par ensemble saved to case7.1.par.csv
+       phi type           mean            std            min            max
+       measured        783.325        711.753        137.985        2523.85
+         actual         760.75         715.67        93.8796        2528.54
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   577.935     32.1858               0               0        94        36        50
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.1.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 
+...best phi yet:  783.325
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 2  ---  
+...current lambda:  75
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 7.5
+see .log file for more details
+...finished calcs for: 7.5
+...starting calcs for glm factor 75
+see .log file for more details
+...finished calcs for: 75
+...starting calcs for glm factor 750
+see .log file for more details
+...finished calcs for: 750
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:BASE, 
+...subset idx:oe real name:  0:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  783.325
+...last stdev:  711.753
+
+  ---  phi summary for lambda, scale fac:7.5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        38.5174              0        38.5174        38.5174
+         actual        38.5174              0        38.5174        38.5174
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:75 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        78.1302              0        78.1302        78.1302
+         actual        78.1302              0        78.1302        78.1302
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:750 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured         114.45              0         114.45         114.45
+         actual         114.45              0         114.45         114.45
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 7.5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        38.5174              0        38.5174        38.5174
+         actual        38.5174              0        38.5174        38.5174
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:7.5 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 7.5 , 1 , 
+       phi type           mean            std            min            max
+       measured        79.1798        31.4741        38.5174        174.684
+         actual        73.8095        33.8842        38.5174        185.594
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  822.491
+...current best mean phi:  79.1798
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  5.625  ---  
+
+  ---  EnsembleMethod iteration 2 report  ---  
+   number of active realizations:  20
+   number of model runs:           64
+      current obs ensemble saved to case7.2.obs.csv
+      current par ensemble saved to case7.2.par.csv
+       phi type           mean            std            min            max
+       measured        79.1798        31.4741        38.5174        174.684
+         actual        73.8095        33.8842        38.5174        185.594
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   542.801     51.5451               0               0        94   1.7e+02        68
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.2.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 79.1798 , 
+...best phi yet:  79.1798
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 3  ---  
+...current lambda:  5.625
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.5625
+see .log file for more details
+...finished calcs for: 0.5625
+...starting calcs for glm factor 5.625
+see .log file for more details
+...finished calcs for: 5.625
+...starting calcs for glm factor 56.25
+see .log file for more details
+...finished calcs for: 56.25
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:BASE, 
+...subset idx:oe real name:  0:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  79.1798
+...last stdev:  31.4741
+
+  ---  phi summary for lambda, scale fac:0.5625 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        26.1887              0        26.1887        26.1887
+         actual        26.1887              0        26.1887        26.1887
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:5.625 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        31.7322              0        31.7322        31.7322
+         actual        31.7322              0        31.7322        31.7322
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:56.25 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        37.1959              0        37.1959        37.1959
+         actual        37.1959              0        37.1959        37.1959
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.5625 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        26.1887              0        26.1887        26.1887
+         actual        26.1887              0        26.1887        26.1887
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.5625 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.5625 , 1 , 
+       phi type           mean            std            min            max
+       measured        42.2992        12.6139        25.9653        68.2984
+         actual        38.7374        7.93086        26.1887        58.1364
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  83.1387
+...current best mean phi:  42.2992
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.421875  ---  
+
+  ---  EnsembleMethod iteration 3 report  ---  
+   number of active realizations:  20
+   number of model runs:           86
+      current obs ensemble saved to case7.3.obs.csv
+      current par ensemble saved to case7.3.par.csv
+       phi type           mean            std            min            max
+       measured        42.2992        12.6139        25.9653        68.2984
+         actual        38.7374        7.93086        26.1887        58.1364
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   771.028     62.7378               0               0        94        31        79
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.3.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 79.1798 , 42.2992 , 
+...best phi yet:  42.2992
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 4  ---  
+...current lambda:  0.421875
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.0421875
+see .log file for more details
+...finished calcs for: 0.0421875
+...starting calcs for glm factor 0.421875
+see .log file for more details
+...finished calcs for: 0.421875
+...starting calcs for glm factor 4.21875
+see .log file for more details
+...finished calcs for: 4.21875
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:BASE, 
+...subset idx:oe real name:  0:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  42.2992
+...last stdev:  12.6139
+
+  ---  phi summary for lambda, scale fac:0.0421875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        23.3346              0        23.3346        23.3346
+         actual        23.3346              0        23.3346        23.3346
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.421875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        23.8265              0        23.8265        23.8265
+         actual        23.8265              0        23.8265        23.8265
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:4.21875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        25.2823              0        25.2823        25.2823
+         actual        25.2823              0        25.2823        25.2823
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.0421875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        23.3346              0        23.3346        23.3346
+         actual        23.3346              0        23.3346        23.3346
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.0421875 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.0421875 , 1 , 
+       phi type           mean            std            min            max
+       measured        34.5643        12.1221        20.2657        63.8746
+         actual         32.067        4.28693        23.3346          42.82
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  44.4142
+...current best mean phi:  34.5643
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.0316406  ---  
+
+  ---  EnsembleMethod iteration 4 report  ---  
+   number of active realizations:  20
+   number of model runs:           108
+      current obs ensemble saved to case7.4.obs.csv
+      current par ensemble saved to case7.4.par.csv
+       phi type           mean            std            min            max
+       measured        34.5643        12.1221        20.2657        63.8746
+         actual         32.067        4.28693        23.3346          42.82
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   924.266     63.6319               0               0        94        15        81
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.4.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 79.1798 , 42.2992 , 34.5643 , 
+...best phi yet:  34.5643
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 5  ---  
+...current lambda:  0.0316406
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.00316406
+see .log file for more details
+...finished calcs for: 0.00316406
+...starting calcs for glm factor 0.0316406
+see .log file for more details
+...finished calcs for: 0.0316406
+...starting calcs for glm factor 0.316406
+see .log file for more details
+...finished calcs for: 0.316406
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:BASE, 
+...subset idx:oe real name:  0:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  34.5643
+...last stdev:  12.1221
+
+  ---  phi summary for lambda, scale fac:0.00316406 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        21.7728              0        21.7728        21.7728
+         actual        21.7728              0        21.7728        21.7728
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.0316406 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        21.8016              0        21.8016        21.8016
+         actual        21.8016              0        21.8016        21.8016
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.316406 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        22.0388              0        22.0388        22.0388
+         actual        22.0388              0        22.0388        22.0388
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.00316406 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        21.7728              0        21.7728        21.7728
+         actual        21.7728              0        21.7728        21.7728
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.00316406 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.00316406 , 1 , 
+       phi type           mean            std            min            max
+       measured        32.3332        11.8112        18.1199        61.3424
+         actual        30.6029        4.24369        21.7728        40.2124
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  36.2926
+...current best mean phi:  32.3332
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.00237305  ---  
+
+  ---  EnsembleMethod iteration 5 report  ---  
+   number of active realizations:  20
+   number of model runs:           130
+      current obs ensemble saved to case7.5.obs.csv
+      current par ensemble saved to case7.5.par.csv
+       phi type           mean            std            min            max
+       measured        32.3332        11.8112        18.1199        61.3424
+         actual        30.6029        4.24369        21.7728        40.2124
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   1068.61     62.8064               0               0        94        14        84
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.5.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 79.1798 , 42.2992 , 34.5643 , 32.3332 , 
+...best phi yet:  32.3332
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 6  ---  
+...current lambda:  0.00237305
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 0.000237305
+see .log file for more details
+...finished calcs for: 0.000237305
+...starting calcs for glm factor 0.00237305
+see .log file for more details
+...finished calcs for: 0.00237305
+...starting calcs for glm factor 0.0237305
+see .log file for more details
+...finished calcs for: 0.0237305
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:BASE, 
+...subset idx:oe real name:  0:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  32.3332
+...last stdev:  11.8112
+
+  ---  phi summary for lambda, scale fac:0.000237305 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        20.6324              0        20.6324        20.6324
+         actual        20.6324              0        20.6324        20.6324
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.00237305 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        20.6339              0        20.6339        20.6339
+         actual        20.6339              0        20.6339        20.6339
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.0237305 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        20.6492              0        20.6492        20.6492
+         actual        20.6492              0        20.6492        20.6492
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.000237305 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        20.6324              0        20.6324        20.6324
+         actual        20.6324              0        20.6324        20.6324
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.000237305 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.000237305 , 1 , 
+       phi type           mean            std            min            max
+       measured        31.0491         11.617        16.9694        59.5764
+         actual        29.8524        4.72732        20.6324        42.7815
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  33.9498
+...current best mean phi:  31.0491
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.000177979  ---  
+
+  ---  EnsembleMethod iteration 6 report  ---  
+   number of active realizations:  20
+   number of model runs:           152
+      current obs ensemble saved to case7.6.obs.csv
+      current par ensemble saved to case7.6.par.csv
+       phi type           mean            std            min            max
+       measured        31.0491         11.617        16.9694        59.5764
+         actual        29.8524        4.72732        20.6324        42.7815
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   1217.99     61.5402               0               0        94       8.5        86
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.6.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 79.1798 , 42.2992 , 34.5643 , 32.3332 , 31.0491 , 
+...best phi yet:  31.0491
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 7  ---  
+...current lambda:  0.000177979
+...preparing fast-look containers for threaded localization solve
+...starting calcs for glm factor 1.77979e-05
+see .log file for more details
+...finished calcs for: 1.77979e-05
+...starting calcs for glm factor 0.000177979
+see .log file for more details
+...finished calcs for: 0.000177979
+...starting calcs for glm factor 0.00177979
+see .log file for more details
+...finished calcs for: 0.00177979
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:BASE, 
+...subset idx:oe real name:  0:BASE, 
+
+  ---  evaluting upgrade ensembles  ---  
+...last mean:  31.0491
+...last stdev:  11.617
+
+  ---  phi summary for lambda, scale fac:1.77979e-05 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        19.6443              0        19.6443        19.6443
+         actual        19.6443              0        19.6443        19.6443
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.000177979 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        19.6444              0        19.6444        19.6444
+         actual        19.6444              0        19.6444        19.6444
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for lambda, scale fac:0.00177979 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        19.6454              0        19.6454        19.6454
+         actual        19.6454              0        19.6454        19.6454
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  phi summary for best lambda, scale fac: 1.77979e-05 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        19.6443              0        19.6443        19.6443
+         actual        19.6443              0        19.6443        19.6443
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:1.77979e-05 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 1.77979e-05 , 1 , 
+       phi type           mean            std            min            max
+       measured        29.9135        11.4695        15.6845        58.5555
+         actual         29.227        5.26612        19.6443        43.5209
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  32.6015
+...current best mean phi:  29.9135
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  1.33484e-05  ---  
+
+  ---  EnsembleMethod iteration 7 report  ---  
+   number of active realizations:  20
+   number of model runs:           174
+      current obs ensemble saved to case7.7.obs.csv
+      current par ensemble saved to case7.7.par.csv
+       phi type           mean            std            min            max
+       measured        29.9135        11.4695        15.6845        58.5555
+         actual         29.227        5.26612        19.6443        43.5209
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+   ---  Parameter Group Change Summmary  ---    
+   (compared to the initial ensemble using active realizations)
+group           mean change  std change  n at/near bnds  % at/near bnds   init CV   curr CV n CV decr
+k                   1358.32     60.3373               0               0        94        18        86
+    Note: parameter change summary sorted according to abs 'mean change'.
+          'n CV decr' is the number of parameters with current CV less 30% of the initial CV
+
+...saved parameter change summary to case7.7.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.005
+...nphistp:  4
+...nphinored (also used for consecutive bad lambda cycles):  4
+...best mean phi sequence: 15778.9 , 783.325 , 79.1798 , 42.2992 , 34.5643 , 32.3332 , 31.0491 , 29.9135 , 
+...best phi yet:  29.9135
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+
+pestpp-ies analysis complete...
+started at 12/11/22 11:44:54
+finished at 12/11/22 11:47:51
+took 2.95 minutes

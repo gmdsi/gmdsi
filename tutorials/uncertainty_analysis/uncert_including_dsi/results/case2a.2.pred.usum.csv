@@ -1,0 +1,3 @@
+name,prior_mean,prior_stdev,prior_lower_bound,prior_upper_bound,post_mean,post_stdev,post_lower_bound,post_upper_bound
+part_east,245.009,92.8559,59.2973,430.721,234.51,20.122,194.266,274.754
+part_time,6850.01,408.947,6032.11,7667.9,7014.33,280.578,6453.18,7575.49

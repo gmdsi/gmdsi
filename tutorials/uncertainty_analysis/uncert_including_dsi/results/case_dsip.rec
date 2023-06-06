@@ -1,0 +1,1050 @@
+
+                     PEST RUN RECORD: CASE case_dsip
+
+
+PEST Version: 17.3
+
+
+PEST run mode:-
+
+   Predictive analyzer mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    14
+   Number of adjustable parameters                :    14
+   Number of parameter groups                     :     1
+   Number of observations                         :    14
+   Number of prior estimates                      :    14
+
+
+Model command line(s):-
+
+   dsimod case_dsi.bin case_dsi.in case_dsi.out
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      case_dsi.tpl
+   for model input files:
+      case_dsi.in
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      case_dsi.ins
+   for reading model output files:
+      case_dsi.out
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+pg1          absolute    1.0000E-02    na          switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+par1         none              abs(1)    -0.144224       -10.0000        10.0000    
+par2         none              abs(1)     0.789467       -10.0000        10.0000    
+par3         none              abs(1)     0.602858       -10.0000        10.0000    
+par4         none              abs(1)     0.423725       -10.0000        10.0000    
+par5         none              abs(1)    -0.167885       -10.0000        10.0000    
+par6         none              abs(1)    -0.138569       -10.0000        10.0000    
+par7         none              abs(1)    -2.916627E-02   -10.0000        10.0000    
+par8         none              abs(1)     0.392985       -10.0000        10.0000    
+par9         none              abs(1)     0.218468       -10.0000        10.0000    
+par10        none              abs(1)    -7.118997E-02   -10.0000        10.0000    
+par11        none              abs(1)    -0.394086       -10.0000        10.0000    
+par12        none              abs(1)    -0.484322       -10.0000        10.0000    
+par13        none              abs(1)    -0.177663       -10.0000        10.0000    
+par14        none              abs(1)     9.655384E-02   -10.0000        10.0000    
+
+Name         Group          Scale         Offset        Model command number
+par1         pg1           1.00000        0.00000            1
+par2         pg1           1.00000        0.00000            1
+par3         pg1           1.00000        0.00000            1
+par4         pg1           1.00000        0.00000            1
+par5         pg1           1.00000        0.00000            1
+par6         pg1           1.00000        0.00000            1
+par7         pg1           1.00000        0.00000            1
+par8         pg1           1.00000        0.00000            1
+par9         pg1           1.00000        0.00000            1
+par10        pg1           1.00000        0.00000            1
+par11        pg1           1.00000        0.00000            1
+par12        pg1           1.00000        0.00000            1
+par13        pg1           1.00000        0.00000            1
+par14        pg1           1.00000        0.00000            1
+
+
+Prior information:-
+
+Prior info               Factor             Parameter              Prior         Weight
+name                                                               information
+                par1      1.00000       *       par1          =   -0.144224       1.000
+                par2      1.00000       *       par2          =    0.789467       1.000
+                par3      1.00000       *       par3          =    0.602858       1.000
+                par4      1.00000       *       par4          =    0.423725       1.000
+                par5      1.00000       *       par5          =   -0.167885       1.000
+                par6      1.00000       *       par6          =   -0.138569       1.000
+                par7      1.00000       *       par7          =   -2.916627E-02   1.000
+                par8      1.00000       *       par8          =    0.392985       1.000
+                par9      1.00000       *       par9          =    0.218468       1.000
+               par10      1.00000       *       par10         =   -7.118997E-02   1.000
+               par11      1.00000       *       par11         =   -0.394086       1.000
+               par12      1.00000       *       par12         =   -0.484322       1.000
+               par13      1.00000       *       par13         =   -0.177663       1.000
+               par14      1.00000       *       par14         =    9.655384E-02   1.000
+
+Prior Info Name           Observation Group
+par1                         regul_pg1
+par2                         regul_pg1
+par3                         regul_pg1
+par4                         regul_pg1
+par5                         regul_pg1
+par6                         regul_pg1
+par7                         regul_pg1
+par8                         regul_pg1
+par9                         regul_pg1
+par10                        regul_pg1
+par11                        regul_pg1
+par12                        regul_pg1
+par13                        regul_pg1
+par14                        regul_pg1
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ well01_1                5.74724          10.00       heads       
+ well02_1                5.69616          10.00       heads       
+ well03_1                5.49199          10.00       heads       
+ well04_1                4.09190          10.00       heads       
+ well05_1                3.92014          10.00       heads       
+ well06_1                4.05991          10.00       heads       
+ well07_1                2.59369          10.00       heads       
+ well08_1                3.25979          10.00       heads       
+ well09_1                2.97368          10.00       heads       
+ well10_1                1.12417          10.00       heads       
+ well11_1                1.20361          10.00       heads       
+ well12_1                1.19256          10.00       heads       
+ part_time               0.00000          0.000       time        
+
+
+Prediction:-
+
+Prediction name         Prediction        Weight       Group
+ part_east                    na             na       predict     
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -3.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 1.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   : na
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Absolute parameter change limit (1)                          : 0.50000
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.10000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.10000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :  50
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : yes
+
+
+Extra settings for predictive analysis:-
+
+   Search for maximum or minimum prediction                     : minimum
+   Phi defining calibration acceptance                          :  15.891    
+   Maximum acceptable phi                                       :  16.500    
+   Phi at which relative phi reduction calculation changes      :  30.000    
+   Include effect of predictive noise                           : no
+
+   Limiting absolute prediction change between lambdas          :  0.0000    
+   Limiting relative prediction change between lambdas          : 5.00000E-03
+   Use line search for calculating parameter upgrade?           : yes
+   Initial line search factor                                   : 0.20000    
+   Line search refinement factor                                :  1.3000    
+   Maximum number of line search runs per lambda                :  20
+
+   Absolute prediction change below which to begin use of
+   central derivatives                                          :  0.0000             
+   Relative prediction change below which to begin use of
+   central derivatives                                          : 5.00000E-02         
+
+   Maximum number of consecutive failures to improve prediction :   3
+   Minimal absolute prediction change indicating convergence    :  0.0000    
+   Minimal relative prediction change indicating convergence    : 0.10000E-02
+   No. of consecutive iterations with minimal prediction change :   4
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   11.891    
+   Contribution to phi from observation group "heads"       =   11.891    
+   Contribution to phi from observation group "time"        =   0.0000    
+   Contribution to phi from observation group "distance"    =   0.0000    
+   Contribution to phi from observation group "regul_pg1"   =   0.0000    
+   Prediction                                               =   224.81    
+
+      Current parameter values
+      par1           -0.144224    
+      par2            0.789467    
+      par3            0.602858    
+      par4            0.423725    
+      par5           -0.167885    
+      par6           -0.138569    
+      par7           -2.916627E-02
+      par8            0.392985    
+      par9            0.218468    
+      par10          -7.118997E-02
+      par11          -0.394086    
+      par12          -0.484322    
+      par13          -0.177663    
+      par14           9.655384E-02
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   11.891    
+   Contribution to phi from observation group "heads"       :   11.891    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   0.0000    
+   Minimum prediction so far for phi less than PD1          :   224.81    
+
+       Lambda =   10.000     ----->
+
+         Line search factor =  0.20000    
+                        Phi =   10.660    
+                 Prediction =   215.55    
+
+         Line search factor =  0.26000    
+                        Phi =   10.424    
+                 Prediction =   213.61    
+
+         Line search factor =  0.33800    
+                        Phi =   10.206    
+                 Prediction =   211.02    
+
+         Line search factor =  0.43940    
+                        Phi =   10.084    
+                 Prediction =   208.69    
+
+         Line search factor =  0.57122    
+                        Phi =   10.186    
+                 Prediction =   206.37    
+
+         Line search factor =  0.74259    
+                        Phi =   10.693    
+                 Prediction =   203.57    
+
+         Line search factor =  0.96536    
+                        Phi =   12.094    
+                 Prediction =   199.42    
+
+         Line search factor =   1.2550    
+                        Phi =   15.240    
+                 Prediction =   192.59    
+
+         Line search factor =   1.6315    
+                        Phi =   21.461    
+                 Prediction =   179.50    
+
+         Line search factor =   1.3237    
+                        Phi =   16.199    
+                 Prediction =   190.49    
+
+       Lambda =   4.6416     ----->
+
+         Line search factor =   1.1609    
+                        Phi =   9.2792    
+                 Prediction =   194.35    
+
+         Line search factor =   1.5092    
+                        Phi =   11.254    
+                 Prediction =   183.45    
+
+         Line search factor =   1.9620    
+                        Phi =   15.800    
+                 Prediction =   166.15    
+
+         Line search factor =   2.5506    
+                        Phi =   25.124    
+                 Prediction =   147.09    
+
+         Line search factor =   1.9931    
+                        Phi =   16.188    
+                 Prediction =   165.14    
+
+         Line search factor =   1.9936    
+                        Phi =   16.195    
+                 Prediction =   165.12    
+
+         Line search factor =   1.9936    
+                        Phi =   16.196    
+                 Prediction =   165.12    
+
+       Lambda =   2.1544     ----->
+
+         Line search factor =   1.7485    
+                        Phi =   8.3952    
+                 Prediction =   172.55    
+
+         Line search factor =   2.2731    
+                        Phi =   11.870    
+                 Prediction =   154.38    
+
+         Line search factor =   2.9550    
+                        Phi =   19.932    
+                 Prediction =   133.76    
+
+         Line search factor =   2.6797    
+                        Phi =   16.229    
+                 Prediction =   141.63    
+
+       Lambda =   1.0000     ----->
+
+         Line search factor =   2.3503    
+                        Phi =   8.8021    
+                 Prediction =   150.81    
+
+         Line search factor =   3.0554    
+                        Phi =   14.397    
+                 Prediction =   129.11    
+
+         Line search factor =   3.9720    
+                        Phi =   26.128    
+                 Prediction =   109.22    
+
+         Line search factor =   3.2257    
+                        Phi =   16.251    
+                 Prediction =   124.45    
+
+       Lambda =  0.46416     ----->
+
+         Line search factor =   2.8291    
+                        Phi =   9.6964    
+                 Prediction =   134.87    
+
+         Line search factor =   3.6778    
+                        Phi =   16.482    
+                 Prediction =   114.39    
+
+         Line search factor =   3.6491    
+                        Phi =   16.190    
+                 Prediction =   114.90    
+
+         Line search factor =   3.6496    
+                        Phi =   16.195    
+                 Prediction =   114.90    
+
+       Lambda =  0.21544     ----->
+
+         Line search factor =   3.2009    
+                        Phi =   10.889    
+                 Prediction =   123.26    
+
+         Line search factor =   4.1612    
+                        Phi =   18.356    
+                 Prediction =   103.19    
+
+         Line search factor =   3.9260    
+                        Phi =   16.180    
+                 Prediction =   108.33    
+
+         Line search factor =   3.9277    
+                        Phi =   16.196    
+                 Prediction =   108.29    
+
+       Lambda =  0.10000     ----->
+
+         Line search factor =   3.4449    
+                        Phi =   11.966    
+                 Prediction =   117.69    
+
+         Line search factor =   4.4783    
+                        Phi =   19.778    
+                 Prediction =   95.741    
+
+         Line search factor =   4.0616    
+                        Phi =   16.178    
+                 Prediction =   104.90    
+
+         Line search factor =   4.0639    
+                        Phi =   16.196    
+                 Prediction =   104.85    
+
+       Lambda =  4.64159E-02 ----->
+
+         Line search factor =   3.5643    
+                        Phi =   12.603    
+                 Prediction =   115.33    
+
+         Line search factor =   4.6335    
+                        Phi =   20.492    
+                 Prediction =   92.038    
+
+         Line search factor =   4.1112    
+                        Phi =   16.191    
+                 Prediction =   103.55    
+
+         Line search factor =   4.1118    
+                        Phi =   16.196    
+                 Prediction =   103.54    
+
+       Lambda =  2.15443E-02 ----->
+
+         Line search factor =   3.6063    
+                        Phi =   12.871    
+                 Prediction =   114.47    
+
+         Line search factor =   4.6882    
+                        Phi =   20.699    
+                 Prediction =   90.683    
+
+         Line search factor =   4.1258    
+                        Phi =   16.188    
+                 Prediction =   103.10    
+
+         Line search factor =   4.1268    
+                        Phi =   16.196    
+                 Prediction =   103.07    
+
+   No more lambdas: relative prediction change less than   0.0050
+   Best  phi  this  iteration    :   16.196    
+   Best prediction this iteration:   103.07    
+
+      Current parameter values                 Previous parameter values
+      par1           -0.167091                 par1            -0.144224    
+      par2           -7.386218E-02             par2             0.789467    
+      par3             2.66626                 par3             0.602858    
+      par4            0.156571                 par4             0.423725    
+      par5            -1.28312                 par5            -0.167885    
+      par6            0.394551                 par6            -0.138569    
+      par7            9.950007E-02             par7            -2.916627E-02
+      par8            -1.02164                 par8             0.392985    
+      par9           -4.996766E-02             par9             0.218468    
+      par10          -0.997367                 par10           -7.118997E-02
+      par11           -2.39119                 par11           -0.394086    
+      par12          -0.170283                 par12           -0.484322    
+      par13           -1.20257                 par13           -0.177663    
+      par14           0.311962                 par14            9.655384E-02
+   Maximum relative change:  13.01     ["par10"]
+   Maximum absolute(1) change:  2.063     ["par3"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 60
+   Starting phi for this iteration                          :   16.196    
+   Contribution to phi from observation group "heads"       :   1.4612    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   14.734    
+   Minimum prediction so far for phi less than PD1          :   103.07    
+
+       Lambda =  1.00000E-02 ----->
+
+         Line search factor =  0.20000    
+                        Phi =   15.860    
+                 Prediction =   103.76    
+
+         Line search factor =  0.39998    
+                        Phi =   15.890    
+                 Prediction =   104.45    
+
+       Lambda =  2.15443E-03 ----->
+
+         Line search factor =  0.20000    
+                        Phi =   15.862    
+                 Prediction =   103.75    
+
+         Line search factor =  0.39998    
+                        Phi =   15.892    
+                 Prediction =   104.44    
+
+   No more lambdas: relative prediction change less than   0.0050
+   Best  phi  this  iteration    :   15.862    
+   Best prediction this iteration:   103.75    
+   Absolute predictive improvement between iterations less than 0.0000
+   Switch to higher order derivatives calculation
+   (restart from best parameters so far - these achieved at iteration    1)
+
+      Current parameter values
+      par1           -0.167091    
+      par2           -7.386218E-02
+      par3             2.66626    
+      par4            0.156571    
+      par5            -1.28312    
+      par6            0.394551    
+      par7            9.950007E-02
+      par8            -1.02164    
+      par9           -4.996766E-02
+      par10          -0.997367    
+      par11           -2.39119    
+      par12          -0.170283    
+      par13           -1.20257    
+      par14           0.311962    
+
+
+OPTIMISATION ITERATION NO.        : 3
+   Model calls so far             : 78
+   Starting phi for this iteration                          :   16.196    
+   Contribution to phi from observation group "heads"       :   1.4612    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   14.734    
+   Minimum prediction so far for phi less than PD1          :   103.07    
+
+       Lambda =  4.64159E-03 ----->
+
+         Line search factor =  0.20000    
+                        Phi =   15.887    
+                 Prediction =   103.68    
+
+         Line search factor =  0.39998    
+                        Phi =   15.939    
+                 Prediction =   104.30    
+
+       Lambda =  7.74264E-04 ----->
+
+         Line search factor =  0.20000    
+                        Phi =   15.889    
+                 Prediction =   103.68    
+
+         Line search factor =  0.39998    
+                        Phi =   15.941    
+                 Prediction =   104.29    
+
+   No more lambdas: relative prediction change less than   0.0050
+   Best  phi  this  iteration    :   15.889    
+   Best prediction this iteration:   103.68    
+
+      Current parameter values                 Previous parameter values
+      par1           -0.163371                 par1            -0.167091    
+      par2           -2.792327E-02             par2            -7.386218E-02
+      par3             2.64166                 par3              2.66626    
+      par4            8.183228E-02             par4             0.156571    
+      par5            -1.25539                 par5             -1.28312    
+      par6            0.408149                 par6             0.394551    
+      par7            0.128277                 par7             9.950007E-02
+      par8            -1.01626                 par8             -1.02164    
+      par9           -6.517905E-02             par9            -4.996766E-02
+      par10          -0.995365                 par10           -0.997367    
+      par11           -2.37049                 par11            -2.39119    
+      par12          -7.028345E-02             par12           -0.170283    
+      par13           -1.23633                 par13            -1.20257    
+      par14           0.260149                 par14            0.311962    
+   Maximum relative change: 0.6220     ["par2"]
+   Maximum absolute(1) change: 0.1000     ["par12"]
+
+
+OPTIMISATION ITERATION NO.        : 4
+   Model calls so far             : 110
+   Starting phi for this iteration                          :   15.889    
+   Contribution to phi from observation group "heads"       :   1.2944    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   14.594    
+   Minimum prediction so far for phi less than PD1          :   103.07    
+
+       Lambda =  1.29155E-04 ----->
+
+         Line search factor =  0.20000    
+                        Phi =   15.922    
+                 Prediction =   103.62    
+
+         Line search factor =  0.26000    
+                        Phi =   15.947    
+                 Prediction =   103.60    
+
+         Line search factor =  0.33800    
+                        Phi =   15.990    
+                 Prediction =   103.57    
+
+         Line search factor =  0.43940    
+                        Phi =   16.064    
+                 Prediction =   103.54    
+
+         Line search factor =  0.57122    
+                        Phi =   16.190    
+                 Prediction =   103.50    
+
+         Line search factor =  0.74259    
+                        Phi =   16.403    
+                 Prediction =   103.44    
+
+       Lambda =  6.52852E-06 ----->
+
+         Line search factor =  0.65129    
+                        Phi =   16.282    
+                 Prediction =   103.47    
+
+         Line search factor =  0.50757    
+                        Phi =   16.125    
+                 Prediction =   103.52    
+
+         Line search factor =  0.57658    
+                        Phi =   16.195    
+                 Prediction =   103.49    
+
+         Line search factor =  0.57661    
+                        Phi =   16.196    
+                 Prediction =   103.49    
+
+       Lambda =  2.55510E-03 ----->
+
+         Line search factor =  0.50572    
+                        Phi =   16.124    
+                 Prediction =   103.52    
+
+         Line search factor =  0.65744    
+                        Phi =   16.291    
+                 Prediction =   103.47    
+
+         Line search factor =  0.57593    
+                        Phi =   16.195    
+                 Prediction =   103.49    
+
+         Line search factor =  0.57596    
+                        Phi =   16.195    
+                 Prediction =   103.49    
+
+   No more lambdas: prediction rising
+   Best  phi  this  iteration    :   16.403    
+   Best prediction this iteration:   103.44    
+
+      Current parameter values                 Previous parameter values
+      par1           -0.166982                 par1            -0.163371    
+      par2           -0.141616                 par2            -2.792327E-02
+      par3             2.66117                 par3              2.64166    
+      par4            0.251257                 par4             8.183228E-02
+      par5            -1.28739                 par5             -1.25539    
+      par6            0.402049                 par6             0.408149    
+      par7            5.407780E-02             par7             0.128277    
+      par8            -1.02602                 par8             -1.01626    
+      par9           -2.090235E-02             par9            -6.517905E-02
+      par10          -0.982562                 par10           -0.995365    
+      par11           -2.38642                 par11            -2.37049    
+      par12          -0.255930                 par12           -7.028345E-02
+      par13           -1.19042                 par13            -1.23633    
+      par14           0.362471                 par14            0.260149    
+   Maximum relative change:  4.072     ["par2"]
+   Maximum absolute(1) change: 0.1856     ["par12"]
+
+
+OPTIMISATION ITERATION NO.        : 5
+   Model calls so far             : 152
+   Starting phi for this iteration                          :   16.403    
+   Contribution to phi from observation group "heads"       :   1.6973    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   14.706    
+   Minimum prediction so far for phi less than PD1          :   103.07    
+
+       Lambda =  1.29155E-04 ----->
+
+         Line search factor =  0.20000    
+                        Phi =   16.273    
+                 Prediction =   103.47    
+
+         Line search factor =  0.26000    
+                        Phi =   16.238    
+                 Prediction =   103.47    
+
+       Lambda =  6.52852E-06 ----->
+
+         Line search factor =  0.22804    
+                        Phi =   16.257    
+                 Prediction =   103.47    
+
+         Line search factor =  0.29645    
+                        Phi =   16.218    
+                 Prediction =   103.48    
+
+       Lambda =  2.55510E-03 ----->
+
+         Line search factor =  0.26000    
+                        Phi =   16.238    
+                 Prediction =   103.48    
+
+         Line search factor =  0.33800    
+                        Phi =   16.195    
+                 Prediction =   103.49    
+
+         Line search factor =  0.33659    
+                        Phi =   16.195    
+                 Prediction =   103.49    
+
+   No more lambdas: prediction rising
+   Best  phi  this  iteration    :   16.273    
+   Best prediction this iteration:   103.47    
+
+      Current parameter values                 Previous parameter values
+      par1           -0.166390                 par1            -0.166982    
+      par2           -0.126035                 par2            -0.141616    
+      par3             2.65845                 par3              2.66117    
+      par4            0.227255                 par4             0.251257    
+      par5            -1.28234                 par5             -1.28739    
+      par6            0.402914                 par6             0.402049    
+      par7            6.255592E-02             par7             5.407780E-02
+      par8            -1.02485                 par8             -1.02602    
+      par9           -2.558315E-02             par9            -2.090235E-02
+      par10          -0.984494                 par10           -0.982562    
+      par11           -2.38395                 par11            -2.38642    
+      par12          -0.230930                 par12           -0.255930    
+      par13           -1.19592                 par13            -1.19042    
+      par14           0.348668                 par14            0.362471    
+   Maximum relative change: 0.2239     ["par9"]
+   Maximum absolute(1) change: 2.5000E-02 ["par12"]
+
+   Optimisation complete:   4 optimisation iterations have elapsed since most
+                          extreme prediction was achieved.
+   Total model calls:    187
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+
+Parameters ----->
+
+Parameter        Estimated         95% percent confidence limits
+                 value             lower limit       upper limit
+ par1          -0.167091          -0.237295         -9.688677E-02
+ par2          -7.386218E-02       -1.43745           1.28972    
+ par3            2.66626            1.25547           4.07706    
+ par4           0.156571           -1.82618           2.13932    
+ par5           -1.28312           -2.24106         -0.325182    
+ par6           0.394551          -0.265853           1.05496    
+ par7           9.950007E-02      -0.894698           1.09370    
+ par8           -1.02164           -2.30462          0.261340    
+ par9          -4.996766E-02      -0.765604          0.665668    
+ par10         -0.997367           -1.84684         -0.147897    
+ par11          -2.39119           -3.66718          -1.11521    
+ par12         -0.170283           -1.26138          0.920813    
+ par13          -1.20257           -2.43328          2.814007E-02
+ par14          0.311962          -0.839928           1.46385    
+
+Note: When PEST is used in predictive analysis or regularisation modes,
+      parameter confidence limits are not really applicable. They are 
+      provided here as an indicator of RELATIVE uncertainty only.
+
+See file case_dsip.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+well01_1               5.74724        5.72086       2.637781E-02    10.00      heads       
+well02_1               5.69616        5.68339       1.276980E-02    10.00      heads       
+well03_1               5.49199        5.52453      -3.253651E-02    10.00      heads       
+well04_1               4.09190        4.06259       2.930924E-02    10.00      heads       
+well05_1               3.92014        3.93254      -1.239987E-02    10.00      heads       
+well06_1               4.05991        4.09122      -3.131438E-02    10.00      heads       
+well07_1               2.59369        2.56620       2.749365E-02    10.00      heads       
+well08_1               3.25979        3.28616      -2.637215E-02    10.00      heads       
+well09_1               2.97368        2.99157      -1.788942E-02    10.00      heads       
+well10_1               1.12417        1.03566       8.851455E-02    10.00      heads       
+well11_1               1.20361        1.23251      -2.889729E-02    10.00      heads       
+well12_1               1.19256        1.20868      -1.612143E-02    10.00      heads       
+part_time              0.00000        7017.78       -7017.78        0.000      time        
+
+
+Prior information ----->
+
+Prior                  Provided       Calculated     Residual       Weight     Group
+information            value          value
+par1                 -0.144224      -0.167091       2.286716E-02    1.000      regul_pg1   
+par2                  0.789467      -7.386218E-02   0.863329        1.000      regul_pg1   
+par3                  0.602858        2.66626       -2.06341        1.000      regul_pg1   
+par4                  0.423725       0.156571       0.267154        1.000      regul_pg1   
+par5                 -0.167885       -1.28312        1.11523        1.000      regul_pg1   
+par6                 -0.138569       0.394551      -0.533120        1.000      regul_pg1   
+par7                 -2.916627E-02   9.950007E-02  -0.128666        1.000      regul_pg1   
+par8                  0.392985       -1.02164        1.41463        1.000      regul_pg1   
+par9                  0.218468      -4.996766E-02   0.268435        1.000      regul_pg1   
+par10                -7.118997E-02  -0.997367       0.926177        1.000      regul_pg1   
+par11                -0.394086       -2.39119        1.99711        1.000      regul_pg1   
+par12                -0.484322      -0.170283      -0.314038        1.000      regul_pg1   
+par13                -0.177663       -1.20257        1.02491        1.000      regul_pg1   
+par14                 9.655384E-02   0.311962      -0.215408        1.000      regul_pg1   
+
+See file case_dsip.res for more details of residuals in graph-ready format.
+
+See file case_dsip.seo for composite observation sensitivities.
+
+
+Prediction ----->
+
+Prediction           Calculated Value    Group
+part_east              103.073           predict
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   16.196    
+  Contribution to phi from observation group "heads"        =   1.4612    
+  Contribution to phi from observation group "time"         =   0.0000    
+  Contribution to phi from observation group "distance"     =   0.0000    
+  Contribution to phi from observation group "regul_pg1"    =   14.734    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.99933    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    26
+     Mean value of non-zero weighted residuals                      =  0.1859    
+     Maximum weighted residual [observation "par11"]                =   1.997    
+     Minimum weighted residual [observation "par3"]                 =  -2.063    
+     Standard variance of weighted residuals                        =   1.350    
+     Standard error of weighted residuals                           =   1.162    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "heads":-
+     Number of residuals with non-zero weight                       =    12
+     Mean value of non-zero weighted residuals                      =  1.5778E-02
+     Maximum weighted residual [observation "well10_1"]             =  0.8851    
+     Minimum weighted residual [observation "well03_1"]             = -0.3254    
+     "Variance" of weighted residuals                               =  0.1218    
+     "Standard error" of weighted residuals                         =  0.3490    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "time":-
+     Number of residuals with non-zero weight                       =     0
+
+  Residuals for observation group "distance":-
+     Number of residuals with non-zero weight                       =     0
+
+  Residuals for observation group "regul_pg1":-
+     Number of residuals with non-zero weight                       =    14
+     Mean value of non-zero weighted residuals                      =  0.3318    
+     Maximum weighted residual [observation "par11"]                =   1.997    
+     Minimum weighted residual [observation "par3"]                 =  -2.063    
+     "Variance" of weighted residuals                               =   1.052    
+     "Standard error" of weighted residuals                         =   1.026    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+
+Parameter covariance matrix ----->
+
+                 par1         par2         par3         par4         par5         par6         par7         par8    
+                 par9        par10        par11        par12        par13        par14    
+
+par1           1.0380E-03   8.2995E-03   1.9884E-04  -2.0003E-02   8.3590E-03   1.2258E-03  -1.2647E-03  -1.1678E-03
+               7.1791E-04  -3.2469E-03  -1.4303E-03   3.3842E-03  -6.6181E-03   7.4890E-05
+
+par2           8.2995E-03   0.3916      -0.2307      -0.4439       0.1878      -3.8755E-02   3.2943E-02   0.2070    
+              -9.7122E-02   1.0308E-02   9.7828E-02  -6.6885E-03  -9.3520E-02   1.9733E-02
+
+par3           1.9884E-04  -0.2307       0.4192      -1.5530E-02  -0.1603       8.2630E-02  -2.6944E-02  -0.3530    
+               5.3591E-03  -0.1502      -0.2827       0.1690      -0.1327      -2.8206E-02
+
+par4          -2.0003E-02  -0.4439      -1.5530E-02   0.8280      -0.2039      -3.1048E-02  -1.3431E-02   2.9615E-03
+               0.1279       0.1290       0.1129      -0.1638       0.3047      -2.1575E-03
+
+par5           8.3590E-03   0.1878      -0.1603      -0.2039       0.1933      -7.2548E-02  -2.8646E-04   0.1052    
+               6.4243E-03   5.2048E-02   0.1208      -3.9158E-02  -1.1276E-02   8.3436E-03
+
+par6           1.2258E-03  -3.8755E-02   8.2630E-02  -3.1048E-02  -7.2548E-02   9.1856E-02   2.4362E-02  -5.3499E-02
+              -8.1736E-03  -4.4078E-02  -9.7677E-02   5.9427E-02  -5.5890E-02  -3.8878E-03
+
+par7          -1.2647E-03   3.2943E-02  -2.6944E-02  -1.3431E-02  -2.8646E-04   2.4362E-02   0.2082       4.4633E-02
+              -6.0561E-02   2.2938E-02  -4.9248E-02   1.7670E-02  -4.6616E-02  -1.2011E-03
+
+par8          -1.1678E-03   0.2070      -0.3530       2.9615E-03   0.1052      -5.3499E-02   4.4633E-02   0.3467    
+              -4.0968E-02   0.1116       0.2123      -0.1585       0.1038       2.8602E-02
+
+par9           7.1791E-04  -9.7122E-02   5.3591E-03   0.1279       6.4243E-03  -8.1736E-03  -6.0561E-02  -4.0968E-02
+               0.1079       1.5701E-02   2.9441E-02  -1.6494E-02   5.9291E-02  -6.0574E-03
+
+par10         -3.2469E-03   1.0308E-02  -0.1502       0.1290       5.2048E-02  -4.4078E-02   2.2938E-02   0.1116    
+               1.5701E-02   0.1520       0.1298      -8.4460E-02   7.0412E-02  -6.2187E-03
+
+par11         -1.4303E-03   9.7828E-02  -0.2827       0.1129       0.1208      -9.7677E-02  -4.9248E-02   0.2123    
+               2.9441E-02   0.1298       0.3429      -0.1460       0.1334       3.5656E-02
+
+par12          3.3842E-03  -6.6885E-03   0.1690      -0.1638      -3.9158E-02   5.9427E-02   1.7670E-02  -0.1585    
+              -1.6494E-02  -8.4460E-02  -0.1460       0.2507      -0.1372      -3.8207E-02
+
+par13         -6.6181E-03  -9.3520E-02  -0.1327       0.3047      -1.1276E-02  -5.5890E-02  -4.6616E-02   0.1038    
+               5.9291E-02   7.0412E-02   0.1334      -0.1372       0.3190      -3.5262E-03
+
+par14          7.4890E-05   1.9733E-02  -2.8206E-02  -2.1575E-03   8.3436E-03  -3.8878E-03  -1.2011E-03   2.8602E-02
+              -6.0574E-03  -6.2187E-03   3.5656E-02  -3.8207E-02  -3.5262E-03   0.2795    
+
+
+
+Parameter correlation coefficient matrix ----->
+
+                 par1         par2         par3         par4         par5         par6         par7         par8    
+                 par9        par10        par11        par12        par13        par14    
+
+par1            1.000       0.4116       9.5321E-03  -0.6823       0.5902       0.1255      -8.6031E-02  -6.1558E-02
+               6.7847E-02  -0.2585      -7.5811E-02   0.2098      -0.3637       4.3971E-03
+
+par2           0.4116        1.000      -0.5693      -0.7796       0.6825      -0.2043       0.1154       0.5618    
+              -0.4726       4.2253E-02   0.2670      -2.1345E-02  -0.2646       5.9651E-02
+
+par3           9.5321E-03  -0.5693        1.000      -2.6360E-02  -0.5631       0.4211      -9.1209E-02  -0.9260    
+               2.5203E-02  -0.5950      -0.7456       0.5214      -0.3629      -8.2410E-02
+
+par4          -0.6823      -0.7796      -2.6360E-02    1.000      -0.5097      -0.1126      -3.2351E-02   5.5276E-03
+               0.4280       0.3637       0.2119      -0.3594       0.5928      -4.4853E-03
+
+par5           0.5902       0.6825      -0.5631      -0.5097        1.000      -0.5445      -1.4281E-03   0.4063    
+               4.4495E-02   0.3037       0.4692      -0.1779      -4.5412E-02   3.5902E-02
+
+par6           0.1255      -0.2043       0.4211      -0.1126      -0.5445        1.000       0.1762      -0.2998    
+              -8.2116E-02  -0.3731      -0.5504       0.3916      -0.3265      -2.4266E-02
+
+par7          -8.6031E-02   0.1154      -9.1209E-02  -3.2351E-02  -1.4281E-03   0.1762        1.000       0.1661    
+              -0.4041       0.1290      -0.1843       7.7341E-02  -0.1809      -4.9797E-03
+
+par8          -6.1558E-02   0.5618      -0.9260       5.5276E-03   0.4063      -0.2998       0.1661        1.000    
+              -0.2119       0.4861       0.6156      -0.5377       0.3122       9.1892E-02
+
+par9           6.7847E-02  -0.4726       2.5203E-02   0.4280       4.4495E-02  -8.2116E-02  -0.4041      -0.2119    
+                1.000       0.1226       0.1531      -0.1003       0.3196      -3.4890E-02
+
+par10         -0.2585       4.2253E-02  -0.5950       0.3637       0.3037      -0.3731       0.1290       0.4861    
+               0.1226        1.000       0.5688      -0.4327       0.3198      -3.0175E-02
+
+par11         -7.5811E-02   0.2670      -0.7456       0.2119       0.4692      -0.5504      -0.1843       0.6156    
+               0.1531       0.5688        1.000      -0.4979       0.4033       0.1152    
+
+par12          0.2098      -2.1345E-02   0.5214      -0.3594      -0.1779       0.3916       7.7341E-02  -0.5377    
+              -0.1003      -0.4327      -0.4979        1.000      -0.4853      -0.1443    
+
+par13         -0.3637      -0.2646      -0.3629       0.5928      -4.5412E-02  -0.3265      -0.1809       0.3122    
+               0.3196       0.3198       0.4033      -0.4853        1.000      -1.1810E-02
+
+par14          4.3971E-03   5.9651E-02  -8.2410E-02  -4.4853E-03   3.5902E-02  -2.4266E-02  -4.9797E-03   9.1892E-02
+              -3.4890E-02  -3.0175E-02   0.1152      -0.1443      -1.1810E-02    1.000    
+
+
+
+Normalized eigenvectors of parameter covariance matrix ----->
+
+              Vector_1     Vector_2     Vector_3     Vector_4     Vector_5     Vector_6     Vector_7     Vector_8   
+              Vector_9     Vector_10    Vector_11    Vector_12    Vector_13    Vector_14  
+
+par1           0.9870       0.1152       5.3096E-02  -7.7811E-02   2.4515E-02   3.1449E-02  -3.3742E-02  -1.4551E-02
+               9.7468E-03  -5.0836E-03   1.6543E-03   1.8044E-02   1.2979E-02  -1.1852E-02
+
+par2           0.1203      -0.5982      -0.1035       0.5321      -9.1601E-02  -8.4575E-02   9.1473E-02   1.4979E-02
+              -9.5478E-02   0.1336       1.8723E-02  -3.8697E-02   0.5260      -6.4924E-02
+
+par3           5.8523E-02  -0.4980      -0.4214      -0.3298       0.1262      -3.6968E-02   0.2979      -2.7448E-02
+               0.2095       1.6447E-02  -5.0664E-02   0.1257      -0.3681      -0.3967    
+
+par4           7.4259E-02  -0.4171       0.2011       0.1336      -0.2951       1.6282E-02   1.1814E-02   9.5464E-02
+              -9.1281E-02  -0.1623      -1.3291E-02  -0.1844      -0.5638       0.5282    
+
+par5          -4.0326E-02  -0.3328       0.4444      -0.3990      -0.1289       8.9629E-02  -0.1755      -0.4140    
+               0.2734      -0.2703       7.6372E-02   0.2467       0.2956       4.6412E-02
+
+par6          -1.6646E-02  -0.2808       0.3424      -8.0212E-02   0.6922       0.1514      -0.3469       0.2093    
+              -0.2294       0.1306      -4.1397E-02  -0.1986      -7.1008E-02  -0.1232    
+
+par7           1.8437E-03   5.2600E-02  -0.1595       8.0309E-02   0.1211       0.3412       0.1193      -0.4631    
+               0.1681      -0.2122      -1.0560E-02  -0.7278       4.3418E-02  -2.4382E-02
+
+par8          -4.2152E-03  -0.1125      -0.3549      -0.5934      -0.1938       1.1651E-02  -0.1681       0.2436    
+              -0.1709       0.2249      -6.3353E-03  -0.3018       0.3244       0.3284    
+
+par9           8.2642E-03  -4.0062E-02  -0.5001       0.2067       1.5852E-02   0.3407      -0.6534      -0.1412    
+              -1.5086E-02  -0.1603       5.0545E-02   0.3078      -0.1108       8.2369E-02
+
+par10          2.0895E-02   1.7543E-03  -0.1894       1.5577E-02   0.3502      -0.7534      -0.1463      -5.9414E-02
+               0.1373      -0.3944       9.7163E-02  -9.6856E-02   5.3852E-02   0.2281    
+
+par11         -3.2292E-03   1.0731E-02  -0.1180      -4.5081E-02   0.3622       0.3505       0.4895       0.1524    
+              -0.1974      -0.3949      -6.2145E-03   0.2983       0.1987       0.3789    
+
+par12          5.8632E-04  -9.9466E-03  -6.9910E-03  -0.1216      -0.1724      -0.1335       1.0717E-02  -0.2710    
+              -0.8122      -0.2938       0.1323      -2.6272E-02  -5.3325E-02  -0.3114    
+
+par13          1.9257E-03  -1.6789E-04  -4.9284E-02  -9.6825E-03   0.2370      -0.1001       0.1317      -0.5985    
+              -0.1650       0.5865       9.9179E-02   0.1756      -0.1058       0.3642    
+
+par14          2.9361E-04   2.9563E-03  -8.4509E-03  -4.3886E-03  -9.6516E-03  -9.1038E-02  -4.9910E-02  -0.1494    
+              -9.3848E-02  -4.7281E-02  -0.9746       5.1593E-02   4.0907E-02   3.8557E-02
+
+
+
+Eigenvalues ----->
+
+               1.2790E-04   2.2171E-03   1.0701E-02   1.8394E-02   5.0585E-02   5.9803E-02   8.3960E-02   0.1239    
+               0.1271       0.1748       0.2836       0.2973        1.350        1.350    

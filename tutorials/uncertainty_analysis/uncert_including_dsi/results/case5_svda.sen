@@ -1,0 +1,71 @@
+                     PARAMETER SENSITIVITIES: CASE case5_svda
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            10.0000          4.55083    
+   par2            pargp            10.0000          1.42991    
+   par3            pargp            10.0000          1.09448    
+   par4            pargp            10.0000         0.972707    
+   par5            pargp            10.0000         0.758046    
+   par6            pargp            10.0000         0.662304    
+   par7            pargp            10.0000         0.502368    
+   par8            pargp            10.0000         0.469597    
+   par9            pargp            10.0000         0.438088    
+   par10           pargp            10.0000         0.363983    
+   par11           pargp            10.0000         0.265742    
+   par12           pargp            10.0000         0.196874    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "heads" ----->
+
+ Number of observations with non-zero weight =    12
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            9.87004          4.55083    
+   par2            pargp            9.90112          1.42991    
+   par3            pargp            10.0484          1.09448    
+   par4            pargp            9.94587         0.972707    
+   par5            pargp            9.92024         0.758046    
+   par6            pargp            9.99576         0.662304    
+   par7            pargp            9.95803         0.502368    
+   par8            pargp            10.0765         0.469597    
+   par9            pargp            10.0122         0.438088    
+   par10           pargp            9.93373         0.363983    
+   par11           pargp            10.1479         0.265742    
+   par12           pargp            9.97488         0.196874    
+
+
+
+ Composite sensitivities for observation group "time" ----->
+
+
+ No observations/prior_info with non-zero weight belong to this group.
+
+
+
+ Composite sensitivities for observation group "distance" ----->
+
+
+ No observations/prior_info with non-zero weight belong to this group.
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    12
+ Parameter name    Group          Current value    Sensitivity
+   par1            pargp            9.87004          4.55083    
+   par2            pargp            9.90112          1.42991    
+   par3            pargp            10.0484          1.09448    
+   par4            pargp            9.94587         0.972707    
+   par5            pargp            9.92024         0.758046    
+   par6            pargp            9.99576         0.662304    
+   par7            pargp            9.95803         0.502368    
+   par8            pargp            10.0765         0.469597    
+   par9            pargp            10.0122         0.438088    
+   par10           pargp            9.93373         0.363983    
+   par11           pargp            10.1479         0.265742    
+   par12           pargp            9.97488         0.196874    

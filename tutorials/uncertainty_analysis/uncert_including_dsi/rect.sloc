@@ -1,0 +1,4 @@
+1               # Item 1: InputStyle
+1               # Item 2: LocationStyle
+1  0            # Item 3: ParticleCount  ParticleIdOption
+1 11 25 0.5 0.5 0.5 0.0  0   # Item 4: Layer, Row, Column, LocalX, LocalY, LocalZ, TimeOffset, Drape

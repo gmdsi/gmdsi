@@ -1,0 +1,62 @@
+time,elapsed_seconds,message
+11:48:17,0.0001037,PEST++ performance logger started
+11:48:17,0.0005737,starting to process control file
+11:48:17,0.0011534,finished processing control file
+11:48:17,0.0018374,starting basic model IO error checking
+11:48:17,0.0036312,finished basic model IO error checking
+11:48:17,0.0010472,initializing
+11:48:17,5.18e-05,using glm algorithm
+11:48:17,3.91e-05,using REDSVD for truncated svd solve
+11:48:17,5.45e-05,maxsing: 104
+11:48:17,5.02e-05,eigthresh:  5e-07
+11:48:17,3.41e-05,initializing localizer
+11:48:17,3.62e-05,not using localization
+11:48:17,3.99e-05,using lambda multipliers: 
+11:48:17,7.31e-05,using lambda scaling factors: 
+11:48:17,5.16e-05,acceptable phi factor:  1.05
+11:48:17,0.0002581,lambda increase factor:  10
+11:48:17,3.19e-05,lambda decrease factor:  0.75
+11:48:17,2.94e-05,max run fail:  1
+11:48:17,3.65e-05,initializing prior parameter covariance matrix
+11:48:17,5.5e-06,initializing parcov
+11:48:17,0.0070948,parcov loaded  from unc file param.unc
+11:48:17,0.0019072,initializing observation noise covariance matrix
+11:48:17,0.0002083,obscov loaded  from observation weights
+11:48:17,0.0002029,using reg_factor:  0
+11:48:17,0.0001052,drawing parameter realizations:  100
+11:48:17,9.3e-05,parameters not grouped by parameter groups, reordering par ensemble
+11:48:17,0.0007564,making standard normal draws
+11:48:17,0.0002611,...drawing by group
+
+11:48:17,0.0007532,thread: 0 - min variance for group K: 0.2
+11:48:17,1.01e-05,thread: 0 - Randomized Eigen decomposition of full cov for 104 element matrix
+
+11:48:17,0.0042222,draw thread: 0 processed 0 groups
+11:48:17,6.48e-05,checking realization for invalid values
+11:48:17,8.62e-05,resizing reals matrix
+11:48:17,2.19e-05,filling reals matrix and adding mean values
+11:48:17,0.0003985,not using prior parameter covariance matrix scaling
+11:48:17,0.0002184,initializing no-noise observation ensemble of :  100
+11:48:17,0.0002674,adding 'base' parameter values to ensemble
+11:48:17,0.0002838,adding 'base' observation values to ensemble
+11:48:17,8.92e-05,checking for denormal values in pe
+11:48:17,0.0096508,saved initial parameter ensemble to  case8.0.par.csv
+11:48:17,1.36e-05,checking for denormal values in obs + noise ensemble
+11:48:17,0.003953,saved obs+noise observation ensemble (obsval + noise realizations) to  case8.obs+noise.csv
+11:48:17,0.0002162,setting weights ensemble from control file weights
+11:48:17,0.000184,using subset in lambda testing, number of realizations used in subset testing:  1
+11:48:17,0.0001672,subset how:  RANDOM
+11:48:17,0.0002407,centering on ensemble mean vector
+11:48:17,1.23e-05,running initial ensemble
+11:48:17,0.0001415,running initial ensemble of size 100
+11:48:17,1.26e-05,queuing 100 runs
+11:48:17,0.0050524,making runs
+11:49:59,102.031,processing runs
+11:49:59,0.0058682,saved initial obs ensemble to case8.0.obs.csv
+11:49:59,0.0051999,calc pre-drop phi
+11:49:59,0.0022175,pre-drop initial phi summary
+11:49:59,0.000337,checking for prior-data conflict...
+11:49:59,0.0008343,calc initial phi
+11:49:59,0.0002688,initial phi summary
+11:49:59,0.0017849,current lambda: 100
+11:49:59,0.0001009,initialization complete

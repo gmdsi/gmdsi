@@ -1,0 +1,256 @@
+pcf
+* control data
+restart regularisation
+     104      14       1     104       4
+     1     2 single  point  1   0   0
+ 10.0  -3.0  0.3  0.03  10
+ 10.0  10.0  0.001
+ 0.1  noaui
+ 2  0.005  4  4  0.005  4  15.0
+ 1  1  1
+* singular value decomposition
+1
+104 5e-7
+0
+* parameter groups
+ k     relative    0.01  0.0  switch  2.0 parabolic
+* parameter data
+k_ppt1       log  factor   0.8943161      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt2       log  factor    1.743075      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt3       log  factor   0.7250180      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt4       log  factor    1.012266      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt5       log  factor   0.3832882      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt6       log  factor   8.9590274E-02  1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt7       log  factor   0.1191285      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt8       log  factor   0.2421062      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt9       log  factor   0.9529635      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt10      log  factor   0.6972845      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt11      log  factor    3.907742      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt12      log  factor   0.3645335      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt13      log  factor   0.3225885      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt14      log  factor   9.8823272E-02  1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt15      log  factor   0.4016912      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt16      log  factor   0.4100834      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt17      log  factor   0.7559613      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt18      log  factor    1.506777      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt19      log  factor    1.747390      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt20      log  factor   0.7553394      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt21      log  factor   0.2959985      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt22      log  factor   0.4138039      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt23      log  factor   0.6200469      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt24      log  factor   0.9848650      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt25      log  factor    1.976724      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt26      log  factor    2.048854      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt27      log  factor    3.040204      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt28      log  factor    1.235103      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt29      log  factor   0.4152661      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt30      log  factor   0.2477954      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt31      log  factor   0.6151284      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt32      log  factor    1.348032      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt33      log  factor   0.7667341      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt34      log  factor    2.837716      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt35      log  factor    1.426269      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt36      log  factor    2.080975      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt37      log  factor    1.082605      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt38      log  factor   0.6940594      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt39      log  factor    1.181729      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt40      log  factor    1.833443      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt41      log  factor   0.8556687      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt42      log  factor   0.5088797      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt43      log  factor   0.7963685      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt44      log  factor   0.6071172      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt45      log  factor   0.8149824      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt46      log  factor   0.5718448      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt47      log  factor    1.301880      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt48      log  factor    2.569293      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt49      log  factor   0.8692884      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt50      log  factor   0.4297633      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt51      log  factor    1.191577      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt52      log  factor    1.307968      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt53      log  factor    1.044090      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt54      log  factor   0.7179879      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt55      log  factor    1.605745      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt56      log  factor    2.466071      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt57      log  factor    3.129396      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt58      log  factor    1.250656      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt59      log  factor   0.5888405      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt60      log  factor    1.616689      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt61      log  factor    1.587885      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt62      log  factor   0.7572799      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt63      log  factor    1.203645      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt64      log  factor    5.998039      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt65      log  factor    2.172998      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt66      log  factor    2.736171      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt67      log  factor    2.592547      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt68      log  factor    2.112953      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt69      log  factor    1.037661      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt70      log  factor    1.262352      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt71      log  factor    2.097841      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt72      log  factor    4.811363      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt73      log  factor    1.828029      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt74      log  factor    1.864997      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt75      log  factor    2.493824      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt76      log  factor    1.032278      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt77      log  factor   0.4904817      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt78      log  factor   0.7609724      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt79      log  factor    1.082015      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt80      log  factor    1.723492      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt81      log  factor    1.331768      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt82      log  factor    1.683489      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt83      log  factor    1.405033      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt84      log  factor   0.6588876      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt85      log  factor   0.5138006      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt86      log  factor   0.3134716      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt87      log  factor   0.3291774      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt88      log  factor    1.422014      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt89      log  factor    1.888798      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt90      log  factor    1.697912      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt91      log  factor    2.020004      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt92      log  factor   0.8641116      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt93      log  factor   0.4900229      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt94      log  factor   0.2647645      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt95      log  factor   0.7276428      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt96      log  factor   0.9777279      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt97      log  factor    1.202629      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt98      log  factor    1.789338      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt99      log  factor   0.7474898      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt100     log  factor   0.8644564      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt101     log  factor   0.2853997      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt102     log  factor   0.1352870      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt103     log  factor   0.4173619      1.0e-2  1.0e2 k     1.0  0.0  1
+k_ppt104     log  factor   0.6029537      1.0e-2  1.0e2 k     1.0  0.0  1
+* observation groups
+ heads
+ time
+ distance
+regul_k
+* observation data
+ well01_1        5.747240      10.0  heads
+ well02_1        5.696160      10.0  heads
+ well03_1        5.491990      10.0  heads
+ well04_1        4.091900      10.0  heads
+ well05_1        3.920140      10.0  heads
+ well06_1        4.059910      10.0  heads
+ well07_1        2.593690      10.0  heads
+ well08_1        3.259790      10.0  heads
+ well09_1        2.973680      10.0  heads
+ well10_1        1.124170      10.0  heads
+ well11_1        1.203610      10.0  heads
+ well12_1        1.192560      10.0  heads
+ part_time       0.000000      0.0  time
+ part_east       0.000000      0.0  distance
+* model command line
+model.bat
+* model input/output
+hk.tpl  hk.pts
+model_smp.ins  model.smp
+endpoint.ins   rect.endpoint7
+* prior information
+k_ppt1        1.0 * log(k_ppt1) = -4.8508951E-02  1.0 regul_k
+k_ppt2        1.0 * log(k_ppt2) =  0.2413161      1.0 regul_k
+k_ppt3        1.0 * log(k_ppt3) = -0.1396512      1.0 regul_k
+k_ppt4        1.0 * log(k_ppt4) =  5.2946500E-03  1.0 regul_k
+k_ppt5        1.0 * log(k_ppt5) = -0.4164746      1.0 regul_k
+k_ppt6        1.0 * log(k_ppt6) =  -1.047739      1.0 regul_k
+k_ppt7        1.0 * log(k_ppt7) = -0.9239843      1.0 regul_k
+k_ppt8        1.0 * log(k_ppt8) = -0.6159941      1.0 regul_k
+k_ppt9        1.0 * log(k_ppt9) = -2.0923733E-02  1.0 regul_k
+k_ppt10       1.0 * log(k_ppt10) = -0.1565900      1.0 regul_k
+k_ppt11       1.0 * log(k_ppt11) =  0.5919259      1.0 regul_k
+k_ppt12       1.0 * log(k_ppt12) = -0.4382626      1.0 regul_k
+k_ppt13       1.0 * log(k_ppt13) = -0.4913511      1.0 regul_k
+k_ppt14       1.0 * log(k_ppt14) =  -1.005141      1.0 regul_k
+k_ppt15       1.0 * log(k_ppt15) = -0.3961077      1.0 regul_k
+k_ppt16       1.0 * log(k_ppt16) = -0.3871278      1.0 regul_k
+k_ppt17       1.0 * log(k_ppt17) = -0.1215004      1.0 regul_k
+k_ppt18       1.0 * log(k_ppt18) =  0.1780490      1.0 regul_k
+k_ppt19       1.0 * log(k_ppt19) =  0.2423898      1.0 regul_k
+k_ppt20       1.0 * log(k_ppt20) = -0.1218579      1.0 regul_k
+k_ppt21       1.0 * log(k_ppt21) = -0.5287105      1.0 regul_k
+k_ppt22       1.0 * log(k_ppt22) = -0.3832054      1.0 regul_k
+k_ppt23       1.0 * log(k_ppt23) = -0.2075755      1.0 regul_k
+k_ppt24       1.0 * log(k_ppt24) = -6.6232962E-03  1.0 regul_k
+k_ppt25       1.0 * log(k_ppt25) =  0.2959460      1.0 regul_k
+k_ppt26       1.0 * log(k_ppt26) =  0.3115110      1.0 regul_k
+k_ppt27       1.0 * log(k_ppt27) =  0.4829027      1.0 regul_k
+k_ppt28       1.0 * log(k_ppt28) =  9.1703177E-02  1.0 regul_k
+k_ppt29       1.0 * log(k_ppt29) = -0.3816735      1.0 regul_k
+k_ppt30       1.0 * log(k_ppt30) = -0.6059068      1.0 regul_k
+k_ppt31       1.0 * log(k_ppt31) = -0.2110342      1.0 regul_k
+k_ppt32       1.0 * log(k_ppt32) =  0.1297002      1.0 regul_k
+k_ppt33       1.0 * log(k_ppt33) = -0.1153552      1.0 regul_k
+k_ppt34       1.0 * log(k_ppt34) =  0.4529689      1.0 regul_k
+k_ppt35       1.0 * log(k_ppt35) =  0.1542014      1.0 regul_k
+k_ppt36       1.0 * log(k_ppt36) =  0.3182669      1.0 regul_k
+k_ppt37       1.0 * log(k_ppt37) =  3.4470029E-02  1.0 regul_k
+k_ppt38       1.0 * log(k_ppt38) = -0.1586034      1.0 regul_k
+k_ppt39       1.0 * log(k_ppt39) =  7.2517893E-02  1.0 regul_k
+k_ppt40       1.0 * log(k_ppt40) =  0.2632674      1.0 regul_k
+k_ppt41       1.0 * log(k_ppt41) = -6.7694354E-02  1.0 regul_k
+k_ppt42       1.0 * log(k_ppt42) = -0.2933849      1.0 regul_k
+k_ppt43       1.0 * log(k_ppt43) = -9.8885927E-02  1.0 regul_k
+k_ppt44       1.0 * log(k_ppt44) = -0.2167275      1.0 regul_k
+k_ppt45       1.0 * log(k_ppt45) = -8.8851770E-02  1.0 regul_k
+k_ppt46       1.0 * log(k_ppt46) = -0.2427218      1.0 regul_k
+k_ppt47       1.0 * log(k_ppt47) =  0.1145710      1.0 regul_k
+k_ppt48       1.0 * log(k_ppt48) =  0.4098136      1.0 regul_k
+k_ppt49       1.0 * log(k_ppt49) = -6.0836116E-02  1.0 regul_k
+k_ppt50       1.0 * log(k_ppt50) = -0.3667707      1.0 regul_k
+k_ppt51       1.0 * log(k_ppt51) =  7.6122112E-02  1.0 regul_k
+k_ppt52       1.0 * log(k_ppt52) =  0.1165971      1.0 regul_k
+k_ppt53       1.0 * log(k_ppt53) =  1.8737936E-02  1.0 regul_k
+k_ppt54       1.0 * log(k_ppt54) = -0.1438829      1.0 regul_k
+k_ppt55       1.0 * log(k_ppt55) =  0.2056766      1.0 regul_k
+k_ppt56       1.0 * log(k_ppt56) =  0.3920056      1.0 regul_k
+k_ppt57       1.0 * log(k_ppt57) =  0.4954605      1.0 regul_k
+k_ppt58       1.0 * log(k_ppt58) =  9.7137871E-02  1.0 regul_k
+k_ppt59       1.0 * log(k_ppt59) = -0.2300023      1.0 regul_k
+k_ppt60       1.0 * log(k_ppt60) =  0.2086265      1.0 regul_k
+k_ppt61       1.0 * log(k_ppt61) =  0.2008190      1.0 regul_k
+k_ppt62       1.0 * log(k_ppt62) = -0.1207436      1.0 regul_k
+k_ppt63       1.0 * log(k_ppt63) =  8.0498416E-02  1.0 regul_k
+k_ppt64       1.0 * log(k_ppt64) =  0.7780093      1.0 regul_k
+k_ppt65       1.0 * log(k_ppt65) =  0.3370593      1.0 regul_k
+k_ppt66       1.0 * log(k_ppt66) =  0.4371432      1.0 regul_k
+k_ppt67       1.0 * log(k_ppt67) =  0.4137266      1.0 regul_k
+k_ppt68       1.0 * log(k_ppt68) =  0.3248898      1.0 regul_k
+k_ppt69       1.0 * log(k_ppt69) =  1.6055494E-02  1.0 regul_k
+k_ppt70       1.0 * log(k_ppt70) =  0.1011805      1.0 regul_k
+k_ppt71       1.0 * log(k_ppt71) =  0.3217726      1.0 regul_k
+k_ppt72       1.0 * log(k_ppt72) =  0.6822681      1.0 regul_k
+k_ppt73       1.0 * log(k_ppt73) =  0.2619831      1.0 regul_k
+k_ppt74       1.0 * log(k_ppt74) =  0.2706781      1.0 regul_k
+k_ppt75       1.0 * log(k_ppt75) =  0.3968658      1.0 regul_k
+k_ppt76       1.0 * log(k_ppt76) =  1.3796672E-02  1.0 regul_k
+k_ppt77       1.0 * log(k_ppt77) = -0.3093772      1.0 regul_k
+k_ppt78       1.0 * log(k_ppt78) = -0.1186311      1.0 regul_k
+k_ppt79       1.0 * log(k_ppt79) =  3.4233281E-02  1.0 regul_k
+k_ppt80       1.0 * log(k_ppt80) =  0.2364093      1.0 regul_k
+k_ppt81       1.0 * log(k_ppt81) =  0.1244286      1.0 regul_k
+k_ppt82       1.0 * log(k_ppt82) =  0.2262103      1.0 regul_k
+k_ppt83       1.0 * log(k_ppt83) =  0.1476865      1.0 regul_k
+k_ppt84       1.0 * log(k_ppt84) = -0.1811887      1.0 regul_k
+k_ppt85       1.0 * log(k_ppt85) = -0.2892054      1.0 regul_k
+k_ppt86       1.0 * log(k_ppt86) = -0.5038018      1.0 regul_k
+k_ppt87       1.0 * log(k_ppt87) = -0.4825700      1.0 regul_k
+k_ppt88       1.0 * log(k_ppt88) =  0.1529039      1.0 regul_k
+k_ppt89       1.0 * log(k_ppt89) =  0.2761855      1.0 regul_k
+k_ppt90       1.0 * log(k_ppt90) =  0.2299152      1.0 regul_k
+k_ppt91       1.0 * log(k_ppt91) =  0.3053522      1.0 regul_k
+k_ppt92       1.0 * log(k_ppt92) = -6.3430165E-02  1.0 regul_k
+k_ppt93       1.0 * log(k_ppt93) = -0.3097836      1.0 regul_k
+k_ppt94       1.0 * log(k_ppt94) = -0.5771402      1.0 regul_k
+k_ppt95       1.0 * log(k_ppt95) = -0.1380818      1.0 regul_k
+k_ppt96       1.0 * log(k_ppt96) = -9.7819918E-03  1.0 regul_k
+k_ppt97       1.0 * log(k_ppt97) =  8.0131672E-02  1.0 regul_k
+k_ppt98       1.0 * log(k_ppt98) =  0.2526924      1.0 regul_k
+k_ppt99       1.0 * log(k_ppt99) = -0.1263947      1.0 regul_k
+k_ppt100      1.0 * log(k_ppt100) = -6.3256906E-02  1.0 regul_k
+k_ppt101      1.0 * log(k_ppt101) = -0.5445465      1.0 regul_k
+k_ppt102      1.0 * log(k_ppt102) = -0.8687439      1.0 regul_k
+k_ppt103      1.0 * log(k_ppt103) = -0.3794872      1.0 regul_k
+k_ppt104      1.0 * log(k_ppt104) = -0.2197160      1.0 regul_k
+* regularisation
+   10.00000       10.20000      5.0000001E-02
+ 1.0   1.0e-10    1.0e10
+ 1.3   1.0e-2     1

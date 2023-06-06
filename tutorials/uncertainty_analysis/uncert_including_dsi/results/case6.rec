@@ -1,0 +1,937 @@
+
+                       PEST RUN RECORD: CASE case6
+
+
+PEST Version: 17.3
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :   104
+   Number of adjustable parameters                :   104
+   Number of parameter groups                     :     1
+   Number of observations                         :    14
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   model.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      hk.tpl
+   for model input files:
+      hk.pts
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      model_smp.ins
+      endpoint.ins
+   for reading model output files:
+      model.smp
+      rect.endpoint7
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 104
+   Ratio of lowest/highest singular value        :  5.000000E-07
+   Record eigenvectors in SVD file               : no
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+k            relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+k_ppt1       log               factor     0.894316       1.000000E-02    100.000    
+k_ppt2       log               factor      1.74308       1.000000E-02    100.000    
+k_ppt3       log               factor     0.725018       1.000000E-02    100.000    
+k_ppt4       log               factor      1.01227       1.000000E-02    100.000    
+k_ppt5       log               factor     0.383288       1.000000E-02    100.000    
+k_ppt6       log               factor     8.959027E-02   1.000000E-02    100.000    
+k_ppt7       log               factor     0.119129       1.000000E-02    100.000    
+k_ppt8       log               factor     0.242106       1.000000E-02    100.000    
+k_ppt9       log               factor     0.952964       1.000000E-02    100.000    
+k_ppt10      log               factor     0.697285       1.000000E-02    100.000    
+k_ppt11      log               factor      3.90774       1.000000E-02    100.000    
+k_ppt12      log               factor     0.364534       1.000000E-02    100.000    
+k_ppt13      log               factor     0.322589       1.000000E-02    100.000    
+k_ppt14      log               factor     9.882327E-02   1.000000E-02    100.000    
+k_ppt15      log               factor     0.401691       1.000000E-02    100.000    
+k_ppt16      log               factor     0.410083       1.000000E-02    100.000    
+k_ppt17      log               factor     0.755961       1.000000E-02    100.000    
+k_ppt18      log               factor      1.50678       1.000000E-02    100.000    
+k_ppt19      log               factor      1.74739       1.000000E-02    100.000    
+k_ppt20      log               factor     0.755339       1.000000E-02    100.000    
+k_ppt21      log               factor     0.295999       1.000000E-02    100.000    
+k_ppt22      log               factor     0.413804       1.000000E-02    100.000    
+k_ppt23      log               factor     0.620047       1.000000E-02    100.000    
+k_ppt24      log               factor     0.984865       1.000000E-02    100.000    
+k_ppt25      log               factor      1.97672       1.000000E-02    100.000    
+k_ppt26      log               factor      2.04885       1.000000E-02    100.000    
+k_ppt27      log               factor      3.04020       1.000000E-02    100.000    
+k_ppt28      log               factor      1.23510       1.000000E-02    100.000    
+k_ppt29      log               factor     0.415266       1.000000E-02    100.000    
+k_ppt30      log               factor     0.247795       1.000000E-02    100.000    
+k_ppt31      log               factor     0.615128       1.000000E-02    100.000    
+k_ppt32      log               factor      1.34803       1.000000E-02    100.000    
+k_ppt33      log               factor     0.766734       1.000000E-02    100.000    
+k_ppt34      log               factor      2.83772       1.000000E-02    100.000    
+k_ppt35      log               factor      1.42627       1.000000E-02    100.000    
+k_ppt36      log               factor      2.08098       1.000000E-02    100.000    
+k_ppt37      log               factor      1.08261       1.000000E-02    100.000    
+k_ppt38      log               factor     0.694059       1.000000E-02    100.000    
+k_ppt39      log               factor      1.18173       1.000000E-02    100.000    
+k_ppt40      log               factor      1.83344       1.000000E-02    100.000    
+k_ppt41      log               factor     0.855669       1.000000E-02    100.000    
+k_ppt42      log               factor     0.508880       1.000000E-02    100.000    
+k_ppt43      log               factor     0.796369       1.000000E-02    100.000    
+k_ppt44      log               factor     0.607117       1.000000E-02    100.000    
+k_ppt45      log               factor     0.814982       1.000000E-02    100.000    
+k_ppt46      log               factor     0.571845       1.000000E-02    100.000    
+k_ppt47      log               factor      1.30188       1.000000E-02    100.000    
+k_ppt48      log               factor      2.56929       1.000000E-02    100.000    
+k_ppt49      log               factor     0.869288       1.000000E-02    100.000    
+k_ppt50      log               factor     0.429763       1.000000E-02    100.000    
+k_ppt51      log               factor      1.19158       1.000000E-02    100.000    
+k_ppt52      log               factor      1.30797       1.000000E-02    100.000    
+k_ppt53      log               factor      1.04409       1.000000E-02    100.000    
+k_ppt54      log               factor     0.717988       1.000000E-02    100.000    
+k_ppt55      log               factor      1.60575       1.000000E-02    100.000    
+k_ppt56      log               factor      2.46607       1.000000E-02    100.000    
+k_ppt57      log               factor      3.12940       1.000000E-02    100.000    
+k_ppt58      log               factor      1.25066       1.000000E-02    100.000    
+k_ppt59      log               factor     0.588841       1.000000E-02    100.000    
+k_ppt60      log               factor      1.61669       1.000000E-02    100.000    
+k_ppt61      log               factor      1.58789       1.000000E-02    100.000    
+k_ppt62      log               factor     0.757280       1.000000E-02    100.000    
+k_ppt63      log               factor      1.20365       1.000000E-02    100.000    
+k_ppt64      log               factor      5.99804       1.000000E-02    100.000    
+k_ppt65      log               factor      2.17300       1.000000E-02    100.000    
+k_ppt66      log               factor      2.73617       1.000000E-02    100.000    
+k_ppt67      log               factor      2.59255       1.000000E-02    100.000    
+k_ppt68      log               factor      2.11295       1.000000E-02    100.000    
+k_ppt69      log               factor      1.03766       1.000000E-02    100.000    
+k_ppt70      log               factor      1.26235       1.000000E-02    100.000    
+k_ppt71      log               factor      2.09784       1.000000E-02    100.000    
+k_ppt72      log               factor      4.81136       1.000000E-02    100.000    
+k_ppt73      log               factor      1.82803       1.000000E-02    100.000    
+k_ppt74      log               factor      1.86500       1.000000E-02    100.000    
+k_ppt75      log               factor      2.49382       1.000000E-02    100.000    
+k_ppt76      log               factor      1.03228       1.000000E-02    100.000    
+k_ppt77      log               factor     0.490482       1.000000E-02    100.000    
+k_ppt78      log               factor     0.760972       1.000000E-02    100.000    
+k_ppt79      log               factor      1.08202       1.000000E-02    100.000    
+k_ppt80      log               factor      1.72349       1.000000E-02    100.000    
+k_ppt81      log               factor      1.33177       1.000000E-02    100.000    
+k_ppt82      log               factor      1.68349       1.000000E-02    100.000    
+k_ppt83      log               factor      1.40503       1.000000E-02    100.000    
+k_ppt84      log               factor     0.658888       1.000000E-02    100.000    
+k_ppt85      log               factor     0.513801       1.000000E-02    100.000    
+k_ppt86      log               factor     0.313472       1.000000E-02    100.000    
+k_ppt87      log               factor     0.329177       1.000000E-02    100.000    
+k_ppt88      log               factor      1.42201       1.000000E-02    100.000    
+k_ppt89      log               factor      1.88880       1.000000E-02    100.000    
+k_ppt90      log               factor      1.69791       1.000000E-02    100.000    
+k_ppt91      log               factor      2.02000       1.000000E-02    100.000    
+k_ppt92      log               factor     0.864112       1.000000E-02    100.000    
+k_ppt93      log               factor     0.490023       1.000000E-02    100.000    
+k_ppt94      log               factor     0.264765       1.000000E-02    100.000    
+k_ppt95      log               factor     0.727643       1.000000E-02    100.000    
+k_ppt96      log               factor     0.977728       1.000000E-02    100.000    
+k_ppt97      log               factor      1.20263       1.000000E-02    100.000    
+k_ppt98      log               factor      1.78934       1.000000E-02    100.000    
+k_ppt99      log               factor     0.747490       1.000000E-02    100.000    
+k_ppt100     log               factor     0.864456       1.000000E-02    100.000    
+k_ppt101     log               factor     0.285400       1.000000E-02    100.000    
+k_ppt102     log               factor     0.135287       1.000000E-02    100.000    
+k_ppt103     log               factor     0.417362       1.000000E-02    100.000    
+k_ppt104     log               factor     0.602954       1.000000E-02    100.000    
+
+Name         Group          Scale         Offset        Model command number
+k_ppt1       k             1.00000        0.00000            1
+k_ppt2       k             1.00000        0.00000            1
+k_ppt3       k             1.00000        0.00000            1
+k_ppt4       k             1.00000        0.00000            1
+k_ppt5       k             1.00000        0.00000            1
+k_ppt6       k             1.00000        0.00000            1
+k_ppt7       k             1.00000        0.00000            1
+k_ppt8       k             1.00000        0.00000            1
+k_ppt9       k             1.00000        0.00000            1
+k_ppt10      k             1.00000        0.00000            1
+k_ppt11      k             1.00000        0.00000            1
+k_ppt12      k             1.00000        0.00000            1
+k_ppt13      k             1.00000        0.00000            1
+k_ppt14      k             1.00000        0.00000            1
+k_ppt15      k             1.00000        0.00000            1
+k_ppt16      k             1.00000        0.00000            1
+k_ppt17      k             1.00000        0.00000            1
+k_ppt18      k             1.00000        0.00000            1
+k_ppt19      k             1.00000        0.00000            1
+k_ppt20      k             1.00000        0.00000            1
+k_ppt21      k             1.00000        0.00000            1
+k_ppt22      k             1.00000        0.00000            1
+k_ppt23      k             1.00000        0.00000            1
+k_ppt24      k             1.00000        0.00000            1
+k_ppt25      k             1.00000        0.00000            1
+k_ppt26      k             1.00000        0.00000            1
+k_ppt27      k             1.00000        0.00000            1
+k_ppt28      k             1.00000        0.00000            1
+k_ppt29      k             1.00000        0.00000            1
+k_ppt30      k             1.00000        0.00000            1
+k_ppt31      k             1.00000        0.00000            1
+k_ppt32      k             1.00000        0.00000            1
+k_ppt33      k             1.00000        0.00000            1
+k_ppt34      k             1.00000        0.00000            1
+k_ppt35      k             1.00000        0.00000            1
+k_ppt36      k             1.00000        0.00000            1
+k_ppt37      k             1.00000        0.00000            1
+k_ppt38      k             1.00000        0.00000            1
+k_ppt39      k             1.00000        0.00000            1
+k_ppt40      k             1.00000        0.00000            1
+k_ppt41      k             1.00000        0.00000            1
+k_ppt42      k             1.00000        0.00000            1
+k_ppt43      k             1.00000        0.00000            1
+k_ppt44      k             1.00000        0.00000            1
+k_ppt45      k             1.00000        0.00000            1
+k_ppt46      k             1.00000        0.00000            1
+k_ppt47      k             1.00000        0.00000            1
+k_ppt48      k             1.00000        0.00000            1
+k_ppt49      k             1.00000        0.00000            1
+k_ppt50      k             1.00000        0.00000            1
+k_ppt51      k             1.00000        0.00000            1
+k_ppt52      k             1.00000        0.00000            1
+k_ppt53      k             1.00000        0.00000            1
+k_ppt54      k             1.00000        0.00000            1
+k_ppt55      k             1.00000        0.00000            1
+k_ppt56      k             1.00000        0.00000            1
+k_ppt57      k             1.00000        0.00000            1
+k_ppt58      k             1.00000        0.00000            1
+k_ppt59      k             1.00000        0.00000            1
+k_ppt60      k             1.00000        0.00000            1
+k_ppt61      k             1.00000        0.00000            1
+k_ppt62      k             1.00000        0.00000            1
+k_ppt63      k             1.00000        0.00000            1
+k_ppt64      k             1.00000        0.00000            1
+k_ppt65      k             1.00000        0.00000            1
+k_ppt66      k             1.00000        0.00000            1
+k_ppt67      k             1.00000        0.00000            1
+k_ppt68      k             1.00000        0.00000            1
+k_ppt69      k             1.00000        0.00000            1
+k_ppt70      k             1.00000        0.00000            1
+k_ppt71      k             1.00000        0.00000            1
+k_ppt72      k             1.00000        0.00000            1
+k_ppt73      k             1.00000        0.00000            1
+k_ppt74      k             1.00000        0.00000            1
+k_ppt75      k             1.00000        0.00000            1
+k_ppt76      k             1.00000        0.00000            1
+k_ppt77      k             1.00000        0.00000            1
+k_ppt78      k             1.00000        0.00000            1
+k_ppt79      k             1.00000        0.00000            1
+k_ppt80      k             1.00000        0.00000            1
+k_ppt81      k             1.00000        0.00000            1
+k_ppt82      k             1.00000        0.00000            1
+k_ppt83      k             1.00000        0.00000            1
+k_ppt84      k             1.00000        0.00000            1
+k_ppt85      k             1.00000        0.00000            1
+k_ppt86      k             1.00000        0.00000            1
+k_ppt87      k             1.00000        0.00000            1
+k_ppt88      k             1.00000        0.00000            1
+k_ppt89      k             1.00000        0.00000            1
+k_ppt90      k             1.00000        0.00000            1
+k_ppt91      k             1.00000        0.00000            1
+k_ppt92      k             1.00000        0.00000            1
+k_ppt93      k             1.00000        0.00000            1
+k_ppt94      k             1.00000        0.00000            1
+k_ppt95      k             1.00000        0.00000            1
+k_ppt96      k             1.00000        0.00000            1
+k_ppt97      k             1.00000        0.00000            1
+k_ppt98      k             1.00000        0.00000            1
+k_ppt99      k             1.00000        0.00000            1
+k_ppt100     k             1.00000        0.00000            1
+k_ppt101     k             1.00000        0.00000            1
+k_ppt102     k             1.00000        0.00000            1
+k_ppt103     k             1.00000        0.00000            1
+k_ppt104     k             1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ well01_1                5.74724          10.00       heads       
+ well02_1                5.69616          10.00       heads       
+ well03_1                5.49199          10.00       heads       
+ well04_1                4.09190          10.00       heads       
+ well05_1                3.92014          10.00       heads       
+ well06_1                4.05991          10.00       heads       
+ well07_1                2.59369          10.00       heads       
+ well08_1                3.25979          10.00       heads       
+ well09_1                2.97368          10.00       heads       
+ well10_1                1.12417          10.00       heads       
+ well11_1                1.20361          10.00       heads       
+ well12_1                1.19256          10.00       heads       
+ part_time               0.00000          0.000       time        
+ part_east               0.00000          0.000       distance    
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -3.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   :  10.000
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.50000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :   2
+   Objective function termination limit                         :  15.000    
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   84.034    
+   Contribution to phi from observation group "heads"       =   84.034    
+   Contribution to phi from observation group "time"        =   0.0000    
+   Contribution to phi from observation group "distance"    =   0.0000    
+
+      Current parameter values
+      k_ppt1          0.894316    
+      k_ppt2           1.74308    
+      k_ppt3          0.725018    
+      k_ppt4           1.01227    
+      k_ppt5          0.383288    
+      k_ppt6          8.959027E-02
+      k_ppt7          0.119129    
+      k_ppt8          0.242106    
+      k_ppt9          0.952964    
+      k_ppt10         0.697285    
+      k_ppt11          3.90774    
+      k_ppt12         0.364534    
+      k_ppt13         0.322589    
+      k_ppt14         9.882327E-02
+      k_ppt15         0.401691    
+      k_ppt16         0.410083    
+      k_ppt17         0.755961    
+      k_ppt18          1.50678    
+      k_ppt19          1.74739    
+      k_ppt20         0.755339    
+      k_ppt21         0.295999    
+      k_ppt22         0.413804    
+      k_ppt23         0.620047    
+      k_ppt24         0.984865    
+      k_ppt25          1.97672    
+      k_ppt26          2.04885    
+      k_ppt27          3.04020    
+      k_ppt28          1.23510    
+      k_ppt29         0.415266    
+      k_ppt30         0.247795    
+      k_ppt31         0.615128    
+      k_ppt32          1.34803    
+      k_ppt33         0.766734    
+      k_ppt34          2.83772    
+      k_ppt35          1.42627    
+      k_ppt36          2.08098    
+      k_ppt37          1.08261    
+      k_ppt38         0.694059    
+      k_ppt39          1.18173    
+      k_ppt40          1.83344    
+      k_ppt41         0.855669    
+      k_ppt42         0.508880    
+      k_ppt43         0.796369    
+      k_ppt44         0.607117    
+      k_ppt45         0.814982    
+      k_ppt46         0.571845    
+      k_ppt47          1.30188    
+      k_ppt48          2.56929    
+      k_ppt49         0.869288    
+      k_ppt50         0.429763    
+      k_ppt51          1.19158    
+      k_ppt52          1.30797    
+      k_ppt53          1.04409    
+      k_ppt54         0.717988    
+      k_ppt55          1.60575    
+      k_ppt56          2.46607    
+      k_ppt57          3.12940    
+      k_ppt58          1.25066    
+      k_ppt59         0.588841    
+      k_ppt60          1.61669    
+      k_ppt61          1.58789    
+      k_ppt62         0.757280    
+      k_ppt63          1.20365    
+      k_ppt64          5.99804    
+      k_ppt65          2.17300    
+      k_ppt66          2.73617    
+      k_ppt67          2.59255    
+      k_ppt68          2.11295    
+      k_ppt69          1.03766    
+      k_ppt70          1.26235    
+      k_ppt71          2.09784    
+      k_ppt72          4.81136    
+      k_ppt73          1.82803    
+      k_ppt74          1.86500    
+      k_ppt75          2.49382    
+      k_ppt76          1.03228    
+      k_ppt77         0.490482    
+      k_ppt78         0.760972    
+      k_ppt79          1.08202    
+      k_ppt80          1.72349    
+      k_ppt81          1.33177    
+      k_ppt82          1.68349    
+      k_ppt83          1.40503    
+      k_ppt84         0.658888    
+      k_ppt85         0.513801    
+      k_ppt86         0.313472    
+      k_ppt87         0.329177    
+      k_ppt88          1.42201    
+      k_ppt89          1.88880    
+      k_ppt90          1.69791    
+      k_ppt91          2.02000    
+      k_ppt92         0.864112    
+      k_ppt93         0.490023    
+      k_ppt94         0.264765    
+      k_ppt95         0.727643    
+      k_ppt96         0.977728    
+      k_ppt97          1.20263    
+      k_ppt98          1.78934    
+      k_ppt99         0.747490    
+      k_ppt100        0.864456    
+      k_ppt101        0.285400    
+      k_ppt102        0.135287    
+      k_ppt103        0.417362    
+      k_ppt104        0.602954    
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   84.034    
+   Contribution to phi from observation group "heads"       :   84.034    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Jacobian matrix read from file case3.jco
+
+       Lambda =   10.000     ----->
+          Phi =   40.598      (  0.483 of starting phi)
+
+       Lambda =   4.6416     ----->
+          Phi =   41.519      (  0.494 of starting phi)
+
+       Lambda =   21.544     ----->
+          Phi =   38.708      (  0.461 of starting phi)
+
+       Lambda =   46.416     ----->
+          Phi =   35.041      (  0.417 of starting phi)
+
+       Lambda =   100.00     ----->
+          Phi =   28.693      (  0.341 of starting phi)
+
+       Lambda =   215.44     ----->
+          Phi =   19.950      (  0.237 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:   19.950    
+
+      Current parameter values                 Previous parameter values
+      k_ppt1          0.883678                 k_ppt1           0.894316    
+      k_ppt2           1.72681                 k_ppt2            1.74308    
+      k_ppt3          0.719638                 k_ppt3           0.725018    
+      k_ppt4           1.00678                 k_ppt4            1.01227    
+      k_ppt5          0.382847                 k_ppt5           0.383288    
+      k_ppt6          9.010133E-02             k_ppt6           8.959027E-02
+      k_ppt7          0.120588                 k_ppt7           0.119129    
+      k_ppt8          0.248326                 k_ppt8           0.242106    
+      k_ppt9          0.924607                 k_ppt9           0.952964    
+      k_ppt10         0.678558                 k_ppt10          0.697285    
+      k_ppt11          3.84026                 k_ppt11           3.90774    
+      k_ppt12         0.358192                 k_ppt12          0.364534    
+      k_ppt13         0.319849                 k_ppt13          0.322589    
+      k_ppt14         0.100237                 k_ppt14          9.882327E-02
+      k_ppt15         0.419474                 k_ppt15          0.401691    
+      k_ppt16         0.436758                 k_ppt16          0.410083    
+      k_ppt17         0.732393                 k_ppt17          0.755961    
+      k_ppt18          1.46145                 k_ppt18           1.50678    
+      k_ppt19          1.72140                 k_ppt19           1.74739    
+      k_ppt20         0.735695                 k_ppt20          0.755339    
+      k_ppt21         0.290937                 k_ppt21          0.295999    
+      k_ppt22         0.421435                 k_ppt22          0.413804    
+      k_ppt23         0.661170                 k_ppt23          0.620047    
+      k_ppt24          1.06169                 k_ppt24          0.984865    
+      k_ppt25          2.06282                 k_ppt25           1.97672    
+      k_ppt26          2.12713                 k_ppt26           2.04885    
+      k_ppt27          3.05496                 k_ppt27           3.04020    
+      k_ppt28          1.22641                 k_ppt28           1.23510    
+      k_ppt29         0.413710                 k_ppt29          0.415266    
+      k_ppt30         0.248188                 k_ppt30          0.247795    
+      k_ppt31         0.601749                 k_ppt31          0.615128    
+      k_ppt32          1.30945                 k_ppt32           1.34803    
+      k_ppt33         0.799369                 k_ppt33          0.766734    
+      k_ppt34          2.96236                 k_ppt34           2.83772    
+      k_ppt35          1.45471                 k_ppt35           1.42627    
+      k_ppt36          1.93430                 k_ppt36           2.08098    
+      k_ppt37         0.998790                 k_ppt37           1.08261    
+      k_ppt38         0.689401                 k_ppt38          0.694059    
+      k_ppt39          1.20929                 k_ppt39           1.18173    
+      k_ppt40          1.82084                 k_ppt40           1.83344    
+      k_ppt41         0.884445                 k_ppt41          0.855669    
+      k_ppt42         0.543841                 k_ppt42          0.508880    
+      k_ppt43         0.886536                 k_ppt43          0.796369    
+      k_ppt44         0.584252                 k_ppt44          0.607117    
+      k_ppt45         0.761013                 k_ppt45          0.814982    
+      k_ppt46         0.590550                 k_ppt46          0.571845    
+      k_ppt47          1.36986                 k_ppt47           1.30188    
+      k_ppt48          2.44240                 k_ppt48           2.56929    
+      k_ppt49         0.927859                 k_ppt49          0.869288    
+      k_ppt50         0.495431                 k_ppt50          0.429763    
+      k_ppt51          1.58561                 k_ppt51           1.19158    
+      k_ppt52          2.42072                 k_ppt52           1.30797    
+      k_ppt53          1.83341                 k_ppt53           1.04409    
+      k_ppt54         0.820434                 k_ppt54          0.717988    
+      k_ppt55          1.34277                 k_ppt55           1.60575    
+      k_ppt56          1.64963                 k_ppt56           2.46607    
+      k_ppt57          2.96018                 k_ppt57           3.12940    
+      k_ppt58          1.29579                 k_ppt58           1.25066    
+      k_ppt59         0.819292                 k_ppt59          0.588841    
+      k_ppt60          3.75166                 k_ppt60           1.61669    
+      k_ppt61          3.56870                 k_ppt61           1.58789    
+      k_ppt62         0.923283                 k_ppt62          0.757280    
+      k_ppt63         0.897348                 k_ppt63           1.20365    
+      k_ppt64          3.33214                 k_ppt64           5.99804    
+      k_ppt65          1.88302                 k_ppt65           2.17300    
+      k_ppt66          2.30497                 k_ppt66           2.73617    
+      k_ppt67          2.78911                 k_ppt67           2.59255    
+      k_ppt68          5.12000                 k_ppt68           2.11295    
+      k_ppt69          2.82853                 k_ppt69           1.03766    
+      k_ppt70          1.39314                 k_ppt70           1.26235    
+      k_ppt71          1.35349                 k_ppt71           2.09784    
+      k_ppt72          2.47261                 k_ppt72           4.81136    
+      k_ppt73          2.40695                 k_ppt73           1.82803    
+      k_ppt74          2.13705                 k_ppt74           1.86500    
+      k_ppt75          1.99883                 k_ppt75           2.49382    
+      k_ppt76         0.480995                 k_ppt76           1.03228    
+      k_ppt77         0.265710                 k_ppt77          0.490482    
+      k_ppt78         0.700359                 k_ppt78          0.760972    
+      k_ppt79          1.46485                 k_ppt79           1.08202    
+      k_ppt80          2.32972                 k_ppt80           1.72349    
+      k_ppt81          1.62283                 k_ppt81           1.33177    
+      k_ppt82          1.83766                 k_ppt82           1.68349    
+      k_ppt83          1.17228                 k_ppt83           1.40503    
+      k_ppt84         0.408050                 k_ppt84          0.658888    
+      k_ppt85         0.332186                 k_ppt85          0.513801    
+      k_ppt86         0.285503                 k_ppt86          0.313472    
+      k_ppt87         0.382195                 k_ppt87          0.329177    
+      k_ppt88          1.87508                 k_ppt88           1.42201    
+      k_ppt89          1.93698                 k_ppt89           1.88880    
+      k_ppt90          1.62622                 k_ppt90           1.69791    
+      k_ppt91          1.70698                 k_ppt91           2.02000    
+      k_ppt92         0.769405                 k_ppt92          0.864112    
+      k_ppt93         0.457107                 k_ppt93          0.490023    
+      k_ppt94         0.242342                 k_ppt94          0.264765    
+      k_ppt95         0.681129                 k_ppt95          0.727643    
+      k_ppt96          1.07753                 k_ppt96          0.977728    
+      k_ppt97         0.936047                 k_ppt97           1.20263    
+      k_ppt98          1.27593                 k_ppt98           1.78934    
+      k_ppt99         0.462418                 k_ppt99          0.747490    
+      k_ppt100        0.430228                 k_ppt100         0.864456    
+      k_ppt101        0.158703                 k_ppt101         0.285400    
+      k_ppt102        0.115137                 k_ppt102         0.135287    
+      k_ppt103        0.555699                 k_ppt103         0.417362    
+      k_ppt104         1.06374                 k_ppt104         0.602954    
+   Maximum   factor change:  2.726     ["k_ppt69"]
+   Maximum relative change:  1.726     ["k_ppt69"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 7
+   Starting phi for this iteration                          :   19.950    
+   Contribution to phi from observation group "heads"       :   19.950    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+
+       Lambda =   215.44     ----->
+          Phi =  0.36684      (  0.018 of starting phi)
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+   Lowest phi this iteration:  0.36684    
+
+      Current parameter values                 Previous parameter values
+      k_ppt1          0.875089                 k_ppt1           0.883678    
+      k_ppt2           1.72340                 k_ppt2            1.72681    
+      k_ppt3          0.717872                 k_ppt3           0.719638    
+      k_ppt4           1.00910                 k_ppt4            1.00678    
+      k_ppt5          0.390087                 k_ppt5           0.382847    
+      k_ppt6          9.096713E-02             k_ppt6           9.010133E-02
+      k_ppt7          0.119107                 k_ppt7           0.120588    
+      k_ppt8          0.244677                 k_ppt8           0.248326    
+      k_ppt9          0.897944                 k_ppt9           0.924607    
+      k_ppt10         0.665994                 k_ppt10          0.678558    
+      k_ppt11          3.85556                 k_ppt11           3.84026    
+      k_ppt12         0.371692                 k_ppt12          0.358192    
+      k_ppt13         0.333476                 k_ppt13          0.319849    
+      k_ppt14         0.100588                 k_ppt14          0.100237    
+      k_ppt15         0.412039                 k_ppt15          0.419474    
+      k_ppt16         0.426538                 k_ppt16          0.436758    
+      k_ppt17         0.701410                 k_ppt17          0.732393    
+      k_ppt18          1.40066                 k_ppt18           1.46145    
+      k_ppt19          1.72062                 k_ppt19           1.72140    
+      k_ppt20         0.786269                 k_ppt20          0.735695    
+      k_ppt21         0.306586                 k_ppt21          0.290937    
+      k_ppt22         0.421712                 k_ppt22          0.421435    
+      k_ppt23         0.647753                 k_ppt23          0.661170    
+      k_ppt24          1.04641                 k_ppt24           1.06169    
+      k_ppt25          2.02316                 k_ppt25           2.06282    
+      k_ppt26          2.09972                 k_ppt26           2.12713    
+      k_ppt27          3.03471                 k_ppt27           3.05496    
+      k_ppt28          1.17267                 k_ppt28           1.22641    
+      k_ppt29         0.387771                 k_ppt29          0.413710    
+      k_ppt30         0.247019                 k_ppt30          0.248188    
+      k_ppt31         0.621746                 k_ppt31          0.601749    
+      k_ppt32          1.38468                 k_ppt32           1.30945    
+      k_ppt33         0.721253                 k_ppt33          0.799369    
+      k_ppt34          2.78959                 k_ppt34           2.96236    
+      k_ppt35          1.47020                 k_ppt35           1.45471    
+      k_ppt36          1.94030                 k_ppt36           1.93430    
+      k_ppt37         0.980679                 k_ppt37          0.998790    
+      k_ppt38         0.688612                 k_ppt38          0.689401    
+      k_ppt39          1.23289                 k_ppt39           1.20929    
+      k_ppt40          1.87784                 k_ppt40           1.82084    
+      k_ppt41         0.737695                 k_ppt41          0.884445    
+      k_ppt42         0.488608                 k_ppt42          0.543841    
+      k_ppt43         0.950819                 k_ppt43          0.886536    
+      k_ppt44         0.636696                 k_ppt44          0.584252    
+      k_ppt45         0.807883                 k_ppt45          0.761013    
+      k_ppt46         0.610658                 k_ppt46          0.590550    
+      k_ppt47          1.38549                 k_ppt47           1.36986    
+      k_ppt48          2.42253                 k_ppt48           2.44240    
+      k_ppt49         0.919499                 k_ppt49          0.927859    
+      k_ppt50         0.499453                 k_ppt50          0.495431    
+      k_ppt51          1.72335                 k_ppt51           1.58561    
+      k_ppt52          2.92209                 k_ppt52           2.42072    
+      k_ppt53          2.13549                 k_ppt53           1.83341    
+      k_ppt54         0.880350                 k_ppt54          0.820434    
+      k_ppt55          1.36590                 k_ppt55           1.34277    
+      k_ppt56          1.58833                 k_ppt56           1.64963    
+      k_ppt57          2.73262                 k_ppt57           2.96018    
+      k_ppt58          1.18266                 k_ppt58           1.29579    
+      k_ppt59         0.784821                 k_ppt59          0.819292    
+      k_ppt60          4.54646                 k_ppt60           3.75166    
+      k_ppt61          4.35024                 k_ppt61           3.56870    
+      k_ppt62         0.966369                 k_ppt62          0.923283    
+      k_ppt63         0.872928                 k_ppt63          0.897348    
+      k_ppt64          3.03302                 k_ppt64           3.33214    
+      k_ppt65          1.60315                 k_ppt65           1.88302    
+      k_ppt66          1.78767                 k_ppt66           2.30497    
+      k_ppt67          1.95687                 k_ppt67           2.78911    
+      k_ppt68          5.15671                 k_ppt68           5.12000    
+      k_ppt69          3.56895                 k_ppt69           2.82853    
+      k_ppt70          1.31659                 k_ppt70           1.39314    
+      k_ppt71          1.21892                 k_ppt71           1.35349    
+      k_ppt72          2.17145                 k_ppt72           2.47261    
+      k_ppt73          2.84244                 k_ppt73           2.40695    
+      k_ppt74          2.10253                 k_ppt74           2.13705    
+      k_ppt75          1.40112                 k_ppt75           1.99883    
+      k_ppt76         0.327493                 k_ppt76          0.480995    
+      k_ppt77         0.226570                 k_ppt77          0.265710    
+      k_ppt78         0.645695                 k_ppt78          0.700359    
+      k_ppt79          1.44016                 k_ppt79           1.46485    
+      k_ppt80          2.40154                 k_ppt80           2.32972    
+      k_ppt81          1.88007                 k_ppt81           1.62283    
+      k_ppt82          1.91312                 k_ppt82           1.83766    
+      k_ppt83          1.03433                 k_ppt83           1.17228    
+      k_ppt84         0.338064                 k_ppt84          0.408050    
+      k_ppt85         0.289155                 k_ppt85          0.332186    
+      k_ppt86         0.272253                 k_ppt86          0.285503    
+      k_ppt87         0.385439                 k_ppt87          0.382195    
+      k_ppt88          1.96124                 k_ppt88           1.87508    
+      k_ppt89          2.05159                 k_ppt89           1.93698    
+      k_ppt90          1.61598                 k_ppt90           1.62622    
+      k_ppt91          1.62523                 k_ppt91           1.70698    
+      k_ppt92         0.727847                 k_ppt92          0.769405    
+      k_ppt93         0.436984                 k_ppt93          0.457107    
+      k_ppt94         0.235322                 k_ppt94          0.242342    
+      k_ppt95         0.677874                 k_ppt95          0.681129    
+      k_ppt96          1.07558                 k_ppt96           1.07753    
+      k_ppt97         0.974964                 k_ppt97          0.936047    
+      k_ppt98          1.25231                 k_ppt98           1.27593    
+      k_ppt99         0.430651                 k_ppt99          0.462418    
+      k_ppt100        0.390489                 k_ppt100         0.430228    
+      k_ppt101        0.146355                 k_ppt101         0.158703    
+      k_ppt102        0.108585                 k_ppt102         0.115137    
+      k_ppt103        0.502454                 k_ppt103         0.555699    
+      k_ppt104        0.914504                 k_ppt104          1.06374    
+   Maximum   factor change:  1.469     ["k_ppt76"]
+   Maximum relative change: 0.3191     ["k_ppt76"]
+
+   Optimisation complete: objective function less than PHISTOPTHRESH.
+   Total model calls:    112
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ k_ppt1         0.875089    
+ k_ppt2          1.72340    
+ k_ppt3         0.717872    
+ k_ppt4          1.00910    
+ k_ppt5         0.390087    
+ k_ppt6         9.096713E-02
+ k_ppt7         0.119107    
+ k_ppt8         0.244677    
+ k_ppt9         0.897944    
+ k_ppt10        0.665994    
+ k_ppt11         3.85556    
+ k_ppt12        0.371692    
+ k_ppt13        0.333476    
+ k_ppt14        0.100588    
+ k_ppt15        0.412039    
+ k_ppt16        0.426538    
+ k_ppt17        0.701410    
+ k_ppt18         1.40066    
+ k_ppt19         1.72062    
+ k_ppt20        0.786269    
+ k_ppt21        0.306586    
+ k_ppt22        0.421712    
+ k_ppt23        0.647753    
+ k_ppt24         1.04641    
+ k_ppt25         2.02316    
+ k_ppt26         2.09972    
+ k_ppt27         3.03471    
+ k_ppt28         1.17267    
+ k_ppt29        0.387771    
+ k_ppt30        0.247019    
+ k_ppt31        0.621746    
+ k_ppt32         1.38468    
+ k_ppt33        0.721253    
+ k_ppt34         2.78959    
+ k_ppt35         1.47020    
+ k_ppt36         1.94030    
+ k_ppt37        0.980679    
+ k_ppt38        0.688612    
+ k_ppt39         1.23289    
+ k_ppt40         1.87784    
+ k_ppt41        0.737695    
+ k_ppt42        0.488608    
+ k_ppt43        0.950819    
+ k_ppt44        0.636696    
+ k_ppt45        0.807883    
+ k_ppt46        0.610658    
+ k_ppt47         1.38549    
+ k_ppt48         2.42253    
+ k_ppt49        0.919499    
+ k_ppt50        0.499453    
+ k_ppt51         1.72335    
+ k_ppt52         2.92209    
+ k_ppt53         2.13549    
+ k_ppt54        0.880350    
+ k_ppt55         1.36590    
+ k_ppt56         1.58833    
+ k_ppt57         2.73262    
+ k_ppt58         1.18266    
+ k_ppt59        0.784821    
+ k_ppt60         4.54646    
+ k_ppt61         4.35024    
+ k_ppt62        0.966369    
+ k_ppt63        0.872928    
+ k_ppt64         3.03302    
+ k_ppt65         1.60315    
+ k_ppt66         1.78767    
+ k_ppt67         1.95687    
+ k_ppt68         5.15671    
+ k_ppt69         3.56895    
+ k_ppt70         1.31659    
+ k_ppt71         1.21892    
+ k_ppt72         2.17145    
+ k_ppt73         2.84244    
+ k_ppt74         2.10253    
+ k_ppt75         1.40112    
+ k_ppt76        0.327493    
+ k_ppt77        0.226570    
+ k_ppt78        0.645695    
+ k_ppt79         1.44016    
+ k_ppt80         2.40154    
+ k_ppt81         1.88007    
+ k_ppt82         1.91312    
+ k_ppt83         1.03433    
+ k_ppt84        0.338064    
+ k_ppt85        0.289155    
+ k_ppt86        0.272253    
+ k_ppt87        0.385439    
+ k_ppt88         1.96124    
+ k_ppt89         2.05159    
+ k_ppt90         1.61598    
+ k_ppt91         1.62523    
+ k_ppt92        0.727847    
+ k_ppt93        0.436984    
+ k_ppt94        0.235322    
+ k_ppt95        0.677874    
+ k_ppt96         1.07558    
+ k_ppt97        0.974964    
+ k_ppt98         1.25231    
+ k_ppt99        0.430651    
+ k_ppt100       0.390489    
+ k_ppt101       0.146355    
+ k_ppt102       0.108585    
+ k_ppt103       0.502454    
+ k_ppt104       0.914504    
+
+See file case6.sen for parameter sensitivities.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+well01_1               5.74724        5.76401      -1.676995E-02    10.00      heads       
+well02_1               5.69616        5.70500      -8.836590E-03    10.00      heads       
+well03_1               5.49199        5.50959      -1.760063E-02    10.00      heads       
+well04_1               4.09190        4.10757      -1.567113E-02    10.00      heads       
+well05_1               3.92014        3.93975      -1.960805E-02    10.00      heads       
+well06_1               4.05991        4.07785      -1.794177E-02    10.00      heads       
+well07_1               2.59369        2.61418      -2.048747E-02    10.00      heads       
+well08_1               3.25979        3.23144       2.834707E-02    10.00      heads       
+well09_1               2.97368        3.00053      -2.684834E-02    10.00      heads       
+well10_1               1.12417        1.12398       1.927000E-04    10.00      heads       
+well11_1               1.20361        1.20453      -9.222700E-04    10.00      heads       
+well12_1               1.19256        1.20268      -1.011689E-02    10.00      heads       
+part_time              0.00000        10951.8       -10951.8        0.000      time        
+part_east              0.00000        233.486       -233.486        0.000      distance    
+
+See file case6.res for more details of residuals in graph-ready format.
+
+See file case6.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =  0.36684    
+  Contribution to phi from observation group "heads"        =  0.36684    
+  Contribution to phi from observation group "time"         =   0.0000    
+  Contribution to phi from observation group "distance"     =   0.0000    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.99997    
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    12
+     Mean value of non-zero weighted residuals                      = -0.1052    
+     Maximum weighted residual [observation "well08_1"]             =  0.2835    
+     Minimum weighted residual [observation "well09_1"]             = -0.2685    
+     Standard variance of weighted residuals                        =  3.0570E-02
+     Standard error of weighted residuals                           =  0.1748    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "heads":-
+     Number of residuals with non-zero weight                       =    12
+     Mean value of non-zero weighted residuals                      = -0.1052    
+     Maximum weighted residual [observation "well08_1"]             =  0.2835    
+     Minimum weighted residual [observation "well09_1"]             = -0.2685    
+     "Variance" of weighted residuals                               =  3.0570E-02
+     "Standard error" of weighted residuals                         =  0.1748    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "time":-
+     Number of residuals with non-zero weight                       =     0
+
+  Residuals for observation group "distance":-
+     Number of residuals with non-zero weight                       =     0
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+

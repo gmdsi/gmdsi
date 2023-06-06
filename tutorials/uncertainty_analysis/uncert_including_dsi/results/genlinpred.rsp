@@ -1,0 +1,25 @@
+! GENLINPRED response file. Beware of altering single letter responses as ensuing GENLINPRED prompts may be different
+f                       ! abbreviated or full input?
+case3.pst               ! PEST control file
+u                       ! bounds or uncertainty file for parameter uncertainties?
+param.unc               ! parameter uncertainty file
+n                       ! are weights the inverse of measurement uncertainty?
+1                       ! factor to make weights inverse of measurement noise
+genlinpred.out          ! GENLINPRED output file
+y                       ! perform global parameter estimability analysis?
+y                       ! compute parameter identifiabilities?
+n                       ! compute relative parameter error reduction?
+y                       ! use SUPCALC to estimate solution space dimensionality?
+y                       ! compute relative parameter uncertainty reduction?
+y                       ! perform comprehensive analysis of prediction or parameter?
+part_east               ! name of prediction or parameter to analyze
+case3.jco               ! file to read predictive sensitivities or "p" for parameter
+y                       ! compute solution/null space contributions to predictive error?
+y                       ! compute predictive uncertainty?
+n                       ! compute parameter contributions to parameter or predictive error?
+y                       ! compute parameter contributions to uncertainty?
+i                       ! for individual parameters or parameter groups?
+n                       ! compute observation worth with respect to error?
+y                       ! compute observation worth with respect to uncertainty?
+i                       ! for individual observations or for observation groups?
+n                       ! over-ride SUPCALC calculation of solution space dimensions?

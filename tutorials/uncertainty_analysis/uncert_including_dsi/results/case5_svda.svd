@@ -1,0 +1,14 @@
+ RECORD OF SVD CALCULATIONS: CASE case5_svda
+
+
+ ------------------------------------------------------------------------------
+ OPTIMISATION ITERATION NO.        :    1
+
+
+ CURRENT VALUE OF MARQUARDT LAMBDA =     10.0     ----->
+
+ SINGULAR VALUES:-
+   3038.057       350.2404       228.3086       192.0602       138.5607       118.9786       92.15522    
+   87.56851       83.45009       74.89112       65.98258       61.39481    
+
+ Number of singular values used in solution = 12

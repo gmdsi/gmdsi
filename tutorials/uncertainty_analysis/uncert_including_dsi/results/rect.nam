@@ -1,0 +1,14 @@
+BEGIN OPTIONS
+  SAVE_FLOWS
+END OPTIONS
+
+BEGIN PACKAGES
+  DIS6   rect.dis   dis
+  NPF6   rect.npf   npf
+  IC6    rect.ic    ic
+  OC6    rect.oc    oc
+  CHD6   rect.chd   chd
+  WEL6   rect.wel   wel
+END PACKAGES
+
+

@@ -1,0 +1,15 @@
+ Observation           Group         Measured          Modelled        Sensitivity
+ well01_1              heads          5.747240          5.624681          1.899362    
+ well02_1              heads          5.696160          5.535312          1.720305    
+ well03_1              heads          5.491990          5.438642          1.708224    
+ well04_1              heads          4.091900          4.028071          1.651559    
+ well05_1              heads          3.920140          3.977920          1.489087    
+ well06_1              heads          4.059910          4.026553          1.535600    
+ well07_1              heads          2.593690          2.706955          1.466474    
+ well08_1              heads          3.259790          3.034168          1.323825    
+ well09_1              heads          2.973680          3.040086          1.452212    
+ well10_1              heads          1.124170          1.108443          1.305031    
+ well11_1              heads          1.203610          1.150755         0.8542799    
+ well12_1              heads          1.192560          1.192541          1.259217    
+ part_time             time           0.000000          8864.569          0.000000    
+ part_east             distance       0.000000          239.2124          0.000000    

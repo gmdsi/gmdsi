@@ -1,0 +1,2 @@
+group,mean_change,std_change,num_at_near_bounds,percent_at_near_bounds,initial_cv,current_cv,num_cv_dec
+pg1,462.546,13.8987,0,0,333.885,181.19,5

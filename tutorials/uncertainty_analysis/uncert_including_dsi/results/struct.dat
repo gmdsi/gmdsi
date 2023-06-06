@@ -1,0 +1,34 @@
+# This is the geostatistical structure that we use for kriging from
+# pilot points to the model grid.
+
+STRUCTURE structure1
+  NUGGET 0.0
+  TRANSFORM log
+  NUMVARIOGRAM 1
+  VARIOGRAM vario1 0.1
+END STRUCTURE
+
+
+VARIOGRAM vario1
+  VARTYPE 2
+  BEARING 0.0
+  A 150
+  ANISOTROPY 1.0
+END VARIOGRAM
+
+# This is the geostatistical structure of the true hydraulic conductivity field.
+
+STRUCTURE structure2
+  NUGGET 0.0
+  TRANSFORM log
+  NUMVARIOGRAM 1
+  VARIOGRAM vario2 0.2
+END STRUCTURE
+
+
+VARIOGRAM vario2
+  VARTYPE 2
+  BEARING 0.0
+  A 200
+  ANISOTROPY 1.0
+END VARIOGRAM

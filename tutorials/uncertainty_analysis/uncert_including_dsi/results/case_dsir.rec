@@ -1,0 +1,708 @@
+
+                     PEST RUN RECORD: CASE case_dsir
+
+
+PEST Version: 17.3
+
+
+PEST run mode:-
+
+   Regularisation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    14
+   Number of adjustable parameters                :    14
+   Number of parameter groups                     :     1
+   Number of observations                         :    14
+   Number of prior estimates                      :    14
+
+
+Model command line(s):-
+
+   dsimod case_dsi.bin case_dsi.in case_dsi.out
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      case_dsi.tpl
+   for model input files:
+      case_dsi.in
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      case_dsi.ins
+   for reading model output files:
+      case_dsi.out
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 14
+   Ratio of lowest/highest singular value        :  5.000000E-08
+   Record eigenvectors in SVD file               : no
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+pg1          absolute    1.0000E-02    na          switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+par1         none              abs(1)      0.00000       -10.0000        10.0000    
+par2         none              abs(1)      0.00000       -10.0000        10.0000    
+par3         none              abs(1)      0.00000       -10.0000        10.0000    
+par4         none              abs(1)      0.00000       -10.0000        10.0000    
+par5         none              abs(1)      0.00000       -10.0000        10.0000    
+par6         none              abs(1)      0.00000       -10.0000        10.0000    
+par7         none              abs(1)      0.00000       -10.0000        10.0000    
+par8         none              abs(1)      0.00000       -10.0000        10.0000    
+par9         none              abs(1)      0.00000       -10.0000        10.0000    
+par10        none              abs(1)      0.00000       -10.0000        10.0000    
+par11        none              abs(1)      0.00000       -10.0000        10.0000    
+par12        none              abs(1)      0.00000       -10.0000        10.0000    
+par13        none              abs(1)      0.00000       -10.0000        10.0000    
+par14        none              abs(1)      0.00000       -10.0000        10.0000    
+
+Name         Group          Scale         Offset        Model command number
+par1         pg1           1.00000        0.00000            1
+par2         pg1           1.00000        0.00000            1
+par3         pg1           1.00000        0.00000            1
+par4         pg1           1.00000        0.00000            1
+par5         pg1           1.00000        0.00000            1
+par6         pg1           1.00000        0.00000            1
+par7         pg1           1.00000        0.00000            1
+par8         pg1           1.00000        0.00000            1
+par9         pg1           1.00000        0.00000            1
+par10        pg1           1.00000        0.00000            1
+par11        pg1           1.00000        0.00000            1
+par12        pg1           1.00000        0.00000            1
+par13        pg1           1.00000        0.00000            1
+par14        pg1           1.00000        0.00000            1
+
+
+Prior information:-
+
+Prior info               Factor             Parameter              Prior         Weight
+name                                                               information
+                par1      1.00000       *       par1          =     0.00000       1.000
+                par2      1.00000       *       par2          =     0.00000       1.000
+                par3      1.00000       *       par3          =     0.00000       1.000
+                par4      1.00000       *       par4          =     0.00000       1.000
+                par5      1.00000       *       par5          =     0.00000       1.000
+                par6      1.00000       *       par6          =     0.00000       1.000
+                par7      1.00000       *       par7          =     0.00000       1.000
+                par8      1.00000       *       par8          =     0.00000       1.000
+                par9      1.00000       *       par9          =     0.00000       1.000
+               par10      1.00000       *       par10         =     0.00000       1.000
+               par11      1.00000       *       par11         =     0.00000       1.000
+               par12      1.00000       *       par12         =     0.00000       1.000
+               par13      1.00000       *       par13         =     0.00000       1.000
+               par14      1.00000       *       par14         =     0.00000       1.000
+
+Prior Info Name           Observation Group
+par1                         regul_pg1
+par2                         regul_pg1
+par3                         regul_pg1
+par4                         regul_pg1
+par5                         regul_pg1
+par6                         regul_pg1
+par7                         regul_pg1
+par8                         regul_pg1
+par9                         regul_pg1
+par10                        regul_pg1
+par11                        regul_pg1
+par12                        regul_pg1
+par13                        regul_pg1
+par14                        regul_pg1
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ well01_1                5.74724          10.00       heads       
+ well02_1                5.69616          10.00       heads       
+ well03_1                5.49199          10.00       heads       
+ well04_1                4.09190          10.00       heads       
+ well05_1                3.92014          10.00       heads       
+ well06_1                4.05991          10.00       heads       
+ well07_1                2.59369          10.00       heads       
+ well08_1                3.25979          10.00       heads       
+ well09_1                2.97368          10.00       heads       
+ well10_1                1.12417          10.00       heads       
+ well11_1                1.20361          10.00       heads       
+ well12_1                1.19256          10.00       heads       
+ part_time               0.00000          0.000       time        
+ part_east               0.00000          0.000       distance    
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -3.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 1.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   : na
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Absolute parameter change limit (1)                          : 0.50000
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.10000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.10000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :   5
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : yes
+
+
+Extra settings for regularisation mode:-
+
+   Target/current measurement objective function ratio          : 5.00000E-02
+   Acceptable/target measurement objective function ratio       :  1.0200    
+   Minimum target measurement objective function value          :  12.000    
+   Terminate inversion when measurement obj. fn. below target   : no
+
+   Initial regularisation weight factor                         :  1.0000    
+   Minimum regularisation weight factor                         : 1.00000E-10
+   Maximum regularisation weight factor                         : 1.00000E+10
+
+   Weight factor solution adjustment ratio                      :  1.3000    
+   Weight factor solution tolerance                             : 1.00000E-02
+   Automatic inter-regularisation group weights adjustment      : yes
+   Use sensitivities or number of items                         : sensitivities
+
+   Implement memory conservation                                : no
+   Declare all regularisation information as linear             : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Current regularisation weight factor                     =   1.0000    
+   Current value of measurement objective function          =   483.45    
+   Current value of regularisation objective function       =   0.0000    
+
+   Sum of squared weighted residuals (ie phi)               =   483.45    
+   Contribution to phi from observation group "heads"       =   483.45    
+   Contribution to phi from observation group "time"        =   0.0000    
+   Contribution to phi from observation group "distance"    =   0.0000    
+   Contribution to phi from observation group "regul_pg1"   =   0.0000    
+
+      Current parameter values
+      par1             0.00000    
+      par2             0.00000    
+      par3             0.00000    
+      par4             0.00000    
+      par5             0.00000    
+      par6             0.00000    
+      par7             0.00000    
+      par8             0.00000    
+      par9             0.00000    
+      par10            0.00000    
+      par11            0.00000    
+      par12            0.00000    
+      par13            0.00000    
+      par14            0.00000    
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Current regularisation weight factor                     :   1.0000    
+   Current value of measurement objective function          :   483.45    
+   Current value of regularisation objective function       :   0.0000    
+   Note: regularisation objective function is not comparable between
+   iterations because of IREGADJ regularisation weights adjustment.
+
+   Starting phi for this iteration                          :   483.45    
+   Contribution to phi from observation group "heads"       :   483.45    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   0.0000    
+
+   Regularisation weights adjustment....
+   Group Name    Weights adjustment ratio from previous iteration
+    regul_pg1       1.00000    
+   FRACPHIM-adjusted target measurement objective function  :   24.172    
+
+   Re-calculated regularisation weight factor               :   2.9050    
+   New starting objective function for this itn. (ie. phi)  :   483.45    
+   Contribution to phi from observation group "heads"       :   483.45    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   0.0000    
+
+       Lambda =   10.000     ----->
+          Phi =   90.680      (  0.188 of starting phi)
+    Meas. fn. =   85.942    
+   Regul. fn. =  0.56148    
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+
+      Current parameter values                 Previous parameter values
+      par1           -6.460749E-02             par1              0.00000    
+      par2            0.500000                 par2              0.00000    
+      par3            0.369686                 par3              0.00000    
+      par4            0.308322                 par4              0.00000    
+      par5            0.138349                 par5              0.00000    
+      par6            6.460399E-02             par6              0.00000    
+      par7           -4.490675E-02             par7              0.00000    
+      par8            0.142773                 par8              0.00000    
+      par9            9.634417E-02             par9              0.00000    
+      par10           4.358533E-02             par10             0.00000    
+      par11          -0.134171                 par11             0.00000    
+      par12          -2.179843E-02             par12             0.00000    
+      par13          -1.376621E-02             par13             0.00000    
+      par14          -3.137035E-03             par14             0.00000    
+   Maximum relative change: 1.0000E+30 ["par1"]
+   Maximum absolute(1) change: 0.5000     ["par2"]
+
+
+OPTIMISATION ITERATION NO.        : 2
+   Model calls so far             : 16
+   Current regularisation weight factor                     :   2.9050    
+   Current value of measurement objective function          :   85.942    
+   Current value of regularisation objective function       :  0.56148    
+   Note: regularisation objective function is not comparable between
+   iterations because of IREGADJ regularisation weights adjustment.
+
+   Starting phi for this iteration                          :   90.680    
+   Contribution to phi from observation group "heads"       :   85.942    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   4.7383    
+
+   Regularisation weights adjustment....
+   Group Name    Weights adjustment ratio from previous iteration
+    regul_pg1       1.00000    
+   FRACPHIM-adjusted target measurement objective function  :   12.000    
+
+   Re-calculated regularisation weight factor               :   2.2175    
+   New starting objective function for this itn. (ie. phi)  :   88.703    
+   Contribution to phi from observation group "heads"       :   85.942    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   2.7609    
+
+       Lambda =   4.6416     ----->
+          Phi =   36.307      (  0.409 of starting phi)
+    Meas. fn. =   28.100    
+   Regul. fn. =   1.6691    
+
+       Lambda =   2.3208     ----->
+          Phi =   31.709      (  0.357 of starting phi)
+    Meas. fn. =   22.279    
+   Regul. fn. =   1.9178    
+
+       Lambda =   1.1604     ----->
+          Phi =   27.085      (  0.305 of starting phi)
+    Meas. fn. =   16.276    
+   Regul. fn. =   2.1982    
+
+       Lambda =  0.58020     ----->
+          Phi =   22.309      (  0.251 of starting phi)
+    Meas. fn. =   10.769    
+   Regul. fn. =   2.3469    
+
+   No more lambdas: phi is less than 0.3000 of starting phi
+
+      Current parameter values                 Previous parameter values
+      par1           -0.167970                 par1            -6.460749E-02
+      par2            0.891939                 par2             0.500000    
+      par3            0.658791                 par3             0.369686    
+      par4            0.425283                 par4             0.308322    
+      par5           -0.239840                 par5             0.138349    
+      par6           -0.196598                 par6             6.460399E-02
+      par7           -9.983791E-02             par7            -4.490675E-02
+      par8            0.446624                 par8             0.142773    
+      par9            0.258490                 par9             9.634417E-02
+      par10          -8.075232E-02             par10            4.358533E-02
+      par11          -0.455205                 par11           -0.134171    
+      par12          -0.521798                 par12           -2.179843E-02
+      par13          -0.178185                 par13           -1.376621E-02
+      par14           0.134297                 par14           -3.137035E-03
+   Maximum relative change:  43.81     ["par14"]
+   Maximum absolute(1) change: 0.5000     ["par12"]
+
+
+OPTIMISATION ITERATION NO.        : 3
+   Model calls so far             : 34
+   Current regularisation weight factor                     :   2.2175    
+   Current value of measurement objective function          :   10.769    
+   Current value of regularisation objective function       :   2.3469    
+   Note: regularisation objective function is not comparable between
+   iterations because of IREGADJ regularisation weights adjustment.
+
+   Starting phi for this iteration                          :   22.309    
+   Contribution to phi from observation group "heads"       :   10.769    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   11.540    
+
+   Regularisation weights adjustment....
+   Group Name    Weights adjustment ratio from previous iteration
+    regul_pg1       1.00000    
+   FRACPHIM-adjusted target measurement objective function  :   12.000    
+
+   Re-calculated regularisation weight factor               :   3.7949    
+   New starting objective function for this itn. (ie. phi)  :   44.566    
+   Contribution to phi from observation group "heads"       :   10.769    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   33.797    
+
+       Lambda =  0.29010     ----->
+          Phi =   38.897      (  0.873 of starting phi)
+    Meas. fn. =   11.775    
+   Regul. fn. =   1.8833    
+
+       Lambda =  0.14505     ----->
+          Phi =   38.868      (  0.872 of starting phi)
+    Meas. fn. =   11.891    
+   Regul. fn. =   1.8733    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+
+      Current parameter values                 Previous parameter values
+      par1           -0.144224                 par1            -0.167970    
+      par2            0.789467                 par2             0.891939    
+      par3            0.602858                 par3             0.658791    
+      par4            0.423725                 par4             0.425283    
+      par5           -0.167885                 par5            -0.239840    
+      par6           -0.138569                 par6            -0.196598    
+      par7           -2.916627E-02             par7            -9.983791E-02
+      par8            0.392985                 par8             0.446624    
+      par9            0.218468                 par9             0.258490    
+      par10          -7.118997E-02             par10           -8.075232E-02
+      par11          -0.394086                 par11           -0.455205    
+      par12          -0.484322                 par12           -0.521798    
+      par13          -0.177663                 par13           -0.178185    
+      par14           9.655384E-02             par14            0.134297    
+   Maximum relative change: 0.7079     ["par7"]
+   Maximum absolute(1) change: 0.1025     ["par2"]
+
+
+OPTIMISATION ITERATION NO.        : 4
+   Model calls so far             : 50
+   Current regularisation weight factor                     :   3.7949    
+   Current value of measurement objective function          :   11.891    
+   Current value of regularisation objective function       :   1.8733    
+   Note: regularisation objective function is not comparable between
+   iterations because of IREGADJ regularisation weights adjustment.
+
+   Starting phi for this iteration                          :   38.868    
+   Contribution to phi from observation group "heads"       :   11.891    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   26.977    
+
+   Regularisation weights adjustment....
+   Group Name    Weights adjustment ratio from previous iteration
+    regul_pg1       1.00000    
+   FRACPHIM-adjusted target measurement objective function  :   12.000    
+
+   Re-calculated regularisation weight factor               :   3.5900    
+   New starting objective function for this itn. (ie. phi)  :   36.034    
+   Contribution to phi from observation group "heads"       :   11.891    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   24.142    
+
+       Lambda =  7.25248E-02 ----->
+          Phi =   35.911      (  0.997 of starting phi)
+    Meas. fn. =   12.268    
+   Regul. fn. =   1.8345    
+
+       Lambda =  3.02447E-02 ----->
+          Phi =   35.910      (  0.997 of starting phi)
+    Meas. fn. =   12.284    
+   Regul. fn. =   1.8332    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+   Relative phi reduction between optimisation iterations less than 0.1000
+   Switch to higher order derivatives calculation
+   (restart from best parameters so far - these achieved at iteration    3)
+
+      Current parameter values
+      par1           -0.144224    
+      par2            0.789467    
+      par3            0.602858    
+      par4            0.423725    
+      par5           -0.167885    
+      par6           -0.138569    
+      par7           -2.916627E-02
+      par8            0.392985    
+      par9            0.218468    
+      par10          -7.118997E-02
+      par11          -0.394086    
+      par12          -0.484322    
+      par13          -0.177663    
+      par14           9.655384E-02
+
+
+OPTIMISATION ITERATION NO.        : 5
+   Model calls so far             : 66
+   Current regularisation weight factor                     :   3.5900    
+   Current value of measurement objective function          :   11.891    
+   Current value of regularisation objective function       :   2.0932    
+   Note: regularisation objective function is not comparable between
+   iterations because of IREGADJ regularisation weights adjustment.
+
+   Starting phi for this iteration                          :   38.868    
+   Contribution to phi from observation group "heads"       :   11.891    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   26.977    
+
+   Regularisation weights adjustment....
+   Group Name    Weights adjustment ratio from previous iteration
+    regul_pg1       1.00000    
+   FRACPHIM-adjusted target measurement objective function  :   12.000    
+
+   Re-calculated regularisation weight factor               :   3.4017    
+   New starting objective function for this itn. (ie. phi)  :   36.114    
+   Contribution to phi from observation group "heads"       :   11.891    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_pg1"   :   24.222    
+
+       Lambda =  6.04894E-02 ----->
+          Phi =   36.013      (  0.997 of starting phi)
+    Meas. fn. =   12.312    
+   Regul. fn. =   2.0482    
+
+       Lambda =  2.37450E-02 ----->
+          Phi =   36.011      (  0.997 of starting phi)
+    Meas. fn. =   12.327    
+   Regul. fn. =   2.0468    
+
+   No more lambdas: relative phi reduction between lambdas less than 0.0100
+
+      Current parameter values                 Previous parameter values
+      par1           -0.148686                 par1            -0.144224    
+      par2            0.828222                 par2             0.789467    
+      par3            0.564934                 par3             0.602858    
+      par4            0.434986                 par4             0.423725    
+      par5           -0.176618                 par5            -0.167885    
+      par6           -0.123354                 par6            -0.138569    
+      par7            9.258110E-05             par7            -2.916627E-02
+      par8            0.364189                 par8             0.392985    
+      par9            0.235411                 par9             0.218468    
+      par10          -4.247579E-02             par10           -7.118997E-02
+      par11          -0.383010                 par11           -0.394086    
+      par12          -0.426981                 par12           -0.484322    
+      par13          -0.207205                 par13           -0.177663    
+      par14           9.124117E-02             par14            9.655384E-02
+   Maximum relative change:  1.003     ["par7"]
+   Maximum absolute(1) change: 5.7340E-02 ["par12"]
+
+   Optimisation complete: optimisation iteration limit of   5 realized.
+   Total model calls:     96
+
+   The model has been run one final time using best parameters. 
+   Thus all model input files contain best parameter values, and model 
+   output files contain model results based on these parameters.
+
+
+                            OPTIMISATION RESULTS
+
+Covariance matrix and parameter confidence intervals cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+
+
+Parameters ----->
+
+Parameter      Estimated value
+ par1          -0.144224    
+ par2           0.789467    
+ par3           0.602858    
+ par4           0.423725    
+ par5          -0.167885    
+ par6          -0.138569    
+ par7          -2.916627E-02
+ par8           0.392985    
+ par9           0.218468    
+ par10         -7.118997E-02
+ par11         -0.394086    
+ par12         -0.484322    
+ par13         -0.177663    
+ par14          9.655384E-02
+
+See file case_dsir.sen for parameter sensitivities.
+Note that these sensitivities include effects of regularisation observations.
+
+
+Regularisation Weight Factor ----->
+
+Optimised regularisation weight factor =  3.7949    
+
+Pertinent observation and prior information weights shown below are 
+calculated using  this weight factor.
+
+
+Observations ----->
+
+Observation            Measured       Calculated     Residual       Weight     Group
+                       value          value
+well01_1               5.74724        5.71805       2.919191E-02    10.00      heads       
+well02_1               5.69616        5.64586       5.030286E-02    10.00      heads       
+well03_1               5.49199        5.56464      -7.264632E-02    10.00      heads       
+well04_1               4.09190        4.05403       3.786776E-02    10.00      heads       
+well05_1               3.92014        4.03468      -0.114540        10.00      heads       
+well06_1               4.05991        4.07004      -1.013054E-02    10.00      heads       
+well07_1               2.59369        2.71141      -0.117720        10.00      heads       
+well08_1               3.25979        3.06636       0.193427        10.00      heads       
+well09_1               2.97368        2.99555      -2.187229E-02    10.00      heads       
+well10_1               1.12417       0.925275       0.198895        10.00      heads       
+well11_1               1.20361        1.14970       5.391008E-02    10.00      heads       
+well12_1               1.19256        1.15538       3.718358E-02    10.00      heads       
+part_time              0.00000        6022.20       -6022.20        0.000      time        
+part_east              0.00000        224.810       -224.810        0.000      distance    
+
+
+Prior information ----->
+
+Prior                  Provided       Calculated     Residual       Weight     Group
+information            value          value
+par1                   0.00000      -0.144224       0.144224        3.795      regul_pg1   
+par2                   0.00000       0.789467      -0.789467        3.795      regul_pg1   
+par3                   0.00000       0.602858      -0.602858        3.795      regul_pg1   
+par4                   0.00000       0.423725      -0.423725        3.795      regul_pg1   
+par5                   0.00000      -0.167885       0.167885        3.795      regul_pg1   
+par6                   0.00000      -0.138569       0.138569        3.795      regul_pg1   
+par7                   0.00000      -2.916627E-02   2.916627E-02    3.795      regul_pg1   
+par8                   0.00000       0.392985      -0.392985        3.795      regul_pg1   
+par9                   0.00000       0.218468      -0.218468        3.795      regul_pg1   
+par10                  0.00000      -7.118997E-02   7.118997E-02    3.795      regul_pg1   
+par11                  0.00000      -0.394086       0.394086        3.795      regul_pg1   
+par12                  0.00000      -0.484322       0.484322        3.795      regul_pg1   
+par13                  0.00000      -0.177663       0.177663        3.795      regul_pg1   
+par14                  0.00000       9.655384E-02  -9.655384E-02    3.795      regul_pg1   
+
+See file case_dsir.res for more details of residuals in graph-ready format.
+
+See file case_dsir.seo for composite observation sensitivities.
+
+
+Objective function ----->
+
+  Sum of squared weighted residuals (ie phi)                =   38.868    
+  Contribution to phi from observation group "heads"        =   11.891    
+  Contribution to phi from observation group "time"         =   0.0000    
+  Contribution to phi from observation group "distance"     =   0.0000    
+  Contribution to phi from observation group "regul_pg1"    =   26.977    
+
+  Optimised measurement objective function                  =   11.891    
+  Optimised regularisation weight factor                    =   3.7949    
+  Optimised regularisation objective function               =   1.8733    
+
+
+Correlation Coefficient ----->
+
+  Correlation coefficient                                   =  0.99847    
+  (Includes measurement observations only.)
+
+
+Analysis of residuals ----->
+
+  All residuals:-
+     Number of residuals with non-zero weight                       =    26
+     Mean value of non-zero weighted residuals                      = -3.2346E-02
+     Maximum weighted residual [observation "well10_1"]             =   1.989    
+     Minimum weighted residual [observation "par2"]                 =  -2.996    
+     Standard variance of weighted residuals                        =   3.239    
+     Standard error of weighted residuals                           =   1.800    
+
+     Note: the above variance was obtained by dividing the objective 
+     function by the number of system degrees of freedom (ie. number of 
+     observations with non-zero weight plus number of prior information 
+     articles with non-zero weight minus the number of adjustable parameters.)
+     If the degrees of freedom is negative the divisor becomes 
+     the number of observations with non-zero weight plus the number of 
+     prior information items with non-zero weight.
+
+  Residuals for observation group "heads":-
+     Number of residuals with non-zero weight                       =    12
+     Mean value of non-zero weighted residuals                      =  0.2199    
+     Maximum weighted residual [observation "well10_1"]             =   1.989    
+     Minimum weighted residual [observation "well07_1"]             =  -1.177    
+     "Variance" of weighted residuals                               =  0.9910    
+     "Standard error" of weighted residuals                         =  0.9955    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+  Residuals for observation group "time":-
+     Number of residuals with non-zero weight                       =     0
+
+  Residuals for observation group "distance":-
+     Number of residuals with non-zero weight                       =     0
+
+  Residuals for observation group "regul_pg1":-
+     Number of residuals with non-zero weight                       =    14
+     Mean value of non-zero weighted residuals                      = -0.2486    
+     Maximum weighted residual [observation "par12"]                =   1.838    
+     Minimum weighted residual [observation "par2"]                 =  -2.996    
+     "Variance" of weighted residuals                               =   1.927    
+     "Standard error" of weighted residuals                         =   1.388    
+
+     Note: the above "variance" was obtained by dividing the sum of squared 
+     residuals by the number of items with non-zero weight.
+
+
+Covariance and other statistical matrices cannot be determined:-
+Some form or regularisation was implemented so these are not applicable.
+
+Use the PREDUNC7 utility to obtain a full posterior covariance matrix.
+

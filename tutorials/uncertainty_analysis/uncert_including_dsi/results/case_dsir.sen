@@ -1,0 +1,170 @@
+                      PARAMETER SENSITIVITIES: CASE case_dsir
+
+
+ OPTIMISATION ITERATION NO.  1 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1              0.00000          2.83641    
+   par2            pg1              0.00000         0.613323    
+   par3            pg1              0.00000         0.412849    
+   par4            pg1              0.00000         0.423612    
+   par5            pg1              0.00000         0.296383    
+   par6            pg1              0.00000         0.299344    
+   par7            pg1              0.00000         0.141509    
+   par8            pg1              0.00000         0.222163    
+   par9            pg1              0.00000         0.209282    
+   par10           pg1              0.00000         0.187639    
+   par11           pg1              0.00000         0.168062    
+   par12           pg1              0.00000         0.142086    
+   par13           pg1              0.00000         0.131479    
+   par14           pg1              0.00000         0.127156    
+
+
+ OPTIMISATION ITERATION NO.  2 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -6.460749E-02      3.24590    
+   par2            pg1             0.500000         0.741334    
+   par3            pg1             0.369686         0.492607    
+   par4            pg1             0.308322         0.538745    
+   par5            pg1             0.138349         0.349443    
+   par6            pg1             6.460399E-02     0.325016    
+   par7            pg1            -4.490675E-02     0.155716    
+   par8            pg1             0.142773         0.213343    
+   par9            pg1             9.634417E-02     0.209602    
+   par10           pg1             4.358533E-02     0.181113    
+   par11           pg1            -0.134171         0.170161    
+   par12           pg1            -2.179843E-02     0.138053    
+   par13           pg1            -1.376621E-02     0.110881    
+   par14           pg1            -3.137035E-03     0.114690    
+
+
+ OPTIMISATION ITERATION NO.  3 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -0.167970          4.02938    
+   par2            pg1             0.891939         0.802142    
+   par3            pg1             0.658791         0.619375    
+   par4            pg1             0.425283         0.537690    
+   par5            pg1            -0.239840         0.478960    
+   par6            pg1            -0.196598         0.413070    
+   par7            pg1            -9.983791E-02     0.199292    
+   par8            pg1             0.446624         0.386390    
+   par9            pg1             0.258490         0.315253    
+   par10           pg1            -8.075232E-02     0.250326    
+   par11           pg1            -0.455205         0.207663    
+   par12           pg1            -0.521798         0.203276    
+   par13           pg1            -0.178185         0.184544    
+   par14           pg1             0.134297         0.166074    
+
+
+ OPTIMISATION ITERATION NO.  4 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -0.144224          3.90352    
+   par2            pg1             0.789467         0.774599    
+   par3            pg1             0.602858         0.585986    
+   par4            pg1             0.423725         0.524340    
+   par5            pg1            -0.167885         0.451473    
+   par6            pg1            -0.138569         0.374258    
+   par7            pg1            -2.916627E-02     0.195842    
+   par8            pg1             0.392985         0.309929    
+   par9            pg1             0.218468         0.294498    
+   par10           pg1            -7.118997E-02     0.240346    
+   par11           pg1            -0.394086         0.198208    
+   par12           pg1            -0.484322         0.184050    
+   par13           pg1            -0.177663         0.178013    
+   par14           pg1             9.655384E-02     0.158688    
+
+
+ OPTIMISATION ITERATION NO.  5 ----->
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -0.144224          3.87570    
+   par2            pg1             0.789467         0.787497    
+   par3            pg1             0.602858         0.590005    
+   par4            pg1             0.423725         0.535890    
+   par5            pg1            -0.167885         0.453136    
+   par6            pg1            -0.138569         0.374342    
+   par7            pg1            -2.916627E-02     0.196003    
+   par8            pg1             0.392985         0.310031    
+   par9            pg1             0.218468         0.294605    
+   par10           pg1            -7.118997E-02     0.240478    
+   par11           pg1            -0.394086         0.198367    
+   par12           pg1            -0.484322         0.184221    
+   par13           pg1            -0.177663         0.178190    
+   par14           pg1             9.655384E-02     0.158886    
+
+
+
+                        COMPLETION OF OPTIMISATION PROCESS
+
+ Composite sensitivities for observation group "heads" ----->
+
+ Number of observations with non-zero weight =    12
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -0.144224          8.72460    
+   par2            pg1             0.789467          1.70896    
+   par3            pg1             0.602858          1.30419    
+   par4            pg1             0.423725          1.12125    
+   par5            pg1            -0.167885         0.988389    
+   par6            pg1            -0.138569         0.837253    
+   par7            pg1            -2.916627E-02     0.294014    
+   par8            pg1             0.392985         0.775151    
+   par9            pg1             0.218468         0.605431    
+   par10           pg1            -7.118997E-02     0.440637    
+   par11           pg1            -0.394086         0.320056    
+   par12           pg1            -0.484322         0.306549    
+   par13           pg1            -0.177663         0.244681    
+   par14           pg1             9.655384E-02     0.171666    
+
+
+
+ Composite sensitivities for observation group "time" ----->
+
+
+ No observations/prior_info with non-zero weight belong to this group.
+
+
+
+ Composite sensitivities for observation group "distance" ----->
+
+
+ No observations/prior_info with non-zero weight belong to this group.
+
+
+
+ Composite sensitivities for observation group "regul_pg1" ----->
+
+ Number of observations with non-zero weight =    14
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -0.144224         0.271062    
+   par2            pg1             0.789467         0.271062    
+   par3            pg1             0.602858         0.271062    
+   par4            pg1             0.423725         0.271062    
+   par5            pg1            -0.167885         0.271062    
+   par6            pg1            -0.138569         0.271062    
+   par7            pg1            -2.916627E-02     0.271062    
+   par8            pg1             0.392985         0.271062    
+   par9            pg1             0.218468         0.271062    
+   par10           pg1            -7.118997E-02     0.271062    
+   par11           pg1            -0.394086         0.271062    
+   par12           pg1            -0.484322         0.271062    
+   par13           pg1            -0.177663         0.271062    
+   par14           pg1             9.655384E-02     0.271062    
+
+
+
+ Composite sensitivities for all observations/prior info ----->
+
+ Number of observations with non-zero weight =    26
+ Parameter name    Group          Current value    Sensitivity
+   par1            pg1            -0.144224          4.02938    
+   par2            pg1             0.789467         0.802142    
+   par3            pg1             0.602858         0.619375    
+   par4            pg1             0.423725         0.537690    
+   par5            pg1            -0.167885         0.478960    
+   par6            pg1            -0.138569         0.413070    
+   par7            pg1            -2.916627E-02     0.199292    
+   par8            pg1             0.392985         0.386390    
+   par9            pg1             0.218468         0.315253    
+   par10           pg1            -7.118997E-02     0.250326    
+   par11           pg1            -0.394086         0.207663    
+   par12           pg1            -0.484322         0.203276    
+   par13           pg1            -0.177663         0.184544    
+   par14           pg1             9.655384E-02     0.166074    

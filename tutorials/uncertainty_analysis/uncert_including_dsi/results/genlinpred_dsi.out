@@ -1,0 +1,92 @@
+
+
+                   ###################################################
+                   #                                                 #
+                   #      GENLINPRED UNCERTAINTY/ERROR ANALYSIS      #
+                   #                                                 #
+                   ###################################################
+
+
+
+                   ANALYSIS DETAILS
+                   ----------------
+
+    Name of PEST control file                                   : case_dsi_soln.pst
+    Factor by which to multiply observation weights             : 1.0000
+    Source of parameter uncertainty data                        : uncertainty file
+    Name of uncertainty file                                    : case_dsi.unc
+
+    Perform global parameter estimability analysis              : no
+
+    Analyse error/uncertainty of an entity                      : yes
+         Name of entity                                         : part_east
+         Type of entity                                         : prediction
+         File containing prediction sensitivities               : case_dsi_soln.jco
+
+         Total error variance                                   : no
+         Total uncertainty                                      : yes
+
+         Parameter contributions to error variance              : no
+         Parameter contributions to uncertainty                 : no
+
+         Observation worth in reducing error variance           : no
+         Observation worth in reducing uncertainty variance     : yes
+         Observation worth                                      : individual
+
+
+                   ANALYSIS OF PREDICTION
+                   ----------------------
+
+ PREDUNC1 analysis for prediction "part_east" ----->
+
+    Pre-calibration:- 
+    Total uncertainty variance           =   5965.372    
+    Total uncertainty standard deviation =   77.23582    
+
+    Post-calibration:-
+    Total uncertainty variance           =   2469.556    
+    Total uncertainty standard deviation =   49.69463    
+
+
+ PREDUNC5 observation subtraction analysis for prediction "part_east" ----->
+
+    Increases in predictive uncertainty variance incurred through loss of observations
+
+    Observation              Variance_increase
+    -----------              -----------------
+    well01_1                   158.5400    
+    well02_1                   4.159000    
+    well03_1                   220.2900    
+    well04_1                   322.6860    
+    well05_1                   34.78100    
+    well06_1                   303.9670    
+    well07_1                   376.0660    
+    well08_1                   30.56200    
+    well09_1                   116.8160    
+    well10_1                   151.1190    
+    well11_1                   30.62200    
+    well12_1                   57.26900    
+    part_time                  0.000000    
+    part_east                  0.000000    
+
+
+ PREDUNC5 observation addition analysis for prediction "part_east" ----->
+
+    Decreases in pre-calibration predictive uncertainty variance incurred through addition of observations
+
+    Observation              Variance_decrease
+    -----------              -----------------
+    well01_1                   57.16700    
+    well02_1                   47.91800    
+    well03_1                   31.23300    
+    well04_1                   110.4540    
+    well05_1                   33.31100    
+    well06_1                  0.5090000    
+    well07_1                   159.5500    
+    well08_1                   9.363000    
+    well09_1                   32.57900    
+    well10_1                   93.64300    
+    well11_1                   6.703000    
+    well12_1                   27.92600    
+    part_time                  0.000000    
+    part_east                  0.000000    

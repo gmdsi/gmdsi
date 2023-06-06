@@ -1,0 +1,35 @@
+# Read a specification file for a structured grid. Create a model CLIST.
+
+mf_cl = read_mf_grid_specs(file="rect.spc")
+
+# Read pilot point locations and values. Create a pilot point CLIST.
+
+pp_cl = read_list_file(dimensions=2,                  &
+                       plist='pp_hk';column=5,        &
+                       id_type='character',           &
+                       file='hk.pts')
+
+# Calculate interpolation factors.
+
+#calc_kriging_factors_2d(target_clist=mf_cl,                      &
+#                        source_clist=pp_cl,                      &
+#                        file=factors.dat,                        &
+#                        variogram=exponential,                   &
+#                        a=150.0,                                 &
+#                        kriging=ordinary,                        &
+#                        min_points=1,max_points=12,search_radius=1e15)
+
+# Create a model-based PLIST to hold HK values.
+
+mf_hk=new_plist(reference_clist=mf_cl,value=1.0)
+
+# Use the kriging factors to populate the MODFLOW grid.
+
+mf_hk=pp_hk.krige_using_file(file='factors.dat',transform="log")
+
+# -- Write the model input file.
+
+write_model_input_file(template_file='hk_ref.tpl',                 &
+                       model_input_file= 'hk.ref')
+
+

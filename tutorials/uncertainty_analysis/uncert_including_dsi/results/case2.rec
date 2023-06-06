@@ -1,0 +1,1978 @@
+
+                       PEST RUN RECORD: CASE case2
+
+
+PEST Version: 17.3
+
+
+PEST run mode:-
+
+   Regularisation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :   104
+   Number of adjustable parameters                :   104
+   Number of parameter groups                     :     1
+   Number of observations                         :    14
+   Number of prior estimates                      :   104
+
+
+Model command line(s):-
+
+   model.bat
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      hk.tpl
+   for model input files:
+      hk.pts
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      model_smp.ins
+      endpoint.ins
+   for reading model output files:
+      model.smp
+      rect.endpoint7
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 104
+   Ratio of lowest/highest singular value        :  5.000000E-07
+   Record eigenvectors in SVD file               : no
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+k            relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+k_ppt1       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt2       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt3       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt4       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt5       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt6       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt7       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt8       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt9       log               factor      1.00000       1.000000E-02    100.000    
+k_ppt10      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt11      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt12      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt13      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt14      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt15      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt16      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt17      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt18      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt19      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt20      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt21      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt22      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt23      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt24      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt25      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt26      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt27      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt28      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt29      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt30      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt31      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt32      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt33      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt34      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt35      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt36      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt37      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt38      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt39      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt40      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt41      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt42      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt43      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt44      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt45      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt46      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt47      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt48      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt49      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt50      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt51      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt52      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt53      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt54      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt55      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt56      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt57      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt58      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt59      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt60      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt61      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt62      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt63      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt64      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt65      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt66      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt67      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt68      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt69      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt70      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt71      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt72      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt73      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt74      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt75      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt76      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt77      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt78      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt79      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt80      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt81      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt82      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt83      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt84      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt85      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt86      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt87      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt88      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt89      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt90      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt91      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt92      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt93      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt94      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt95      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt96      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt97      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt98      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt99      log               factor      1.00000       1.000000E-02    100.000    
+k_ppt100     log               factor      1.00000       1.000000E-02    100.000    
+k_ppt101     log               factor      1.00000       1.000000E-02    100.000    
+k_ppt102     log               factor      1.00000       1.000000E-02    100.000    
+k_ppt103     log               factor      1.00000       1.000000E-02    100.000    
+k_ppt104     log               factor      1.00000       1.000000E-02    100.000    
+
+Name         Group          Scale         Offset        Model command number
+k_ppt1       k             1.00000        0.00000            1
+k_ppt2       k             1.00000        0.00000            1
+k_ppt3       k             1.00000        0.00000            1
+k_ppt4       k             1.00000        0.00000            1
+k_ppt5       k             1.00000        0.00000            1
+k_ppt6       k             1.00000        0.00000            1
+k_ppt7       k             1.00000        0.00000            1
+k_ppt8       k             1.00000        0.00000            1
+k_ppt9       k             1.00000        0.00000            1
+k_ppt10      k             1.00000        0.00000            1
+k_ppt11      k             1.00000        0.00000            1
+k_ppt12      k             1.00000        0.00000            1
+k_ppt13      k             1.00000        0.00000            1
+k_ppt14      k             1.00000        0.00000            1
+k_ppt15      k             1.00000        0.00000            1
+k_ppt16      k             1.00000        0.00000            1
+k_ppt17      k             1.00000        0.00000            1
+k_ppt18      k             1.00000        0.00000            1
+k_ppt19      k             1.00000        0.00000            1
+k_ppt20      k             1.00000        0.00000            1
+k_ppt21      k             1.00000        0.00000            1
+k_ppt22      k             1.00000        0.00000            1
+k_ppt23      k             1.00000        0.00000            1
+k_ppt24      k             1.00000        0.00000            1
+k_ppt25      k             1.00000        0.00000            1
+k_ppt26      k             1.00000        0.00000            1
+k_ppt27      k             1.00000        0.00000            1
+k_ppt28      k             1.00000        0.00000            1
+k_ppt29      k             1.00000        0.00000            1
+k_ppt30      k             1.00000        0.00000            1
+k_ppt31      k             1.00000        0.00000            1
+k_ppt32      k             1.00000        0.00000            1
+k_ppt33      k             1.00000        0.00000            1
+k_ppt34      k             1.00000        0.00000            1
+k_ppt35      k             1.00000        0.00000            1
+k_ppt36      k             1.00000        0.00000            1
+k_ppt37      k             1.00000        0.00000            1
+k_ppt38      k             1.00000        0.00000            1
+k_ppt39      k             1.00000        0.00000            1
+k_ppt40      k             1.00000        0.00000            1
+k_ppt41      k             1.00000        0.00000            1
+k_ppt42      k             1.00000        0.00000            1
+k_ppt43      k             1.00000        0.00000            1
+k_ppt44      k             1.00000        0.00000            1
+k_ppt45      k             1.00000        0.00000            1
+k_ppt46      k             1.00000        0.00000            1
+k_ppt47      k             1.00000        0.00000            1
+k_ppt48      k             1.00000        0.00000            1
+k_ppt49      k             1.00000        0.00000            1
+k_ppt50      k             1.00000        0.00000            1
+k_ppt51      k             1.00000        0.00000            1
+k_ppt52      k             1.00000        0.00000            1
+k_ppt53      k             1.00000        0.00000            1
+k_ppt54      k             1.00000        0.00000            1
+k_ppt55      k             1.00000        0.00000            1
+k_ppt56      k             1.00000        0.00000            1
+k_ppt57      k             1.00000        0.00000            1
+k_ppt58      k             1.00000        0.00000            1
+k_ppt59      k             1.00000        0.00000            1
+k_ppt60      k             1.00000        0.00000            1
+k_ppt61      k             1.00000        0.00000            1
+k_ppt62      k             1.00000        0.00000            1
+k_ppt63      k             1.00000        0.00000            1
+k_ppt64      k             1.00000        0.00000            1
+k_ppt65      k             1.00000        0.00000            1
+k_ppt66      k             1.00000        0.00000            1
+k_ppt67      k             1.00000        0.00000            1
+k_ppt68      k             1.00000        0.00000            1
+k_ppt69      k             1.00000        0.00000            1
+k_ppt70      k             1.00000        0.00000            1
+k_ppt71      k             1.00000        0.00000            1
+k_ppt72      k             1.00000        0.00000            1
+k_ppt73      k             1.00000        0.00000            1
+k_ppt74      k             1.00000        0.00000            1
+k_ppt75      k             1.00000        0.00000            1
+k_ppt76      k             1.00000        0.00000            1
+k_ppt77      k             1.00000        0.00000            1
+k_ppt78      k             1.00000        0.00000            1
+k_ppt79      k             1.00000        0.00000            1
+k_ppt80      k             1.00000        0.00000            1
+k_ppt81      k             1.00000        0.00000            1
+k_ppt82      k             1.00000        0.00000            1
+k_ppt83      k             1.00000        0.00000            1
+k_ppt84      k             1.00000        0.00000            1
+k_ppt85      k             1.00000        0.00000            1
+k_ppt86      k             1.00000        0.00000            1
+k_ppt87      k             1.00000        0.00000            1
+k_ppt88      k             1.00000        0.00000            1
+k_ppt89      k             1.00000        0.00000            1
+k_ppt90      k             1.00000        0.00000            1
+k_ppt91      k             1.00000        0.00000            1
+k_ppt92      k             1.00000        0.00000            1
+k_ppt93      k             1.00000        0.00000            1
+k_ppt94      k             1.00000        0.00000            1
+k_ppt95      k             1.00000        0.00000            1
+k_ppt96      k             1.00000        0.00000            1
+k_ppt97      k             1.00000        0.00000            1
+k_ppt98      k             1.00000        0.00000            1
+k_ppt99      k             1.00000        0.00000            1
+k_ppt100     k             1.00000        0.00000            1
+k_ppt101     k             1.00000        0.00000            1
+k_ppt102     k             1.00000        0.00000            1
+k_ppt103     k             1.00000        0.00000            1
+k_ppt104     k             1.00000        0.00000            1
+
+
+Prior information:-
+
+Prior info               Factor             Parameter              Prior         Weight
+name                                                               information
+              k_ppt1      1.00000       *   log[k_ppt1]       =     0.00000      Cov. Mat.
+              k_ppt2      1.00000       *   log[k_ppt2]       =     0.00000      Cov. Mat.
+              k_ppt3      1.00000       *   log[k_ppt3]       =     0.00000      Cov. Mat.
+              k_ppt4      1.00000       *   log[k_ppt4]       =     0.00000      Cov. Mat.
+              k_ppt5      1.00000       *   log[k_ppt5]       =     0.00000      Cov. Mat.
+              k_ppt6      1.00000       *   log[k_ppt6]       =     0.00000      Cov. Mat.
+              k_ppt7      1.00000       *   log[k_ppt7]       =     0.00000      Cov. Mat.
+              k_ppt8      1.00000       *   log[k_ppt8]       =     0.00000      Cov. Mat.
+              k_ppt9      1.00000       *   log[k_ppt9]       =     0.00000      Cov. Mat.
+             k_ppt10      1.00000       *   log[k_ppt10]      =     0.00000      Cov. Mat.
+             k_ppt11      1.00000       *   log[k_ppt11]      =     0.00000      Cov. Mat.
+             k_ppt12      1.00000       *   log[k_ppt12]      =     0.00000      Cov. Mat.
+             k_ppt13      1.00000       *   log[k_ppt13]      =     0.00000      Cov. Mat.
+             k_ppt14      1.00000       *   log[k_ppt14]      =     0.00000      Cov. Mat.
+             k_ppt15      1.00000       *   log[k_ppt15]      =     0.00000      Cov. Mat.
+             k_ppt16      1.00000       *   log[k_ppt16]      =     0.00000      Cov. Mat.
+             k_ppt17      1.00000       *   log[k_ppt17]      =     0.00000      Cov. Mat.
+             k_ppt18      1.00000       *   log[k_ppt18]      =     0.00000      Cov. Mat.
+             k_ppt19      1.00000       *   log[k_ppt19]      =     0.00000      Cov. Mat.
+             k_ppt20      1.00000       *   log[k_ppt20]      =     0.00000      Cov. Mat.
+             k_ppt21      1.00000       *   log[k_ppt21]      =     0.00000      Cov. Mat.
+             k_ppt22      1.00000       *   log[k_ppt22]      =     0.00000      Cov. Mat.
+             k_ppt23      1.00000       *   log[k_ppt23]      =     0.00000      Cov. Mat.
+             k_ppt24      1.00000       *   log[k_ppt24]      =     0.00000      Cov. Mat.
+             k_ppt25      1.00000       *   log[k_ppt25]      =     0.00000      Cov. Mat.
+             k_ppt26      1.00000       *   log[k_ppt26]      =     0.00000      Cov. Mat.
+             k_ppt27      1.00000       *   log[k_ppt27]      =     0.00000      Cov. Mat.
+             k_ppt28      1.00000       *   log[k_ppt28]      =     0.00000      Cov. Mat.
+             k_ppt29      1.00000       *   log[k_ppt29]      =     0.00000      Cov. Mat.
+             k_ppt30      1.00000       *   log[k_ppt30]      =     0.00000      Cov. Mat.
+             k_ppt31      1.00000       *   log[k_ppt31]      =     0.00000      Cov. Mat.
+             k_ppt32      1.00000       *   log[k_ppt32]      =     0.00000      Cov. Mat.
+             k_ppt33      1.00000       *   log[k_ppt33]      =     0.00000      Cov. Mat.
+             k_ppt34      1.00000       *   log[k_ppt34]      =     0.00000      Cov. Mat.
+             k_ppt35      1.00000       *   log[k_ppt35]      =     0.00000      Cov. Mat.
+             k_ppt36      1.00000       *   log[k_ppt36]      =     0.00000      Cov. Mat.
+             k_ppt37      1.00000       *   log[k_ppt37]      =     0.00000      Cov. Mat.
+             k_ppt38      1.00000       *   log[k_ppt38]      =     0.00000      Cov. Mat.
+             k_ppt39      1.00000       *   log[k_ppt39]      =     0.00000      Cov. Mat.
+             k_ppt40      1.00000       *   log[k_ppt40]      =     0.00000      Cov. Mat.
+             k_ppt41      1.00000       *   log[k_ppt41]      =     0.00000      Cov. Mat.
+             k_ppt42      1.00000       *   log[k_ppt42]      =     0.00000      Cov. Mat.
+             k_ppt43      1.00000       *   log[k_ppt43]      =     0.00000      Cov. Mat.
+             k_ppt44      1.00000       *   log[k_ppt44]      =     0.00000      Cov. Mat.
+             k_ppt45      1.00000       *   log[k_ppt45]      =     0.00000      Cov. Mat.
+             k_ppt46      1.00000       *   log[k_ppt46]      =     0.00000      Cov. Mat.
+             k_ppt47      1.00000       *   log[k_ppt47]      =     0.00000      Cov. Mat.
+             k_ppt48      1.00000       *   log[k_ppt48]      =     0.00000      Cov. Mat.
+             k_ppt49      1.00000       *   log[k_ppt49]      =     0.00000      Cov. Mat.
+             k_ppt50      1.00000       *   log[k_ppt50]      =     0.00000      Cov. Mat.
+             k_ppt51      1.00000       *   log[k_ppt51]      =     0.00000      Cov. Mat.
+             k_ppt52      1.00000       *   log[k_ppt52]      =     0.00000      Cov. Mat.
+             k_ppt53      1.00000       *   log[k_ppt53]      =     0.00000      Cov. Mat.
+             k_ppt54      1.00000       *   log[k_ppt54]      =     0.00000      Cov. Mat.
+             k_ppt55      1.00000       *   log[k_ppt55]      =     0.00000      Cov. Mat.
+             k_ppt56      1.00000       *   log[k_ppt56]      =     0.00000      Cov. Mat.
+             k_ppt57      1.00000       *   log[k_ppt57]      =     0.00000      Cov. Mat.
+             k_ppt58      1.00000       *   log[k_ppt58]      =     0.00000      Cov. Mat.
+             k_ppt59      1.00000       *   log[k_ppt59]      =     0.00000      Cov. Mat.
+             k_ppt60      1.00000       *   log[k_ppt60]      =     0.00000      Cov. Mat.
+             k_ppt61      1.00000       *   log[k_ppt61]      =     0.00000      Cov. Mat.
+             k_ppt62      1.00000       *   log[k_ppt62]      =     0.00000      Cov. Mat.
+             k_ppt63      1.00000       *   log[k_ppt63]      =     0.00000      Cov. Mat.
+             k_ppt64      1.00000       *   log[k_ppt64]      =     0.00000      Cov. Mat.
+             k_ppt65      1.00000       *   log[k_ppt65]      =     0.00000      Cov. Mat.
+             k_ppt66      1.00000       *   log[k_ppt66]      =     0.00000      Cov. Mat.
+             k_ppt67      1.00000       *   log[k_ppt67]      =     0.00000      Cov. Mat.
+             k_ppt68      1.00000       *   log[k_ppt68]      =     0.00000      Cov. Mat.
+             k_ppt69      1.00000       *   log[k_ppt69]      =     0.00000      Cov. Mat.
+             k_ppt70      1.00000       *   log[k_ppt70]      =     0.00000      Cov. Mat.
+             k_ppt71      1.00000       *   log[k_ppt71]      =     0.00000      Cov. Mat.
+             k_ppt72      1.00000       *   log[k_ppt72]      =     0.00000      Cov. Mat.
+             k_ppt73      1.00000       *   log[k_ppt73]      =     0.00000      Cov. Mat.
+             k_ppt74      1.00000       *   log[k_ppt74]      =     0.00000      Cov. Mat.
+             k_ppt75      1.00000       *   log[k_ppt75]      =     0.00000      Cov. Mat.
+             k_ppt76      1.00000       *   log[k_ppt76]      =     0.00000      Cov. Mat.
+             k_ppt77      1.00000       *   log[k_ppt77]      =     0.00000      Cov. Mat.
+             k_ppt78      1.00000       *   log[k_ppt78]      =     0.00000      Cov. Mat.
+             k_ppt79      1.00000       *   log[k_ppt79]      =     0.00000      Cov. Mat.
+             k_ppt80      1.00000       *   log[k_ppt80]      =     0.00000      Cov. Mat.
+             k_ppt81      1.00000       *   log[k_ppt81]      =     0.00000      Cov. Mat.
+             k_ppt82      1.00000       *   log[k_ppt82]      =     0.00000      Cov. Mat.
+             k_ppt83      1.00000       *   log[k_ppt83]      =     0.00000      Cov. Mat.
+             k_ppt84      1.00000       *   log[k_ppt84]      =     0.00000      Cov. Mat.
+             k_ppt85      1.00000       *   log[k_ppt85]      =     0.00000      Cov. Mat.
+             k_ppt86      1.00000       *   log[k_ppt86]      =     0.00000      Cov. Mat.
+             k_ppt87      1.00000       *   log[k_ppt87]      =     0.00000      Cov. Mat.
+             k_ppt88      1.00000       *   log[k_ppt88]      =     0.00000      Cov. Mat.
+             k_ppt89      1.00000       *   log[k_ppt89]      =     0.00000      Cov. Mat.
+             k_ppt90      1.00000       *   log[k_ppt90]      =     0.00000      Cov. Mat.
+             k_ppt91      1.00000       *   log[k_ppt91]      =     0.00000      Cov. Mat.
+             k_ppt92      1.00000       *   log[k_ppt92]      =     0.00000      Cov. Mat.
+             k_ppt93      1.00000       *   log[k_ppt93]      =     0.00000      Cov. Mat.
+             k_ppt94      1.00000       *   log[k_ppt94]      =     0.00000      Cov. Mat.
+             k_ppt95      1.00000       *   log[k_ppt95]      =     0.00000      Cov. Mat.
+             k_ppt96      1.00000       *   log[k_ppt96]      =     0.00000      Cov. Mat.
+             k_ppt97      1.00000       *   log[k_ppt97]      =     0.00000      Cov. Mat.
+             k_ppt98      1.00000       *   log[k_ppt98]      =     0.00000      Cov. Mat.
+             k_ppt99      1.00000       *   log[k_ppt99]      =     0.00000      Cov. Mat.
+            k_ppt100      1.00000       *   log[k_ppt100]     =     0.00000      Cov. Mat.
+            k_ppt101      1.00000       *   log[k_ppt101]     =     0.00000      Cov. Mat.
+            k_ppt102      1.00000       *   log[k_ppt102]     =     0.00000      Cov. Mat.
+            k_ppt103      1.00000       *   log[k_ppt103]     =     0.00000      Cov. Mat.
+            k_ppt104      1.00000       *   log[k_ppt104]     =     0.00000      Cov. Mat.
+
+Prior Info Name           Observation Group
+k_ppt1                       regul_k
+k_ppt2                       regul_k
+k_ppt3                       regul_k
+k_ppt4                       regul_k
+k_ppt5                       regul_k
+k_ppt6                       regul_k
+k_ppt7                       regul_k
+k_ppt8                       regul_k
+k_ppt9                       regul_k
+k_ppt10                      regul_k
+k_ppt11                      regul_k
+k_ppt12                      regul_k
+k_ppt13                      regul_k
+k_ppt14                      regul_k
+k_ppt15                      regul_k
+k_ppt16                      regul_k
+k_ppt17                      regul_k
+k_ppt18                      regul_k
+k_ppt19                      regul_k
+k_ppt20                      regul_k
+k_ppt21                      regul_k
+k_ppt22                      regul_k
+k_ppt23                      regul_k
+k_ppt24                      regul_k
+k_ppt25                      regul_k
+k_ppt26                      regul_k
+k_ppt27                      regul_k
+k_ppt28                      regul_k
+k_ppt29                      regul_k
+k_ppt30                      regul_k
+k_ppt31                      regul_k
+k_ppt32                      regul_k
+k_ppt33                      regul_k
+k_ppt34                      regul_k
+k_ppt35                      regul_k
+k_ppt36                      regul_k
+k_ppt37                      regul_k
+k_ppt38                      regul_k
+k_ppt39                      regul_k
+k_ppt40                      regul_k
+k_ppt41                      regul_k
+k_ppt42                      regul_k
+k_ppt43                      regul_k
+k_ppt44                      regul_k
+k_ppt45                      regul_k
+k_ppt46                      regul_k
+k_ppt47                      regul_k
+k_ppt48                      regul_k
+k_ppt49                      regul_k
+k_ppt50                      regul_k
+k_ppt51                      regul_k
+k_ppt52                      regul_k
+k_ppt53                      regul_k
+k_ppt54                      regul_k
+k_ppt55                      regul_k
+k_ppt56                      regul_k
+k_ppt57                      regul_k
+k_ppt58                      regul_k
+k_ppt59                      regul_k
+k_ppt60                      regul_k
+k_ppt61                      regul_k
+k_ppt62                      regul_k
+k_ppt63                      regul_k
+k_ppt64                      regul_k
+k_ppt65                      regul_k
+k_ppt66                      regul_k
+k_ppt67                      regul_k
+k_ppt68                      regul_k
+k_ppt69                      regul_k
+k_ppt70                      regul_k
+k_ppt71                      regul_k
+k_ppt72                      regul_k
+k_ppt73                      regul_k
+k_ppt74                      regul_k
+k_ppt75                      regul_k
+k_ppt76                      regul_k
+k_ppt77                      regul_k
+k_ppt78                      regul_k
+k_ppt79                      regul_k
+k_ppt80                      regul_k
+k_ppt81                      regul_k
+k_ppt82                      regul_k
+k_ppt83                      regul_k
+k_ppt84                      regul_k
+k_ppt85                      regul_k
+k_ppt86                      regul_k
+k_ppt87                      regul_k
+k_ppt88                      regul_k
+k_ppt89                      regul_k
+k_ppt90                      regul_k
+k_ppt91                      regul_k
+k_ppt92                      regul_k
+k_ppt93                      regul_k
+k_ppt94                      regul_k
+k_ppt95                      regul_k
+k_ppt96                      regul_k
+k_ppt97                      regul_k
+k_ppt98                      regul_k
+k_ppt99                      regul_k
+k_ppt100                     regul_k
+k_ppt101                     regul_k
+k_ppt102                     regul_k
+k_ppt103                     regul_k
+k_ppt104                     regul_k
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ well01_1                5.74724          10.00       heads       
+ well02_1                5.69616          10.00       heads       
+ well03_1                5.49199          10.00       heads       
+ well04_1                4.09190          10.00       heads       
+ well05_1                3.92014          10.00       heads       
+ well06_1                4.05991          10.00       heads       
+ well07_1                2.59369          10.00       heads       
+ well08_1                3.25979          10.00       heads       
+ well09_1                2.97368          10.00       heads       
+ well10_1                1.12417          10.00       heads       
+ well11_1                1.20361          10.00       heads       
+ well12_1                1.19256          10.00       heads       
+ part_time               0.00000          0.000       time        
+ part_east               0.00000          0.000       distance    
+
+
+Covariance matrices:-
+
+Covariance matrix for observation group "regul_k" ---->
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.3975E-02   1.9206E-02   1.5144E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02
+ 1.5685E-02   1.2584E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02
+ 1.0262E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   9.9574E-03
+ 9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   5.1364E-03   7.3766E-03   7.2769E-03
+ 6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   4.0020E-03   5.4647E-03   5.3970E-03   5.2000E-03
+ 4.8916E-03   4.4978E-03   4.0484E-03   3.5730E-03   3.0975E-03
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   2.3975E-02   1.9206E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02
+ 1.9206E-02   1.5685E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02
+ 1.2584E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   9.8095E-03
+ 9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   7.2769E-03   7.3766E-03
+ 7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   5.3970E-03   5.4647E-03   5.3970E-03
+ 5.2000E-03   4.8916E-03   4.4978E-03   4.0484E-03   3.5730E-03
+ 0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   2.3975E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 2.2988E-02   1.9206E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02
+ 1.5144E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   9.3831E-03
+ 9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.9881E-03   7.2769E-03
+ 7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   5.2000E-03   5.3970E-03   5.4647E-03
+ 5.3970E-03   5.2000E-03   4.8916E-03   4.4978E-03   4.0484E-03
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   2.2988E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02
+ 1.7808E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   8.7253E-03
+ 9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.5390E-03   6.9881E-03
+ 7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   4.8916E-03   5.2000E-03   5.3970E-03
+ 5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03   4.4978E-03
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02
+ 2.0360E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   7.9028E-03
+ 8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   5.9710E-03   6.5390E-03
+ 6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   4.4978E-03   4.8916E-03   5.2000E-03
+ 5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03
+ 4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02
+ 2.2517E-02   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02
+ 9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   6.9881E-03
+ 7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   5.3303E-03   5.9710E-03
+ 6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   4.0484E-03   4.4978E-03   4.8916E-03
+ 5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03
+ 3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       2.6732E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 2.3975E-02   9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02
+ 7.7937E-03   9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   6.0481E-03
+ 6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   4.6615E-03   5.3303E-03
+ 5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   3.5730E-03   4.0484E-03   4.4978E-03
+ 4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03
+ 2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.0360E-02   2.6732E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   1.0262E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   8.2423E-03   9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02
+ 6.5390E-03   7.7937E-03   9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   5.1364E-03
+ 6.0481E-03   6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   4.0020E-03   4.6615E-03
+ 5.3303E-03   5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   3.0975E-03   3.5730E-03   4.0484E-03
+ 4.4978E-03   4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 2.9294E-02   2.2988E-02   1.7808E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02
+ 1.9206E-02   1.5144E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02
+ 1.2584E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   1.3441E-02
+ 1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   9.9574E-03   9.8095E-03
+ 9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   5.1364E-03   7.3766E-03   7.2769E-03   6.9881E-03
+ 6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   4.0020E-03
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   2.9294E-02   2.2988E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.3975E-02   1.9206E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02
+ 1.5685E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   1.3220E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   9.8095E-03   9.9574E-03
+ 9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   7.2769E-03   7.3766E-03   7.2769E-03
+ 6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   2.9294E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   2.3975E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02
+ 1.9206E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   1.2584E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   9.3831E-03   9.8095E-03
+ 9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.9881E-03   7.2769E-03   7.3766E-03
+ 7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 2.2988E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1615E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   8.7253E-03   9.3831E-03
+ 9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.5390E-03   6.9881E-03   7.2769E-03
+ 7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.0419E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   7.9028E-03   8.7253E-03
+ 9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   5.9710E-03   6.5390E-03   6.9881E-03
+ 7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02
+ 1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   9.1123E-03
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   6.9881E-03   7.9028E-03
+ 8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   5.3303E-03   5.9710E-03   6.5390E-03
+ 6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02
+ 4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02
+ 9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   7.7937E-03
+ 9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   6.0481E-03   6.9881E-03
+ 7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   4.6615E-03   5.3303E-03   5.9710E-03
+ 6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03
+ 2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02
+ 3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   1.0262E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 8.2423E-03   9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   6.5390E-03
+ 7.7937E-03   9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   5.1364E-03   6.0481E-03
+ 6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   4.0020E-03   4.6615E-03   5.3303E-03
+ 5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482    
+ 0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 3.4780E-02   2.6732E-02   2.0360E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 2.2988E-02   1.7808E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02
+ 1.5144E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   1.3441E-02   1.3220E-02
+ 1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   9.9574E-03   9.8095E-03   9.3831E-03
+ 8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   5.1364E-03
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   3.4780E-02   2.6732E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 2.9294E-02   2.2988E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02
+ 1.9206E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   1.3220E-02   1.3441E-02
+ 1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   9.8095E-03   9.9574E-03   9.8095E-03
+ 9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   2.9294E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.3975E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   1.2584E-02   1.3220E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   9.3831E-03   9.8095E-03   9.9574E-03
+ 9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1615E-02   1.2584E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   8.7253E-03   9.3831E-03   9.8095E-03
+ 9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.0419E-02   1.1615E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   7.9028E-03   8.7253E-03   9.3831E-03
+ 9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.1800E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   9.1123E-03   1.0419E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   6.9881E-03   7.9028E-03   8.7253E-03
+ 9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03
+ 2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   9.9574E-03
+ 1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   7.7937E-03   9.1123E-03
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   6.0481E-03   6.9881E-03   7.9028E-03
+ 8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03
+ 2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02
+ 4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 1.0262E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   8.2423E-03
+ 9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   6.5390E-03   7.7937E-03
+ 9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   5.1364E-03   6.0481E-03   6.9881E-03
+ 7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482       0.1098    
+ 8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 2.6732E-02   2.0360E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02
+ 1.7808E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   1.8144E-02   1.7808E-02
+ 1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   1.3441E-02   1.3220E-02   1.2584E-02
+ 1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000       0.1482    
+ 0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 3.4780E-02   2.6732E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 2.2988E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.7808E-02   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   1.3220E-02   1.3441E-02   1.3220E-02
+ 1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482       0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   3.4780E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 2.9294E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.6852E-02   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   1.2584E-02   1.3220E-02   1.3441E-02
+ 1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098       0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5412E-02   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1615E-02   1.2584E-02   1.3220E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.3668E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.0419E-02   1.1615E-02   1.2584E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   1.5144E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.1800E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   9.1123E-03   1.0419E-02   1.1615E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02
+ 2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.2584E-02
+ 1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   9.9574E-03   1.1800E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   7.7937E-03   9.1123E-03   1.0419E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02
+ 2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02
+ 2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02   3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02   4.4626E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.0262E-02
+ 1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   8.2423E-03   9.9574E-03
+ 1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   6.5390E-03   7.7937E-03   9.1123E-03
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482       0.1098       8.1314E-02
+ 6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02
+ 2.0360E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   2.4491E-02   2.3975E-02
+ 2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   1.8144E-02   1.7808E-02   1.6852E-02
+ 1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000       0.1482       0.1098    
+ 8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 2.6732E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   2.3975E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.7808E-02   1.8144E-02   1.7808E-02
+ 1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482       0.2000       0.1482    
+ 0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 3.4780E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.6852E-02   1.7808E-02   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098       0.1482       0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   2.0360E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5412E-02   1.6852E-02   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02   0.1098       0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   1.7808E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.3668E-02   1.5412E-02   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02
+ 2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   1.9206E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   1.5144E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.1800E-02   1.3668E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02
+ 2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   2.6732E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   1.5685E-02
+ 1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.2584E-02   1.5144E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   9.9574E-03   1.1800E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02
+ 1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   2.0360E-02
+ 2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02   2.9993E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02   3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.2584E-02
+ 1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.0262E-02   1.2584E-02
+ 1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   8.2423E-03   9.9574E-03   1.1800E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02
+ 4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 3.2249E-02   2.3975E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02
+ 2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   2.4491E-02   2.3975E-02   2.2517E-02
+ 2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000       0.1482       0.1098       8.1314E-02
+ 6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 4.3320E-02   3.2249E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   2.3975E-02   2.4491E-02   2.3975E-02
+ 2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482       0.2000       0.1482       0.1098    
+ 8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   4.3320E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482    
+ 0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   2.0360E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000    
+ 0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.2988E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   1.7808E-02   2.0360E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02
+ 2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   2.9294E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482    
+ 0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   2.3975E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   1.9206E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   1.5144E-02   1.7808E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02
+ 1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   2.2988E-02
+ 2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   2.6732E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02   3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   1.9206E-02
+ 2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   1.5685E-02   1.9206E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.2584E-02   1.5144E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02
+ 1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.7808E-02
+ 2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   2.0360E-02   2.6732E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02   2.9993E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   1.5144E-02
+ 1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.2584E-02   1.5685E-02
+ 1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.0262E-02   1.2584E-02   1.5144E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02
+ 3.3060E-02   2.4491E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02
+ 2.3975E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02
+ 4.4626E-02   3.3060E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 3.2249E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02
+ 6.0239E-02   4.4626E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 4.3320E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098    
+ 8.1314E-02   6.0239E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482    
+ 0.1098       8.1314E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.2988E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.3975E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   2.9294E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000    
+ 0.1482       0.1098       4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   2.9294E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   2.3975E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   1.9206E-02   2.2988E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.9206E-02
+ 2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   2.2988E-02   2.9294E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   2.6732E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482    
+ 0.2000       0.1482       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.2988E-02
+ 2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   1.9206E-02   2.3975E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   1.5685E-02   1.9206E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.5144E-02
+ 1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.7808E-02   2.2988E-02
+ 2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   2.0360E-02   2.6732E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   1.7808E-02
+ 2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   1.5144E-02   1.9206E-02
+ 2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.2584E-02   1.5685E-02   1.9206E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 3.9756E-02   2.9993E-02   2.2517E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 3.2249E-02   2.3975E-02   0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02
+ 2.4491E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   3.9756E-02   2.9993E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 4.3320E-02   3.2249E-02   0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02
+ 3.3060E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   4.3320E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02
+ 4.4626E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02
+ 6.0239E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098    
+ 8.1314E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.9206E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.3975E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   2.9294E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482    
+ 0.1098       4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   2.9294E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   2.3975E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   1.5685E-02
+ 1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.9206E-02   2.3975E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   2.2988E-02   2.9294E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000    
+ 0.1482       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       2.6732E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.2988E-02   2.9294E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   1.9206E-02   2.3975E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 1.0262E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   1.2584E-02
+ 1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.5144E-02   1.9206E-02
+ 2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.7808E-02   2.2988E-02   2.9294E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482    
+ 0.2000       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.0360E-02
+ 2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   1.7808E-02   2.2988E-02
+ 2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   1.5144E-02   1.9206E-02   2.3975E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 3.4780E-02   2.6732E-02   2.0360E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 2.9993E-02   2.2517E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02
+ 2.3975E-02   0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   3.4780E-02   2.6732E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 3.9756E-02   2.9993E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 3.2249E-02   0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   3.9756E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 4.3320E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.8055E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   2.2988E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 7.7450E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5144E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.9206E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.3975E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 0.1023       4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098    
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   2.9294E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.2584E-02
+ 1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   1.5685E-02   1.9206E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.9206E-02   2.3975E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 0.1309       3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482    
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       2.9993E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       2.6732E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.2988E-02   2.9294E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 8.2423E-03   9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.0262E-02
+ 1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   1.2584E-02   1.5685E-02
+ 1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.5144E-02   1.9206E-02   2.3975E-02
+ 2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02
+ 4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000    
+ 2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02
+ 2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.0360E-02   2.6732E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   1.7808E-02   2.2988E-02   2.9294E-02
+ 3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   2.4491E-02   2.3975E-02
+ 2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   2.3975E-02   1.9206E-02   1.5144E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 2.9294E-02   2.2988E-02   1.7808E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 2.6732E-02   2.0360E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02
+ 2.2517E-02   0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   2.3975E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   2.9294E-02   2.2988E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 3.4780E-02   2.6732E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 2.9993E-02   0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   2.9294E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   3.4780E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 3.9756E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   2.0360E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   3.6644E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   4.4626E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.2283E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.7808E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   2.2988E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   4.4626E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   5.6010E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1800E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5144E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.9206E-02   2.2988E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   5.2283E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   6.7806E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023    
+ 4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   3.4780E-02   4.4626E-02   5.6010E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 7.7937E-03   9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   9.9574E-03
+ 1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.2584E-02   1.5144E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   1.5685E-02   1.9206E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   5.8055E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   7.7450E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       2.6732E-02   3.4780E-02   4.4626E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.5390E-03   7.7937E-03   9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   8.2423E-03
+ 9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.0262E-02   1.2584E-02
+ 1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   1.2584E-02   1.5685E-02   1.9206E-02
+ 2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02
+ 3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02
+ 5.2283E-02   5.8055E-02   6.0239E-02   2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02
+ 7.7450E-02   8.1314E-02   2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 2.4491E-02   3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.0360E-02   2.6732E-02   3.4780E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   5.1364E-03   1.3441E-02
+ 1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   1.8144E-02   1.7808E-02
+ 1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   2.4491E-02   2.3975E-02   2.2517E-02
+ 2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 2.2988E-02   1.9206E-02   1.5685E-02   1.2584E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.3975E-02   1.9206E-02   1.5144E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 2.2988E-02   1.7808E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02
+ 2.0360E-02   0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.1098       0.1023       8.5609E-02
+ 6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02
+ 9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   1.3220E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   1.7808E-02   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   2.3975E-02   2.4491E-02   2.3975E-02
+ 2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   2.2988E-02   1.9206E-02   1.5685E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   2.3975E-02   1.9206E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 2.9294E-02   2.2988E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 2.6732E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1023       0.1098       0.1023    
+ 8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02
+ 9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   1.2584E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   1.6852E-02   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   2.3975E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   2.9294E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 3.4780E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   8.5609E-02   0.1023       0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02
+ 8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   1.1615E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   1.5412E-02   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   2.0360E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   2.9294E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   3.6644E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 4.4626E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   6.7806E-02   8.5609E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02
+ 7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   1.0419E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.3668E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.7808E-02   2.0360E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   3.4780E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   4.4626E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 5.6010E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.2283E-02   6.7806E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02
+ 6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   9.1123E-03
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1800E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5144E-02   1.7808E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   3.9756E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   5.2283E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 6.7806E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       3.9756E-02   5.2283E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02
+ 6.0481E-03   6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   7.7937E-03
+ 9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   9.9574E-03   1.1800E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.2584E-02   1.5144E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   4.3320E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   5.8055E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 7.7450E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02
+ 4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       2.9993E-02   3.9756E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023    
+ 5.1364E-03   6.0481E-03   6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   6.5390E-03
+ 7.7937E-03   9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   8.2423E-03   9.9574E-03
+ 1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.0262E-02   1.2584E-02   1.5144E-02
+ 1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02
+ 2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02
+ 3.9756E-02   4.3320E-02   4.4626E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02
+ 5.8055E-02   6.0239E-02   2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02
+ 8.1314E-02   2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 2.3975E-02   3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02
+ 3.3060E-02   4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.2517E-02   2.9993E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098    
+ 7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   4.0020E-03   9.9574E-03
+ 9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   5.1364E-03   1.3441E-02   1.3220E-02
+ 1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   1.8144E-02   1.7808E-02   1.6852E-02
+ 1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02
+ 1.7808E-02   1.5144E-02   1.2584E-02   1.0262E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02
+ 1.9206E-02   1.5685E-02   1.2584E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02
+ 1.9206E-02   1.5144E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02
+ 1.7808E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482    
+ 0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02   0.1482       0.1309       0.1023    
+ 7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02
+ 7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   9.8095E-03
+ 9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   1.3220E-02   1.3441E-02
+ 1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   1.7808E-02   1.8144E-02   1.7808E-02
+ 1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02
+ 2.0360E-02   1.7808E-02   1.5144E-02   1.2584E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 2.2988E-02   1.9206E-02   1.5685E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.3975E-02   1.9206E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 2.2988E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   0.1309       0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02
+ 6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   9.3831E-03
+ 9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   1.2584E-02   1.3220E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   1.6852E-02   1.7808E-02   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02
+ 2.2517E-02   2.0360E-02   1.7808E-02   1.5144E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   2.2988E-02   1.9206E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   2.3975E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 2.9294E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02   0.1023       0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02
+ 6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   8.7253E-03
+ 9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   1.1615E-02   1.2584E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   1.5412E-02   1.6852E-02   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.2988E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   2.9294E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 3.6644E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02   7.7450E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02
+ 5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   7.9028E-03
+ 8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   1.0419E-02   1.1615E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.3668E-02   1.5412E-02   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.6732E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   3.4780E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 4.4626E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098       8.1314E-02   5.8055E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02
+ 5.3303E-03   5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.9881E-03
+ 7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   9.1123E-03   1.0419E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1800E-02   1.3668E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   2.9993E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   3.9756E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 5.2283E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482       0.1098       4.3320E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023    
+ 4.6615E-03   5.3303E-03   5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.0481E-03
+ 6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   7.7937E-03   9.1123E-03
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   9.9574E-03   1.1800E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   3.2249E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   4.3320E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 5.8055E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02
+ 2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       0.1482       3.2249E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309    
+ 4.0020E-03   4.6615E-03   5.3303E-03   5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   5.1364E-03
+ 6.0481E-03   6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   6.5390E-03   7.7937E-03
+ 9.1123E-03   1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   8.2423E-03   9.9574E-03   1.1800E-02
+ 1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.0262E-02   1.2584E-02   1.5144E-02   1.7808E-02
+ 2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02
+ 2.9993E-02   3.2249E-02   3.3060E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02
+ 4.3320E-02   4.4626E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02
+ 6.0239E-02   2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02
+ 2.2517E-02   2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02
+ 3.2249E-02   4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02
+ 4.4626E-02   6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000       2.3975E-02   3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482    
+ 5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03   4.4978E-03   4.0484E-03   3.5730E-03   3.0975E-03   7.3766E-03
+ 7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   4.0020E-03   9.9574E-03   9.8095E-03
+ 9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   5.1364E-03   1.3441E-02   1.3220E-02   1.2584E-02
+ 1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   6.5390E-03   1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02
+ 1.3668E-02   1.1800E-02   9.9574E-03   8.2423E-03   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02   1.7808E-02
+ 1.5144E-02   1.2584E-02   1.0262E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02   1.9206E-02
+ 1.5685E-02   1.2584E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02   1.9206E-02
+ 1.5144E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02   1.7808E-02
+ 8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   2.0360E-02   0.1098    
+ 0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   2.2517E-02   0.1482       0.1309    
+ 0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   2.3975E-02   0.2000       0.1482       0.1098    
+ 8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02   2.4491E-02
+ 5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03   4.4978E-03   4.0484E-03   3.5730E-03   7.2769E-03
+ 7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   4.6615E-03   9.8095E-03   9.9574E-03
+ 9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   6.0481E-03   1.3220E-02   1.3441E-02   1.3220E-02
+ 1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   7.7937E-03   1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02
+ 1.5412E-02   1.3668E-02   1.1800E-02   9.9574E-03   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02   2.0360E-02
+ 1.7808E-02   1.5144E-02   1.2584E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02   2.2988E-02
+ 1.9206E-02   1.5685E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02   2.3975E-02
+ 1.9206E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02   2.2988E-02
+ 7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   2.6732E-02   0.1023    
+ 0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   2.9993E-02   0.1309       0.1482    
+ 0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   3.2249E-02   0.1482       0.2000       0.1482    
+ 0.1098       8.1314E-02   6.0239E-02   4.4626E-02   3.3060E-02
+ 5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03   4.4978E-03   4.0484E-03   6.9881E-03
+ 7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   5.3303E-03   9.3831E-03   9.8095E-03
+ 9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   6.9881E-03   1.2584E-02   1.3220E-02   1.3441E-02
+ 1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   9.1123E-03   1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02
+ 1.6852E-02   1.5412E-02   1.3668E-02   1.1800E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02   2.2517E-02
+ 2.0360E-02   1.7808E-02   1.5144E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02   2.6732E-02
+ 2.2988E-02   1.9206E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02   2.9294E-02
+ 2.3975E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02   2.9294E-02
+ 6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   3.4780E-02   8.5609E-02
+ 0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   3.9756E-02   0.1023       0.1309    
+ 0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   4.3320E-02   0.1098       0.1482       0.2000    
+ 0.1482       0.1098       8.1314E-02   6.0239E-02   4.4626E-02
+ 4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03   4.4978E-03   6.5390E-03
+ 6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   5.9710E-03   8.7253E-03   9.3831E-03
+ 9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   7.9028E-03   1.1615E-02   1.2584E-02   1.3220E-02
+ 1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.0419E-02   1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02
+ 1.7808E-02   1.6852E-02   1.5412E-02   1.3668E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02   2.3975E-02
+ 2.2517E-02   2.0360E-02   1.7808E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02   2.9993E-02
+ 2.6732E-02   2.2988E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02   3.4780E-02
+ 2.9294E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02   3.6644E-02
+ 5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   4.4626E-02   6.7806E-02
+ 8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.2283E-02   7.7450E-02   0.1023    
+ 0.1309       0.1482       0.1309       0.1023       7.7450E-02   5.8055E-02   8.1314E-02   0.1098       0.1482    
+ 0.2000       0.1482       0.1098       8.1314E-02   6.0239E-02
+ 4.4978E-03   4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03   4.8916E-03   5.9710E-03
+ 6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.5390E-03   7.9028E-03   8.7253E-03
+ 9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   8.7253E-03   1.0419E-02   1.1615E-02   1.2584E-02
+ 1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1615E-02   1.3668E-02   1.5412E-02   1.6852E-02   1.7808E-02
+ 1.8144E-02   1.7808E-02   1.6852E-02   1.5412E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02   2.4491E-02
+ 2.3975E-02   2.2517E-02   2.0360E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02   3.2249E-02
+ 2.9993E-02   2.6732E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02   3.9756E-02
+ 3.4780E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02   4.4626E-02
+ 4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   5.6010E-02   5.2283E-02
+ 6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   6.7806E-02   5.8055E-02   7.7450E-02
+ 0.1023       0.1309       0.1482       0.1309       0.1023       7.7450E-02   6.0239E-02   8.1314E-02   0.1098    
+ 0.1482       0.2000       0.1482       0.1098       8.1314E-02
+ 4.0484E-03   4.4978E-03   4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03   5.2000E-03   5.3303E-03
+ 5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.9881E-03   6.9881E-03   7.9028E-03
+ 8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   9.3831E-03   9.1123E-03   1.0419E-02   1.1615E-02
+ 1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   1.2584E-02   1.1800E-02   1.3668E-02   1.5412E-02   1.6852E-02
+ 1.7808E-02   1.8144E-02   1.7808E-02   1.6852E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02   2.3975E-02
+ 2.4491E-02   2.3975E-02   2.2517E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02   3.3060E-02
+ 3.2249E-02   2.9993E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02   4.3320E-02
+ 3.9756E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02   5.2283E-02
+ 3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   6.7806E-02   3.9756E-02
+ 5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       8.5609E-02   4.3320E-02   5.8055E-02
+ 7.7450E-02   0.1023       0.1309       0.1482       0.1309       0.1023       4.4626E-02   6.0239E-02   8.1314E-02
+ 0.1098       0.1482       0.2000       0.1482       0.1098    
+ 3.5730E-03   4.0484E-03   4.4978E-03   4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03   5.3970E-03   4.6615E-03
+ 5.3303E-03   5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   7.2769E-03   6.0481E-03   6.9881E-03
+ 7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   9.8095E-03   7.7937E-03   9.1123E-03   1.0419E-02
+ 1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   1.3220E-02   9.9574E-03   1.1800E-02   1.3668E-02   1.5412E-02
+ 1.6852E-02   1.7808E-02   1.8144E-02   1.7808E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02   2.2517E-02
+ 2.3975E-02   2.4491E-02   2.3975E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02   3.2249E-02
+ 3.3060E-02   3.2249E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02   4.4626E-02
+ 4.3320E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02   5.8055E-02
+ 2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   7.7450E-02   2.9993E-02
+ 3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       0.1023       3.2249E-02   4.3320E-02
+ 5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       0.1309       3.3060E-02   4.4626E-02   6.0239E-02
+ 8.1314E-02   0.1098       0.1482       0.2000       0.1482    
+ 3.0975E-03   3.5730E-03   4.0484E-03   4.4978E-03   4.8916E-03   5.2000E-03   5.3970E-03   5.4647E-03   4.0020E-03
+ 4.6615E-03   5.3303E-03   5.9710E-03   6.5390E-03   6.9881E-03   7.2769E-03   7.3766E-03   5.1364E-03   6.0481E-03
+ 6.9881E-03   7.9028E-03   8.7253E-03   9.3831E-03   9.8095E-03   9.9574E-03   6.5390E-03   7.7937E-03   9.1123E-03
+ 1.0419E-02   1.1615E-02   1.2584E-02   1.3220E-02   1.3441E-02   8.2423E-03   9.9574E-03   1.1800E-02   1.3668E-02
+ 1.5412E-02   1.6852E-02   1.7808E-02   1.8144E-02   1.0262E-02   1.2584E-02   1.5144E-02   1.7808E-02   2.0360E-02
+ 2.2517E-02   2.3975E-02   2.4491E-02   1.2584E-02   1.5685E-02   1.9206E-02   2.2988E-02   2.6732E-02   2.9993E-02
+ 3.2249E-02   3.3060E-02   1.5144E-02   1.9206E-02   2.3975E-02   2.9294E-02   3.4780E-02   3.9756E-02   4.3320E-02
+ 4.4626E-02   1.7808E-02   2.2988E-02   2.9294E-02   3.6644E-02   4.4626E-02   5.2283E-02   5.8055E-02   6.0239E-02
+ 2.0360E-02   2.6732E-02   3.4780E-02   4.4626E-02   5.6010E-02   6.7806E-02   7.7450E-02   8.1314E-02   2.2517E-02
+ 2.9993E-02   3.9756E-02   5.2283E-02   6.7806E-02   8.5609E-02   0.1023       0.1098       2.3975E-02   3.2249E-02
+ 4.3320E-02   5.8055E-02   7.7450E-02   0.1023       0.1309       0.1482       2.4491E-02   3.3060E-02   4.4626E-02
+ 6.0239E-02   8.1314E-02   0.1098       0.1482       0.2000    
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -3.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 3.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   :  10.000
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.50000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.50000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :  -2 (only compute Jacobian)
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : no
+
+
+Extra settings for regularisation mode:-
+
+   Target/current measurement objective function ratio          : 0.10000    
+   Acceptable/target measurement objective function ratio       :  1.0083    
+   Minimum target measurement objective function value          :  12.000    
+   Terminate inversion when measurement obj. fn. below target   : yes
+
+   Initial regularisation weight factor                         :  1.0000    
+   Minimum regularisation weight factor                         : 1.00000E-10
+   Maximum regularisation weight factor                         : 1.00000E+10
+
+   Weight factor solution adjustment ratio                      :  1.3000    
+   Weight factor solution tolerance                             : 1.00000E-02
+   Automatic inter-regularisation group weights adjustment      : yes
+   Use sensitivities or number of items                         : sensitivities
+
+   Implement memory conservation                                : no
+   Declare all regularisation information as linear             : no
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Current regularisation weight factor                     =   1.0000    
+   Current value of measurement objective function          =   238.90    
+   Current value of regularisation objective function       =   0.0000    
+
+   Sum of squared weighted residuals (ie phi)               =   238.90    
+   Contribution to phi from observation group "heads"       =   238.90    
+   Contribution to phi from observation group "time"        =   0.0000    
+   Contribution to phi from observation group "distance"    =   0.0000    
+   Contribution to phi from observation group "regul_k"     =   0.0000    
+
+      Current parameter values
+      k_ppt1           1.00000    
+      k_ppt2           1.00000    
+      k_ppt3           1.00000    
+      k_ppt4           1.00000    
+      k_ppt5           1.00000    
+      k_ppt6           1.00000    
+      k_ppt7           1.00000    
+      k_ppt8           1.00000    
+      k_ppt9           1.00000    
+      k_ppt10          1.00000    
+      k_ppt11          1.00000    
+      k_ppt12          1.00000    
+      k_ppt13          1.00000    
+      k_ppt14          1.00000    
+      k_ppt15          1.00000    
+      k_ppt16          1.00000    
+      k_ppt17          1.00000    
+      k_ppt18          1.00000    
+      k_ppt19          1.00000    
+      k_ppt20          1.00000    
+      k_ppt21          1.00000    
+      k_ppt22          1.00000    
+      k_ppt23          1.00000    
+      k_ppt24          1.00000    
+      k_ppt25          1.00000    
+      k_ppt26          1.00000    
+      k_ppt27          1.00000    
+      k_ppt28          1.00000    
+      k_ppt29          1.00000    
+      k_ppt30          1.00000    
+      k_ppt31          1.00000    
+      k_ppt32          1.00000    
+      k_ppt33          1.00000    
+      k_ppt34          1.00000    
+      k_ppt35          1.00000    
+      k_ppt36          1.00000    
+      k_ppt37          1.00000    
+      k_ppt38          1.00000    
+      k_ppt39          1.00000    
+      k_ppt40          1.00000    
+      k_ppt41          1.00000    
+      k_ppt42          1.00000    
+      k_ppt43          1.00000    
+      k_ppt44          1.00000    
+      k_ppt45          1.00000    
+      k_ppt46          1.00000    
+      k_ppt47          1.00000    
+      k_ppt48          1.00000    
+      k_ppt49          1.00000    
+      k_ppt50          1.00000    
+      k_ppt51          1.00000    
+      k_ppt52          1.00000    
+      k_ppt53          1.00000    
+      k_ppt54          1.00000    
+      k_ppt55          1.00000    
+      k_ppt56          1.00000    
+      k_ppt57          1.00000    
+      k_ppt58          1.00000    
+      k_ppt59          1.00000    
+      k_ppt60          1.00000    
+      k_ppt61          1.00000    
+      k_ppt62          1.00000    
+      k_ppt63          1.00000    
+      k_ppt64          1.00000    
+      k_ppt65          1.00000    
+      k_ppt66          1.00000    
+      k_ppt67          1.00000    
+      k_ppt68          1.00000    
+      k_ppt69          1.00000    
+      k_ppt70          1.00000    
+      k_ppt71          1.00000    
+      k_ppt72          1.00000    
+      k_ppt73          1.00000    
+      k_ppt74          1.00000    
+      k_ppt75          1.00000    
+      k_ppt76          1.00000    
+      k_ppt77          1.00000    
+      k_ppt78          1.00000    
+      k_ppt79          1.00000    
+      k_ppt80          1.00000    
+      k_ppt81          1.00000    
+      k_ppt82          1.00000    
+      k_ppt83          1.00000    
+      k_ppt84          1.00000    
+      k_ppt85          1.00000    
+      k_ppt86          1.00000    
+      k_ppt87          1.00000    
+      k_ppt88          1.00000    
+      k_ppt89          1.00000    
+      k_ppt90          1.00000    
+      k_ppt91          1.00000    
+      k_ppt92          1.00000    
+      k_ppt93          1.00000    
+      k_ppt94          1.00000    
+      k_ppt95          1.00000    
+      k_ppt96          1.00000    
+      k_ppt97          1.00000    
+      k_ppt98          1.00000    
+      k_ppt99          1.00000    
+      k_ppt100         1.00000    
+      k_ppt101         1.00000    
+      k_ppt102         1.00000    
+      k_ppt103         1.00000    
+      k_ppt104         1.00000    
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Current regularisation weight factor                     :   1.0000    
+   Current value of measurement objective function          :   238.90    
+   Current value of regularisation objective function       :   0.0000    
+   Note: regularisation objective function is not comparable between
+   iterations because of IREGADJ regularisation weights adjustment.
+
+   Starting phi for this iteration                          :   238.90    
+   Contribution to phi from observation group "heads"       :   238.90    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+   Contribution to phi from observation group "regul_k"     :   0.0000    
+
+   Optimisation complete: NOPTMAX supplied as -2 indicating that only the
+                          Jacobian for the initial parameter set is required.
+   Total model calls:    105

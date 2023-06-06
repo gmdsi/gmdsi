@@ -1,0 +1,835 @@
+
+PANTHER master listening on socket:0.0.0.0:4004 (IPv4)
+running model 105 times
+12/11/22 09:55:59->waiting for agents to appear
+
+12/11/22 09:56:00->new connection from: DESKTOP-2020:59736
+12/11/22 09:56:00->initializing new agent connection from: DESKTOP-2020$E:\temp1:DESKTOP-2020:59736, number of agents: 1
+12/11/22 09:56:00->new connection from: DESKTOP-2020:59735
+12/11/22 09:56:00->initializing new agent connection from: DESKTOP-2020$E:\temp1\worker1:DESKTOP-2020:59735, number of agents: 2
+12/11/22 09:56:00->new connection from: DESKTOP-2020:59734
+12/11/22 09:56:00->initializing new agent connection from: DESKTOP-2020$E:\temp1\worker2:DESKTOP-2020:59734, number of agents: 3
+12/11/22 09:56:00->new agent ready: DESKTOP-2020$E:\temp1:DESKTOP-2020:59736
+12/11/22 09:56:00->Sending run 0 to: DESKTOP-2020$E:\temp1  (group id:2, run id:0, concurrent runs:1)
+12/11/22 09:56:00->new agent ready: DESKTOP-2020$E:\temp1\worker1:DESKTOP-2020:59735
+12/11/22 09:56:00->Sending run 1 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:1, concurrent runs:1)
+12/11/22 09:56:01->new agent ready: DESKTOP-2020$E:\temp1\worker2:DESKTOP-2020:59734
+12/11/22 09:56:01->Sending run 2 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:2, concurrent runs:1)
+12/11/22 09:56:03->run 0 received from: DESKTOP-2020$E:\temp1  (run time:0.0385167 min, avg run time:0.0385167 min, group id:2, run id: 0 concurrent:1)
+12/11/22 09:56:03->run 0 processed
+12/11/22 09:56:03->Sending run 3 to: DESKTOP-2020$E:\temp1  (group id:2, run id:3, concurrent runs:1)
+12/11/22 09:56:03->run 1 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0385417 min, group id:2, run id: 1 concurrent:1)
+12/11/22 09:56:03->run 1 processed
+12/11/22 09:56:03->Sending run 4 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:4, concurrent runs:1)
+12/11/22 09:56:03->run 2 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03865 min, avg run time:0.0385778 min, group id:2, run id: 2 concurrent:1)
+12/11/22 09:56:03->run 2 processed
+12/11/22 09:56:03->Sending run 5 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:5, concurrent runs:1)
+12/11/22 09:56:05->run 3 received from: DESKTOP-2020$E:\temp1  (run time:0.0385167 min, avg run time:0.0385778 min, group id:2, run id: 3 concurrent:1)
+12/11/22 09:56:05->run 3 processed
+12/11/22 09:56:05->Sending run 6 to: DESKTOP-2020$E:\temp1  (group id:2, run id:6, concurrent runs:1)
+12/11/22 09:56:05->run 4 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386167 min, avg run time:0.0385944 min, group id:2, run id: 4 concurrent:1)
+12/11/22 09:56:05->run 4 processed
+12/11/22 09:56:05->Sending run 7 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:7, concurrent runs:1)
+12/11/22 09:56:05->run 5 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385833 min, avg run time:0.0385722 min, group id:2, run id: 5 concurrent:1)
+12/11/22 09:56:05->run 5 processed
+12/11/22 09:56:05->Sending run 8 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:8, concurrent runs:1)
+12/11/22 09:56:07->run 6 received from: DESKTOP-2020$E:\temp1  (run time:0.0385833 min, avg run time:0.0385944 min, group id:2, run id: 6 concurrent:1)
+12/11/22 09:56:07->run 6 processed
+12/11/22 09:56:07->Sending run 9 to: DESKTOP-2020$E:\temp1  (group id:2, run id:9, concurrent runs:1)
+12/11/22 09:56:07->run 7 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03865 min, avg run time:0.0386056 min, group id:2, run id: 7 concurrent:1)
+12/11/22 09:56:07->run 7 processed
+12/11/22 09:56:07->Sending run 10 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:10, concurrent runs:1)
+12/11/22 09:56:07->run 8 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0385944 min, group id:2, run id: 8 concurrent:1)
+12/11/22 09:56:07->run 8 processed
+12/11/22 09:56:07->Sending run 11 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:11, concurrent runs:1)
+12/11/22 09:56:09->run 9 received from: DESKTOP-2020$E:\temp1  (run time:0.0385833 min, avg run time:0.0385944 min, group id:2, run id: 9 concurrent:1)
+12/11/22 09:56:09->run 9 processed
+12/11/22 09:56:09->Sending run 12 to: DESKTOP-2020$E:\temp1  (group id:2, run id:12, concurrent runs:1)
+12/11/22 09:56:10->run 10 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0384833 min, avg run time:0.0385389 min, group id:2, run id: 10 concurrent:1)
+12/11/22 09:56:10->run 10 processed
+12/11/22 09:56:10->Sending run 13 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:13, concurrent runs:1)
+12/11/22 09:56:10->run 11 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03845 min, avg run time:0.0385056 min, group id:2, run id: 11 concurrent:1)
+12/11/22 09:56:10->run 11 processed
+12/11/22 09:56:10->Sending run 14 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:14, concurrent runs:1)
+12/11/22 09:56:12->run 12 received from: DESKTOP-2020$E:\temp1  (run time:0.0385833 min, avg run time:0.0385056 min, group id:2, run id: 12 concurrent:1)
+12/11/22 09:56:12->run 12 processed
+12/11/22 09:56:12->Sending run 15 to: DESKTOP-2020$E:\temp1  (group id:2, run id:15, concurrent runs:1)
+12/11/22 09:56:12->run 13 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03855 min, avg run time:0.0385278 min, group id:2, run id: 13 concurrent:1)
+12/11/22 09:56:12->run 13 processed
+12/11/22 09:56:12->Sending run 16 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:16, concurrent runs:1)
+12/11/22 09:56:12->run 14 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385667 min, avg run time:0.0385667 min, group id:2, run id: 14 concurrent:1)
+12/11/22 09:56:12->run 14 processed
+12/11/22 09:56:12->Sending run 17 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:17, concurrent runs:1)
+12/11/22 09:56:14->run 15 received from: DESKTOP-2020$E:\temp1  (run time:0.0385667 min, avg run time:0.0385611 min, group id:2, run id: 15 concurrent:1)
+12/11/22 09:56:14->run 15 processed
+12/11/22 09:56:14->Sending run 18 to: DESKTOP-2020$E:\temp1  (group id:2, run id:18, concurrent runs:1)
+12/11/22 09:56:14->run 16 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385167 min, avg run time:0.03855 min, group id:2, run id: 16 concurrent:1)
+12/11/22 09:56:14->run 16 processed
+12/11/22 09:56:14->Sending run 19 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:19, concurrent runs:1)
+12/11/22 09:56:14->run 17 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386167 min, avg run time:0.0385667 min, group id:2, run id: 17 concurrent:1)
+12/11/22 09:56:14->run 17 processed
+12/11/22 09:56:14->Sending run 20 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:20, concurrent runs:1)
+12/11/22 09:56:16->run 18 received from: DESKTOP-2020$E:\temp1  (run time:0.0384667 min, avg run time:0.0385333 min, group id:2, run id: 18 concurrent:1)
+12/11/22 09:56:16->run 18 processed
+12/11/22 09:56:16->Sending run 21 to: DESKTOP-2020$E:\temp1  (group id:2, run id:21, concurrent runs:1)
+12/11/22 09:56:17->run 19 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.03855 min, group id:2, run id: 19 concurrent:1)
+12/11/22 09:56:17->run 19 processed
+12/11/22 09:56:17->Sending run 22 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:22, concurrent runs:1)
+12/11/22 09:56:17->run 20 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386167 min, avg run time:0.03855 min, group id:2, run id: 20 concurrent:1)
+12/11/22 09:56:17->run 20 processed
+12/11/22 09:56:17->Sending run 23 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:23, concurrent runs:1)
+12/11/22 09:56:19->run 21 received from: DESKTOP-2020$E:\temp1  (run time:0.0384833 min, avg run time:0.0385556 min, group id:2, run id: 21 concurrent:1)
+12/11/22 09:56:19->run 21 processed
+12/11/22 09:56:19->Sending run 24 to: DESKTOP-2020$E:\temp1  (group id:2, run id:24, concurrent runs:1)
+12/11/22 09:56:19->run 22 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385833 min, avg run time:0.0385611 min, group id:2, run id: 22 concurrent:1)
+12/11/22 09:56:19->run 22 processed
+12/11/22 09:56:19->Sending run 25 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:25, concurrent runs:1)
+12/11/22 09:56:19->run 23 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385333 min, avg run time:0.0385333 min, group id:2, run id: 23 concurrent:1)
+12/11/22 09:56:19->run 23 processed
+12/11/22 09:56:19->Sending run 26 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:26, concurrent runs:1)
+12/11/22 09:56:21->run 24 received from: DESKTOP-2020$E:\temp1  (run time:0.0385333 min, avg run time:0.03855 min, group id:2, run id: 24 concurrent:1)
+12/11/22 09:56:21->run 24 processed
+12/11/22 09:56:21->Sending run 27 to: DESKTOP-2020$E:\temp1  (group id:2, run id:27, concurrent runs:1)
+12/11/22 09:56:21->run 25 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385833 min, avg run time:0.03855 min, group id:2, run id: 25 concurrent:1)
+12/11/22 09:56:21->run 25 processed
+12/11/22 09:56:21->Sending run 28 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:28, concurrent runs:1)
+12/11/22 09:56:21->run 26 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385333 min, avg run time:0.03855 min, group id:2, run id: 26 concurrent:1)
+12/11/22 09:56:21->run 26 processed
+12/11/22 09:56:21->Sending run 29 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:29, concurrent runs:1)
+12/11/22 09:56:23->run 27 received from: DESKTOP-2020$E:\temp1  (run time:0.0385667 min, avg run time:0.0385611 min, group id:2, run id: 27 concurrent:1)
+12/11/22 09:56:23->run 27 processed
+12/11/22 09:56:23->Sending run 30 to: DESKTOP-2020$E:\temp1  (group id:2, run id:30, concurrent runs:1)
+12/11/22 09:56:24->run 28 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386 min, avg run time:0.0385667 min, group id:2, run id: 28 concurrent:1)
+12/11/22 09:56:24->run 28 processed
+12/11/22 09:56:24->Sending run 31 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:31, concurrent runs:1)
+12/11/22 09:56:24->run 29 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386 min, avg run time:0.0385889 min, group id:2, run id: 29 concurrent:1)
+12/11/22 09:56:24->run 29 processed
+12/11/22 09:56:24->Sending run 32 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:32, concurrent runs:1)
+12/11/22 09:56:26->run 30 received from: DESKTOP-2020$E:\temp1  (run time:0.0385 min, avg run time:0.0385667 min, group id:2, run id: 30 concurrent:1)
+12/11/22 09:56:26->run 30 processed
+12/11/22 09:56:26->Sending run 33 to: DESKTOP-2020$E:\temp1  (group id:2, run id:33, concurrent runs:1)
+12/11/22 09:56:26->run 31 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385333 min, avg run time:0.0385444 min, group id:2, run id: 31 concurrent:1)
+12/11/22 09:56:26->run 31 processed
+12/11/22 09:56:26->Sending run 34 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:34, concurrent runs:1)
+12/11/22 09:56:26->run 32 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385167 min, avg run time:0.0385167 min, group id:2, run id: 32 concurrent:1)
+12/11/22 09:56:26->run 32 processed
+12/11/22 09:56:26->Sending run 35 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:35, concurrent runs:1)
+12/11/22 09:56:28->run 33 received from: DESKTOP-2020$E:\temp1  (run time:0.0384 min, avg run time:0.0384833 min, group id:2, run id: 33 concurrent:1)
+12/11/22 09:56:28->run 33 processed
+12/11/22 09:56:28->Sending run 36 to: DESKTOP-2020$E:\temp1  (group id:2, run id:36, concurrent runs:1)
+12/11/22 09:56:28->run 34 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385333 min, avg run time:0.0384833 min, group id:2, run id: 34 concurrent:1)
+12/11/22 09:56:28->run 34 processed
+12/11/22 09:56:28->Sending run 37 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:37, concurrent runs:1)
+12/11/22 09:56:28->run 35 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03845 min, avg run time:0.0384611 min, group id:2, run id: 35 concurrent:1)
+12/11/22 09:56:28->run 35 processed
+12/11/22 09:56:28->Sending run 38 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:38, concurrent runs:1)
+12/11/22 09:56:30->run 36 received from: DESKTOP-2020$E:\temp1  (run time:0.0384833 min, avg run time:0.0384889 min, group id:2, run id: 36 concurrent:1)
+12/11/22 09:56:30->run 36 processed
+12/11/22 09:56:30->Sending run 39 to: DESKTOP-2020$E:\temp1  (group id:2, run id:39, concurrent runs:1)
+12/11/22 09:56:30->run 37 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385 min, avg run time:0.0384778 min, group id:2, run id: 37 concurrent:1)
+12/11/22 09:56:30->run 37 processed
+12/11/22 09:56:30->Sending run 40 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:40, concurrent runs:1)
+12/11/22 09:56:31->run 38 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0384833 min, avg run time:0.0384889 min, group id:2, run id: 38 concurrent:1)
+12/11/22 09:56:31->run 38 processed
+12/11/22 09:56:31->Sending run 41 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:41, concurrent runs:1)
+12/11/22 09:56:33->run 39 received from: DESKTOP-2020$E:\temp1  (run time:0.0387 min, avg run time:0.0385611 min, group id:2, run id: 39 concurrent:1)
+12/11/22 09:56:33->run 39 processed
+12/11/22 09:56:33->Sending run 42 to: DESKTOP-2020$E:\temp1  (group id:2, run id:42, concurrent runs:1)
+12/11/22 09:56:33->run 40 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0385833 min, group id:2, run id: 40 concurrent:1)
+12/11/22 09:56:33->run 40 processed
+12/11/22 09:56:33->Sending run 43 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:43, concurrent runs:1)
+12/11/22 09:56:33->run 41 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0384833 min, avg run time:0.0385833 min, group id:2, run id: 41 concurrent:1)
+12/11/22 09:56:33->run 41 processed
+12/11/22 09:56:33->Sending run 44 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:44, concurrent runs:1)
+12/11/22 09:56:35->run 42 received from: DESKTOP-2020$E:\temp1  (run time:0.0386333 min, avg run time:0.0385611 min, group id:2, run id: 42 concurrent:1)
+12/11/22 09:56:35->run 42 processed
+12/11/22 09:56:35->Sending run 45 to: DESKTOP-2020$E:\temp1  (group id:2, run id:45, concurrent runs:1)
+12/11/22 09:56:35->run 43 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386333 min, avg run time:0.0385833 min, group id:2, run id: 43 concurrent:1)
+12/11/22 09:56:35->run 43 processed
+12/11/22 09:56:35->Sending run 46 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:46, concurrent runs:1)
+12/11/22 09:56:35->run 44 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385167 min, avg run time:0.0385944 min, group id:2, run id: 44 concurrent:1)
+12/11/22 09:56:35->run 44 processed
+12/11/22 09:56:35->Sending run 47 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:47, concurrent runs:1)
+12/11/22 09:56:37->run 45 received from: DESKTOP-2020$E:\temp1  (run time:0.0387667 min, avg run time:0.0386389 min, group id:2, run id: 45 concurrent:1)
+12/11/22 09:56:37->run 45 processed
+12/11/22 09:56:37->Sending run 48 to: DESKTOP-2020$E:\temp1  (group id:2, run id:48, concurrent runs:1)
+12/11/22 09:56:37->run 46 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03865 min, avg run time:0.0386444 min, group id:2, run id: 46 concurrent:1)
+12/11/22 09:56:37->run 46 processed
+12/11/22 09:56:37->Sending run 49 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:49, concurrent runs:1)
+12/11/22 09:56:38->run 47 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386 min, avg run time:0.0386722 min, group id:2, run id: 47 concurrent:1)
+12/11/22 09:56:38->run 47 processed
+12/11/22 09:56:38->Sending run 50 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:50, concurrent runs:1)
+12/11/22 09:56:40->run 48 received from: DESKTOP-2020$E:\temp1  (run time:0.03875 min, avg run time:0.0386667 min, group id:2, run id: 48 concurrent:1)
+12/11/22 09:56:40->run 48 processed
+12/11/22 09:56:40->Sending run 51 to: DESKTOP-2020$E:\temp1  (group id:2, run id:51, concurrent runs:1)
+12/11/22 09:56:40->run 49 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386833 min, avg run time:0.0386778 min, group id:2, run id: 49 concurrent:1)
+12/11/22 09:56:40->run 49 processed
+12/11/22 09:56:40->Sending run 52 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:52, concurrent runs:1)
+12/11/22 09:56:40->run 50 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385167 min, avg run time:0.03865 min, group id:2, run id: 50 concurrent:1)
+12/11/22 09:56:40->run 50 processed
+12/11/22 09:56:40->Sending run 53 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:53, concurrent runs:1)
+12/11/22 09:56:42->run 51 received from: DESKTOP-2020$E:\temp1  (run time:0.0386167 min, avg run time:0.0386056 min, group id:2, run id: 51 concurrent:1)
+12/11/22 09:56:42->run 51 processed
+12/11/22 09:56:42->Sending run 54 to: DESKTOP-2020$E:\temp1  (group id:2, run id:54, concurrent runs:1)
+12/11/22 09:56:42->run 52 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03865 min, avg run time:0.0385944 min, group id:2, run id: 52 concurrent:1)
+12/11/22 09:56:42->run 52 processed
+12/11/22 09:56:42->Sending run 55 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:55, concurrent runs:1)
+12/11/22 09:56:42->run 53 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386 min, avg run time:0.0386222 min, group id:2, run id: 53 concurrent:1)
+12/11/22 09:56:42->run 53 processed
+12/11/22 09:56:42->Sending run 56 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:56, concurrent runs:1)
+12/11/22 09:56:44->run 54 received from: DESKTOP-2020$E:\temp1  (run time:0.0386667 min, avg run time:0.0386389 min, group id:2, run id: 54 concurrent:1)
+12/11/22 09:56:44->run 54 processed
+12/11/22 09:56:44->Sending run 57 to: DESKTOP-2020$E:\temp1  (group id:2, run id:57, concurrent runs:1)
+12/11/22 09:56:44->run 55 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386 min, avg run time:0.0386222 min, group id:2, run id: 55 concurrent:1)
+12/11/22 09:56:44->run 55 processed
+12/11/22 09:56:44->Sending run 58 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:58, concurrent runs:1)
+12/11/22 09:56:45->run 56 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386167 min, avg run time:0.0386278 min, group id:2, run id: 56 concurrent:1)
+12/11/22 09:56:45->run 56 processed
+12/11/22 09:56:45->Sending run 59 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:59, concurrent runs:1)
+12/11/22 09:56:47->run 57 received from: DESKTOP-2020$E:\temp1  (run time:0.0386167 min, avg run time:0.0386111 min, group id:2, run id: 57 concurrent:1)
+12/11/22 09:56:47->run 57 processed
+12/11/22 09:56:47->Sending run 60 to: DESKTOP-2020$E:\temp1  (group id:2, run id:60, concurrent runs:1)
+12/11/22 09:56:47->run 58 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385333 min, avg run time:0.0385889 min, group id:2, run id: 58 concurrent:1)
+12/11/22 09:56:47->run 58 processed
+12/11/22 09:56:47->Sending run 61 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:61, concurrent runs:1)
+12/11/22 09:56:47->run 59 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0385667 min, group id:2, run id: 59 concurrent:1)
+12/11/22 09:56:47->run 59 processed
+12/11/22 09:56:47->Sending run 62 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:62, concurrent runs:1)
+12/11/22 09:56:49->run 60 received from: DESKTOP-2020$E:\temp1  (run time:0.03865 min, avg run time:0.0385778 min, group id:2, run id: 60 concurrent:1)
+12/11/22 09:56:49->run 60 processed
+12/11/22 09:56:49->Sending run 63 to: DESKTOP-2020$E:\temp1  (group id:2, run id:63, concurrent runs:1)
+12/11/22 09:56:49->run 61 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386333 min, avg run time:0.0386111 min, group id:2, run id: 61 concurrent:1)
+12/11/22 09:56:49->run 61 processed
+12/11/22 09:56:49->Sending run 64 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:64, concurrent runs:1)
+12/11/22 09:56:49->run 62 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386167 min, avg run time:0.0386333 min, group id:2, run id: 62 concurrent:1)
+12/11/22 09:56:49->run 62 processed
+12/11/22 09:56:49->Sending run 65 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:65, concurrent runs:1)
+12/11/22 09:56:51->run 63 received from: DESKTOP-2020$E:\temp1  (run time:0.0386333 min, avg run time:0.0386278 min, group id:2, run id: 63 concurrent:1)
+12/11/22 09:56:51->run 63 processed
+12/11/22 09:56:51->Sending run 66 to: DESKTOP-2020$E:\temp1  (group id:2, run id:66, concurrent runs:1)
+12/11/22 09:56:51->run 64 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385 min, avg run time:0.0385833 min, group id:2, run id: 64 concurrent:1)
+12/11/22 09:56:51->run 64 processed
+12/11/22 09:56:51->Sending run 67 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:67, concurrent runs:1)
+12/11/22 09:56:51->run 65 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385167 min, avg run time:0.03855 min, group id:2, run id: 65 concurrent:1)
+12/11/22 09:56:51->run 65 processed
+12/11/22 09:56:51->Sending run 68 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:68, concurrent runs:1)
+12/11/22 09:56:54->run 66 received from: DESKTOP-2020$E:\temp1  (run time:0.0383833 min, avg run time:0.0384667 min, group id:2, run id: 66 concurrent:1)
+12/11/22 09:56:54->run 66 processed
+12/11/22 09:56:54->Sending run 69 to: DESKTOP-2020$E:\temp1  (group id:2, run id:69, concurrent runs:1)
+12/11/22 09:56:54->run 67 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0384833 min, avg run time:0.0384611 min, group id:2, run id: 67 concurrent:1)
+12/11/22 09:56:54->run 67 processed
+12/11/22 09:56:54->Sending run 70 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:70, concurrent runs:1)
+12/11/22 09:56:54->run 68 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385167 min, avg run time:0.0384611 min, group id:2, run id: 68 concurrent:1)
+12/11/22 09:56:54->run 68 processed
+12/11/22 09:56:54->Sending run 71 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:71, concurrent runs:1)
+12/11/22 09:56:56->run 69 received from: DESKTOP-2020$E:\temp1  (run time:0.0383667 min, avg run time:0.0384556 min, group id:2, run id: 69 concurrent:1)
+12/11/22 09:56:56->run 69 processed
+12/11/22 09:56:56->Sending run 72 to: DESKTOP-2020$E:\temp1  (group id:2, run id:72, concurrent runs:1)
+12/11/22 09:56:56->run 70 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385833 min, avg run time:0.0384889 min, group id:2, run id: 70 concurrent:1)
+12/11/22 09:56:56->run 70 processed
+12/11/22 09:56:56->Sending run 73 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:73, concurrent runs:1)
+12/11/22 09:56:56->run 71 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385667 min, avg run time:0.0385056 min, group id:2, run id: 71 concurrent:1)
+12/11/22 09:56:56->run 71 processed
+12/11/22 09:56:56->Sending run 74 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:74, concurrent runs:1)
+12/11/22 09:56:58->run 72 received from: DESKTOP-2020$E:\temp1  (run time:0.0384667 min, avg run time:0.0385389 min, group id:2, run id: 72 concurrent:1)
+12/11/22 09:56:58->run 72 processed
+12/11/22 09:56:58->Sending run 75 to: DESKTOP-2020$E:\temp1  (group id:2, run id:75, concurrent runs:1)
+12/11/22 09:56:58->run 73 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0385333 min, group id:2, run id: 73 concurrent:1)
+12/11/22 09:56:58->run 73 processed
+12/11/22 09:56:58->Sending run 76 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:76, concurrent runs:1)
+12/11/22 09:56:58->run 74 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0385278 min, group id:2, run id: 74 concurrent:1)
+12/11/22 09:56:58->run 74 processed
+12/11/22 09:56:58->Sending run 77 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:77, concurrent runs:1)
+12/11/22 09:57:00->run 75 received from: DESKTOP-2020$E:\temp1  (run time:0.0385167 min, avg run time:0.0385444 min, group id:2, run id: 75 concurrent:1)
+12/11/22 09:57:00->run 75 processed
+12/11/22 09:57:00->Sending run 78 to: DESKTOP-2020$E:\temp1  (group id:2, run id:78, concurrent runs:1)
+12/11/22 09:57:01->run 76 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0385444 min, group id:2, run id: 76 concurrent:1)
+12/11/22 09:57:01->run 76 processed
+12/11/22 09:57:01->Sending run 79 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:79, concurrent runs:1)
+12/11/22 09:57:01->run 77 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0384667 min, avg run time:0.0385167 min, group id:2, run id: 77 concurrent:1)
+12/11/22 09:57:01->run 77 processed
+12/11/22 09:57:01->Sending run 80 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:80, concurrent runs:1)
+12/11/22 09:57:03->run 78 received from: DESKTOP-2020$E:\temp1  (run time:0.0385667 min, avg run time:0.0385333 min, group id:2, run id: 78 concurrent:1)
+12/11/22 09:57:03->run 78 processed
+12/11/22 09:57:03->Sending run 81 to: DESKTOP-2020$E:\temp1  (group id:2, run id:81, concurrent runs:1)
+12/11/22 09:57:03->run 79 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0385333 min, group id:2, run id: 79 concurrent:1)
+12/11/22 09:57:03->run 79 processed
+12/11/22 09:57:03->Sending run 82 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:82, concurrent runs:1)
+12/11/22 09:57:03->run 80 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385333 min, avg run time:0.0385556 min, group id:2, run id: 80 concurrent:1)
+12/11/22 09:57:03->run 80 processed
+12/11/22 09:57:03->Sending run 83 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:83, concurrent runs:1)
+12/11/22 09:57:05->run 81 received from: DESKTOP-2020$E:\temp1  (run time:0.0385 min, avg run time:0.0385333 min, group id:2, run id: 81 concurrent:1)
+12/11/22 09:57:05->run 81 processed
+12/11/22 09:57:05->Sending run 84 to: DESKTOP-2020$E:\temp1  (group id:2, run id:84, concurrent runs:1)
+12/11/22 09:57:05->run 82 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03855 min, avg run time:0.0385278 min, group id:2, run id: 82 concurrent:1)
+12/11/22 09:57:05->run 82 processed
+12/11/22 09:57:05->Sending run 85 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:85, concurrent runs:1)
+12/11/22 09:57:05->run 83 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386333 min, avg run time:0.0385611 min, group id:2, run id: 83 concurrent:1)
+12/11/22 09:57:05->run 83 processed
+12/11/22 09:57:05->Sending run 86 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:86, concurrent runs:1)
+12/11/22 09:57:07->run 84 received from: DESKTOP-2020$E:\temp1  (run time:0.0386 min, avg run time:0.0385944 min, group id:2, run id: 84 concurrent:1)
+12/11/22 09:57:07->run 84 processed
+12/11/22 09:57:07->Sending run 87 to: DESKTOP-2020$E:\temp1  (group id:2, run id:87, concurrent runs:1)
+12/11/22 09:57:08->run 85 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385833 min, avg run time:0.0386056 min, group id:2, run id: 85 concurrent:1)
+12/11/22 09:57:08->run 85 processed
+12/11/22 09:57:08->Sending run 88 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:88, concurrent runs:1)
+12/11/22 09:57:08->run 86 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385333 min, avg run time:0.0385722 min, group id:2, run id: 86 concurrent:1)
+12/11/22 09:57:08->run 86 processed
+12/11/22 09:57:08->Sending run 89 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:89, concurrent runs:1)
+12/11/22 09:57:10->run 87 received from: DESKTOP-2020$E:\temp1  (run time:0.0387 min, avg run time:0.0386056 min, group id:2, run id: 87 concurrent:1)
+12/11/22 09:57:10->run 87 processed
+12/11/22 09:57:10->Sending run 90 to: DESKTOP-2020$E:\temp1  (group id:2, run id:90, concurrent runs:1)
+12/11/22 09:57:10->run 88 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386667 min, avg run time:0.0386333 min, group id:2, run id: 88 concurrent:1)
+12/11/22 09:57:10->run 88 processed
+12/11/22 09:57:10->Sending run 91 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:91, concurrent runs:1)
+12/11/22 09:57:10->run 89 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0386389 min, group id:2, run id: 89 concurrent:1)
+12/11/22 09:57:10->run 89 processed
+12/11/22 09:57:10->Sending run 92 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:92, concurrent runs:1)
+12/11/22 09:57:12->run 90 received from: DESKTOP-2020$E:\temp1  (run time:0.0387 min, avg run time:0.0386389 min, group id:2, run id: 90 concurrent:1)
+12/11/22 09:57:12->run 90 processed
+12/11/22 09:57:12->Sending run 93 to: DESKTOP-2020$E:\temp1  (group id:2, run id:93, concurrent runs:1)
+12/11/22 09:57:12->run 91 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0386056 min, group id:2, run id: 91 concurrent:1)
+12/11/22 09:57:12->run 91 processed
+12/11/22 09:57:12->Sending run 94 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:94, concurrent runs:1)
+12/11/22 09:57:12->run 92 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0386056 min, group id:2, run id: 92 concurrent:1)
+12/11/22 09:57:12->run 92 processed
+12/11/22 09:57:12->Sending run 95 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:95, concurrent runs:1)
+12/11/22 09:57:14->run 93 received from: DESKTOP-2020$E:\temp1  (run time:0.03855 min, avg run time:0.0385556 min, group id:2, run id: 93 concurrent:1)
+12/11/22 09:57:14->run 93 processed
+12/11/22 09:57:14->Sending run 96 to: DESKTOP-2020$E:\temp1  (group id:2, run id:96, concurrent runs:1)
+12/11/22 09:57:15->run 94 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386333 min, avg run time:0.0385778 min, group id:2, run id: 94 concurrent:1)
+12/11/22 09:57:15->run 94 processed
+12/11/22 09:57:15->Sending run 97 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:97, concurrent runs:1)
+12/11/22 09:57:15->run 95 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386333 min, avg run time:0.0386056 min, group id:2, run id: 95 concurrent:1)
+12/11/22 09:57:15->run 95 processed
+12/11/22 09:57:15->Sending run 98 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:98, concurrent runs:1)
+12/11/22 09:57:17->run 96 received from: DESKTOP-2020$E:\temp1  (run time:0.0385667 min, avg run time:0.0386111 min, group id:2, run id: 96 concurrent:1)
+12/11/22 09:57:17->run 96 processed
+12/11/22 09:57:17->Sending run 99 to: DESKTOP-2020$E:\temp1  (group id:2, run id:99, concurrent runs:1)
+12/11/22 09:57:17->run 97 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386 min, avg run time:0.0386 min, group id:2, run id: 97 concurrent:1)
+12/11/22 09:57:17->run 97 processed
+12/11/22 09:57:17->Sending run 100 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:100, concurrent runs:1)
+12/11/22 09:57:17->run 98 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385833 min, avg run time:0.0385833 min, group id:2, run id: 98 concurrent:1)
+12/11/22 09:57:17->run 98 processed
+12/11/22 09:57:17->Sending run 101 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:101, concurrent runs:1)
+12/11/22 09:57:19->run 99 received from: DESKTOP-2020$E:\temp1  (run time:0.0385333 min, avg run time:0.0385722 min, group id:2, run id: 99 concurrent:1)
+12/11/22 09:57:19->run 99 processed
+12/11/22 09:57:19->Sending run 102 to: DESKTOP-2020$E:\temp1  (group id:2, run id:102, concurrent runs:1)
+12/11/22 09:57:19->run 100 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385833 min, avg run time:0.0385667 min, group id:2, run id: 100 concurrent:1)
+12/11/22 09:57:19->run 100 processed
+12/11/22 09:57:19->Sending run 103 to: DESKTOP-2020$E:\temp1\worker1  (group id:2, run id:103, concurrent runs:1)
+12/11/22 09:57:19->run 101 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385333 min, avg run time:0.03855 min, group id:2, run id: 101 concurrent:1)
+12/11/22 09:57:19->run 101 processed
+12/11/22 09:57:19->Sending run 104 to: DESKTOP-2020$E:\temp1\worker2  (group id:2, run id:104, concurrent runs:1)
+12/11/22 09:57:21->run 102 received from: DESKTOP-2020$E:\temp1  (run time:0.0385333 min, avg run time:0.03855 min, group id:2, run id: 102 concurrent:1)
+12/11/22 09:57:21->run 102 processed
+12/11/22 09:57:21->run 103 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03865 min, avg run time:0.0385722 min, group id:2, run id: 103 concurrent:1)
+12/11/22 09:57:21->run 103 processed
+12/11/22 09:57:22->run 104 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0385778 min, group id:2, run id: 104 concurrent:1)
+12/11/22 09:57:22->run 104 processed
+
+---------------------
+   105 runs complete :  0 runs failed
+   0.0386 avg run time (min) : 1.42 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:57:25->Started idle ping thread.
+12/11/22 09:57:25->Panther idle ping thread resumed.
+12/11/22 09:57:26->Panther idle ping thread paused prior to scheduling runs.
+running model 10 times
+12/11/22 09:57:26->    3 agents ready
+
+12/11/22 09:57:26->Sending run 1 to: DESKTOP-2020$E:\temp1  (group id:3, run id:1, concurrent runs:1)
+12/11/22 09:57:26->Sending run 2 to: DESKTOP-2020$E:\temp1\worker1  (group id:3, run id:2, concurrent runs:1)
+12/11/22 09:57:26->Sending run 3 to: DESKTOP-2020$E:\temp1\worker2  (group id:3, run id:3, concurrent runs:1)
+12/11/22 09:57:28->run 1 received from: DESKTOP-2020$E:\temp1  (run time:0.0367667 min, avg run time:0.0367667 min, group id:3, run id: 1 concurrent:1)
+12/11/22 09:57:28->run 1 processed
+12/11/22 09:57:28->run 3 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0368 min, avg run time:0.0367833 min, group id:3, run id: 3 concurrent:1)
+12/11/22 09:57:28->run 3 processed
+12/11/22 09:57:28->run 2 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0368 min, avg run time:0.0367889 min, group id:3, run id: 2 concurrent:1)
+12/11/22 09:57:28->run 2 processed
+12/11/22 09:57:28->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:3, run id:4, concurrent runs:1)
+12/11/22 09:57:28->Sending run 5 to: DESKTOP-2020$E:\temp1\worker2  (group id:3, run id:5, concurrent runs:1)
+12/11/22 09:57:28->Sending run 6 to: DESKTOP-2020$E:\temp1\worker1  (group id:3, run id:6, concurrent runs:1)
+12/11/22 09:57:30->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0377667 min, avg run time:0.0371222 min, group id:3, run id: 4 concurrent:1)
+12/11/22 09:57:30->run 4 processed
+12/11/22 09:57:30->run 5 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0377833 min, avg run time:0.03745 min, group id:3, run id: 5 concurrent:1)
+12/11/22 09:57:30->run 5 processed
+12/11/22 09:57:30->run 6 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0377833 min, avg run time:0.0377778 min, group id:3, run id: 6 concurrent:1)
+12/11/22 09:57:30->run 6 processed
+12/11/22 09:57:30->Sending run 7 to: DESKTOP-2020$E:\temp1  (group id:3, run id:7, concurrent runs:1)
+12/11/22 09:57:30->Sending run 8 to: DESKTOP-2020$E:\temp1\worker1  (group id:3, run id:8, concurrent runs:1)
+12/11/22 09:57:30->Sending run 9 to: DESKTOP-2020$E:\temp1\worker2  (group id:3, run id:9, concurrent runs:1)
+12/11/22 09:57:33->run 9 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0384 min, avg run time:0.0379833 min, group id:3, run id: 9 concurrent:1)
+12/11/22 09:57:33->run 9 processed
+12/11/22 09:57:33->run 7 received from: DESKTOP-2020$E:\temp1  (run time:0.0384 min, avg run time:0.0381944 min, group id:3, run id: 7 concurrent:1)
+12/11/22 09:57:33->run 7 processed
+12/11/22 09:57:33->run 8 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0384 min, avg run time:0.0384 min, group id:3, run id: 8 concurrent:1)
+12/11/22 09:57:33->run 8 processed
+12/11/22 09:57:33->Sending run 10 to: DESKTOP-2020$E:\temp1\worker2  (group id:3, run id:10, concurrent runs:1)
+12/11/22 09:57:35->run 10 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0384667 min, avg run time:0.0384222 min, group id:3, run id: 10 concurrent:1)
+12/11/22 09:57:35->run 10 processed
+
+---------------------
+   10 runs complete :  0 runs failed
+   0.0384 avg run time (min) : 0.204 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:57:38->Panther idle ping thread resumed.
+12/11/22 09:57:38->Panther idle ping thread paused prior to scheduling runs.
+running model 13 times
+12/11/22 09:57:38->    3 agents ready
+
+12/11/22 09:57:38->Sending run 0 to: DESKTOP-2020$E:\temp1  (group id:4, run id:0, concurrent runs:1)
+12/11/22 09:57:38->Sending run 1 to: DESKTOP-2020$E:\temp1\worker1  (group id:4, run id:1, concurrent runs:1)
+12/11/22 09:57:38->Sending run 2 to: DESKTOP-2020$E:\temp1\worker2  (group id:4, run id:2, concurrent runs:1)
+12/11/22 09:57:40->run 2 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0368167 min, avg run time:0.0368167 min, group id:4, run id: 2 concurrent:1)
+12/11/22 09:57:40->run 2 processed
+12/11/22 09:57:40->run 0 received from: DESKTOP-2020$E:\temp1  (run time:0.03685 min, avg run time:0.0368333 min, group id:4, run id: 0 concurrent:1)
+12/11/22 09:57:40->run 0 processed
+12/11/22 09:57:40->run 1 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03685 min, avg run time:0.0368389 min, group id:4, run id: 1 concurrent:1)
+12/11/22 09:57:40->run 1 processed
+12/11/22 09:57:40->Sending run 3 to: DESKTOP-2020$E:\temp1\worker2  (group id:4, run id:3, concurrent runs:1)
+12/11/22 09:57:40->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:4, run id:4, concurrent runs:1)
+12/11/22 09:57:40->Sending run 5 to: DESKTOP-2020$E:\temp1\worker1  (group id:4, run id:5, concurrent runs:1)
+12/11/22 09:57:42->run 3 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0377667 min, avg run time:0.0371556 min, group id:4, run id: 3 concurrent:1)
+12/11/22 09:57:42->run 3 processed
+12/11/22 09:57:42->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0377833 min, avg run time:0.0374667 min, group id:4, run id: 4 concurrent:1)
+12/11/22 09:57:42->run 4 processed
+12/11/22 09:57:42->run 5 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0377833 min, avg run time:0.0377778 min, group id:4, run id: 5 concurrent:1)
+12/11/22 09:57:42->run 5 processed
+12/11/22 09:57:42->Sending run 6 to: DESKTOP-2020$E:\temp1\worker2  (group id:4, run id:6, concurrent runs:1)
+12/11/22 09:57:42->Sending run 7 to: DESKTOP-2020$E:\temp1  (group id:4, run id:7, concurrent runs:1)
+12/11/22 09:57:42->Sending run 8 to: DESKTOP-2020$E:\temp1\worker1  (group id:4, run id:8, concurrent runs:1)
+12/11/22 09:57:45->run 6 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0380667 min, avg run time:0.0378778 min, group id:4, run id: 6 concurrent:1)
+12/11/22 09:57:45->run 6 processed
+12/11/22 09:57:45->run 7 received from: DESKTOP-2020$E:\temp1  (run time:0.0380833 min, avg run time:0.0379778 min, group id:4, run id: 7 concurrent:1)
+12/11/22 09:57:45->run 7 processed
+12/11/22 09:57:45->Sending run 9 to: DESKTOP-2020$E:\temp1\worker2  (group id:4, run id:9, concurrent runs:1)
+12/11/22 09:57:45->Sending run 10 to: DESKTOP-2020$E:\temp1  (group id:4, run id:10, concurrent runs:1)
+12/11/22 09:57:45->run 8 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0382167 min, avg run time:0.0381222 min, group id:4, run id: 8 concurrent:1)
+12/11/22 09:57:45->run 8 processed
+12/11/22 09:57:45->Sending run 11 to: DESKTOP-2020$E:\temp1\worker1  (group id:4, run id:11, concurrent runs:1)
+12/11/22 09:57:47->run 10 received from: DESKTOP-2020$E:\temp1  (run time:0.03835 min, avg run time:0.0382111 min, group id:4, run id: 10 concurrent:1)
+12/11/22 09:57:47->run 10 processed
+12/11/22 09:57:47->run 9 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0383667 min, avg run time:0.0383111 min, group id:4, run id: 9 concurrent:1)
+12/11/22 09:57:47->run 9 processed
+12/11/22 09:57:47->Sending run 12 to: DESKTOP-2020$E:\temp1  (group id:4, run id:12, concurrent runs:1)
+12/11/22 09:57:47->run 11 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0384167 min, avg run time:0.0383778 min, group id:4, run id: 11 concurrent:1)
+12/11/22 09:57:47->run 11 processed
+12/11/22 09:57:49->run 12 received from: DESKTOP-2020$E:\temp1  (run time:0.0387 min, avg run time:0.0384944 min, group id:4, run id: 12 concurrent:1)
+12/11/22 09:57:49->run 12 processed
+
+---------------------
+   13 runs complete :  0 runs failed
+   0.0385 avg run time (min) : 0.242 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:57:52->Panther idle ping thread resumed.
+12/11/22 09:57:53->Panther idle ping thread paused prior to scheduling runs.
+running model 10 times
+12/11/22 09:57:53->    3 agents ready
+
+12/11/22 09:57:53->Sending run 1 to: DESKTOP-2020$E:\temp1  (group id:5, run id:1, concurrent runs:1)
+12/11/22 09:57:53->Sending run 2 to: DESKTOP-2020$E:\temp1\worker1  (group id:5, run id:2, concurrent runs:1)
+12/11/22 09:57:53->Sending run 3 to: DESKTOP-2020$E:\temp1\worker2  (group id:5, run id:3, concurrent runs:1)
+12/11/22 09:57:55->run 2 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0365333 min, avg run time:0.0365333 min, group id:5, run id: 2 concurrent:1)
+12/11/22 09:57:55->run 2 processed
+12/11/22 09:57:55->run 1 received from: DESKTOP-2020$E:\temp1  (run time:0.0365833 min, avg run time:0.0365583 min, group id:5, run id: 1 concurrent:1)
+12/11/22 09:57:55->run 1 processed
+12/11/22 09:57:55->run 3 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0365833 min, avg run time:0.0365667 min, group id:5, run id: 3 concurrent:1)
+12/11/22 09:57:55->run 3 processed
+12/11/22 09:57:55->Sending run 4 to: DESKTOP-2020$E:\temp1\worker1  (group id:5, run id:4, concurrent runs:1)
+12/11/22 09:57:55->Sending run 5 to: DESKTOP-2020$E:\temp1  (group id:5, run id:5, concurrent runs:1)
+12/11/22 09:57:55->Sending run 6 to: DESKTOP-2020$E:\temp1\worker2  (group id:5, run id:6, concurrent runs:1)
+12/11/22 09:57:57->run 6 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03765 min, avg run time:0.0369222 min, group id:5, run id: 6 concurrent:1)
+12/11/22 09:57:57->run 6 processed
+12/11/22 09:57:57->Sending run 7 to: DESKTOP-2020$E:\temp1\worker2  (group id:5, run id:7, concurrent runs:1)
+12/11/22 09:57:57->run 5 received from: DESKTOP-2020$E:\temp1  (run time:0.0377833 min, avg run time:0.0373222 min, group id:5, run id: 5 concurrent:1)
+12/11/22 09:57:57->run 5 processed
+12/11/22 09:57:57->run 4 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0377833 min, avg run time:0.0377389 min, group id:5, run id: 4 concurrent:1)
+12/11/22 09:57:57->run 4 processed
+12/11/22 09:57:57->Sending run 8 to: DESKTOP-2020$E:\temp1  (group id:5, run id:8, concurrent runs:1)
+12/11/22 09:57:57->Sending run 9 to: DESKTOP-2020$E:\temp1\worker1  (group id:5, run id:9, concurrent runs:1)
+12/11/22 09:57:59->run 9 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0381167 min, avg run time:0.03785 min, group id:5, run id: 9 concurrent:1)
+12/11/22 09:57:59->run 9 processed
+12/11/22 09:57:59->run 8 received from: DESKTOP-2020$E:\temp1  (run time:0.03815 min, avg run time:0.0379722 min, group id:5, run id: 8 concurrent:1)
+12/11/22 09:57:59->run 8 processed
+12/11/22 09:57:59->run 7 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0381833 min, avg run time:0.03815 min, group id:5, run id: 7 concurrent:1)
+12/11/22 09:57:59->run 7 processed
+12/11/22 09:57:59->Sending run 10 to: DESKTOP-2020$E:\temp1  (group id:5, run id:10, concurrent runs:1)
+12/11/22 09:58:02->run 10 received from: DESKTOP-2020$E:\temp1  (run time:0.0383667 min, avg run time:0.0382222 min, group id:5, run id: 10 concurrent:1)
+12/11/22 09:58:02->run 10 processed
+
+---------------------
+   10 runs complete :  0 runs failed
+   0.0382 avg run time (min) : 0.203 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:58:05->Panther idle ping thread resumed.
+12/11/22 09:58:05->Panther idle ping thread paused prior to scheduling runs.
+running model 13 times
+12/11/22 09:58:05->    3 agents ready
+
+12/11/22 09:58:05->Sending run 0 to: DESKTOP-2020$E:\temp1  (group id:6, run id:0, concurrent runs:1)
+12/11/22 09:58:05->Sending run 1 to: DESKTOP-2020$E:\temp1\worker1  (group id:6, run id:1, concurrent runs:1)
+12/11/22 09:58:05->Sending run 2 to: DESKTOP-2020$E:\temp1\worker2  (group id:6, run id:2, concurrent runs:1)
+12/11/22 09:58:07->run 1 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0366833 min, avg run time:0.0366833 min, group id:6, run id: 1 concurrent:1)
+12/11/22 09:58:07->run 1 processed
+12/11/22 09:58:07->run 0 received from: DESKTOP-2020$E:\temp1  (run time:0.0367167 min, avg run time:0.0367 min, group id:6, run id: 0 concurrent:1)
+12/11/22 09:58:07->run 0 processed
+12/11/22 09:58:07->run 2 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0367167 min, avg run time:0.0367056 min, group id:6, run id: 2 concurrent:1)
+12/11/22 09:58:07->run 2 processed
+12/11/22 09:58:07->Sending run 3 to: DESKTOP-2020$E:\temp1\worker1  (group id:6, run id:3, concurrent runs:1)
+12/11/22 09:58:07->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:6, run id:4, concurrent runs:1)
+12/11/22 09:58:07->Sending run 5 to: DESKTOP-2020$E:\temp1\worker2  (group id:6, run id:5, concurrent runs:1)
+12/11/22 09:58:09->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0377167 min, avg run time:0.0370389 min, group id:6, run id: 4 concurrent:1)
+12/11/22 09:58:09->run 4 processed
+12/11/22 09:58:09->run 5 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0377333 min, avg run time:0.0373778 min, group id:6, run id: 5 concurrent:1)
+12/11/22 09:58:09->run 5 processed
+12/11/22 09:58:09->run 3 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0377333 min, avg run time:0.0377278 min, group id:6, run id: 3 concurrent:1)
+12/11/22 09:58:09->run 3 processed
+12/11/22 09:58:09->Sending run 6 to: DESKTOP-2020$E:\temp1  (group id:6, run id:6, concurrent runs:1)
+12/11/22 09:58:09->Sending run 7 to: DESKTOP-2020$E:\temp1\worker1  (group id:6, run id:7, concurrent runs:1)
+12/11/22 09:58:09->Sending run 8 to: DESKTOP-2020$E:\temp1\worker2  (group id:6, run id:8, concurrent runs:1)
+12/11/22 09:58:12->run 6 received from: DESKTOP-2020$E:\temp1  (run time:0.0380333 min, avg run time:0.0378333 min, group id:6, run id: 6 concurrent:1)
+12/11/22 09:58:12->run 6 processed
+12/11/22 09:58:12->run 8 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03805 min, avg run time:0.0379389 min, group id:6, run id: 8 concurrent:1)
+12/11/22 09:58:12->run 8 processed
+12/11/22 09:58:12->run 7 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03805 min, avg run time:0.0380444 min, group id:6, run id: 7 concurrent:1)
+12/11/22 09:58:12->run 7 processed
+12/11/22 09:58:12->Sending run 9 to: DESKTOP-2020$E:\temp1\worker1  (group id:6, run id:9, concurrent runs:1)
+12/11/22 09:58:12->Sending run 10 to: DESKTOP-2020$E:\temp1\worker2  (group id:6, run id:10, concurrent runs:1)
+12/11/22 09:58:12->Sending run 11 to: DESKTOP-2020$E:\temp1  (group id:6, run id:11, concurrent runs:1)
+12/11/22 09:58:14->run 11 received from: DESKTOP-2020$E:\temp1  (run time:0.0384667 min, avg run time:0.0381889 min, group id:6, run id: 11 concurrent:1)
+12/11/22 09:58:14->run 11 processed
+12/11/22 09:58:14->run 10 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385 min, avg run time:0.0383389 min, group id:6, run id: 10 concurrent:1)
+12/11/22 09:58:14->run 10 processed
+12/11/22 09:58:14->run 9 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385 min, avg run time:0.0384889 min, group id:6, run id: 9 concurrent:1)
+12/11/22 09:58:14->run 9 processed
+12/11/22 09:58:14->Sending run 12 to: DESKTOP-2020$E:\temp1  (group id:6, run id:12, concurrent runs:1)
+12/11/22 09:58:16->run 12 received from: DESKTOP-2020$E:\temp1  (run time:0.0385833 min, avg run time:0.0385278 min, group id:6, run id: 12 concurrent:1)
+12/11/22 09:58:16->run 12 processed
+
+---------------------
+   13 runs complete :  0 runs failed
+   0.0385 avg run time (min) : 0.242 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:58:19->Panther idle ping thread resumed.
+12/11/22 09:58:19->Panther idle ping thread paused prior to scheduling runs.
+running model 10 times
+12/11/22 09:58:19->    3 agents ready
+
+12/11/22 09:58:19->Sending run 1 to: DESKTOP-2020$E:\temp1  (group id:7, run id:1, concurrent runs:1)
+12/11/22 09:58:19->Sending run 2 to: DESKTOP-2020$E:\temp1\worker1  (group id:7, run id:2, concurrent runs:1)
+12/11/22 09:58:19->Sending run 3 to: DESKTOP-2020$E:\temp1\worker2  (group id:7, run id:3, concurrent runs:1)
+12/11/22 09:58:22->run 1 received from: DESKTOP-2020$E:\temp1  (run time:0.0368167 min, avg run time:0.0368167 min, group id:7, run id: 1 concurrent:1)
+12/11/22 09:58:22->run 1 processed
+12/11/22 09:58:22->run 3 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0368333 min, avg run time:0.036825 min, group id:7, run id: 3 concurrent:1)
+12/11/22 09:58:22->run 3 processed
+12/11/22 09:58:22->run 2 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0368333 min, avg run time:0.0368278 min, group id:7, run id: 2 concurrent:1)
+12/11/22 09:58:22->run 2 processed
+12/11/22 09:58:22->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:7, run id:4, concurrent runs:1)
+12/11/22 09:58:22->Sending run 5 to: DESKTOP-2020$E:\temp1\worker1  (group id:7, run id:5, concurrent runs:1)
+12/11/22 09:58:22->Sending run 6 to: DESKTOP-2020$E:\temp1\worker2  (group id:7, run id:6, concurrent runs:1)
+12/11/22 09:58:24->run 5 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0376833 min, avg run time:0.0371111 min, group id:7, run id: 5 concurrent:1)
+12/11/22 09:58:24->run 5 processed
+12/11/22 09:58:24->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0377 min, avg run time:0.0374056 min, group id:7, run id: 4 concurrent:1)
+12/11/22 09:58:24->run 4 processed
+12/11/22 09:58:24->run 6 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0377 min, avg run time:0.0376944 min, group id:7, run id: 6 concurrent:1)
+12/11/22 09:58:24->run 6 processed
+12/11/22 09:58:24->Sending run 7 to: DESKTOP-2020$E:\temp1  (group id:7, run id:7, concurrent runs:1)
+12/11/22 09:58:24->Sending run 8 to: DESKTOP-2020$E:\temp1\worker1  (group id:7, run id:8, concurrent runs:1)
+12/11/22 09:58:24->Sending run 9 to: DESKTOP-2020$E:\temp1\worker2  (group id:7, run id:9, concurrent runs:1)
+12/11/22 09:58:26->run 9 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03825 min, avg run time:0.0378778 min, group id:7, run id: 9 concurrent:1)
+12/11/22 09:58:26->run 9 processed
+12/11/22 09:58:26->run 8 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0382667 min, avg run time:0.0380722 min, group id:7, run id: 8 concurrent:1)
+12/11/22 09:58:26->run 8 processed
+12/11/22 09:58:26->run 7 received from: DESKTOP-2020$E:\temp1  (run time:0.0382833 min, avg run time:0.0382667 min, group id:7, run id: 7 concurrent:1)
+12/11/22 09:58:26->run 7 processed
+12/11/22 09:58:26->Sending run 10 to: DESKTOP-2020$E:\temp1\worker2  (group id:7, run id:10, concurrent runs:1)
+12/11/22 09:58:29->run 10 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0384833 min, avg run time:0.0383444 min, group id:7, run id: 10 concurrent:1)
+12/11/22 09:58:29->run 10 processed
+
+---------------------
+   10 runs complete :  0 runs failed
+   0.0383 avg run time (min) : 0.204 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:58:32->Panther idle ping thread resumed.
+12/11/22 09:58:32->Panther idle ping thread paused prior to scheduling runs.
+running model 25 times
+12/11/22 09:58:32->    3 agents ready
+
+12/11/22 09:58:32->Sending run 0 to: DESKTOP-2020$E:\temp1  (group id:8, run id:0, concurrent runs:1)
+12/11/22 09:58:32->Sending run 1 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:1, concurrent runs:1)
+12/11/22 09:58:32->Sending run 2 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:2, concurrent runs:1)
+12/11/22 09:58:34->run 1 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0370833 min, avg run time:0.0370833 min, group id:8, run id: 1 concurrent:1)
+12/11/22 09:58:34->run 1 processed
+12/11/22 09:58:34->run 0 received from: DESKTOP-2020$E:\temp1  (run time:0.0371167 min, avg run time:0.0371 min, group id:8, run id: 0 concurrent:1)
+12/11/22 09:58:34->run 0 processed
+12/11/22 09:58:34->run 2 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0371167 min, avg run time:0.0371056 min, group id:8, run id: 2 concurrent:1)
+12/11/22 09:58:34->run 2 processed
+12/11/22 09:58:34->Sending run 3 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:3, concurrent runs:1)
+12/11/22 09:58:34->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:8, run id:4, concurrent runs:1)
+12/11/22 09:58:34->Sending run 5 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:5, concurrent runs:1)
+12/11/22 09:58:36->run 3 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0379 min, avg run time:0.0373778 min, group id:8, run id: 3 concurrent:1)
+12/11/22 09:58:36->run 3 processed
+12/11/22 09:58:36->Sending run 6 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:6, concurrent runs:1)
+12/11/22 09:58:36->run 5 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.038 min, avg run time:0.0376722 min, group id:8, run id: 5 concurrent:1)
+12/11/22 09:58:36->run 5 processed
+12/11/22 09:58:36->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0380167 min, avg run time:0.0379722 min, group id:8, run id: 4 concurrent:1)
+12/11/22 09:58:36->run 4 processed
+12/11/22 09:58:36->Sending run 7 to: DESKTOP-2020$E:\temp1  (group id:8, run id:7, concurrent runs:1)
+12/11/22 09:58:36->Sending run 8 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:8, concurrent runs:1)
+12/11/22 09:58:38->run 6 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0383667 min, avg run time:0.0381278 min, group id:8, run id: 6 concurrent:1)
+12/11/22 09:58:38->run 6 processed
+12/11/22 09:58:38->run 7 received from: DESKTOP-2020$E:\temp1  (run time:0.0383833 min, avg run time:0.03825 min, group id:8, run id: 7 concurrent:1)
+12/11/22 09:58:38->run 7 processed
+12/11/22 09:58:38->run 8 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0383833 min, avg run time:0.0383778 min, group id:8, run id: 8 concurrent:1)
+12/11/22 09:58:38->run 8 processed
+12/11/22 09:58:38->Sending run 9 to: DESKTOP-2020$E:\temp1  (group id:8, run id:9, concurrent runs:1)
+12/11/22 09:58:38->Sending run 10 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:10, concurrent runs:1)
+12/11/22 09:58:38->Sending run 11 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:11, concurrent runs:1)
+12/11/22 09:58:41->run 10 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03855 min, avg run time:0.0384389 min, group id:8, run id: 10 concurrent:1)
+12/11/22 09:58:41->run 10 processed
+12/11/22 09:58:41->Sending run 12 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:12, concurrent runs:1)
+12/11/22 09:58:41->run 11 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386833 min, avg run time:0.0385389 min, group id:8, run id: 11 concurrent:1)
+12/11/22 09:58:41->run 11 processed
+12/11/22 09:58:41->run 9 received from: DESKTOP-2020$E:\temp1  (run time:0.0387 min, avg run time:0.0386444 min, group id:8, run id: 9 concurrent:1)
+12/11/22 09:58:41->run 9 processed
+12/11/22 09:58:41->Sending run 13 to: DESKTOP-2020$E:\temp1  (group id:8, run id:13, concurrent runs:1)
+12/11/22 09:58:41->Sending run 14 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:14, concurrent runs:1)
+12/11/22 09:58:43->run 14 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385167 min, avg run time:0.0385889 min, group id:8, run id: 14 concurrent:1)
+12/11/22 09:58:43->run 14 processed
+12/11/22 09:58:43->run 12 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386167 min, avg run time:0.0386111 min, group id:8, run id: 12 concurrent:1)
+12/11/22 09:58:43->run 12 processed
+12/11/22 09:58:43->run 13 received from: DESKTOP-2020$E:\temp1  (run time:0.0385833 min, avg run time:0.0385722 min, group id:8, run id: 13 concurrent:1)
+12/11/22 09:58:43->run 13 processed
+12/11/22 09:58:43->Sending run 15 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:15, concurrent runs:1)
+12/11/22 09:58:43->Sending run 16 to: DESKTOP-2020$E:\temp1  (group id:8, run id:16, concurrent runs:1)
+12/11/22 09:58:43->Sending run 17 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:17, concurrent runs:1)
+12/11/22 09:58:45->run 17 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386167 min, avg run time:0.0385722 min, group id:8, run id: 17 concurrent:1)
+12/11/22 09:58:45->run 17 processed
+12/11/22 09:58:45->run 16 received from: DESKTOP-2020$E:\temp1  (run time:0.0386167 min, avg run time:0.0385833 min, group id:8, run id: 16 concurrent:1)
+12/11/22 09:58:45->run 16 processed
+12/11/22 09:58:45->run 15 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386 min, avg run time:0.0386111 min, group id:8, run id: 15 concurrent:1)
+12/11/22 09:58:45->run 15 processed
+12/11/22 09:58:45->Sending run 18 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:18, concurrent runs:1)
+12/11/22 09:58:45->Sending run 19 to: DESKTOP-2020$E:\temp1  (group id:8, run id:19, concurrent runs:1)
+12/11/22 09:58:45->Sending run 20 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:20, concurrent runs:1)
+12/11/22 09:58:48->run 19 received from: DESKTOP-2020$E:\temp1  (run time:0.0386667 min, avg run time:0.0386278 min, group id:8, run id: 19 concurrent:1)
+12/11/22 09:58:48->run 19 processed
+12/11/22 09:58:48->run 20 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386667 min, avg run time:0.03865 min, group id:8, run id: 20 concurrent:1)
+12/11/22 09:58:48->run 20 processed
+12/11/22 09:58:48->run 18 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386833 min, avg run time:0.0386722 min, group id:8, run id: 18 concurrent:1)
+12/11/22 09:58:48->run 18 processed
+12/11/22 09:58:48->Sending run 21 to: DESKTOP-2020$E:\temp1  (group id:8, run id:21, concurrent runs:1)
+12/11/22 09:58:48->Sending run 22 to: DESKTOP-2020$E:\temp1\worker1  (group id:8, run id:22, concurrent runs:1)
+12/11/22 09:58:48->Sending run 23 to: DESKTOP-2020$E:\temp1\worker2  (group id:8, run id:23, concurrent runs:1)
+12/11/22 09:58:50->run 21 received from: DESKTOP-2020$E:\temp1  (run time:0.0386667 min, avg run time:0.0386722 min, group id:8, run id: 21 concurrent:1)
+12/11/22 09:58:50->run 21 processed
+12/11/22 09:58:50->run 23 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386833 min, avg run time:0.0386778 min, group id:8, run id: 23 concurrent:1)
+12/11/22 09:58:50->run 23 processed
+12/11/22 09:58:50->run 22 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386833 min, avg run time:0.0386778 min, group id:8, run id: 22 concurrent:1)
+12/11/22 09:58:50->run 22 processed
+12/11/22 09:58:50->Sending run 24 to: DESKTOP-2020$E:\temp1  (group id:8, run id:24, concurrent runs:1)
+12/11/22 09:58:52->run 24 received from: DESKTOP-2020$E:\temp1  (run time:0.0386167 min, avg run time:0.0386611 min, group id:8, run id: 24 concurrent:1)
+12/11/22 09:58:52->run 24 processed
+
+---------------------
+   25 runs complete :  0 runs failed
+   0.0387 avg run time (min) : 0.398 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:58:55->Panther idle ping thread resumed.
+12/11/22 09:58:56->Panther idle ping thread paused prior to scheduling runs.
+running model 10 times
+12/11/22 09:58:56->    3 agents ready
+
+12/11/22 09:58:56->Sending run 1 to: DESKTOP-2020$E:\temp1  (group id:9, run id:1, concurrent runs:1)
+12/11/22 09:58:56->Sending run 2 to: DESKTOP-2020$E:\temp1\worker1  (group id:9, run id:2, concurrent runs:1)
+12/11/22 09:58:56->Sending run 3 to: DESKTOP-2020$E:\temp1\worker2  (group id:9, run id:3, concurrent runs:1)
+12/11/22 09:58:58->run 3 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0367833 min, avg run time:0.0367833 min, group id:9, run id: 3 concurrent:1)
+12/11/22 09:58:58->run 3 processed
+12/11/22 09:58:58->run 1 received from: DESKTOP-2020$E:\temp1  (run time:0.0368167 min, avg run time:0.0368 min, group id:9, run id: 1 concurrent:1)
+12/11/22 09:58:58->run 1 processed
+12/11/22 09:58:58->run 2 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0368167 min, avg run time:0.0368056 min, group id:9, run id: 2 concurrent:1)
+12/11/22 09:58:58->run 2 processed
+12/11/22 09:58:58->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:9, run id:4, concurrent runs:1)
+12/11/22 09:58:58->Sending run 5 to: DESKTOP-2020$E:\temp1\worker1  (group id:9, run id:5, concurrent runs:1)
+12/11/22 09:58:58->Sending run 6 to: DESKTOP-2020$E:\temp1\worker2  (group id:9, run id:6, concurrent runs:1)
+12/11/22 09:59:00->run 5 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0377167 min, avg run time:0.0371056 min, group id:9, run id: 5 concurrent:1)
+12/11/22 09:59:00->run 5 processed
+12/11/22 09:59:00->run 6 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0377167 min, avg run time:0.0374167 min, group id:9, run id: 6 concurrent:1)
+12/11/22 09:59:00->run 6 processed
+12/11/22 09:59:00->Sending run 7 to: DESKTOP-2020$E:\temp1\worker1  (group id:9, run id:7, concurrent runs:1)
+12/11/22 09:59:00->Sending run 8 to: DESKTOP-2020$E:\temp1\worker2  (group id:9, run id:8, concurrent runs:1)
+12/11/22 09:59:00->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.03785 min, avg run time:0.0377611 min, group id:9, run id: 4 concurrent:1)
+12/11/22 09:59:00->run 4 processed
+12/11/22 09:59:00->Sending run 9 to: DESKTOP-2020$E:\temp1  (group id:9, run id:9, concurrent runs:1)
+12/11/22 09:59:02->run 8 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0380833 min, avg run time:0.0378833 min, group id:9, run id: 8 concurrent:1)
+12/11/22 09:59:02->run 8 processed
+12/11/22 09:59:02->run 7 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0381167 min, avg run time:0.0380167 min, group id:9, run id: 7 concurrent:1)
+12/11/22 09:59:02->run 7 processed
+12/11/22 09:59:02->Sending run 10 to: DESKTOP-2020$E:\temp1\worker2  (group id:9, run id:10, concurrent runs:1)
+12/11/22 09:59:02->run 9 received from: DESKTOP-2020$E:\temp1  (run time:0.0381833 min, avg run time:0.0381278 min, group id:9, run id: 9 concurrent:1)
+12/11/22 09:59:02->run 9 processed
+12/11/22 09:59:05->run 10 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0383833 min, avg run time:0.0382278 min, group id:9, run id: 10 concurrent:1)
+12/11/22 09:59:05->run 10 processed
+
+---------------------
+   10 runs complete :  0 runs failed
+   0.0382 avg run time (min) : 0.203 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:59:08->Panther idle ping thread resumed.
+12/11/22 09:59:08->Panther idle ping thread paused prior to scheduling runs.
+running model 25 times
+12/11/22 09:59:08->    3 agents ready
+
+12/11/22 09:59:08->Sending run 0 to: DESKTOP-2020$E:\temp1  (group id:10, run id:0, concurrent runs:1)
+12/11/22 09:59:08->Sending run 1 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:1, concurrent runs:1)
+12/11/22 09:59:08->Sending run 2 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:2, concurrent runs:1)
+12/11/22 09:59:10->run 0 received from: DESKTOP-2020$E:\temp1  (run time:0.0369 min, avg run time:0.0369 min, group id:10, run id: 0 concurrent:1)
+12/11/22 09:59:10->run 0 processed
+12/11/22 09:59:10->run 2 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03695 min, avg run time:0.036925 min, group id:10, run id: 2 concurrent:1)
+12/11/22 09:59:10->run 2 processed
+12/11/22 09:59:10->run 1 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03695 min, avg run time:0.0369333 min, group id:10, run id: 1 concurrent:1)
+12/11/22 09:59:10->run 1 processed
+12/11/22 09:59:10->Sending run 3 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:3, concurrent runs:1)
+12/11/22 09:59:10->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:10, run id:4, concurrent runs:1)
+12/11/22 09:59:10->Sending run 5 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:5, concurrent runs:1)
+12/11/22 09:59:12->run 3 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0377333 min, avg run time:0.0371944 min, group id:10, run id: 3 concurrent:1)
+12/11/22 09:59:12->run 3 processed
+12/11/22 09:59:12->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0377167 min, avg run time:0.0374667 min, group id:10, run id: 4 concurrent:1)
+12/11/22 09:59:12->run 4 processed
+12/11/22 09:59:12->Sending run 6 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:6, concurrent runs:1)
+12/11/22 09:59:12->Sending run 7 to: DESKTOP-2020$E:\temp1  (group id:10, run id:7, concurrent runs:1)
+12/11/22 09:59:12->run 5 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0378 min, avg run time:0.03775 min, group id:10, run id: 5 concurrent:1)
+12/11/22 09:59:12->run 5 processed
+12/11/22 09:59:12->Sending run 8 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:8, concurrent runs:1)
+12/11/22 09:59:15->run 7 received from: DESKTOP-2020$E:\temp1  (run time:0.0382 min, avg run time:0.0379111 min, group id:10, run id: 7 concurrent:1)
+12/11/22 09:59:15->run 7 processed
+12/11/22 09:59:15->run 8 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0382 min, avg run time:0.0380444 min, group id:10, run id: 8 concurrent:1)
+12/11/22 09:59:15->run 8 processed
+12/11/22 09:59:15->run 6 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0382333 min, avg run time:0.0382111 min, group id:10, run id: 6 concurrent:1)
+12/11/22 09:59:15->run 6 processed
+12/11/22 09:59:15->Sending run 9 to: DESKTOP-2020$E:\temp1  (group id:10, run id:9, concurrent runs:1)
+12/11/22 09:59:15->Sending run 10 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:10, concurrent runs:1)
+12/11/22 09:59:15->Sending run 11 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:11, concurrent runs:1)
+12/11/22 09:59:17->run 9 received from: DESKTOP-2020$E:\temp1  (run time:0.0385333 min, avg run time:0.0383222 min, group id:10, run id: 9 concurrent:1)
+12/11/22 09:59:17->run 9 processed
+12/11/22 09:59:17->run 11 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385333 min, avg run time:0.0384333 min, group id:10, run id: 11 concurrent:1)
+12/11/22 09:59:17->run 11 processed
+12/11/22 09:59:17->run 10 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0385667 min, avg run time:0.0385444 min, group id:10, run id: 10 concurrent:1)
+12/11/22 09:59:17->run 10 processed
+12/11/22 09:59:17->Sending run 12 to: DESKTOP-2020$E:\temp1  (group id:10, run id:12, concurrent runs:1)
+12/11/22 09:59:17->Sending run 13 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:13, concurrent runs:1)
+12/11/22 09:59:17->Sending run 14 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:14, concurrent runs:1)
+12/11/22 09:59:19->run 14 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386167 min, avg run time:0.0385722 min, group id:10, run id: 14 concurrent:1)
+12/11/22 09:59:19->run 14 processed
+12/11/22 09:59:19->run 12 received from: DESKTOP-2020$E:\temp1  (run time:0.03865 min, avg run time:0.0386111 min, group id:10, run id: 12 concurrent:1)
+12/11/22 09:59:19->run 12 processed
+12/11/22 09:59:19->run 13 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.03865 min, avg run time:0.0386389 min, group id:10, run id: 13 concurrent:1)
+12/11/22 09:59:19->run 13 processed
+12/11/22 09:59:19->Sending run 15 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:15, concurrent runs:1)
+12/11/22 09:59:19->Sending run 16 to: DESKTOP-2020$E:\temp1  (group id:10, run id:16, concurrent runs:1)
+12/11/22 09:59:19->Sending run 17 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:17, concurrent runs:1)
+12/11/22 09:59:22->run 15 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0385833 min, avg run time:0.0386278 min, group id:10, run id: 15 concurrent:1)
+12/11/22 09:59:22->run 15 processed
+12/11/22 09:59:22->Sending run 18 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:18, concurrent runs:1)
+12/11/22 09:59:22->run 17 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0387333 min, avg run time:0.0386556 min, group id:10, run id: 17 concurrent:1)
+12/11/22 09:59:22->run 17 processed
+12/11/22 09:59:22->run 16 received from: DESKTOP-2020$E:\temp1  (run time:0.03875 min, avg run time:0.0386889 min, group id:10, run id: 16 concurrent:1)
+12/11/22 09:59:22->run 16 processed
+12/11/22 09:59:22->Sending run 19 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:19, concurrent runs:1)
+12/11/22 09:59:22->Sending run 20 to: DESKTOP-2020$E:\temp1  (group id:10, run id:20, concurrent runs:1)
+12/11/22 09:59:24->run 18 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0386167 min, avg run time:0.0387 min, group id:10, run id: 18 concurrent:1)
+12/11/22 09:59:24->run 18 processed
+12/11/22 09:59:24->Sending run 21 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:21, concurrent runs:1)
+12/11/22 09:59:24->run 20 received from: DESKTOP-2020$E:\temp1  (run time:0.0386667 min, avg run time:0.0386722 min, group id:10, run id: 20 concurrent:1)
+12/11/22 09:59:24->run 20 processed
+12/11/22 09:59:24->run 19 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386833 min, avg run time:0.0386556 min, group id:10, run id: 19 concurrent:1)
+12/11/22 09:59:24->run 19 processed
+12/11/22 09:59:24->Sending run 22 to: DESKTOP-2020$E:\temp1  (group id:10, run id:22, concurrent runs:1)
+12/11/22 09:59:24->Sending run 23 to: DESKTOP-2020$E:\temp1\worker1  (group id:10, run id:23, concurrent runs:1)
+12/11/22 09:59:26->run 21 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0386333 min, group id:10, run id: 21 concurrent:1)
+12/11/22 09:59:26->run 21 processed
+12/11/22 09:59:26->Sending run 24 to: DESKTOP-2020$E:\temp1\worker2  (group id:10, run id:24, concurrent runs:1)
+12/11/22 09:59:26->run 22 received from: DESKTOP-2020$E:\temp1  (run time:0.0386 min, avg run time:0.0386111 min, group id:10, run id: 22 concurrent:1)
+12/11/22 09:59:26->run 22 processed
+12/11/22 09:59:26->run 23 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0386167 min, avg run time:0.0385889 min, group id:10, run id: 23 concurrent:1)
+12/11/22 09:59:26->run 23 processed
+12/11/22 09:59:29->run 24 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03855 min, avg run time:0.0385889 min, group id:10, run id: 24 concurrent:1)
+12/11/22 09:59:29->run 24 processed
+
+---------------------
+   25 runs complete :  0 runs failed
+   0.0386 avg run time (min) : 0.397 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:59:32->Panther idle ping thread resumed.
+12/11/22 09:59:32->Panther idle ping thread paused prior to scheduling runs.
+running model 10 times
+12/11/22 09:59:32->    3 agents ready
+
+12/11/22 09:59:32->Sending run 1 to: DESKTOP-2020$E:\temp1  (group id:11, run id:1, concurrent runs:1)
+12/11/22 09:59:32->Sending run 2 to: DESKTOP-2020$E:\temp1\worker1  (group id:11, run id:2, concurrent runs:1)
+12/11/22 09:59:32->Sending run 3 to: DESKTOP-2020$E:\temp1\worker2  (group id:11, run id:3, concurrent runs:1)
+12/11/22 09:59:34->run 1 received from: DESKTOP-2020$E:\temp1  (run time:0.0370833 min, avg run time:0.0370833 min, group id:11, run id: 1 concurrent:1)
+12/11/22 09:59:34->run 1 processed
+12/11/22 09:59:34->run 3 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0371167 min, avg run time:0.0371 min, group id:11, run id: 3 concurrent:1)
+12/11/22 09:59:34->run 3 processed
+12/11/22 09:59:34->run 2 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0371333 min, avg run time:0.0371111 min, group id:11, run id: 2 concurrent:1)
+12/11/22 09:59:34->run 2 processed
+12/11/22 09:59:34->Sending run 4 to: DESKTOP-2020$E:\temp1  (group id:11, run id:4, concurrent runs:1)
+12/11/22 09:59:34->Sending run 5 to: DESKTOP-2020$E:\temp1\worker1  (group id:11, run id:5, concurrent runs:1)
+12/11/22 09:59:34->Sending run 6 to: DESKTOP-2020$E:\temp1\worker2  (group id:11, run id:6, concurrent runs:1)
+12/11/22 09:59:36->run 6 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.03785 min, avg run time:0.0373556 min, group id:11, run id: 6 concurrent:1)
+12/11/22 09:59:36->run 6 processed
+12/11/22 09:59:36->run 4 received from: DESKTOP-2020$E:\temp1  (run time:0.0378667 min, avg run time:0.0376167 min, group id:11, run id: 4 concurrent:1)
+12/11/22 09:59:36->run 4 processed
+12/11/22 09:59:36->run 5 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0378667 min, avg run time:0.0378611 min, group id:11, run id: 5 concurrent:1)
+12/11/22 09:59:36->run 5 processed
+12/11/22 09:59:36->Sending run 7 to: DESKTOP-2020$E:\temp1  (group id:11, run id:7, concurrent runs:1)
+12/11/22 09:59:36->Sending run 8 to: DESKTOP-2020$E:\temp1\worker1  (group id:11, run id:8, concurrent runs:1)
+12/11/22 09:59:36->Sending run 9 to: DESKTOP-2020$E:\temp1\worker2  (group id:11, run id:9, concurrent runs:1)
+12/11/22 09:59:39->run 7 received from: DESKTOP-2020$E:\temp1  (run time:0.0383167 min, avg run time:0.0380111 min, group id:11, run id: 7 concurrent:1)
+12/11/22 09:59:39->run 7 processed
+12/11/22 09:59:39->run 9 received from: DESKTOP-2020$E:\temp1\worker2  (run time:0.0383167 min, avg run time:0.0381667 min, group id:11, run id: 9 concurrent:1)
+12/11/22 09:59:39->run 9 processed
+12/11/22 09:59:39->run 8 received from: DESKTOP-2020$E:\temp1\worker1  (run time:0.0383333 min, avg run time:0.0383222 min, group id:11, run id: 8 concurrent:1)
+12/11/22 09:59:39->run 8 processed
+12/11/22 09:59:39->Sending run 10 to: DESKTOP-2020$E:\temp1  (group id:11, run id:10, concurrent runs:1)
+12/11/22 09:59:41->run 10 received from: DESKTOP-2020$E:\temp1  (run time:0.0385667 min, avg run time:0.0384056 min, group id:11, run id: 10 concurrent:1)
+12/11/22 09:59:41->run 10 processed
+
+---------------------
+   10 runs complete :  0 runs failed
+   0.0384 avg run time (min) : 0.204 run mgr time (min)
+   3 agents connected
+
+
+
+12/11/22 09:59:44->Panther idle ping thread resumed.
+12/11/22 09:59:45->Stopped idle ping thread, as Panther manager is shutting down.

@@ -1,0 +1,211 @@
+
+                   PEST RUN RECORD: CASE case_dsi_soln
+
+
+PEST Version: 17.3
+
+
+PEST run mode:-
+
+   Parameter estimation mode
+
+
+Case dimensions:-
+
+   Number of parameters                           :    14
+   Number of adjustable parameters                :    14
+   Number of parameter groups                     :     1
+   Number of observations                         :    14
+   Number of prior estimates                      :     0
+
+
+Model command line(s):-
+
+   dsimod case_dsi.bin case_dsi.in case_dsi.out
+
+
+Jacobian command line:-
+
+   na
+
+
+Model interface files:-
+
+   Templates:
+      case_dsi.tpl
+   for model input files:
+      case_dsi.in
+
+   (Parameter values written using single precision protocol.)
+   (Decimal point always included.)
+
+   Instruction files:
+      case_dsi.ins
+   for reading model output files:
+      case_dsi.out
+
+
+PEST-to-model message file:-
+
+   na
+
+
+Singular value decomposition:-
+
+   Perform SVD on XtQX or Q^(1/2)X               : XtQX
+   Max. number of singular values to employ      : 14
+   Ratio of lowest/highest singular value        :  5.000000E-08
+   Record eigenvectors in SVD file               : no
+
+
+Derivatives calculation:-
+
+Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+group        type                    low bound   central      (central)   (central)
+pg1          absolute    1.0000E-02    na          switch       2.000     parabolic
+
+
+Parameter definitions:-
+
+Name         Trans-            Change       Initial        Lower          Upper
+             formation         limit        value          bound          bound
+par1         none              abs(1)    -0.144224       -10.0000        10.0000    
+par2         none              abs(1)     0.789467       -10.0000        10.0000    
+par3         none              abs(1)     0.602858       -10.0000        10.0000    
+par4         none              abs(1)     0.423725       -10.0000        10.0000    
+par5         none              abs(1)    -0.167885       -10.0000        10.0000    
+par6         none              abs(1)    -0.138569       -10.0000        10.0000    
+par7         none              abs(1)    -2.916627E-02   -10.0000        10.0000    
+par8         none              abs(1)     0.392985       -10.0000        10.0000    
+par9         none              abs(1)     0.218468       -10.0000        10.0000    
+par10        none              abs(1)    -7.118997E-02   -10.0000        10.0000    
+par11        none              abs(1)    -0.394086       -10.0000        10.0000    
+par12        none              abs(1)    -0.484322       -10.0000        10.0000    
+par13        none              abs(1)    -0.177663       -10.0000        10.0000    
+par14        none              abs(1)     9.655384E-02   -10.0000        10.0000    
+
+Name         Group          Scale         Offset        Model command number
+par1         pg1           1.00000        0.00000            1
+par2         pg1           1.00000        0.00000            1
+par3         pg1           1.00000        0.00000            1
+par4         pg1           1.00000        0.00000            1
+par5         pg1           1.00000        0.00000            1
+par6         pg1           1.00000        0.00000            1
+par7         pg1           1.00000        0.00000            1
+par8         pg1           1.00000        0.00000            1
+par9         pg1           1.00000        0.00000            1
+par10        pg1           1.00000        0.00000            1
+par11        pg1           1.00000        0.00000            1
+par12        pg1           1.00000        0.00000            1
+par13        pg1           1.00000        0.00000            1
+par14        pg1           1.00000        0.00000            1
+
+
+Prior information:-
+
+   No prior information supplied
+
+
+Observations:-
+
+Observation name        Observation       Weight       Group
+ well01_1                5.74724          10.00       heads       
+ well02_1                5.69616          10.00       heads       
+ well03_1                5.49199          10.00       heads       
+ well04_1                4.09190          10.00       heads       
+ well05_1                3.92014          10.00       heads       
+ well06_1                4.05991          10.00       heads       
+ well07_1                2.59369          10.00       heads       
+ well08_1                3.25979          10.00       heads       
+ well09_1                2.97368          10.00       heads       
+ well10_1                1.12417          10.00       heads       
+ well11_1                1.20361          10.00       heads       
+ well12_1                1.19256          10.00       heads       
+ part_time               0.00000          0.000       time        
+ part_east               0.00000          0.000       distance    
+
+
+Control settings:-
+
+   Initial lambda                                               :  10.000    
+   Lambda adjustment factor                                     : iteration-dependent
+   Value of variable governing adjustment                       : -3.0000    
+   Sufficient new/old phi ratio per optimisation iteration      : 0.30000    
+   Limiting relative phi reduction between lambdas              : 1.00000E-02
+   Maximum trial lambdas per iteration                          :  10
+   Forgive model run failure during lamda testing               : no
+   Forgive model run failure during Jacobian runs               : no
+
+   Perform Broyden's update of Jacobian matrix                  : no
+   Undertake observation re-referencing                         : no
+
+   Maximum  factor  parameter change (factor-limited changes)   : na
+   Maximum relative parameter change (relative-limited changes) : na
+   Fraction of initial parameter values used in computing
+   change limit for near-zero parameters                        : 1.00000E-03
+   Absolute parameter change limit (1)                          : 0.50000
+   Allow bending of parameter upgrade vector                    : no
+   Allow parameters to stick to their bounds                    : no
+
+   Relative phi reduction below which to begin use of
+   central derivatives                                          : 0.10000             
+   Iteration at which to first consider derivatives switch      :   1
+
+   Relative phi reduction indicating convergence                : 0.10000E-02
+   Number of phi values required within this range              :   4
+   Maximum number of consecutive failures to lower phi          :   4
+   Minimal relative parameter change indicating convergence     : 0.10000E-02
+   Number of consecutive iterations with minimal param change   :   4
+   Maximum number of optimisation iterations                    :  -2 (only compute Jacobian)
+
+   Attempt automatic user intervention                          : no
+
+   Attempt reuse of parameter sensitivities                     : no
+
+   Scale parameters by their bounds                             : no
+
+
+File saving options: -
+
+   Save best JCO file                                           : yes
+   Save multiple JCO files                                      : no
+   Save multiple REI files                                      : no
+   Save multiple PAR files                                      : yes
+
+
+                            OPTIMISATION RECORD
+
+
+INITIAL CONDITIONS: 
+   Sum of squared weighted residuals (ie phi)               =   11.891    
+   Contribution to phi from observation group "heads"       =   11.891    
+   Contribution to phi from observation group "time"        =   0.0000    
+   Contribution to phi from observation group "distance"    =   0.0000    
+
+      Current parameter values
+      par1           -0.144224    
+      par2            0.789467    
+      par3            0.602858    
+      par4            0.423725    
+      par5           -0.167885    
+      par6           -0.138569    
+      par7           -2.916627E-02
+      par8            0.392985    
+      par9            0.218468    
+      par10          -7.118997E-02
+      par11          -0.394086    
+      par12          -0.484322    
+      par13          -0.177663    
+      par14           9.655384E-02
+
+
+OPTIMISATION ITERATION NO.        : 1
+   Model calls so far             : 1
+   Starting phi for this iteration                          :   11.891    
+   Contribution to phi from observation group "heads"       :   11.891    
+   Contribution to phi from observation group "time"        :   0.0000    
+   Contribution to phi from observation group "distance"    :   0.0000    
+
+   Optimisation complete: NOPTMAX supplied as -2 indicating that only the
+                          Jacobian for the initial parameter set is required.
+   Total model calls:     15

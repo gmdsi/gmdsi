@@ -1,0 +1,100 @@
+
+MODPATH Version 7.2.001   
+Program compiled Dec 22 2017 11:11:36 with IFORT compiler (ver. 16.0.0)         
+ 
+This software has been approved for release by the U.S. Geological
+Survey (USGS). Although the software has been subjected to rigorous
+review, the USGS reserves the right to update the software as needed
+pursuant to further analysis and review. No warranty, expressed or
+implied, is made by the USGS or the U.S. Government as to the
+functionality of the software and related material nor shall the
+fact of release constitute any such warranty. Furthermore, the
+software is released on condition that neither the USGS nor the U.S.
+Government shall be held liable for any damages resulting from its
+authorized or unauthorized use. Also refer to the USGS Water
+Resources Software User Rights Notice for complete use, copyright,
+and distribution information.
+ 
+
+MODPATH name file data
+----------------------
+   MPBAS File: rect.mpbas
+  GRBDIS File: rect.dis.grb
+    TDIS File: rect.tdis
+    HEAD File: rect.hds
+  BUDGET File: rect.bud
+
+Grid data
+---------
+Grid file type: MODFLOW-6 DIS binary grid file.
+Time discretization file type: MODFLOW-6 time discretization file.
+ #  TIME_UNITS        DAYS
+ #  START_DATE_TIME   1/1/2000
+ 
+ Time discretization file data
+ -----------------------------
+ Stress period count =          1
+ # perlen     nstp      tsmult
+ Period length:        1.00000 Time step count:         1 Time step multiplier:        1.00000
+ 
+ The budget file was opened successfully.
+ 
+ MODPATH basic data file data
+ ----------------------------
+ Aquifer head is set to  1.00000E+30 at cells with IDOMAIN = 0.
+ Aquifer head is set to -1.00000E+30 at all dry cells when Newton-Raphson rewetting is not active.
+ 
+ 
+ Default stress package boundary face options (IFACE):
+   WELL will be treated as internal stresses (IFACE = 0)
+
+                 POROSITY =  0.100000     FOR LAYER   1
+ 
+ MODPATH simulation file data
+ ----------------------------
+Combined Pathline and Timeseries Analysis (Simulation type = 4)
+Forward tracking (Tracking direction =  1)
+Let particles pass through weak sink cells (Weak sink option = 1)
+Let particles pass through weak source cells for backtracking simulations (Weak source option = 1)
+Reference time =   0.0000000E+00
+Extend initial or final steady-state time step and continue tracking (Stopping time option =  2)
+The zone value for all cells = 1
+
+The retardation factor for all cells = 1
+
+Number of particle groups =     1
+Particle group    1 contains          1 particles.
+Total number of particles =          1
+ 
+ 
+ Budget File Data
+ ----------------
+    Budget file type:  Unstructured grid
+  Budget file format:  Compact
+    Budget precision:  Double
+
+The simulation will be run with stoptime =   0.1000000E+31
+ 
+ 
+ Run particle tracking simulation ...
+ 
+ ----------------------------------------------------------------------------------------------
+ Processing Time Step     1 Period     1.  Time =  1.00000E+00  Steady-state flow                                                    
+   (Cumulative step =      1)
+ ----------------------------------------------------------------------------------------------
+
+Particle Summary:
+         0 particles are pending release.
+         0 particles remain active.
+         0 particles terminated at boundary faces.
+         0 particles terminated at weak sink cells.
+         0 particles terminated at weak source cells.
+         1 particles terminated at strong source/sink cells or other cells with no potential exit face.
+         0 particles terminated in cells with a specified zone number.
+         0 particles were stranded in inactive or dry cells.
+         0 particles were unreleased.
+         0 particles have an unknown status.
+ 
+
+Normal termination.                                                        
+ Elapsed time =     0.23000E-01 seconds
