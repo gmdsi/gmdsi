@@ -1,0 +1,18 @@
+rect.mpnam
+rect.mplist
+4 1 1 1 0 0         # Item 3:  SimulationType TrackingDirection WeakSinkOption WeakSourceOption BudgetOutputOption TraceMode
+rect.endpoint7	    # Item 4:  EndpointFileName
+rect.pathline7	    # Item 5:  PathlineFileName
+rect.timeseries7    # Item 6:  TimeseriesFilename
+0                   # Item 9:  BudgetCellCount
+1		    # Item 11: ReferenceTimeOption
+0.0		    # Item 12: ReferenceTime
+2		    # Item 14: StopTimeOption
+0		    # Item 16: TimePointOption
+1                   # Item 20: ZoneDataOption
+1                   # Item 23: RetardationFactorOption
+1                   # Item 25: ParticleGroupCount
+PG1                 # Item 26: ParticleGroupName
+1                   # Item 27: ReleaseOption
+0.0                 # Item 28: ReleaseTime
+external rect.sloc

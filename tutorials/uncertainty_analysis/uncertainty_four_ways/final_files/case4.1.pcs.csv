@@ -1,0 +1,2 @@
+group,mean_change,std_change,num_at_near_bounds,percent_at_near_bounds,initial_cv,current_cv,num_cv_dec
+k,681.33,35.6662,0,0,239.457,42.5594,72

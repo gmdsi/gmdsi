@@ -1,0 +1,2 @@
+  agent  status     runs       successes  failures   abandons   min_runtime    max_runtime    ave_runtime    cum_runtime    alive_time     efficiency     working_folder
+      1  idle       50         50         0          0            0.269000        1.35500       0.301460        15.0730        15.2340       0.989431     192.168.1.107\\E:\temp15

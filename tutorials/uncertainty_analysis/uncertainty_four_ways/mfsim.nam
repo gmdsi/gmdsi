@@ -1,0 +1,20 @@
+BEGIN OPTIONS
+  CONTINUE
+END OPTIONS
+
+# Simulation timing information
+BEGIN TIMING
+  TDIS6  rect.tdis
+END TIMING
+
+BEGIN MODELS
+# Modeltype  namefile    modelname
+  gwf6       rect.nam    rect_model
+END MODELS
+
+BEGIN EXCHANGES
+END EXCHANGES
+
+BEGIN SOLUTIONGROUP  1
+  ims6  rect.ims  rect_model
+END SOLUTIONGROUP  1

@@ -1,0 +1,4 @@
+1                        # DefaultIFaceCount
+WELL                     # Packagelabel
+0                        # DefaultIfaceValue
+CONSTANT 0.1             # Porosity

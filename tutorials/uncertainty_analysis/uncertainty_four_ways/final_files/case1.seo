@@ -1,0 +1,119 @@
+ Observation           Group         Measured          Modelled        Sensitivity
+ well01_1              heads          5.747240          5.747373         0.1553798    
+ well02_1              heads          5.696160          5.634808         0.1518949    
+ well03_1              heads          5.491990          5.526115         0.1535525    
+ well04_1              heads          4.091900          4.089597         0.1359080    
+ well05_1              heads          3.920140          4.030296         0.1326412    
+ well06_1              heads          4.059910          4.084753         0.1355203    
+ well07_1              heads          2.593690          2.750002         0.1243412    
+ well08_1              heads          3.259790          3.000228         0.1226996    
+ well09_1              heads          2.973680          3.016601         0.1283030    
+ well10_1              heads          1.124170          1.057478         0.1001583    
+ well11_1              heads          1.203610          1.147274         9.3698067E-02
+ well12_1              heads          1.192560          1.160226         0.1062779    
+ part_time             time           0.000000          6840.826          0.000000    
+ part_east             distance       0.000000          225.8625          0.000000    
+ k_ppt1                regul_k        0.000000        -2.4702260E-02     Cov. Mat.
+ k_ppt2                regul_k        0.000000        -2.0358467E-02     Cov. Mat.
+ k_ppt3                regul_k        0.000000        -1.1849284E-02     Cov. Mat.
+ k_ppt4                regul_k        0.000000        -3.7259283E-03     Cov. Mat.
+ k_ppt5                regul_k        0.000000        -1.7302709E-03     Cov. Mat.
+ k_ppt6                regul_k        0.000000        -5.7003515E-03     Cov. Mat.
+ k_ppt7                regul_k        0.000000        -9.5539570E-03     Cov. Mat.
+ k_ppt8                regul_k        0.000000        -8.1453880E-03     Cov. Mat.
+ k_ppt9                regul_k        0.000000        -3.4268331E-02     Cov. Mat.
+ k_ppt10               regul_k        0.000000        -2.9633869E-02     Cov. Mat.
+ k_ppt11               regul_k        0.000000        -1.7281077E-02     Cov. Mat.
+ k_ppt12               regul_k        0.000000        -2.4904752E-03     Cov. Mat.
+ k_ppt13               regul_k        0.000000         2.9746951E-03     Cov. Mat.
+ k_ppt14               regul_k        0.000000        -1.1325868E-03     Cov. Mat.
+ k_ppt15               regul_k        0.000000        -4.6053308E-03     Cov. Mat.
+ k_ppt16               regul_k        0.000000        -8.8313181E-04     Cov. Mat.
+ k_ppt17               regul_k        0.000000        -4.3679276E-02     Cov. Mat.
+ k_ppt18               regul_k        0.000000        -4.0964783E-02     Cov. Mat.
+ k_ppt19               regul_k        0.000000        -2.9047153E-02     Cov. Mat.
+ k_ppt20               regul_k        0.000000        -1.0146983E-02     Cov. Mat.
+ k_ppt21               regul_k        0.000000         2.9284109E-03     Cov. Mat.
+ k_ppt22               regul_k        0.000000         1.0374086E-02     Cov. Mat.
+ k_ppt23               regul_k        0.000000         1.7953361E-02     Cov. Mat.
+ k_ppt24               regul_k        0.000000         2.6356528E-02     Cov. Mat.
+ k_ppt25               regul_k        0.000000        -4.6787497E-02     Cov. Mat.
+ k_ppt26               regul_k        0.000000        -4.4389925E-02     Cov. Mat.
+ k_ppt27               regul_k        0.000000        -3.4892598E-02     Cov. Mat.
+ k_ppt28               regul_k        0.000000        -2.1929637E-02     Cov. Mat.
+ k_ppt29               regul_k        0.000000         3.7019121E-03     Cov. Mat.
+ k_ppt30               regul_k        0.000000         4.0737156E-02     Cov. Mat.
+ k_ppt31               regul_k        0.000000         6.9485092E-02     Cov. Mat.
+ k_ppt32               regul_k        0.000000         7.9713546E-02     Cov. Mat.
+ k_ppt33               regul_k        0.000000        -3.7678383E-02     Cov. Mat.
+ k_ppt34               regul_k        0.000000        -2.6045317E-02     Cov. Mat.
+ k_ppt35               regul_k        0.000000        -4.7044819E-03     Cov. Mat.
+ k_ppt36               regul_k        0.000000         2.1223131E-02     Cov. Mat.
+ k_ppt37               regul_k        0.000000         6.0782840E-02     Cov. Mat.
+ k_ppt38               regul_k        0.000000         0.1066314         Cov. Mat.
+ k_ppt39               regul_k        0.000000         0.1339072         Cov. Mat.
+ k_ppt40               regul_k        0.000000         0.1345272         Cov. Mat.
+ k_ppt41               regul_k        0.000000        -1.7685480E-02     Cov. Mat.
+ k_ppt42               regul_k        0.000000         1.4431319E-02     Cov. Mat.
+ k_ppt43               regul_k        0.000000         6.6929008E-02     Cov. Mat.
+ k_ppt44               regul_k        0.000000         0.1221398         Cov. Mat.
+ k_ppt45               regul_k        0.000000         0.1727948         Cov. Mat.
+ k_ppt46               regul_k        0.000000         0.2068267         Cov. Mat.
+ k_ppt47               regul_k        0.000000         0.2099609         Cov. Mat.
+ k_ppt48               regul_k        0.000000         0.1881198         Cov. Mat.
+ k_ppt49               regul_k        0.000000         4.2467633E-03     Cov. Mat.
+ k_ppt50               regul_k        0.000000         5.7449892E-02     Cov. Mat.
+ k_ppt51               regul_k        0.000000         0.1483065         Cov. Mat.
+ k_ppt52               regul_k        0.000000         0.2472162         Cov. Mat.
+ k_ppt53               regul_k        0.000000         0.3046809         Cov. Mat.
+ k_ppt54               regul_k        0.000000         0.3064872         Cov. Mat.
+ k_ppt55               regul_k        0.000000         0.2775780         Cov. Mat.
+ k_ppt56               regul_k        0.000000         0.2303877         Cov. Mat.
+ k_ppt57               regul_k        0.000000         2.4345793E-02     Cov. Mat.
+ k_ppt58               regul_k        0.000000         8.1456444E-02     Cov. Mat.
+ k_ppt59               regul_k        0.000000         0.1873637         Cov. Mat.
+ k_ppt60               regul_k        0.000000         0.3026774         Cov. Mat.
+ k_ppt61               regul_k        0.000000         0.3607027         Cov. Mat.
+ k_ppt62               regul_k        0.000000         0.3432968         Cov. Mat.
+ k_ppt63               regul_k        0.000000         0.2928107         Cov. Mat.
+ k_ppt64               regul_k        0.000000         0.2337431         Cov. Mat.
+ k_ppt65               regul_k        0.000000         5.9443109E-02     Cov. Mat.
+ k_ppt66               regul_k        0.000000         9.3696815E-02     Cov. Mat.
+ k_ppt67               regul_k        0.000000         0.1644947         Cov. Mat.
+ k_ppt68               regul_k        0.000000         0.2528172         Cov. Mat.
+ k_ppt69               regul_k        0.000000         0.3021179         Cov. Mat.
+ k_ppt70               regul_k        0.000000         0.2840249         Cov. Mat.
+ k_ppt71               regul_k        0.000000         0.2427356         Cov. Mat.
+ k_ppt72               regul_k        0.000000         0.1954072         Cov. Mat.
+ k_ppt73               regul_k        0.000000         0.1169415         Cov. Mat.
+ k_ppt74               regul_k        0.000000         0.1168647         Cov. Mat.
+ k_ppt75               regul_k        0.000000         9.8563608E-02     Cov. Mat.
+ k_ppt76               regul_k        0.000000         9.7140857E-02     Cov. Mat.
+ k_ppt77               regul_k        0.000000         0.1221239         Cov. Mat.
+ k_ppt78               regul_k        0.000000         0.1436860         Cov. Mat.
+ k_ppt79               regul_k        0.000000         0.1444326         Cov. Mat.
+ k_ppt80               regul_k        0.000000         0.1269099         Cov. Mat.
+ k_ppt81               regul_k        0.000000         0.1043716         Cov. Mat.
+ k_ppt82               regul_k        0.000000         7.6668292E-02     Cov. Mat.
+ k_ppt83               regul_k        0.000000         8.8508832E-03     Cov. Mat.
+ k_ppt84               regul_k        0.000000        -3.8276239E-02     Cov. Mat.
+ k_ppt85               regul_k        0.000000        -4.2223701E-02     Cov. Mat.
+ k_ppt86               regul_k        0.000000        -1.8119355E-02     Cov. Mat.
+ k_ppt87               regul_k        0.000000         1.0937994E-02     Cov. Mat.
+ k_ppt88               regul_k        0.000000         2.5143220E-02     Cov. Mat.
+ k_ppt89               regul_k        0.000000         1.7472298E-02     Cov. Mat.
+ k_ppt90               regul_k        0.000000        -3.0461543E-02     Cov. Mat.
+ k_ppt91               regul_k        0.000000        -0.1095729         Cov. Mat.
+ k_ppt92               regul_k        0.000000        -0.1655762         Cov. Mat.
+ k_ppt93               regul_k        0.000000        -0.1838441         Cov. Mat.
+ k_ppt94               regul_k        0.000000        -0.1697379         Cov. Mat.
+ k_ppt95               regul_k        0.000000        -0.1309876         Cov. Mat.
+ k_ppt96               regul_k        0.000000        -9.2974387E-02     Cov. Mat.
+ k_ppt97               regul_k        0.000000        -0.1023424         Cov. Mat.
+ k_ppt98               regul_k        0.000000        -0.1601353         Cov. Mat.
+ k_ppt99               regul_k        0.000000        -0.2215514         Cov. Mat.
+ k_ppt100              regul_k        0.000000        -0.2797427         Cov. Mat.
+ k_ppt101              regul_k        0.000000        -0.2992478         Cov. Mat.
+ k_ppt102              regul_k        0.000000        -0.2778704         Cov. Mat.
+ k_ppt103              regul_k        0.000000        -0.2415991         Cov. Mat.
+ k_ppt104              regul_k        0.000000        -0.1916914         Cov. Mat.

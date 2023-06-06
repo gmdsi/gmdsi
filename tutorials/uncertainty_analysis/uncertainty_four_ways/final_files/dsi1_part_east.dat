@@ -1,0 +1,30 @@
+ PROBLEM DETAILS ---->
+ 
+ Name of PEST control file                        : case.pst
+ Name of observation transform file               : none
+ Name of observation CSV file                     : case4.0.obs.csv
+ Name of predictive CSV file                      : case4.0.obs.csv
+ Number of realizations read from these files     : 50
+ Name of prediction                               : part_east
+ Minimum sampled prediction value                 : 133.2350
+ Maximum sampled prediction value                 : 415.0080
+ Prediction transformations                       :
+     Scale                = 1.000000
+     Offset               = 0.000000
+     Log-transform        = no
+     Emergency base value = na
+ Work in normal score space                       : no
+ Energy level for truncation                      : 0.9900000
+ Number of singular values before truncation      : 11
+ 
+ 
+ OUTCOMES OF ANALYSIS ---->
+ 
+ 
+ 
+ Predictive confidence limits:-.
+ 
+ distribution      low_95              low_68              mean                high_68             high_95
+ ------------      ------              ------              ----                -------             -------
+ prior             109.8245            180.2610            250.6975            321.1339            391.5704
+ posterior         149.1649            196.8957            244.6264            292.3571            340.0879

@@ -1,0 +1,8 @@
+BEGIN OPTIONS
+END OPTIONS
+
+
+BEGIN GRIDDATA
+  STRT layered
+  CONSTANT 0.0      Initial Head layer 1
+END GRIDDATA

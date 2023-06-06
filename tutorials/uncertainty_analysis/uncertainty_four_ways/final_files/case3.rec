@@ -1,0 +1,819 @@
+                        PEST RUN RECORD: CASE case3
+
+
+ PEST_HP version: 17.42
+
+
+ PEST run mode:-
+
+    Parameter estimation mode
+
+
+ Case dimensions:-
+
+    Number of parameters                           :   104
+    Number of adjustable parameters                :   104
+    Number of parameter groups                     :     1
+    Number of observations                         :    14
+    Number of prior estimates                      :     0
+    Number of observation/prior_info groups        :     3
+
+
+ Model command line(s):-
+ 
+    model.bat
+
+
+ Model interface files:-
+
+    Templates:
+       hk.tpl
+    for model input files:
+       hk.pts
+
+    (Parameter values written using single precision protocol.)
+    (Decimal point always included.)
+
+    Instruction files:
+       model_smp.ins
+       endpoint.ins
+    for reading model output files:
+       model.smp
+       rect.endpoint7
+
+
+ Singular value decomposition:-
+
+    Perform SVD on XtQX or Q^(1/2)X               : XtQX
+    Max. number of singular values to employ      : 104
+    Ratio of lowest/highest singular value        :  5.000000E-07
+    Record eigenvectors in SVD file               : no
+
+
+ Derivatives calculation:-
+
+ Param        Increment   Increment   Increment   Forward or   Multiplier  Method
+ group        type                    low bound   central      (central)   (central)
+ k            relative    1.0000E-02   none         switch       2.000     parabolic
+
+
+ Parameter definitions:-
+
+ Name         Trans-            Change       Initial        Lower          Upper
+              formation         limit        value          bound          bound
+ k_ppt1       log               factor     0.944708       1.000000E-02    100.000    
+ k_ppt2       log               factor     0.954205       1.000000E-02    100.000    
+ k_ppt3       log               factor     0.973085       1.000000E-02    100.000    
+ k_ppt4       log               factor     0.991457       1.000000E-02    100.000    
+ k_ppt5       log               factor     0.996024       1.000000E-02    100.000    
+ k_ppt6       log               factor     0.986960       1.000000E-02    100.000    
+ k_ppt7       log               factor     0.978241       1.000000E-02    100.000    
+ k_ppt8       log               factor     0.981419       1.000000E-02    100.000    
+ k_ppt9       log               factor     0.924127       1.000000E-02    100.000    
+ k_ppt10      log               factor     0.934041       1.000000E-02    100.000    
+ k_ppt11      log               factor     0.960990       1.000000E-02    100.000    
+ k_ppt12      log               factor     0.994282       1.000000E-02    100.000    
+ k_ppt13      log               factor      1.00687       1.000000E-02    100.000    
+ k_ppt14      log               factor     0.997395       1.000000E-02    100.000    
+ k_ppt15      log               factor     0.989452       1.000000E-02    100.000    
+ k_ppt16      log               factor     0.997969       1.000000E-02    100.000    
+ k_ppt17      log               factor     0.904317       1.000000E-02    100.000    
+ k_ppt18      log               factor     0.909987       1.000000E-02    100.000    
+ k_ppt19      log               factor     0.935304       1.000000E-02    100.000    
+ k_ppt20      log               factor     0.976907       1.000000E-02    100.000    
+ k_ppt21      log               factor      1.00677       1.000000E-02    100.000    
+ k_ppt22      log               factor      1.02418       1.000000E-02    100.000    
+ k_ppt23      log               factor      1.04221       1.000000E-02    100.000    
+ k_ppt24      log               factor      1.06257       1.000000E-02    100.000    
+ k_ppt25      log               factor     0.897868       1.000000E-02    100.000    
+ k_ppt26      log               factor     0.902838       1.000000E-02    100.000    
+ k_ppt27      log               factor     0.922800       1.000000E-02    100.000    
+ k_ppt28      log               factor     0.950759       1.000000E-02    100.000    
+ k_ppt29      log               factor      1.00856       1.000000E-02    100.000    
+ k_ppt30      log               factor      1.09834       1.000000E-02    100.000    
+ k_ppt31      log               factor      1.17351       1.000000E-02    100.000    
+ k_ppt32      log               factor      1.20147       1.000000E-02    100.000    
+ k_ppt33      log               factor     0.916899       1.000000E-02    100.000    
+ k_ppt34      log               factor     0.941791       1.000000E-02    100.000    
+ k_ppt35      log               factor     0.989226       1.000000E-02    100.000    
+ k_ppt36      log               factor      1.05008       1.000000E-02    100.000    
+ k_ppt37      log               factor      1.15023       1.000000E-02    100.000    
+ k_ppt38      log               factor      1.27830       1.000000E-02    100.000    
+ k_ppt39      log               factor      1.36115       1.000000E-02    100.000    
+ k_ppt40      log               factor      1.36310       1.000000E-02    100.000    
+ k_ppt41      log               factor     0.960096       1.000000E-02    100.000    
+ k_ppt42      log               factor      1.03379       1.000000E-02    100.000    
+ k_ppt43      log               factor      1.16662       1.000000E-02    100.000    
+ k_ppt44      log               factor      1.32477       1.000000E-02    100.000    
+ k_ppt45      log               factor      1.48866       1.000000E-02    100.000    
+ k_ppt46      log               factor      1.61000       1.000000E-02    100.000    
+ k_ppt47      log               factor      1.62166       1.000000E-02    100.000    
+ k_ppt48      log               factor      1.54213       1.000000E-02    100.000    
+ k_ppt49      log               factor      1.00983       1.000000E-02    100.000    
+ k_ppt50      log               factor      1.14143       1.000000E-02    100.000    
+ k_ppt51      log               factor      1.40704       1.000000E-02    100.000    
+ k_ppt52      log               factor      1.76692       1.000000E-02    100.000    
+ k_ppt53      log               factor      2.01688       1.000000E-02    100.000    
+ k_ppt54      log               factor      2.02529       1.000000E-02    100.000    
+ k_ppt55      log               factor      1.89486       1.000000E-02    100.000    
+ k_ppt56      log               factor      1.69976       1.000000E-02    100.000    
+ k_ppt57      log               factor      1.05766       1.000000E-02    100.000    
+ k_ppt58      log               factor      1.20630       1.000000E-02    100.000    
+ k_ppt59      log               factor      1.53944       1.000000E-02    100.000    
+ k_ppt60      log               factor      2.00760       1.000000E-02    100.000    
+ k_ppt61      log               factor      2.29458       1.000000E-02    100.000    
+ k_ppt62      log               factor      2.20443       1.000000E-02    100.000    
+ k_ppt63      log               factor      1.96250       1.000000E-02    100.000    
+ k_ppt64      log               factor      1.71294       1.000000E-02    100.000    
+ k_ppt65      log               factor      1.14668       1.000000E-02    100.000    
+ k_ppt66      log               factor      1.24079       1.000000E-02    100.000    
+ k_ppt67      log               factor      1.46048       1.000000E-02    100.000    
+ k_ppt68      log               factor      1.78985       1.000000E-02    100.000    
+ k_ppt69      log               factor      2.00502       1.000000E-02    100.000    
+ k_ppt70      log               factor      1.92320       1.000000E-02    100.000    
+ k_ppt71      log               factor      1.74878       1.000000E-02    100.000    
+ k_ppt72      log               factor      1.56822       1.000000E-02    100.000    
+ k_ppt73      log               factor      1.30901       1.000000E-02    100.000    
+ k_ppt74      log               factor      1.30877       1.000000E-02    100.000    
+ k_ppt75      log               factor      1.25477       1.000000E-02    100.000    
+ k_ppt76      log               factor      1.25066       1.000000E-02    100.000    
+ k_ppt77      log               factor      1.32472       1.000000E-02    100.000    
+ k_ppt78      log               factor      1.39215       1.000000E-02    100.000    
+ k_ppt79      log               factor      1.39454       1.000000E-02    100.000    
+ k_ppt80      log               factor      1.33940       1.000000E-02    100.000    
+ k_ppt81      log               factor      1.27166       1.000000E-02    100.000    
+ k_ppt82      log               factor      1.19308       1.000000E-02    100.000    
+ k_ppt83      log               factor      1.02059       1.000000E-02    100.000    
+ k_ppt84      log               factor     0.915638       1.000000E-02    100.000    
+ k_ppt85      log               factor     0.907353       1.000000E-02    100.000    
+ k_ppt86      log               factor     0.959137       1.000000E-02    100.000    
+ k_ppt87      log               factor      1.02551       1.000000E-02    100.000    
+ k_ppt88      log               factor      1.05960       1.000000E-02    100.000    
+ k_ppt89      log               factor      1.04105       1.000000E-02    100.000    
+ k_ppt90      log               factor     0.932263       1.000000E-02    100.000    
+ k_ppt91      log               factor     0.777011       1.000000E-02    100.000    
+ k_ppt92      log               factor     0.683005       1.000000E-02    100.000    
+ k_ppt93      log               factor     0.654871       1.000000E-02    100.000    
+ k_ppt94      log               factor     0.676491       1.000000E-02    100.000    
+ k_ppt95      log               factor     0.739626       1.000000E-02    100.000    
+ k_ppt96      log               factor     0.807283       1.000000E-02    100.000    
+ k_ppt97      log               factor     0.790056       1.000000E-02    100.000    
+ k_ppt98      log               factor     0.691615       1.000000E-02    100.000    
+ k_ppt99      log               factor     0.600411       1.000000E-02    100.000    
+ k_ppt100     log               factor     0.525118       1.000000E-02    100.000    
+ k_ppt101     log               factor     0.502056       1.000000E-02    100.000    
+ k_ppt102     log               factor     0.527387       1.000000E-02    100.000    
+ k_ppt103     log               factor     0.573325       1.000000E-02    100.000    
+ k_ppt104     log               factor     0.643145       1.000000E-02    100.000    
+
+ Name         Group          Scale         Offset        Model command number
+ k_ppt1       k             1.00000        0.00000            1
+ k_ppt2       k             1.00000        0.00000            1
+ k_ppt3       k             1.00000        0.00000            1
+ k_ppt4       k             1.00000        0.00000            1
+ k_ppt5       k             1.00000        0.00000            1
+ k_ppt6       k             1.00000        0.00000            1
+ k_ppt7       k             1.00000        0.00000            1
+ k_ppt8       k             1.00000        0.00000            1
+ k_ppt9       k             1.00000        0.00000            1
+ k_ppt10      k             1.00000        0.00000            1
+ k_ppt11      k             1.00000        0.00000            1
+ k_ppt12      k             1.00000        0.00000            1
+ k_ppt13      k             1.00000        0.00000            1
+ k_ppt14      k             1.00000        0.00000            1
+ k_ppt15      k             1.00000        0.00000            1
+ k_ppt16      k             1.00000        0.00000            1
+ k_ppt17      k             1.00000        0.00000            1
+ k_ppt18      k             1.00000        0.00000            1
+ k_ppt19      k             1.00000        0.00000            1
+ k_ppt20      k             1.00000        0.00000            1
+ k_ppt21      k             1.00000        0.00000            1
+ k_ppt22      k             1.00000        0.00000            1
+ k_ppt23      k             1.00000        0.00000            1
+ k_ppt24      k             1.00000        0.00000            1
+ k_ppt25      k             1.00000        0.00000            1
+ k_ppt26      k             1.00000        0.00000            1
+ k_ppt27      k             1.00000        0.00000            1
+ k_ppt28      k             1.00000        0.00000            1
+ k_ppt29      k             1.00000        0.00000            1
+ k_ppt30      k             1.00000        0.00000            1
+ k_ppt31      k             1.00000        0.00000            1
+ k_ppt32      k             1.00000        0.00000            1
+ k_ppt33      k             1.00000        0.00000            1
+ k_ppt34      k             1.00000        0.00000            1
+ k_ppt35      k             1.00000        0.00000            1
+ k_ppt36      k             1.00000        0.00000            1
+ k_ppt37      k             1.00000        0.00000            1
+ k_ppt38      k             1.00000        0.00000            1
+ k_ppt39      k             1.00000        0.00000            1
+ k_ppt40      k             1.00000        0.00000            1
+ k_ppt41      k             1.00000        0.00000            1
+ k_ppt42      k             1.00000        0.00000            1
+ k_ppt43      k             1.00000        0.00000            1
+ k_ppt44      k             1.00000        0.00000            1
+ k_ppt45      k             1.00000        0.00000            1
+ k_ppt46      k             1.00000        0.00000            1
+ k_ppt47      k             1.00000        0.00000            1
+ k_ppt48      k             1.00000        0.00000            1
+ k_ppt49      k             1.00000        0.00000            1
+ k_ppt50      k             1.00000        0.00000            1
+ k_ppt51      k             1.00000        0.00000            1
+ k_ppt52      k             1.00000        0.00000            1
+ k_ppt53      k             1.00000        0.00000            1
+ k_ppt54      k             1.00000        0.00000            1
+ k_ppt55      k             1.00000        0.00000            1
+ k_ppt56      k             1.00000        0.00000            1
+ k_ppt57      k             1.00000        0.00000            1
+ k_ppt58      k             1.00000        0.00000            1
+ k_ppt59      k             1.00000        0.00000            1
+ k_ppt60      k             1.00000        0.00000            1
+ k_ppt61      k             1.00000        0.00000            1
+ k_ppt62      k             1.00000        0.00000            1
+ k_ppt63      k             1.00000        0.00000            1
+ k_ppt64      k             1.00000        0.00000            1
+ k_ppt65      k             1.00000        0.00000            1
+ k_ppt66      k             1.00000        0.00000            1
+ k_ppt67      k             1.00000        0.00000            1
+ k_ppt68      k             1.00000        0.00000            1
+ k_ppt69      k             1.00000        0.00000            1
+ k_ppt70      k             1.00000        0.00000            1
+ k_ppt71      k             1.00000        0.00000            1
+ k_ppt72      k             1.00000        0.00000            1
+ k_ppt73      k             1.00000        0.00000            1
+ k_ppt74      k             1.00000        0.00000            1
+ k_ppt75      k             1.00000        0.00000            1
+ k_ppt76      k             1.00000        0.00000            1
+ k_ppt77      k             1.00000        0.00000            1
+ k_ppt78      k             1.00000        0.00000            1
+ k_ppt79      k             1.00000        0.00000            1
+ k_ppt80      k             1.00000        0.00000            1
+ k_ppt81      k             1.00000        0.00000            1
+ k_ppt82      k             1.00000        0.00000            1
+ k_ppt83      k             1.00000        0.00000            1
+ k_ppt84      k             1.00000        0.00000            1
+ k_ppt85      k             1.00000        0.00000            1
+ k_ppt86      k             1.00000        0.00000            1
+ k_ppt87      k             1.00000        0.00000            1
+ k_ppt88      k             1.00000        0.00000            1
+ k_ppt89      k             1.00000        0.00000            1
+ k_ppt90      k             1.00000        0.00000            1
+ k_ppt91      k             1.00000        0.00000            1
+ k_ppt92      k             1.00000        0.00000            1
+ k_ppt93      k             1.00000        0.00000            1
+ k_ppt94      k             1.00000        0.00000            1
+ k_ppt95      k             1.00000        0.00000            1
+ k_ppt96      k             1.00000        0.00000            1
+ k_ppt97      k             1.00000        0.00000            1
+ k_ppt98      k             1.00000        0.00000            1
+ k_ppt99      k             1.00000        0.00000            1
+ k_ppt100     k             1.00000        0.00000            1
+ k_ppt101     k             1.00000        0.00000            1
+ k_ppt102     k             1.00000        0.00000            1
+ k_ppt103     k             1.00000        0.00000            1
+ k_ppt104     k             1.00000        0.00000            1
+
+
+ Prior information:-
+
+    No prior information supplied
+
+
+ Observations:-
+
+ Observation name        Observation       Weight       Group
+  well01_1                5.74724          10.00       heads       
+  well02_1                5.69616          10.00       heads       
+  well03_1                5.49199          10.00       heads       
+  well04_1                4.09190          10.00       heads       
+  well05_1                3.92014          10.00       heads       
+  well06_1                4.05991          10.00       heads       
+  well07_1                2.59369          10.00       heads       
+  well08_1                3.25979          10.00       heads       
+  well09_1                2.97368          10.00       heads       
+  well10_1                1.12417          10.00       heads       
+  well11_1                1.20361          10.00       heads       
+  well12_1                1.19256          10.00       heads       
+  part_time               0.00000          0.000       time        
+  part_east               0.00000          0.000       distance    
+
+
+ Control settings:-
+
+    Forgive model run failure during lamda testing               : yes
+    Forgive model run failure during Jacobian runs               : no
+
+    Perform Broyden's update of Jacobian matrix                  : no
+    Undertake observation re-referencing                         : no
+
+    Maximum  factor  parameter change (factor-limited changes)   :  10.000
+    Maximum relative parameter change (relative-limited changes) : na
+    Fraction of initial parameter values used in computing
+    change limit for near-zero parameters                        : 1.00000E-03
+    Allow bending of parameter upgrade vector                    : no
+    Allow parameters to stick to their bounds                    : no
+
+    Relative phi reduction below which to begin use of
+    central derivatives                                          : 0.10000             
+    Iteration at which to first consider derivatives switch      :   1
+    (However PEST_HP will not switch in 1st or 2nd iteration if 
+    any parameter upgrades are fac/rel/abs-change-limited.)
+
+    Relative phi reduction indicating convergence                : 0.50000E-02
+    Number of phi values required within this range              :   4
+    Maximum number of consecutive failures to lower phi          :   4
+    Minimal relative parameter change indicating convergence     : 0.50000E-02
+    Number of consecutive iterations with minimal param change   :   4
+    Maximum number of optimisation iterations                    :  -3 (only compute Jacobian)
+
+    Attempt reuse of parameter sensitivities                     : no
+
+    Scale parameters by their bounds                             : no
+
+
+ File saving options:-
+
+    Save run results file                                        : no
+    Save best JCO file                                           : yes
+    Save multiple JCO files                                      : no
+    Save multiple REI files                                      : no
+    Save multiple PAR files                                      : no
+
+
+ Extra settings for PEST_HP:-
+
+    Lower limit on number of simultaneous parameter upgrade tests [UPTESTMIN]         : not set
+    Upper limit on number of simultaneous parameter upgrade tests [UPTESTLIM]         : not set
+    Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+    Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+    Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+    PEST_HP time-out termination criterion [HARDSTOPHOURS or SOFTSTOPHOURS]           : none
+    Warning threshold for high sensitivities [JCOWARNTHRESH]                          : 1.00000E+30
+    Zeroing threshold for high sensitivities [JCOZEROTHRESH]                          : not set
+    Number of distribution files                                                      : 0
+ 
+ 
+ PEST HAS BEEN RUN WITH THE "/f" SWITCH.
+ A SUITE OF MODEL RUNS WILL BE UNDERTAKEN BASED ON PARAMETER VALUES RESIDING
+ IN A SUITE OF PARAMETER VALUE FILES.
+
+    Parameter value files suite : post_random*.par
+    Starting index              : 1
+    Finishing index             : 50
+    Run results file            : posterior.rrf
+ 
+ 
+ RUN RESULTS FOLLOW:-
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random1.par"
+
+    Sum of squared weighted residuals (ie phi)               =   60.021    
+    Contribution to phi from observation group "heads"       =   60.021    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random2.par"
+
+    Sum of squared weighted residuals (ie phi)               =   35.923    
+    Contribution to phi from observation group "heads"       =   35.923    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random3.par"
+
+    Sum of squared weighted residuals (ie phi)               =   16.160    
+    Contribution to phi from observation group "heads"       =   16.160    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random4.par"
+
+    Sum of squared weighted residuals (ie phi)               =   107.14    
+    Contribution to phi from observation group "heads"       =   107.14    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random5.par"
+
+    Sum of squared weighted residuals (ie phi)               =   34.784    
+    Contribution to phi from observation group "heads"       =   34.784    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random6.par"
+
+    Sum of squared weighted residuals (ie phi)               =   54.052    
+    Contribution to phi from observation group "heads"       =   54.052    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random7.par"
+
+    Sum of squared weighted residuals (ie phi)               =   273.50    
+    Contribution to phi from observation group "heads"       =   273.50    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random8.par"
+
+    Sum of squared weighted residuals (ie phi)               =   65.480    
+    Contribution to phi from observation group "heads"       =   65.480    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random9.par"
+
+    Sum of squared weighted residuals (ie phi)               =   40.068    
+    Contribution to phi from observation group "heads"       =   40.068    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random10.par"
+
+    Sum of squared weighted residuals (ie phi)               =   310.84    
+    Contribution to phi from observation group "heads"       =   310.84    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random11.par"
+
+    Sum of squared weighted residuals (ie phi)               =   322.09    
+    Contribution to phi from observation group "heads"       =   322.09    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random12.par"
+
+    Sum of squared weighted residuals (ie phi)               =   32.978    
+    Contribution to phi from observation group "heads"       =   32.978    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random13.par"
+
+    Sum of squared weighted residuals (ie phi)               =   25.584    
+    Contribution to phi from observation group "heads"       =   25.584    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random14.par"
+
+    Sum of squared weighted residuals (ie phi)               =   40.036    
+    Contribution to phi from observation group "heads"       =   40.036    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random15.par"
+
+    Sum of squared weighted residuals (ie phi)               =   55.190    
+    Contribution to phi from observation group "heads"       =   55.190    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random16.par"
+
+    Sum of squared weighted residuals (ie phi)               =   36.438    
+    Contribution to phi from observation group "heads"       =   36.438    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random17.par"
+
+    Sum of squared weighted residuals (ie phi)               =   21.375    
+    Contribution to phi from observation group "heads"       =   21.375    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random18.par"
+
+    Sum of squared weighted residuals (ie phi)               =   28.389    
+    Contribution to phi from observation group "heads"       =   28.389    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random19.par"
+
+    Sum of squared weighted residuals (ie phi)               =   42.660    
+    Contribution to phi from observation group "heads"       =   42.660    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random20.par"
+
+    Sum of squared weighted residuals (ie phi)               =   67.780    
+    Contribution to phi from observation group "heads"       =   67.780    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random21.par"
+
+    Sum of squared weighted residuals (ie phi)               =   39.951    
+    Contribution to phi from observation group "heads"       =   39.951    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random22.par"
+
+    Sum of squared weighted residuals (ie phi)               =   29.424    
+    Contribution to phi from observation group "heads"       =   29.424    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random23.par"
+
+    Sum of squared weighted residuals (ie phi)               =   37.676    
+    Contribution to phi from observation group "heads"       =   37.676    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random24.par"
+
+    Sum of squared weighted residuals (ie phi)               =   54.081    
+    Contribution to phi from observation group "heads"       =   54.081    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random25.par"
+
+    Sum of squared weighted residuals (ie phi)               =   53.061    
+    Contribution to phi from observation group "heads"       =   53.061    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random26.par"
+
+    Sum of squared weighted residuals (ie phi)               =   97.327    
+    Contribution to phi from observation group "heads"       =   97.327    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random27.par"
+
+    Sum of squared weighted residuals (ie phi)               =   48.309    
+    Contribution to phi from observation group "heads"       =   48.309    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random28.par"
+
+    Sum of squared weighted residuals (ie phi)               =   132.08    
+    Contribution to phi from observation group "heads"       =   132.08    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random29.par"
+
+    Sum of squared weighted residuals (ie phi)               =   40.007    
+    Contribution to phi from observation group "heads"       =   40.007    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random30.par"
+
+    Sum of squared weighted residuals (ie phi)               =   41.409    
+    Contribution to phi from observation group "heads"       =   41.409    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random31.par"
+
+    Sum of squared weighted residuals (ie phi)               =   39.571    
+    Contribution to phi from observation group "heads"       =   39.571    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random32.par"
+
+    Sum of squared weighted residuals (ie phi)               =   27.818    
+    Contribution to phi from observation group "heads"       =   27.818    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random33.par"
+
+    Sum of squared weighted residuals (ie phi)               =   179.10    
+    Contribution to phi from observation group "heads"       =   179.10    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random34.par"
+
+    Sum of squared weighted residuals (ie phi)               =   42.629    
+    Contribution to phi from observation group "heads"       =   42.629    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random35.par"
+
+    Sum of squared weighted residuals (ie phi)               =   22.695    
+    Contribution to phi from observation group "heads"       =   22.695    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random36.par"
+
+    Sum of squared weighted residuals (ie phi)               =   68.161    
+    Contribution to phi from observation group "heads"       =   68.161    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random37.par"
+
+    Sum of squared weighted residuals (ie phi)               =   64.973    
+    Contribution to phi from observation group "heads"       =   64.973    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random38.par"
+
+    Sum of squared weighted residuals (ie phi)               =   37.831    
+    Contribution to phi from observation group "heads"       =   37.831    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random39.par"
+
+    Sum of squared weighted residuals (ie phi)               =   24.918    
+    Contribution to phi from observation group "heads"       =   24.918    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random40.par"
+
+    Sum of squared weighted residuals (ie phi)               =   25.464    
+    Contribution to phi from observation group "heads"       =   25.464    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random41.par"
+
+    Sum of squared weighted residuals (ie phi)               =   29.151    
+    Contribution to phi from observation group "heads"       =   29.151    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random42.par"
+
+    Sum of squared weighted residuals (ie phi)               =   43.752    
+    Contribution to phi from observation group "heads"       =   43.752    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random43.par"
+
+    Sum of squared weighted residuals (ie phi)               =   42.513    
+    Contribution to phi from observation group "heads"       =   42.513    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random44.par"
+
+    Sum of squared weighted residuals (ie phi)               =   44.004    
+    Contribution to phi from observation group "heads"       =   44.004    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random45.par"
+
+    Sum of squared weighted residuals (ie phi)               =   56.765    
+    Contribution to phi from observation group "heads"       =   56.765    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random46.par"
+
+    Sum of squared weighted residuals (ie phi)               =   55.817    
+    Contribution to phi from observation group "heads"       =   55.817    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random47.par"
+
+    Sum of squared weighted residuals (ie phi)               =   26.862    
+    Contribution to phi from observation group "heads"       =   26.862    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random48.par"
+
+    Sum of squared weighted residuals (ie phi)               =   31.767    
+    Contribution to phi from observation group "heads"       =   31.767    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random49.par"
+
+    Sum of squared weighted residuals (ie phi)               =   59.251    
+    Contribution to phi from observation group "heads"       =   59.251    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ Objective function details for parameters read from parameter value file --->
+ File = "post_random50.par"
+
+    Sum of squared weighted residuals (ie phi)               =   88.146    
+    Contribution to phi from observation group "heads"       =   88.146    
+    Contribution to phi from observation group "time"        =   0.0000    
+    Contribution to phi from observation group "distance"    =   0.0000    
+
+
+ PEST run complete: all parameter sets processed.
+ Total model calls:     50

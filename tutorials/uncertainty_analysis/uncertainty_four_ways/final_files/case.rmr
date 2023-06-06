@@ -1,0 +1,136 @@
+                     RUN MANAGEMENT RECORD: CASE case
+ 
+ 
+ **************************************************
+ RUN MANAGEMENT UNDERTAKEN FOR A HP SUITE PROGRAM
+ COMMUNICATIONS PROTOCOL = TCP.
+ **************************************************
+ 
+ Factor for re-assigning slow model runs to other agents [RUN_SLOW_FAC]            : 5.0000
+ Factor for abandoning late model runs [parameter upgrades only - RUN_ABANDON_FAC] : not set
+ Time in hours model can run before being killed [WIN_MRUN_HOURS]                  : not set
+
+ Parallel run packet number 1----->
+   24 Oct 13:37:47.18:- index of 1 assigned to agent working in directory "192.168.1.107\\E:\temp15".
+   24 Oct 13:37:47.18:- model run 1 initiated using agent 1.
+   24 Oct 13:37:48.54:- model run 1 completed by agent 1.
+   24 Oct 13:37:48.54:- model run 2 initiated using agent 1.
+   24 Oct 13:37:48.82:- model run 2 completed by agent 1.
+   24 Oct 13:37:48.82:- model run 3 initiated using agent 1.
+   24 Oct 13:37:49.10:- model run 3 completed by agent 1.
+   24 Oct 13:37:49.10:- model run 4 initiated using agent 1.
+   24 Oct 13:37:49.38:- model run 4 completed by agent 1.
+   24 Oct 13:37:49.38:- model run 5 initiated using agent 1.
+   24 Oct 13:37:49.67:- model run 5 completed by agent 1.
+
+ Parallel run packet number 2----->
+   24 Oct 13:37:49.68:- model run 1 initiated using agent 1.
+   24 Oct 13:37:49.95:- model run 1 completed by agent 1.
+   24 Oct 13:37:49.95:- model run 2 initiated using agent 1.
+   24 Oct 13:37:50.23:- model run 2 completed by agent 1.
+   24 Oct 13:37:50.23:- model run 3 initiated using agent 1.
+   24 Oct 13:37:50.51:- model run 3 completed by agent 1.
+   24 Oct 13:37:50.51:- model run 4 initiated using agent 1.
+   24 Oct 13:37:50.79:- model run 4 completed by agent 1.
+   24 Oct 13:37:50.79:- model run 5 initiated using agent 1.
+   24 Oct 13:37:51.08:- model run 5 completed by agent 1.
+
+ Parallel run packet number 3----->
+   24 Oct 13:37:51.09:- model run 1 initiated using agent 1.
+   24 Oct 13:37:51.38:- model run 1 completed by agent 1.
+   24 Oct 13:37:51.38:- model run 2 initiated using agent 1.
+   24 Oct 13:37:51.66:- model run 2 completed by agent 1.
+   24 Oct 13:37:51.66:- model run 3 initiated using agent 1.
+   24 Oct 13:37:51.94:- model run 3 completed by agent 1.
+   24 Oct 13:37:51.94:- model run 4 initiated using agent 1.
+   24 Oct 13:37:52.21:- model run 4 completed by agent 1.
+   24 Oct 13:37:52.21:- model run 5 initiated using agent 1.
+   24 Oct 13:37:52.50:- model run 5 completed by agent 1.
+
+ Parallel run packet number 4----->
+   24 Oct 13:37:52.51:- model run 1 initiated using agent 1.
+   24 Oct 13:37:52.78:- model run 1 completed by agent 1.
+   24 Oct 13:37:52.78:- model run 2 initiated using agent 1.
+   24 Oct 13:37:53.06:- model run 2 completed by agent 1.
+   24 Oct 13:37:53.06:- model run 3 initiated using agent 1.
+   24 Oct 13:37:53.34:- model run 3 completed by agent 1.
+   24 Oct 13:37:53.34:- model run 4 initiated using agent 1.
+   24 Oct 13:37:53.62:- model run 4 completed by agent 1.
+   24 Oct 13:37:53.62:- model run 5 initiated using agent 1.
+   24 Oct 13:37:53.89:- model run 5 completed by agent 1.
+
+ Parallel run packet number 5----->
+   24 Oct 13:37:53.91:- model run 1 initiated using agent 1.
+   24 Oct 13:37:54.19:- model run 1 completed by agent 1.
+   24 Oct 13:37:54.19:- model run 2 initiated using agent 1.
+   24 Oct 13:37:54.47:- model run 2 completed by agent 1.
+   24 Oct 13:37:54.47:- model run 3 initiated using agent 1.
+   24 Oct 13:37:54.75:- model run 3 completed by agent 1.
+   24 Oct 13:37:54.75:- model run 4 initiated using agent 1.
+   24 Oct 13:37:55.05:- model run 4 completed by agent 1.
+   24 Oct 13:37:55.05:- model run 5 initiated using agent 1.
+   24 Oct 13:37:55.34:- model run 5 completed by agent 1.
+
+ Parallel run packet number 6----->
+   24 Oct 13:37:55.35:- model run 1 initiated using agent 1.
+   24 Oct 13:37:55.64:- model run 1 completed by agent 1.
+   24 Oct 13:37:55.64:- model run 2 initiated using agent 1.
+   24 Oct 13:37:55.93:- model run 2 completed by agent 1.
+   24 Oct 13:37:55.93:- model run 3 initiated using agent 1.
+   24 Oct 13:37:56.21:- model run 3 completed by agent 1.
+   24 Oct 13:37:56.21:- model run 4 initiated using agent 1.
+   24 Oct 13:37:56.49:- model run 4 completed by agent 1.
+   24 Oct 13:37:56.49:- model run 5 initiated using agent 1.
+   24 Oct 13:37:56.76:- model run 5 completed by agent 1.
+
+ Parallel run packet number 7----->
+   24 Oct 13:37:56.77:- model run 1 initiated using agent 1.
+   24 Oct 13:37:57.05:- model run 1 completed by agent 1.
+   24 Oct 13:37:57.05:- model run 2 initiated using agent 1.
+   24 Oct 13:37:57.33:- model run 2 completed by agent 1.
+   24 Oct 13:37:57.33:- model run 3 initiated using agent 1.
+   24 Oct 13:37:57.60:- model run 3 completed by agent 1.
+   24 Oct 13:37:57.60:- model run 4 initiated using agent 1.
+   24 Oct 13:37:57.88:- model run 4 completed by agent 1.
+   24 Oct 13:37:57.88:- model run 5 initiated using agent 1.
+   24 Oct 13:37:58.18:- model run 5 completed by agent 1.
+
+ Parallel run packet number 8----->
+   24 Oct 13:37:58.19:- model run 1 initiated using agent 1.
+   24 Oct 13:37:58.47:- model run 1 completed by agent 1.
+   24 Oct 13:37:58.47:- model run 2 initiated using agent 1.
+   24 Oct 13:37:58.75:- model run 2 completed by agent 1.
+   24 Oct 13:37:58.75:- model run 3 initiated using agent 1.
+   24 Oct 13:37:59.03:- model run 3 completed by agent 1.
+   24 Oct 13:37:59.03:- model run 4 initiated using agent 1.
+   24 Oct 13:37:59.33:- model run 4 completed by agent 1.
+   24 Oct 13:37:59.33:- model run 5 initiated using agent 1.
+   24 Oct 13:37:59.61:- model run 5 completed by agent 1.
+
+ Parallel run packet number 9----->
+   24 Oct 13:37:59.63:- model run 1 initiated using agent 1.
+   24 Oct 13:37:59.90:- model run 1 completed by agent 1.
+   24 Oct 13:37:59.90:- model run 2 initiated using agent 1.
+   24 Oct 13:38:00.18:- model run 2 completed by agent 1.
+   24 Oct 13:38:00.18:- model run 3 initiated using agent 1.
+   24 Oct 13:38:00.45:- model run 3 completed by agent 1.
+   24 Oct 13:38:00.45:- model run 4 initiated using agent 1.
+   24 Oct 13:38:00.73:- model run 4 completed by agent 1.
+   24 Oct 13:38:00.73:- model run 5 initiated using agent 1.
+   24 Oct 13:38:01.00:- model run 5 completed by agent 1.
+
+ Parallel run packet number 10----->
+   24 Oct 13:38:01.02:- model run 1 initiated using agent 1.
+   24 Oct 13:38:01.30:- model run 1 completed by agent 1.
+   24 Oct 13:38:01.30:- model run 2 initiated using agent 1.
+   24 Oct 13:38:01.58:- model run 2 completed by agent 1.
+   24 Oct 13:38:01.58:- model run 3 initiated using agent 1.
+   24 Oct 13:38:01.85:- model run 3 completed by agent 1.
+   24 Oct 13:38:01.85:- model run 4 initiated using agent 1.
+   24 Oct 13:38:02.13:- model run 4 completed by agent 1.
+   24 Oct 13:38:02.13:- model run 5 initiated using agent 1.
+   24 Oct 13:38:02.40:- model run 5 completed by agent 1.
+
+ STATISTICS
+
+ For run management efficiency statistics see file case.rme.
