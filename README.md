@@ -1,4 +1,5 @@
 # Groundwater Modelling Decision-Support Initiative
+**Homepage:** https://gmdsi.org/education/tutorials/
 
 ## Decision Support Worked Examples
 The worked example theme provides the opportunity for GMDSI to ‘think aloud’. GMDSI works alongside industry and government modellers, aiming to add value to existing modelling work by applying high-end data assimilation and uncertainty quantification methods to real life projects. Our work will be documented, and shared, so that others can follow. 
@@ -18,8 +19,6 @@ In order to assist modellers in setting up and using model-partner software in w
 GMDSI tutorials are designed to be modular and independent of each other. Each tutorial addresses its own specific modelling topic. Hence there is no need to work through them in a pre-ordained sequence. However, they also complement each other. Many employ variations of the same synthetic model, and are based on the same simulator (MODFLOW 6).
 
 In these tutorials, utility software from the PEST suite is used extensively to assist in model parameterization, objective function definition, and general PEST/PEST++ setup. Some tutorials focus on the use of PEST and PEST++, while others focus on ancillary issues such as introducing transient recharge to a groundwater model, and translation of a model’s grid, parameterization, and calculated states to files that can be read by visualization, GIS and display packages.
-
-**Homepage:** https://gmdsi.org/education/tutorials/
 
 A separate set of tutorials demonstrate scripted workflows using `pyEMU` and `PEST++`: https://github.com/gmdsi/GMDSI_notebooks
 
