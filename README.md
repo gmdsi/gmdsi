@@ -1,4 +1,16 @@
 # Groundwater Modelling Decision-Support Initiative
+
+## Decision Support Worked Examples
+The worked example theme provides the opportunity for GMDSI to ‘think aloud’. GMDSI works alongside industry and government modellers, aiming to add value to existing modelling work by applying high-end data assimilation and uncertainty quantification methods to real life projects. Our work will be documented, and shared, so that others can follow. 
+
+With worked examples, we aim to:
+
+ - demonstrate and explain new data assimilation and uncertainty analysis methodologies that are available through public domain model partner software
+ - explain the benefits of using these methodologies
+ - suggest ways in which decision-support models can be designed to take advantage of these methodologies
+ - lower the barriers to everyday use of model-partner software by the groundwater industry.
+
+
 ## Tutorials on decision-support modelling with non-scripted workflows
 
 In order to assist modellers in setting up and using model-partner software in ways that support the decision-support imperatives of data assimilation and uncertainty quantification, GMDSI is developing a series of tutorials.
